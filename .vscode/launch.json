@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "\War3Analysis (MSVC)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${command:cmake.launchTargetPath}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": "${command:cmake.launchTargetDirectoryEnviron}",
+            "visualizerFile": "c:\\Users\\Administrator\\AppData\\Roaming\\Code\\User\\workspaceStorage\\c507ffc690cdd096d8de14ef7f67a1c1\\tonka3000.qtvsctools\\qt.natvis.xml"
+        },
+        {
+            "name": "\War3Analysis (MinGW)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${command:cmake.launchTargetPath}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": "${command:cmake.launchTargetDirectoryEnviron}",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:/Qt/Tools/mingw810_32/bin/gdb.exe",
+            "visualizerFile": "c:\\Users\\Administrator\\AppData\\Roaming\\Code\\User\\workspaceStorage\\c507ffc690cdd096d8de14ef7f67a1c1\\tonka3000.qtvsctools\\qt.natvis.xml"
+        }
+    ]
+}

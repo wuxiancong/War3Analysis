@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Desktop_Qt_5_15_2_VSCode_MSVC_32bit",
+    "visualStudio": "61ebc0ff",
+    "visualStudioArchitecture": "x86",
+    "preferredGenerator": {
+      "name": "Ninja"
+    },
+    "cmakeSettings": {
+      "CMAKE_PREFIX_PATH": "D:/Qt/5.15.2/msvc2019",
+      "CMAKE_MAKE_PROGRAM": "D:/Qt/Tools/Ninja/ninja.exe"
+    },
+    "environmentVariables": {
+      "VSCODE_QT_INSTALLATION": "D:/Qt/5.15.2/msvc2019",
+      "PATH": "D:/Qt/5.15.2/msvc2019/bin;${env:PATH};D:/Qt/Tools/Ninja"
+    }
+  },
+  {
+    "name": "Desktop_Qt_5_15_2_VSCode_MinGW_32_bit",
+    "preferredGenerator": {
+      "name": "MinGW Makefiles"
+    },
+    "compilers": {
+      "C": "D:/Qt/Tools/mingw810_32/bin/gcc.exe",
+      "CXX": "D:/Qt/Tools/mingw810_32/bin/g++.exe"
+    },
+    "cmakeSettings": {
+      "CMAKE_PREFIX_PATH": "D:/Qt/5.15.2/mingw81_32"
+    }
+  }
+]

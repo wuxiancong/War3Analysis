@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+# 本机逆向样本与 Ghidra 数据库
+/samples/
+/ghidra/projects/
+*.rep/
+*.gpr
+
+# Ghidra 临时文件
+*.lock
+*.lock~
