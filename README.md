@@ -1,4 +1,4 @@
-# War3Analysis
+﻿# War3Analysis
 
 魔兽争霸 III 逆向分析工作区，用于整理不同版本的二进制样本、Ghidra 项目、分析结论和可复现的验证步骤。
 
