@@ -72,7 +72,7 @@ mindmap
 .text:6F1E43EE  mov     eax, edi            ; min == max: 直接返回 min
 .text:6F1E43F0  pop     edi
 .text:6F1E43F1  pop     ebp
-.text:6F1E43F2  retn                        ; 【关键】：不推进 RNG 状态机直接返回！
+.text:6F1E43F2  retn                        ; 关键：不推进 RNG 状态机直接返回！
 .text:6F1E43F3 loc_proceed:
 .text:6F1E43F3  push    esi
 .text:6F1E43F4  cmp     edi, eax
