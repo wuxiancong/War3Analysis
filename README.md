@@ -42,9 +42,26 @@ War3Analysis/
 4. 对每个重要结论标明证据、地址类型（文件偏移/RVA/虚拟地址）、版本适用范围、置信度和验证状态；区分静态分析推断与运行时验证。
 5. 报告应足以让下次分析者从二进制标识、Ghidra 项目和已知地址继续工作，不要只记录最终结论。
 
+## 使用 REA 辅助分析
+
+- REA 6.4.0 CLI 安装在 `D:\REA`，当前 Copilot runtime 的 MCP 注册在 `D:\VSCode\data\copilot\mcp-config.json`。更新注册后需完全重启 VS Code，才能在新会话中加载 MCP 工具。
+- MCP 注册指向 `D:\ghidra_12.1.4` 和其内置 JDK 21，并将 Ghidra 分析期限设为 900 秒。Windows 上的 Ghidra provider 仍属实验性支持。
+- 单独运行 CLI 时，先设置 Ghidra 与 JDK 路径；分析较大的 `game.dll` 时，REA 默认 330 秒期限可能不足，可显式延长：
+
+  ```powershell
+  $env:GHIDRA_INSTALL_DIR = 'D:\ghidra_12.1.4'
+  $env:JAVA_HOME = 'D:\ghidra_12.1.4\jdk'
+  $env:REA_GHIDRA_STARTUP_TIMEOUT_MS = '900000'
+  & 'D:\REA\rea.cmd' doctor --provider ghidra
+  & 'D:\REA\rea.cmd' function 'C:\path\to\game.dll' '0x6F7EF590' --provider ghidra
+  ```
+
+- Windows provider 要求目标位于固定本地 NTFS 卷。即使 U 盘 `D:` 使用 NTFS，它仍是可移动卷，不能直接作为分析目标；需暂存到固定本地卷，并在分析前确认副本 SHA-256 与原件一致。原始样本应保持不变。
+
 ## 当前分析
 
 - [Warcraft III 1.27 Battle.net 按钮状态分析](analyses/warcraft-iii-1.27-battlenet-button.md)
+- [DotA v6.83d SD 三选一英雄候选链路分析](analyses/dota-6.83d-single-draft-candidates.md)
 
 ## 注意事项
 
