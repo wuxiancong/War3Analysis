@@ -13,30 +13,30 @@
 
 ```mermaid
 mindmap
-  root(("DotA 随机英雄去重与多端同步机制"))
-    去重机制_JASS脚本层
-      RD模式去重机制
-        "全局布尔标记表 KH2 (记录已抽中英雄)"
-        "24次槽位循环 (exitwhen i > 24)"
-        "拒绝采样 (已抽中则不递增计数器并重抽)"
-        "最终生成 24 个互不重复英雄写入 Q80"
-      SD模式去重机制
-        "同玩家组内去重 (力敏智三选一互不相同)"
-        "跨玩家全局去重 (布尔数组 R 记录全局占用)"
-        "三主属性分池独立抽取 (DZ0 力 / DW0 敏 / DY0 智)"
-        "多重条件拒绝采样 (循环直到完全合法)"
-    多端一致_引擎架构层
+  root((DotA 随机英雄去重与多端同步机制))
+    去重机制 JASS 脚本层
+      RD 模式去重机制
+        全局布尔标记表 KH2：记录已抽中英雄
+        24 次槽位循环：exitwhen i 大于 24
+        拒绝采样算法：已抽中则不递增计数器并重抽
+        最终生成 24 个互不重复英雄写入 Q80
+      SD 模式去重机制
+        同玩家组内去重：力敏智三选一互不相同
+        跨玩家全局去重：布尔数组 R 记录全局占用
+        三主属性分池独立抽取：DZ0 力量，DW0 敏捷，DY0 智力
+        多重条件拒绝采样：循环直到完全合法
+    多端一致 引擎架构层
       初始种子同步
-        "主机开局网络广播统一 Random Seed"
-        "各客户端通过 SetRandomSeed 初始化 RNG"
-      确定性PRNG算法
-        "game.dll 内部 GetRandomInt 纯数学状态机"
-        "固定查表 + 循环移位 ROL32 + 异或加法"
-        "相同种子必然产出绝对一致的伪随机序列"
+        主机开局网络广播统一 Random Seed
+        各客户端通过 SetRandomSeed 初始化 RNG
+      确定性 PRNG 算法
+        game.dll 内部 GetRandomInt 纯数学状态机
+        固定查表与循环移位 ROL32 及异或加法
+        相同种子必然产出绝对一致的伪随机序列
       锁步帧同步时序
-        "全客户端本地并发执行完全相同的 JASS"
-        "无 GetLocalPlayer 破坏随机数推进"
-        "完全相同的玩家槽位遍历顺序与调用次数"
+        全客户端本地并发执行完全相同的 JASS
+        无 GetLocalPlayer 破坏随机数推进
+        完全相同的玩家槽位遍历顺序与调用次数
 ```
 
 ---
@@ -142,16 +142,16 @@ stateDiagram-v2
 
     state RollCandidate {
         [*] --> CheckDuplicate: 检查是否重复
-        CheckDuplicate --> AcceptCandidate: 未被占用 (KH2 == false / R == false)
+        CheckDuplicate --> AcceptCandidate: 未被占用 (KH2 为 false 且 R 为 false)
         CheckDuplicate --> RejectCandidate: 已被占用 (冲突)
         RejectCandidate --> [*]: 丢弃结果，不增加槽位计数
     }
 
     RejectCandidate --> RollCandidate: 再次触发重抽 (Rejection Sampling)
     AcceptCandidate --> MarkOccupied: 设置标记 (KH2=true / R=true)
-    MarkOccupied --> StoreToSlot: 写入目标槽位 (Q80[i] / 能量圈库存)
+    MarkOccupied --> StoreToSlot: 写入目标槽位 (Q80 槽位 / 能量圈库存)
     StoreToSlot --> CheckCompleted: 检查槽位是否填满
-    CheckCompleted --> RollCandidate: 尚未填满 (i <= 目标数量)
+    CheckCompleted --> RollCandidate: 尚未填满 (i 未达到目标数量)
     CheckCompleted --> [*]: 全部填满，退出抽取
 ```
 

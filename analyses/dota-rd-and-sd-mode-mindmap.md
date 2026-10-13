@@ -8,43 +8,43 @@
 
 ```mermaid
 mindmap
-  root(("魔兽3 DotA 选人模式执行链路"))
+  root((魔兽3 DotA 选人模式执行链路))
     RD 随机征召模式
       模式规则
         全局共享 24 个候选英雄池
         双方玩家按顺位轮流征召
         倒计时限制与顺位推进
       JASS 数据结构
-        "Q80: 槽位映射 (Slot -> HeroIndex)"
-        "Q90: 锁定状态 (0=可选, 1=锁定)"
-        "QA0: 展示实体 Handle 映射"
-        "K1: 玩家最终英雄 Handle"
+        Q80 槽位映射：Slot 对应 HeroIndex
+        Q90 锁定状态：0 可选，1 已锁定
+        QA0 展示实体 Handle 句柄映射
+        K1 玩家最终控制英雄 Handle
       网络动作协议
-        "0x3A 复合动作包 (Deselect -> Select -> 镜头同步)"
-        "0x0A 保持动作包 (1B 01 H1 H2)"
-        "0x0F 确认勾号包 (Flag: 0x40, UnitId: h06N)"
+        0x3A 复合动作包：Deselect 到 Select 并同步镜头
+        0x0A 保持动作包：1B 01 H1 H2 重复点击保持
+        0x0F 确认勾号包：Flag 0x40，UnitId 为 h06N
       game.dll 底层切入点
-        "GameJassVariableSetter_1 (0x7EC719 / 0x7EC6C0)"
-        "GameJassVariableSetter_2 (0x7EC660)"
-        CreateUnit 生成真实英雄
+        GameJassVariableSetter_1 内存偏移 0x7EC719
+        GameJassVariableSetter_2 内存偏移 0x7EC660
+        CreateUnit 真实英雄生成
     SD 单一征召模式
       模式规则
         每位玩家独立 3 选 1 候选池
-        力/敏/智 主属性各随机 1 名
+        力敏智三主属性各随机 1 名
         各玩家选择互不干扰
       JASS 数据结构
-        "D30: 玩家专属能量圈 Handle"
-        "K1: 玩家最终英雄 Handle"
+        D30 玩家专属能量圈 Handle
+        K1 玩家最终控制英雄 Handle
       Native API 链路
-        "GameNativeFuncEntryPoint (0x7EF6E0)"
-        "AddUnitToStock: 向 D30 能量圈挂载候选商品"
-        "RemoveUnitFromStock: 选定后清空剩余商品"
+        GameNativeFuncEntryPoint 内存偏移 0x7EF6E0
+        AddUnitToStock 向 D30 能量圈挂载候选商品
+        RemoveUnitFromStock 选定后清空剩余商品
       网络动作协议
-        "0x10 单位购买/训练指令"
+        0x10 单位购买与训练指令
       game.dll 底层切入点
-        "GameNativeFuncEntryPoint: Native 统一网关"
-        "CUnit::AddStockItem: 建筑库存与商品系统"
-        EnqueuePlayerAction 标准单位购买指令
+        GameNativeFuncEntryPoint Native 统一网关
+        CUnit AddStockItem 建筑库存与商品系统
+        EnqueuePlayerAction 标准单位购买指令入队
 ```
 
 ---
@@ -61,9 +61,9 @@ sequenceDiagram
     participant JassScript as war3map.j 地图脚本
 
     Note over JassScript, JassVM: 1. 初始化阶段
-    JassScript->>JassVM: 抽取 24 英雄，写入 Q80[0..23] 与 QA0[0..23]
+    JassScript->>JassVM: 抽取 24 英雄，写入 Q80 与 QA0
     JassVM-->>JassScript: GameJassVariableSetter (0x7EC719) 写入符号表
-    JassScript->>JassVM: 初始化 Q90[0..23] = 0 (全部待选)
+    JassScript->>JassVM: 初始化 Q90 全部置 0 (全部待选)
 
     Note over Player, JassScript: 2. 交互与预览阶段 (轮到当前玩家)
     Player->>UI: 点击切换不同的候选英雄展示单位
@@ -74,9 +74,9 @@ sequenceDiagram
     Player->>UI: 点击确认勾选按钮 (UI 确认或点击 h06N)
     UI->>ActionQueue: 发送 15 字节确认包 (Action 0x10, Flag 0x40, ID h06N)
     ActionQueue->>JassScript: 触发对 h06N 的指令事件 (TriggerRegisterPlayerUnitEvent)
-    JassScript->>JassVM: 更新 Q90[slot] = 1 (标记已被选走)
+    JassScript->>JassVM: 更新 Q90 槽位标记为 1 (已被选走)
     JassScript->>JassVM: 调用 CreateUnit 创建真实英雄实体
-    JassScript->>JassVM: 写入 K1[playerIndex] = HeroHandle
+    JassScript->>JassVM: 写入 K1 保存英雄句柄
     JassScript->>JassScript: 顺位状态机步进 (Turn Token 移交给下一位玩家)
 ```
 
@@ -94,7 +94,7 @@ sequenceDiagram
     participant JassScript as war3map.j 地图脚本
 
     Note over JassScript, EngineUnit: 1. 能量圈分配与候选注入
-    JassScript->>JassScript: 分配各玩家能量圈，记录至 D30[playerIndex]
+    JassScript->>JassScript: 分配各玩家能量圈，记录至 D30
     JassScript->>NativeGateway: AddUnitToStock(D30, 力量英雄ID, 1, 1)
     NativeGateway->>EngineUnit: CUnit::AddStockItem (挂载商品 1)
     JassScript->>NativeGateway: AddUnitToStock(D30, 敏捷英雄ID, 1, 1)
@@ -107,7 +107,7 @@ sequenceDiagram
     ActionQueue->>NativeGateway: 触发建筑商品购买事件
     NativeGateway->>JassScript: JASS 单位创建与训练回调
     JassScript->>NativeGateway: RemoveUnitFromStock (移除剩余 2 个候选商品)
-    JassScript->>JassScript: 写入 K1[playerIndex] = HeroHandle
+    JassScript->>JassScript: 写入 K1 保存玩家英雄句柄
 ```
 
 ---
@@ -117,18 +117,18 @@ sequenceDiagram
 ```mermaid
 stateDiagram-v2
     [*] --> ModeInit: 模式判定 /host rd
-    ModeInit --> HeroPoolGenerated: JASS 随机抽取 24 英雄\n写入 Q80/QA0
+    ModeInit --> HeroPoolGenerated: JASS 随机抽取 24 英雄，写入 Q80 与 QA0
     HeroPoolGenerated --> TurnWaiting: 轮选开始，分配第一个玩家顺位
 
     state TurnWaiting {
         [*] --> Selecting: 倒计时开始
         Selecting --> Selecting: 切换选中目标 (0x3A 封包)\n重复点击保持 (0x0A 封包)
         Selecting --> Confirmed: 点击勾号 h06N (Flag 0x40)
-        Selecting --> TimeoutForced: 倒计时耗尽 (随机/弃选)
+        Selecting --> TimeoutForced: 倒计时耗尽 (随机或弃选)
     }
 
-    Confirmed --> HeroSpawned: 更新 Q90[slot]=1\nCreateUnit 生成英雄\n更新 K1[pid]
-    TimeoutForced --> HeroSpawned: 系统强制指定英雄\n更新 Q90[slot]=1
+    Confirmed --> HeroSpawned: 更新 Q90 槽位为已锁定\nCreateUnit 生成英雄\n更新 K1
+    TimeoutForced --> HeroSpawned: 系统强制指定英雄\n更新 Q90 槽位为已锁定
 
     HeroSpawned --> NextTurn: 检查是否仍有未选玩家
     NextTurn --> TurnWaiting: 顺位转移给下一位玩家\n重置倒计时
