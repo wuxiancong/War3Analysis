@@ -60,6 +60,8 @@ War3Analysis/
 
 ## 当前分析
 
+- [Warcraft III 1.27 FPS 限制与解除路径](analyses/warcraft-iii-1.27-fps-unlock.md)（[思维导图](analyses/warcraft-iii-1.27-fps-unlock-mindmap.md)）
+- [Warcraft III Game.dll 地图大小与 FPS 静态分析](analyses/warcraft-iii-game-dll-map-size-and-fps.md)（FPS 专文见上）
 - [Warcraft III 1.27 Battle.net 按钮状态分析](analyses/warcraft-iii-1.27-battlenet-button.md)
 - [DotA v6.83d SD 三选一英雄候选链路分析](analyses/dota-6.83d-single-draft-candidates.md)
 

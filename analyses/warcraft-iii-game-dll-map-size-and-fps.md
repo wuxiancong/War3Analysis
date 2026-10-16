@@ -80,6 +80,8 @@ REA 还找到字符串 `NETERROR_MAPFILEBADSIZE`，其引用位于 `FUN_6f2b0650
 
 ## FPS 限制：观察结果
 
+> 1.27 的 D3D9 呈现间隔、`lockfb` 与跨版本普查已单独写成 [warcraft-iii-1.27-fps-unlock.md](warcraft-iii-1.27-fps-unlock.md)。下文保留当时对 `maxfps` 注册链的记录。
+
 ### Game.dll 中的 `maxfps` 引用
 
 REA 找到 `maxfps` 字符串 VA `0x6f951428`。引用点位于 `FUN_6f35d2d0`：
