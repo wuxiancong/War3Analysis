@@ -12,14 +12,19 @@
 
 ```text
 War3Analysis/
-├─ analyses/                 # 每个目标/问题一份 Markdown 分析报告
-├─ ghidra/
-│  └─ projects/              # 本机 Ghidra 项目数据库（已加入 .gitignore）
-├─ samples/                  # 本机原始样本及其版本信息（不提交二进制）
-├─ run-ghidra.cmd            # 启动本机 Ghidra
-├─ README.md
-└─ .github/copilot-instructions.md
+├─ analyses/                      # 结论：产品-版本-主题.md 与思维导图
+├─ artifacts/<主题>/              # 本次 REA/Ghidra 文本导出、快照 JSON
+├─ shared/
+│  ├─ scripts/                    # 跨主题 PE 扫描、xref、补丁生成
+│  └─ ghidra-scripts/             # headless postscript
+├─ dll_game/<版本-改动>/game.dll  # 补丁 DLL（*.dll 不提交）
+├─ samples/<版本>/                # 官方样本本机副本（*.dll 不提交）
+├─ ghidra/projects/               # Ghidra 数据库（不提交）
+├─ .cursor/rules/                 # Cursor 始终应用的归档规则
+└─ run-ghidra.cmd
 ```
+
+分析过程可暂存到 `C:\War3Analysis`（REA 要求固定 NTFS）。**每次分析结束后**把新文件收进上表对应目录；可用 `shared/scripts/collect_scratch.ps1` 先收回脚本和导出，再把 `artifacts/_scratch-*` 改名为主题目录。
 
 ## 运行现有 Ghidra 项目
 
@@ -61,12 +66,13 @@ War3Analysis/
 ## 当前分析
 
 - [Warcraft III 1.27 FPS 限制与解除路径](analyses/warcraft-iii-1.27-fps-unlock.md)（[思维导图](analyses/warcraft-iii-1.27-fps-unlock-mindmap.md)）
+- [全版本 FPS 解锁偏移](analyses/warcraft-iii-all-versions-fps-unlock.md)（补丁：`dll_game/<版本>-fps-unlock-dx-ogl/`）
 - [Warcraft III Game.dll 地图大小与 FPS 静态分析](analyses/warcraft-iii-game-dll-map-size-and-fps.md)（FPS 专文见上）
 - [Warcraft III 1.27 Battle.net 按钮状态分析](analyses/warcraft-iii-1.27-battlenet-button.md)
 - [DotA v6.83d SD 三选一英雄候选链路分析](analyses/dota-6.83d-single-draft-candidates.md)
 
 ## 注意事项
 
-- Git 中仅保存文档、脚本和可公开分发的辅助材料；Ghidra `.rep` 数据库、游戏二进制和生成文件保持在本机。
+- Git 中仅保存文档、脚本、`artifacts/` 文本导出和补丁说明；Ghidra `.rep`、`game.dll` 保持在本机，已被 `.gitignore` 排除。
 - 重要分析结果提交前，确认报告中的地址和签名确实对应报告所列版本。
 - 对运行时补丁，记录补丁位置、原始/替换字节、补丁机制及尚未完成的实机验证。

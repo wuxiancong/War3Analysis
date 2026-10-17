@@ -1,0 +1,24 @@
+---
+description: 分析产物归档到仓库目录，禁止把游戏二进制提交 Git
+alwaysApply: true
+---
+
+# 分析工作区归档
+
+结束一次逆向或补丁任务后，把本次产生的文件收进 `D:\Qt\workspace\War3Analysis`，不要留在 `C:\War3Analysis` 作为唯一副本。
+
+## 放到哪里
+
+- 报告 / 思维导图 → `analyses/`（`产品-版本-主题.md`）
+- 可复用脚本、Ghidra postscript → `shared/scripts/`、`shared/ghidra-scripts/`
+- 本次 REA/Ghidra 导出、快照 JSON、反编译文本 → `artifacts/<主题>/`
+- 补丁后的 `game.dll`（文件名保持 `game.dll`）→ `dll_game/<版本-改动>/`
+- 官方样本副本 → `samples/<版本>/`（只本机；Git 忽略 `.dll`）
+- Ghidra 工程 → `ghidra/projects/`（Git 忽略 `.gpr` / `.rep`）
+
+`C:\War3Analysis` 仅作 REA 固定盘暂存（D: 可移动卷不能直接分析）。暂存副本 SHA-256 必须与 `samples/` 或 `War3Launcher/versions/` 原件一致。
+
+## GitHub
+
+提交：Markdown、Python/Java 脚本、文本导出、`dll_game` 说明。  
+不提交：`game.dll`、Ghidra 数据库、密钥。更新 `README.md` 分析索引。

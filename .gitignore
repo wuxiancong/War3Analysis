@@ -31,8 +31,10 @@
 *.out
 *.app
 
-# 本机逆向样本与 Ghidra 数据库
-/samples/
+# 本机逆向样本与 Ghidra 数据库（样本说明 Markdown 仍提交）
+/samples/**
+!/samples/**/*.md
+!/samples/**/*.txt
 /ghidra/projects/
 *.rep/
 *.gpr

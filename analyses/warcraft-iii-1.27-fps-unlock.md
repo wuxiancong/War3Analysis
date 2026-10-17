@@ -2,11 +2,12 @@
 
 ## 结论摘要
 
-- **1.27.0.52240 的主限帧路径是 D3D9 呈现间隔，不是 1.26 及更早常见的约 64 FPS 软件等待循环。** `CGxDeviceD3d` 在填充 `D3DPRESENT_PARAMETERS` 时把 `PresentationInterval`（结构体偏移 `+0x34`）写成 `0`（`D3DPRESENT_INTERVAL_DEFAULT`）。在窗口/无边框全屏下，这通常会跟显示器刷新率同步，表现为约 60 FPS。
-- **同一填充函数还把 `Flags`（`+0x2C`）写成 `1`（`D3DPRESENTFLAG_LOCKABLE_BACKBUFFER`）。** 这与公开资料中的 `Video\lockfb` 行为同类：可锁定后台缓冲会增加呈现开销，并常被当作“关 lockfb”的对象。尚未在静态代码里把该立即数与 `lockfb` 配置槽一一绑死。
-- **`maxfps` 是独立的整数配置项，默认 200，经 Storm 设置注册写入内部槽 `0x16`。** 启动器把 `fpsLimit==0` 同步成注册表 `300`。现有反编译没有找到“按 `1000/maxfps` 睡眠”的帧调度循环；因此把注册表改成 `0`/`300` 仍约 60 FPS，更符合垂直同步仍开启，而不是 `maxfps` 失效。
-- **OpenGL 路径用 `wglSwapLayerBuffers(hdc, 1)` 呈现。** 是否限帧取决于像素格式/驱动交换间隔，不是上面那条 D3D9 立即数。
-- **其它 10 个版本只做了字符串与字节模式普查，没有逐个 Ghidra 函数级确认。** 1.26 及更早为 D3D8（`Direct3DCreate8`），`PresentationInterval` 在 D3D8 结构中位于 `+0x38`；`maxfps` 字符串从 1.22 的 `Game.dll` 起出现。
+- **1.27 仍保留 1.26 那条约 64 FPS 软件调度，并叠加 D3D9 垂直同步。** 只改 `PresentationInterval` 时，全屏 `/fps` 仍约 64，与 60Hz vsync 不符。软件点在 `FUN_6f05fcd0`：当 `[obj+0x2C] != 1` 且 `[obj+0x44]` bit2 置位时，`and eax, 0xFFFFFFFB` 清 bit2，再以 `edx=0x11` 调用 `FUN_6f05ae90`。1.26 对应 `Game.dll+0x62D7FB`（`83 E0 FB` / `mov edx, 0x11`）。社区 WarcraftHelper 1.27a 把 RVA `0x5FCFB` 的 `FB` 改成 `FF`（`and eax, -1`）。
+- **D3D9：`FUN_6f0ec6b0` 在独占全屏分支把 `PresentationInterval`（`+0x34`）写成 `0`（`DEFAULT`）。窗口化分支不写该字段，memset 后仍是 DEFAULT。** 前一版补丁只改了独占分支，窗口/无边框全屏仍可能 vsync。
+- **同一填充函数还把 `Flags`（`+0x2C`）写成 `1`（`LOCKABLE_BACKBUFFER`）。** 与公开资料中的 `Video\lockfb` 同类，尚未与配置槽一一绑死。
+- **`maxfps` 槽 `0x16` 的 apply（`FUN_6f023310` case VA `0x6F023537`）计算 `1000.0 / value` 毫秒，写入定时对象 `+0x48`（`FUN_6f057b80`）。** 启动器 `fpsLimit==0` → 注册表 `300`，对应约 3.3ms 间隔，**不是** 64 FPS。游戏默认 200。
+- **OpenGL 路径用 `wglSwapLayerBuffers(hdc, 1)` 呈现。** 限帧还取决于驱动交换间隔。
+- **其它 10 个版本只做了字符串与字节模式普查。** 1.26 及更早为 D3D8；`maxfps` 字符串从 1.22 起出现。
 
 | 项目 | 记录 |
 | --- | --- |
@@ -19,8 +20,10 @@
 | 工具 | REA 6.4.0 + Ghidra 12.1.4 headless；Capstone 核对汇编 |
 | Ghidra 项目 | `War3Analysis/ghidra/projects/War3_127.gpr`（程序 `/game.dll`） |
 | ImageBase | `0x6F000000`；`.text` 文件偏移 = RVA − `0xC00` |
-| 分析状态 | 静态定位完成；**未实机改字节、未测帧率** |
-| 置信度 | D3D9 `PresentationInterval` 写入：**高**；其为约 60 FPS 主因：**中高（待运行时）**；`maxfps` 软件等待循环：**未找到** |
+| 分析状态 | 静态已定位软件 64 帽 + 双分支 D3D interval；已重新打补丁；**实机 `/fps` 仍待验证** |
+| 补丁输出 | `dll_game/1.27.0.52240-fps-unlock-d3d9-ogl/game.dll` |
+| 补丁 SHA-256 | `60b2a320d25a5304c7808b662e18c958d373e2f56fbb946f5447d2deb34ef1aa` |
+| 置信度 | 软件 64 点与 1.26/WarcraftHelper 对齐：**高**；D3D interval 写入：**高**；补丁后实机帧率：**未测** |
 
 ## 方法与证据边界
 
@@ -53,6 +56,8 @@
 ```
 
 同函数内 `mov edx, 0x16`（`0x6F0EC6FA`）是把内部颜色模式映射成 `D3DFMT_X8R8G8B8`（枚举 22），**不是** `maxfps` 配置键。
+
+`FUN_6f0e51f0`：`[device+0x9C]==0` 则返回 1，走窗口化分支 `0x6F0EC763`（`Windowed=1`，**不写** `+0x34`）。非 0 走独占全屏并写 interval。补丁在窗口化路径 `0x6F0EC794` 跳到 cave `0x6F19DFC2`，补写 `IMMEDIATE` 再回到 `0x6F0EC79E`。
 
 `IDirect3D9::GetAdapterDisplayMode` 调用为 `[ecx+0x1C]`（`0x6F0EC728`）。随后该结构会进入 `CreateDevice`/`Reset`。
 
@@ -114,9 +119,23 @@ void FUN_6f35c680(undefined4 value)
 
 `RegisterManager`：`fpsLimit > 0` 写该值，否则写 `HKCU\...\Video\maxfps = 300`。`SettingsManager` 默认 `fpsLimit = 0`。这只覆盖配置通道。
 
-### 未找到的部分
+### apply（已定位）
 
-在 `.text` 中未定位到把槽 `0x16` 转成帧间隔再 `Sleep`/`Wait` 的循环。`FUN_6f154c30` 虽调用 `QueryPerformanceCounter` + `Sleep(50|500)`，反编译表明这是线程优先级/计时校准，不是逐帧限速。
+槽 `0x16` 经 `FUN_6f023310` 跳到 `0x6F023537`：把整数转 double，用 `1.0/value * 1000.0`（常量 `0x6F9517A8` / `0x6F9517B0`），`FUN_6f7714c1` 取整后 `FUN_6f057b80` 写入对象 `+0x48`。这是 `maxfps` 软件上限，默认 200 / 启动器 300，解释不了稳定 ~64。
+
+`FUN_6f154c30` 的 `QueryPerformanceCounter` + `Sleep(50|500)` 是计时校准，不是逐帧限速。
+
+## 路径 D：软件 64 FPS（1.26 同源）
+
+| 项 | 1.27.0.52240 | 1.26.0.6401 |
+| --- | --- | --- |
+| 函数 | `FUN_6f05fcd0` VA `0x6F05FCD0` | 同构：`test al, 4` / `and eax, ~4` / `edx=0x11` |
+| 立即数 `FB` | VA `0x6F05FCFB`，RVA `0x5FCFB`，文件 `0x5F0FB` | `Game.dll+0x62D7FB` |
+| 原始 | `83 E0 FB`（`and eax, 0xFFFFFFFB`） | 相同 |
+| 补丁 | `83 E0 FF` | WarcraftHelper / 社区 FPS Unlocker 同改 |
+| 随后 | `lea edx, [ebx+0x11]`；`mov [edi+0x44], eax`；`call FUN_6f05ae90` | `push 0`；`mov edx, 0x11` |
+
+条件：`[edi+0x2C] != 1` 且 flags bit2 置位。`FUN_6f05ae90` 按 `edx` 派发（`edx*2+0x17` 索引到对象内槽）。把 `FB`→`FF` 后 and 不再清 bit2，与公开 1.27a 解锁器一致。`.text` 中仅此一处 `83 E0 FB` 紧接 `edx=0x11`。
 
 ## 路径 C：`lockfb` 与 OpenGL
 
@@ -135,22 +154,21 @@ void FUN_6f35c680(undefined4 value)
 | 1.22–1.26 | Create8 | 有 | 有 | 有 |
 | 1.27.0.52240 | **Create9** | 有（`0x6F951428`） | 有 | 有 |
 
-社区口径与本静态结果一致：1.24e/1.26a 另有约 64 FPS 软件帽；1.27 起叠加 V-Sync/呈现间隔。1.26 的 64 FPS 循环与 D3D8 `FullScreen_PresentationInterval`（`+0x38`）需单独开 Ghidra 项目，不能套用 `0xEC759`。
+社区口径：1.24e/1.26a 有约 64 FPS 软件帽；1.27 叠加 V-Sync。1.27 软件帽已按字节特征对齐到 `0x5FCFB`，不再需要单独的 1.26 Ghidra 项目来打 1.27 补丁。1.26 D3D8 interval 在结构 `+0x38`，不能套用 `0xEC759`。
 
 `C7 46 34 00 00 00 00` 在各版本中出现多次，多数是无关结构体的 `+0x34` 清零。1.27 必须结合 `push 0x38`（参数块大小）和 `CGxDeviceD3d` 附近的 `Direct3DCreate9` 才能认定。
 
 ## 建议的解除顺序（实现时）
 
-1. 运行时或加载补丁把 1.27 的 `PresentationInterval` 改为 `IMMEDIATE`（或 hook `CreateDevice`/`Reset`）。
-2. 同步 `lockfb=0`，必要时再清 `Flags` 立即数。
-3. 把启动器 `maxfps` 写成目标上限（无限制时用较大值，不要假定 `0` 表示无限：注册回调按整数写入槽 `0x16`）。
-4. 原生全屏（`-nativefullscr`）会改变窗口化 vsync 行为，与 DLL 补丁是不同轴。
-5. 实机用 `/fps` 或 `" FPS: %-4.1f"` OSD 对比：只改注册表、只改 interval、两者都改。
+1. 打软件 64 点（`0x5FCFB` `FB`→`FF`）。
+2. 独占全屏与窗口化两条分支都把 `PresentationInterval` 写成 `IMMEDIATE`；清 lockable Flags。
+3. OpenGL 调 `wglSwapIntervalEXT(0)`。
+4. `maxfps` 用较大值（启动器已写 300；DLL 默认改为 10000）。`0` 不代表无限。
+5. 覆盖游戏目录后核对 SHA-256；用启动器切版本会从 `versions\` 还原原版 DLL。
+6. 实机 `/fps` 验证（本补丁仍未在本机测帧）。
 
 ## 未解决
 
-- 槽 `0x16` 的读取点与帧循环关系。
+- `FUN_6f05ae90(edx=0x11)` 内部如何变成 ~64Hz，尚未逐指令跟完。
 - `lockfb` 加载后是否写回 `Flags`。
-- OpenGL 交换间隔是否另有 `wglSwapInterval` 等价逻辑（本 DLL 无该字符串）。
-- 1.22–1.26 的 64 FPS 软件帽地址。
-- 任何候选补丁的实机帧率。
+- 补丁 DLL 的实机帧率。
