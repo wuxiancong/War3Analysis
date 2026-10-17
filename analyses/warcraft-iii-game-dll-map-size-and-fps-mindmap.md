@@ -42,8 +42,7 @@ mindmap
         FUN_6f179d50 建立设置注册记录
         FUN_6f35c680 回调输入路由到键 0x16
         下游设置与最终帧调度语义未知
-        已检查注册与回调未见限帧比较
-        没有已确认的硬编码补丁地址
+        现行解除见 warcraft-iii-fps-runtime-hooks.md
       函数位置
         注册 FUN_6f35d2d0
           RVA 0x35d2d0

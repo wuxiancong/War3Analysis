@@ -76,7 +76,7 @@
 | 候选替换 | `C7 46 34 00 00 00 80`（`D3DPRESENT_INTERVAL_IMMEDIATE`） | `C7 46 2C 00 00 00 00`（清 Flags） |
 | 特征 | `push 0x38` / `memset` 之后、对 `[esi+0x34]` 的立即数写 0 | 同一函数尾部对 `[esi+0x2C]` 写 1 |
 
-优先改 interval。只改 Flags 可能减轻 lockable 开销，但 DEFAULT 仍可能 vsync。运行时也可在 `CreateDevice`/`Reset` 挂钩里改同一字段（启动器 `war3hook.h` 已有 `D3DPRESENT_PARAMETERS_9` 定义，当前未见 FPS 专用 hook）。
+优先改 interval。只改 Flags 可能减轻 lockable 开销，但 DEFAULT 仍可能 vsync。运行时对应 `hookGameDirect3DPresentImmed`、`hookGameDirect3DWindowedSync`、`hookGameDirect3DLockableFlag`，说明见 [warcraft-iii-fps-runtime-hooks.md](warcraft-iii-fps-runtime-hooks.md)。
 
 **不要把这些 RVA 套到 1.26 及更早。** 那些版本是 D3D8。
 
@@ -158,14 +158,11 @@ void FUN_6f35c680(undefined4 value)
 
 `C7 46 34 00 00 00 00` 在各版本中出现多次，多数是无关结构体的 `+0x34` 清零。1.27 必须结合 `push 0x38`（参数块大小）和 `CGxDeviceD3d` 附近的 `Direct3DCreate9` 才能认定。
 
-## 建议的解除顺序（实现时）
+## 运行时实现
 
-1. 打软件 64 点（`0x5FCFB` `FB`→`FF`）。
-2. 独占全屏与窗口化两条分支都把 `PresentationInterval` 写成 `IMMEDIATE`；清 lockable Flags。
-3. OpenGL 调 `wglSwapIntervalEXT(0)`。
-4. `maxfps` 用较大值（启动器已写 300；DLL 默认改为 10000）。`0` 不代表无限。
-5. 覆盖游戏目录后核对 SHA-256；用启动器切版本会从 `versions\` 还原原版 DLL。
-6. 实机 `/fps` 验证（本补丁仍未在本机测帧）。
+六个钩子都要装。只改软件 64 点能去掉约 64 FPS，切换分辨率时设备参数和 `maxfps` 会重写，其余钩子不能省略。函数名、版本门闩和各自目的见 [warcraft-iii-fps-runtime-hooks.md](warcraft-iii-fps-runtime-hooks.md)。
+
+静态补丁若仍手工覆盖游戏目录：用启动器切版本会从 `versions\` 还原原版 DLL。`0` 不是无限帧率。
 
 ## 未解决
 

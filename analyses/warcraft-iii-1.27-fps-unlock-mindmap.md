@@ -75,10 +75,14 @@ mindmap
       D3D8 interval 在结构 0x38 不能套 1.27 的 0xEC759
       C7 46 34 立即数 0 假阳性多
     建议顺序
-      先改软件 64 点 0x5FCFB
-      再独占与窗口化都写 IMMEDIATE
-      再 lockfb 0 必要时清 Flags
-      再写 maxfps 上限 0 不代表无限
-      核对游戏目录 DLL 哈希
-      实机用 fps OSD 对比
+      运行时六个钩子都要装
+      只留软件帽则切换分辨率出问题
+      说明见 warcraft-iii-fps-runtime-hooks.md
+      软件点 Software_FpsKeepFlag
+      独占 Direct3DPresentImmed
+      1.27 窗口 Direct3DWindowedSync
+      1.27 Flags Direct3DLockableFlag
+      OpenGL OpenGLSwapInterval
+      maxfps 默认 MaxFpsDefaultTo10000
+      0 不代表无限
 ```

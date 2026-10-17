@@ -4,7 +4,7 @@
 
 - **地图大小：已在 1.27.0.52240 的 Game.dll 中由 REA/Ghidra 直接确认。** 处理网络事件的 `FUN_6f85f970` 在 `0x6f85f9b6` 比较地图数据大小与 `0x800000`（8 MiB / 8,388,608 字节）；大于该值时走拒绝路径。恰好 `0x800000` 不会被此比较拒绝。
 - **地图检查调用点与项目 hook 表吻合。** 1.27.0.52240 中 `0x6f861291` 是 `FUN_6f860ff0` 内的直接调用，目标为 `FUN_6f85f970`。项目源码把它们分别记录为 RVA `0x861291` 和 `0x85f970`。
-- **帧率：没有确认可用于解除限制的 Game.dll 代码补丁点。** REA 找到 `maxfps` 配置项的读取设置代码；项目的 `RegisterManager` 将 `fpsLimit` 写进 `HKCU\Software\Blizzard Entertainment\Warcraft III\Video\maxfps`。这支持“通过配置控制帧率上限”的路径，不支持声称存在已定位的 FPS 硬编码补丁。
+- **帧率：当时只追到 `maxfps` 注册，没有把软件帽和垂直同步算进去。** 现行的六个运行时钩子见 [warcraft-iii-fps-runtime-hooks.md](warcraft-iii-fps-runtime-hooks.md)。`RegisterManager` 仍把 `fpsLimit` 写入 `HKCU\Software\Blizzard Entertainment\Warcraft III\Video\maxfps`。
 - **版本范围：** REA/Ghidra 函数级分析针对 1.27.0.52240；下面 11 个版本的地图 hook 候选地址来自项目版本表，并逐个核验了 DLL 中的相对调用指令及其目的 RVA。除 1.27 外，未将其它版本描述为 REA 函数级反编译确认。
 
 ## 分析范围与方法
@@ -80,7 +80,7 @@ REA 还找到字符串 `NETERROR_MAPFILEBADSIZE`，其引用位于 `FUN_6f2b0650
 
 ## FPS 限制：观察结果
 
-> 1.27 的 D3D9 呈现间隔、`lockfb` 与跨版本普查已单独写成 [warcraft-iii-1.27-fps-unlock.md](warcraft-iii-1.27-fps-unlock.md)。下文保留当时对 `maxfps` 注册链的记录。
+> 下文保留当时对 `maxfps` 注册链的记录。帧率解除的现行结论不在这里：运行时六个钩子见 [warcraft-iii-fps-runtime-hooks.md](warcraft-iii-fps-runtime-hooks.md)，1.27 函数级证据见 [warcraft-iii-1.27-fps-unlock.md](warcraft-iii-1.27-fps-unlock.md)。
 
 ### Game.dll 中的 `maxfps` 引用
 
@@ -113,7 +113,7 @@ FUN_6f179ce0(&local_c, 0, FUN_6f35c680, &local_8, 0);
 
 本项目的 `RegisterManager` 使用 `QSettings` 指向 `HKCU\Software\Blizzard Entertainment\Warcraft III\Video`。`fpsLimit > 0` 时写入该数值，否则写入 `300`。`SettingsManager` 将配置文件中的 `Display/fpsLimit` 默认读为 `0`。这是启动器对游戏注册表设置的静态代码证据。
 
-**结论：** 对本项目，配置 `fpsLimit` 并同步到 `Video\maxfps` 是有源码支持的调控路径。Game.dll 中也有 `maxfps` 注册与回调，但现有静态证据没有确认具体的限帧指令或可安全修改的补丁点。用户观察到注册表设为 `0`、`300` 后均约为 60 FPS，不能据此单独归因于游戏内部、垂直同步、驱动或显示器刷新率；需进一步读取下游设置应用逻辑，仍无法判定时再单独授权受控运行时验证。
+**当时的结论：** 配置 `fpsLimit` 并同步到 `Video\maxfps` 有源码支持。这一节没有把 64 帧软件帽、垂直同步和 OpenGL 交换间隔算进解除路径；这三处加上 `maxfps` 默认值的运行时钩子见 [warcraft-iii-fps-runtime-hooks.md](warcraft-iii-fps-runtime-hooks.md)。用户观察到注册表设为 `0`、`300` 后均约为 60 FPS，不能单独归因于 `maxfps`。
 
 ## 证据索引
 

@@ -1,5 +1,7 @@
 # 全版本 Game.dll / war3.exe FPS 解锁偏移
 
+运行时六个钩子的用途、版本门闩，以及「只留软件帽则切换分辨率会出问题」见 [warcraft-iii-fps-runtime-hooks.md](warcraft-iii-fps-runtime-hooks.md)。本文只保留静态字节对齐。
+
 按 1.27 已实机验证的规律，对 `War3Launcher/versions` 下每个官方样本做了静态对齐。补丁由 `dll_game/patch_all_versions_fps.py` 生成，输出在 `dll_game/<版本>-fps-unlock-dx-ogl/`。**未修改** `versions/` 原件。除 1.27 外均未实机测帧。
 
 ## 规律
