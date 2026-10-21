@@ -1,0 +1,271 @@
+Opened log file 'D:\Qt\workspace\War3Analysis\analyses\war3-resetscene-filtered-20261021-032920.txt'
+
+************* Preparing the environment for Debugger Extensions Gallery repositories **************
+   ExtensionRepository : Implicit
+   UseExperimentalFeatureForNugetShare : true
+   AllowNugetExeUpdate : true
+   NonInteractiveNuget : true
+   AllowNugetMSCredentialProviderInstall : true
+   AllowParallelInitializationOfLocalRepositories : true
+   EnableRedirectToChakraJsProvider : false
+
+   -- Configuring repositories
+      ----> Repository : LocalInstalled, Enabled: true
+      ----> Repository : UserExtensions, Enabled: true
+
+>>>>>>>>>>>>> Preparing the environment for Debugger Extensions Gallery repositories completed, duration 0.156 seconds
+
+************* Waiting for Debugger Extensions Gallery to Initialize **************
+
+>>>>>>>>>>>>> Waiting for Debugger Extensions Gallery to Initialize completed, duration 0.390 seconds
+   ----> Repository : UserExtensions, Enabled: true, Packages count: 0
+   ----> Repository : LocalInstalled, Enabled: true, Packages count: 29
+
+Microsoft (R) Windows Debugger Version 10.0.28000.2270 X86
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+*** wait with pending attach
+NatVis script successfully loaded from 'D:\x86\Visualizers\atlmfc.natvis'
+NatVis script successfully loaded from 'D:\x86\Visualizers\concurrency.natvis'
+NatVis script successfully loaded from 'D:\x86\Visualizers\cpp_rest.natvis'
+NatVis script successfully loaded from 'D:\x86\Visualizers\ObjectiveC.natvis'
+NatVis script successfully loaded from 'D:\x86\Visualizers\stl.natvis'
+NatVis script successfully loaded from 'D:\x86\Visualizers\Windows.Data.Json.natvis'
+NatVis script successfully loaded from 'D:\x86\Visualizers\Windows.Devices.Geolocation.natvis'
+NatVis script successfully loaded from 'D:\x86\Visualizers\Windows.Devices.Sensors.natvis'
+NatVis script successfully loaded from 'D:\x86\Visualizers\Windows.Media.natvis'
+NatVis script successfully loaded from 'D:\x86\Visualizers\windows.natvis'
+NatVis script successfully loaded from 'D:\x86\Visualizers\winrt.natvis'
+
+************* Path validation summary **************
+Response                         Time (ms)     Location
+Deferred                                       srv*
+Symbol search path is: srv*
+Executable search path is: 
+ModLoad: 00db0000 00e3a000   X:\单机游戏\魔兽3-冰封王座ModLoad: 778e0000 77a84000   C:\Windows\SYSTEM32\ntdll.dll
+ModLoad: 764c0000 765b0000   C:\Windows\System32\KERNEL32.DLL
+ModLoad: 774e0000 77719000   C:\Windows\System32\KERNELBASE.dll
+ModLoad: 750f0000 75194000   C:\Windows\SYSTEM32\apphelp.dll
+ModLoad: 52740000 529c5000   C:\Windows\SYSTEM32\AcLayers.DLL
+ModLoad: 77780000 7783f000   C:\Windows\System32\msvcrt.dll
+ModLoad: 75f40000 760dc000   C:\Windows\System32\USER32.dll
+ModLoad: 77080000 77098000   C:\Windows\System32\win32u.dll
+ModLoad: 757d0000 757f3000   C:\Windows\System32\GDI32.dll
+ModLoad: 75800000 758e7000   C:\Windows\System32\gdi32full.dll
+ModLoad: 770a0000 7711b000   C:\Windows\System32\msvcp_win.dll
+ModLoad: 771a0000 772c0000   C:\Windows\System32\ucrtbase.dll
+ModLoad: 766e0000 76cbb000   C:\Windows\System32\SHELL32.dll
+ModLoad: 772c0000 77309000   C:\Windows\System32\SHLWAPI.dll
+ModLoad: 76e30000 76ec6000   C:\Windows\System32\OLEAUT32.dll
+ModLoad: 761e0000 76460000   C:\Windows\System32\combase.dll
+ModLoad: 76fc0000 77079000   C:\Windows\System32\RPCRT4.dll
+ModLoad: 759d0000 75e0a000   C:\Windows\System32\SETUPAPI.dll
+ModLoad: 77720000 7775b000   C:\Windows\System32\cfgmgr32.dll
+ModLoad: 765b0000 765c9000   C:\Windows\System32\bcrypt.dll
+ModLoad: 75030000 75049000   C:\Windows\SYSTEM32\MPR.dll
+ModLoad: 00d40000 00d43000   C:\Windows\SYSTEM32\sfc.dll
+ModLoad: 73d20000 73d9d000   C:\Windows\SYSTEM32\WINSPOOL.DRV
+ModLoad: 76f30000 76fb7000   C:\Windows\System32\shcore.dll
+ModLoad: 6d740000 6d74f000   C:\Windows\SYSTEM32\sfc_os.DLL
+ModLoad: 75e20000 75e45000   C:\Windows\System32\IMM32.DLL
+ModLoad: 765d0000 7667f000   C:\Windows\System32\COMDLG32.dll
+ModLoad: 77120000 7719d000   C:\Windows\System32\ADVAPI32.dll
+ModLoad: 76cc0000 76d37000   C:\Windows\System32\sechost.dll
+ModLoad: 73a20000 73aad000   C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.19041.6280_none_c0dab36c38bfeda0\COMCTL32.dll
+ModLoad: 73b20000 73b48000   C:\Windows\SYSTEM32\WINMM.dll
+ModLoad: 7a5c0000 7a621000   X:\单机游戏\魔兽3-冰封王座\ModLoad: 70670000 70ac5000   C:\Windows\SYSTEM32\WININET.dll
+ModLoad: 7a4d0000 7a5be000   X:\单机游戏\魔兽3-冰封王座\MSVModLoad: 21100000 2115f000   X:\单机游戏\魔兽3-冰封王座\ModLoad: 750e0000 750e8000   C:\Windows\SYSTEM32\WSOCK32.dll
+ModLoad: 75760000 757c3000   C:\Windows\System32\WS2_32.dll
+ModLoad: 752b0000 752b8000   C:\Windows\SYSTEM32\VERSION.dll
+ModLoad: 75e50000 75f33000   C:\Windows\System32\ole32.dll
+ModLoad: 755e0000 755ef000   C:\Windows\SYSTEM32\kernel.appcore.dll
+ModLoad: 76460000 764bf000   C:\Windows\System32\bcryptPrimitives.dll
+ModLoad: 75560000 755d4000   C:\Windows\system32\uxtheme.dll
+ModLoad: 77840000 778be000   C:\Windows\System32\clbcatq.dll
+ModLoad: 7a7f0000 7a81d000   X:\单机游戏\魔兽3-冰封王座ModLoad: 78670000 79348000   X:\单机游戏\魔兽3-冰封王座ModLoad: 704c0000 705c6000   C:\Windows\SYSTEM32\OPENGL32.dll
+ModLoad: 60000000 6005d000   X:\单机游戏\魔兽3-冰封王座\ModLoad: 7a820000 7a891000   X:\单机游戏\魔兽3-冰封王座\MSVModLoad: 70090000 700cf000   C:\Windows\SYSTEM32\GLU32.dll
+ModLoad: 747b0000 74dc8000   C:\Windows\SYSTEM32\windows.storage.dll
+ModLoad: 74780000 747a5000   C:\Windows\SYSTEM32\Wldp.dll
+ModLoad: 73320000 7332e000   C:\Windows\SYSTEM32\msasn1.dll
+ModLoad: 6ea40000 6ea66000   C:\Windows\SYSTEM32\cryptnet.dll
+ModLoad: 760e0000 761df000   C:\Windows\System32\CRYPT32.dll
+ModLoad: 73330000 7333a000   C:\Windows\SYSTEM32\cryptbase.dll
+ModLoad: 76680000 766d9000   C:\Windows\System32\wintrust.dll
+ModLoad: 77760000 77779000   C:\Windows\System32\imagehlp.dll
+ModLoad: 6edf0000 6ee03000   C:\Windows\SYSTEM32\CRYPTSP.dll
+ModLoad: 6ead0000 6eb01000   C:\Windows\system32\rsaenh.dll
+ModLoad: 642d0000 642fc000   C:\Windows\SYSTEM32\dxcore.dll
+ModLoad: 758f0000 759c4000   C:\Windows\System32\MSCTF.dll
+ModLoad: 737d0000 73889000   C:\Windows\SYSTEM32\textinputframework.dll
+ModLoad: 73730000 737cb000   C:\Windows\System32\CoreMessaging.dll
+ModLoad: 734b0000 7372f000   C:\Windows\System32\CoreUIComponents.dll
+ModLoad: 751a0000 751c9000   C:\Windows\SYSTEM32\ntmarta.dll
+ModLoad: 733d0000 734ad000   C:\Windows\SYSTEM32\wintypes.dll
+ModLoad: 73ea0000 73ea6000   C:\Windows\System32\MSIMG32.dll
+ModLoad: 10000000 1069c000   C:\Windows\system32\SogouPy.ime
+ModLoad: 6e170000 6e23a000   C:\Windows\SYSTEM32\WINHTTP.dll
+ModLoad: 73b50000 73ba3000   C:\Windows\SYSTEM32\OLEACC.dll
+ModLoad: 05770000 05986000   C:\Program Files (x86)\SogouInput\11.8.0.5496\Resource.dll
+ModLoad: 6fd40000 6ffa6000   C:\Program Files (x86)\SogouInput\Components\PicFace\1.1.0.3186\PicFace.dll
+ModLoad: 75e10000 75e16000   C:\Windows\System32\PSAPI.DLL
+ModLoad: 732e0000 73306000   C:\Windows\SYSTEM32\dwmapi.dll
+ModLoad: 745c0000 745db000   C:\Windows\SYSTEM32\profapi.dll
+ModLoad: 73890000 73925000   C:\Windows\SYSTEM32\TextShaping.dll
+ModLoad: 6e4f0000 6e682000   C:\Windows\SYSTEM32\d3d9.dll
+ModLoad: 69190000 69230000   C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_c8bc842500fab35b\nvldumd.dll
+ModLoad: 69090000 69190000   C:\Windows\SYSTEM32\drvstore.dll
+ModLoad: 73240000 73269000   C:\Windows\SYSTEM32\devobj.dll
+ModLoad: 644e0000 69042000   C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_c8bc842500fab35b\nvgpucomp32.dll
+ModLoad: 64300000 643f6000   C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_c8bc842500fab35b\NvMemMapStorage.dll
+ModLoad: 6ed70000 6edb4000   C:\Windows\SYSTEM32\POWRPROF.dll
+ModLoad: 73930000 7393d000   C:\Windows\SYSTEM32\UMPDC.dll
+ModLoad: 09ad0000 0dc1a000   C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_c8bc842500fab35b\nvd3dum.dll
+ModLoad: 732a0000 732be000   C:\Windows\SYSTEM32\gpapi.dll
+ModLoad: 531f0000 53330000   C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_c8bc842500fab35b\nvppe.dll
+ModLoad: 69230000 69395000   C:\Windows\SYSTEM32\dcomp.dll
+ModLoad: 6f060000 6f0f3000   C:\Windows\SYSTEM32\mscms.dll
+ModLoad: 739f0000 73a15000   C:\Windows\SYSTEM32\USERENV.dll
+ModLoad: 74710000 7471c000   C:\Windows\SYSTEM32\ColorAdapterClient.dll
+ModLoad: 57d30000 57eb5000   C:\Windows\System32\SogouTSF.ime
+ModLoad: 69050000 69081000   C:\Windows\System32\Windows.Internal.Graphics.Display.DisplayColorManagement.dll
+ModLoad: 26f00000 26f2a000   X:\单机游戏\魔兽3-冰封王座\redist\miles\MModLoad: 22700000 22717000   X:\单机游戏\魔兽3-冰封王座\redist\miles\MssModLoad: 22c00000 22c18000   X:\单机游戏\魔兽3-冰封王座\redist\miles\MsModLoad: 22600000 22616000   X:\单机游戏\魔兽3-冰封王座\redist\miles\MsModLoad: 24600000 24611000   X:\单机游戏\魔兽3-冰封王座\redist\miles\ReModLoad: 6ecf0000 6ed6f000   C:\Windows\SYSTEM32\DSOUND.DLL
+ModLoad: 73220000 7323d000   C:\Windows\SYSTEM32\winmmbase.dll
+ModLoad: 6e9d0000 6ea3b000   C:\Windows\System32\MMDevApi.dll
+ModLoad: 6e690000 6e7c6000   C:\Windows\SYSTEM32\AUDIOSES.DLL
+ModLoad: 7b460000 7b46f000   C:\Windows\SYSTEM32\resourcepolicyclient.dll
+ModLoad: 6b9e0000 6bad3000   C:\Windows\System32\Windows.UI.dll
+ModLoad: 6b8f0000 6b9dd000   C:\Windows\System32\InputHost.dll
+ModLoad: 6c680000 6c6f3000   C:\Windows\System32\WindowManagementAPI.dll
+ModLoad: 6e7e0000 6e971000   C:\Windows\SYSTEM32\twinapi.appcore.dll
+ModLoad: 745f0000 746b0000   C:\Windows\System32\PROPSYS.dll
+ModLoad: 6e980000 6e988000   C:\Windows\SYSTEM32\avrt.dll
+ModLoad: 7a8a0000 7aa08000   D:\Qt\workspace\War3Launcher\build\Desktop_Qt_5_15_2_VSCode_MSVC_32bit_Release\hook.dll
+ModLoad: 7aa10000 7ab2e000   X:\单机游戏\魔兽3-冰封王座\dbModLoad: 73bb0000 73d19000   C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.19041.6216_none_d94ccfa7e1087f2c\gdiplus.dll
+ModLoad: 75080000 750d2000   C:\Windows\SYSTEM32\mswsock.dll
+ModLoad: 794f0000 796ef000   C:\Windows\SYSTEM32\d3dx9_43.dll
+ModLoad: 702b0000 704bc000   C:\Windows\SYSTEM32\DWrite.dll
+(6f14.67e8): Break instruction exception - code 80000003 (first chance)
+eax=0113a000 ebx=00000000 ecx=7798dbb0 edx=7798dbb0 esi=7798dbb0 edi=7798dbb0
+eip=77955560 esp=0828feec ebp=0828ff18 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!DbgBreakPoint:
+77955560 cc              int     3
+0:059> .echo === Conditional ResetScene logpoint: ignore caller game+0xECC22 ===
+=== Conditional ResetScene logpoint: ignore caller game+0xECC22 ===
+0:059> .time
+Debug session time: Wed Oct 21 03:29:32.499 2026 (UTC + 8:00)
+System Uptime: 0 days 4:38:55.450
+Process Uptime: 0 days 0:02:54.616
+  Kernel time: 0 days 0:00:03.500
+  User time: 0 days 0:00:08.109
+0:059> bu d3d9+0xe6500 ".if (poi(@esp) != game+0xECC22) { .echo *** RESET CALLER OTHER THAN game+0xECC22 ***; .time; r; kb 10; gc } .else { gc }"
+0:059> bl
+ 0 e 000f38d9     0001 (0001)  0:****  ".if (poi(@esp) != game+0xECC22) { .echo *** RESET CALLER OTHER THAN game+0xECC22 ***; .time; r; kb 10; gc } .else { gc }"
+0:059> g
+Unable to insert breakpoint 0 at 000f38d9, Win32 error 0n299
+    "仅完成部分的 ReadProcessMemory 或 WriteProcessMem"
+bp0 at 000f38d9 failed
+eax=0113a000 ebx=00000000 ecx=7798dbb0 edx=7798dbb0 esi=7798dbb0 edi=7798dbb0
+eip=77955561 esp=0828feec ebp=0828ff18 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!DbgBreakPoint+0x1:
+77955561 c3              ret
+0:059> g
+Unable to insert breakpoint 0 at 000f38d9, Win32 error 0n299
+    "仅完成部分的 ReadProcessMemory 或 WriteProcessMem"
+bp0 at 000f38d9 failed
+eax=0113a000 ebx=00000000 ecx=7798dbb0 edx=7798dbb0 esi=7798dbb0 edi=7798dbb0
+eip=77955561 esp=0828feec ebp=0828ff18 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!DbgBreakPoint+0x1:
+77955561 c3              ret
+0:059> g
+Unable to insert breakpoint 0 at 000f38d9, Win32 error 0n299
+    "仅完成部分的 ReadProcessMemory 或 WriteProcessMem"
+bp0 at 000f38d9 failed
+eax=0113a000 ebx=00000000 ecx=7798dbb0 edx=7798dbb0 esi=7798dbb0 edi=7798dbb0
+eip=77955561 esp=0828feec ebp=0828ff18 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!DbgBreakPoint+0x1:
+77955561 c3              ret
+0:059> g
+Unable to insert breakpoint 0 at 000f38d9, Win32 error 0n299
+    "仅完成部分的 ReadProcessMemory 或 WriteProcessMem"
+bp0 at 000f38d9 failed
+eax=0113a000 ebx=00000000 ecx=7798dbb0 edx=7798dbb0 esi=7798dbb0 edi=7798dbb0
+eip=77955561 esp=0828feec ebp=0828ff18 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!DbgBreakPoint+0x1:
+77955561 c3              ret
+0:059> g
+Unable to insert breakpoint 0 at 000f38d9, Win32 error 0n299
+    "仅完成部分的 ReadProcessMemory 或 WriteProcessMem"
+bp0 at 000f38d9 failed
+eax=0113a000 ebx=00000000 ecx=7798dbb0 edx=7798dbb0 esi=7798dbb0 edi=7798dbb0
+eip=77955561 esp=0828feec ebp=0828ff18 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!DbgBreakPoint+0x1:
+77955561 c3              ret
+0:059> g
+Unable to insert breakpoint 0 at 000f38d9, Win32 error 0n299
+    "仅完成部分的 ReadProcessMemory 或 WriteProcessMem"
+bp0 at 000f38d9 failed
+eax=0113a000 ebx=00000000 ecx=7798dbb0 edx=7798dbb0 esi=7798dbb0 edi=7798dbb0
+eip=77955561 esp=0828feec ebp=0828ff18 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!DbgBreakPoint+0x1:
+77955561 c3              ret
+0:059> g
+Unable to insert breakpoint 0 at 000f38d9, Win32 error 0n299
+    "仅完成部分的 ReadProcessMemory 或 WriteProcessMem"
+bp0 at 000f38d9 failed
+eax=0113a000 ebx=00000000 ecx=7798dbb0 edx=7798dbb0 esi=7798dbb0 edi=7798dbb0
+eip=77955561 esp=0828feec ebp=0828ff18 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!DbgBreakPoint+0x1:
+77955561 c3              ret
+0:059> g
+Unable to insert breakpoint 0 at 000f38d9, Win32 error 0n299
+    "仅完成部分的 ReadProcessMemory 或 WriteProcessMem"
+bp0 at 000f38d9 failed
+eax=0113a000 ebx=00000000 ecx=7798dbb0 edx=7798dbb0 esi=7798dbb0 edi=7798dbb0
+eip=77955561 esp=0828feec ebp=0828ff18 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!DbgBreakPoint+0x1:
+77955561 c3              ret
+0:059> g
+Unable to insert breakpoint 0 at 000f38d9, Win32 error 0n299
+    "仅完成部分的 ReadProcessMemory 或 WriteProcessMem"
+bp0 at 000f38d9 failed
+eax=0113a000 ebx=00000000 ecx=7798dbb0 edx=7798dbb0 esi=7798dbb0 edi=7798dbb0
+eip=77955561 esp=0828feec ebp=0828ff18 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!DbgBreakPoint+0x1:
+77955561 c3              ret
+0:059> g
+Unable to insert breakpoint 0 at 000f38d9, Win32 error 0n299
+    "仅完成部分的 ReadProcessMemory 或 WriteProcessMem"
+bp0 at 000f38d9 failed
+eax=0113a000 ebx=00000000 ecx=7798dbb0 edx=7798dbb0 esi=7798dbb0 edi=7798dbb0
+eip=77955561 esp=0828feec ebp=0828ff18 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!DbgBreakPoint+0x1:
+77955561 c3              ret
+0:059> g
+Unable to insert breakpoint 0 at 000f38d9, Win32 error 0n299
+    "仅完成部分的 ReadProcessMemory 或 WriteProcessMem"
+bp0 at 000f38d9 failed
+eax=0113a000 ebx=00000000 ecx=7798dbb0 edx=7798dbb0 esi=7798dbb0 edi=7798dbb0
+eip=77955561 esp=0828feec ebp=0828ff18 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!DbgBreakPoint+0x1:
+77955561 c3              ret
+0:059> g
+Unable to insert breakpoint 0 at 000f38d9, Win32 error 0n299
+    "仅完成部分的 ReadProcessMemory 或 WriteProcessMem"
+bp0 at 000f38d9 failed
+eax=0113a000 ebx=00000000 ecx=7798dbb0 edx=7798dbb0 esi=7798dbb0 edi=7798dbb0
+eip=77955561 esp=0828feec ebp=0828ff18 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!DbgBreakPoint+0x1:
+77955561 c3              ret

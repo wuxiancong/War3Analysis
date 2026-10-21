@@ -66,8 +66,11 @@ War3Analysis/
 ## 当前分析
 
 - [Warcraft III 1.27 FPS 限制与解除路径](analyses/warcraft-iii-1.27-fps-unlock.md)（[思维导图](analyses/warcraft-iii-1.27-fps-unlock-mindmap.md)）
+- [Warcraft III 各版本 D3D Reset 边界与分辨率切换分析](analyses/warcraft-iii-all-versions-resolution-reset-boundaries.md)（[思维导图](analyses/warcraft-iii-all-versions-resolution-reset-boundaries-mindmap.md)）
+- [Warcraft III 挂起 Dump 初步分析（2026-10-21）](analyses/warcraft-iii-hang-dump-2026-10-21.md)（[思维导图](analyses/warcraft-iii-hang-dump-2026-10-21-mindmap.md)）
 - [全版本 FPS 解锁偏移](analyses/warcraft-iii-all-versions-fps-unlock.md)（补丁：`dll_game/<版本>-fps-unlock-dx-ogl/`）
 - [Warcraft III Game.dll 地图大小与 FPS 静态分析](analyses/warcraft-iii-game-dll-map-size-and-fps.md)（FPS 专文见上）
+- [全版本地图大小限制与补丁](analyses/warcraft-iii-all-versions-map-size-unlock.md)（[思维导图](analyses/warcraft-iii-all-versions-map-size-unlock-mindmap.md)，补丁：`patch/grok/dll_game/<版本>-map-size-unlock/`）
 - [Warcraft III 1.27 Battle.net 按钮状态分析](analyses/warcraft-iii-1.27-battlenet-button.md)
 - [DotA v6.83d SD 三选一英雄候选链路分析](analyses/dota-6.83d-single-draft-candidates.md)
 

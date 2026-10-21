@@ -2,7 +2,9 @@
 
 运行时六个钩子的用途、版本门闩，以及「只留软件帽则切换分辨率会出问题」见 [warcraft-iii-fps-runtime-hooks.md](warcraft-iii-fps-runtime-hooks.md)。本文只保留静态字节对齐。
 
-按 1.27 已实机验证的规律，对 `War3Launcher/versions` 下每个官方样本做了静态对齐。补丁由 `dll_game/patch_all_versions_fps.py` 生成，输出在 `dll_game/<版本>-fps-unlock-dx-ogl/`。**未修改** `versions/` 原件。除 1.27 外均未实机测帧。
+按 1.27 已实机验证的规律，对 `War3Launcher/versions` 下每个官方样本做了静态对齐。字节补丁使用现有 `War3Analysis/patch/grok/dll_game/patch_all_versions_fps.py`；本次待验证副本输出到 `War3Analysis/patch/copilot/dll_game/<版本>-fps-unlock-dx-ogl/`。**未修改** `versions/` 原件；补丁尚未在所有版本实机验证。
+
+本次供验证的副本位于 `War3Analysis/patch/copilot/dll_game/<版本>-fps-unlock-dx-ogl/`。其中 1.0.17–1.21 的软件 64 FPS 限制在 `war3.exe`，相应目录也包含配套补丁 `war3.exe`；这四个版本若只替换 DLL，软件帧率帽仍在。输出 DLL 与早期 EXE 均为测试副本，原始 `War3Launcher/versions/` 文件保持不变。补丁本身尚未在各版本实机验证。
 
 ## 规律
 
@@ -58,3 +60,10 @@
 - **1.22+ 只覆盖 `game.dll`**；**1.21 及更早覆盖 `game.dll` + `war3.exe`**。
 - 用启动器进游戏会按版本从 `versions\` 拷回原件；测补丁请覆盖游戏目录后不要再切版本。
 - 1.27 你已验证的 D3D 那份在 `dll_game/1.27.0.52240-fps-unlock-d3d9-ogl/`。本次 `...-fps-unlock-dx-ogl` 加了 reloc，OpenGL 必须用新 DLL 重测。
+
+## 本次交付与静态核验
+
+- 11 个版本的 `game.dll` 及 1.0.17–1.21 的 4 个必需 `war3.exe` 副本在 `War3Analysis/patch/copilot/dll_game/`；清单、SHA-256 和测试提醒见其中的 `README.md`。
+- 每份输出都从对应 `versions` 原件按已核对的字节补丁重建，并与交付文件逐字节比较；早期版本 EXE 也同样核对。该结果不代替游戏运行、切换分辨率、实际 `/fps` 或设备兼容性测试。
+- 全版本思维导图见 [warcraft-iii-all-versions-fps-unlock-mindmap.md](warcraft-iii-all-versions-fps-unlock-mindmap.md)。
+- 本次没有改动 [war3hook.cpp](../../War3Launcher/hooker/war3hook.cpp)。静态补丁验证与运行时 hook 的改分辨率崩溃/卡住是两个独立待验证事项。

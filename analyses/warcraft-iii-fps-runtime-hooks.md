@@ -1,6 +1,6 @@
 # 运行时 FPS 钩子
 
-启动器在 `hooker/war3hook.cpp` 里用六个 inline hook 解除帧率限制，不改 `versions/` 里的原版 `game.dll` / `war3.exe`。静态补丁字节表仍在 [warcraft-iii-all-versions-fps-unlock.md](warcraft-iii-all-versions-fps-unlock.md)，1.27 的函数级证据在 [warcraft-iii-1.27-fps-unlock.md](warcraft-iii-1.27-fps-unlock.md)。
+启动器在 `hooker/war3hook.cpp` 里用六个 inline hook 解除帧率限制，另有一个只在 1.27 安装的空设备保护。不改 `versions/` 里的原版 `game.dll` / `war3.exe`。静态补丁字节表仍在 [warcraft-iii-all-versions-fps-unlock.md](warcraft-iii-all-versions-fps-unlock.md)，1.27 的函数级证据在 [warcraft-iii-1.27-fps-unlock.md](warcraft-iii-1.27-fps-unlock.md)。
 
 ## 结论
 
@@ -45,6 +45,14 @@
 
 1.26 及更早的窗口化 `CreateDevice` 拒绝 `IMMEDIATE`。这条指令只在独占分支上，后面是 `EB` 跳过窗口化路径，钩子不要扩到窗口化那一支。
 
+同一条指令也被全屏 `Reset` 使用。1.26 及更早在选项里改分辨率会 `Reset`；D3D8 在这次调用里带着 `IMMEDIATE` 会卡住驱动，然后进程退出。1.27 的 D3D9 走跳板，不进这段判断。标志不是 2 时：渲染器 `+0x584` 上已经有设备，或者填充函数的返回地址是 `Reset` 调用点，就把间隔写回 `0`。第一次 `CreateDevice`（设备指针还是空）仍写 `IMMEDIATE`。改完分辨率后全屏回到刷新率，64 帧软件帽仍然由 `Software_FpsKeepFlag` 按住。1.22–1.26 的渲染器在 `edi`，1.21 及更早在 `ebx`。
+
+### `hookGameDirect3DNullDevice__`
+
+只在 1.27 安装。选项里改分辨率会先 `Release` 设备并把 `+0x584` 写成 0，随后每帧仍会调用 `TestCooperativeLevel`（`mov eax, [esi+584h]` / `mov ecx, [eax]`，RVA `0xECB54`）。设备已经是空指针时，这条指令就是 `crash_20261018_064149_229.dmp` 里的访问违规。
+
+设备非空时跳板原样执行。设备为空时跳到这个函数自己的失败返回（RVA `0xECBA9`，`pop edi; xor eax, eax`），不再解引用空指针。
+
 ### `hookGameDirect3DWindowedSync`
 
 只在标志 2（1.27 及以上）安装。1.27 的窗口化分支不写 `PresentationInterval`，`memset` 之后仍是 `DEFAULT`，窗口和改分辨率都会重新 vsync。
@@ -69,7 +77,7 @@
 
 去掉 OpenGL 的交换间隔。启动参数 `-opengl` 时才会走到 `wglMakeCurrent` 后面的那条 `call`；改分辨率会再次建立上下文，所以不能只在第一次启动时处理。
 
-这是 `HookType::DirectCall`。裸函数先调用原来的函数，再 `wglGetProcAddress("wglSwapIntervalEXT")`，对当前上下文调用 `wglSwapIntervalEXT(0)`。先调原函数，是因为原函数自己可能把间隔设回非 0。
+这是 `HookType::DirectCall`。裸函数先调用原来的函数，再在 `wglGetCurrentContext()` 非空时重新 `wglGetProcAddress("wglSwapIntervalEXT")` 并调用 `wglSwapIntervalEXT(0)`。先调原函数，是因为原函数自己可能把间隔设回非 0。没有当前上下文时不取扩展入口：改分辨率会拆掉旧上下文，这时调用 `wglGetProcAddress` 会把后面的设备检查打成空指针。
 
 运行时不往节区空隙写 cave，也不写死 `FF 15 0x6Fxxxxxx`。空隙的 VirtualSize 可能没有映射；写死的 ImageBase 在重定位后会访问违规。静态补丁用过的 `call $+5 / pop ebx` 还会在 1.26 改分辨率时打坏 `ebx`。
 

@@ -4,7 +4,7 @@
 
 - **地图大小：已在 1.27.0.52240 的 Game.dll 中由 REA/Ghidra 直接确认。** 处理网络事件的 `FUN_6f85f970` 在 `0x6f85f9b6` 比较地图数据大小与 `0x800000`（8 MiB / 8,388,608 字节）；大于该值时走拒绝路径。恰好 `0x800000` 不会被此比较拒绝。
 - **地图检查调用点与项目 hook 表吻合。** 1.27.0.52240 中 `0x6f861291` 是 `FUN_6f860ff0` 内的直接调用，目标为 `FUN_6f85f970`。项目源码把它们分别记录为 RVA `0x861291` 和 `0x85f970`。
-- **帧率：当时只追到 `maxfps` 注册，没有把软件帽和垂直同步算进去。** 现行的六个运行时钩子见 [warcraft-iii-fps-runtime-hooks.md](warcraft-iii-fps-runtime-hooks.md)。`RegisterManager` 仍把 `fpsLimit` 写入 `HKCU\Software\Blizzard Entertainment\Warcraft III\Video\maxfps`。
+- **帧率：没有确认可用于解除限制的 Game.dll 代码补丁点。** REA 找到 `maxfps` 配置项的读取设置代码；项目的 `RegisterManager` 将 `fpsLimit` 写进 `HKCU\Software\Blizzard Entertainment\Warcraft III\Video\maxfps`。这支持“通过配置控制帧率上限”的路径，不支持声称存在已定位的 FPS 硬编码补丁。
 - **版本范围：** REA/Ghidra 函数级分析针对 1.27.0.52240；下面 11 个版本的地图 hook 候选地址来自项目版本表，并逐个核验了 DLL 中的相对调用指令及其目的 RVA。除 1.27 外，未将其它版本描述为 REA 函数级反编译确认。
 
 ## 分析范围与方法
@@ -80,8 +80,6 @@ REA 还找到字符串 `NETERROR_MAPFILEBADSIZE`，其引用位于 `FUN_6f2b0650
 
 ## FPS 限制：观察结果
 
-> 下文保留当时对 `maxfps` 注册链的记录。帧率解除的现行结论不在这里：运行时六个钩子见 [warcraft-iii-fps-runtime-hooks.md](warcraft-iii-fps-runtime-hooks.md)，1.27 函数级证据见 [warcraft-iii-1.27-fps-unlock.md](warcraft-iii-1.27-fps-unlock.md)。
-
 ### Game.dll 中的 `maxfps` 引用
 
 REA 找到 `maxfps` 字符串 VA `0x6f951428`。引用点位于 `FUN_6f35d2d0`：
@@ -94,26 +92,11 @@ FUN_6f179ce0(&local_c, 0, FUN_6f35c680, &local_8, 0);
 
 对应调用参数中，`ECX` 指向 `maxfps` 字符串。Ghidra 对此代码的识别足以确认它将 `maxfps` 传入一段配置读取/注册逻辑，但匿名函数名及反编译结果不足以单独证明 `200` 是 FPS 上限、默认值还是内部参数。REA 还找到格式字符串 `" FPS: %-4.1f"`，其引用属于 FPS 显示路径；显示字符串不是限制逻辑本身。
 
-沿调用链追加检查后可确认：
-
-- `FUN_6f179ce0` 将参数转交给 `FUN_6f179d50`，并调用 `STORM.DLL` 的 `Ordinal_580`；`FUN_6f179d50` 分配并填写一条设置注册记录，保存回调指针及其它参数。该结构初始化路径没有呈现 FPS 数值比较或限幅。
-- `FUN_6f35c680` 是传入的回调。它把收到的参数传给以 `0x16` 为键的 `FUN_6f023e00`、`FUN_6f025a70` 和 `FUN_6f023240`。因此可以确认该配置值被路由到 Game.dll 内部的 `0x16` 设置项；但因这些下游函数尚未分析，`0x16` 对应状态、数值转换和最终帧调度行为仍未知。
-- 所以，`200` 是注册调用中的一个参数，不能仅根据该位置认定为帧率硬上限；当前追到的回调和注册辅助代码也没有发现适合直接解除限制的比较指令。
-
-相关入口及文件位置（目标 ImageBase 为 `0x6f000000`；这些代码位于 `.text`，文件偏移为 RVA 减 `0xC00`）：
-
-| 函数 | VA | RVA | 文件偏移 | 当前静态观察 |
-|---|---:|---:|---:|---|
-| `FUN_6f35d2d0` | `0x6f35d2d0` | `0x35d2d0` | `0x35c6d0` | 注册 `maxfps`，参数含 `3`、回调地址、`200` |
-| `FUN_6f35c680` | `0x6f35c680` | `0x35c680` | `0x35ba80` | 将回调输入路由到 Game.dll 设置键 `0x16` |
-| `FUN_6f179ce0` | `0x6f179ce0` | `0x179ce0` | `0x1790e0` | 调用 Storm ordinal 并转发注册参数 |
-| `FUN_6f179d50` | `0x6f179d50` | `0x179d50` | `0x179150` | 建立并填充设置注册记录 |
-
 ### 启动器写入路径
 
 本项目的 `RegisterManager` 使用 `QSettings` 指向 `HKCU\Software\Blizzard Entertainment\Warcraft III\Video`。`fpsLimit > 0` 时写入该数值，否则写入 `300`。`SettingsManager` 将配置文件中的 `Display/fpsLimit` 默认读为 `0`。这是启动器对游戏注册表设置的静态代码证据。
 
-**当时的结论：** 配置 `fpsLimit` 并同步到 `Video\maxfps` 有源码支持。这一节没有把 64 帧软件帽、垂直同步和 OpenGL 交换间隔算进解除路径；这三处加上 `maxfps` 默认值的运行时钩子见 [warcraft-iii-fps-runtime-hooks.md](warcraft-iii-fps-runtime-hooks.md)。用户观察到注册表设为 `0`、`300` 后均约为 60 FPS，不能单独归因于 `maxfps`。
+**结论：** 对本项目，配置 `fpsLimit` 并同步到 `Video\maxfps` 是有源码支持的调控路径；目前没有 REA 证据证明应修改某个 Game.dll FPS 比较常量/函数来解除帧率限制。若要确认游戏是否实际遵循该配置及数值效果，需要在对应游戏版本上做受控运行时观测。
 
 ## 证据索引
 
@@ -127,9 +110,6 @@ FUN_6f179ce0(&local_c, 0, FUN_6f35c680, &local_8, 0);
 | `analyze_function(0x6f861291)` | `ev_5fa0a569f3974316f58a797d1b6c780da067199eb125bbe0e7cb9a8737513362` | 所在分派函数 `FUN_6f860ff0`；0x3d 分支调用大小检查函数 |
 | `trace_feature("maxfps")` | `ev_ef7b91a2488895eb033bf6d34701249f776161cd59189090242fd6c78276768b` | `maxfps` 字符串引用到读取/注册辅助函数 |
 | `analyze_function(0x6f35d2d0)` | `ev_ea04842b6531d722dae30e4750bdb62801bf0a65e997befb45940b2a6165a1f6` | `maxfps` 调用点及其参数 |
-| `analyze_function(0x6f35c680)` | `ev_0752fcbdfdfe0ae491ebd53e0c025bfc29c3ab7965d91f19f47aa44c062802c9` | 配置回调将输入路由至 Game.dll 设置键 `0x16` |
-| `analyze_function(0x6f179d50)` | `ev_84b9df8e622b2ceaf8a3ee4931b7574136bbefae69938829bfdb4a699e4e62f0` | 注册记录构造；未见限帧比较 |
-| `analyze_function(0x6f179ce0)` | `ev_9822ebffd979236f0c1a68665f1de0d88a4a2ce7fb9a815a43064745091fa9d1` | 注册辅助入口转发参数并调用 Storm ordinal |
 
 ### 仓库源码交叉佐证
 
