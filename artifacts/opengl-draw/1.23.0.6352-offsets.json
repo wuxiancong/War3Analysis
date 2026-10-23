@@ -1,0 +1,701 @@
+{
+ "imagebase": "0x6f000000",
+ "iat": {
+  "glVertexPointer": "0x870484",
+  "glColorPointer": "0x870490",
+  "glDrawElements": "0x870494",
+  "glTexCoordPointer": "0x870498",
+  "glViewport": "0x87049c",
+  "glScissor": "0x8704a4",
+  "glMatrixMode": "0x8704a8",
+  "glLoadMatrixf": "0x8704ac",
+  "glFinish": "0x8704b0",
+  "wglSwapLayerBuffers": "0x8704b4",
+  "glReadPixels": "0x8704bc",
+  "glClearColor": "0x8704c0",
+  "glClear": "0x8704c4",
+  "glDepthFunc": "0x8704e4",
+  "glDrawBuffer": "0x8704e8",
+  "glDepthMask": "0x8704f8",
+  "glDisable": "0x870500",
+  "glDisableClientState": "0x870504",
+  "glEnable": "0x870508",
+  "glEnableClientState": "0x87050c",
+  "glBlendFunc": "0x870510",
+  "glBindTexture": "0x87051c",
+  "glTexImage2D": "0x870528",
+  "glTexSubImage2D": "0x87052c",
+  "wglGetProcAddress": "0x870534",
+  "glGetIntegerv": "0x870538",
+  "glGetString": "0x87053c",
+  "wglDeleteContext": "0x870540",
+  "wglCreateContext": "0x870544",
+  "wglMakeCurrent": "0x870548"
+ },
+ "callsites": {
+  "wglSwapLayerBuffers": [
+   {
+    "site": "0x5253a5",
+    "func": "0x525370",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d3942",
+    "func": "0x7d3921",
+    "kind": "thunk"
+   }
+  ],
+  "wglMakeCurrent": [
+   {
+    "site": "0x51c7c2",
+    "func": "0x51c780",
+    "kind": "call"
+   },
+   {
+    "site": "0x523657",
+    "func": "0x523650",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d3864",
+    "func": "0x7d37d1",
+    "kind": "thunk"
+   }
+  ],
+  "wglCreateContext": [
+   {
+    "site": "0x52362a",
+    "func": "0x5235f7",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d386a",
+    "func": "0x7d37d1",
+    "kind": "thunk"
+   }
+  ],
+  "wglDeleteContext": [
+   {
+    "site": "0x52365e",
+    "func": "0x523650",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d3870",
+    "func": "0x7d37d1",
+    "kind": "thunk"
+   }
+  ],
+  "wglGetProcAddress": [
+   {
+    "site": "0x7d3882",
+    "func": "0x7d37d1",
+    "kind": "thunk"
+   }
+  ],
+  "glDrawElements": [
+   {
+    "site": "0x525ae0",
+    "func": "0x525ab0",
+    "kind": "call"
+   },
+   {
+    "site": "0x526026",
+    "func": "0x525f86",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d3972",
+    "func": "0x7d3921",
+    "kind": "thunk"
+   }
+  ],
+  "glClear": [
+   {
+    "site": "0x52523a",
+    "func": "0x525140",
+    "kind": "call"
+   },
+   {
+    "site": "0x52534c",
+    "func": "0x525290",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d392a",
+    "func": "0x7d3921",
+    "kind": "thunk"
+   }
+  ],
+  "glClearColor": [
+   {
+    "site": "0x52522f",
+    "func": "0x525140",
+    "kind": "call"
+   },
+   {
+    "site": "0x52532f",
+    "func": "0x525290",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d3930",
+    "func": "0x7d3921",
+    "kind": "thunk"
+   }
+  ],
+  "glViewport": [
+   {
+    "site": "0x525708",
+    "func": "0x525610",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d3966",
+    "func": "0x7d3921",
+    "kind": "thunk"
+   }
+  ],
+  "glScissor": [
+   {
+    "site": "0x52572a",
+    "func": "0x525610",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d395a",
+    "func": "0x7d3921",
+    "kind": "thunk"
+   }
+  ],
+  "glFinish": [
+   {
+    "site": "0x525af0",
+    "func": "0x525ab0",
+    "kind": "thunk"
+   },
+   {
+    "site": "0x526038",
+    "func": "0x525f86",
+    "kind": "thunk"
+   },
+   {
+    "site": "0x7d3948",
+    "func": "0x7d3921",
+    "kind": "thunk"
+   }
+  ],
+  "glDrawBuffer": [
+   {
+    "site": "0x5244f6",
+    "func": "0x524340",
+    "kind": "call"
+   },
+   {
+    "site": "0x524e6d",
+    "func": "0x524990",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d38f4",
+    "func": "0x7d37d1",
+    "kind": "thunk"
+   }
+  ],
+  "glMatrixMode": [
+   {
+    "site": "0x5255eb",
+    "func": "0x525570",
+    "kind": "call"
+   },
+   {
+    "site": "0x5257b7",
+    "func": "0x525780",
+    "kind": "call"
+   },
+   {
+    "site": "0x5258fc",
+    "func": "0x5257e0",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d3954",
+    "func": "0x7d3921",
+    "kind": "thunk"
+   }
+  ],
+  "glLoadMatrixf": [
+   {
+    "site": "0x5255f5",
+    "func": "0x525570",
+    "kind": "call"
+   },
+   {
+    "site": "0x5257c8",
+    "func": "0x525780",
+    "kind": "call"
+   },
+   {
+    "site": "0x525906",
+    "func": "0x5257e0",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d394e",
+    "func": "0x7d3921",
+    "kind": "thunk"
+   }
+  ],
+  "glBindTexture": [
+   {
+    "site": "0x523b32",
+    "func": "0x523ac0",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d38a6",
+    "func": "0x7d37d1",
+    "kind": "thunk"
+   }
+  ],
+  "glEnable": [
+   {
+    "site": "0x52403d",
+    "func": "0x523fa0",
+    "kind": "call"
+   },
+   {
+    "site": "0x524732",
+    "func": "0x524520",
+    "kind": "call"
+   },
+   {
+    "site": "0x524b30",
+    "func": "0x524990",
+    "kind": "call"
+   },
+   {
+    "site": "0x525c47",
+    "func": "0x525c20",
+    "kind": "call"
+   },
+   {
+    "site": "0x525fff",
+    "func": "0x525f86",
+    "kind": "call"
+   },
+   {
+    "site": "0x524f69",
+    "func": "0x524f00",
+    "kind": "thunk"
+   },
+   {
+    "site": "0x525074",
+    "func": "0x52505b",
+    "kind": "thunk"
+   },
+   {
+    "site": "0x7d38c4",
+    "func": "0x7d37d1",
+    "kind": "thunk"
+   }
+  ],
+  "glDisable": [
+   {
+    "site": "0x524019",
+    "func": "0x523fa0",
+    "kind": "call"
+   },
+   {
+    "site": "0x52473a",
+    "func": "0x524520",
+    "kind": "call"
+   },
+   {
+    "site": "0x524b38",
+    "func": "0x524990",
+    "kind": "call"
+   },
+   {
+    "site": "0x5259e0",
+    "func": "0x5259d0",
+    "kind": "call"
+   },
+   {
+    "site": "0x524f7c",
+    "func": "0x524f00",
+    "kind": "thunk"
+   },
+   {
+    "site": "0x525085",
+    "func": "0x52505b",
+    "kind": "thunk"
+   },
+   {
+    "site": "0x7d38d0",
+    "func": "0x7d37d1",
+    "kind": "thunk"
+   }
+  ],
+  "glBlendFunc": [
+   {
+    "site": "0x5240d0",
+    "func": "0x523fa0",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d38b8",
+    "func": "0x7d37d1",
+    "kind": "thunk"
+   }
+  ],
+  "glDepthMask": [
+   {
+    "site": "0x524194",
+    "func": "0x524180",
+    "kind": "call"
+   },
+   {
+    "site": "0x524e22",
+    "func": "0x524990",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d38dc",
+    "func": "0x7d37d1",
+    "kind": "thunk"
+   }
+  ],
+  "glDepthFunc": [
+   {
+    "site": "0x52443f",
+    "func": "0x524340",
+    "kind": "call"
+   },
+   {
+    "site": "0x524e14",
+    "func": "0x524990",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d38fa",
+    "func": "0x7d37d1",
+    "kind": "thunk"
+   }
+  ],
+  "glVertexPointer": [
+   {
+    "site": "0x525cce",
+    "func": "0x525ca0",
+    "kind": "call"
+   },
+   {
+    "site": "0x525dec",
+    "func": "0x525ca0",
+    "kind": "call"
+   },
+   {
+    "site": "0x525fa9",
+    "func": "0x525f86",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d398a",
+    "func": "0x7d3921",
+    "kind": "thunk"
+   }
+  ],
+  "glColorPointer": [
+   {
+    "site": "0x525c3c",
+    "func": "0x525c20",
+    "kind": "call"
+   },
+   {
+    "site": "0x525fcd",
+    "func": "0x525f86",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d3978",
+    "func": "0x7d3921",
+    "kind": "thunk"
+   }
+  ],
+  "glTexCoordPointer": [
+   {
+    "site": "0x525a3e",
+    "func": "0x5259f0",
+    "kind": "call"
+   },
+   {
+    "site": "0x525fe0",
+    "func": "0x525f86",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d396c",
+    "func": "0x7d3921",
+    "kind": "thunk"
+   }
+  ],
+  "glEnableClientState": [
+   {
+    "site": "0x524071",
+    "func": "0x523fa0",
+    "kind": "call"
+   },
+   {
+    "site": "0x524e7f",
+    "func": "0x524990",
+    "kind": "call"
+   },
+   {
+    "site": "0x525a49",
+    "func": "0x5259f0",
+    "kind": "call"
+   },
+   {
+    "site": "0x525c2c",
+    "func": "0x525c20",
+    "kind": "call"
+   },
+   {
+    "site": "0x525ced",
+    "func": "0x525ca0",
+    "kind": "call"
+   },
+   {
+    "site": "0x525e00",
+    "func": "0x525ca0",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d38be",
+    "func": "0x7d37d1",
+    "kind": "thunk"
+   }
+  ],
+  "glDisableClientState": [
+   {
+    "site": "0x524024",
+    "func": "0x523fa0",
+    "kind": "call"
+   },
+   {
+    "site": "0x5259d5",
+    "func": "0x5259d0",
+    "kind": "call"
+   },
+   {
+    "site": "0x525a59",
+    "func": "0x5259f0",
+    "kind": "call"
+   },
+   {
+    "site": "0x525e20",
+    "func": "0x525ca0",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d38ca",
+    "func": "0x7d37d1",
+    "kind": "thunk"
+   }
+  ],
+  "glReadPixels": [
+   {
+    "site": "0x525497",
+    "func": "0x525370",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d3936",
+    "func": "0x7d3921",
+    "kind": "thunk"
+   }
+  ],
+  "glTexImage2D": [
+   {
+    "site": "0x523d98",
+    "func": "0x523ac0",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d3894",
+    "func": "0x7d37d1",
+    "kind": "thunk"
+   }
+  ],
+  "glTexSubImage2D": [
+   {
+    "site": "0x523df1",
+    "func": "0x523ac0",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d388e",
+    "func": "0x7d37d1",
+    "kind": "thunk"
+   }
+  ],
+  "glGetString": [
+   {
+    "site": "0x52368a",
+    "func": "0x523680",
+    "kind": "call"
+   },
+   {
+    "site": "0x523704",
+    "func": "0x5236f0",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d3876",
+    "func": "0x7d37d1",
+    "kind": "thunk"
+   }
+  ],
+  "glGetIntegerv": [
+   {
+    "site": "0x523780",
+    "func": "0x5236f0",
+    "kind": "call"
+   },
+   {
+    "site": "0x7d387c",
+    "func": "0x7d37d1",
+    "kind": "thunk"
+   }
+  ]
+ },
+ "strings": {
+  "GL_ARB_multitexture": [
+   {
+    "va": "0x6f9595d0",
+    "rva": "0x9595d0",
+    "refs": [
+     ".text:523765"
+    ]
+   }
+  ],
+  "GL_EXT_bgra": [
+   {
+    "va": "0x6f959294",
+    "rva": "0x959294",
+    "refs": [
+     ".text:52392B"
+    ]
+   }
+  ],
+  "GL_EXT_compiled_vertex_array": [
+   {
+    "va": "0x6f959608",
+    "rva": "0x959608",
+    "refs": [
+     ".text:52372F"
+    ]
+   }
+  ],
+  "GL_EXT_texture_edge_clamp": [
+   {
+    "va": "0x6f959278",
+    "rva": "0x959278",
+    "refs": [
+     ".text:523935"
+    ]
+   }
+  ],
+  "glActiveTextureARB": [
+   {
+    "va": "0x6f9592bc",
+    "rva": "0x9592bc",
+    "refs": [
+     ".text:523902"
+    ]
+   }
+  ],
+  "glLockArraysEXT": [
+   {
+    "va": "0x6f9595f8",
+    "rva": "0x9595f8",
+    "refs": [
+     ".text:52374D"
+    ]
+   }
+  ]
+ },
+ "present": {
+  "func": "0x525370",
+  "prologue": "83 EC 08 53 55 56 57 8B 7C 24 1C 8B",
+  "vtables": [
+   {
+    "vtable": "0x957614",
+    "slot": 17,
+    "count": 45,
+    "entries": [
+     "0x523ac0",
+     "0x524f00",
+     "0x51d330",
+     "0x51cdf0",
+     "0x51c6b0",
+     "0x51ca00",
+     "0x51c6f0",
+     "0x51cae0",
+     "0x51c710",
+     "0x51c730",
+     "0x519300",
+     "0x519310",
+     "0x5250d0",
+     "0x51cc40",
+     "0x525100",
+     "0x51a260",
+     "0x525290",
+     "0x525370",
+     "0x525610",
+     "0x525920",
+     "0x525740",
+     "0x525760",
+     "0x5193e0",
+     "0x525780",
+     "0x519490",
+     "0x5194a0",
+     "0x526050",
+     "0x525a70",
+     "0x525ab0",
+     "0x525b00",
+     "0x525b10",
+     "0x5261b0",
+     "0x525f20",
+     "0x51ab80",
+     "0x519580",
+     "0x5195b0",
+     "0x51a470",
+     "0x5195f0",
+     "0x519640",
+     "0x5197c0",
+     "0x5197d0",
+     "0x5197e0",
+     "0x523950",
+     "0x5239b0",
+     "0x51d080"
+    ]
+   }
+  ]
+ },
+ "glvtable": {
+  "base": "0x957614",
+  "count": 45,
+  "presentSlot": 17,
+  "slot16_clear": "0x525290",
+  "drawSlots": {
+   "26": "0x526050",
+   "27": "0x525a70",
+   "28": "0x525ab0",
+   "29": "0x525b00",
+   "30": "0x525b10",
+   "31": "0x5261b0",
+   "32": "0x525f20"
+  }
+ }
+}

@@ -47,6 +47,48 @@ graph TD
 
 ---
 
+## 2.1 实机反汇编记录 (Disassembly)
+
+### 1.27a (1.27.0.52240)
+- **所在模块**：`game.dll`
+- **默认模块基址**：`0x7BDC0000`
+- **反汇编上下文**：
+```x86asm
+7BE1FCD0  | 53                              | push ebx                                        |
+7BE1FCD1  | 56                              | push esi                                        |
+7BE1FCD2  | 57                              | push edi                                        |
+7BE1FCD3  | 8BF9                            | mov edi,ecx                                     |
+7BE1FCD5  | 8D4F 10                         | lea ecx,dword ptr ds:[edi+10]                   | [edi+10]:GetMessageA
+7BE1FCD8  | E8 037B0F00                     | call game.7BF177E0                              |
+7BE1FCDD  | 33DB                            | xor ebx,ebx                                     |
+7BE1FCDF  | 8D4F 10                         | lea ecx,dword ptr ds:[edi+10]                   | [edi+10]:GetMessageA
+7BE1FCE2  | 837F 2C 01                      | cmp dword ptr ds:[edi+2C],1                     |
+7BE1FCE6  | 0F94C3                          | sete bl                                         |
+7BE1FCE9  | E8 52870F00                     | call game.7BF18440                              |
+7BE1FCEE  | 85DB                            | test ebx,ebx                                    |
+7BE1FCF0  | 75 18                           | jne game.7BE1FD0A                               |
+7BE1FCF2  | 8B47 44                         | mov eax,dword ptr ds:[edi+44]                   | ; 取出标志位
+7BE1FCF5  | A8 04                           | test al,4                                       | ; 检查 bit 2 (0x04)
+7BE1FCF7  | 74 11                           | je game.7BE1FD0A                                | ; 若未置位直接跳出
+7BE1FCF9  | 83E0 FB                         | and eax,FFFFFFFB                                | ; 关键：and eax, 0xFB 清除 bit 2
+7BE1FCFC  | 8D53 11                         | lea edx,dword ptr ds:[ebx+11]                   |
+7BE1FCFF  | 53                              | push ebx                                        |
+7BE1FD00  | 8BCF                            | mov ecx,edi                                     |
+7BE1FD02  | 8947 44                         | mov dword ptr ds:[edi+44],eax                   | ; 写回标志位
+7BE1FD05  | E8 86B1FFFF                     | call game.7BE1AE90                              |
+7BE1FD0A  | 5F                              | pop edi                                         |
+7BE1FD0B  | 5E                              | pop esi                                         |
+7BE1FD0C  | 5B                              | pop ebx                                         |
+7BE1FD0D  | C3                              | ret                                             |
+```
+- **关键指令与特征码推导**：
+  - 指令：`7BE1FCF9: 83 E0 FB` (`and eax, 0xFB`)
+  - 偏移计算：`0x7BE1FCFB - 0x7BDC0000 = 0x05FCFB`（指向立即数 `FB`）
+  - Hook 起始点：`0x05FCFB - 2 = 0x05FCF9`（指向 `83 E0`）
+  - 特征码序列：`A8 04 74 11 83 E0 FB 8D 53 11`
+
+---
+
 ## 3. 全版本偏移量（11个版本）与特征码
 
 ### 3.1 偏移量表 (`g_offsetsForGameFramePerSecUnLimit_1`)
