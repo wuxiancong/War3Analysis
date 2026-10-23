@@ -1,0 +1,22 @@
+REA 6.4.0 / Ghidra 12.1.4
+evidence_id: ev_6cf9bc8ccc0404e18202c63a231cdfd47471e3f9ca51a046c58b358454795fbd
+target: C:\War3Analysis\samples\1.22.0.6328\game.dll
+sha256: 5f866bd8a45951cd2c4b22b1c80a0329246dbed847540c85430376e8c4310c84
+query: 0x6F51D451
+function: FUN_6f51d430 entry 0x6f51d430
+confidence: observed
+
+void FUN_6f51d430(void)
+{
+  int *piVar1;
+  int in_ECX;
+
+  SetWindowLongA(*(HWND *)(in_ECX + 0x574),-4,DAT_6fab90d0);
+  FUN_6f51cf00(1);
+  piVar1 = *(int **)(in_ECX + 0x584);
+  if (piVar1 != (int *)0x0) {
+    (**(code **)(*piVar1 + 8))(piVar1);
+    *(undefined4 *)(in_ECX + 0x584) = 0;
+  }
+  return;
+}

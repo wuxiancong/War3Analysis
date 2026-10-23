@@ -1,0 +1,325 @@
+PROGRAM game.dll
+IMAGEBASE 6f000000
+
+===== ADDR 0x6f0ec510 =====
+FUNCTION FUN_6f0ec4f0 entry 6f0ec4f0 max 6f0ec52b
+HOOK_INSIDE interior
+  6f0ec4f0  PUSH ESI
+  6f0ec4f1  PUSH dword ptr [0x6fbc5e98]
+  6f0ec4f7  MOV ESI,ECX
+  6f0ec4f9  PUSH -0x4
+  6f0ec4fb  PUSH dword ptr [ESI + 0x574]
+  6f0ec501  CALL dword ptr [0x6f94e838]
+  6f0ec507  PUSH 0x1
+  6f0ec509  MOV ECX,ESI
+  6f0ec50b  CALL 0x6f0ec5a0
+  6f0ec510  MOV ECX,dword ptr [ESI + 0x584]
+  6f0ec516  TEST ECX,ECX
+  6f0ec518  JZ 0x6f0ec52a
+  6f0ec51a  MOV EAX,dword ptr [ECX]
+  6f0ec51c  PUSH ECX
+  6f0ec51d  CALL dword ptr [EAX + 0x8]
+  6f0ec520  MOV dword ptr [ESI + 0x584],0x0
+  6f0ec52a  POP ESI
+  6f0ec52b  RET
+  6f0ec530  PUSH ESI
+  6f0ec531  PUSH EDI
+  6f0ec532  MOV EDI,ECX
+  6f0ec534  MOV ESI,EDX
+  6f0ec536  PUSH 0x6f95fe3c
+  6f0ec53b  MOV dword ptr [EDI],0x0
+  6f0ec541  MOV dword ptr [ESI],0x0
+  6f0ec547  CALL dword ptr [0x6f94e170]
+  6f0ec54d  MOV dword ptr [EDI],EAX
+  6f0ec54f  TEST EAX,EAX
+  6f0ec551  JZ 0x6f0ec57c
+  6f0ec553  PUSH 0x6f95fe48
+  6f0ec558  PUSH EAX
+  6f0ec559  CALL dword ptr [0x6f94e168]
+  6f0ec55f  TEST EAX,EAX
+  6f0ec561  JZ 0x6f0ec57c
+  6f0ec563  PUSH 0x20
+  6f0ec565  CALL EAX
+  6f0ec567  MOV dword ptr [ESI],EAX
+  6f0ec569  TEST EAX,EAX
+  6f0ec56b  JZ 0x6f0ec57c
+  6f0ec56d  XOR ECX,ECX
+  6f0ec56f  CALL 0x6f155290
+  6f0ec574  POP EDI
+  6f0ec575  MOV EAX,0x1
+  6f0ec57a  POP ESI
+  6f0ec57b  RET
+  6f0ec57c  MOV EDX,ESI
+  6f0ec57e  MOV ECX,EDI
+  6f0ec580  CALL 0x6f0ec7d0
+  6f0ec585  XOR ECX,ECX
+  6f0ec587  CALL 0x6f155290
+  6f0ec58c  POP EDI
+  6f0ec58d  XOR EAX,EAX
+  6f0ec58f  POP ESI
+  6f0ec590  RET
+  6f0ec5a0  PUSH EBP
+  6f0ec5a1  MOV EBP,ESP
+  6f0ec5a3  SUB ESP,0x84
+  6f0ec5a9  MOV EDX,dword ptr [EBP + -0x4]
+  6f0ec5ac  PUSH EBX
+  6f0ec5ad  MOV EBX,ECX
+--- decompile ---
+
+void __fastcall FUN_6f0ec4f0(int param_1)
+
+{
+  int *piVar1;
+  
+  SetWindowLongA(*(undefined4 *)(param_1 + 0x574),0xfffffffc,DAT_6fbc5e98);
+  FUN_6f0ec5a0(1);
+  piVar1 = *(int **)(param_1 + 0x584);
+  if (piVar1 != (int *)0x0) {
+    (**(code **)(*piVar1 + 8))(piVar1);
+    *(undefined4 *)(param_1 + 0x584) = 0;
+  }
+  return;
+}
+
+
+
+===== ADDR 0x6f0f0cc0 =====
+FUNCTION FUN_6f0f0cc0 entry 6f0f0cc0 max 6f0f0e7a
+HOOK_INSIDE entry
+  6f0f0cc0  PUSH EBP
+  6f0f0cc1  MOV EBP,ESP
+  6f0f0cc3  SUB ESP,0x8
+  6f0f0cc6  PUSH EBX
+  6f0f0cc7  MOV EBX,dword ptr [EBP + 0x8]
+  6f0f0cca  PUSH ESI
+  6f0f0ccb  PUSH EDI
+  6f0f0ccc  MOV EDI,ECX
+  6f0f0cce  PUSH EBX
+  6f0f0ccf  MOV EAX,dword ptr [EDI + 0x560]
+  6f0f0cd5  MOV dword ptr [EBP + -0x8],EAX
+  6f0f0cd8  CALL 0x6f0e65a0
+  6f0f0cdd  TEST byte ptr [EDI + 0x504],0x20
+  6f0f0ce4  MOV ESI,dword ptr [0x6f94e4d0]
+  6f0f0cea  JNZ 0x6f0f0cf0
+  6f0f0cec  CALL ESI
+  6f0f0cee  JMP 0x6f0f0cfe
+  6f0f0cf0  PUSH 0x1
+  6f0f0cf2  PUSH dword ptr [EDI + 0x57c]
+  6f0f0cf8  CALL dword ptr [0x6f94e4dc]
+  6f0f0cfe  TEST EBX,EBX
+  6f0f0d00  JZ 0x6f0f0d04
+  6f0f0d02  CALL ESI
+  6f0f0d04  CMP dword ptr [EBP + -0x8],0x0
+  6f0f0d08  JZ 0x6f0f0e6b
+  6f0f0d0e  MOVSS XMM0,dword ptr [EDI + 0xbf0]
+  6f0f0d16  CALL 0x6f7712e0
+  6f0f0d1b  MOVSS XMM0,dword ptr [EDI + 0xbec]
+  6f0f0d23  MOV ESI,EAX
+  6f0f0d25  MOV dword ptr [EDI + 0x564],ESI
+  6f0f0d2b  CALL 0x6f7712e0
+  6f0f0d30  MOV dword ptr [EDI + 0x568],EAX
+  6f0f0d36  LEA EBX,[ESI*0x4 + 0x0]
+  6f0f0d3d  MOV EAX,dword ptr [EDI + 0x56c]
+  6f0f0d43  MOV dword ptr [EBP + 0x8],EBX
+  6f0f0d46  TEST EAX,EAX
+  6f0f0d48  JZ 0x6f0f0d59
+  6f0f0d4a  PUSH 0x0
+  6f0f0d4c  PUSH 0x79
+  6f0f0d4e  PUSH 0x6f95ff14
+  6f0f0d53  PUSH EAX
+  6f0f0d54  CALL 0x6f1205ce
+  6f0f0d59  MOV EAX,dword ptr [EDI + 0x568]
+  6f0f0d5f  PUSH 0x0
+  6f0f0d61  IMUL EAX,EBX
+  6f0f0d64  PUSH 0x7a
+  6f0f0d66  PUSH 0x6f95ff14
+  6f0f0d6b  PUSH EAX
+  6f0f0d6c  CALL 0x6f120628
+  6f0f0d71  PUSH 0x0
+  6f0f0d73  PUSH 0x7b
+  6f0f0d75  PUSH 0x6f95ff14
+  6f0f0d7a  PUSH EBX
+  6f0f0d7b  MOV dword ptr [EDI + 0x56c],EAX
+  6f0f0d81  CALL 0x6f120628
+  6f0f0d86  PUSH 0x405
+  6f0f0d8b  MOV dword ptr [EBP + -0x4],EAX
+  6f0f0d8e  CALL dword ptr [0x6f94e4cc]
+  6f0f0d94  PUSH dword ptr [EDI + 0x56c]
+  6f0f0d9a  PUSH 0x1401
+--- decompile ---
+
+void __thiscall FUN_6f0f0cc0(int param_1,int param_2)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  undefined1 *puVar3;
+  int iVar4;
+  int iVar5;
+  int iVar6;
+  uint uStack_c;
+  
+  iVar1 = *(int *)(param_1 + 0x560);
+  FUN_6f0e65a0(param_2);
+  if ((*(byte *)(param_1 + 0x504) & 0x20) == 0) {
+    glFinish();
+  }
+  else {
+    wglSwapLayerBuffers(*(undefined4 *)(param_1 + 0x57c),1);
+  }
+  if (param_2 != 0) {
+    glFinish();
+  }
+  if (iVar1 != 0) {
+    iVar1 = FUN_6f7712e0();
+    *(int *)(param_1 + 0x564) = iVar1;
+    uVar2 = FUN_6f7712e0();
+    *(undefined4 *)(param_1 + 0x568) = uVar2;
+    iVar1 = iVar1 * 4;
+    if (*(int *)(param_1 + 0x56c) != 0) {
+      Ordinal_403(*(int *)(param_1 + 0x56c),&DAT_6f95ff14,0x79,0);
+    }
+    uVar2 = Ordinal_401(*(int *)(param_1 + 0x568) * iVar1,&DAT_6f95ff14,0x7a,0);
+    *(undefined4 *)(param_1 + 0x56c) = uVar2;
+    uVar2 = Ordinal_401(iVar1,&DAT_6f95ff14,0x7b,0);
+    glReadBuffer(0x405);
+    glReadPixels(0,0,*(undefined4 *)(param_1 + 0x564),*(undefined4 *)(param_1 + 0x568),0x80e1,0x1401
+                 ,*(undefined4 *)(param_1 + 0x56c));
+    iVar6 = *(int *)(param_1 + 0x56c);
+    iVar5 = iVar6 + (*(int *)(param_1 + 0x568) + -1) * *(int *)(param_1 + 0x564) * 4;
+    if (*(int *)(param_1 + 0x568) * *(int *)(param_1 + 0x564) != 0) {
+      puVar3 = (undefined1 *)(iVar6 + 3);
+      iVar4 = 0;
+      do {
+        *puVar3 = 0xff;
+        puVar3 = puVar3 + 4;
+        iVar4 = iVar4 + 1;
+      } while (iVar4 != *(int *)(param_1 + 0x568) * *(int *)(param_1 + 0x564));
+    }
+    uStack_c = 0;
+    if ((*(uint *)(param_1 + 0x568) & 0xfffffffe) != 0) {
+      do {
+        memcpy(uVar2,iVar6,iVar1);
+        memcpy(iVar6,iVar5,iVar1);
+        memcpy(iVar5,uVar2,iVar1);
+        uStack_c = uStack_c + 1;
+        iVar6 = iVar6 + *(int *)(param_1 + 0x564) * 4;
+        iVar5 = iVar5 + *(int *)(param_1 + 0x564) * -4;
+      } while (uStack_c != *(uint *)(param_1 + 0x568) >> 1);
+    }
+    Ordinal_403(uVar2,&DAT_6f95ff14,0x9e,0);
+  }
+  FUN_6f0f0a90();
+  return;
+}
+
+
+
+===== ADDR 0x6f0e7670 =====
+FUNCTION FUN_6f0e7670 entry 6f0e7670 max 6f0e7743
+HOOK_INSIDE entry
+  6f0e7670  PUSH EBP
+  6f0e7671  MOV EBP,ESP
+  6f0e7673  SUB ESP,0x1c
+  6f0e7676  MOV EAX,[0x6fb6a774]
+  6f0e767b  XOR EAX,EBP
+  6f0e767d  MOV dword ptr [EBP + -0x4],EAX
+  6f0e7680  PUSH EBX
+  6f0e7681  PUSH ESI
+  6f0e7682  MOV ESI,dword ptr [EBP + 0x8]
+  6f0e7685  PUSH EDI
+  6f0e7686  MOV EDI,ECX
+  6f0e7688  MOVDQU XMM0,xmmword ptr [EDI + 0x94]
+  6f0e7690  MOVDQU xmmword ptr [EBP + -0x1c],XMM0
+  6f0e7695  MOVQ XMM0,qword ptr [EDI + 0xa4]
+  6f0e769d  MOVQ qword ptr [EBP + -0xc],XMM0
+  6f0e76a2  CALL 0x6f0e7910
+  6f0e76a7  PUSH ESI
+  6f0e76a8  MOV ECX,EDI
+  6f0e76aa  CALL 0x6f0e5050
+  6f0e76af  PUSH ESI
+  6f0e76b0  MOV ECX,EDI
+  6f0e76b2  CALL 0x6f0e7980
+  6f0e76b7  MOV ECX,EDI
+  6f0e76b9  CALL 0x6f0e78b0
+  6f0e76be  MOV EBX,EAX
+  6f0e76c0  TEST EBX,EBX
+  6f0e76c2  JNZ 0x6f0e771b
+  6f0e76c4  LEA EAX,[EBP + -0x1c]
+  6f0e76c7  MOV ECX,EDI
+  6f0e76c9  PUSH EAX
+  6f0e76ca  CALL 0x6f0e5050
+  6f0e76cf  LEA EAX,[EBP + -0x1c]
+  6f0e76d2  MOV ECX,EDI
+  6f0e76d4  PUSH EAX
+  6f0e76d5  CALL 0x6f0e7980
+  6f0e76da  MOV ECX,EDI
+  6f0e76dc  CALL 0x6f0e78b0
+  6f0e76e1  TEST EAX,EAX
+  6f0e76e3  JNZ 0x6f0e771b
+  6f0e76e5  PUSH EAX
+  6f0e76e6  PUSH EAX
+  6f0e76e7  PUSH EAX
+  6f0e76e8  PUSH EAX
+  6f0e76e9  PUSH EAX
+  6f0e76ea  CALL dword ptr [0x6f94e844]
+  6f0e76f0  PUSH 0x1
+  6f0e76f2  PUSH EBX
+  6f0e76f3  PUSH EBX
+  6f0e76f4  PUSH -0x1
+  6f0e76f6  PUSH 0x6f95d854
+  6f0e76fb  CALL 0x6f12073c
+  6f0e7700  PUSH EAX
+  6f0e7701  CALL 0x6f120754
+  6f0e7706  POP EDI
+  6f0e7707  POP ESI
+  6f0e7708  XOR EAX,EAX
+  6f0e770a  POP EBX
+  6f0e770b  MOV ECX,dword ptr [EBP + -0x4]
+  6f0e770e  XOR ECX,EBP
+  6f0e7710  CALL 0x6f771125
+--- decompile ---
+
+void __thiscall FUN_6f0e7670(int *param_1,undefined4 param_2)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  float10 fVar3;
+  int iStack_20;
+  int iStack_1c;
+  int iStack_18;
+  int iStack_14;
+  undefined8 uStack_10;
+  uint uStack_8;
+  
+  uStack_8 = DAT_6fb6a774 ^ (uint)&stack0xfffffffc;
+  iStack_20 = param_1[0x25];
+  iStack_1c = param_1[0x26];
+  iStack_18 = param_1[0x27];
+  iStack_14 = param_1[0x28];
+  uStack_10 = *(undefined8 *)(param_1 + 0x29);
+  FUN_6f0e7910();
+  FUN_6f0e5050(param_2);
+  FUN_6f0e7980(param_2);
+  iVar1 = FUN_6f0e78b0();
+  if (iVar1 == 0) {
+    FUN_6f0e5050(&iStack_20);
+    FUN_6f0e7980(&iStack_20);
+    iVar1 = FUN_6f0e78b0();
+    if (iVar1 == 0) {
+      ChangeDisplaySettingsExA(0,0,0,0,0);
+      uVar2 = Ordinal_463(&DAT_6f95d854,0xffffffff,0,0,1);
+      Ordinal_461(uVar2);
+      FUN_6f771125();
+      return;
+    }
+  }
+  iVar1 = *param_1;
+  fVar3 = (float10)FUN_6f0e5000(1);
+  (**(code **)(iVar1 + 0x1c))((float)fVar3);
+  FUN_6f771125();
+  return;
+}
+
+

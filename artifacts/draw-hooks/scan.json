@@ -1,0 +1,1155 @@
+{
+  "meta": {
+    "1.0.17.5988": {
+      "sha256": "EA09C582A4C8B4112C1425CC954BF710FED3051E4A85BC39586647C0BD8BF4B2",
+      "imagebase": "0x6f000000",
+      "size": "0x923000",
+      "path": "D:\\Qt\\workspace\\War3Launcher\\versions\\1.0.17.5988\\game.dll"
+    },
+    "1.0.20.6048": {
+      "sha256": "F9166A59D6029E9AF132A090CFAC8E324B0A3452D43C0D30EA39F1E3A82DD982",
+      "imagebase": "0x6f000000",
+      "size": "0x924000",
+      "path": "D:\\Qt\\workspace\\War3Launcher\\versions\\1.0.20.6048\\game.dll"
+    },
+    "1.20.4.6074": {
+      "sha256": "6B5B406861A56449C604C15CF0971DF7D6D26F679EFF7AA69A34946C7D91764B",
+      "imagebase": "0x6f000000",
+      "size": "0x924000",
+      "path": "D:\\Qt\\workspace\\War3Launcher\\versions\\1.20.4.6074\\game.dll"
+    },
+    "1.21.0.6263": {
+      "sha256": "3265E78DD68B1AB6C54957409E472C077F9FE2ABCCE4CFD279E56AF66A6EF6F3",
+      "imagebase": "0x6f000000",
+      "size": "0x924000",
+      "path": "D:\\Qt\\workspace\\War3Launcher\\versions\\1.21.0.6263\\game.dll"
+    },
+    "1.22.0.6328": {
+      "sha256": "5F866BD8A45951CD2C4B22B1C80A0329246DBED847540C85430376E8C4310C84",
+      "imagebase": "0x6f000000",
+      "size": "0xba0000",
+      "path": "D:\\Qt\\workspace\\War3Launcher\\versions\\1.22.0.6328\\game.dll"
+    },
+    "1.23.0.6352": {
+      "sha256": "EE6175947A8792CD672253B37DEB4C5D0577E4E145FFD90FED9021C64C31AE1E",
+      "imagebase": "0x6f000000",
+      "size": "0xbc2000",
+      "path": "D:\\Qt\\workspace\\War3Launcher\\versions\\1.23.0.6352\\game.dll"
+    },
+    "1.24.1.6374": {
+      "sha256": "EE23DD7795EA82DDFC292FDD2A05D5A76D3ABEF801CEC01F0EFF68F521DF0441",
+      "imagebase": "0x6f000000",
+      "size": "0xbd4000",
+      "path": "D:\\Qt\\workspace\\War3Launcher\\versions\\1.24.1.6374\\game.dll"
+    },
+    "1.24.4.6387": {
+      "sha256": "C7C958174BDE30961A41FA91827E78A800E473EFDD8D1DE8D6C94ABF0B0024BF",
+      "imagebase": "0x6f000000",
+      "size": "0xbd4000",
+      "path": "D:\\Qt\\workspace\\War3Launcher\\versions\\1.24.4.6387\\game.dll"
+    },
+    "1.25.1.6397": {
+      "sha256": "F504ED38F43BCCF011BF55DC8339EFACD689F4DCD6AF4AFD1815F01B5D026D07",
+      "imagebase": "0x6f000000",
+      "size": "0xbb5000",
+      "path": "D:\\Qt\\workspace\\War3Launcher\\versions\\1.25.1.6397\\game.dll"
+    },
+    "1.26.0.6401": {
+      "sha256": "6D21BD9A0F9FBC8446F455C9E89AC994FED68174426FE608FCB9BAEFD4DEC53C",
+      "imagebase": "0x6f000000",
+      "size": "0xbb5000",
+      "path": "D:\\Qt\\workspace\\War3Launcher\\versions\\1.26.0.6401\\game.dll"
+    },
+    "1.27.0.52240": {
+      "sha256": "E04D1716603C075EB0C8E1E21CF1093A664ADC5249EFAB396BFA08D7B09D0C3A",
+      "imagebase": "0x6f000000",
+      "size": "0xcd8000",
+      "path": "D:\\Qt\\workspace\\War3Launcher\\versions\\1.27.0.52240\\game.dll"
+    }
+  },
+  "release": {
+    "1.0.17.5988": {
+      "sites": [],
+      "known_present": null,
+      "picked": null
+    },
+    "1.0.20.6048": {
+      "sites": [],
+      "known_present": null,
+      "picked": null
+    },
+    "1.20.4.6074": {
+      "sites": [],
+      "known_present": null,
+      "picked": null
+    },
+    "1.21.0.6263": {
+      "sites": [],
+      "known_present": null,
+      "picked": null
+    },
+    "1.22.0.6328": {
+      "sites": [],
+      "known_present": null,
+      "picked": null
+    },
+    "1.23.0.6352": {
+      "sites": [],
+      "known_present": null,
+      "picked": null
+    },
+    "1.24.1.6374": {
+      "sites": [],
+      "known_present": null,
+      "picked": null
+    },
+    "1.24.4.6387": {
+      "sites": [],
+      "known_present": null,
+      "picked": null
+    },
+    "1.25.1.6397": {
+      "sites": [],
+      "known_present": null,
+      "picked": null
+    },
+    "1.26.0.6401": {
+      "sites": [],
+      "known_present": null,
+      "picked": null
+    },
+    "1.27.0.52240": {
+      "sites": [],
+      "known_present": false,
+      "picked": null
+    }
+  },
+  "ogl_end": {
+    "1.0.17.5988": {
+      "rva": "0xd5bd0",
+      "func": "0xd5a81",
+      "prologue": [
+        "000D5BD0  55                       push ebp",
+        "000D5BD1  8B EC                    mov ebp, esp",
+        "000D5BD3  83 EC 0C                 sub esp, 0xc",
+        "000D5BD6  53                       push ebx",
+        "000D5BD7  56                       push esi",
+        "000D5BD8  8B 75 08                 mov esi, dword ptr [ebp + 8]",
+        "000D5BDB  57                       push edi",
+        "000D5BDC  8B D9                    mov ebx, ecx",
+        "000D5BDE  8B BB 60 05 00 00        mov edi, dword ptr [ebx + 0x560]",
+        "000D5BE4  56                       push esi",
+        "000D5BE5  E8 46 3E FF FF           call 0xc9a30",
+        "000D5BEA  F6 83 04 05 00 00 20     test byte ptr [ebx + 0x504], 0x20",
+        "000D5BF1  75 08                    jne 0xd5bfb",
+        "000D5BF3  FF 15 50 42 70 6F        call dword ptr [0x6f704250]",
+        "000D5BF9  EB 0F                    jmp 0xd5c0a",
+        "000D5BFB  8B 83 7C 05 00 00        mov eax, dword ptr [ebx + 0x57c]"
+      ],
+      "iat": {
+        "dll": "opengl32.dll",
+        "name": "wglSwapLayerBuffers",
+        "rva": "0x70427c"
+      },
+      "api_calls_in_func_window": [
+        "0xd5c04"
+      ],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "push ebp",
+          "mov ebp, esp",
+          "sub esp, 0xc"
+        ]
+      },
+      "head16": "55 8B EC 83 EC 0C 53 56 8B 75 08 57 8B D9 8B BB"
+    },
+    "1.0.20.6048": {
+      "rva": "0xd5bd0",
+      "func": "0xd5a81",
+      "prologue": [
+        "000D5BD0  55                       push ebp",
+        "000D5BD1  8B EC                    mov ebp, esp",
+        "000D5BD3  83 EC 0C                 sub esp, 0xc",
+        "000D5BD6  53                       push ebx",
+        "000D5BD7  56                       push esi",
+        "000D5BD8  8B 75 08                 mov esi, dword ptr [ebp + 8]",
+        "000D5BDB  57                       push edi",
+        "000D5BDC  8B D9                    mov ebx, ecx",
+        "000D5BDE  8B BB 60 05 00 00        mov edi, dword ptr [ebx + 0x560]",
+        "000D5BE4  56                       push esi",
+        "000D5BE5  E8 46 3E FF FF           call 0xc9a30",
+        "000D5BEA  F6 83 04 05 00 00 20     test byte ptr [ebx + 0x504], 0x20",
+        "000D5BF1  75 08                    jne 0xd5bfb",
+        "000D5BF3  FF 15 50 52 70 6F        call dword ptr [0x6f705250]",
+        "000D5BF9  EB 0F                    jmp 0xd5c0a",
+        "000D5BFB  8B 83 7C 05 00 00        mov eax, dword ptr [ebx + 0x57c]"
+      ],
+      "iat": {
+        "dll": "opengl32.dll",
+        "name": "wglSwapLayerBuffers",
+        "rva": "0x70527c"
+      },
+      "api_calls_in_func_window": [
+        "0xd5c04"
+      ],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "push ebp",
+          "mov ebp, esp",
+          "sub esp, 0xc"
+        ]
+      },
+      "head16": "55 8B EC 83 EC 0C 53 56 8B 75 08 57 8B D9 8B BB"
+    },
+    "1.20.4.6074": {
+      "rva": "0xd5bd0",
+      "func": "0xd5a81",
+      "prologue": [
+        "000D5BD0  55                       push ebp",
+        "000D5BD1  8B EC                    mov ebp, esp",
+        "000D5BD3  83 EC 0C                 sub esp, 0xc",
+        "000D5BD6  53                       push ebx",
+        "000D5BD7  56                       push esi",
+        "000D5BD8  8B 75 08                 mov esi, dword ptr [ebp + 8]",
+        "000D5BDB  57                       push edi",
+        "000D5BDC  8B D9                    mov ebx, ecx",
+        "000D5BDE  8B BB 60 05 00 00        mov edi, dword ptr [ebx + 0x560]",
+        "000D5BE4  56                       push esi",
+        "000D5BE5  E8 46 3E FF FF           call 0xc9a30",
+        "000D5BEA  F6 83 04 05 00 00 20     test byte ptr [ebx + 0x504], 0x20",
+        "000D5BF1  75 08                    jne 0xd5bfb",
+        "000D5BF3  FF 15 50 52 70 6F        call dword ptr [0x6f705250]",
+        "000D5BF9  EB 0F                    jmp 0xd5c0a",
+        "000D5BFB  8B 83 7C 05 00 00        mov eax, dword ptr [ebx + 0x57c]"
+      ],
+      "iat": {
+        "dll": "opengl32.dll",
+        "name": "wglSwapLayerBuffers",
+        "rva": "0x70527c"
+      },
+      "api_calls_in_func_window": [
+        "0xd5c04"
+      ],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "push ebp",
+          "mov ebp, esp",
+          "sub esp, 0xc"
+        ]
+      },
+      "head16": "55 8B EC 83 EC 0C 53 56 8B 75 08 57 8B D9 8B BB"
+    },
+    "1.21.0.6263": {
+      "rva": "0xd5bd0",
+      "func": "0xd5a81",
+      "prologue": [
+        "000D5BD0  55                       push ebp",
+        "000D5BD1  8B EC                    mov ebp, esp",
+        "000D5BD3  83 EC 0C                 sub esp, 0xc",
+        "000D5BD6  53                       push ebx",
+        "000D5BD7  56                       push esi",
+        "000D5BD8  8B 75 08                 mov esi, dword ptr [ebp + 8]",
+        "000D5BDB  57                       push edi",
+        "000D5BDC  8B D9                    mov ebx, ecx",
+        "000D5BDE  8B BB 60 05 00 00        mov edi, dword ptr [ebx + 0x560]",
+        "000D5BE4  56                       push esi",
+        "000D5BE5  E8 46 3E FF FF           call 0xc9a30",
+        "000D5BEA  F6 83 04 05 00 00 20     test byte ptr [ebx + 0x504], 0x20",
+        "000D5BF1  75 08                    jne 0xd5bfb",
+        "000D5BF3  FF 15 50 62 70 6F        call dword ptr [0x6f706250]",
+        "000D5BF9  EB 0F                    jmp 0xd5c0a",
+        "000D5BFB  8B 83 7C 05 00 00        mov eax, dword ptr [ebx + 0x57c]"
+      ],
+      "iat": {
+        "dll": "opengl32.dll",
+        "name": "wglSwapLayerBuffers",
+        "rva": "0x70627c"
+      },
+      "api_calls_in_func_window": [
+        "0xd5c04"
+      ],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "push ebp",
+          "mov ebp, esp",
+          "sub esp, 0xc"
+        ]
+      },
+      "head16": "55 8B EC 83 EC 0C 53 56 8B 75 08 57 8B D9 8B BB"
+    },
+    "1.22.0.6328": {
+      "rva": "0x5235e0",
+      "func": "0x5235e0",
+      "prologue": [
+        "005235E0  83 EC 08                 sub esp, 8",
+        "005235E3  53                       push ebx",
+        "005235E4  55                       push ebp",
+        "005235E5  56                       push esi",
+        "005235E6  57                       push edi",
+        "005235E7  8B 7C 24 1C              mov edi, dword ptr [esp + 0x1c]",
+        "005235EB  8B F1                    mov esi, ecx",
+        "005235ED  8B 9E 60 05 00 00        mov ebx, dword ptr [esi + 0x560]",
+        "005235F3  57                       push edi",
+        "005235F4  E8 07 5D FF FF           call 0x519300",
+        "005235F9  F6 86 04 05 00 00 20     test byte ptr [esi + 0x504], 0x20",
+        "00523600  8B 2D 48 C4 85 6F        mov ebp, dword ptr [0x6f85c448]",
+        "00523606  75 04                    jne 0x52360c",
+        "00523608  FF D5                    call ebp",
+        "0052360A  EB 0F                    jmp 0x52361b",
+        "0052360C  8B 86 7C 05 00 00        mov eax, dword ptr [esi + 0x57c]"
+      ],
+      "iat": {
+        "dll": "opengl32.dll",
+        "name": "wglSwapLayerBuffers",
+        "rva": "0x85c44c"
+      },
+      "api_calls_in_func_window": [
+        "0x523615"
+      ],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "sub esp, 8",
+          "push ebx",
+          "push ebp",
+          "push esi"
+        ]
+      },
+      "head16": "83 EC 08 53 55 56 57 8B 7C 24 1C 8B F1 8B 9E 60"
+    },
+    "1.23.0.6352": {
+      "rva": "0x525370",
+      "func": "0x525370",
+      "prologue": [
+        "00525370  83 EC 08                 sub esp, 8",
+        "00525373  53                       push ebx",
+        "00525374  55                       push ebp",
+        "00525375  56                       push esi",
+        "00525376  57                       push edi",
+        "00525377  8B 7C 24 1C              mov edi, dword ptr [esp + 0x1c]",
+        "0052537B  8B F1                    mov esi, ecx",
+        "0052537D  8B 9E 60 05 00 00        mov ebx, dword ptr [esi + 0x560]",
+        "00525383  57                       push edi",
+        "00525384  E8 07 5D FF FF           call 0x51b090",
+        "00525389  F6 86 04 05 00 00 20     test byte ptr [esi + 0x504], 0x20",
+        "00525390  8B 2D B0 04 87 6F        mov ebp, dword ptr [0x6f8704b0]",
+        "00525396  75 04                    jne 0x52539c",
+        "00525398  FF D5                    call ebp",
+        "0052539A  EB 0F                    jmp 0x5253ab",
+        "0052539C  8B 86 7C 05 00 00        mov eax, dword ptr [esi + 0x57c]"
+      ],
+      "iat": {
+        "dll": "opengl32.dll",
+        "name": "wglSwapLayerBuffers",
+        "rva": "0x8704b4"
+      },
+      "api_calls_in_func_window": [
+        "0x5253a5"
+      ],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "sub esp, 8",
+          "push ebx",
+          "push ebp",
+          "push esi"
+        ]
+      },
+      "head16": "83 EC 08 53 55 56 57 8B 7C 24 1C 8B F1 8B 9E 60"
+    },
+    "1.24.1.6374": {
+      "rva": "0x533d00",
+      "func": "0x533d00",
+      "prologue": [
+        "00533D00  83 EC 08                 sub esp, 8",
+        "00533D03  53                       push ebx",
+        "00533D04  55                       push ebp",
+        "00533D05  56                       push esi",
+        "00533D06  57                       push edi",
+        "00533D07  8B 7C 24 1C              mov edi, dword ptr [esp + 0x1c]",
+        "00533D0B  8B F1                    mov esi, ecx",
+        "00533D0D  8B 9E 60 05 00 00        mov ebx, dword ptr [esi + 0x560]",
+        "00533D13  57                       push edi",
+        "00533D14  E8 07 5D FF FF           call 0x529a20",
+        "00533D19  F6 86 04 05 00 00 20     test byte ptr [esi + 0x504], 0x20",
+        "00533D20  8B 2D B0 F4 87 6F        mov ebp, dword ptr [0x6f87f4b0]",
+        "00533D26  75 04                    jne 0x533d2c",
+        "00533D28  FF D5                    call ebp",
+        "00533D2A  EB 0F                    jmp 0x533d3b",
+        "00533D2C  8B 86 7C 05 00 00        mov eax, dword ptr [esi + 0x57c]"
+      ],
+      "iat": {
+        "dll": "opengl32.dll",
+        "name": "wglSwapLayerBuffers",
+        "rva": "0x87f4b4"
+      },
+      "api_calls_in_func_window": [
+        "0x533d35"
+      ],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "sub esp, 8",
+          "push ebx",
+          "push ebp",
+          "push esi"
+        ]
+      },
+      "head16": "83 EC 08 53 55 56 57 8B 7C 24 1C 8B F1 8B 9E 60"
+    },
+    "1.24.4.6387": {
+      "rva": "0x533d80",
+      "func": "0x533d80",
+      "prologue": [
+        "00533D80  83 EC 08                 sub esp, 8",
+        "00533D83  53                       push ebx",
+        "00533D84  55                       push ebp",
+        "00533D85  56                       push esi",
+        "00533D86  57                       push edi",
+        "00533D87  8B 7C 24 1C              mov edi, dword ptr [esp + 0x1c]",
+        "00533D8B  8B F1                    mov esi, ecx",
+        "00533D8D  8B 9E 60 05 00 00        mov ebx, dword ptr [esi + 0x560]",
+        "00533D93  57                       push edi",
+        "00533D94  E8 07 5D FF FF           call 0x529aa0",
+        "00533D99  F6 86 04 05 00 00 20     test byte ptr [esi + 0x504], 0x20",
+        "00533DA0  8B 2D B0 F4 87 6F        mov ebp, dword ptr [0x6f87f4b0]",
+        "00533DA6  75 04                    jne 0x533dac",
+        "00533DA8  FF D5                    call ebp",
+        "00533DAA  EB 0F                    jmp 0x533dbb",
+        "00533DAC  8B 86 7C 05 00 00        mov eax, dword ptr [esi + 0x57c]"
+      ],
+      "iat": {
+        "dll": "opengl32.dll",
+        "name": "wglSwapLayerBuffers",
+        "rva": "0x87f4b4"
+      },
+      "api_calls_in_func_window": [
+        "0x533db5"
+      ],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "sub esp, 8",
+          "push ebx",
+          "push ebp",
+          "push esi"
+        ]
+      },
+      "head16": "83 EC 08 53 55 56 57 8B 7C 24 1C 8B F1 8B 9E 60"
+    },
+    "1.25.1.6397": {
+      "rva": "0x533050",
+      "func": "0x533050",
+      "prologue": [
+        "00533050  83 EC 08                 sub esp, 8",
+        "00533053  53                       push ebx",
+        "00533054  55                       push ebp",
+        "00533055  56                       push esi",
+        "00533056  57                       push edi",
+        "00533057  8B 7C 24 1C              mov edi, dword ptr [esp + 0x1c]",
+        "0053305B  8B F1                    mov esi, ecx",
+        "0053305D  8B 9E 60 05 00 00        mov ebx, dword ptr [esi + 0x560]",
+        "00533063  57                       push edi",
+        "00533064  E8 07 5D FF FF           call 0x528d70",
+        "00533069  F6 86 04 05 00 00 20     test byte ptr [esi + 0x504], 0x20",
+        "00533070  8B 2D 48 D4 86 6F        mov ebp, dword ptr [0x6f86d448]",
+        "00533076  75 04                    jne 0x53307c",
+        "00533078  FF D5                    call ebp",
+        "0053307A  EB 0F                    jmp 0x53308b",
+        "0053307C  8B 86 7C 05 00 00        mov eax, dword ptr [esi + 0x57c]"
+      ],
+      "iat": {
+        "dll": "opengl32.dll",
+        "name": "wglSwapLayerBuffers",
+        "rva": "0x86d44c"
+      },
+      "api_calls_in_func_window": [
+        "0x533085"
+      ],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "sub esp, 8",
+          "push ebx",
+          "push ebp",
+          "push esi"
+        ]
+      },
+      "head16": "83 EC 08 53 55 56 57 8B 7C 24 1C 8B F1 8B 9E 60"
+    },
+    "1.26.0.6401": {
+      "rva": "0x533280",
+      "func": "0x533280",
+      "prologue": [
+        "00533280  83 EC 08                 sub esp, 8",
+        "00533283  53                       push ebx",
+        "00533284  55                       push ebp",
+        "00533285  56                       push esi",
+        "00533286  57                       push edi",
+        "00533287  8B 7C 24 1C              mov edi, dword ptr [esp + 0x1c]",
+        "0053328B  8B F1                    mov esi, ecx",
+        "0053328D  8B 9E 60 05 00 00        mov ebx, dword ptr [esi + 0x560]",
+        "00533293  57                       push edi",
+        "00533294  E8 07 5D FF FF           call 0x528fa0",
+        "00533299  F6 86 04 05 00 00 20     test byte ptr [esi + 0x504], 0x20",
+        "005332A0  8B 2D 48 D4 86 6F        mov ebp, dword ptr [0x6f86d448]",
+        "005332A6  75 04                    jne 0x5332ac",
+        "005332A8  FF D5                    call ebp",
+        "005332AA  EB 0F                    jmp 0x5332bb",
+        "005332AC  8B 86 7C 05 00 00        mov eax, dword ptr [esi + 0x57c]"
+      ],
+      "iat": {
+        "dll": "opengl32.dll",
+        "name": "wglSwapLayerBuffers",
+        "rva": "0x86d44c"
+      },
+      "api_calls_in_func_window": [
+        "0x5332b5"
+      ],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "sub esp, 8",
+          "push ebx",
+          "push ebp",
+          "push esi"
+        ]
+      },
+      "head16": "83 EC 08 53 55 56 57 8B 7C 24 1C 8B F1 8B 9E 60"
+    },
+    "1.27.0.52240": {
+      "rva": "0xf0cc0",
+      "func": "0xf0cc0",
+      "prologue": [
+        "000F0CC0  55                       push ebp",
+        "000F0CC1  8B EC                    mov ebp, esp",
+        "000F0CC3  83 EC 08                 sub esp, 8",
+        "000F0CC6  53                       push ebx",
+        "000F0CC7  8B 5D 08                 mov ebx, dword ptr [ebp + 8]",
+        "000F0CCA  56                       push esi",
+        "000F0CCB  57                       push edi",
+        "000F0CCC  8B F9                    mov edi, ecx",
+        "000F0CCE  53                       push ebx",
+        "000F0CCF  8B 87 60 05 00 00        mov eax, dword ptr [edi + 0x560]",
+        "000F0CD5  89 45 F8                 mov dword ptr [ebp - 8], eax",
+        "000F0CD8  E8 C3 58 FF FF           call 0xe65a0",
+        "000F0CDD  F6 87 04 05 00 00 20     test byte ptr [edi + 0x504], 0x20",
+        "000F0CE4  8B 35 D0 E4 94 6F        mov esi, dword ptr [0x6f94e4d0]",
+        "000F0CEA  75 04                    jne 0xf0cf0",
+        "000F0CEC  FF D6                    call esi"
+      ],
+      "iat": {
+        "dll": "opengl32.dll",
+        "name": "wglSwapLayerBuffers",
+        "rva": "0x94e4dc"
+      },
+      "api_calls_in_func_window": [
+        "0xf0cf8"
+      ],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "push ebp",
+          "mov ebp, esp",
+          "sub esp, 8"
+        ]
+      },
+      "head16": "55 8B EC 83 EC 08 53 8B 5D 08 56 57 8B F9 53 8B"
+    }
+  },
+  "ogl_reset": {
+    "1.0.17.5988": {
+      "rva": "0xcbed0",
+      "func": "0xcbdd8",
+      "prologue": [
+        "000CBED0  55                       push ebp",
+        "000CBED1  8B EC                    mov ebp, esp",
+        "000CBED3  83 EC 18                 sub esp, 0x18",
+        "000CBED6  53                       push ebx",
+        "000CBED7  56                       push esi",
+        "000CBED8  8B D9                    mov ebx, ecx",
+        "000CBEDA  57                       push edi",
+        "000CBEDB  8D B3 94 00 00 00        lea esi, [ebx + 0x94]",
+        "000CBEE1  B9 06 00 00 00           mov ecx, 6",
+        "000CBEE6  8D 7D E8                 lea edi, [ebp - 0x18]",
+        "000CBEE9  F3 A5                    rep movsd dword ptr es:[edi], dword ptr [esi]",
+        "000CBEEB  8B CB                    mov ecx, ebx",
+        "000CBEED  E8 BE FA FF FF           call 0xcb9b0",
+        "000CBEF2  8B 75 08                 mov esi, dword ptr [ebp + 8]",
+        "000CBEF5  56                       push esi",
+        "000CBEF6  8B CB                    mov ecx, ebx"
+      ],
+      "iat": {
+        "dll": "user32.dll",
+        "name": "ChangeDisplaySettingsA",
+        "rva": "0x704434"
+      },
+      "api_calls_in_func_window": [],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "push ebp",
+          "mov ebp, esp",
+          "sub esp, 0x18"
+        ]
+      },
+      "head16": "55 8B EC 83 EC 18 53 56 8B D9 57 8D B3 94 00 00"
+    },
+    "1.0.20.6048": {
+      "rva": "0xcbed0",
+      "func": "0xcbdd8",
+      "prologue": [
+        "000CBED0  55                       push ebp",
+        "000CBED1  8B EC                    mov ebp, esp",
+        "000CBED3  83 EC 18                 sub esp, 0x18",
+        "000CBED6  53                       push ebx",
+        "000CBED7  56                       push esi",
+        "000CBED8  8B D9                    mov ebx, ecx",
+        "000CBEDA  57                       push edi",
+        "000CBEDB  8D B3 94 00 00 00        lea esi, [ebx + 0x94]",
+        "000CBEE1  B9 06 00 00 00           mov ecx, 6",
+        "000CBEE6  8D 7D E8                 lea edi, [ebp - 0x18]",
+        "000CBEE9  F3 A5                    rep movsd dword ptr es:[edi], dword ptr [esi]",
+        "000CBEEB  8B CB                    mov ecx, ebx",
+        "000CBEED  E8 BE FA FF FF           call 0xcb9b0",
+        "000CBEF2  8B 75 08                 mov esi, dword ptr [ebp + 8]",
+        "000CBEF5  56                       push esi",
+        "000CBEF6  8B CB                    mov ecx, ebx"
+      ],
+      "iat": {
+        "dll": "user32.dll",
+        "name": "ChangeDisplaySettingsA",
+        "rva": "0x705434"
+      },
+      "api_calls_in_func_window": [],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "push ebp",
+          "mov ebp, esp",
+          "sub esp, 0x18"
+        ]
+      },
+      "head16": "55 8B EC 83 EC 18 53 56 8B D9 57 8D B3 94 00 00"
+    },
+    "1.20.4.6074": {
+      "rva": "0xcbed0",
+      "func": "0xcbdd8",
+      "prologue": [
+        "000CBED0  55                       push ebp",
+        "000CBED1  8B EC                    mov ebp, esp",
+        "000CBED3  83 EC 18                 sub esp, 0x18",
+        "000CBED6  53                       push ebx",
+        "000CBED7  56                       push esi",
+        "000CBED8  8B D9                    mov ebx, ecx",
+        "000CBEDA  57                       push edi",
+        "000CBEDB  8D B3 94 00 00 00        lea esi, [ebx + 0x94]",
+        "000CBEE1  B9 06 00 00 00           mov ecx, 6",
+        "000CBEE6  8D 7D E8                 lea edi, [ebp - 0x18]",
+        "000CBEE9  F3 A5                    rep movsd dword ptr es:[edi], dword ptr [esi]",
+        "000CBEEB  8B CB                    mov ecx, ebx",
+        "000CBEED  E8 BE FA FF FF           call 0xcb9b0",
+        "000CBEF2  8B 75 08                 mov esi, dword ptr [ebp + 8]",
+        "000CBEF5  56                       push esi",
+        "000CBEF6  8B CB                    mov ecx, ebx"
+      ],
+      "iat": {
+        "dll": "user32.dll",
+        "name": "ChangeDisplaySettingsA",
+        "rva": "0x705434"
+      },
+      "api_calls_in_func_window": [],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "push ebp",
+          "mov ebp, esp",
+          "sub esp, 0x18"
+        ]
+      },
+      "head16": "55 8B EC 83 EC 18 53 56 8B D9 57 8D B3 94 00 00"
+    },
+    "1.21.0.6263": {
+      "rva": "0xcbed0",
+      "func": "0xcbdd8",
+      "prologue": [
+        "000CBED0  55                       push ebp",
+        "000CBED1  8B EC                    mov ebp, esp",
+        "000CBED3  83 EC 18                 sub esp, 0x18",
+        "000CBED6  53                       push ebx",
+        "000CBED7  56                       push esi",
+        "000CBED8  8B D9                    mov ebx, ecx",
+        "000CBEDA  57                       push edi",
+        "000CBEDB  8D B3 94 00 00 00        lea esi, [ebx + 0x94]",
+        "000CBEE1  B9 06 00 00 00           mov ecx, 6",
+        "000CBEE6  8D 7D E8                 lea edi, [ebp - 0x18]",
+        "000CBEE9  F3 A5                    rep movsd dword ptr es:[edi], dword ptr [esi]",
+        "000CBEEB  8B CB                    mov ecx, ebx",
+        "000CBEED  E8 BE FA FF FF           call 0xcb9b0",
+        "000CBEF2  8B 75 08                 mov esi, dword ptr [ebp + 8]",
+        "000CBEF5  56                       push esi",
+        "000CBEF6  8B CB                    mov ecx, ebx"
+      ],
+      "iat": {
+        "dll": "user32.dll",
+        "name": "ChangeDisplaySettingsA",
+        "rva": "0x706438"
+      },
+      "api_calls_in_func_window": [],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "push ebp",
+          "mov ebp, esp",
+          "sub esp, 0x18"
+        ]
+      },
+      "head16": "55 8B EC 83 EC 18 53 56 8B D9 57 8D B3 94 00 00"
+    },
+    "1.22.0.6328": {
+      "rva": "0x51ac70",
+      "func": "0x51ac70",
+      "prologue": [
+        "0051AC70  83 EC 18                 sub esp, 0x18",
+        "0051AC73  56                       push esi",
+        "0051AC74  8B F1                    mov esi, ecx",
+        "0051AC76  8B 8E 98 00 00 00        mov ecx, dword ptr [esi + 0x98]",
+        "0051AC7C  8B 86 94 00 00 00        mov eax, dword ptr [esi + 0x94]",
+        "0051AC82  8B 96 9C 00 00 00        mov edx, dword ptr [esi + 0x9c]",
+        "0051AC88  89 4C 24 08              mov dword ptr [esp + 8], ecx",
+        "0051AC8C  8B 8E A4 00 00 00        mov ecx, dword ptr [esi + 0xa4]",
+        "0051AC92  89 44 24 04              mov dword ptr [esp + 4], eax",
+        "0051AC96  8B 86 A0 00 00 00        mov eax, dword ptr [esi + 0xa0]",
+        "0051AC9C  89 54 24 0C              mov dword ptr [esp + 0xc], edx",
+        "0051ACA0  8B 96 A8 00 00 00        mov edx, dword ptr [esi + 0xa8]",
+        "0051ACA6  89 4C 24 14              mov dword ptr [esp + 0x14], ecx",
+        "0051ACAA  57                       push edi",
+        "0051ACAB  8B CE                    mov ecx, esi",
+        "0051ACAD  89 44 24 14              mov dword ptr [esp + 0x14], eax"
+      ],
+      "iat": {
+        "dll": "user32.dll",
+        "name": "ChangeDisplaySettingsA",
+        "rva": "0x85c70c"
+      },
+      "api_calls_in_func_window": [],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "sub esp, 0x18",
+          "push esi",
+          "mov esi, ecx"
+        ]
+      },
+      "head16": "83 EC 18 56 8B F1 8B 8E 98 00 00 00 8B 86 94 00"
+    },
+    "1.23.0.6352": {
+      "rva": "0x51ca00",
+      "func": "0x51ca00",
+      "prologue": [
+        "0051CA00  83 EC 18                 sub esp, 0x18",
+        "0051CA03  56                       push esi",
+        "0051CA04  8B F1                    mov esi, ecx",
+        "0051CA06  8B 8E 98 00 00 00        mov ecx, dword ptr [esi + 0x98]",
+        "0051CA0C  8B 86 94 00 00 00        mov eax, dword ptr [esi + 0x94]",
+        "0051CA12  8B 96 9C 00 00 00        mov edx, dword ptr [esi + 0x9c]",
+        "0051CA18  89 4C 24 08              mov dword ptr [esp + 8], ecx",
+        "0051CA1C  8B 8E A4 00 00 00        mov ecx, dword ptr [esi + 0xa4]",
+        "0051CA22  89 44 24 04              mov dword ptr [esp + 4], eax",
+        "0051CA26  8B 86 A0 00 00 00        mov eax, dword ptr [esi + 0xa0]",
+        "0051CA2C  89 54 24 0C              mov dword ptr [esp + 0xc], edx",
+        "0051CA30  8B 96 A8 00 00 00        mov edx, dword ptr [esi + 0xa8]",
+        "0051CA36  89 4C 24 14              mov dword ptr [esp + 0x14], ecx",
+        "0051CA3A  57                       push edi",
+        "0051CA3B  8B CE                    mov ecx, esi",
+        "0051CA3D  89 44 24 14              mov dword ptr [esp + 0x14], eax"
+      ],
+      "iat": {
+        "dll": "user32.dll",
+        "name": "ChangeDisplaySettingsExA",
+        "rva": "0x870898"
+      },
+      "api_calls_in_func_window": [
+        "0x51ca93"
+      ],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "sub esp, 0x18",
+          "push esi",
+          "mov esi, ecx"
+        ]
+      },
+      "head16": "83 EC 18 56 8B F1 8B 8E 98 00 00 00 8B 86 94 00"
+    },
+    "1.24.1.6374": {
+      "rva": "0x52b390",
+      "func": "0x52b390",
+      "prologue": [
+        "0052B390  83 EC 18                 sub esp, 0x18",
+        "0052B393  56                       push esi",
+        "0052B394  8B F1                    mov esi, ecx",
+        "0052B396  8B 8E 98 00 00 00        mov ecx, dword ptr [esi + 0x98]",
+        "0052B39C  8B 86 94 00 00 00        mov eax, dword ptr [esi + 0x94]",
+        "0052B3A2  8B 96 9C 00 00 00        mov edx, dword ptr [esi + 0x9c]",
+        "0052B3A8  89 4C 24 08              mov dword ptr [esp + 8], ecx",
+        "0052B3AC  8B 8E A4 00 00 00        mov ecx, dword ptr [esi + 0xa4]",
+        "0052B3B2  89 44 24 04              mov dword ptr [esp + 4], eax",
+        "0052B3B6  8B 86 A0 00 00 00        mov eax, dword ptr [esi + 0xa0]",
+        "0052B3BC  89 54 24 0C              mov dword ptr [esp + 0xc], edx",
+        "0052B3C0  8B 96 A8 00 00 00        mov edx, dword ptr [esi + 0xa8]",
+        "0052B3C6  89 4C 24 14              mov dword ptr [esp + 0x14], ecx",
+        "0052B3CA  57                       push edi",
+        "0052B3CB  8B CE                    mov ecx, esi",
+        "0052B3CD  89 44 24 14              mov dword ptr [esp + 0x14], eax"
+      ],
+      "iat": {
+        "dll": "user32.dll",
+        "name": "ChangeDisplaySettingsExA",
+        "rva": "0x87f898"
+      },
+      "api_calls_in_func_window": [
+        "0x52b423"
+      ],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "sub esp, 0x18",
+          "push esi",
+          "mov esi, ecx"
+        ]
+      },
+      "head16": "83 EC 18 56 8B F1 8B 8E 98 00 00 00 8B 86 94 00"
+    },
+    "1.24.4.6387": {
+      "rva": "0x52b410",
+      "func": "0x52b410",
+      "prologue": [
+        "0052B410  83 EC 18                 sub esp, 0x18",
+        "0052B413  56                       push esi",
+        "0052B414  8B F1                    mov esi, ecx",
+        "0052B416  8B 8E 98 00 00 00        mov ecx, dword ptr [esi + 0x98]",
+        "0052B41C  8B 86 94 00 00 00        mov eax, dword ptr [esi + 0x94]",
+        "0052B422  8B 96 9C 00 00 00        mov edx, dword ptr [esi + 0x9c]",
+        "0052B428  89 4C 24 08              mov dword ptr [esp + 8], ecx",
+        "0052B42C  8B 8E A4 00 00 00        mov ecx, dword ptr [esi + 0xa4]",
+        "0052B432  89 44 24 04              mov dword ptr [esp + 4], eax",
+        "0052B436  8B 86 A0 00 00 00        mov eax, dword ptr [esi + 0xa0]",
+        "0052B43C  89 54 24 0C              mov dword ptr [esp + 0xc], edx",
+        "0052B440  8B 96 A8 00 00 00        mov edx, dword ptr [esi + 0xa8]",
+        "0052B446  89 4C 24 14              mov dword ptr [esp + 0x14], ecx",
+        "0052B44A  57                       push edi",
+        "0052B44B  8B CE                    mov ecx, esi",
+        "0052B44D  89 44 24 14              mov dword ptr [esp + 0x14], eax"
+      ],
+      "iat": {
+        "dll": "user32.dll",
+        "name": "ChangeDisplaySettingsExA",
+        "rva": "0x87f898"
+      },
+      "api_calls_in_func_window": [
+        "0x52b4a3"
+      ],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "sub esp, 0x18",
+          "push esi",
+          "mov esi, ecx"
+        ]
+      },
+      "head16": "83 EC 18 56 8B F1 8B 8E 98 00 00 00 8B 86 94 00"
+    },
+    "1.25.1.6397": {
+      "rva": "0x52a6e0",
+      "func": "0x52a6e0",
+      "prologue": [
+        "0052A6E0  83 EC 18                 sub esp, 0x18",
+        "0052A6E3  56                       push esi",
+        "0052A6E4  8B F1                    mov esi, ecx",
+        "0052A6E6  8B 8E 98 00 00 00        mov ecx, dword ptr [esi + 0x98]",
+        "0052A6EC  8B 86 94 00 00 00        mov eax, dword ptr [esi + 0x94]",
+        "0052A6F2  8B 96 9C 00 00 00        mov edx, dword ptr [esi + 0x9c]",
+        "0052A6F8  89 4C 24 08              mov dword ptr [esp + 8], ecx",
+        "0052A6FC  8B 8E A4 00 00 00        mov ecx, dword ptr [esi + 0xa4]",
+        "0052A702  89 44 24 04              mov dword ptr [esp + 4], eax",
+        "0052A706  8B 86 A0 00 00 00        mov eax, dword ptr [esi + 0xa0]",
+        "0052A70C  89 54 24 0C              mov dword ptr [esp + 0xc], edx",
+        "0052A710  8B 96 A8 00 00 00        mov edx, dword ptr [esi + 0xa8]",
+        "0052A716  89 4C 24 14              mov dword ptr [esp + 0x14], ecx",
+        "0052A71A  57                       push edi",
+        "0052A71B  8B CE                    mov ecx, esi",
+        "0052A71D  89 44 24 14              mov dword ptr [esp + 0x14], eax"
+      ],
+      "iat": {
+        "dll": "user32.dll",
+        "name": "ChangeDisplaySettingsA",
+        "rva": "0x86d70c"
+      },
+      "api_calls_in_func_window": [],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "sub esp, 0x18",
+          "push esi",
+          "mov esi, ecx"
+        ]
+      },
+      "head16": "83 EC 18 56 8B F1 8B 8E 98 00 00 00 8B 86 94 00"
+    },
+    "1.26.0.6401": {
+      "rva": "0x52a910",
+      "func": "0x52a910",
+      "prologue": [
+        "0052A910  83 EC 18                 sub esp, 0x18",
+        "0052A913  56                       push esi",
+        "0052A914  8B F1                    mov esi, ecx",
+        "0052A916  8B 8E 98 00 00 00        mov ecx, dword ptr [esi + 0x98]",
+        "0052A91C  8B 86 94 00 00 00        mov eax, dword ptr [esi + 0x94]",
+        "0052A922  8B 96 9C 00 00 00        mov edx, dword ptr [esi + 0x9c]",
+        "0052A928  89 4C 24 08              mov dword ptr [esp + 8], ecx",
+        "0052A92C  8B 8E A4 00 00 00        mov ecx, dword ptr [esi + 0xa4]",
+        "0052A932  89 44 24 04              mov dword ptr [esp + 4], eax",
+        "0052A936  8B 86 A0 00 00 00        mov eax, dword ptr [esi + 0xa0]",
+        "0052A93C  89 54 24 0C              mov dword ptr [esp + 0xc], edx",
+        "0052A940  8B 96 A8 00 00 00        mov edx, dword ptr [esi + 0xa8]",
+        "0052A946  89 4C 24 14              mov dword ptr [esp + 0x14], ecx",
+        "0052A94A  57                       push edi",
+        "0052A94B  8B CE                    mov ecx, esi",
+        "0052A94D  89 44 24 14              mov dword ptr [esp + 0x14], eax"
+      ],
+      "iat": {
+        "dll": "user32.dll",
+        "name": "ChangeDisplaySettingsA",
+        "rva": "0x86d70c"
+      },
+      "api_calls_in_func_window": [],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "sub esp, 0x18",
+          "push esi",
+          "mov esi, ecx"
+        ]
+      },
+      "head16": "83 EC 18 56 8B F1 8B 8E 98 00 00 00 8B 86 94 00"
+    },
+    "1.27.0.52240": {
+      "rva": "0xe7670",
+      "func": "0xe7670",
+      "prologue": [
+        "000E7670  55                       push ebp",
+        "000E7671  8B EC                    mov ebp, esp",
+        "000E7673  83 EC 1C                 sub esp, 0x1c",
+        "000E7676  A1 74 A7 B6 6F           mov eax, dword ptr [0x6fb6a774]",
+        "000E767B  33 C5                    xor eax, ebp",
+        "000E767D  89 45 FC                 mov dword ptr [ebp - 4], eax",
+        "000E7680  53                       push ebx",
+        "000E7681  56                       push esi",
+        "000E7682  8B 75 08                 mov esi, dword ptr [ebp + 8]",
+        "000E7685  57                       push edi",
+        "000E7686  8B F9                    mov edi, ecx",
+        "000E7688  F3 0F 6F 87 94 00 00 00  movdqu xmm0, xmmword ptr [edi + 0x94]",
+        "000E7690  F3 0F 7F 45 E4           movdqu xmmword ptr [ebp - 0x1c], xmm0",
+        "000E7695  F3 0F 7E 87 A4 00 00 00  movq xmm0, qword ptr [edi + 0xa4]",
+        "000E769D  66 0F D6 45 F4           movq qword ptr [ebp - 0xc], xmm0",
+        "000E76A2  E8 69 02 00 00           call 0xe7910"
+      ],
+      "iat": {
+        "dll": "user32.dll",
+        "name": "ChangeDisplaySettingsExA",
+        "rva": "0x94e844"
+      },
+      "api_calls_in_func_window": [
+        "0xe76ea",
+        "0xe7a4e",
+        "0xe7ac2"
+      ],
+      "hook6": {
+        "ok": true,
+        "parts": [
+          "push ebp",
+          "mov ebp, esp",
+          "sub esp, 0x1c"
+        ]
+      },
+      "head16": "55 8B EC 83 EC 1C A1 74 A7 B6 6F 33 C5 89 45 FC"
+    }
+  },
+  "release_sigs": {
+    "pre122": null,
+    "mid": null,
+    "post127": null
+  },
+  "release_existing_sig": {
+    "1.0.17.5988": [],
+    "1.0.20.6048": [],
+    "1.20.4.6074": [],
+    "1.21.0.6263": [],
+    "1.22.0.6328": [],
+    "1.23.0.6352": [],
+    "1.24.1.6374": [],
+    "1.24.4.6387": [],
+    "1.25.1.6397": [],
+    "1.26.0.6401": [],
+    "1.27.0.52240": [
+      "0xec510"
+    ]
+  },
+  "ogl_end_sigs": {
+    "pre122": {
+      "sig": "55 8B EC 83 EC 0C 53 56 8B 75 08 57 8B D9 8B BB 60 05 00 00",
+      "insns": 9,
+      "concrete": 20,
+      "unique": true,
+      "counts": {
+        "1.0.17.5988": 1,
+        "1.0.20.6048": 1,
+        "1.20.4.6074": 1,
+        "1.21.0.6263": 1
+      },
+      "hits": {
+        "1.0.17.5988": [
+          "0xd5bd0"
+        ],
+        "1.0.20.6048": [
+          "0xd5bd0"
+        ],
+        "1.20.4.6074": [
+          "0xd5bd0"
+        ],
+        "1.21.0.6263": [
+          "0xd5bd0"
+        ]
+      }
+    },
+    "mid": {
+      "sig": "83 EC 08 53 55 56 57 8B 7C 24 1C 8B F1",
+      "insns": 7,
+      "concrete": 13,
+      "unique": true,
+      "counts": {
+        "1.22.0.6328": 1,
+        "1.23.0.6352": 1,
+        "1.24.1.6374": 1,
+        "1.24.4.6387": 1,
+        "1.25.1.6397": 1,
+        "1.26.0.6401": 1
+      },
+      "hits": {
+        "1.22.0.6328": [
+          "0x5235e0"
+        ],
+        "1.23.0.6352": [
+          "0x525370"
+        ],
+        "1.24.1.6374": [
+          "0x533d00"
+        ],
+        "1.24.4.6387": [
+          "0x533d80"
+        ],
+        "1.25.1.6397": [
+          "0x533050"
+        ],
+        "1.26.0.6401": [
+          "0x533280"
+        ]
+      }
+    },
+    "post127": {
+      "sig": "55 8B EC 83 EC 08 53 8B 5D 08 56 57 8B F9 53 8B 87 60 05 00 00",
+      "insns": 10,
+      "concrete": 21,
+      "unique": true,
+      "counts": {
+        "1.27.0.52240": 1
+      },
+      "hits": {
+        "1.27.0.52240": [
+          "0xf0cc0"
+        ]
+      }
+    }
+  },
+  "ogl_reset_sigs": {
+    "pre122": {
+      "sig": "55 8B EC 83 EC 18 53 56 8B D9 57 8D B3 94 00 00 00 B9 06 00 00 00 8D 7D E8 F3 A5 8B CB E8 ?? ?? ?? ?? 8B 75 08",
+      "insns": 14,
+      "concrete": 33,
+      "unique": true,
+      "counts": {
+        "1.0.17.5988": 1,
+        "1.0.20.6048": 1,
+        "1.20.4.6074": 1,
+        "1.21.0.6263": 1
+      },
+      "hits": {
+        "1.0.17.5988": [
+          "0xcbed0"
+        ],
+        "1.0.20.6048": [
+          "0xcbed0"
+        ],
+        "1.20.4.6074": [
+          "0xcbed0"
+        ],
+        "1.21.0.6263": [
+          "0xcbed0"
+        ]
+      }
+    },
+    "mid": {
+      "sig": "83 EC 18 56 8B F1 8B 8E 98 00 00 00 8B 86 94 00 00 00 8B 96 9C 00 00 00 89 4C 24 08 8B 8E A4 00 00 00 89 44 24 04 8B 86 A0 00 00 00 89 54 24 0C 8B 96 A8 00 00 00 89 4C 24 14 57 8B CE 89 44 24 14 89 54 24 1C E8 ?? ?? ?? ?? 8B 7C 24 24",
+      "insns": 19,
+      "concrete": 74,
+      "unique": true,
+      "counts": {
+        "1.22.0.6328": 1,
+        "1.23.0.6352": 1,
+        "1.24.1.6374": 1,
+        "1.24.4.6387": 1,
+        "1.25.1.6397": 1,
+        "1.26.0.6401": 1
+      },
+      "hits": {
+        "1.22.0.6328": [
+          "0x51ac70"
+        ],
+        "1.23.0.6352": [
+          "0x51ca00"
+        ],
+        "1.24.1.6374": [
+          "0x52b390"
+        ],
+        "1.24.4.6387": [
+          "0x52b410"
+        ],
+        "1.25.1.6397": [
+          "0x52a6e0"
+        ],
+        "1.26.0.6401": [
+          "0x52a910"
+        ]
+      }
+    },
+    "post127": {
+      "sig": "55 8B EC 83 EC 1C A1 ?? ?? ?? ?? 33 C5 89 45 FC 53 56 8B 75 08 57",
+      "insns": 10,
+      "concrete": 18,
+      "unique": true,
+      "counts": {
+        "1.27.0.52240": 1
+      },
+      "hits": {
+        "1.27.0.52240": [
+          "0xe7670"
+        ]
+      }
+    }
+  }
+}
