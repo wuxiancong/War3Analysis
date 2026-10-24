@@ -1,0 +1,8 @@
+# 忽略 Windows 崩溃/挂起转储文件 (dmp)
+*.dmp
+analyses/hang-dumps/
+
+# 忽略 Ghidra 逆向分析工程数据库及大文件
+ghidra/projects/
+*.rep/
+*.gbf
