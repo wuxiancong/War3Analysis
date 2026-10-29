@@ -1,0 +1,83 @@
+﻿| Version | account_func | account_xref(BADPASSWORD) | StringResolve | DialogShow | strRVA |
+|---|---|---|---|---|---|
+| 1.0.17.5988 | `0x22e530` | `0x22e736` | `-` | `0x203a40` | `0x80ae60` |
+| 1.0.20.6048 | `0x22e530` | `0x22e736` | `-` | `0x203a40` | `0x80bea0` |
+| 1.21.0.6263 | `0x2317e0` | `0x2319e6` | `0xc32e0` | `0x206d10` | `0x80cfac` |
+| 1.22.0.6328 | `-` | `0x56855d` | `0x5b96d0` | `0x54d1f0` | `0x94f4b0` |
+| 1.23.0.6352 | `-` | `0x56a44d` | `-` | `0x54efa0` | `0x9635f0` |
+| 1.24.1.6374 | `-` | `0x578e3d` | `0x616240` | `0x55d930` | `0x973b58` |
+| 1.24.4.6387 | `-` | `0x578ebd` | `0x5c9df0` | `0x55d9b0` | `0x973b70` |
+| 1.25.1.6397 | `-` | `0x577fed` | `0x5c9420` | `0x55cc80` | `0x961a38` |
+| 1.26.0.6401 | `-` | `0x57821d` | `0x5c9650` | `0x55ceb0` | `0x961a38` |
+| 1.27.0.52240 | `0x2c8e90` | `0x2c9003` | `0x90b00` | `0x29e8f0` | `0x97e838` |
+
+## 1.0.17.5988  SHA256=EA09C582A4C8B4112C1425CC954BF710FED3051E4A85BC39586647C0BD8BF4B2
+  - xref `0x21be37` func `0x21bd90` next_call `0xc32e0`
+  - xref `0x21ca36` func `0x21c9a0` next_call `0xc32e0`
+  - xref `0x227801` func `0x227660` next_call `0xc32e0`
+  - xref `0x227d99` func `0x227d10` next_call `0xc32e0`
+  - xref `0x22e736` func `0x22e530` next_call `?`
+  - xref `0x22fa69` func `0x22f930` next_call `0x64e5f0`
+## 1.0.20.6048  SHA256=F9166A59D6029E9AF132A090CFAC8E324B0A3452D43C0D30EA39F1E3A82DD982
+  - xref `0x21be37` func `0x21bd90` next_call `0xc32e0`
+  - xref `0x21ca36` func `0x21c9a0` next_call `0xc32e0`
+  - xref `0x227801` func `0x227660` next_call `0xc32e0`
+  - xref `0x227d99` func `0x227d10` next_call `0xc32e0`
+  - xref `0x22e736` func `0x22e530` next_call `?`
+  - xref `0x22fa69` func `0x22f930` next_call `0x64eaf0`
+## 1.21.0.6263  SHA256=3265E78DD68B1AB6C54957409E472C077F9FE2ABCCE4CFD279E56AF66A6EF6F3
+  - xref `0x21f107` func `0x21f060` next_call `0xc32e0`
+  - xref `0x21fd06` func `0x21fc70` next_call `0xc32e0`
+  - xref `0x22aae1` func `0x22a940` next_call `0xc32e0`
+  - xref `0x22b079` func `0x22aff0` next_call `0xc32e0`
+  - xref `0x2319e6` func `0x2317e0` next_call `0xc32e0`
+  - xref `0x232d19` func `0x232be0` next_call `0x653450`
+## 1.22.0.6328  SHA256=5F866BD8A45951CD2C4B22B1C80A0329246DBED847540C85430376E8C4310C84
+  - xref `0x56855d` func `?` next_call `0x5b96d0`
+  - xref `0x59ba06` func `?` next_call `0x5b96d0`
+  - xref `0x5a1b35` func `?` next_call `0x5b96d0`
+  - xref `0x5a50cd` func `?` next_call `0x5b96d0`
+  - xref `0x5a544c` func `?` next_call `0x5b96d0`
+  - xref `0x5a8766` func `?` next_call `0x5b96d0`
+## 1.23.0.6352  SHA256=EE6175947A8792CD672253B37DEB4C5D0577E4E145FFD90FED9021C64C31AE1E
+  - xref `0x56a44d` func `?` next_call `?`
+  - xref `0x59d526` func `?` next_call `?`
+  - xref `0x5a3655` func `?` next_call `?`
+  - xref `0x5a6bed` func `?` next_call `?`
+  - xref `0x5a6f6c` func `?` next_call `?`
+  - xref `0x5aa286` func `?` next_call `?`
+## 1.24.1.6374  SHA256=EE23DD7795EA82DDFC292FDD2A05D5A76D3ABEF801CEC01F0EFF68F521DF0441
+  - xref `0x578e3d` func `?` next_call `0x616240`
+  - xref `0x5abf16` func `?` next_call `0x617d40`
+  - xref `0x5b2045` func `?` next_call `0x5c9d40`
+  - xref `0x5b55dd` func `?` next_call `0x5c9d40`
+  - xref `0x5b595c` func `?` next_call `0x5c9d40`
+  - xref `0x5b8c76` func `?` next_call `0x5c9d40`
+## 1.24.4.6387  SHA256=C7C958174BDE30961A41FA91827E78A800E473EFDD8D1DE8D6C94ABF0B0024BF
+  - xref `0x578ebd` func `?` next_call `0x5c9df0`
+  - xref `0x5abfc6` func `?` next_call `0x5c9df0`
+  - xref `0x5b20f5` func `?` next_call `0x5c9df0`
+  - xref `0x5b568d` func `?` next_call `0x5c9df0`
+  - xref `0x5b5a0c` func `?` next_call `0x5c9df0`
+  - xref `0x5b8d26` func `?` next_call `0x5c9df0`
+## 1.25.1.6397  SHA256=F504ED38F43BCCF011BF55DC8339EFACD689F4DCD6AF4AFD1815F01B5D026D07
+  - xref `0x577fed` func `?` next_call `0x5c9420`
+  - xref `0x5ab5f6` func `?` next_call `0x5c9420`
+  - xref `0x5b1725` func `?` next_call `0x5c9420`
+  - xref `0x5b4cbd` func `?` next_call `0x5c9420`
+  - xref `0x5b503c` func `?` next_call `0x5c9420`
+  - xref `0x5b8356` func `?` next_call `0x5c9420`
+## 1.26.0.6401  SHA256=6D21BD9A0F9FBC8446F455C9E89AC994FED68174426FE608FCB9BAEFD4DEC53C
+  - xref `0x57821d` func `?` next_call `0x5c9650`
+  - xref `0x5ab826` func `?` next_call `0x5c9650`
+  - xref `0x5b1955` func `?` next_call `0x5c9650`
+  - xref `0x5b4eed` func `?` next_call `0x5c9650`
+  - xref `0x5b526c` func `?` next_call `0x5c9650`
+  - xref `0x5b8586` func `?` next_call `0x5c9650`
+## 1.27.0.52240  SHA256=E04D1716603C075EB0C8E1E21CF1093A664ADC5249EFAB396BFA08D7B09D0C3A
+  - xref `0x2c9003` func `0x2c8e90` next_call `0x90b00`
+  - xref `0x2d4902` func `0x2d4740` next_call `0x90b00`
+  - xref `0x2d4a70` func `0x2d49d0` next_call `0x90b00`
+  - xref `0x2d4bf7` func `0x2d4b60` next_call `0x90b00`
+  - xref `0x2d9304` func `0x2d9160` next_call `0x90b00`
+  - xref `0x2dcd41` func `0x2dcc90` next_call `0x90b00`

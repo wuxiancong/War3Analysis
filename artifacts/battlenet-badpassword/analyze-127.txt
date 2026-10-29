@@ -1,0 +1,75 @@
+﻿SHA256 E04D1716603C075EB0C8E1E21CF1093A664ADC5249EFAB396BFA08D7B09D0C3A
+ImageBase 0x6f000000
+
+=== FUN_2C8E90 switch (event+0x18 status, 1..0x1B) ===
+  status 0x01 -> 0x6f2c8efe NETMESSAGE_PASSWORDCHANGE
+  status 0x02 -> 0x6f2c902a (default/no key)
+  status 0x03 -> 0x6f2c902a (default/no key)
+  status 0x04 -> 0x6f2c902a (default/no key)
+  status 0x05 -> 0x6f2c902a (default/no key)
+  status 0x06 -> 0x6f2c902a (default/no key)
+  status 0x07 -> 0x6f2c902a (default/no key)
+  status 0x08 -> 0x6f2c902a (default/no key)
+  status 0x09 -> 0x6f2c902a (default/no key)
+  status 0x0A -> 0x6f2c902a (default/no key)
+  status 0x0B -> 0x6f2c902a (default/no key)
+  status 0x0C -> 0x6f2c8f80 ERROR_ID_DISCONNECT
+  status 0x0D -> 0x6f2c902a (default/no key)
+  status 0x0E -> 0x6f2c8f60 ERROR_ID_NOTCONNECTED
+  status 0x0F -> 0x6f2c902a (default/no key)
+  status 0x10 -> 0x6f2c902a (default/no key)
+  status 0x11 -> 0x6f2c902a (default/no key)
+  status 0x12 -> 0x6f2c902a (default/no key)
+  status 0x13 -> 0x6f2c902a (default/no key)
+  status 0x14 -> 0x6f2c902a (default/no key)
+  status 0x15 -> 0x6f2c902a (default/no key)
+  status 0x16 -> 0x6f2c902a (default/no key)
+  status 0x17 -> 0x6f2c902a (default/no key)
+  status 0x18 -> 0x6f2c8fa0 ERROR_ID_BADSERVER
+  status 0x19 -> 0x6f2c8fda ERROR_ID_UNKNOWNACCOUNT
+  status 0x1A -> 0x6f2c8fbd ERROR_ID_UNSUPPORTEDACCOUNT
+  status 0x1B -> 0x6f2c8ff7 ERROR_ID_BADPASSWORD <<<
+
+=== Callers of FUN_2C8E90 ===
+  call site RVA 0x2D0E9F
+
+=== Callers of dialog 0x29E8F0 ===
+  count=184
+  0x1CB0DF
+  0x1CD0D5
+  0x211B10
+  0x229597
+  0x283E98
+  0x284655
+  0x29812D
+  0x298174
+  0x2AFB10
+  0x2B0362
+  0x2B04A4
+  0x2B0604
+  0x2B06DD
+  0x2B09A0
+  0x2B0A5C
+  0x2B0BD5
+  0x2B0DF3
+  0x2B0FF3
+  0x2B23BD
+  0x2B3456
+  0x2B4451
+  0x2B4663
+  0x2B49B3
+  0x2B6F66
+  0x2C0AEF
+  0x2C0BE0
+  0x2C0DA7
+  0x2C1244
+  0x2C1F13
+  0x2C404B
+
+=== BADPASSWORD xref sites / owning funcs ===
+  xref 0x2C9003 func 0x2C8E90
+  xref 0x2D4902 func 0x2D4740
+  xref 0x2D4A70 func 0x2D49D0
+  xref 0x2D4BF7 func 0x2D4B60
+  xref 0x2D9304 func 0x2D9160
+  xref 0x2DCD41 func 0x2DCC90
