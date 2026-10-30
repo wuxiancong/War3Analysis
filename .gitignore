@@ -1,8 +1,24 @@
-# 忽略 Windows 崩溃/挂起转储文件 (dmp)
+# Windows crash / hang dumps (keep stacks / notes as text)
 *.dmp
-analyses/hang-dumps/
 
-# 忽略 Ghidra 逆向分析工程数据库及大文件
+# Game binaries (keep README / patch scripts only)
+*.dll
+*.exe
+samples/**/*.dll
+samples/**/*.exe
+
+# Ghidra project DBs (keep scripts under shared/ghidra-scripts/)
 ghidra/projects/
+*.gpr
 *.rep/
 *.gbf
+*.prp
+
+# Python cache
+**/__pycache__/
+*.py[cod]
+
+# Maps / local binaries (optional local copies)
+maps/**/*.w3x
+maps/**/*.w3m
+*.mpq
