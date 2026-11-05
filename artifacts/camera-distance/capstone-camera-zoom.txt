@@ -1,0 +1,108 @@
+==== zoom_level_distance VA 0x6f20b080 RVA 0x20b080 file 0x20a480 ====
+6f20b080  push ebp
+6f20b081  mov ebp, esp
+6f20b083  sub esp, 0x1c
+6f20b086  mov eax, dword ptr [0x6fb6a774]
+6f20b08b  xor eax, ebp
+6f20b08d  mov dword ptr [ebp - 4], eax
+6f20b090  movaps xmm0, xmmword ptr [0x6f9714d0]
+6f20b097  cmp ecx, 6
+6f20b09a  movups xmmword ptr [ebp - 0x1c], xmm0
+6f20b09e  sbb eax, eax
+6f20b0a0  mov dword ptr [ebp - 0xc], 0x449f6000
+6f20b0a7  and eax, ecx
+6f20b0a9  mov dword ptr [ebp - 8], 0x44960000
+6f20b0b0  mov ecx, dword ptr [ebp - 4]
+6f20b0b3  xor ecx, ebp
+6f20b0b5  fld dword ptr [ebp + eax*4 - 0x1c]
+6f20b0b9  call 0x6f771125
+6f20b0be  mov esp, ebp
+6f20b0c0  pop ebp
+6f20b0c1  ret 
+==== get_camera_field_path VA 0x6f03adf0 RVA 0x3adf0 file 0x3a1f0 ====
+6f03adf0  push ebp
+6f03adf1  mov ebp, esp
+6f03adf3  mov edx, dword ptr [ecx + 0xc]
+6f03adf6  sub esp, 0xc
+6f03adf9  mov ecx, dword ptr [ecx + 8]
+6f03adfc  push esi
+6f03adfd  call 0x6f037350
+6f03ae02  mov esi, eax
+6f03ae04  lea eax, [ebp - 4]
+6f03ae07  push eax
+6f03ae08  mov ecx, esi
+6f03ae0a  call 0x6f10d790
+6f03ae0f  push eax
+6f03ae10  lea edx, [esi + 0x7c]
+6f03ae13  lea ecx, [ebp - 8]
+6f03ae16  call 0x6f0527e0
+6f03ae1b  push eax
+6f03ae1c  lea edx, [esi + 0x78]
+6f03ae1f  lea ecx, [ebp - 0xc]
+6f03ae22  call 0x6f0529d0
+6f03ae27  movss xmm0, dword ptr [esi + 0x80]
+6f03ae2f  lea ecx, [esi + 0x80]
+6f03ae35  mov edx, eax
+6f03ae37  pop esi
+6f03ae38  movss xmm1, dword ptr [edx]
+6f03ae3c  comiss xmm0, xmm1
+6f03ae3f  ja 0x6f03ae4d
+6f03ae41  comiss xmm1, dword ptr [ecx + 4]
+6f03ae45  lea eax, [ecx + 4]
+6f03ae48  mov ecx, edx
+6f03ae4a  cmova ecx, eax
+6f03ae4d  mov eax, dword ptr [ebp + 8]
+6f03ae50  mov ecx, dword ptr [ecx]
+6f03ae52  mov dword ptr [eax], ecx
+6f03ae54  mov esp, ebp
+6f03ae56  pop ebp
+6f03ae57  ret 4
+==== camera_property_getter VA 0x6f10d790 RVA 0x10d790 file 0x10cb90 ====
+6f10d790  push ebp
+6f10d791  mov ebp, esp
+6f10d793  push dword ptr [ecx + 0x74]
+6f10d796  lea eax, [ecx + 0x70]
+6f10d799  push eax
+6f10d79a  push ecx
+6f10d79b  push dword ptr [ebp + 8]
+6f10d79e  mov ecx, dword ptr [0x6fbc5fb0]
+6f10d7a4  call 0x6f108e10
+6f10d7a9  mov eax, dword ptr [ebp + 8]
+6f10d7ac  pop ebp
+6f10d7ad  ret 4
+==== apply_zoom_levels VA 0x6f341350 RVA 0x341350 file 0x340750 ====
+6f341350  push ebp
+6f341351  mov ebp, esp
+6f341353  sub esp, 0x6c
+6f341356  mov eax, dword ptr [0x6fb6a774]
+6f34135b  xor eax, ebp
+6f34135d  mov dword ptr [ebp - 4], eax
+6f341360  push esi
+6f341361  push edi
+6f341362  push dword ptr [ebp + 0xc]
+6f341365  mov edi, ecx
+6f341367  call 0x6f346a60
+6f34136c  mov edx, dword ptr [edi + 0x20]
+6f34136f  cmp edx, 6
+6f341372  movaps xmm0, xmmword ptr [0x6f9714d0]
+6f341379  sbb eax, eax
+6f34137b  mov dword ptr [ebp - 0xc], 0x449f6000
+6f341382  movups xmmword ptr [ebp - 0x1c], xmm0
+6f341386  and eax, edx
+6f341388  mov dword ptr [ebp - 8], 0x44960000
+6f34138f  movaps xmm0, xmmword ptr [0x6f9714a0]
+6f341396  movups xmmword ptr [ebp - 0x64], xmm0
+6f34139a  mov dword ptr [ebp - 0x24], 0x43200000
+6f3413a1  movss xmm1, dword ptr [ebp + eax*4 - 0x1c]
+6f3413a7  mov eax, dword ptr [edi + 0x24]
+6f3413aa  movaps xmm0, xmmword ptr [0x6f971490]
+6f3413b1  movups xmmword ptr [ebp - 0x54], xmm0
+6f3413b5  mov dword ptr [ebp - 0x20], 0x43200000
+6f3413bc  movaps xmm0, xmmword ptr [0x6f971480]
+6f3413c3  lea eax, [eax + eax*2]
+6f3413c6  lea ecx, [edx + eax*2]
+6f3413c9  mov dword ptr [ebp - 0xc], 0x43a60000
+6f3413d0  cmp ecx, 0x12
+6f3413d3  mov dword ptr [ebp - 8], 0x43a78000
+6f3413da  movups xmmword ptr [ebp - 0x44], xmm0
+6f3413de  sbb eax, eax

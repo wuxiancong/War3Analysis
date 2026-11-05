@@ -65,6 +65,7 @@ War3Analysis/
 
 ## 当前分析
 
+- [Warcraft III 1.27 相机视距与鼠标滚轮缩放](analyses/warcraft-iii-1.27-camera-distance-mouse-wheel.md)（[思维导图](analyses/warcraft-iii-1.27-camera-distance-mouse-wheel-mindmap.md)）
 - [Warcraft III 1.27 `/fps` 显示值怎么计算](analyses/warcraft-iii-1.27-fps-display-calculation.md)（[思维导图](analyses/warcraft-iii-1.27-fps-display-calculation-mindmap.md)）
 - [Warcraft III 1.27 FPS 限制与解除路径](analyses/warcraft-iii-1.27-fps-unlock.md)（[思维导图](analyses/warcraft-iii-1.27-fps-unlock-mindmap.md)）
 - [Warcraft III 各版本 D3D Reset 边界与分辨率切换分析](analyses/warcraft-iii-all-versions-resolution-reset-boundaries.md)（[思维导图](analyses/warcraft-iii-all-versions-resolution-reset-boundaries-mindmap.md)）
