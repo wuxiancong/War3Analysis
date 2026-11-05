@@ -1,10 +1,13 @@
 # 魔兽争霸 III 动作体系（Action IDs）逆向分析与 DotA 战绩传输机制
 
 > **分析日期**：2026-10-31  
+> **纠错更新日期**：2026-11-01（见 [`warcraft-iii-action-ids-payload-length-audit.md`](./warcraft-iii-action-ids-payload-length-audit.md)）  
 > **逆向目标**：`D:\Qt\workspace\War3Launcher\versions\1.26.0.6401\game.dll`  
 > **关联脚本**：`D:\Qt\workspace\War3Script\war3map_3.j`（第 7210~7293 行）  
 > **关联代码**：`D:\Qt\workspace\War3Bot\src\client.cpp`（`W3GS_OUTGOING_ACTION [0x26]` 处理）  
 > **配套思维导图**：[`warcraft-iii-action-ids-and-dota-stats-transmission-mindmap.md`](./warcraft-iii-action-ids-and-dota-stats-transmission-mindmap.md)
+
+> **重要纠错**：下文第三节 Gemini 初版字典中，`0x1A` 长度、`0x1B~0x1E` 命名、`0x21/0x27/0x28/0x29/0x2E` UI 映射、`0x66` GameCache 归属、`0x14`=42 均有误。以审计文档校正表为准；**DotA 战绩通道仍是 `0x6B`，本节第二/四/五章结论不变。**
 
 ---
 
@@ -81,18 +84,18 @@
 | **`0x17`** | **设置编队** | 按 `Ctrl + 1~9` 设置小队 | 变长 | `GroupIdx(1B) + Count(2B) + Count * 8B` |
 | **`0x18`** | **双击/切编队** | 按 `1~9` 快捷键选中编队 | **2** | `GroupIdx(1B) + SubGroup(1B)` |
 | **`0x19`** | **子编队切换** | 选多单位时按 `TAB` 轮换 | **12** | AbilityId(4) + UnitId1(4) + UnitId2(4) |
-| **`0x1A`** | 预选操作 | 光标悬停准备框选 | 1 | 固定 1 字节 |
-| **`0x1B`** | 拾取地面物品 | 英雄捡神符、吃树、拿装备 | 9 | UnitId(8) + ItemId(1) |
-| **`0x1C`** | 取消复活 | 祭坛中取消英雄复活 | 8 | UnitId(8) |
-| **`0x1D`** | 取消队列 | 取消造兵/取消建造 | 5 | QueueIndex(1) + ItemId(4) |
-| **`0x21`** | 按 ESC 键 | 跳过过场动画、Dota 清除当前选框 | 0 | 固定 0 字节 |
-| **`0x27`** | 技能加点面板 | 按 `O` 键呼出加点子菜单 | 0 | 固定 0 字节 |
-| **`0x28`** | 建造子面板 | 呼出建筑建造子菜单 | 0 | 固定 0 字节 |
-| **`0x29`** | 小地图发信号 | `Alt + 点击小地图`（Ping 信号） | 12 | X(4) + Y(4) + Flags(4) |
-| **`0x2E`** | 对话框点击 | 点击 UI 触发器对话框按钮 | 8 | DialogId(4) + ButtonId(4) |
-| **`0x60`** | **游戏内聊天** | 玩家发聊天消息、`-ap`, `-stats` 等 | 变长 | Target(4B) + Scope(4B) + 文本(`\0`结尾) |
-| **`0x66`** | GameCache同步(旧) | 1.20~1.23 版本的 `SyncStoredInteger` | 变长 | 3个`\0`字符串 + 4字节整数 |
-| **`0x6B`** | **GameCache同步(新)** | **1.24b~1.27 版本的 `SyncStoredInteger`** | 变长 | **3个`\0`字符串 + 4字节整数** |
+| **`0x1A`** | 预选择 PreSubselection | 切换选中前的自动前缀 | **0** | **无附加字节（旧表写成 1 是错的）** |
+| **`0x1B`** | 选择单位 | 触发器/点选单位 | 9 | Mode(1) + ObjectID×2 |
+| **`0x1C`** | 选择地面物品 | 左键点选地上物品 | 9 | Flags(1) + ObjectID×2 |
+| **`0x1D`** | 取消英雄复活 | 祭坛取消复活 | 8 | UnitID×2 |
+| **`0x1E`** | 取消建造/训练队列 | 取消造兵/研究 | 5 | Slot(1) + ItemID(4) |
+| **`0x61`** | 按 ESC 键 | 取消当前命令/关闭子菜单 | 0 | （旧表误写成 0x21） |
+| **`0x66`** | 英雄技能加点菜单 | 进入 hero skill submenu | 0 | （旧表误当成 GameCache） |
+| **`0x67`** | 建造子菜单 | worker 进入 build submenu | 0 | （旧表误写成 0x28） |
+| **`0x68`** | 小地图信号 | Alt+小地图 Ping | 12 | X(4)+Y(4)+duration(4) |
+| **`0x69`/`0x6A`** | 对话框按钮 | Dialog click | 16 | 两个 ObjectID |
+| **`0x60`** | **游戏内聊天** | `-ap` / `-stats` 等 | 变长 | Trigger(4)+Event(4)+文本`\0` |
+| **`0x6B`** | **GameCache 同步** | **`SyncStoredInteger`（1.24b+）** | 变长 | **3个`\0`字符串 + 4字节整数** |
 
 > **提示**：计算玩家真实 **APM（手速）** 时，行业标准只统计：`0x10`, `0x11`, `0x12`, `0x13`, `0x16`, `0x17`, `0x18`, `0x19`, `0x1B` 这 9 个有效指令。
 
