@@ -49,7 +49,7 @@ War3Analysis/
 
 ## 使用 REA 辅助分析
 
-- REA 6.4.0 CLI 安装在 `D:\REA`，当前 Copilot runtime 的 MCP 注册在 `D:\VSCode\data\copilot\mcp-config.json`。更新注册后需完全重启 VS Code，才能在新会话中加载 MCP 工具。
+- REA CLI 安装在 `D:\REA`（当前 `rea-agents` **6.8.0**，与 npm latest 一致；旧文档曾写 6.4.0 已过期），Copilot runtime 的 MCP 注册在 `D:\VSCode\data\copilot\mcp-config.json`。更新注册后需完全重启 VS Code，才能在新会话中加载 MCP 工具。
 - MCP 注册指向 `D:\ghidra_12.1.4` 和其内置 JDK 21，并将 Ghidra 分析期限设为 900 秒。Windows 上的 Ghidra provider 仍属实验性支持。
 - 单独运行 CLI 时，先设置 Ghidra 与 JDK 路径；分析较大的 `game.dll` 时，REA 默认 330 秒期限可能不足，可显式延长：
 
@@ -65,6 +65,7 @@ War3Analysis/
 
 ## 当前分析
 
+- [Warcraft III 1.27 录像自动保存实现路径](analyses/warcraft-iii-1.27-replay-autosave-implementation.md)（[思维导图](analyses/warcraft-iii-1.27-replay-autosave-implementation-mindmap.md)）
 - [Warcraft III 1.27 相机视距与鼠标滚轮缩放](analyses/warcraft-iii-1.27-camera-distance-mouse-wheel.md)（[思维导图](analyses/warcraft-iii-1.27-camera-distance-mouse-wheel-mindmap.md)）
 - [Warcraft III 1.27 `/fps` 显示值怎么计算](analyses/warcraft-iii-1.27-fps-display-calculation.md)（[思维导图](analyses/warcraft-iii-1.27-fps-display-calculation-mindmap.md)）
 - [Warcraft III 1.27 FPS 限制与解除路径](analyses/warcraft-iii-1.27-fps-unlock.md)（[思维导图](analyses/warcraft-iii-1.27-fps-unlock-mindmap.md)）
