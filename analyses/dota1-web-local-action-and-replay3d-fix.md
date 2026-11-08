@@ -50,8 +50,10 @@ DotA1（WC3 地图）不是现代帧同步服务端权威 FPS，而是 **锁步 
 2. **兵线**：按 `buildings.json` 防御塔/兵营坐标重写 top/mid/bot waypoints（下路贴塔：-6816/-6688/-6752）。
 3. **战斗/血条**：恢复交战逻辑与头顶血条 overlay；暂停回放时场景模拟仍以 1x 推进，便于观察兵线。
 4. **面板**：控制台限制 `max-height: 26vh`，并略降相机 HUD 补偿。
-5. **地形贴地**：`sampleHeight` 改为双线性插值。
+5. **地形贴地**：`sampleHeight` 改为与地面四边形剖分一致的**三角插值**（对齐 mdx-m3-viewer `heightAt`/`groundNormal`），斜坡上不再用简单双线性错位。
 6. **野怪**：`composition` 字段按营地点名混合 Kobold/Troll/Centaur/Furbolg/Golem（受现有 MPQ 解包模型种类限制）。
+7. **命令卡状态**：停止时截断行走关键帧；站立后 `move/attack/patrol` 收敛为 `stop`，避免一直显示「移动」。
+8. **地形源**：`named/war3map.w3e` 已与 `D:\Maps\DotA v6.83d.w3x` 对照（129×129，layer 差最大 2）；斜坡主要靠 `groundHeight` 连续变化而非悬崖层。
 
 ## 4. 后续可增强（逆向工具）
 
