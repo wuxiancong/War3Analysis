@@ -58,6 +58,13 @@ xpPercent: Math.round(((t % 60000) / 60000) * 100)
 - 经验条贴图：`bar-xp-fill.png` / `bar-xp-border.png`（来自 `UI\Feedback\XpBar\`）
 - 逻辑：`replay-timeline.ts` xpPercent；`replay-3d.component.ts` 命令卡条件显示与 CSS
 
-## 6. 后续
+## 6. 技能/物品图标批量纠偏（2026-11-08 续）
 
-若物品/技能图标仍有个别发蓝，对 War3Bot `abilityIcons`/`itemIcons` 做同样 BLP 重导出或批量 R/B 校验。
+错误的整图 PNG 重编码曾损坏资源；已从 `War3Launcher/deploy/msvc/images` 恢复，再用 **pngjs 选择性像素纠偏**：
+
+- 仅当像素满足 `B > R+28` 且偏蓝时交换该像素 R/B
+- 保留金色/红色区域（避免剑刃风暴金刃被整图 swap 毁掉）
+- 结果：`A05G` 气旋由青蓝→金黄；`I02O` 速度之鞋由蓝→红
+- 学习技能（O）恢复为**始终显示**，无点数时灰显
+
+槽位居中：去掉 `button` 默认 padding，flex 居中 + `object-fit: contain`。
