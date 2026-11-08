@@ -1,0 +1,464 @@
+﻿
+===== JASS UnitItemInSlot VA=6F3C7730 =====
+  6F3C7730: mov      ecx, dword ptr [esp + 4]
+  6F3C7734: push     esi
+  6F3C7735: call     0x6f3bdcb0
+  6F3C773A: mov      esi, eax
+  6F3C773C: test     esi, esi
+  6F3C773E: je       0x6f3c7774
+  6F3C7740: mov      ecx, esi
+  6F3C7742: call     0x6f282c60
+  6F3C7747: test     eax, eax
+  6F3C7749: je       0x6f3c7774
+  6F3C774B: mov      eax, dword ptr [esp + 0xc]
+  6F3C774F: push     eax
+  6F3C7750: mov      ecx, esi
+  6F3C7752: call     0x6f26ec20
+  6F3C7757: mov      esi, eax
+  6F3C7759: test     esi, esi
+  6F3C775B: je       0x6f3c7774
+  6F3C775D: mov      ecx, dword ptr [0x6fab65f4]
+  6F3C7763: call     0x6f3a8060
+  6F3C7768: push     0
+  6F3C776A: push     esi
+  6F3C776B: mov      ecx, eax
+  6F3C776D: call     0x6f430c80
+  6F3C7772: pop      esi
+  6F3C7773: ret      
+  6F3C7774: xor      eax, eax
+  6F3C7776: pop      esi
+  6F3C7777: ret      
+  6F3C7778: int3     
+  6F3C7779: int3     
+  6F3C777A: int3     
+  6F3C777B: int3     
+  6F3C777C: int3     
+  6F3C777D: int3     
+  6F3C777E: int3     
+  6F3C777F: int3     
+  6F3C7780: mov      ecx, dword ptr [esp + 4]
+  6F3C7784: push     esi
+  6F3C7785: call     0x6f3bdcb0
+  6F3C778A: mov      esi, eax
+  6F3C778C: test     esi, esi
+  6F3C778E: je       0x6f3c77df
+  6F3C7790: mov      edx, dword ptr [esi + 0x10]
+  6F3C7793: mov      ecx, dword ptr [esi + 0xc]
+  6F3C7796: call     0x6f03fa30
+  6F3C779B: test     eax, eax
+  6F3C779D: je       0x6f3c77df
+  6F3C779F: xor      ecx, ecx
+  6F3C77A1: cmp      dword ptr [eax + 0xc], 0x2b61676c
+  6F3C77A8: setne    cl
+  6F3C77AB: sub      ecx, 1
+  6F3C77AE: and      ecx, eax
+  6F3C77B0: mov      eax, ecx
+  6F3C77B2: je       0x6f3c77df
+  6F3C77B4: cmp      dword ptr [eax + 0x20], 0
+  6F3C77B8: jne      0x6f3c77df
+  6F3C77BA: mov      edx, dword ptr [esi + 0x1a0]
+  6F3C77C0: and      edx, dword ptr [esi + 0x19c]
+  6F3C77C6: lea      ecx, [esi + 0x19c]
+  6F3C77CC: cmp      edx, -1
+  6F3C77CF: je       0x6f3c77df
+  6F3C77D1: call     0x6f4786b0
+  6F3C77D6: test     eax, eax
+  6F3C77D8: je       0x6f3c77df
+  6F3C77DA: mov      eax, dword ptr [eax + 0x24]
+  6F3C77DD: pop      esi
+  6F3C77DE: ret      
+  6F3C77DF: xor      eax, eax
+  6F3C77E1: pop      esi
+  6F3C77E2: ret      
+  6F3C77E3: int3     
+  6F3C77E4: int3     
+  6F3C77E5: int3     
+  6F3C77E6: int3     
+  6F3C77E7: int3     
+  6F3C77E8: int3     
+  6F3C77E9: int3     
+  6F3C77EA: int3     
+  6F3C77EB: int3     
+  6F3C77EC: int3     
+  6F3C77ED: int3     
+  6F3C77EE: int3     
+  6F3C77EF: int3     
+  6F3C77F0: mov      ecx, dword ptr [esp + 4]
+  6F3C77F4: push     esi
+  6F3C77F5: call     0x6f3bdcb0
+  6F3C77FA: mov      esi, eax
+  6F3C77FC: test     esi, esi
+  6F3C77FE: je       0x6f3c7841
+  6F3C7800: mov      edx, dword ptr [esi + 0x10]
+  6F3C7803: mov      ecx, dword ptr [esi + 0xc]
+  6F3C7806: call     0x6f03fa30
+  6F3C780B: test     eax, eax
+  6F3C780D: je       0x6f3c7841
+  6F3C780F: xor      ecx, ecx
+  6F3C7811: cmp      dword ptr [eax + 0xc], 0x2b61676c
+  6F3C7818: setne    cl
+  6F3C781B: sub      ecx, 1
+  6F3C781E: and      ecx, eax
+  6F3C7820: mov      eax, ecx
+  6F3C7822: je       0x6f3c7841
+  6F3C7824: cmp      dword ptr [eax + 0x20], 0
+  6F3C7828: jne      0x6f3c7841
+  6F3C782A: mov      ecx, esi
+
+===== JASS UnitInventorySize VA=6F3C8F00 =====
+  6F3C8F00: mov      ecx, dword ptr [esp + 4]
+  6F3C8F04: push     esi
+  6F3C8F05: call     0x6f3bdcb0
+  6F3C8F0A: mov      esi, eax
+  6F3C8F0C: test     esi, esi
+  6F3C8F0E: je       0x6f3c8f23
+  6F3C8F10: mov      ecx, esi
+  6F3C8F12: call     0x6f282c60
+  6F3C8F17: test     eax, eax
+  6F3C8F19: je       0x6f3c8f23
+  6F3C8F1B: mov      ecx, esi
+  6F3C8F1D: pop      esi
+  6F3C8F1E: jmp      0x6f26ec60
+  6F3C8F23: xor      eax, eax
+  6F3C8F25: pop      esi
+  6F3C8F26: ret      
+  6F3C8F27: int3     
+  6F3C8F28: int3     
+  6F3C8F29: int3     
+  6F3C8F2A: int3     
+  6F3C8F2B: int3     
+  6F3C8F2C: int3     
+  6F3C8F2D: int3     
+  6F3C8F2E: int3     
+  6F3C8F2F: int3     
+  6F3C8F30: push     ebx
+  6F3C8F31: mov      ebx, dword ptr [esp + 8]
+  6F3C8F35: push     esi
+  6F3C8F36: mov      ecx, ebx
+  6F3C8F38: call     0x6f3bdcb0
+  6F3C8F3D: mov      esi, eax
+  6F3C8F3F: test     esi, esi
+  6F3C8F41: je       0x6f3c8f8d
+  6F3C8F43: mov      ecx, esi
+  6F3C8F45: call     0x6f282c60
+  6F3C8F4A: test     eax, eax
+  6F3C8F4C: je       0x6f3c8f8d
+  6F3C8F4E: push     edi
+  6F3C8F4F: mov      edi, dword ptr [esp + 0x14]
+  6F3C8F53: mov      ecx, edi
+  6F3C8F55: call     0x6f3beb50
+  6F3C8F5A: test     eax, eax
+  6F3C8F5C: je       0x6f3c8f6a
+  6F3C8F5E: push     eax
+  6F3C8F5F: mov      ecx, esi
+  6F3C8F61: call     0x6f26ec40
+  6F3C8F66: test     eax, eax
+  6F3C8F68: jne      0x6f3c8f70
+  6F3C8F6A: pop      edi
+  6F3C8F6B: pop      esi
+  6F3C8F6C: xor      eax, eax
+  6F3C8F6E: pop      ebx
+  6F3C8F6F: ret      
+  6F3C8F70: mov      eax, dword ptr [esp + 0x1c]
+  6F3C8F74: mov      ecx, dword ptr [esp + 0x18]
+  6F3C8F78: push     edi
+  6F3C8F79: push     eax
+  6F3C8F7A: push     ecx
+  6F3C8F7B: push     0xd0021
+
+===== JASS UnitHasItem? VA=6F3C76F0 =====
+  6F3C76F0: mov      ecx, dword ptr [esp + 4]
+  6F3C76F4: push     esi
+  6F3C76F5: call     0x6f3bdcb0
+  6F3C76FA: mov      esi, eax
+  6F3C76FC: test     esi, esi
+  6F3C76FE: je       0x6f3c7722
+  6F3C7700: mov      ecx, esi
+  6F3C7702: call     0x6f282c60
+  6F3C7707: test     eax, eax
+  6F3C7709: je       0x6f3c7722
+  6F3C770B: mov      ecx, dword ptr [esp + 0xc]
+  6F3C770F: call     0x6f3beb50
+  6F3C7714: test     eax, eax
+  6F3C7716: je       0x6f3c7722
+  6F3C7718: push     eax
+  6F3C7719: mov      ecx, esi
+  6F3C771B: call     0x6f26ec40
+  6F3C7720: pop      esi
+  6F3C7721: ret      
+  6F3C7722: xor      eax, eax
+  6F3C7724: pop      esi
+  6F3C7725: ret      
+  6F3C7726: int3     
+  6F3C7727: int3     
+  6F3C7728: int3     
+  6F3C7729: int3     
+  6F3C772A: int3     
+  6F3C772B: int3     
+  6F3C772C: int3     
+  6F3C772D: int3     
+  6F3C772E: int3     
+  6F3C772F: int3     
+  6F3C7730: mov      ecx, dword ptr [esp + 4]
+  6F3C7734: push     esi
+  6F3C7735: call     0x6f3bdcb0
+  6F3C773A: mov      esi, eax
+  6F3C773C: test     esi, esi
+  6F3C773E: je       0x6f3c7774
+
+===== JASS inventory natives registration block VA=6F3D6460 =====
+  6F3D6460: call     0x6f455110
+  6F3D6465: push     0x6f93359c
+  6F3D646A: mov      edx, 0x6f9482dc
+  6F3D646F: mov      ecx, 0x6f3c73a0
+  6F3D6474: call     0x6f455110
+  6F3D6479: push     0x6f9482cc
+  6F3D647E: mov      edx, 0x6f9482c0
+  6F3D6483: mov      ecx, 0x6f3c73f0
+  6F3D6488: call     0x6f455110
+  6F3D648D: push     0x6f9482b0
+  6F3D6492: mov      edx, 0x6f9482a0
+  6F3D6497: mov      ecx, 0x6f3c74f0
+  6F3D649C: call     0x6f455110
+  6F3D64A1: push     0x6f948294
+  6F3D64A6: mov      edx, 0x6f94827c
+  6F3D64AB: mov      ecx, 0x6f3c75b0
+  6F3D64B0: call     0x6f455110
+  6F3D64B5: push     0x6f94826c
+  6F3D64BA: mov      edx, 0x6f94825c
+  6F3D64BF: mov      ecx, 0x6f3c7660
+  6F3D64C4: call     0x6f455110
+  6F3D64C9: push     0x6f9482b0
+  6F3D64CE: mov      edx, 0x6f948244
+  6F3D64D3: mov      ecx, 0x6f3c76a0
+  6F3D64D8: call     0x6f455110
+  6F3D64DD: push     0x6f9482cc
+  6F3D64E2: mov      edx, 0x6f948238
+  6F3D64E7: mov      ecx, 0x6f3c76f0
+  6F3D64EC: call     0x6f455110
+  6F3D64F1: push     0x6f9482b0
+  6F3D64F6: mov      edx, 0x6f948228
+  6F3D64FB: mov      ecx, 0x6f3c7730
+  6F3D6500: call     0x6f455110
+  6F3D6505: push     0x6f948a28
+  6F3D650A: mov      edx, 0x6f948214
+  6F3D650F: mov      ecx, 0x6f3c8f00
+  6F3D6514: call     0x6f455110
+  6F3D6519: push     0x6f948200
+  6F3D651E: mov      edx, 0x6f9481ec
+  6F3D6523: mov      ecx, 0x6f3c8f30
+  6F3D6528: call     0x6f455110
+  6F3D652D: push     0x6f9481d8
+  6F3D6532: mov      edx, 0x6f9481c4
+  6F3D6537: mov      ecx, 0x6f3c9010
+  6F3D653C: call     0x6f455110
+  6F3D6541: push     0x6f9481ac
+  6F3D6546: mov      edx, 0x6f948198
+  6F3D654B: mov      ecx, 0x6f3c8fa0
+  6F3D6550: call     0x6f455110
+  6F3D6555: push     0x6f9482cc
+  6F3D655A: mov      edx, 0x6f94818c
+
+===== SlotAssign? 6F0419C0 VA=6F0419C0 =====
+  6F0419C0: mov      eax, dword ptr [esp + 4]
+  6F0419C4: test     eax, eax
+  6F0419C6: push     esi
+  6F0419C7: mov      esi, ecx
+  6F0419C9: je       0x6f041a00
+  6F0419CB: mov      edx, dword ptr [eax + 0x10]
+  6F0419CE: mov      ecx, dword ptr [eax + 0xc]
+  6F0419D1: call     0x6f03fa30
+  6F0419D6: test     eax, eax
+  6F0419D8: je       0x6f041a00
+  6F0419DA: xor      ecx, ecx
+  6F0419DC: cmp      dword ptr [eax + 0xc], 0x2b61676c
+  6F0419E3: setne    cl
+  6F0419E6: sub      ecx, 1
+  6F0419E9: and      eax, ecx
+  6F0419EB: test     eax, eax
+  6F0419ED: je       0x6f041a00
+  6F0419EF: mov      edx, dword ptr [eax + 0x14]
+  6F0419F2: mov      dword ptr [esi], edx
+  6F0419F4: mov      eax, dword ptr [eax + 0x18]
+  6F0419F7: mov      dword ptr [esi + 4], eax
+  6F0419FA: mov      eax, esi
+  6F0419FC: pop      esi
+  6F0419FD: ret      4
+  6F041A00: mov      dword ptr [esi + 4], 0xffffffff
+  6F041A07: mov      dword ptr [esi], 0xffffffff
+  6F041A0D: mov      eax, esi
+  6F041A0F: pop      esi
+  6F041A10: ret      4
+  6F041A13: int3     
+  6F041A14: int3     
+  6F041A15: int3     
+  6F041A16: int3     
+  6F041A17: int3     
+  6F041A18: int3     
+  6F041A19: int3     
+  6F041A1A: int3     
+  6F041A1B: int3     
+  6F041A1C: int3     
+  6F041A1D: int3     
+  6F041A1E: int3     
+  6F041A1F: int3     
+  6F041A20: push     -1
+  6F041A22: push     0x6f7eaa08
+  6F041A27: mov      eax, dword ptr fs:[0]
+  6F041A2D: push     eax
+  6F041A2E: push     ebx
+  6F041A2F: push     esi
+  6F041A30: push     edi
+  6F041A31: mov      eax, dword ptr [0x6faae140]
+  6F041A36: xor      eax, esp
+  6F041A38: push     eax
+  6F041A39: lea      eax, [esp + 0x10]
+
+===== SlotRead? 6F021A00 VA=6F021A00 =====
+  6F021A00: mov      eax, dword ptr [ecx + 4]
+  6F021A03: and      eax, dword ptr [ecx]
+  6F021A05: cmp      eax, -1
+  6F021A08: jne      0x6f021a0d
+  6F021A0A: xor      eax, eax
+  6F021A0C: ret      
+  6F021A0D: jmp      0x6f4786b0
+  6F021A12: int3     
+  6F021A13: int3     
+  6F021A14: int3     
+  6F021A15: int3     
+  6F021A16: int3     
+  6F021A17: int3     
+  6F021A18: int3     
+  6F021A19: int3     
+  6F021A1A: int3     
+  6F021A1B: int3     
+  6F021A1C: int3     
+  6F021A1D: int3     
+  6F021A1E: int3     
+  6F021A1F: int3     
+  6F021A20: mov      edx, dword ptr [ecx]
+  6F021A22: mov      eax, dword ptr [esp + 4]
+  6F021A26: cmp      edx, dword ptr [eax + 0xc]
+  6F021A29: jne      0x6f021a3b
+  6F021A2B: mov      ecx, dword ptr [ecx + 4]
+  6F021A2E: cmp      ecx, dword ptr [eax + 0x10]
+  6F021A31: jne      0x6f021a3b
+  6F021A33: mov      eax, 1
+  6F021A38: ret      4
+  6F021A3B: xor      eax, eax
+  6F021A3D: ret      4
+  6F021A40: mov      eax, dword ptr [ecx + 4]
+  6F021A43: and      eax, dword ptr [ecx]
+  6F021A45: xor      ecx, ecx
+  6F021A47: cmp      eax, -1
+  6F021A4A: setne    cl
+  6F021A4D: mov      eax, ecx
+  6F021A4F: ret      
+  6F021A50: mov      eax, dword ptr [esp + 4]
+  6F021A54: test     eax, eax
+  6F021A56: je       0x6f021a66
+  6F021A58: mov      edx, dword ptr [eax + 0x14]
+  6F021A5B: mov      dword ptr [ecx], edx
+  6F021A5D: mov      eax, dword ptr [eax + 0x18]
+
+===== ResolveHandle 6F4786B0 VA=6F4786B0 =====
+  6F4786B0: mov      edx, dword ptr [ecx + 4]
+  6F4786B3: mov      ecx, dword ptr [ecx]
+  6F4786B5: call     0x6f03fa30
+  6F4786BA: test     eax, eax
+  6F4786BC: je       0x6f4786c8
+  6F4786BE: cmp      dword ptr [eax + 0x20], 0
+  6F4786C2: jne      0x6f4786c8
+  6F4786C4: mov      eax, dword ptr [eax + 0x54]
+  6F4786C7: ret      
+  6F4786C8: xor      eax, eax
+  6F4786CA: ret      
+  6F4786CB: int3     
+  6F4786CC: int3     
+  6F4786CD: int3     
+  6F4786CE: int3     
+  6F4786CF: int3     
+  6F4786D0: push     ecx
+  6F4786D1: push     ebx
+  6F4786D2: push     esi
+  6F4786D3: push     edi
+  6F4786D4: mov      edi, ecx
+  6F4786D6: mov      eax, dword ptr [edi]
+  6F4786D8: mov      edx, dword ptr [eax + 0x14]
+  6F4786DB: mov      dword ptr [esp + 0xc], 0
+  6F4786E3: call     edx
+  6F4786E5: push     0
+  6F4786E7: push     0x14
+  6F4786E9: push     0x6f951c8c
+  6F4786EE: push     0x10
+  6F4786F0: mov      ebx, eax
+  6F4786F2: call     0x6f6eb5b2
+  6F4786F7: test     eax, eax
+  6F4786F9: je       0x6f478715
+  6F4786FB: or       ecx, 0xffffffff
+  6F4786FE: mov      dword ptr [eax + 4], 0
+  6F478705: mov      dword ptr [eax + 8], ecx
+  6F478708: mov      dword ptr [eax + 0xc], ecx
+found b'UnitAddItemToSlotById' at 6F94827C
+found b'UnitAddItemById' at 6F9482A0
+found b'UnitAddItem' at 6F9482C0
+UnitAddItem str 0x6f9482c0 ref 0x6f3d647f
+
+===== UnitAddItem reg VA=6F3D646F =====
+  6F3D646F: mov      ecx, 0x6f3c73a0
+  6F3D6474: call     0x6f455110
+  6F3D6479: push     0x6f9482cc
+  6F3D647E: mov      edx, 0x6f9482c0
+  6F3D6483: mov      ecx, 0x6f3c73f0
+  6F3D6488: call     0x6f455110
+  6F3D648D: push     0x6f9482b0
+  6F3D6492: mov      edx, 0x6f9482a0
+  6F3D6497: mov      ecx, 0x6f3c74f0
+UnitAddItemById str 0x6f9482a0 ref 0x6f3d6493
+
+===== UnitAddItemById reg VA=6F3D6483 =====
+  6F3D6483: mov      ecx, 0x6f3c73f0
+  6F3D6488: call     0x6f455110
+  6F3D648D: push     0x6f9482b0
+  6F3D6492: mov      edx, 0x6f9482a0
+  6F3D6497: mov      ecx, 0x6f3c74f0
+  6F3D649C: call     0x6f455110
+  6F3D64A1: push     0x6f948294
+  6F3D64A6: mov      edx, 0x6f94827c
+  6F3D64AB: mov      ecx, 0x6f3c75b0
+UnitAddItemToSlotById str 0x6f94827c ref 0x6f3d64a7
+
+===== UnitAddItemToSlotById reg VA=6F3D6497 =====
+  6F3D6497: mov      ecx, 0x6f3c74f0
+  6F3D649C: call     0x6f455110
+  6F3D64A1: push     0x6f948294
+  6F3D64A6: mov      edx, 0x6f94827c
+  6F3D64AB: mov      ecx, 0x6f3c75b0
+  6F3D64B0: call     0x6f455110
+  6F3D64B5: push     0x6f94826c
+  6F3D64BA: mov      edx, 0x6f94825c
+  6F3D64BF: mov      ecx, 0x6f3c7660
+UnitDropItemSlot str 0x6f9481c4 ref 0x6f3d6533
+
+===== UnitDropItemSlot reg VA=6F3D6523 =====
+  6F3D6523: mov      ecx, 0x6f3c8f30
+  6F3D6528: call     0x6f455110
+  6F3D652D: push     0x6f9481d8
+  6F3D6532: mov      edx, 0x6f9481c4
+  6F3D6537: mov      ecx, 0x6f3c9010
+  6F3D653C: call     0x6f455110
+  6F3D6541: push     0x6f9481ac
+  6F3D6546: mov      edx, 0x6f948198
+  6F3D654B: mov      ecx, 0x6f3c8fa0
+UnitRemoveItemFromSlot str 0x6f948244 ref 0x6f3d64cf
+
+===== UnitRemoveItemFromSlot reg VA=6F3D64BF =====
+  6F3D64BF: mov      ecx, 0x6f3c7660
+  6F3D64C4: call     0x6f455110
+  6F3D64C9: push     0x6f9482b0
+  6F3D64CE: mov      edx, 0x6f948244
+  6F3D64D3: mov      ecx, 0x6f3c76a0
+  6F3D64D8: call     0x6f455110
+  6F3D64DD: push     0x6f9482cc
+  6F3D64E2: mov      edx, 0x6f948238
+  6F3D64E7: mov      ecx, 0x6f3c76f0

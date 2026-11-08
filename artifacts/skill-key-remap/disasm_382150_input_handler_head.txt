@@ -1,0 +1,26 @@
+00382150  push       -1
+00382152  push       0x6f821c08
+00382157  mov        eax, dword ptr fs:[0]
+0038215D  push       eax
+0038215E  sub        esp, 0x48
+00382161  push       ebx
+00382162  push       ebp
+00382163  push       esi
+00382164  push       edi
+00382165  mov        eax, dword ptr [0x6faae140]
+0038216A  xor        eax, esp
+0038216C  push       eax
+0038216D  lea        eax, [esp + 0x5c]
+00382171  mov        dword ptr fs:[0], eax
+00382177  mov        esi, ecx
+00382179  mov        dword ptr [esp + 0x20], esi
+0038217D  call       0x339b90
+00382182  mov        dword ptr [esp + 0x14], eax
+00382186  mov        eax, dword ptr [eax + 0x1ac]
+0038218C  xor        ebp, ebp
+0038218E  cmp        eax, ebp
+00382190  jne        0x382199
+00382192  xor        eax, eax
+00382194  jmp        0x3829ea
+00382199  mov        ecx, esi
+0038219B  call       0x339b90

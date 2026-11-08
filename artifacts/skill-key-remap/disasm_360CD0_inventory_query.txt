@@ -1,0 +1,23 @@
+00360CD0  push       ebx
+00360CD1  push       ebp
+00360CD2  push       esi
+00360CD3  mov        esi, dword ptr [ecx + 0x12c]
+00360CD9  test       esi, esi
+00360CDB  push       edi
+00360CDC  je         0x360d32
+00360CDE  mov        eax, dword ptr [ecx + 0x130]
+00360CE4  mov        ebx, dword ptr [esp + 0x24]
+00360CE8  mov        ebp, dword ptr [0x6f92ed9c]
+00360CEE  lea        edi, [eax + esi*8 + 4]
+00360CF2  mov        eax, dword ptr [edi - 8]
+00360CF5  sub        edi, 8
+00360CF8  sub        esi, 1
+00360CFB  test       eax, eax
+00360CFD  je         0x360d2e
+00360CFF  cmp        dword ptr [eax + 0x94], 0
+00360D06  je         0x360d2e
+00360D08  cmp        dword ptr [eax + 0x138], 0
+00360D0F  je         0x360d2e
+00360D11  mov        ecx, dword ptr [eax + 0x190]
+00360D17  cmp        dword ptr [ecx + 0x5ac], ebx
+00360D1D  jne        0x360d2e

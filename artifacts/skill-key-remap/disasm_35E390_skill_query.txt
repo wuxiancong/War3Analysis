@@ -1,0 +1,43 @@
+0035E390  mov        ecx, dword ptr [ecx + 0x154]
+0035E396  sub        esp, 8
+0035E399  push       ebx
+0035E39A  mov        ebx, dword ptr [esp + 0x20]
+0035E39E  push       ebp
+0035E39F  push       esi
+0035E3A0  push       edi
+0035E3A1  lea        edi, [ecx + 8]
+0035E3A4  xor        edx, edx
+0035E3A6  xor        ecx, ecx
+0035E3A8  mov        eax, edi
+0035E3AA  lea        ebx, [ebx]
+0035E3B0  mov        esi, dword ptr [eax]
+0035E3B2  mov        esi, dword ptr [edx + esi]
+0035E3B5  test       esi, esi
+0035E3B7  je         0x35e3d9
+0035E3B9  cmp        dword ptr [esi + 0x94], 0
+0035E3C0  je         0x35e3d9
+0035E3C2  cmp        dword ptr [esi + 0x138], 0
+0035E3C9  je         0x35e3d9
+0035E3CB  mov        ebp, dword ptr [esi + 0x190]
+0035E3D1  cmp        dword ptr [ebp + 0x5ac], ebx
+0035E3D7  je         0x35e3f8
+0035E3D9  add        ecx, 1
+0035E3DC  add        eax, 0x10
+0035E3DF  cmp        ecx, 3
+0035E3E2  jb         0x35e3b0
+0035E3E4  add        edx, 4
+0035E3E7  cmp        edx, 0x10
+0035E3EA  jb         0x35e3a6
+0035E3EC  pop        edi
+0035E3ED  pop        esi
+0035E3EE  pop        ebp
+0035E3EF  xor        eax, eax
+0035E3F1  pop        ebx
+0035E3F2  add        esp, 8
+0035E3F5  ret        0x30
+0035E3F8  mov        ecx, ebp
+0035E3FA  mov        eax, dword ptr [ecx + 0x14]
+0035E3FD  mov        edi, dword ptr [ecx + 8]
+0035E400  mov        ebx, dword ptr [ecx + 0xc]
+0035E403  mov        ebp, dword ptr [ecx + 0x10]
+0035E406  push       0
