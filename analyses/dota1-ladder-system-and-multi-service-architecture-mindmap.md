@@ -1,77 +1,82 @@
 # Dota1 天梯积分系统与分布式多服务架构 — 思维导图与全景拓扑
 
-本文档提供 Dota1 天梯积分体系、分布式结算流水与安全防护架构的 Mermaid 思维导图、网络拓扑图以及时序交互图。
+本文档提供 Dota1 天梯积分体系、分布式结算流水与安全防护架构的 Mermaid 思维导图（有向图结构）、网络拓扑图以及时序交互图。
 
 详细设计原理与技术白皮书见：[`dota1-ladder-system-and-multi-service-architecture.md`](./dota1-ladder-system-and-multi-service-architecture.md)
 
 ---
 
-## 一、 全景技术思维导图
+## 一、 全景技术思维导图 (Mindmap Flowchart)
 
 ```mermaid
-mindmap
-  root((Dota1 天梯积分与多服务系统))
-    天梯算法模型
-      Elo 基础分
-        胜率期望 EA/EB
-        团队均分加权
-      动态 K 因子
-        低分段快速收敛 K=36
-        中分黄金段 K=30
-        高分巅峰段 K=18~22
-      表现分 Performance Bonus
-        KDA 加权权重
-        参团率 KP 收益
-        正补/反补/经济转化
-      特殊赏罚机制
-        全场 MVP +3分额外奖励
-        败方 SVP 35%掉分减免
-        强退/逃跑秒退 -45分严惩并清空连胜
-    等级与称号并存体系
-      等级代码 (数据库/通信/匹配)
-        ["-", "D", "C", "B", "A", "S", "SS", "SSS"]
-        8阶单字符或短代码，易于SQL索引与网络封包
-      段位中文称号 (UI展示/成就)
-        见习新手 (-)
-        青铜守护 (D)
-        白银先锋 (C)
-        黄金勇士 (B)
-        铂金统领 (A)
-        璀璨钻石 (S)
-        超凡大师 (SS)
-        最强王者 (SSS)
-      分数线映射
-        0 / 1000 / 3000 / 5000 / 7000 / 9000 / 11000 / 13000
-    分布式多服务架构
-      War3Bot (分布式主机/匹配服务)
-        MatchManager: 搜索半径动态扩张 (±50 到 ±400)
-        MatchManager: 蛇形排队配平两队均分 (1/2-2/2-2/1)
-        Client: 监听 0x6B (Winner=1/2, 1..9战绩数据)
-        Client: 赛后自动生成 zlib 压缩动作流 .dat 归档
-      War3Launcher (客户端启动器)
-        RoomManager: Q_ENUM(LadderRankLevel) 暴露 QML
-        RoomComponent: 数据库代码与中文称号并存展示
-        NetworkManager: 接收 S_C_MATCH_RESULT (0x31) 战报包
-      War3Angular (Web API 与微服务中枢)
-        Express + SSR 高并发网关
-        MySQL 连接池与单事务 ACID 落库
-        Angular 前端 LadderService 响应式数据流
-    全链路安全防护机制
-      身份特权鉴权
-        HMAC-SHA256 双向数字签名
-        BOT_SECRET_KEY 服务间私钥校验
-        常量时间对比 crypto.timingSafeEqual
-      反重放攻击 Replay Defense
-        X-Bot-Timestamp ±60秒时钟漂移拦截
-        X-Bot-Nonce 32位随机唯一凭证
-        5分钟内存滑动黑名单容器
-      战绩真实性审计
-        3分钟最低时长校验 (防秒开秒退)
-        人头数守恒定理 (近卫击杀 == 天灾死亡)
-        极端异常值与负数注入过滤
-      幂等性与事务原子性
-        matchId 唯一约束防重复入库
-        MySQL 开启单事务多表联动提交
+graph LR
+    Root["Dota1 天梯积分与多服务系统"]
+
+    %% 1. 天梯算法模型
+    Root --> M1["1. 天梯算法模型"]
+    M1 --> M1_1["Elo 基础分"]
+    M1_1 --> M1_1_1["双方团队平均分差"]
+    M1_1 --> M1_1_2["胜率期望 EA 与 EB 建模"]
+    M1 --> M1_2["动态 K 因子"]
+    M1_2 --> M1_2_1["低分新手段: K=36 (快速定位)"]
+    M1_2 --> M1_2_2["稳定黄金段: K=30"]
+    M1_2 --> M1_2_3["巅峰王者段: K=18~22 (严格防通胀)"]
+    M1 --> M1_3["表现分加权 Performance"]
+    M1_3 --> M1_3_1["KDA 战力权重: 3K + 1.5A - 2D"]
+    M1_3 --> M1_3_2["参团率 KP 贡献收益"]
+    M1_3 --> M1_3_3["正反补与经济转化"]
+    M1 --> M1_4["特殊赏罚机制"]
+    M1_4 --> M1_4_1["全场 MVP: 额外奖励 +3 分"]
+    M1_4 --> M1_4_2["败方 SVP: 免除 35% 掉分保护"]
+    M1_4 --> M1_4_3["强退/逃跑秒退: 重扣 45 分并清空连胜"]
+
+    %% 2. 等级与称号并存体系
+    Root --> M2["2. 等级与称号并存体系"]
+    M2 --> M2_1["权威等级短代码 (数据库/通信/匹配)"]
+    M2_1 --> M2_1_1["代码列表: -, D, C, B, A, S, SS, SSS"]
+    M2_1 --> M2_1_2["单字符索引，极低网络负载与存储开销"]
+    M2 --> M2_2["段位中文称号与组合格式 (UI展示/成就)"]
+    M2_2 --> M2_2_0["0阶: 见习新手 (-) [0分]"]
+    M2_2 --> M2_2_1["1阶: 青铜守护 (D) [1000分]"]
+    M2_2 --> M2_2_2["2阶: 白银先锋 (C) [3000分]"]
+    M2_2 --> M2_2_3["3阶: 黄金勇士 (B) [5000分]"]
+    M2_2 --> M2_2_4["4阶: 铂金统领 (A) [7000分]"]
+    M2_2 --> M2_2_5["5阶: 璀璨钻石 (S) [9000分]"]
+    M2_2 --> M2_2_6["6阶: 超凡大师 (SS) [11000分]"]
+    M2_2 --> M2_2_7["7阶: 最强王者 (SSS) [13000分]"]
+
+    %% 3. 分布式多服务架构
+    Root --> M3["3. 分布式多服务架构"]
+    M3 --> M3_1["War3Bot 主机与匹配服务"]
+    M3_1 --> M3_1_1["MatchManager: 搜索半径动态扩张 (+-50 至 +-400)"]
+    M3_1 --> M3_1_2["MatchManager: 蛇形排队平衡配队 (1/2-2/2-2/1)"]
+    M3_1 --> M3_1_3["Client: 监听 0x6B 胜负 (Winner) 与 1..9 战绩同步"]
+    M3_1 --> M3_1_4["Client: 赛后动作流 zlib 压缩存储为 .dat 归档"]
+    M3 --> M3_2["War3Launcher 启动器客户端"]
+    M3_2 --> M3_2_1["RoomManager: 声明 LadderRankLevel 枚举暴露 QML"]
+    M3_2 --> M3_2_2["RoomComponent: 数据库代码与中文称号并存展示"]
+    M3_2 --> M3_2_3["NetworkManager: 接收 S_C_MATCH_RESULT (0x31) 战报包"]
+    M3 --> M3_3["War3Angular Web API 与数据中枢"]
+    M3_3 --> M3_3_1["Express + SSR 高性能网关服务"]
+    M3_3 --> M3_3_2["MySQL 连接池与单事务 ACID 落库"]
+    M3_3 --> M3_3_3["Angular 前端 LadderService 响应式数据流"]
+
+    %% 4. 全链路安全防线
+    Root --> M4["4. 全链路安全防线"]
+    M4 --> M4_1["特权身份鉴权 (Mutual Auth)"]
+    M4_1 --> M4_1_1["HMAC-SHA256 数字签名 (BOT_SECRET_KEY)"]
+    M4_1 --> M4_1_2["常量时间对比 crypto.timingSafeEqual (防时序旁路)"]
+    M4 --> M4_2["反重放攻击防御 (Replay Defense)"]
+    M4_2 --> M4_2_1["X-Bot-Timestamp +-60秒时钟漂移检查"]
+    M4_2 --> M4_2_2["X-Bot-Nonce 32位唯一随机字符串"]
+    M4_2 --> M4_2_3["5分钟内存滑动黑名单容器去重"]
+    M4 --> M4_3["战绩真实性审计 (Integrity Audit)"]
+    M4_3 --> M4_3_1["3分钟最低对局时长门槛 (防秒开秒退刷分)"]
+    M4_3 --> M4_3_2["人头守恒定律: 近卫总击杀大致等于天灾总死亡"]
+    M4_3 --> M4_3_3["数值边界过滤: 拦截负数与单场异常金钱/击杀"]
+    M4 --> M4_4["幂等性与事务原子性"]
+    M4_4 --> M4_4_1["matchId 唯一约束查重，杜绝重复结算加分"]
+    M4_4 --> M4_4_2["MySQL 单一事务原子操作: matches + results + stats"]
 ```
 
 ---
@@ -106,9 +111,9 @@ flowchart TB
         MYSQL[("MySQL 8.0 核心业务库 (pvpgn)<br/>ladder_stats: 玩家积分/胜负/段位<br/>matches: 对局流水<br/>match_results: 10人详细战绩")]
     end
 
-    WL1 -- CSMatchEnqueuePacket (发起匹配) --> MM
-    MM -- SCMatchAssignPacket (下发进房) --> WL1
-    W3G -- W3GS_OUTGOING_ACTION (0x26 / 0x6B) --> CLIENT
+    WL1 -- "CSMatchEnqueuePacket (发起匹配)" --> MM
+    MM -- "SCMatchAssignPacket (下发进房)" --> WL1
+    W3G -- "W3GS_OUTGOING_ACTION (0x26 / 0x6B)" --> CLIENT
     CLIENT --> STATS_PROV
     STATS_PROV --> SCORE_ENG
     CLIENT --> DAT_STORE
@@ -170,4 +175,3 @@ sequenceDiagram
     DB-->>Angular: 返回 score, rank_level, winRate, kda...
     Angular-->>Launcher: 200 OK (展示段位称号 "黄金勇士 (B)", 积分 5240)
 ```
-
