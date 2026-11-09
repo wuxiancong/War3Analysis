@@ -1,0 +1,4 @@
+open "D:\Qt\workspace\War3Launcher\versions\1.27.0.52240\war3.mpq"
+list "D:\Qt\workspace\War3Analysis\maps\dota683d\war3_furbolg_list.txt" "*Furbolg*"
+close
+exit
