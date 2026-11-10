@@ -1,0 +1,93 @@
+return false
+endfunction
+function SIO takes nothing returns nothing
+set SI=SI+1
+endfunction
+function SOO takes nothing returns nothing
+set NI=NI+1
+endfunction
+function S3O takes nothing returns boolean
+function SSO takes group STO,integer SRO returns nothing
+local unit u
+loop
+set u=FirstOfGroup(STO)
+exitwhen(u==null)
+call GroupRemoveUnit(STO,u)
+call SetUnitAbilityLevel(u,I2,SRO)
+endloop
+endfunction
+function SPO takes nothing returns nothing
+local boolean SQO=ModuloInteger(GetTriggerExecCount(ZG),7)==0
+if R70 then
+return
+endif
+call SXO(false)
+if SQO then
+call SWO()
+endif
+if GetTriggerExecCount(ZG)==1 and O2I==false then
+call UnitResetCooldown(D30[1])
+call UnitResetCooldown(D30[2])
+call UnitResetCooldown(D30[3])
+call UnitResetCooldown(D30[4])
+call UnitResetCooldown(D30[5])
+call UnitResetCooldown(D30[7])
+call UnitResetCooldown(D30[8])
+call UnitResetCooldown(D30[9])
+call UnitResetCooldown(D30[10])
+call UnitResetCooldown(D30[11])
+call BK1(I70,false)
+call BK1(I80,false)
+call BK1(I90,false)
+call BK1(BU0,false)
+call BK1(C00,false)
+call BK1(CI0,false)
+elseif GetTriggerExecCount(ZG)==1 and O2I==true then
+call BK1(I80,false)
+call BK1(C00,false)
+endif
+if GetTriggerExecCount(ZG)==1 then
+call EnableTrigger(EW0)
+endif
+if O2I==false and O7I==false then
+if(HI)then
+call CreateNUnitsAtLoc(NI,1969711215,CO[0],RI,bj_UNIT_FACING)
+else
+call CreateNUnitsAtLoc(NI,1966092337,CO[0],RI,bj_UNIT_FACING)
+endif
+call SZO(bj_lastCreatedGroup)
+call SSO(bj_lastCreatedGroup,2)
+endif
+if O6I==false then
+if(ZI)then
+call CreateNUnitsAtLoc(NI,1969711215,CO[0],TI,bj_UNIT_FACING)
+else
+call CreateNUnitsAtLoc(NI,1966092337,CO[0],TI,bj_UNIT_FACING)
+endif
+call SSO(bj_lastCreatedGroup,3)
+endif
+if O2I==false and O4I==false then
+if(VI)then
+call CreateNUnitsAtLoc(NI,1969711215,CO[0],PI,bj_UNIT_FACING)
+else
+call CreateNUnitsAtLoc(NI,1966092337,CO[0],PI,bj_UNIT_FACING)
+endif
+call SVO(bj_lastCreatedGroup)
+call SSO(bj_lastCreatedGroup,4)
+endif
+if O2I==false and O7I==false then
+if(EI)then
+call CreateNUnitsAtLoc(SI,1970169187,CO[0],I1,bj_UNIT_FACING)
+else
+call CreateNUnitsAtLoc(SI,1966092338,CO[0],I1,bj_UNIT_FACING)
+endif
+call SZO(bj_lastCreatedGroup)
+call SSO(bj_lastCreatedGroup,2)
+set t=null
+call TriggerRegisterTimerEventPeriodic(ZG,30.00)
+call TriggerExecute(ZG)
+call TriggerRegisterTimerEventPeriodic(UG,450.00)
+call TriggerRegisterTimerEventSingle(GG,2699.00)
+call TriggerRegisterTimerEventSingle(HG,999.00)
+call TriggerRegisterTimerEventSingle(HG,1999.00)
+call TriggerRegisterTimerEventSingle(HG,2999.00)

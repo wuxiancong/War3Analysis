@@ -65,6 +65,8 @@ War3Analysis/
 
 ## 当前分析
 
+- [DotA 6.83d 玩法数据逆向：从受保护地图还原网页对战数值](analyses/dota-6.83d-web-gameplay-data-reverse.md)（[思维导图](analyses/dota-6.83d-web-gameplay-data-reverse-mindmap.md)；产物 `artifacts/dota-web-gameplay/`，脚本 `shared/scripts/mpq_extract_known.cjs`）
+- [DotA1 网页对战：架构、与 War3 执行模型的对应、验证记录](analyses/dota1-web-online-gameplay-architecture.md)（[思维导图](analyses/dota1-web-online-gameplay-architecture-mindmap.md)）
 - [DotA 合成成品落格 & 臂章切换原位](analyses/warcraft-iii-dota-item-combine-slot-placement.md)（Bot `matchedSlots.first()` → `min` 修正）
 - [Warcraft III 1.26 本地客户端物品栏 6 格顺序](analyses/warcraft-iii-1.26-inventory-six-slot-order.md)（[思维导图](analyses/warcraft-iii-1.26-inventory-six-slot-order-mindmap.md)；产物 `artifacts/inventory-slot-order/`）
 - [Warcraft III 1.27 录像自动保存实现路径](analyses/warcraft-iii-1.27-replay-autosave-implementation.md)（[思维导图](analyses/warcraft-iii-1.27-replay-autosave-implementation-mindmap.md)）
