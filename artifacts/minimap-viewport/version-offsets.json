@@ -1,0 +1,328 @@
+{
+  "1.0.17.5988": {
+    "imageBase": "0x6F000000",
+    "sha256": "EA09C582A4C8B4112C1425CC954BF710FED3051E4A85BC39586647C0BD8BF4B2",
+    "size": 9371708,
+    "CMinimap_EventRouter": "0x00152590"
+  },
+  "1.0.20.6048": {
+    "imageBase": "0x6F000000",
+    "sha256": "F9166A59D6029E9AF132A090CFAC8E324B0A3452D43C0D30EA39F1E3A82DD982",
+    "size": 9375804,
+    "CMinimap_EventRouter": "0x00152590"
+  },
+  "1.20.4.6074": {
+    "imageBase": "0x6F000000",
+    "sha256": "6B5B406861A56449C604C15CF0971DF7D6D26F679EFF7AA69A34946C7D91764B",
+    "size": 9375804,
+    "CMinimap_EventRouter": "0x001525A0"
+  },
+  "1.21.0.6263": {
+    "imageBase": "0x6F000000",
+    "sha256": "3265E78DD68B1AB6C54957409E472C077F9FE2ABCCE4CFD279E56AF66A6EF6F3",
+    "size": 9375804,
+    "CMinimap_EventRouter": "0x00152930"
+  },
+  "1.22.0.6328": {
+    "imageBase": "0x6F000000",
+    "sha256": "5F866BD8A45951CD2C4B22B1C80A0329246DBED847540C85430376E8C4310C84",
+    "size": 11956224,
+    "CMinimap_EventRouter": "0x00359090",
+    "CMinimapClickEvent_Handler": "0x0033B120",
+    "handler_calls": [
+      "0x0033B030",
+      "0x00338FD0",
+      "0x002FADA0"
+    ],
+    "move_candidates": [
+      {
+        "rva": "0x0033B030",
+        "size": 42,
+        "callees": [
+          "0x0032FE70",
+          "0x00430520"
+        ]
+      },
+      {
+        "rva": "0x00338FD0",
+        "size": 28,
+        "callees": [
+          "0x00338FD0"
+        ]
+      },
+      {
+        "rva": "0x002FADA0",
+        "size": 100,
+        "callees": [
+          "0x002F65F0",
+          "0x002FAC60",
+          "0x002F4B30",
+          "0x002F4B90"
+        ]
+      }
+    ],
+    "PostCameraPositionAction": "0x00430520",
+    "CMinimap_MoveCameraToWorld": "0x0033B030",
+    "CMinimap_DrawViewRect": "0x00347380",
+    "CMinimap_vftable": "0x0092EF14"
+  },
+  "1.23.0.6352": {
+    "imageBase": "0x6F000000",
+    "sha256": "EE6175947A8792CD672253B37DEB4C5D0577E4E145FFD90FED9021C64C31AE1E",
+    "size": 12062720,
+    "CMinimap_EventRouter": "0x0035A610",
+    "CMinimapClickEvent_Handler": "0x0033C6A0",
+    "handler_calls": [
+      "0x0033C5B0",
+      "0x0033A550",
+      "0x002FC2E0"
+    ],
+    "move_candidates": [
+      {
+        "rva": "0x0033C5B0",
+        "size": 42,
+        "callees": [
+          "0x003313B0",
+          "0x00432240"
+        ]
+      },
+      {
+        "rva": "0x0033A550",
+        "size": 28,
+        "callees": [
+          "0x0033A550"
+        ]
+      },
+      {
+        "rva": "0x002FC2E0",
+        "size": 100,
+        "callees": [
+          "0x002F7B30",
+          "0x002FC1A0",
+          "0x002F6070",
+          "0x002F60D0"
+        ]
+      }
+    ],
+    "PostCameraPositionAction": "0x00432240",
+    "CMinimap_MoveCameraToWorld": "0x0033C5B0",
+    "CMinimap_DrawViewRect": "0x00348900",
+    "CMinimap_vftable": "0x0094304C"
+  },
+  "1.24.1.6374": {
+    "imageBase": "0x6F000000",
+    "sha256": "EE23DD7795EA82DDFC292FDD2A05D5A76D3ABEF801CEC01F0EFF68F521DF0441",
+    "size": 12140544,
+    "CMinimap_EventRouter": "0x0035A6D0",
+    "CMinimapClickEvent_Handler": "0x0033C760",
+    "handler_calls": [
+      "0x0033C670",
+      "0x0033A610",
+      "0x002FC3A0"
+    ],
+    "move_candidates": [
+      {
+        "rva": "0x0033C670",
+        "size": 42,
+        "callees": [
+          "0x00331470",
+          "0x00440640"
+        ]
+      },
+      {
+        "rva": "0x0033A610",
+        "size": 28,
+        "callees": [
+          "0x0033A610"
+        ]
+      },
+      {
+        "rva": "0x002FC3A0",
+        "size": 100,
+        "callees": [
+          "0x002F7BF0",
+          "0x002FC260",
+          "0x002F6130",
+          "0x002F6190"
+        ]
+      }
+    ],
+    "PostCameraPositionAction": "0x00440640",
+    "CMinimap_MoveCameraToWorld": "0x0033C670",
+    "CMinimap_DrawViewRect": "0x003489C0",
+    "CMinimap_vftable": "0x00952184"
+  },
+  "1.24.4.6387": {
+    "imageBase": "0x6F000000",
+    "sha256": "C7C958174BDE30961A41FA91827E78A800E473EFDD8D1DE8D6C94ABF0B0024BF",
+    "size": 12140544,
+    "CMinimap_EventRouter": "0x0035A790",
+    "CMinimapClickEvent_Handler": "0x0033C820",
+    "handler_calls": [
+      "0x0033C730",
+      "0x0033A6D0",
+      "0x002FC460"
+    ],
+    "move_candidates": [
+      {
+        "rva": "0x0033C730",
+        "size": 42,
+        "callees": [
+          "0x00331530",
+          "0x00440690"
+        ]
+      },
+      {
+        "rva": "0x0033A6D0",
+        "size": 28,
+        "callees": [
+          "0x0033A6D0"
+        ]
+      },
+      {
+        "rva": "0x002FC460",
+        "size": 100,
+        "callees": [
+          "0x002F7CB0",
+          "0x002FC320",
+          "0x002F61F0",
+          "0x002F6250"
+        ]
+      }
+    ],
+    "PostCameraPositionAction": "0x00440690",
+    "CMinimap_MoveCameraToWorld": "0x0033C730",
+    "CMinimap_DrawViewRect": "0x00348A80",
+    "CMinimap_vftable": "0x00952184"
+  },
+  "1.25.1.6397": {
+    "imageBase": "0x6F000000",
+    "sha256": "F504ED38F43BCCF011BF55DC8339EFACD689F4DCD6AF4AFD1815F01B5D026D07",
+    "size": 12042240,
+    "CMinimap_EventRouter": "0x00359A20",
+    "CMinimapClickEvent_Handler": "0x0033BAB0",
+    "handler_calls": [
+      "0x0033B9C0",
+      "0x00339960",
+      "0x002FB6F0"
+    ],
+    "move_candidates": [
+      {
+        "rva": "0x0033B9C0",
+        "size": 42,
+        "callees": [
+          "0x003307C0",
+          "0x0043F950"
+        ]
+      },
+      {
+        "rva": "0x00339960",
+        "size": 28,
+        "callees": [
+          "0x00339960"
+        ]
+      },
+      {
+        "rva": "0x002FB6F0",
+        "size": 100,
+        "callees": [
+          "0x002F6F40",
+          "0x002FB5B0",
+          "0x002F5480",
+          "0x002F54E0"
+        ]
+      }
+    ],
+    "PostCameraPositionAction": "0x0043F950",
+    "CMinimap_MoveCameraToWorld": "0x0033B9C0",
+    "CMinimap_DrawViewRect": "0x00347D10",
+    "CMinimap_vftable": "0x0094002C"
+  },
+  "1.26.0.6401": {
+    "imageBase": "0x6F000000",
+    "sha256": "6D21BD9A0F9FBC8446F455C9E89AC994FED68174426FE608FCB9BAEFD4DEC53C",
+    "size": 12042240,
+    "CMinimap_EventRouter": "0x00359C50",
+    "CMinimapClickEvent_Handler": "0x0033BCE0",
+    "handler_calls": [
+      "0x0033BBF0",
+      "0x00339B90",
+      "0x002FB920"
+    ],
+    "move_candidates": [
+      {
+        "rva": "0x0033BBF0",
+        "size": 42,
+        "callees": [
+          "0x003309F0",
+          "0x0043FB80"
+        ]
+      },
+      {
+        "rva": "0x00339B90",
+        "size": 28,
+        "callees": [
+          "0x00339B90"
+        ]
+      },
+      {
+        "rva": "0x002FB920",
+        "size": 100,
+        "callees": [
+          "0x002F7170",
+          "0x002FB7E0",
+          "0x002F56B0",
+          "0x002F5710"
+        ]
+      }
+    ],
+    "PostCameraPositionAction": "0x0043FB80",
+    "CMinimap_MoveCameraToWorld": "0x0033BBF0",
+    "CMinimap_DrawViewRect": "0x00347F40",
+    "CMinimap_vftable": "0x0094002C"
+  },
+  "1.27.0.52240": {
+    "imageBase": "0x6F000000",
+    "sha256": "E04D1716603C075EB0C8E1E21CF1093A664ADC5249EFAB396BFA08D7B09D0C3A",
+    "size": 13187048,
+    "CMinimap_EventRouter": "0x003A0920",
+    "CMinimapClickEvent_Handler": "0x003A4AA0",
+    "handler_calls": [
+      "0x003A76D0",
+      "0x00398520",
+      "0x00356E50"
+    ],
+    "move_candidates": [
+      {
+        "rva": "0x003A76D0",
+        "size": 50,
+        "callees": [
+          "0x0033B410",
+          "0x002522D0"
+        ]
+      },
+      {
+        "rva": "0x00398520",
+        "size": 82,
+        "callees": [
+          "0x00120634",
+          "0x00771125"
+        ]
+      },
+      {
+        "rva": "0x00356E50",
+        "size": 98,
+        "callees": [
+          "0x0034F760",
+          "0x00356AC0",
+          "0x0034D960",
+          "0x00354B10"
+        ]
+      }
+    ],
+    "PostCameraPositionAction": "0x002522D0",
+    "CMinimap_MoveCameraToWorld": "0x003A76D0",
+    "CMinimap_DrawViewRect": "0x003A3120",
+    "CMinimap_vftable": "0x0099244C"
+  }
+}

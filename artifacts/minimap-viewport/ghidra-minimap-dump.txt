@@ -1,0 +1,4527 @@
+PROGRAM game.dll
+IMAGEBASE 6f000000
+
+### SEED 0x6f38ac50
+  xref 6f992570 DATA
+
+===== FUNCTION FUN_6f38ac50 @ 6f38ac50 size=40 =====
+  6f38ac50  PUSH EBP
+  6f38ac51  MOV EBP,ESP
+  6f38ac53  TEST byte ptr [EBP + 0x8],0x1
+  6f38ac57  PUSH ESI
+  6f38ac58  MOV ESI,ECX
+  6f38ac5a  MOV dword ptr [ESI],0x6f95214c
+  6f38ac60  JZ 0x6f38ac71
+  6f38ac62  PUSH 0x0
+  6f38ac64  PUSH -0x1
+  6f38ac66  PUSH 0x6f950b70
+  6f38ac6b  PUSH ESI
+  6f38ac6c  CALL 0x6f1205ce
+  6f38ac71  MOV EAX,ESI
+  6f38ac73  POP ESI
+  6f38ac74  POP EBP
+  6f38ac75  RET 0x4
+  6f38ac78  ??
+--- DECOMPILE ---
+
+undefined4 * __thiscall FUN_6f38ac50(undefined4 *param_1,byte param_2)
+
+{
+  *param_1 = TRefCnt::vftable;
+  if ((param_2 & 1) != 0) {
+    Ordinal_403(param_1,&DAT_6f950b70,0xffffffff,0);
+  }
+  return param_1;
+}
+
+
+
+### SEED 0x6f38ac80
+  xref 6f99257c DATA
+
+===== FUNCTION FUN_6f38ac80 @ 6f38ac80 size=40 =====
+  6f38ac80  PUSH EBP
+  6f38ac81  MOV EBP,ESP
+  6f38ac83  TEST byte ptr [EBP + 0x8],0x1
+  6f38ac87  PUSH ESI
+  6f38ac88  MOV ESI,ECX
+  6f38ac8a  MOV dword ptr [ESI],0x6f95214c
+  6f38ac90  JZ 0x6f38aca1
+  6f38ac92  PUSH 0x0
+  6f38ac94  PUSH -0x1
+  6f38ac96  PUSH 0x6f950b70
+  6f38ac9b  PUSH ESI
+  6f38ac9c  CALL 0x6f1205ce
+  6f38aca1  MOV EAX,ESI
+  6f38aca3  POP ESI
+  6f38aca4  POP EBP
+  6f38aca5  RET 0x4
+  6f38aca8  ??
+--- DECOMPILE ---
+
+undefined4 * __thiscall FUN_6f38ac80(undefined4 *param_1,byte param_2)
+
+{
+  *param_1 = TRefCnt::vftable;
+  if ((param_2 & 1) != 0) {
+    Ordinal_403(param_1,&DAT_6f950b70,0xffffffff,0);
+  }
+  return param_1;
+}
+
+
+
+### SEED 0x6f38acb0
+  xref 6f992564 DATA
+
+===== FUNCTION FUN_6f38acb0 @ 6f38acb0 size=40 =====
+  6f38acb0  PUSH EBP
+  6f38acb1  MOV EBP,ESP
+  6f38acb3  TEST byte ptr [EBP + 0x8],0x1
+  6f38acb7  PUSH ESI
+  6f38acb8  MOV ESI,ECX
+  6f38acba  MOV dword ptr [ESI],0x6f95214c
+  6f38acc0  JZ 0x6f38acd1
+  6f38acc2  PUSH 0x0
+  6f38acc4  PUSH -0x1
+  6f38acc6  PUSH 0x6f950b70
+  6f38accb  PUSH ESI
+  6f38accc  CALL 0x6f1205ce
+  6f38acd1  MOV EAX,ESI
+  6f38acd3  POP ESI
+  6f38acd4  POP EBP
+  6f38acd5  RET 0x4
+  6f38acd8  ??
+--- DECOMPILE ---
+
+undefined4 * __thiscall FUN_6f38acb0(undefined4 *param_1,byte param_2)
+
+{
+  *param_1 = TRefCnt::vftable;
+  if ((param_2 & 1) != 0) {
+    Ordinal_403(param_1,&DAT_6f950b70,0xffffffff,0);
+  }
+  return param_1;
+}
+
+
+
+### SEED 0x6f38ac20
+  xref 6f992450 DATA
+  xref 6f3899cb UNCONDITIONAL_CALL in FUN_6f3899c5
+
+===== FUNCTION FUN_6f38ac20 @ 6f38ac20 size=43 =====
+  6f38ac20  PUSH EBP
+  6f38ac21  MOV EBP,ESP
+  6f38ac23  PUSH ESI
+  6f38ac24  MOV ESI,ECX
+  6f38ac26  CALL 0x6f387dd0
+  6f38ac2b  TEST byte ptr [EBP + 0x8],0x1
+  6f38ac2f  JZ 0x6f38ac44
+  6f38ac31  TEST ESI,ESI
+  6f38ac33  JZ 0x6f38ac44
+  6f38ac35  PUSH 0x0
+  6f38ac37  PUSH -0x1
+  6f38ac39  PUSH 0x6f950b70
+  6f38ac3e  PUSH ESI
+  6f38ac3f  CALL 0x6f1205ce
+  6f38ac44  MOV EAX,ESI
+  6f38ac46  POP ESI
+  6f38ac47  POP EBP
+  6f38ac48  RET 0x4
+  6f38ac4b  ??
+--- DECOMPILE ---
+
+int __thiscall FUN_6f38ac20(int param_1,byte param_2)
+
+{
+  FUN_6f387dd0();
+  if (((param_2 & 1) != 0) && (param_1 != 0)) {
+    Ordinal_403(param_1,&DAT_6f950b70,0xffffffff,0);
+  }
+  return param_1;
+}
+
+
+
+### SEED 0x6f3a45a0
+  xref 6f992478 DATA
+
+===== FUNCTION FUN_6f3a45a0 @ 6f3a45a0 size=659 =====
+  6f3a45a0  PUSH EBP
+  6f3a45a1  MOV EBP,ESP
+  6f3a45a3  PUSH -0x1
+  6f3a45a5  PUSH 0x6f8e0860
+  6f3a45aa  MOV EAX,FS:[0x0]
+  6f3a45b0  PUSH EAX
+  6f3a45b1  SUB ESP,0x8
+  6f3a45b4  PUSH EBX
+  6f3a45b5  PUSH ESI
+  6f3a45b6  PUSH EDI
+  6f3a45b7  MOV EAX,[0x6fb6a774]
+  6f3a45bc  XOR EAX,EBP
+  6f3a45be  PUSH EAX
+  6f3a45bf  LEA EAX,[EBP + -0xc]
+  6f3a45c2  MOV FS:[0x0],EAX
+  6f3a45c8  MOV EDI,ECX
+  6f3a45ca  MOVSS XMM2,dword ptr [EBP + 0x8]
+  6f3a45cf  MOVSS XMM1,dword ptr [0x6f95ad98]
+  6f3a45d7  MOVAPS XMM0,XMM2
+  6f3a45da  ADDSS XMM0,dword ptr [EDI + 0x404]
+  6f3a45e2  COMISS XMM1,XMM0
+  6f3a45e5  MOVSS dword ptr [EDI + 0x404],XMM0
+  6f3a45ed  JA 0x6f3a45f2
+  6f3a45ef  MOVAPS XMM0,XMM1
+  6f3a45f2  TEST byte ptr [EDI + 0xb0],0x3
+  6f3a45f9  MOVSS dword ptr [EDI + 0x404],XMM0
+  6f3a4601  JNZ 0x6f3a47ec
+  6f3a4607  PUSH dword ptr [EBP + 0x10]
+  6f3a460a  MOVSS XMM0,dword ptr [EBP + 0xc]
+  6f3a460f  SUB ESP,0x8
+  6f3a4612  MOVSS dword ptr [ESP + 0x4],XMM0
+  6f3a4618  MOVSS dword ptr [ESP],XMM2
+  6f3a461d  CALL 0x6f0a2300
+  6f3a4622  TEST EAX,EAX
+  6f3a4624  JNZ 0x6f3a463a
+  6f3a4626  MOV ECX,dword ptr [EBP + -0xc]
+  6f3a4629  MOV dword ptr FS:[0x0],ECX
+  6f3a4630  POP ECX
+  6f3a4631  POP EDI
+  6f3a4632  POP ESI
+  6f3a4633  POP EBX
+  6f3a4634  MOV ESP,EBP
+  6f3a4636  POP EBP
+  6f3a4637  RET 0xc
+  6f3a463a  CMP dword ptr [EDI + 0x1cc],0x0
+  6f3a4641  JNZ 0x6f3a465d
+  6f3a4643  MOV EAX,dword ptr [EDI]
+  6f3a4645  MOV ECX,EDI
+  6f3a4647  CALL dword ptr [EAX + 0xe4]
+  6f3a464d  TEST EAX,EAX
+  6f3a464f  JNZ 0x6f3a465d
+  6f3a4651  MOV ECX,EDI
+  6f3a4653  CALL 0x6f3913b0
+  6f3a4658  JMP 0x6f3a47ec
+  6f3a465d  MOV ECX,EDI
+  6f3a465f  CALL 0x6f0a2780
+  6f3a4664  MOV ECX,dword ptr [EDI + 0x5b4]
+  6f3a466a  CALL 0x6f0cab80
+  6f3a466f  MOV ECX,dword ptr [EDI + 0x198]
+  6f3a4675  CALL 0x6f0cab80
+  6f3a467a  CMP dword ptr [EDI + 0x624],0x0
+  6f3a4681  JZ 0x6f3a47ec
+  6f3a4687  MOV ECX,EDI
+  6f3a4689  MOV dword ptr [EDI + 0x628],0x0
+  6f3a4693  CALL 0x6f0a1970
+  6f3a4698  MOV EDX,EAX
+  6f3a469a  XOR EBX,EBX
+  6f3a469c  MOV dword ptr [EBP + 0x10],EDX
+  6f3a469f  NOP
+  6f3a46a0  MOV ESI,dword ptr [EDI + 0x5d8]
+  6f3a46a6  ADD ESI,EBX
+  6f3a46a8  MOV EAX,dword ptr [ESI]
+  6f3a46aa  TEST EAX,EAX
+  6f3a46ac  JZ 0x6f3a4829
+  6f3a46b2  CMP dword ptr [ESI + 0x20],0x0
+  6f3a46b6  JZ 0x6f3a4829
+  6f3a46bc  MOVSS XMM0,dword ptr [EBP + 0x8]
+  6f3a46c1  PUSH 0x0
+  6f3a46c3  PUSH EDX
+  6f3a46c4  PUSH ECX
+--- DECOMPILE ---
+
+undefined4 __thiscall FUN_6f3a45a0(int *param_1,float param_2,undefined4 param_3,undefined4 param_4)
+
+{
+  float fVar1;
+  uint uVar2;
+  int iVar3;
+  undefined4 uVar4;
+  int iVar5;
+  int *piVar6;
+  float10 fVar7;
+  float fVar8;
+  undefined4 uVar9;
+  void *pvStack_10;
+  undefined *puStack_c;
+  undefined4 uStack_8;
+  
+  fVar1 = DAT_6f95ad98;
+  uStack_8 = 0xffffffff;
+  puStack_c = &DAT_6f8e0860;
+  pvStack_10 = ExceptionList;
+  uVar2 = DAT_6fb6a774 ^ (uint)&stack0xfffffffc;
+  ExceptionList = &pvStack_10;
+  fVar8 = param_2 + (float)param_1[0x101];
+  param_1[0x101] = (int)fVar8;
+  if (fVar1 <= fVar8) {
+    fVar8 = fVar1;
+  }
+  param_1[0x101] = (int)fVar8;
+  if ((*(byte *)(param_1 + 0x2c) & 3) == 0) {
+    iVar3 = FUN_6f0a2300(param_2,param_3,param_4);
+    if (iVar3 == 0) {
+      ExceptionList = pvStack_10;
+      return 0;
+    }
+    if ((param_1[0x73] == 0) && (iVar3 = (**(code **)(*param_1 + 0xe4))(uVar2), iVar3 == 0)) {
+      FUN_6f3913b0();
+    }
+    else {
+      FUN_6f0a2780();
+      thunk_FUN_6f0cab90();
+      thunk_FUN_6f0cab90();
+      if (param_1[0x189] != 0) {
+        param_1[0x18a] = 0;
+        uVar4 = FUN_6f0a1970();
+        uVar2 = 0;
+        do {
+          piVar6 = (int *)(param_1[0x176] + uVar2);
+          if ((*piVar6 != 0) && (piVar6[8] != 0)) {
+            iVar3 = FUN_6f0caa90(*piVar6,param_2,uVar4,0);
+            if (iVar3 != 0) {
+              param_1[0x18a] = 1;
+            }
+            fVar1 = (float)piVar6[1];
+            piVar6[1] = (int)(fVar1 - param_2);
+            if (fVar1 - param_2 < 0.0) {
+              if (piVar6[6] == 0) {
+                piVar6[6] = 1;
+                if (piVar6[7] == 0) {
+                  uVar9 = 1;
+                }
+                else {
+                  uVar9 = 2;
+                }
+                fVar7 = (float10)FUN_6f186590(uVar9,0);
+                piVar6[1] = (int)(float)fVar7;
+              }
+              else {
+                piVar6[8] = 0;
+                piVar6[7] = 0;
+              }
+            }
+          }
+          uVar2 = uVar2 + 0x28;
+        } while (uVar2 < 0x280);
+        uVar2 = 0;
+        do {
+          iVar3 = param_1[0x17b];
+          if ((((*(int *)(iVar3 + uVar2) != 0) && (*(int *)(iVar3 + 0x20 + uVar2) != 0)) &&
+              (*(int *)(iVar3 + 0x24 + uVar2) != 0)) &&
+             (iVar3 = FUN_6f0caa90(*(int *)(iVar3 + uVar2),param_2,uVar4,0), iVar3 != 0)) {
+            param_1[0x18a] = 1;
+          }
+          iVar3 = DAT_6fbe4238;
+          uVar2 = uVar2 + 0x28;
+        } while (uVar2 < 0x2800);
+        iVar5 = FUN_6f30e9a0();
+        if ((iVar5 == 0) || ((*(byte *)(*(int *)(iVar3 + 0x34) + 0x24) & 1) == 0)) {
+          FUN_6f3b89f0(param_2,uVar4);
+        }
+        if (param_1[0x187] != 0) {
+          FUN_6f0e38a0(0,0,0);
+        }
+      }
+    }
+  }
+  ExceptionList = pvStack_10;
+  return 1;
+}
+
+
+
+### SEED 0x6f3a3120
+  (no xrefs-to)
+NO FUNCTION; insns:
+  6f3a3120  ??
+
+### SEED 0x6f3a2e10
+  (no xrefs-to)
+
+===== FUNCTION FUN_6f3a2e10 @ 6f3a2e10 size=385 =====
+  6f3a2e10  PUSH EBP
+  6f3a2e11  MOV EBP,ESP
+  6f3a2e13  PUSH -0x1
+  6f3a2e15  PUSH 0x6f8e07d8
+  6f3a2e1a  MOV EAX,FS:[0x0]
+  6f3a2e20  PUSH EAX
+  6f3a2e21  SUB ESP,0x20
+  6f3a2e24  PUSH ESI
+  6f3a2e25  PUSH EDI
+  6f3a2e26  MOV EAX,[0x6fb6a774]
+  6f3a2e2b  XOR EAX,EBP
+  6f3a2e2d  PUSH EAX
+  6f3a2e2e  LEA EAX,[EBP + -0xc]
+  6f3a2e31  MOV FS:[0x0],EAX
+  6f3a2e37  MOV ESI,ECX
+  6f3a2e39  MOV EDI,dword ptr [EBP + 0x8]
+  6f3a2e3c  PUSH EDI
+  6f3a2e3d  CALL 0x6f09ba20
+  6f3a2e42  TEST EAX,EAX
+  6f3a2e44  JZ 0x6f3a2e5e
+  6f3a2e46  MOV EAX,0x1
+  6f3a2e4b  MOV ECX,dword ptr [EBP + -0xc]
+  6f3a2e4e  MOV dword ptr FS:[0x0],ECX
+  6f3a2e55  POP ECX
+  6f3a2e56  POP EDI
+  6f3a2e57  POP ESI
+  6f3a2e58  MOV ESP,EBP
+  6f3a2e5a  POP EBP
+  6f3a2e5b  RET 0x4
+  6f3a2e5e  MOV EAX,dword ptr [EDI + 0x14]
+  6f3a2e61  TEST dword ptr [ESI + 0x608],EAX
+  6f3a2e67  JZ 0x6f3a2e7c
+  6f3a2e69  PUSH 0x1
+  6f3a2e6b  LEA ECX,[ESI + 0xb4]
+  6f3a2e71  MOV dword ptr [ESI + 0x60c],EAX
+  6f3a2e77  CALL 0x6f0bc8d0
+  6f3a2e7c  PUSH 0x10064
+  6f3a2e81  MOV ECX,ESI
+  6f3a2e83  CALL 0x6f0566d0
+  6f3a2e88  TEST EAX,EAX
+  6f3a2e8a  JZ 0x6f3a2f7c
+  6f3a2e90  MOV EAX,dword ptr [ESI + 0x604]
+  6f3a2e96  TEST dword ptr [EDI + 0x14],EAX
+  6f3a2e99  JZ 0x6f3a2f7c
+  6f3a2e9f  XOR EDX,EDX
+  6f3a2ea1  LEA ECX,[EDX + 0x1]
+  6f3a2ea4  CALL 0x6f34f3a0
+  6f3a2ea9  MOV ECX,EAX
+  6f3a2eab  CALL 0x6f34da20
+  6f3a2eb0  MOV ECX,EAX
+  6f3a2eb2  CALL 0x6f343250
+  6f3a2eb7  TEST EAX,EAX
+  6f3a2eb9  JNZ 0x6f3a2f7c
+  6f3a2ebf  MOVSS XMM3,dword ptr [ESI + 0x738]
+  6f3a2ec7  LEA ECX,[EBP + -0x2c]
+  6f3a2eca  MULSS XMM3,dword ptr [EDI + 0x28]
+  6f3a2ecf  MOVSS XMM0,dword ptr [ESI + 0x72c]
+  6f3a2ed7  MULSS XMM0,dword ptr [EDI + 0x24]
+  6f3a2edc  ADDSS XMM3,XMM0
+  6f3a2ee0  MOVSS XMM0,dword ptr [ESI + 0x73c]
+  6f3a2ee8  MULSS XMM0,dword ptr [EDI + 0x28]
+  6f3a2eed  ADDSS XMM3,dword ptr [ESI + 0x744]
+  6f3a2ef5  MOVSS dword ptr [EBP + 0x8],XMM3
+  6f3a2efa  MOVSS XMM3,dword ptr [ESI + 0x730]
+  6f3a2f02  MULSS XMM3,dword ptr [EDI + 0x24]
+  6f3a2f07  ADDSS XMM3,XMM0
+  6f3a2f0b  ADDSS XMM3,dword ptr [ESI + 0x748]
+  6f3a2f13  MOVSS dword ptr [EBP + -0x10],XMM3
+  6f3a2f18  CALL 0x6f383100
+  6f3a2f1d  MOV EAX,dword ptr [EDI + 0x14]
+  6f3a2f20  LEA ECX,[EBP + -0x2c]
+  6f3a2f23  MOVSS XMM0,dword ptr [EBP + 0x8]
+  6f3a2f28  MOV dword ptr [EBP + -0x1c],EAX
+  6f3a2f2b  MOV EAX,dword ptr [ESI]
+  6f3a2f2d  MOVSS dword ptr [EBP + -0x18],XMM0
+  6f3a2f32  MOVSS XMM0,dword ptr [EBP + -0x10]
+  6f3a2f37  PUSH ECX
+  6f3a2f38  MOV ECX,ESI
+  6f3a2f3a  MOV dword ptr [EBP + -0x4],0x0
+  6f3a2f41  MOVSS dword ptr [EBP + -0x14],XMM0
+--- DECOMPILE ---
+
+int __thiscall FUN_6f3a2e10(int *param_1,int param_2)
+
+{
+  float fVar1;
+  float fVar2;
+  float fVar3;
+  float fVar4;
+  float fVar5;
+  int iVar6;
+  undefined1 auStack_30 [16];
+  undefined4 uStack_20;
+  float fStack_1c;
+  float fStack_18;
+  float fStack_14;
+  void *pvStack_10;
+  undefined *puStack_c;
+  undefined4 uStack_8;
+  
+  uStack_8 = 0xffffffff;
+  puStack_c = &DAT_6f8e07d8;
+  pvStack_10 = ExceptionList;
+  ExceptionList = &pvStack_10;
+  iVar6 = FUN_6f09ba20(param_2,DAT_6fb6a774 ^ (uint)&stack0xfffffffc);
+  if (iVar6 != 0) {
+    ExceptionList = pvStack_10;
+    return 1;
+  }
+  if ((param_1[0x182] & *(uint *)(param_2 + 0x14)) != 0) {
+    param_1[0x183] = *(uint *)(param_2 + 0x14);
+    FUN_6f0bc8d0(1);
+  }
+  iVar6 = FUN_6f0566d0(0x10064);
+  if ((iVar6 != 0) && ((*(uint *)(param_2 + 0x14) & param_1[0x181]) != 0)) {
+    FUN_6f34f3a0();
+    FUN_6f34da20();
+    iVar6 = FUN_6f343250();
+    if (iVar6 == 0) {
+      fVar1 = (float)param_1[0x1ce];
+      fVar2 = *(float *)(param_2 + 0x28);
+      fVar3 = (float)param_1[0x1cb];
+      fVar4 = *(float *)(param_2 + 0x24);
+      fVar5 = (float)param_1[0x1d1];
+      fStack_14 = (float)param_1[0x1cc] * *(float *)(param_2 + 0x24) +
+                  (float)param_1[0x1cf] * *(float *)(param_2 + 0x28) + (float)param_1[0x1d2];
+      FUN_6f383100();
+      uStack_20 = *(undefined4 *)(param_2 + 0x14);
+      uStack_8 = 0;
+      fStack_18 = fStack_14;
+      fStack_1c = fVar1 * fVar2 + fVar3 * fVar4 + fVar5;
+      iVar6 = (**(code **)(*param_1 + 0x10))(auStack_30);
+      if (iVar6 == 1) {
+        param_1[0x183] = 0;
+        FUN_6f0bc8d0(0);
+      }
+      ExceptionList = pvStack_10;
+      return iVar6;
+    }
+  }
+  ExceptionList = pvStack_10;
+  return 0;
+}
+
+
+
+### SEED 0x6f3a30d0
+  (no xrefs-to)
+
+===== FUNCTION FUN_6f3a30d0 @ 6f3a30d0 size=73 =====
+  6f3a30d0  PUSH EBP
+  6f3a30d1  MOV EBP,ESP
+  6f3a30d3  PUSH ESI
+  6f3a30d4  PUSH EDI
+  6f3a30d5  MOV EDI,dword ptr [EBP + 0x8]
+  6f3a30d8  MOV ESI,ECX
+  6f3a30da  PUSH EDI
+  6f3a30db  CALL 0x6f09ba70
+  6f3a30e0  TEST EAX,EAX
+  6f3a30e2  JZ 0x6f3a30ef
+  6f3a30e4  POP EDI
+  6f3a30e5  MOV EAX,0x1
+  6f3a30ea  POP ESI
+  6f3a30eb  POP EBP
+  6f3a30ec  RET 0x4
+  6f3a30ef  MOV EAX,dword ptr [EDI + 0x14]
+  6f3a30f2  TEST dword ptr [ESI + 0x60c],EAX
+  6f3a30f8  JZ 0x6f3a3111
+  6f3a30fa  PUSH 0x0
+  6f3a30fc  LEA ECX,[ESI + 0xb4]
+  6f3a3102  MOV dword ptr [ESI + 0x60c],0x0
+  6f3a310c  CALL 0x6f0bc8d0
+  6f3a3111  POP EDI
+  6f3a3112  XOR EAX,EAX
+  6f3a3114  POP ESI
+  6f3a3115  POP EBP
+  6f3a3116  RET 0x4
+  6f3a3119  ??
+--- DECOMPILE ---
+
+undefined4 __thiscall FUN_6f3a30d0(int param_1,int param_2)
+
+{
+  int iVar1;
+  
+  iVar1 = FUN_6f09ba70(param_2);
+  if (iVar1 != 0) {
+    return 1;
+  }
+  if ((*(uint *)(param_1 + 0x60c) & *(uint *)(param_2 + 0x14)) != 0) {
+    *(undefined4 *)(param_1 + 0x60c) = 0;
+    FUN_6f0bc8d0(0);
+  }
+  return 0;
+}
+
+
+
+### SEED 0x6f3a2fa0
+  (no xrefs-to)
+
+===== FUNCTION FUN_6f3a2fa0 @ 6f3a2fa0 size=292 =====
+  6f3a2fa0  PUSH EBP
+  6f3a2fa1  MOV EBP,ESP
+  6f3a2fa3  PUSH -0x1
+  6f3a2fa5  PUSH 0x6f8e0808
+  6f3a2faa  MOV EAX,FS:[0x0]
+  6f3a2fb0  PUSH EAX
+  6f3a2fb1  SUB ESP,0x1c
+  6f3a2fb4  PUSH ESI
+  6f3a2fb5  PUSH EDI
+  6f3a2fb6  MOV EAX,[0x6fb6a774]
+  6f3a2fbb  XOR EAX,EBP
+  6f3a2fbd  PUSH EAX
+  6f3a2fbe  LEA EAX,[EBP + -0xc]
+  6f3a2fc1  MOV FS:[0x0],EAX
+  6f3a2fc7  MOV ESI,ECX
+  6f3a2fc9  MOV EDI,dword ptr [EBP + 0x8]
+  6f3a2fcc  PUSH EDI
+  6f3a2fcd  CALL 0x6f09ba40
+  6f3a2fd2  TEST EAX,EAX
+  6f3a2fd4  JZ 0x6f3a2fee
+  6f3a2fd6  MOV EAX,0x1
+  6f3a2fdb  MOV ECX,dword ptr [EBP + -0xc]
+  6f3a2fde  MOV dword ptr FS:[0x0],ECX
+  6f3a2fe5  POP ECX
+  6f3a2fe6  POP EDI
+  6f3a2fe7  POP ESI
+  6f3a2fe8  MOV ESP,EBP
+  6f3a2fea  POP EBP
+  6f3a2feb  RET 0x4
+  6f3a2fee  CMP dword ptr [ESI + 0x60c],0x0
+  6f3a2ff5  JZ 0x6f3a30af
+  6f3a2ffb  XOR EDX,EDX
+  6f3a2ffd  LEA ECX,[EDX + 0x1]
+  6f3a3000  CALL 0x6f34f3a0
+  6f3a3005  MOV ECX,EAX
+  6f3a3007  CALL 0x6f34da20
+  6f3a300c  MOV ECX,EAX
+  6f3a300e  CALL 0x6f343250
+  6f3a3013  TEST EAX,EAX
+  6f3a3015  JNZ 0x6f3a30af
+  6f3a301b  MOVSS XMM0,dword ptr [ESI + 0x72c]
+  6f3a3023  MOVSS XMM4,dword ptr [ESI + 0x738]
+  6f3a302b  MULSS XMM0,dword ptr [EDI + 0x24]
+  6f3a3030  MOV dword ptr [EBP + -0x24],EAX
+  6f3a3033  MULSS XMM4,dword ptr [EDI + 0x28]
+  6f3a3038  MOV dword ptr [EBP + -0x20],0x10065
+  6f3a303f  MOVSS XMM3,dword ptr [ESI + 0x730]
+  6f3a3047  MULSS XMM3,dword ptr [EDI + 0x24]
+  6f3a304c  MOV dword ptr [EBP + -0x1c],EAX
+  6f3a304f  ADDSS XMM4,XMM0
+  6f3a3053  MOV dword ptr [EBP + -0x28],0x6f992578
+  6f3a305a  MOVSS XMM0,dword ptr [ESI + 0x73c]
+  6f3a3062  MULSS XMM0,dword ptr [EDI + 0x28]
+  6f3a3067  ADDSS XMM4,dword ptr [ESI + 0x744]
+  6f3a306f  ADDSS XMM3,XMM0
+  6f3a3073  ADDSS XMM3,dword ptr [ESI + 0x748]
+  6f3a307b  MOV dword ptr [EBP + -0x4],EAX
+  6f3a307e  LEA ECX,[EBP + -0x28]
+  6f3a3081  MOV EAX,dword ptr [ESI + 0x60c]
+  6f3a3087  MOV dword ptr [EBP + -0x18],EAX
+  6f3a308a  MOV EAX,dword ptr [ESI]
+  6f3a308c  PUSH ECX
+  6f3a308d  MOV ECX,ESI
+  6f3a308f  MOVSS dword ptr [EBP + -0x14],XMM4
+  6f3a3094  MOVSS dword ptr [EBP + -0x10],XMM3
+  6f3a3099  CALL dword ptr [EAX + 0x10]
+  6f3a309c  MOV ECX,dword ptr [EBP + -0xc]
+  6f3a309f  MOV dword ptr FS:[0x0],ECX
+  6f3a30a6  POP ECX
+  6f3a30a7  POP EDI
+  6f3a30a8  POP ESI
+  6f3a30a9  MOV ESP,EBP
+  6f3a30ab  POP EBP
+  6f3a30ac  RET 0x4
+  6f3a30af  XOR EAX,EAX
+  6f3a30b1  MOV ECX,dword ptr [EBP + -0xc]
+  6f3a30b4  MOV dword ptr FS:[0x0],ECX
+  6f3a30bb  POP ECX
+  6f3a30bc  POP EDI
+  6f3a30bd  POP ESI
+--- DECOMPILE ---
+
+undefined4 __thiscall FUN_6f3a2fa0(int *param_1,int param_2)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  undefined **ppuStack_2c;
+  int iStack_28;
+  undefined4 uStack_24;
+  int iStack_20;
+  int iStack_1c;
+  float fStack_18;
+  float fStack_14;
+  void *pvStack_10;
+  undefined *puStack_c;
+  int iStack_8;
+  
+  iStack_8 = 0xffffffff;
+  puStack_c = &DAT_6f8e0808;
+  pvStack_10 = ExceptionList;
+  ExceptionList = &pvStack_10;
+  iVar1 = FUN_6f09ba40(param_2,DAT_6fb6a774 ^ (uint)&stack0xfffffffc);
+  if (iVar1 != 0) {
+    ExceptionList = pvStack_10;
+    return 1;
+  }
+  if (param_1[0x183] != 0) {
+    FUN_6f34f3a0();
+    FUN_6f34da20();
+    iStack_28 = FUN_6f343250();
+    if (iStack_28 == 0) {
+      uStack_24 = 0x10065;
+      ppuStack_2c = CMinimapDragEvent::vftable;
+      fStack_18 = (float)param_1[0x1ce] * *(float *)(param_2 + 0x28) +
+                  (float)param_1[0x1cb] * *(float *)(param_2 + 0x24) + (float)param_1[0x1d1];
+      fStack_14 = (float)param_1[0x1cc] * *(float *)(param_2 + 0x24) +
+                  (float)param_1[0x1cf] * *(float *)(param_2 + 0x28) + (float)param_1[0x1d2];
+      iStack_1c = param_1[0x183];
+      iStack_20 = iStack_28;
+      iStack_8 = iStack_28;
+      uVar2 = (**(code **)(*param_1 + 0x10))(&ppuStack_2c);
+      ExceptionList = pvStack_10;
+      return uVar2;
+    }
+  }
+  ExceptionList = pvStack_10;
+  return 0;
+}
+
+
+
+### SEED 0x6f09ba50
+  xref 6f95a604 DATA
+  xref 6f95a7a4 DATA
+  xref 6f95a8e8 DATA
+  xref 6f95aa18 DATA
+  xref 6f95ab28 DATA
+  xref 6f95ac80 DATA
+  xref 6f95ae18 DATA
+  xref 6f95af6c DATA
+  xref 6f95b094 DATA
+  xref 6f95b1f4 DATA
+  xref 6f95b35c DATA
+  xref 6f95b4ac DATA
+  xref 6f95b60c DATA
+  xref 6f95b760 DATA
+  xref 6f95b8c8 DATA
+  xref 6f95ba20 DATA
+  xref 6f95bb84 DATA
+  xref 6f95bd00 DATA
+  xref 6f95be68 DATA
+  xref 6f95bfa4 DATA
+  xref 6f95c0f8 DATA
+  xref 6f95c248 DATA
+  xref 6f95c39c DATA
+  xref 6f95c4f0 DATA
+  xref 6f95c654 DATA
+  xref 6f95c7ac DATA
+  xref 6f95cc38 DATA
+  xref 6f95d100 DATA
+  xref 6f95d218 DATA
+  xref 6f95d328 DATA
+  xref 6f975d84 DATA
+  xref 6f975ec0 DATA
+  xref 6f975ffc DATA
+  xref 6f976138 DATA
+  xref 6f976594 DATA
+  xref 6f976284 DATA
+  xref 6f9763d4 DATA
+  xref 6f9766e4 DATA
+  xref 6f976898 DATA
+  xref 6f9769e8 DATA
+
+===== FUNCTION FUN_6f09ba50 @ 6f09ba50 size=19 =====
+  6f09ba50  PUSH EBP
+  6f09ba51  MOV EBP,ESP
+  6f09ba53  MOV EAX,[0x6fbb9d84]
+  6f09ba58  TEST EAX,EAX
+  6f09ba5a  CMOVNZ ECX,EAX
+  6f09ba5d  MOV EAX,dword ptr [ECX]
+  6f09ba5f  POP EBP
+  6f09ba60  JMP dword ptr [EAX + 0x10]
+  6f09ba63  ??
+--- DECOMPILE ---
+
+void __fastcall FUN_6f09ba50(int *param_1)
+
+{
+  if (DAT_6fbb9d84 != (int *)0x0) {
+    param_1 = DAT_6fbb9d84;
+  }
+                    /* WARNING: Could not recover jumptable at 0x6f09ba60. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (**(code **)(*param_1 + 0x10))();
+  return;
+}
+
+
+
+### SEED 0x6f0a22b0
+  xref 6f0a35be UNCONDITIONAL_CALL in FUN_6f0a35b0
+  xref 6f0a4486 UNCONDITIONAL_CALL in FUN_6f0a4480
+  xref 6f368461 UNCONDITIONAL_CALL in FUN_6f3683f0
+  xref 6f95a788 DATA
+  xref 6f95adfc DATA
+  xref 6f95af50 DATA
+  xref 6f95b744 DATA
+  xref 6f95d1fc DATA
+  xref 6f95d30c DATA
+  xref 6f977188 DATA
+  xref 6f9773e0 DATA
+  xref 6f9791bc DATA
+  xref 6f9792d4 DATA
+  xref 6f979bbc DATA
+  xref 6f979e9c DATA
+  xref 6f97c420 DATA
+  xref 6f97c59c DATA
+  xref 6f97cb58 DATA
+  xref 6f97ccc8 DATA
+  xref 6f97d050 DATA
+  xref 6f97d334 DATA
+  xref 6f97e368 DATA
+  xref 6f97d1c8 DATA
+  xref 6f97d8cc DATA
+  xref 6f97dc88 DATA
+  xref 6f97df38 DATA
+  xref 6f97e0a8 DATA
+  xref 6f97fdac DATA
+  xref 6f97fc28 DATA
+  xref 6f9800e4 DATA
+  xref 6f980264 DATA
+  xref 6f980600 DATA
+  xref 6f980a0c DATA
+  xref 6f9812c8 DATA
+  xref 6f981440 DATA
+  xref 6f981b00 DATA
+  xref 6f981fac DATA
+  xref 6f98211c DATA
+  xref 6f982cc8 DATA
+  xref 6f982fa4 DATA
+
+===== FUNCTION FUN_6f0a22b0 @ 6f0a22b0 size=67 =====
+  6f0a22b0  PUSH EBP
+  6f0a22b1  MOV EBP,ESP
+  6f0a22b3  SUB ESP,0x8
+  6f0a22b6  CMP dword ptr [ECX + 0x108],0x0
+  6f0a22bd  JNZ 0x6f0a22c7
+  6f0a22bf  XOR EAX,EAX
+  6f0a22c1  MOV ESP,EBP
+  6f0a22c3  POP EBP
+  6f0a22c4  RET 0x4
+  6f0a22c7  MOV EAX,dword ptr [EBP + 0x8]
+  6f0a22ca  ADD ECX,0xb4
+  6f0a22d0  MOVSS XMM0,dword ptr [EAX + 0x24]
+  6f0a22d5  MOVSS dword ptr [EBP + -0x8],XMM0
+  6f0a22da  MOVSS XMM0,dword ptr [EAX + 0x28]
+  6f0a22df  LEA EAX,[EBP + -0x8]
+  6f0a22e2  PUSH EAX
+  6f0a22e3  MOVSS dword ptr [EBP + -0x4],XMM0
+  6f0a22e8  CALL 0x6f0bd460
+  6f0a22ed  MOV ESP,EBP
+  6f0a22ef  POP EBP
+  6f0a22f0  RET 0x4
+  6f0a22f3  ??
+--- DECOMPILE ---
+
+undefined4 __thiscall FUN_6f0a22b0(int param_1,int param_2)
+
+{
+  undefined4 uVar1;
+  undefined4 uStack_c;
+  undefined4 uStack_8;
+  
+  if (*(int *)(param_1 + 0x108) == 0) {
+    return 0;
+  }
+  uStack_c = *(undefined4 *)(param_2 + 0x24);
+  uStack_8 = *(undefined4 *)(param_2 + 0x28);
+  uVar1 = FUN_6f0bd460(&uStack_c);
+  return uVar1;
+}
+
+
+
+### SEED 0x6f0a2270
+  xref 6f95a794 DATA
+  xref 6f95a8d8 DATA
+  xref 6f95aa08 DATA
+  xref 6f95ab18 DATA
+  xref 6f95ac70 DATA
+  xref 6f95ae08 DATA
+  xref 6f95af5c DATA
+  xref 6f95b084 DATA
+  xref 6f95b1e4 DATA
+  xref 6f95b34c DATA
+  xref 6f95b49c DATA
+  xref 6f95b5fc DATA
+  xref 6f95b750 DATA
+  xref 6f95b8b8 DATA
+  xref 6f95ba10 DATA
+  xref 6f95bb74 DATA
+  xref 6f95bcf0 DATA
+  xref 6f95be58 DATA
+  xref 6f95bf94 DATA
+  xref 6f95c0e8 DATA
+  xref 6f95c238 DATA
+  xref 6f95c38c DATA
+  xref 6f95c4e0 DATA
+  xref 6f95c644 DATA
+  xref 6f95c79c DATA
+  xref 6f95cc28 DATA
+  xref 6f95d0f0 DATA
+  xref 6f95d208 DATA
+  xref 6f95d318 DATA
+  xref 6f975d74 DATA
+  xref 6f975eb0 DATA
+  xref 6f975fec DATA
+  xref 6f976128 DATA
+  xref 6f976584 DATA
+  xref 6f976274 DATA
+  xref 6f9763c4 DATA
+  xref 6f9766d4 DATA
+  xref 6f976888 DATA
+  xref 6f9769d8 DATA
+  xref 6f976cdc DATA
+
+===== FUNCTION FUN_6f0a2270 @ 6f0a2270 size=58 =====
+  6f0a2270  PUSH ESI
+  6f0a2271  MOV ESI,ECX
+  6f0a2273  MOV EAX,dword ptr [ESI + 0x158]
+  6f0a2279  TEST EAX,EAX
+  6f0a227b  JLE 0x6f0a227f
+  6f0a227d  JNZ 0x6f0a2289
+  6f0a227f  MOV EAX,dword ptr [ESI + 0x14c]
+  6f0a2285  TEST EAX,EAX
+  6f0a2287  JLE 0x6f0a22a8
+  6f0a2289  PUSH 0x4
+  6f0a228b  CALL 0x6f0a1480
+  6f0a2290  TEST EAX,EAX
+  6f0a2292  JNZ 0x6f0a22a8
+  6f0a2294  PUSH EAX
+  6f0a2295  PUSH EAX
+  6f0a2296  MOV ECX,ESI
+  6f0a2298  CALL 0x6f0a2800
+  6f0a229d  PUSH 0x0
+  6f0a229f  PUSH 0x0
+  6f0a22a1  MOV ECX,ESI
+  6f0a22a3  CALL 0x6f0a2840
+  6f0a22a8  POP ESI
+  6f0a22a9  RET
+  6f0a22aa  ??
+--- DECOMPILE ---
+
+void __fastcall FUN_6f0a2270(int param_1)
+
+{
+  int iVar1;
+  
+  if (((0 < *(int *)(param_1 + 0x158)) && (*(int *)(param_1 + 0x158) != 0)) ||
+     (0 < *(int *)(param_1 + 0x14c))) {
+    iVar1 = FUN_6f0a1480(4);
+    if (iVar1 == 0) {
+      FUN_6f0a2800(0,0);
+      FUN_6f0a2840(0,0);
+    }
+  }
+  return;
+}
+
+
+
+### SEED 0x6f3934d8
+  (no xrefs-to)
+
+===== FUNCTION FUN_6f393280 @ 6f393280 size=679 =====
+  6f393280  PUSH EBP
+  6f393281  MOV EBP,ESP
+  6f393283  SUB ESP,0xc
+  6f393286  XOR EDX,EDX
+  6f393288  PUSH EBX
+  6f393289  PUSH ESI
+  6f39328a  MOV EBX,ECX
+  6f39328c  LEA ECX,[EDX + 0x1]
+  6f39328f  PUSH EDI
+  6f393290  CALL 0x6f34f3a0
+  6f393295  TEST EAX,EAX
+  6f393297  JZ 0x6f39351e
+  6f39329d  MOV ECX,EAX
+  6f39329f  CALL 0x6f350a90
+  6f3932a4  TEST EAX,EAX
+  6f3932a6  JZ 0x6f39351e
+  6f3932ac  INC dword ptr [EBX + 0x5e0]
+  6f3932b2  MOV ECX,dword ptr [EBX + 0x5e0]
+  6f3932b8  MOV EAX,ECX
+  6f3932ba  MOV EDI,dword ptr [EBX + 0x5d8]
+  6f3932c0  AND EAX,0xf
+  6f3932c3  LEA ESI,[EAX + EAX*0x4]
+  6f3932c6  CMP dword ptr [EDI + ESI*0x8],0x0
+  6f3932ca  JNZ 0x6f3932de
+  6f3932cc  LEA EAX,[ECX + -0x1]
+  6f3932cf  MOV dword ptr [EBX + 0x5e0],EAX
+  6f3932d5  POP EDI
+  6f3932d6  POP ESI
+  6f3932d7  POP EBX
+  6f3932d8  MOV ESP,EBP
+  6f3932da  POP EBP
+  6f3932db  RET 0x18
+  6f3932de  MOVSS XMM3,dword ptr [EBP + 0xc]
+  6f3932e3  LEA ECX,[EDI + ESI*0x8]
+  6f3932e6  MOVSS XMM2,dword ptr [EBP + 0x8]
+  6f3932eb  MOVSS XMM5,dword ptr [EBX + 0x75c]
+  6f3932f3  MOVSS XMM0,dword ptr [EBX + 0x750]
+  6f3932fb  MOVSS XMM4,dword ptr [EBX + 0x754]
+  6f393303  MOVSS XMM1,dword ptr [EBX + 0x758]
+  6f39330b  MULSS XMM0,XMM2
+  6f39330f  MOV dword ptr [EBP + 0x10],0x3f800000
+  6f393316  MULSS XMM5,XMM3
+  6f39331a  MULSS XMM4,XMM2
+  6f39331e  ADDSS XMM5,XMM0
+  6f393322  MULSS XMM1,XMM2
+  6f393326  MOVSS XMM0,dword ptr [EBX + 0x760]
+  6f39332e  MULSS XMM0,XMM3
+  6f393332  ADDSS XMM5,dword ptr [EBX + 0x768]
+  6f39333a  ADDSS XMM4,XMM0
+  6f39333e  MOVSS XMM0,dword ptr [EBX + 0x764]
+  6f393346  MULSS XMM0,XMM3
+  6f39334a  ADDSS XMM4,dword ptr [EBX + 0x76c]
+  6f393352  ADDSS XMM1,XMM0
+  6f393356  UNPCKLPS XMM5,XMM4
+  6f393359  ADDSS XMM1,dword ptr [EBX + 0x770]
+  6f393361  MOVQ qword ptr [ECX + 0x8],XMM5
+  6f393366  MOVSS dword ptr [EBP + -0x4],XMM1
+  6f39336b  MOV EAX,dword ptr [EBP + -0x4]
+  6f39336e  MOV dword ptr [ECX + 0x10],EAX
+  6f393371  MOVSS XMM0,dword ptr [EDI + ESI*0x8 + 0xc]
+  6f393377  MOVSS XMM3,dword ptr [ECX + 0x8]
+  6f39337c  MOV dword ptr [EDI + ESI*0x8 + 0x10],0x0
+  6f393384  MOVSS XMM1,dword ptr [EBX + 0x644]
+  6f39338c  COMISS XMM1,XMM0
+  6f39338f  MOVSS XMM2,dword ptr [EBX + 0x64c]
+  6f393397  JA 0x6f3933a6
+  6f393399  COMISS XMM0,XMM2
+  6f39339c  JBE 0x6f3933a3
+  6f39339e  MOVAPS XMM1,XMM2
+  6f3933a1  JMP 0x6f3933a6
+  6f3933a3  MOVAPS XMM1,XMM0
+  6f3933a6  MOVSS XMM0,dword ptr [EBX + 0x648]
+  6f3933ae  COMISS XMM0,XMM3
+  6f3933b1  MOVSS XMM2,dword ptr [EBX + 0x650]
+  6f3933b9  JA 0x6f3933c8
+  6f3933bb  COMISS XMM3,XMM2
+  6f3933be  JBE 0x6f3933c5
+  6f3933c0  MOVAPS XMM0,XMM2
+  6f3933c3  JMP 0x6f3933c8
+  6f3933c5  MOVAPS XMM0,XMM3
+--- DECOMPILE ---
+
+void __thiscall
+FUN_6f393280(int param_1,float param_2,float param_3,undefined4 param_4,float param_5,
+            undefined4 *param_6,int param_7)
+
+{
+  int iVar1;
+  float fVar2;
+  int iVar3;
+  uint uVar4;
+  undefined4 uVar5;
+  float fVar6;
+  float fVar7;
+  
+  iVar3 = FUN_6f34f3a0();
+  if ((iVar3 != 0) && (iVar3 = FUN_6f350a90(), iVar3 != 0)) {
+    *(int *)(param_1 + 0x5e0) = *(int *)(param_1 + 0x5e0) + 1;
+    iVar3 = *(int *)(param_1 + 0x5d8);
+    uVar4 = *(uint *)(param_1 + 0x5e0) & 0xf;
+    if (*(int *)(iVar3 + uVar4 * 0x28) == 0) {
+      *(uint *)(param_1 + 0x5e0) = *(uint *)(param_1 + 0x5e0) - 1;
+      return;
+    }
+    iVar1 = iVar3 + uVar4 * 0x28;
+    fVar6 = *(float *)(param_1 + 0x758);
+    fVar2 = *(float *)(param_1 + 0x764);
+    fVar7 = *(float *)(param_1 + 0x770);
+    *(ulonglong *)(iVar1 + 8) =
+         CONCAT44(*(float *)(param_1 + 0x754) * param_2 + *(float *)(param_1 + 0x760) * param_3 +
+                  *(float *)(param_1 + 0x76c),
+                  *(float *)(param_1 + 0x75c) * param_3 + *(float *)(param_1 + 0x750) * param_2 +
+                  *(float *)(param_1 + 0x768));
+    *(float *)(iVar1 + 0x10) = fVar6 * param_2 + fVar2 * param_3 + fVar7;
+    fVar6 = *(float *)(iVar3 + 0xc + uVar4 * 0x28);
+    fVar2 = *(float *)(iVar1 + 8);
+    *(undefined4 *)(iVar3 + 0x10 + uVar4 * 0x28) = 0;
+    fVar7 = *(float *)(param_1 + 0x644);
+    if ((*(float *)(param_1 + 0x644) <= fVar6) &&
+       (fVar7 = fVar6, *(float *)(param_1 + 0x64c) < fVar6)) {
+      fVar7 = *(float *)(param_1 + 0x64c);
+    }
+    fVar6 = *(float *)(param_1 + 0x648);
+    if ((*(float *)(param_1 + 0x648) <= fVar2) &&
+       (fVar6 = fVar2, *(float *)(param_1 + 0x650) < fVar2)) {
+      fVar6 = *(float *)(param_1 + 0x650);
+    }
+    *(float *)(iVar1 + 8) = fVar6;
+    *(float *)(iVar3 + 0xc + uVar4 * 0x28) = fVar7;
+    *(undefined4 *)(iVar3 + 0x20 + uVar4 * 0x28) = 1;
+    *(undefined4 *)(iVar3 + 0x18 + uVar4 * 0x28) = 0;
+    if (param_6 == (undefined4 *)0x0) {
+      FUN_6f02a260(&DAT_6f98b894,0);
+      uVar5 = 0;
+    }
+    else {
+      uVar5 = *param_6;
+    }
+    *(undefined4 *)(iVar3 + 0x14 + uVar4 * 0x28) = uVar5;
+    *(int *)(iVar3 + 0x1c + uVar4 * 0x28) = param_7;
+    FUN_6f02a260(&DAT_6f98b8a0,0);
+    if (*(undefined4 **)(iVar3 + 0x14 + uVar4 * 0x28) == param_6) {
+      if (param_5 <= 0.0) {
+        param_5 = DAT_6f95fe7c;
+      }
+      *(float *)(iVar3 + 4 + uVar4 * 0x28) = param_5;
+      FUN_6f186590(1,0);
+      FUN_6f186590(1,1);
+    }
+    else {
+      if (param_5 <= 0.0) {
+        param_5 = DAT_6f95d544;
+      }
+      *(float *)(iVar3 + 4 + uVar4 * 0x28) = param_5;
+      if (param_7 == 0) {
+        FUN_6f186590(1,0);
+      }
+      else {
+        FUN_6f186590(2,0);
+        FUN_6f186590(2,1);
+        FUN_6f33bc20();
+      }
+    }
+    FUN_6f18ec20(iVar3 + 8 + uVar4 * 0x28,0);
+    FUN_6f18ed50(0);
+    FUN_6f186fc0(*(undefined4 *)(iVar3 + 0x14 + uVar4 * 0x28));
+  }
+  return;
+}
+
+
+
+### SEED 0x6f1ee6c3
+  (no xrefs-to)
+
+===== FUNCTION FUN_6f1e9a50 @ 6f1e9a50 size=23346 =====
+  6f1e9a50  CALL 0x6f7e30b0
+  6f1e9a55  PUSH 0x6f967120
+  6f1e9a5a  MOV EDX,0x6f967128
+  6f1e9a5f  MOV ECX,0x6f1df360
+  6f1e9a64  CALL 0x6f7e3710
+  6f1e9a69  PUSH 0x6f967120
+  6f1e9a6e  MOV EDX,0x6f967130
+  6f1e9a73  MOV ECX,0x6f1f27f0
+  6f1e9a78  CALL 0x6f7e3710
+  6f1e9a7d  PUSH 0x6f967120
+  6f1e9a82  MOV EDX,0x6f967138
+  6f1e9a87  MOV ECX,0x6f1f8070
+  6f1e9a8c  CALL 0x6f7e3710
+  6f1e9a91  PUSH 0x6f967120
+  6f1e9a96  MOV EDX,0x6f96713c
+  6f1e9a9b  MOV ECX,0x6f1dbb40
+  6f1e9aa0  CALL 0x6f7e3710
+  6f1e9aa5  PUSH 0x6f967120
+  6f1e9aaa  MOV EDX,0x6f967140
+  6f1e9aaf  MOV ECX,0x6f1f8ac0
+  6f1e9ab4  CALL 0x6f7e3710
+  6f1e9ab9  PUSH 0x6f967120
+  6f1e9abe  MOV EDX,0x6f967144
+  6f1e9ac3  MOV ECX,0x6f1da810
+  6f1e9ac8  CALL 0x6f7e3710
+  6f1e9acd  PUSH 0x6f967120
+  6f1e9ad2  MOV EDX,0x6f96714c
+  6f1e9ad7  MOV ECX,0x6f1d9b90
+  6f1e9adc  CALL 0x6f7e3710
+  6f1e9ae1  PUSH 0x6f967120
+  6f1e9ae6  MOV EDX,0x6f967154
+  6f1e9aeb  MOV ECX,0x6f1da8d0
+  6f1e9af0  CALL 0x6f7e3710
+  6f1e9af5  PUSH 0x6f96715c
+  6f1e9afa  MOV EDX,0x6f967164
+  6f1e9aff  MOV ECX,0x6f1da850
+  6f1e9b04  CALL 0x6f7e3710
+  6f1e9b09  PUSH 0x6f967120
+  6f1e9b0e  MOV EDX,0x6f96716c
+  6f1e9b13  MOV ECX,0x6f1f80a0
+  6f1e9b18  CALL 0x6f7e3710
+  6f1e9b1d  PUSH 0x6f96715c
+  6f1e9b22  MOV EDX,0x6f967178
+  6f1e9b27  MOV ECX,0x6f1f1f70
+  6f1e9b2c  CALL 0x6f7e3710
+  6f1e9b31  PUSH 0x6f96717c
+  6f1e9b36  MOV EDX,0x6f967184
+  6f1e9b3b  MOV ECX,0x6f1e7230
+  6f1e9b40  CALL 0x6f7e3710
+  6f1e9b45  PUSH 0x6f967188
+  6f1e9b4a  MOV EDX,0x6f967190
+  6f1e9b4f  MOV ECX,0x6f1f2710
+  6f1e9b54  CALL 0x6f7e3710
+  6f1e9b59  PUSH 0x6f967194
+  6f1e9b5e  MOV EDX,0x6f96719c
+  6f1e9b63  MOV ECX,0x6f1e7250
+  6f1e9b68  CALL 0x6f7e3710
+  6f1e9b6d  PUSH 0x6f9671a0
+  6f1e9b72  MOV EDX,0x6f9671a8
+  6f1e9b77  MOV ECX,0x6f1f2720
+  6f1e9b7c  CALL 0x6f7e3710
+  6f1e9b81  PUSH 0x6f9671ac
+  6f1e9b86  MOV EDX,0x6f9671b4
+  6f1e9b8b  MOV ECX,0x6f1f2760
+  6f1e9b90  CALL 0x6f7e3710
+  6f1e9b95  PUSH 0x6f9671bc
+  6f1e9b9a  MOV EDX,0x6f9671c4
+  6f1e9b9f  MOV ECX,0x6f1f33c0
+  6f1e9ba4  CALL 0x6f7e3710
+  6f1e9ba9  PUSH 0x6f9671c8
+  6f1e9bae  MOV EDX,0x6f9671d0
+  6f1e9bb3  MOV ECX,0x6f1f33f0
+  6f1e9bb8  CALL 0x6f7e3710
+  6f1e9bbd  PUSH 0x6f9671d4
+  6f1e9bc2  MOV EDX,0x6f9671e0
+  6f1e9bc7  MOV ECX,0x6f1e27a0
+  6f1e9bcc  CALL 0x6f7e3710
+  6f1e9bd1  PUSH 0x6f9671ec
+  6f1e9bd6  MOV EDX,0x6f9671f4
+  6f1e9bdb  MOV ECX,0x6f1f8770
+--- DECOMPILE ---
+
+void FUN_6f1e9a50(void)
+
+{
+  FUN_6f7e30b0();
+  FUN_6f7e3710(&DAT_6f967120);
+  FUN_6f7e3710(&DAT_6f967120);
+  FUN_6f7e3710(&DAT_6f967120);
+  FUN_6f7e3710(&DAT_6f967120);
+  FUN_6f7e3710(&DAT_6f967120);
+  FUN_6f7e3710(&DAT_6f967120);
+  FUN_6f7e3710(&DAT_6f967120);
+  FUN_6f7e3710(&DAT_6f967120);
+  FUN_6f7e3710(&DAT_6f96715c);
+  FUN_6f7e3710(&DAT_6f967120);
+  FUN_6f7e3710(&DAT_6f96715c);
+  FUN_6f7e3710(&DAT_6f96717c);
+  FUN_6f7e3710(&DAT_6f967188);
+  FUN_6f7e3710(&DAT_6f967194);
+  FUN_6f7e3710(&DAT_6f9671a0);
+  FUN_6f7e3710(&DAT_6f9671ac);
+  FUN_6f7e3710(&DAT_6f9671bc);
+  FUN_6f7e3710(&DAT_6f9671c8);
+  FUN_6f7e3710(&DAT_6f9671d4);
+  FUN_6f7e3710(&DAT_6f9671ec);
+  FUN_6f7e3710(&DAT_6f9671bc);
+  FUN_6f7e3710(&DAT_6f967210);
+  FUN_6f7e3710(&DAT_6f9671bc);
+  FUN_6f7e3710(&DAT_6f967230);
+  FUN_6f7e3710(&DAT_6f9671bc);
+  FUN_6f7e3710(&DAT_6f967260);
+  FUN_6f7e3710(&DAT_6f967278);
+  FUN_6f7e3710(&DAT_6f9672a0);
+  FUN_6f7e3710(&DAT_6f9672c4);
+  FUN_6f7e3710(&DAT_6f9672e8);
+  FUN_6f7e3710(&DAT_6f96730c);
+  FUN_6f7e3710(&DAT_6f967334);
+  FUN_6f7e3710(&DAT_6f96735c);
+  FUN_6f7e3710(&DAT_6f967384);
+  FUN_6f7e3710(&DAT_6f9673b4);
+  FUN_6f7e3710(&DAT_6f9673d8);
+  FUN_6f7e3710(&DAT_6f967400);
+  FUN_6f7e3710(&DAT_6f967424);
+  FUN_6f7e3710(&DAT_6f96744c);
+  FUN_6f7e3710(&DAT_6f96747c);
+  FUN_6f7e3710(&DAT_6f9674a0);
+  FUN_6f7e3710(&DAT_6f9674c8);
+  FUN_6f7e3710(&DAT_6f9674f0);
+  FUN_6f7e3710(&DAT_6f967510);
+  FUN_6f7e3710(&DAT_6f967530);
+  FUN_6f7e3710(&DAT_6f967554);
+  FUN_6f7e3710(&DAT_6f967578);
+  FUN_6f7e3710(&DAT_6f9675a4);
+  FUN_6f7e3710(&DAT_6f9675c4);
+  FUN_6f7e3710(&DAT_6f9675e4);
+  FUN_6f7e3710(&DAT_6f967610);
+  FUN_6f7e3710(&DAT_6f967634);
+  FUN_6f7e3710(&DAT_6f967658);
+  FUN_6f7e3710(&DAT_6f96767c);
+  FUN_6f7e3710(&DAT_6f9676a4);
+  FUN_6f7e3710(&DAT_6f9676d4);
+  FUN_6f7e3710(&DAT_6f9676fc);
+  FUN_6f7e3710(&DAT_6f967724);
+  FUN_6f7e3710(&DAT_6f967748);
+  FUN_6f7e3710(&DAT_6f967774);
+  FUN_6f7e3710(&DAT_6f96779c);
+  FUN_6f7e3710(&DAT_6f9677bc);
+  FUN_6f7e3710(&DAT_6f9677e0);
+  FUN_6f7e3710(&DAT_6f967800);
+  FUN_6f7e3710(&DAT_6f967820);
+  FUN_6f7e3710(&DAT_6f967844);
+  FUN_6f7e3710(&DAT_6f967868);
+  FUN_6f7e3710(&DAT_6f96788c);
+  FUN_6f7e3710(&DAT_6f9678b0);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f967900);
+  FUN_6f7e3710(&DAT_6f967900);
+  FUN_6f7e3710(&DAT_6f967920);
+  FUN_6f7e3710(&DAT_6f967948);
+  FUN_6f7e3710(&DAT_6f967964);
+  FUN_6f7e3710(&DAT_6f967984);
+  FUN_6f7e3710(&DAT_6f9679a8);
+  FUN_6f7e3710(&DAT_6f9679d0);
+  FUN_6f7e3710(&DAT_6f9679d0);
+  FUN_6f7e3710(&DAT_6f967a08);
+  FUN_6f7e3710(&DAT_6f967a24);
+  FUN_6f7e3710(&DAT_6f967a4c);
+  FUN_6f7e3710(&DAT_6f967a6c);
+  FUN_6f7e3710(&DAT_6f967a94);
+  FUN_6f7e3710(&DAT_6f967ab0);
+  FUN_6f7e3710(&DAT_6f967ad4);
+  FUN_6f7e3710(&DAT_6f967ad4);
+  FUN_6f7e3710(&DAT_6f967af0);
+  FUN_6f7e3710(&DAT_6f967b14);
+  FUN_6f7e3710(&DAT_6f967b34);
+  FUN_6f7e3710(&DAT_6f967b58);
+  FUN_6f7e3710(&DAT_6f967b7c);
+  FUN_6f7e3710(&DAT_6f967b9c);
+  FUN_6f7e3710(&DAT_6f967bc4);
+  FUN_6f7e3710(&DAT_6f967bc4);
+  FUN_6f7e3710(&DAT_6f96717c);
+  FUN_6f7e3710(&DAT_6f96717c);
+  FUN_6f7e3710(&DAT_6f967c24);
+  FUN_6f7e3710(&DAT_6f967c48);
+  FUN_6f7e3710(&DAT_6f967c48);
+  FUN_6f7e3710(&DAT_6f967c48);
+  FUN_6f7e3710(&DAT_6f967c9c);
+  FUN_6f7e3710(&DAT_6f967cd4);
+  FUN_6f7e3710(&DAT_6f967d0c);
+  FUN_6f7e3710(&DAT_6f967d40);
+  FUN_6f7e3710(&DAT_6f967d68);
+  FUN_6f7e3710(&DAT_6f967d94);
+  FUN_6f7e3710(&DAT_6f967d40);
+  FUN_6f7e3710(&DAT_6f967dd8);
+  FUN_6f7e3710(&DAT_6f967df8);
+  FUN_6f7e3710(&DAT_6f967e14);
+  FUN_6f7e3710(&DAT_6f967df8);
+  FUN_6f7e3710(&DAT_6f967e48);
+  FUN_6f7e3710(&DAT_6f967e48);
+  FUN_6f7e3710(&DAT_6f967e84);
+  FUN_6f7e3710(&DAT_6f967eac);
+  FUN_6f7e3710(&DAT_6f967ecc);
+  FUN_6f7e3710(&DAT_6f967ef8);
+  FUN_6f7e3710(&DAT_6f967f28);
+  FUN_6f7e3710(&DAT_6f967f60);
+  FUN_6f7e3710(&DAT_6f967f90);
+  FUN_6f7e3710(&DAT_6f967fac);
+  FUN_6f7e3710(&DAT_6f967fcc);
+  FUN_6f7e3710(&DAT_6f967fec);
+  FUN_6f7e3710(&DAT_6f967fec);
+  FUN_6f7e3710(&DAT_6f967fec);
+  FUN_6f7e3710(&DAT_6f96802c);
+  FUN_6f7e3710(&DAT_6f968044);
+  FUN_6f7e3710(&DAT_6f968060);
+  FUN_6f7e3710(&DAT_6f96807c);
+  FUN_6f7e3710(&DAT_6f96807c);
+  FUN_6f7e3710(&DAT_6f96807c);
+  FUN_6f7e3710(&DAT_6f968044);
+  FUN_6f7e3710(&DAT_6f968044);
+  FUN_6f7e3710(&DAT_6f96802c);
+  FUN_6f7e3710(&DAT_6f9680e4);
+  FUN_6f7e3710(&DAT_6f968104);
+  FUN_6f7e3710(&DAT_6f96812c);
+  FUN_6f7e3710(&DAT_6f968144);
+  FUN_6f7e3710(&DAT_6f968164);
+  FUN_6f7e3710(&DAT_6f968184);
+  FUN_6f7e3710(&DAT_6f968184);
+  FUN_6f7e3710(&DAT_6f9681b0);
+  FUN_6f7e3710(&DAT_6f9681cc);
+  FUN_6f7e3710(&DAT_6f9681e8);
+  FUN_6f7e3710(&DAT_6f968204);
+  FUN_6f7e3710(&DAT_6f968204);
+  FUN_6f7e3710(&DAT_6f968238);
+  FUN_6f7e3710(&DAT_6f968258);
+  FUN_6f7e3710(&DAT_6f968238);
+  FUN_6f7e3710(&DAT_6f968258);
+  FUN_6f7e3710(&DAT_6f9682ac);
+  FUN_6f7e3710(&DAT_6f9682d0);
+  FUN_6f7e3710(&DAT_6f9682f0);
+  FUN_6f7e3710(&DAT_6f96831c);
+  FUN_6f7e3710(&DAT_6f968334);
+  FUN_6f7e3710(&DAT_6f968360);
+  FUN_6f7e3710(&DAT_6f968378);
+  FUN_6f7e3710(&DAT_6f968390);
+  FUN_6f7e3710(&DAT_6f9683c0);
+  FUN_6f7e3710(&DAT_6f9683c0);
+  FUN_6f7e3710(&DAT_6f9683ec);
+  FUN_6f7e3710(&DAT_6f968404);
+  FUN_6f7e3710(&DAT_6f9683c0);
+  FUN_6f7e3710(&DAT_6f9683c0);
+  FUN_6f7e3710(&DAT_6f9683c0);
+  FUN_6f7e3710(&DAT_6f9683c0);
+  FUN_6f7e3710(&DAT_6f968458);
+  FUN_6f7e3710(&DAT_6f968474);
+  FUN_6f7e3710(&DAT_6f9684a4);
+  FUN_6f7e3710(&DAT_6f9684d4);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f968528);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f968528);
+  FUN_6f7e3710(&DAT_6f96855c);
+  FUN_6f7e3710(&DAT_6f9685a0);
+  FUN_6f7e3710(&DAT_6f9685e0);
+  FUN_6f7e3710(&DAT_6f96862c);
+  FUN_6f7e3710(&DAT_6f96862c);
+  FUN_6f7e3710(&DAT_6f96862c);
+  FUN_6f7e3710(&DAT_6f968678);
+  FUN_6f7e3710(&DAT_6f968694);
+  FUN_6f7e3710(&DAT_6f968694);
+  FUN_6f7e3710(&DAT_6f968694);
+  FUN_6f7e3710(&DAT_6f968694);
+  FUN_6f7e3710(&DAT_6f9686e4);
+  FUN_6f7e3710(&DAT_6f968708);
+  FUN_6f7e3710(&DAT_6f9686e4);
+  FUN_6f7e3710(&DAT_6f968744);
+  FUN_6f7e3710(&DAT_6f968784);
+  FUN_6f7e3710(&DAT_6f9687b8);
+  FUN_6f7e3710(&DAT_6f9687f4);
+  FUN_6f7e3710(&DAT_6f96883c);
+  FUN_6f7e3710(&DAT_6f968860);
+  FUN_6f7e3710(&DAT_6f968898);
+  FUN_6f7e3710(&DAT_6f9688d8);
+  FUN_6f7e3710(&DAT_6f9688f8);
+  FUN_6f7e3710(&DAT_6f968918);
+  FUN_6f7e3710(&DAT_6f968948);
+  FUN_6f7e3710(&DAT_6f96896c);
+  FUN_6f7e3710(&DAT_6f967df8);
+  FUN_6f7e3710(&DAT_6f9689ac);
+  FUN_6f7e3710(&DAT_6f9689c8);
+  FUN_6f7e3710(&DAT_6f96896c);
+  FUN_6f7e3710(&DAT_6f968a18);
+  FUN_6f7e3710(&DAT_6f968a6c);
+  FUN_6f7e3710(&DAT_6f968a90);
+  FUN_6f7e3710(&DAT_6f968ad4);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f967ad4);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f967ad4);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968c40);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f96896c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f9671bc);
+  FUN_6f7e3710(&DAT_6f967194);
+  FUN_6f7e3710(&DAT_6f9671bc);
+  FUN_6f7e3710(&DAT_6f967194);
+  FUN_6f7e3710(&DAT_6f9671bc);
+  FUN_6f7e3710(&DAT_6f967194);
+  FUN_6f7e3710(&DAT_6f967194);
+  FUN_6f7e3710(&DAT_6f967ad4);
+  FUN_6f7e3710(&DAT_6f968d18);
+  FUN_6f7e3710(&DAT_6f968d18);
+  FUN_6f7e3710(&DAT_6f968d3c);
+  FUN_6f7e3710(&DAT_6f968d60);
+  FUN_6f7e3710(&DAT_6f968d7c);
+  FUN_6f7e3710(&DAT_6f968c40);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f967ad4);
+  FUN_6f7e3710(&DAT_6f968dfc);
+  FUN_6f7e3710(&DAT_6f968d3c);
+  FUN_6f7e3710(&DAT_6f968d18);
+  FUN_6f7e3710(&DAT_6f968d18);
+  FUN_6f7e3710(&DAT_6f968d7c);
+  FUN_6f7e3710(&DAT_6f968c40);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f967ad4);
+  FUN_6f7e3710(&DAT_6f967ad4);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968c40);
+  FUN_6f7e3710(&DAT_6f968f6c);
+  FUN_6f7e3710(&DAT_6f968fbc);
+  FUN_6f7e3710(&DAT_6f9689ac);
+  FUN_6f7e3710(&DAT_6f9689ac);
+  FUN_6f7e3710(&DAT_6f969038);
+  FUN_6f7e3710(&DAT_6f969088);
+  FUN_6f7e3710(&DAT_6f9690ac);
+  FUN_6f7e3710(&DAT_6f9690e4);
+  FUN_6f7e3710(&DAT_6f968d18);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f96896c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f969178);
+  FUN_6f7e3710(&DAT_6f9691c8);
+  FUN_6f7e3710(&DAT_6f969208);
+  FUN_6f7e3710(&DAT_6f969208);
+  FUN_6f7e3710(&DAT_6f9681cc);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f96929c);
+  FUN_6f7e3710(&DAT_6f9692d8);
+  FUN_6f7e3710(&DAT_6f968694);
+  FUN_6f7e3710(&DAT_6f969328);
+  FUN_6f7e3710(&DAT_6f969358);
+  FUN_6f7e3710(&DAT_6f968694);
+  FUN_6f7e3710(&DAT_6f96939c);
+  FUN_6f7e3710(&DAT_6f9693b8);
+  FUN_6f7e3710(&DAT_6f968694);
+  FUN_6f7e3710(&DAT_6f968694);
+  FUN_6f7e3710(&DAT_6f9686e4);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f968d60);
+  FUN_6f7e3710(&DAT_6f968d7c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f96896c);
+  FUN_6f7e3710(&DAT_6f968678);
+  FUN_6f7e3710(&DAT_6f9694a0);
+  FUN_6f7e3710(&DAT_6f9694c0);
+  FUN_6f7e3710(&DAT_6f9694c0);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f968b2c);
+  FUN_6f7e3710(&DAT_6f96896c);
+  FUN_6f7e3710(&DAT_6f96896c);
+  FUN_6f7e3710(&DAT_6f968d7c);
+  FUN_6f7e3710(&DAT_6f968d7c);
+  FUN_6f7e3710(&DAT_6f968c40);
+  FUN_6f7e3710(&DAT_6f968c40);
+  FUN_6f7e3710(&DAT_6f96957c);
+  FUN_6f7e3710(&DAT_6f969594);
+  FUN_6f7e3710(&DAT_6f9695b0);
+  FUN_6f7e3710(&DAT_6f9695b0);
+  FUN_6f7e3710(&DAT_6f969594);
+  FUN_6f7e3710(&DAT_6f9695f0);
+  FUN_6f7e3710(&DAT_6f969620);
+  FUN_6f7e3710(&DAT_6f969654);
+  FUN_6f7e3710(&DAT_6f969688);
+  FUN_6f7e3710(&DAT_6f9696c0);
+  FUN_6f7e3710(&DAT_6f9696f8);
+  FUN_6f7e3710(&DAT_6f969728);
+  FUN_6f7e3710(&DAT_6f969764);
+  FUN_6f7e3710(&DAT_6f9697a0);
+  FUN_6f7e3710(&DAT_6f9696c0);
+  FUN_6f7e3710(&DAT_6f969800);
+  FUN_6f7e3710(&DAT_6f969820);
+  FUN_6f7e3710(&DAT_6f969844);
+  FUN_6f7e3710(&DAT_6f969864);
+  FUN_6f7e3710(&DAT_6f969890);
+  FUN_6f7e3710(&DAT_6f9698b4);
+  FUN_6f7e3710(&DAT_6f9698e4);
+  FUN_6f7e3710(&DAT_6f96990c);
+  FUN_6f7e3710(&DAT_6f969938);
+  FUN_6f7e3710(&DAT_6f969950);
+  FUN_6f7e3710(&DAT_6f969970);
+  FUN_6f7e3710(&DAT_6f969988);
+  FUN_6f7e3710(&DAT_6f9699a4);
+  FUN_6f7e3710(&DAT_6f9699a4);
+  FUN_6f7e3710(&DAT_6f969988);
+  FUN_6f7e3710(&DAT_6f9699e8);
+  FUN_6f7e3710(&DAT_6f969a14);
+  FUN_6f7e3710(&DAT_6f969a44);
+  FUN_6f7e3710(&DAT_6f969a44);
+  FUN_6f7e3710(&DAT_6f969a88);
+  FUN_6f7e3710(&DAT_6f969aa0);
+  FUN_6f7e3710(&DAT_6f969abc);
+  FUN_6f7e3710(&DAT_6f969aa0);
+  FUN_6f7e3710(&DAT_6f969aa0);
+  FUN_6f7e3710(&DAT_6f969af4);
+  FUN_6f7e3710(&DAT_6f969b20);
+  FUN_6f7e3710(&DAT_6f969af4);
+  FUN_6f7e3710(&DAT_6f969b20);
+  FUN_6f7e3710(&DAT_6f969b7c);
+  FUN_6f7e3710(&DAT_6f969b7c);
+  FUN_6f7e3710(&DAT_6f969bb8);
+  FUN_6f7e3710(&DAT_6f969be8);
+  FUN_6f7e3710(&DAT_6f969c18);
+  FUN_6f7e3710(&DAT_6f969c48);
+  FUN_6f7e3710(&DAT_6f969c74);
+  FUN_6f7e3710(&DAT_6f969c74);
+  FUN_6f7e3710(&DAT_6f969cb0);
+  FUN_6f7e3710(&DAT_6f969c74);
+  FUN_6f7e3710(&DAT_6f969cb0);
+  FUN_6f7e3710(&DAT_6f969c74);
+  FUN_6f7e3710(&DAT_6f969d1c);
+  FUN_6f7e3710(&DAT_6f969d48);
+  FUN_6f7e3710(&DAT_6f969d48);
+  FUN_6f7e3710(&DAT_6f969cb0);
+  FUN_6f7e3710(&DAT_6f969bb8);
+  FUN_6f7e3710(&DAT_6f969c74);
+  FUN_6f7e3710(&DAT_6f969cb0);
+  FUN_6f7e3710(&DAT_6f969e08);
+  FUN_6f7e3710(&DAT_6f969e30);
+  FUN_6f7e3710(&DAT_6f969e54);
+  FUN_6f7e3710(&DAT_6f969e80);
+  FUN_6f7e3710(&DAT_6f969eb0);
+  FUN_6f7e3710(&DAT_6f969e30);
+  FUN_6f7e3710(&DAT_6f969ef8);
+  FUN_6f7e3710(&DAT_6f969f20);
+  FUN_6f7e3710(&DAT_6f969f20);
+  FUN_6f7e3710(&DAT_6f969f4c);
+  FUN_6f7e3710(&DAT_6f969f4c);
+  FUN_6f7e3710(&DAT_6f969f6c);
+  FUN_6f7e3710(&DAT_6f969f88);
+  FUN_6f7e3710(&DAT_6f969f88);
+  FUN_6f7e3710(&DAT_6f969fac);
+  FUN_6f7e3710(&DAT_6f969fac);
+  FUN_6f7e3710(&DAT_6f969fe0);
+  FUN_6f7e3710(&DAT_6f96a004);
+  FUN_6f7e3710(&DAT_6f969f88);
+  FUN_6f7e3710(&DAT_6f969f88);
+  FUN_6f7e3710(&DAT_6f969f88);
+  FUN_6f7e3710(&DAT_6f969f20);
+  FUN_6f7e3710(&DAT_6f96a084);
+  FUN_6f7e3710(&DAT_6f96a0a0);
+  FUN_6f7e3710(&DAT_6f969f20);
+  FUN_6f7e3710(&DAT_6f969f4c);
+  FUN_6f7e3710(&DAT_6f96a0e4);
+  FUN_6f7e3710(&DAT_6f96a0e4);
+  FUN_6f7e3710(&DAT_6f96a108);
+  FUN_6f7e3710(&DAT_6f96a124);
+  FUN_6f7e3710(&DAT_6f96a0e4);
+  FUN_6f7e3710(&DAT_6f96a108);
+  FUN_6f7e3710(&DAT_6f96a108);
+  FUN_6f7e3710(&DAT_6f96a0e4);
+  FUN_6f7e3710(&DAT_6f96a0e4);
+  FUN_6f7e3710(&DAT_6f96a0e4);
+  FUN_6f7e3710(&DAT_6f969f6c);
+  FUN_6f7e3710(&DAT_6f969f88);
+  FUN_6f7e3710(&DAT_6f969f88);
+  FUN_6f7e3710(&DAT_6f969f88);
+  FUN_6f7e3710(&DAT_6f969f88);
+  FUN_6f7e3710(&DAT_6f969f88);
+  FUN_6f7e3710(&DAT_6f969f88);
+  FUN_6f7e3710(&DAT_6f969f88);
+  FUN_6f7e3710(&DAT_6f969f88);
+  FUN_6f7e3710(&DAT_6f96a0e4);
+  FUN_6f7e3710(&DAT_6f96a2a0);
+  FUN_6f7e3710(&DAT_6f96a2c8);
+  FUN_6f7e3710(&DAT_6f96a2c8);
+  FUN_6f7e3710(&DAT_6f96a0e4);
+  FUN_6f7e3710(&DAT_6f96a314);
+  FUN_6f7e3710(&DAT_6f96a33c);
+  FUN_6f7e3710(&DAT_6f96a33c);
+  FUN_6f7e3710(&DAT_6f96a370);
+  FUN_6f7e3710(&DAT_6f96a3a8);
+  FUN_6f7e3710(&DAT_6f96a3cc);
+  FUN_6f7e3710(&DAT_6f96a3f4);
+  FUN_6f7e3710(&DAT_6f96a0e4);
+  FUN_6f7e3710(&DAT_6f96a0e4);
+  FUN_6f7e3710(&DAT_6f96a43c);
+  FUN_6f7e3710(&DAT_6f96a460);
+  FUN_6f7e3710(&DAT_6f969f6c);
+  FUN_6f7e3710(&DAT_6f96a494);
+  FUN_6f7e3710(&DAT_6f96a4b0);
+  FUN_6f7e3710(&DAT_6f96a4b0);
+  FUN_6f7e3710(&DAT_6f96a4b0);
+  FUN_6f7e3710(&DAT_6f96a4e0);
+  FUN_6f7e3710(&DAT_6f96a4e0);
+  FUN_6f7e3710(&DAT_6f96a4e0);
+  FUN_6f7e3710(&DAT_6f969f20);
+  FUN_6f7e3710(&DAT_6f96a524);
+  FUN_6f7e3710(&DAT_6f96a524);
+  FUN_6f7e3710(&DAT_6f969f20);
+  FUN_6f7e3710(&DAT_6f96a4b0);
+  FUN_6f7e3710(&DAT_6f96a4b0);
+  FUN_6f7e3710(&DAT_6f96a4b0);
+  FUN_6f7e3710(&DAT_6f969f20);
+  FUN_6f7e3710(&DAT_6f969f20);
+  FUN_6f7e3710(&DAT_6f96a0a0);
+  FUN_6f7e3710(&DAT_6f969f6c);
+  FUN_6f7e3710(&DAT_6f96a5d4);
+  FUN_6f7e3710(&DAT_6f96a3a8);
+  FUN_6f7e3710(&DAT_6f96a600);
+  FUN_6f7e3710(&DAT_6f96a620);
+  FUN_6f7e3710(&DAT_6f96a63c);
+  FUN_6f7e3710(&DAT_6f969f6c);
+  FUN_6f7e3710(&DAT_6f969f6c);
+  FUN_6f7e3710(&DAT_6f969f6c);
+  FUN_6f7e3710(&DAT_6f96a5d4);
+  FUN_6f7e3710(&DAT_6f96a6a4);
+  FUN_6f7e3710(&DAT_6f96a6c0);
+  FUN_6f7e3710(&DAT_6f96a6e0);
+  FUN_6f7e3710(&DAT_6f96a704);
+  FUN_6f7e3710(&DAT_6f96a6c0);
+  FUN_6f7e3710(&DAT_6f96a6a4);
+  FUN_6f7e3710(&DAT_6f96a6c0);
+  FUN_6f7e3710(&DAT_6f969f20);
+  FUN_6f7e3710(&DAT_6f96a76c);
+  FUN_6f7e3710(&DAT_6f96a794);
+  FUN_6f7e3710(&DAT_6f96a7bc);
+  FUN_6f7e3710(&DAT_6f96a6a4);
+  FUN_6f7e3710(&DAT_6f96a76c);
+  FUN_6f7e3710(&DAT_6f96a7bc);
+  FUN_6f7e3710(&DAT_6f969f20);
+  FUN_6f7e3710(&DAT_6f96a3a8);
+  FUN_6f7e3710(&DAT_6f96a3a8);
+  FUN_6f7e3710(&DAT_6f969f20);
+  FUN_6f7e3710(&DAT_6f969f6c);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f96a43c);
+  FUN_6f7e3710(&DAT_6f96a89c);
+  FUN_6f7e3710(&DAT_6f96a494);
+  FUN_6f7e3710(&DAT_6f96a494);
+  FUN_6f7e3710(&DAT_6f969f6c);
+  FUN_6f7e3710(&DAT_6f96a8e0);
+  FUN_6f7e3710(&DAT_6f96a904);
+  FUN_6f7e3710(&DAT_6f96a928);
+  FUN_6f7e3710(&DAT_6f96a928);
+  FUN_6f7e3710(&DAT_6f96a928);
+  FUN_6f7e3710(&DAT_6f96a928);
+  FUN_6f7e3710(&DAT_6f96a928);
+  FUN_6f7e3710(&DAT_6f96a928);
+  FUN_6f7e3710(&DAT_6f96a928);
+  FUN_6f7e3710(&DAT_6f96a928);
+  FUN_6f7e3710(&DAT_6f96a928);
+  FUN_6f7e3710(&DAT_6f96a9c8);
+  FUN_6f7e3710(&DAT_6f96a9e4);
+  FUN_6f7e3710(&DAT_6f96aa04);
+  FUN_6f7e3710(&DAT_6f96aa1c);
+  FUN_6f7e3710(&DAT_6f96aa40);
+  FUN_6f7e3710(&DAT_6f96aa60);
+  FUN_6f7e3710(&DAT_6f96a5d4);
+  FUN_6f7e3710(&DAT_6f96a5d4);
+  FUN_6f7e3710(&DAT_6f96aa04);
+  FUN_6f7e3710(&DAT_6f96a5d4);
+  FUN_6f7e3710(&DAT_6f96aad0);
+  FUN_6f7e3710(&DAT_6f96aae8);
+  FUN_6f7e3710(&DAT_6f96ab08);
+  FUN_6f7e3710(&DAT_6f96a2c8);
+  FUN_6f7e3710(&DAT_6f969f6c);
+  FUN_6f7e3710(&DAT_6f96a9e4);
+  FUN_6f7e3710(&DAT_6f96a9e4);
+  FUN_6f7e3710(&DAT_6f96a524);
+  FUN_6f7e3710(&DAT_6f96a524);
+  FUN_6f7e3710(&DAT_6f96ab90);
+  FUN_6f7e3710(&DAT_6f96abb8);
+  FUN_6f7e3710(&DAT_6f96abdc);
+  FUN_6f7e3710(&DAT_6f96ac04);
+  FUN_6f7e3710(&DAT_6f96ac20);
+  FUN_6f7e3710(&DAT_6f969f6c);
+  FUN_6f7e3710(&DAT_6f96a5d4);
+  FUN_6f7e3710(&DAT_6f969f6c);
+  FUN_6f7e3710(&DAT_6f96a5d4);
+  FUN_6f7e3710(&DAT_6f96a5d4);
+  FUN_6f7e3710(&DAT_6f96a494);
+  FUN_6f7e3710(&DAT_6f96acac);
+  FUN_6f7e3710(&DAT_6f96accc);
+  FUN_6f7e3710(&DAT_6f96a5d4);
+  FUN_6f7e3710(&DAT_6f96ad00);
+  FUN_6f7e3710(&DAT_6f96ad48);
+  FUN_6f7e3710(&DAT_6f96a600);
+  FUN_6f7e3710(&DAT_6f96a600);
+  FUN_6f7e3710(&DAT_6f96adc0);
+  FUN_6f7e3710(&DAT_6f96a494);
+  FUN_6f7e3710(&DAT_6f96a3a8);
+  FUN_6f7e3710(&DAT_6f96a3a8);
+  FUN_6f7e3710(&DAT_6f969f6c);
+  FUN_6f7e3710(&DAT_6f969f6c);
+  FUN_6f7e3710(&DAT_6f96a524);
+  FUN_6f7e3710(&DAT_6f96ae68);
+  FUN_6f7e3710(&DAT_6f96ae8c);
+  FUN_6f7e3710(&DAT_6f96aebc);
+  FUN_6f7e3710(&DAT_6f96aee8);
+  FUN_6f7e3710(&DAT_6f96af1c);
+  FUN_6f7e3710(&DAT_6f96ae68);
+  FUN_6f7e3710(&DAT_6f96af68);
+  FUN_6f7e3710(&DAT_6f96af9c);
+  FUN_6f7e3710(&DAT_6f96afd0);
+  FUN_6f7e3710(&DAT_6f96b008);
+  FUN_6f7e3710(&DAT_6f96b028);
+  FUN_6f7e3710(&DAT_6f96b048);
+  FUN_6f7e3710(&DAT_6f96b074);
+  FUN_6f7e3710(&DAT_6f96b09c);
+  FUN_6f7e3710(&DAT_6f96b0cc);
+  FUN_6f7e3710(&DAT_6f96b028);
+  FUN_6f7e3710(&DAT_6f96b110);
+  FUN_6f7e3710(&DAT_6f96b140);
+  FUN_6f7e3710(&DAT_6f96b170);
+  FUN_6f7e3710(&DAT_6f969f88);
+  FUN_6f7e3710(&DAT_6f969f88);
+  FUN_6f7e3710(&DAT_6f96a108);
+  FUN_6f7e3710(&DAT_6f969f6c);
+  FUN_6f7e3710(&DAT_6f96a5d4);
+  FUN_6f7e3710(&DAT_6f96b20c);
+  FUN_6f7e3710(&DAT_6f96b228);
+  FUN_6f7e3710(&DAT_6f96b20c);
+  FUN_6f7e3710(&DAT_6f96b228);
+  FUN_6f7e3710(&DAT_6f967900);
+  FUN_6f7e3710(&DAT_6f96a3a8);
+  FUN_6f7e3710(&DAT_6f967900);
+  FUN_6f7e3710(&DAT_6f96a3a8);
+  FUN_6f7e3710(&DAT_6f967900);
+  FUN_6f7e3710(&DAT_6f967900);
+  FUN_6f7e3710(&DAT_6f96a3a8);
+  FUN_6f7e3710(&DAT_6f96a3a8);
+  FUN_6f7e3710(&DAT_6f969f20);
+  FUN_6f7e3710(&DAT_6f96a3a8);
+  FUN_6f7e3710(&DAT_6f96b334);
+  FUN_6f7e3710(&DAT_6f96b34c);
+  FUN_6f7e3710(&DAT_6f96b364);
+  FUN_6f7e3710(&DAT_6f96b388);
+  FUN_6f7e3710(&DAT_6f96b3a4);
+  FUN_6f7e3710(&DAT_6f96b3a4);
+  FUN_6f7e3710(&DAT_6f96b3c8);
+  FUN_6f7e3710(&DAT_6f96b3e4);
+  FUN_6f7e3710(&DAT_6f96b3e4);
+  FUN_6f7e3710(&DAT_6f96b3e4);
+  FUN_6f7e3710(&DAT_6f96b428);
+  FUN_6f7e3710(&DAT_6f96b3e4);
+  FUN_6f7e3710(&DAT_6f96b460);
+  FUN_6f7e3710(&DAT_6f96b388);
+  FUN_6f7e3710(&DAT_6f96b490);
+  FUN_6f7e3710(&DAT_6f96b3e4);
+  FUN_6f7e3710(&DAT_6f96b460);
+  FUN_6f7e3710(&DAT_6f969c18);
+  FUN_6f7e3710(&DAT_6f96b460);
+  FUN_6f7e3710(&DAT_6f96b460);
+  FUN_6f7e3710(&DAT_6f96b460);
+  FUN_6f7e3710(&DAT_6f96b460);
+  FUN_6f7e3710(&DAT_6f96aad0);
+  FUN_6f7e3710(&DAT_6f96aad0);
+  FUN_6f7e3710(&DAT_6f96aad0);
+  FUN_6f7e3710(&DAT_6f96b554);
+  FUN_6f7e3710(&DAT_6f96b570);
+  FUN_6f7e3710(&DAT_6f96b388);
+  FUN_6f7e3710(&DAT_6f96b554);
+  FUN_6f7e3710(&DAT_6f96b388);
+  FUN_6f7e3710(&DAT_6f96b554);
+  FUN_6f7e3710(&DAT_6f96b5c8);
+  FUN_6f7e3710(&DAT_6f96896c);
+  FUN_6f7e3710(&DAT_6f96b5ec);
+  FUN_6f7e3710(&DAT_6f96b5ec);
+  FUN_6f7e3710(&DAT_6f96b620);
+  FUN_6f7e3710(&DAT_6f967eac);
+  FUN_6f7e3710(&DAT_6f96b658);
+  FUN_6f7e3710(&DAT_6f967df8);
+  FUN_6f7e3710(&DAT_6f96b688);
+  FUN_6f7e3710(&DAT_6f96b6b0);
+  FUN_6f7e3710(&DAT_6f96b688);
+  FUN_6f7e3710(&DAT_6f96b688);
+  FUN_6f7e3710(&DAT_6f96b708);
+  FUN_6f7e3710(&DAT_6f96b730);
+  FUN_6f7e3710(&DAT_6f96b754);
+  FUN_6f7e3710(&DAT_6f96b780);
+  FUN_6f7e3710(&DAT_6f96b7a4);
+  FUN_6f7e3710(&DAT_6f96b780);
+  FUN_6f7e3710(&DAT_6f96b7e4);
+  FUN_6f7e3710(&DAT_6f96b808);
+  FUN_6f7e3710(&DAT_6f96b7e4);
+  FUN_6f7e3710(&DAT_6f96b808);
+  FUN_6f7e3710(&DAT_6f96b7e4);
+  FUN_6f7e3710(&DAT_6f96b808);
+  FUN_6f7e3710(&DAT_6f96b89c);
+  FUN_6f7e3710(&DAT_6f96b8c8);
+  FUN_6f7e3710(&DAT_6f96b8f4);
+  FUN_6f7e3710(&DAT_6f96b920);
+  FUN_6f7e3710(&DAT_6f96b958);
+  FUN_6f7e3710(&DAT_6f96b988);
+  FUN_6f7e3710(&DAT_6f967e48);
+  FUN_6f7e3710(&DAT_6f96b9bc);
+  FUN_6f7e3710(&DAT_6f967e48);
+  FUN_6f7e3710(&DAT_6f96b9bc);
+  FUN_6f7e3710(&DAT_6f967c48);
+  FUN_6f7e3710(&DAT_6f96ba1c);
+  FUN_6f7e3710(&DAT_6f96ba40);
+  FUN_6f7e3710(&DAT_6f96ba58);
+  FUN_6f7e3710(&DAT_6f96ba58);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f96ba98);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f96ba98);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f96badc);
+  FUN_6f7e3710(&DAT_6f96baf8);
+  FUN_6f7e3710(&DAT_6f96badc);
+  FUN_6f7e3710(&DAT_6f96baf8);
+  FUN_6f7e3710(&DAT_6f96bb34);
+  FUN_6f7e3710(&DAT_6f96bb5c);
+  FUN_6f7e3710(&DAT_6f96bb80);
+  FUN_6f7e3710(&DAT_6f96bba8);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f9688f8);
+  FUN_6f7e3710(&DAT_6f96bbec);
+  FUN_6f7e3710(&DAT_6f96bbec);
+  FUN_6f7e3710(&DAT_6f96bbec);
+  FUN_6f7e3710(&DAT_6f96bc24);
+  FUN_6f7e3710(&DAT_6f96bc48);
+  FUN_6f7e3710(&DAT_6f96bc70);
+  FUN_6f7e3710(&DAT_6f96bc9c);
+  FUN_6f7e3710(&DAT_6f96bcc4);
+  FUN_6f7e3710(&DAT_6f96bce0);
+  FUN_6f7e3710(&DAT_6f96bd00);
+  FUN_6f7e3710(&DAT_6f967900);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f96bce0);
+  FUN_6f7e3710(&DAT_6f96bce0);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f967b9c);
+  FUN_6f7e3710(&DAT_6f9679a8);
+  FUN_6f7e3710(&DAT_6f968528);
+  FUN_6f7e3710(&DAT_6f96bce0);
+  FUN_6f7e3710(&DAT_6f96aad0);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f96be34);
+  FUN_6f7e3710(&DAT_6f96be54);
+  FUN_6f7e3710(&DAT_6f96be74);
+  FUN_6f7e3710(&DAT_6f96be98);
+  FUN_6f7e3710(&DAT_6f96beb8);
+  FUN_6f7e3710(&DAT_6f96bedc);
+  FUN_6f7e3710(&DAT_6f96bf00);
+  FUN_6f7e3710(&DAT_6f96bf20);
+  FUN_6f7e3710(&DAT_6f96bf40);
+  FUN_6f7e3710(&DAT_6f96bf60);
+  FUN_6f7e3710(&DAT_6f96bf80);
+  FUN_6f7e3710(&DAT_6f96bf9c);
+  FUN_6f7e3710(&DAT_6f96bfcc);
+  FUN_6f7e3710(&DAT_6f96bffc);
+  FUN_6f7e3710(&DAT_6f96c034);
+  FUN_6f7e3710(&DAT_6f96c05c);
+  FUN_6f7e3710(&DAT_6f96c084);
+  FUN_6f7e3710(&DAT_6f96c0b4);
+  FUN_6f7e3710(&DAT_6f96c0dc);
+  FUN_6f7e3710(&DAT_6f96c10c);
+  FUN_6f7e3710(&DAT_6f96c13c);
+  FUN_6f7e3710(&DAT_6f96c17c);
+  FUN_6f7e3710(&DAT_6f96c1b4);
+  FUN_6f7e3710(&DAT_6f96c1e4);
+  FUN_6f7e3710(&DAT_6f96c20c);
+  FUN_6f7e3710(&DAT_6f96c234);
+  FUN_6f7e3710(&DAT_6f96c264);
+  FUN_6f7e3710(&DAT_6f96c28c);
+  FUN_6f7e3710(&DAT_6f96c2c0);
+  FUN_6f7e3710(&DAT_6f96c2e8);
+  FUN_6f7e3710(&DAT_6f96c318);
+  FUN_6f7e3710(&DAT_6f96c348);
+  FUN_6f7e3710(&DAT_6f96c378);
+  FUN_6f7e3710(&DAT_6f96c3a0);
+  FUN_6f7e3710(&DAT_6f96c3d0);
+  FUN_6f7e3710(&DAT_6f96c410);
+  FUN_6f7e3710(&DAT_6f96c448);
+  FUN_6f7e3710(&DAT_6f96c480);
+  FUN_6f7e3710(&DAT_6f96c4b8);
+  FUN_6f7e3710(&DAT_6f96c4f8);
+  FUN_6f7e3710(&DAT_6f96c528);
+  FUN_6f7e3710(&DAT_6f96c558);
+  FUN_6f7e3710(&DAT_6f96c588);
+  FUN_6f7e3710(&DAT_6f96c5b8);
+  FUN_6f7e3710(&DAT_6f96c5e8);
+  FUN_6f7e3710(&DAT_6f96c610);
+  FUN_6f7e3710(&DAT_6f96c640);
+  FUN_6f7e3710(&DAT_6f96c670);
+  FUN_6f7e3710(&DAT_6f96c6a8);
+  FUN_6f7e3710(&DAT_6f96c6d0);
+  FUN_6f7e3710(&DAT_6f96c700);
+  FUN_6f7e3710(&DAT_6f96c700);
+  FUN_6f7e3710(&DAT_6f96c700);
+  FUN_6f7e3710(&DAT_6f96c700);
+  FUN_6f7e3710(&DAT_6f96c700);
+  FUN_6f7e3710(&DAT_6f96c770);
+  FUN_6f7e3710(&DAT_6f96c798);
+  FUN_6f7e3710(&DAT_6f96c7bc);
+  FUN_6f7e3710(&DAT_6f96c7e4);
+  FUN_6f7e3710(&DAT_6f96c814);
+  FUN_6f7e3710(&DAT_6f96c7bc);
+  FUN_6f7e3710(&DAT_6f96c7bc);
+  FUN_6f7e3710(&DAT_6f96c7bc);
+  FUN_6f7e3710(&DAT_6f96c7bc);
+  FUN_6f7e3710(&DAT_6f96c7bc);
+  FUN_6f7e3710(&DAT_6f96c894);
+  FUN_6f7e3710(&DAT_6f96c8b4);
+  FUN_6f7e3710(&DAT_6f96c700);
+  FUN_6f7e3710(&DAT_6f96c700);
+  FUN_6f7e3710(&DAT_6f96c700);
+  FUN_6f7e3710(&DAT_6f96c700);
+  FUN_6f7e3710(&DAT_6f96c700);
+  FUN_6f7e3710(&DAT_6f96c934);
+  FUN_6f7e3710(&DAT_6f96c954);
+  FUN_6f7e3710(&DAT_6f96c974);
+  FUN_6f7e3710(&DAT_6f96c994);
+  FUN_6f7e3710(&DAT_6f96c9b4);
+  FUN_6f7e3710(&DAT_6f96c9d0);
+  FUN_6f7e3710(&DAT_6f96c9fc);
+  FUN_6f7e3710(&DAT_6f96ca28);
+  FUN_6f7e3710(&DAT_6f96ca60);
+  FUN_6f7e3710(&DAT_6f96ca88);
+  FUN_6f7e3710(&DAT_6f96cab0);
+  FUN_6f7e3710(&DAT_6f96cae0);
+  FUN_6f7e3710(&DAT_6f96cb08);
+  FUN_6f7e3710(&DAT_6f96cb34);
+  FUN_6f7e3710(&DAT_6f96cb64);
+  FUN_6f7e3710(&DAT_6f96cba4);
+  FUN_6f7e3710(&DAT_6f96cbdc);
+  FUN_6f7e3710(&DAT_6f96cc0c);
+  FUN_6f7e3710(&DAT_6f96cc34);
+  FUN_6f7e3710(&DAT_6f96cc5c);
+  FUN_6f7e3710(&DAT_6f96cc8c);
+  FUN_6f7e3710(&DAT_6f96ccb4);
+  FUN_6f7e3710(&DAT_6f96cce8);
+  FUN_6f7e3710(&DAT_6f96cd10);
+  FUN_6f7e3710(&DAT_6f96cd3c);
+  FUN_6f7e3710(&DAT_6f96cd6c);
+  FUN_6f7e3710(&DAT_6f96cd9c);
+  FUN_6f7e3710(&DAT_6f96cdc4);
+  FUN_6f7e3710(&DAT_6f96cdf4);
+  FUN_6f7e3710(&DAT_6f96ce34);
+  FUN_6f7e3710(&DAT_6f96ce6c);
+  FUN_6f7e3710(&DAT_6f96cea4);
+  FUN_6f7e3710(&DAT_6f96ced8);
+  FUN_6f7e3710(&DAT_6f96cf14);
+  FUN_6f7e3710(&DAT_6f96cf44);
+  FUN_6f7e3710(&DAT_6f96cf70);
+  FUN_6f7e3710(&DAT_6f96cf9c);
+  FUN_6f7e3710(&DAT_6f96cfcc);
+  FUN_6f7e3710(&DAT_6f96cffc);
+  FUN_6f7e3710(&DAT_6f96d024);
+  FUN_6f7e3710(&DAT_6f96d054);
+  FUN_6f7e3710(&DAT_6f96d084);
+  FUN_6f7e3710(&DAT_6f96d0bc);
+  FUN_6f7e3710(&DAT_6f96d0ec);
+  FUN_6f7e3710(&DAT_6f96d0ec);
+  FUN_6f7e3710(&DAT_6f96d0ec);
+  FUN_6f7e3710(&DAT_6f96d0ec);
+  FUN_6f7e3710(&DAT_6f96d0ec);
+  FUN_6f7e3710(&DAT_6f96d158);
+  FUN_6f7e3710(&DAT_6f96d158);
+  FUN_6f7e3710(&DAT_6f96d158);
+  FUN_6f7e3710(&DAT_6f96d158);
+  FUN_6f7e3710(&DAT_6f96d158);
+  FUN_6f7e3710(&DAT_6f96d1cc);
+  FUN_6f7e3710(&DAT_6f96d1f4);
+  FUN_6f7e3710(&DAT_6f967a94);
+  FUN_6f7e3710(&DAT_6f96715c);
+  FUN_6f7e3710(&DAT_6f96d238);
+  FUN_6f7e3710(&DAT_6f96d258);
+  FUN_6f7e3710(&DAT_6f96d278);
+  FUN_6f7e3710(&DAT_6f96d29c);
+  FUN_6f7e3710(&DAT_6f96d2c4);
+  FUN_6f7e3710(&DAT_6f96d2f4);
+  FUN_6f7e3710(&DAT_6f96d314);
+  FUN_6f7e3710(&DAT_6f96d334);
+  FUN_6f7e3710(&DAT_6f96d358);
+  FUN_6f7e3710(&DAT_6f96d380);
+  FUN_6f7e3710(&DAT_6f969f4c);
+  FUN_6f7e3710(&DAT_6f967ad4);
+  FUN_6f7e3710(&DAT_6f969f4c);
+  FUN_6f7e3710(&DAT_6f96d3e8);
+  FUN_6f7e3710(&DAT_6f967900);
+  FUN_6f7e3710(&DAT_6f96d41c);
+  FUN_6f7e3710(&DAT_6f96d440);
+  FUN_6f7e3710(&DAT_6f96d440);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f96d508);
+  FUN_6f7e3710(&DAT_6f96d508);
+  FUN_6f7e3710(&DAT_6f96d530);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f96d55c);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f96939c);
+  FUN_6f7e3710(&DAT_6f968d18);
+  FUN_6f7e3710(&DAT_6f96d5c0);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f96d5e4);
+  FUN_6f7e3710(&DAT_6f96d5f8);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f96d69c);
+  FUN_6f7e3710(&DAT_6f96d6b8);
+  FUN_6f7e3710(&DAT_6f96d6d8);
+  FUN_6f7e3710(&DAT_6f96d6f8);
+  FUN_6f7e3710(&DAT_6f96d718);
+  FUN_6f7e3710(&DAT_6f96d740);
+  FUN_6f7e3710(&DAT_6f96d764);
+  FUN_6f7e3710(&DAT_6f96d788);
+  FUN_6f7e3710(&DAT_6f96d788);
+  FUN_6f7e3710(&DAT_6f96d788);
+  FUN_6f7e3710(&DAT_6f96d7d8);
+  FUN_6f7e3710(&DAT_6f96d7d8);
+  FUN_6f7e3710(&DAT_6f96d7d8);
+  FUN_6f7e3710(&DAT_6f967900);
+  FUN_6f7e3710(&DAT_6f967ad4);
+  FUN_6f7e3710(&DAT_6f967900);
+  FUN_6f7e3710(&DAT_6f968528);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f96d89c);
+  FUN_6f7e3710(&DAT_6f96d89c);
+  FUN_6f7e3710(&DAT_6f96d89c);
+  FUN_6f7e3710(&DAT_6f96d89c);
+  FUN_6f7e3710(&DAT_6f96d8f4);
+  FUN_6f7e3710(&DAT_6f96d918);
+  FUN_6f7e3710(&DAT_6f96d918);
+  FUN_6f7e3710(&DAT_6f96d980);
+  FUN_6f7e3710(&DAT_6f96d9a8);
+  FUN_6f7e3710(&DAT_6f96d9c0);
+  FUN_6f7e3710(&DAT_6f96d9dc);
+  FUN_6f7e3710(&DAT_6f96d9dc);
+  FUN_6f7e3710(&DAT_6f96d9dc);
+  FUN_6f7e3710(&DAT_6f96da20);
+  FUN_6f7e3710(&DAT_6f96da20);
+  FUN_6f7e3710(&DAT_6f96da20);
+  FUN_6f7e3710(&DAT_6f96da20);
+  FUN_6f7e3710(&DAT_6f96da20);
+  FUN_6f7e3710(&DAT_6f96da88);
+  FUN_6f7e3710(&DAT_6f96da88);
+  FUN_6f7e3710(&DAT_6f96da88);
+  FUN_6f7e3710(&DAT_6f96da88);
+  FUN_6f7e3710(&DAT_6f96da88);
+  FUN_6f7e3710(&DAT_6f96daec);
+  FUN_6f7e3710(&DAT_6f96db14);
+  FUN_6f7e3710(&DAT_6f96db3c);
+  FUN_6f7e3710(&DAT_6f96db64);
+  FUN_6f7e3710(&DAT_6f96db8c);
+  FUN_6f7e3710(&DAT_6f96dbb8);
+  FUN_6f7e3710(&DAT_6f96dbe8);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f96dc50);
+  FUN_6f7e3710(&DAT_6f96dc7c);
+  FUN_6f7e3710(&DAT_6f96dca4);
+  FUN_6f7e3710(&DAT_6f96dccc);
+  FUN_6f7e3710(&DAT_6f96dccc);
+  FUN_6f7e3710(&DAT_6f96dd18);
+  FUN_6f7e3710(&DAT_6f96dd40);
+  FUN_6f7e3710(&DAT_6f96dd68);
+  FUN_6f7e3710(&DAT_6f96dd18);
+  FUN_6f7e3710(&DAT_6f96ddb4);
+  FUN_6f7e3710(&DAT_6f96ddd8);
+  FUN_6f7e3710(&DAT_6f96de00);
+  FUN_6f7e3710(&DAT_6f96de2c);
+  FUN_6f7e3710(&DAT_6f96de60);
+  FUN_6f7e3710(&DAT_6f96de2c);
+  FUN_6f7e3710(&DAT_6f96dea8);
+  FUN_6f7e3710(&DAT_6f96dee0);
+  FUN_6f7e3710(&DAT_6f96dee0);
+  FUN_6f7e3710(&DAT_6f96dee0);
+  FUN_6f7e3710(&DAT_6f96ddd8);
+  FUN_6f7e3710(&DAT_6f96dee0);
+  FUN_6f7e3710(&DAT_6f96df74);
+  FUN_6f7e3710(&DAT_6f96dfa0);
+  FUN_6f7e3710(&DAT_6f96dfcc);
+  FUN_6f7e3710(&DAT_6f96e000);
+  FUN_6f7e3710(&DAT_6f96e030);
+  FUN_6f7e3710(&DAT_6f96e068);
+  FUN_6f7e3710(&DAT_6f96e0a0);
+  FUN_6f7e3710(&DAT_6f96e0c8);
+  FUN_6f7e3710(&DAT_6f96e0c8);
+  FUN_6f7e3710(&DAT_6f96e118);
+  FUN_6f7e3710(&DAT_6f96e144);
+  FUN_6f7e3710(&DAT_6f96e170);
+  FUN_6f7e3710(&DAT_6f96e19c);
+  FUN_6f7e3710(&DAT_6f96e1cc);
+  FUN_6f7e3710(&DAT_6f96e1cc);
+  FUN_6f7e3710(&DAT_6f96e224);
+  FUN_6f7e3710(&DAT_6f96e248);
+  FUN_6f7e3710(&DAT_6f96e26c);
+  FUN_6f7e3710(&DAT_6f96e26c);
+  FUN_6f7e3710(&DAT_6f96e2a8);
+  FUN_6f7e3710(&DAT_6f96e2a8);
+  FUN_6f7e3710(&DAT_6f96e248);
+  FUN_6f7e3710(&DAT_6f96e2f8);
+  FUN_6f7e3710(&DAT_6f96e324);
+  FUN_6f7e3710(&DAT_6f96e34c);
+  FUN_6f7e3710(&DAT_6f96e37c);
+  FUN_6f7e3710(&DAT_6f96e37c);
+  FUN_6f7e3710(&DAT_6f96e3c0);
+  FUN_6f7e3710(&DAT_6f96e3c0);
+  FUN_6f7e3710(&DAT_6f96e408);
+  FUN_6f7e3710(&DAT_6f96e34c);
+  FUN_6f7e3710(&DAT_6f96e2f8);
+  FUN_6f7e3710(&DAT_6f96e46c);
+  FUN_6f7e3710(&DAT_6f96e2f8);
+  FUN_6f7e3710(&DAT_6f96e4b0);
+  FUN_6f7e3710(&DAT_6f96e4e8);
+  FUN_6f7e3710(&DAT_6f96e514);
+  FUN_6f7e3710(&DAT_6f96e544);
+  FUN_6f7e3710(&DAT_6f96e574);
+  FUN_6f7e3710(&DAT_6f96e5a8);
+  FUN_6f7e3710(&DAT_6f96e544);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f96e60c);
+  FUN_6f7e3710(&DAT_6f96e628);
+  FUN_6f7e3710(&DAT_6f96e628);
+  FUN_6f7e3710(&DAT_6f96939c);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f96e628);
+  FUN_6f7e3710(&DAT_6f96d5e4);
+  FUN_6f7e3710(&DAT_6f96d5e4);
+  FUN_6f7e3710(&DAT_6f96e6b0);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f96e6e4);
+  FUN_6f7e3710(&DAT_6f96e6e4);
+  FUN_6f7e3710(&DAT_6f96e71c);
+  FUN_6f7e3710(&DAT_6f96a108);
+  FUN_6f7e3710(&DAT_6f96e6b0);
+  FUN_6f7e3710(&DAT_6f96e778);
+  FUN_6f7e3710(&DAT_6f96e79c);
+  FUN_6f7e3710(&DAT_6f96e7d0);
+  FUN_6f7e3710(&DAT_6f96e804);
+  FUN_6f7e3710(&DAT_6f96e834);
+  FUN_6f7e3710(&DAT_6f96e870);
+  FUN_6f7e3710(&DAT_6f96e870);
+  FUN_6f7e3710(&DAT_6f96e8bc);
+  FUN_6f7e3710(&DAT_6f96e8e4);
+  FUN_6f7e3710(&DAT_6f96e910);
+  FUN_6f7e3710(&DAT_6f96e944);
+  FUN_6f7e3710(&DAT_6f96e628);
+  FUN_6f7e3710(&DAT_6f96e628);
+  FUN_6f7e3710(&DAT_6f96e9ac);
+  FUN_6f7e3710(&DAT_6f96e9ac);
+  FUN_6f7e3710(&DAT_6f96939c);
+  FUN_6f7e3710(&DAT_6f96717c);
+  FUN_6f7e3710(&DAT_6f968d18);
+  FUN_6f7e3710(&DAT_6f968d18);
+  FUN_6f7e3710(&DAT_6f968d18);
+  FUN_6f7e3710(&DAT_6f968d18);
+  FUN_6f7e3710(&DAT_6f96ea60);
+  FUN_6f7e3710(&DAT_6f968d18);
+  FUN_6f7e3710(&DAT_6f968d18);
+  FUN_6f7e3710(&DAT_6f968d18);
+  FUN_6f7e3710(&DAT_6f968d3c);
+  FUN_6f7e3710(&DAT_6f968d18);
+  FUN_6f7e3710(&DAT_6f968d18);
+  FUN_6f7e3710(&DAT_6f968d18);
+  FUN_6f7e3710(&DAT_6f968d3c);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f96eb6c);
+  FUN_6f7e3710(&DAT_6f96eb94);
+  FUN_6f7e3710(&DAT_6f96e6b0);
+  FUN_6f7e3710(&DAT_6f96e6b0);
+  FUN_6f7e3710(&DAT_6f96ebf0);
+  FUN_6f7e3710(&DAT_6f96ebf0);
+  FUN_6f7e3710(&DAT_6f96939c);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f968528);
+  FUN_6f7e3710(&DAT_6f96ec6c);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f96ecd8);
+  FUN_6f7e3710(&DAT_6f96ecd8);
+  FUN_6f7e3710(&DAT_6f96ed18);
+  FUN_6f7e3710(&DAT_6f96ed40);
+  FUN_6f7e3710(&DAT_6f96ed60);
+  FUN_6f7e3710(&DAT_6f96ed60);
+  FUN_6f7e3710(&DAT_6f96ed8c);
+  FUN_6f7e3710(&DAT_6f96ed8c);
+  FUN_6f7e3710(&DAT_6f96edc4);
+  FUN_6f7e3710(&DAT_6f96ede8);
+  FUN_6f7e3710(&DAT_6f96ede8);
+  FUN_6f7e3710(&DAT_6f9693b8);
+  FUN_6f7e3710(&DAT_6f96ede8);
+  FUN_6f7e3710(&DAT_6f96ee3c);
+  FUN_6f7e3710(&DAT_6f9693b8);
+  FUN_6f7e3710(&DAT_6f96ee78);
+  FUN_6f7e3710(&DAT_6f96ee9c);
+  FUN_6f7e3710(&DAT_6f96ee9c);
+  FUN_6f7e3710(&DAT_6f96ee9c);
+  FUN_6f7e3710(&DAT_6f96eeec);
+  FUN_6f7e3710(&DAT_6f96ef14);
+  FUN_6f7e3710(&DAT_6f96ef2c);
+  FUN_6f7e3710(&DAT_6f96ef14);
+  FUN_6f7e3710(&DAT_6f96ef5c);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f96ef8c);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f96efcc);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f967900);
+  FUN_6f7e3710(&DAT_6f967900);
+  FUN_6f7e3710(&DAT_6f967900);
+  FUN_6f7e3710(&DAT_6f96ede8);
+  FUN_6f7e3710(&DAT_6f96f058);
+  FUN_6f7e3710(&DAT_6f9671bc);
+  FUN_6f7e3710(&DAT_6f96f090);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f96f0d0);
+  FUN_6f7e3710(&DAT_6f96f0d0);
+  FUN_6f7e3710(&DAT_6f96f104);
+  FUN_6f7e3710(&DAT_6f96f104);
+  FUN_6f7e3710(&DAT_6f96f144);
+  FUN_6f7e3710(&DAT_6f96f174);
+  FUN_6f7e3710(&DAT_6f96f19c);
+  FUN_6f7e3710(&DAT_6f96f1c4);
+  FUN_6f7e3710(&DAT_6f96f1f8);
+  FUN_6f7e3710(&DAT_6f96f230);
+  FUN_6f7e3710(&DAT_6f96f268);
+  FUN_6f7e3710(&DAT_6f96f29c);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f96f2e4);
+  FUN_6f7e3710(&DAT_6f96f300);
+  FUN_6f7e3710(&DAT_6f96f324);
+  FUN_6f7e3710(&DAT_6f96f350);
+  FUN_6f7e3710(&DAT_6f96f380);
+  FUN_6f7e3710(&DAT_6f96f3ac);
+  FUN_6f7e3710(&DAT_6f96f3e4);
+  FUN_6f7e3710(&DAT_6f96f414);
+  FUN_6f7e3710(&DAT_6f96f450);
+  FUN_6f7e3710(&DAT_6f96f48c);
+  FUN_6f7e3710(&DAT_6f96f4cc);
+  FUN_6f7e3710(&DAT_6f96f4f0);
+  FUN_6f7e3710(&DAT_6f96f518);
+  FUN_6f7e3710(&DAT_6f96f53c);
+  FUN_6f7e3710(&DAT_6f96f53c);
+  FUN_6f7e3710(&DAT_6f96f53c);
+  FUN_6f7e3710(&DAT_6f96f53c);
+  FUN_6f7e3710(&DAT_6f96f59c);
+  FUN_6f7e3710(&DAT_6f96f5c0);
+  FUN_6f7e3710(&DAT_6f96f5e8);
+  FUN_6f7e3710(&DAT_6f96f610);
+  FUN_6f7e3710(&DAT_6f96f638);
+  FUN_6f7e3710(&DAT_6f96f664);
+  FUN_6f7e3710(&DAT_6f96f684);
+  FUN_6f7e3710(&DAT_6f96f6a8);
+  FUN_6f7e3710(&DAT_6f96ebf0);
+  FUN_6f7e3710(&DAT_6f968510);
+  FUN_6f7e3710(&DAT_6f96f6a8);
+  FUN_6f7e3710(&DAT_6f96f6a8);
+  FUN_6f7e3710(&DAT_6f96f710);
+  FUN_6f7e3710(&DAT_6f96f72c);
+  FUN_6f7e3710(&DAT_6f96f754);
+  FUN_6f7e3710(&DAT_6f96f77c);
+  FUN_6f7e3710(&DAT_6f96f7a0);
+  FUN_6f7e3710(&DAT_6f96f7bc);
+  FUN_6f7e3710(&DAT_6f96f7d4);
+  FUN_6f7e3710(&DAT_6f96f7fc);
+  FUN_6f7e3710(&DAT_6f96f820);
+  FUN_6f7e3710(&DAT_6f96f7bc);
+  FUN_6f7e3710(&DAT_6f96f7bc);
+  FUN_6f7e3710(&DAT_6f96f868);
+  FUN_6f7e3710(&DAT_6f96f88c);
+  FUN_6f7e3710(&DAT_6f96f8a8);
+  FUN_6f7e3710(&DAT_6f96f8d0);
+  FUN_6f7e3710(&DAT_6f96f8d0);
+  FUN_6f7e3710(&DAT_6f96f8d0);
+  FUN_6f7e3710(&DAT_6f96f914);
+  FUN_6f7e3710(&DAT_6f96f914);
+  FUN_6f7e3710(&DAT_6f96f914);
+  FUN_6f7e3710(&DAT_6f96f964);
+  FUN_6f7e3710(&DAT_6f96f980);
+  FUN_6f7e3710(&DAT_6f96f9a8);
+  FUN_6f7e3710(&DAT_6f96f9cc);
+  FUN_6f7e3710(&DAT_6f96f9ec);
+  FUN_6f7e3710(&DAT_6f96fa18);
+  FUN_6f7e3710(&DAT_6f96fa30);
+  FUN_6f7e3710(&DAT_6f96fa50);
+  FUN_6f7e3710(&DAT_6f967dd8);
+  FUN_6f7e3710(&DAT_6f967dd8);
+  FUN_6f7e3710(&DAT_6f96b688);
+  FUN_6f7e3710(&DAT_6f967d40);
+  FUN_6f7e3710(&DAT_6f96fab0);
+  FUN_6f7e3710(&DAT_6f96a494);
+  FUN_6f7e3710(&DAT_6f96a494);
+  FUN_6f7e3710(&DAT_6f96b988);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f968528);
+  FUN_6f7e3710(&DAT_6f968528);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f96939c);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f96940c);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  FUN_6f7e3710(&DAT_6f9678d8);
+  return;
+}
+
+
+
+### SEED 0x6f6fa97b
+  (no xrefs-to)
+
+===== FUNCTION FUN_6f6f5d00 @ 6f6f5d00 size=25844 =====
+  6f6f5d00  CMP dword ptr [0x6fbed4d8],0x0
+  6f6f5d07  JNZ 0x6f6fc1f3
+  6f6f5d0d  PUSH 0x6f967120
+  6f6f5d12  MOV EDX,0x6f967128
+  6f6f5d17  MOV ECX,0x6f70a0c0
+  6f6f5d1c  CALL 0x6f7e3710
+  6f6f5d21  PUSH 0x6f967120
+  6f6f5d26  MOV EDX,0x6f967130
+  6f6f5d2b  MOV ECX,0x6f70a0c0
+  6f6f5d30  CALL 0x6f7e3710
+  6f6f5d35  PUSH 0x6f967120
+  6f6f5d3a  MOV EDX,0x6f967138
+  6f6f5d3f  MOV ECX,0x6f70a0c0
+  6f6f5d44  CALL 0x6f7e3710
+  6f6f5d49  PUSH 0x6f967120
+  6f6f5d4e  MOV EDX,0x6f96713c
+  6f6f5d53  MOV ECX,0x6f70a0c0
+  6f6f5d58  CALL 0x6f7e3710
+  6f6f5d5d  PUSH 0x6f967120
+  6f6f5d62  MOV EDX,0x6f967140
+  6f6f5d67  MOV ECX,0x6f70a0c0
+  6f6f5d6c  CALL 0x6f7e3710
+  6f6f5d71  PUSH 0x6f967120
+  6f6f5d76  MOV EDX,0x6f967144
+  6f6f5d7b  MOV ECX,0x6f70a0c0
+  6f6f5d80  CALL 0x6f7e3710
+  6f6f5d85  PUSH 0x6f967120
+  6f6f5d8a  MOV EDX,0x6f96714c
+  6f6f5d8f  MOV ECX,0x6f70a0c0
+  6f6f5d94  CALL 0x6f7e3710
+  6f6f5d99  PUSH 0x6f967120
+  6f6f5d9e  MOV EDX,0x6f967154
+  6f6f5da3  MOV ECX,0x6f70a0c0
+  6f6f5da8  CALL 0x6f7e3710
+  6f6f5dad  PUSH 0x6f96715c
+  6f6f5db2  MOV EDX,0x6f967164
+  6f6f5db7  MOV ECX,0x6f70a0c0
+  6f6f5dbc  CALL 0x6f7e3710
+  6f6f5dc1  PUSH 0x6f967120
+  6f6f5dc6  MOV EDX,0x6f96716c
+  6f6f5dcb  MOV ECX,0x6f70a0c0
+  6f6f5dd0  CALL 0x6f7e3710
+  6f6f5dd5  PUSH 0x6f96715c
+  6f6f5dda  MOV EDX,0x6f967178
+  6f6f5ddf  MOV ECX,0x6f70a0c0
+  6f6f5de4  CALL 0x6f7e3710
+  6f6f5de9  PUSH 0x6f96717c
+  6f6f5dee  MOV EDX,0x6f967184
+  6f6f5df3  MOV ECX,0x6f70a0c0
+  6f6f5df8  CALL 0x6f7e3710
+  6f6f5dfd  PUSH 0x6f967188
+  6f6f5e02  MOV EDX,0x6f967190
+  6f6f5e07  MOV ECX,0x6f70a0c0
+  6f6f5e0c  CALL 0x6f7e3710
+  6f6f5e11  PUSH 0x6f967194
+  6f6f5e16  MOV EDX,0x6f96719c
+  6f6f5e1b  MOV ECX,0x6f70a0c0
+  6f6f5e20  CALL 0x6f7e3710
+  6f6f5e25  PUSH 0x6f9671a0
+  6f6f5e2a  MOV EDX,0x6f9671a8
+  6f6f5e2f  MOV ECX,0x6f70a0c0
+  6f6f5e34  CALL 0x6f7e3710
+  6f6f5e39  PUSH 0x6f9671ac
+  6f6f5e3e  MOV EDX,0x6f9671b4
+  6f6f5e43  MOV ECX,0x6f70a0c0
+  6f6f5e48  CALL 0x6f7e3710
+  6f6f5e4d  PUSH 0x6f9671bc
+  6f6f5e52  MOV EDX,0x6f9671c4
+  6f6f5e57  MOV ECX,0x6f70a0c0
+  6f6f5e5c  CALL 0x6f7e3710
+  6f6f5e61  PUSH 0x6f9671c8
+  6f6f5e66  MOV EDX,0x6f9671d0
+  6f6f5e6b  MOV ECX,0x6f70a0c0
+  6f6f5e70  CALL 0x6f7e3710
+  6f6f5e75  PUSH 0x6f9671d4
+  6f6f5e7a  MOV EDX,0x6f9671e0
+  6f6f5e7f  MOV ECX,0x6f70a0c0
+  6f6f5e84  CALL 0x6f7e3710
+  6f6f5e89  PUSH 0x6f9671ec
+  6f6f5e8e  MOV EDX,0x6f9671f4
+--- DECOMPILE ---
+
+void FUN_6f6f5d00(void)
+
+{
+  if (DAT_6fbed4d8 == 0) {
+    FUN_6f7e3710(&DAT_6f967120);
+    FUN_6f7e3710(&DAT_6f967120);
+    FUN_6f7e3710(&DAT_6f967120);
+    FUN_6f7e3710(&DAT_6f967120);
+    FUN_6f7e3710(&DAT_6f967120);
+    FUN_6f7e3710(&DAT_6f967120);
+    FUN_6f7e3710(&DAT_6f967120);
+    FUN_6f7e3710(&DAT_6f967120);
+    FUN_6f7e3710(&DAT_6f96715c);
+    FUN_6f7e3710(&DAT_6f967120);
+    FUN_6f7e3710(&DAT_6f96715c);
+    FUN_6f7e3710(&DAT_6f96717c);
+    FUN_6f7e3710(&DAT_6f967188);
+    FUN_6f7e3710(&DAT_6f967194);
+    FUN_6f7e3710(&DAT_6f9671a0);
+    FUN_6f7e3710(&DAT_6f9671ac);
+    FUN_6f7e3710(&DAT_6f9671bc);
+    FUN_6f7e3710(&DAT_6f9671c8);
+    FUN_6f7e3710(&DAT_6f9671d4);
+    FUN_6f7e3710(&DAT_6f9671ec);
+    FUN_6f7e3710(&DAT_6f9671bc);
+    FUN_6f7e3710(&DAT_6f967210);
+    FUN_6f7e3710(&DAT_6f9671bc);
+    FUN_6f7e3710(&DAT_6f967230);
+    FUN_6f7e3710(&DAT_6f9671bc);
+    FUN_6f7e3710(&DAT_6f967260);
+    FUN_6f7e3710(&DAT_6f967278);
+    FUN_6f7e3710(&DAT_6f9672a0);
+    FUN_6f7e3710(&DAT_6f9672c4);
+    FUN_6f7e3710(&DAT_6f9672e8);
+    FUN_6f7e3710(&DAT_6f96730c);
+    FUN_6f7e3710(&DAT_6f967334);
+    FUN_6f7e3710(&DAT_6f96735c);
+    FUN_6f7e3710(&DAT_6f967384);
+    FUN_6f7e3710(&DAT_6f9673b4);
+    FUN_6f7e3710(&DAT_6f9673d8);
+    FUN_6f7e3710(&DAT_6f967400);
+    FUN_6f7e3710(&DAT_6f967424);
+    FUN_6f7e3710(&DAT_6f96744c);
+    FUN_6f7e3710(&DAT_6f96747c);
+    FUN_6f7e3710(&DAT_6f9674a0);
+    FUN_6f7e3710(&DAT_6f9674c8);
+    FUN_6f7e3710(&DAT_6f9674f0);
+    FUN_6f7e3710(&DAT_6f967510);
+    FUN_6f7e3710(&DAT_6f967530);
+    FUN_6f7e3710(&DAT_6f967554);
+    FUN_6f7e3710(&DAT_6f967578);
+    FUN_6f7e3710(&DAT_6f9675a4);
+    FUN_6f7e3710(&DAT_6f9675c4);
+    FUN_6f7e3710(&DAT_6f9675e4);
+    FUN_6f7e3710(&DAT_6f967610);
+    FUN_6f7e3710(&DAT_6f967634);
+    FUN_6f7e3710(&DAT_6f967658);
+    FUN_6f7e3710(&DAT_6f96767c);
+    FUN_6f7e3710(&DAT_6f9676a4);
+    FUN_6f7e3710(&DAT_6f9676d4);
+    FUN_6f7e3710(&DAT_6f9676fc);
+    FUN_6f7e3710(&DAT_6f967724);
+    FUN_6f7e3710(&DAT_6f967748);
+    FUN_6f7e3710(&DAT_6f967774);
+    FUN_6f7e3710(&DAT_6f96779c);
+    FUN_6f7e3710(&DAT_6f9677bc);
+    FUN_6f7e3710(&DAT_6f9677e0);
+    FUN_6f7e3710(&DAT_6f967800);
+    FUN_6f7e3710(&DAT_6f967820);
+    FUN_6f7e3710(&DAT_6f967844);
+    FUN_6f7e3710(&DAT_6f967868);
+    FUN_6f7e3710(&DAT_6f96788c);
+    FUN_6f7e3710(&DAT_6f9678b0);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f967900);
+    FUN_6f7e3710(&DAT_6f967900);
+    FUN_6f7e3710(&DAT_6f967920);
+    FUN_6f7e3710(&DAT_6f967948);
+    FUN_6f7e3710(&DAT_6f967964);
+    FUN_6f7e3710(&DAT_6f967984);
+    FUN_6f7e3710(&DAT_6f9679a8);
+    FUN_6f7e3710(&DAT_6f9679d0);
+    FUN_6f7e3710(&DAT_6f9679d0);
+    FUN_6f7e3710(&DAT_6f967a08);
+    FUN_6f7e3710(&DAT_6f967a24);
+    FUN_6f7e3710(&DAT_6f967a4c);
+    FUN_6f7e3710(&DAT_6f967a6c);
+    FUN_6f7e3710(&DAT_6f967a94);
+    FUN_6f7e3710(&DAT_6f967ab0);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f967af0);
+    FUN_6f7e3710(&DAT_6f967b14);
+    FUN_6f7e3710(&DAT_6f967b34);
+    FUN_6f7e3710(&DAT_6f967b58);
+    FUN_6f7e3710(&DAT_6f967b7c);
+    FUN_6f7e3710(&DAT_6f967b9c);
+    FUN_6f7e3710(&DAT_6f967bc4);
+    FUN_6f7e3710(&DAT_6f967bc4);
+    FUN_6f7e3710(&DAT_6f96717c);
+    FUN_6f7e3710(&DAT_6f96717c);
+    FUN_6f7e3710(&DAT_6f967c24);
+    FUN_6f7e3710(&DAT_6f967c48);
+    FUN_6f7e3710(&DAT_6f967c48);
+    FUN_6f7e3710(&DAT_6f967c48);
+    FUN_6f7e3710(&DAT_6f967c9c);
+    FUN_6f7e3710(&DAT_6f967cd4);
+    FUN_6f7e3710(&DAT_6f967d0c);
+    FUN_6f7e3710(&DAT_6f967d40);
+    FUN_6f7e3710(&DAT_6f967d68);
+    FUN_6f7e3710(&DAT_6f967d94);
+    FUN_6f7e3710(&DAT_6f967d40);
+    FUN_6f7e3710(&DAT_6f967dd8);
+    FUN_6f7e3710(&DAT_6f967df8);
+    FUN_6f7e3710(&DAT_6f967e14);
+    FUN_6f7e3710(&DAT_6f967df8);
+    FUN_6f7e3710(&DAT_6f967e48);
+    FUN_6f7e3710(&DAT_6f967e48);
+    FUN_6f7e3710(&DAT_6f967e84);
+    FUN_6f7e3710(&DAT_6f967eac);
+    FUN_6f7e3710(&DAT_6f967ecc);
+    FUN_6f7e3710(&DAT_6f967ef8);
+    FUN_6f7e3710(&DAT_6f967f28);
+    FUN_6f7e3710(&DAT_6f967f60);
+    FUN_6f7e3710(&DAT_6f967f90);
+    FUN_6f7e3710(&DAT_6f967fac);
+    FUN_6f7e3710(&DAT_6f967fcc);
+    FUN_6f7e3710(&DAT_6f967fec);
+    FUN_6f7e3710(&DAT_6f967fec);
+    FUN_6f7e3710(&DAT_6f967fec);
+    FUN_6f7e3710(&DAT_6f96802c);
+    FUN_6f7e3710(&DAT_6f968044);
+    FUN_6f7e3710(&DAT_6f968060);
+    FUN_6f7e3710(&DAT_6f96807c);
+    FUN_6f7e3710(&DAT_6f96807c);
+    FUN_6f7e3710(&DAT_6f96807c);
+    FUN_6f7e3710(&DAT_6f968044);
+    FUN_6f7e3710(&DAT_6f968044);
+    FUN_6f7e3710(&DAT_6f96802c);
+    FUN_6f7e3710(&DAT_6f9680e4);
+    FUN_6f7e3710(&DAT_6f968104);
+    FUN_6f7e3710(&DAT_6f96812c);
+    FUN_6f7e3710(&DAT_6f968144);
+    FUN_6f7e3710(&DAT_6f968164);
+    FUN_6f7e3710(&DAT_6f968184);
+    FUN_6f7e3710(&DAT_6f968184);
+    FUN_6f7e3710(&DAT_6f9681b0);
+    FUN_6f7e3710(&DAT_6f9681cc);
+    FUN_6f7e3710(&DAT_6f9681e8);
+    FUN_6f7e3710(&DAT_6f968204);
+    FUN_6f7e3710(&DAT_6f968204);
+    FUN_6f7e3710(&DAT_6f968238);
+    FUN_6f7e3710(&DAT_6f968258);
+    FUN_6f7e3710(&DAT_6f968238);
+    FUN_6f7e3710(&DAT_6f968258);
+    FUN_6f7e3710(&DAT_6f9682ac);
+    FUN_6f7e3710(&DAT_6f9682d0);
+    FUN_6f7e3710(&DAT_6f9682f0);
+    FUN_6f7e3710(&DAT_6f96831c);
+    FUN_6f7e3710(&DAT_6f968334);
+    FUN_6f7e3710(&DAT_6f968360);
+    FUN_6f7e3710(&DAT_6f968378);
+    FUN_6f7e3710(&DAT_6f968390);
+    FUN_6f7e3710(&DAT_6f9683c0);
+    FUN_6f7e3710(&DAT_6f9683c0);
+    FUN_6f7e3710(&DAT_6f9683ec);
+    FUN_6f7e3710(&DAT_6f968404);
+    FUN_6f7e3710(&DAT_6f9683c0);
+    FUN_6f7e3710(&DAT_6f9683c0);
+    FUN_6f7e3710(&DAT_6f9683c0);
+    FUN_6f7e3710(&DAT_6f9683c0);
+    FUN_6f7e3710(&DAT_6f968458);
+    FUN_6f7e3710(&DAT_6f968474);
+    FUN_6f7e3710(&DAT_6f9684a4);
+    FUN_6f7e3710(&DAT_6f9684d4);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968528);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968528);
+    FUN_6f7e3710(&DAT_6f96855c);
+    FUN_6f7e3710(&DAT_6f9685a0);
+    FUN_6f7e3710(&DAT_6f9685e0);
+    FUN_6f7e3710(&DAT_6f96862c);
+    FUN_6f7e3710(&DAT_6f96862c);
+    FUN_6f7e3710(&DAT_6f96862c);
+    FUN_6f7e3710(&DAT_6f968678);
+    FUN_6f7e3710(&DAT_6f968694);
+    FUN_6f7e3710(&DAT_6f968694);
+    FUN_6f7e3710(&DAT_6f968694);
+    FUN_6f7e3710(&DAT_6f968694);
+    FUN_6f7e3710(&DAT_6f9686e4);
+    FUN_6f7e3710(&DAT_6f968708);
+    FUN_6f7e3710(&DAT_6f9686e4);
+    FUN_6f7e3710(&DAT_6f968744);
+    FUN_6f7e3710(&DAT_6f968784);
+    FUN_6f7e3710(&DAT_6f9687b8);
+    FUN_6f7e3710(&DAT_6f9687f4);
+    FUN_6f7e3710(&DAT_6f96883c);
+    FUN_6f7e3710(&DAT_6f968860);
+    FUN_6f7e3710(&DAT_6f968898);
+    FUN_6f7e3710(&DAT_6f9688d8);
+    FUN_6f7e3710(&DAT_6f9688f8);
+    FUN_6f7e3710(&DAT_6f968918);
+    FUN_6f7e3710(&DAT_6f968948);
+    FUN_6f7e3710(&DAT_6f96896c);
+    FUN_6f7e3710(&DAT_6f967df8);
+    FUN_6f7e3710(&DAT_6f9689ac);
+    FUN_6f7e3710(&DAT_6f9689c8);
+    FUN_6f7e3710(&DAT_6f96896c);
+    FUN_6f7e3710(&DAT_6f968a18);
+    FUN_6f7e3710(&DAT_6f968a6c);
+    FUN_6f7e3710(&DAT_6f968a90);
+    FUN_6f7e3710(&DAT_6f968ad4);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968c40);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f96896c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f9671bc);
+    FUN_6f7e3710(&DAT_6f967194);
+    FUN_6f7e3710(&DAT_6f9671bc);
+    FUN_6f7e3710(&DAT_6f967194);
+    FUN_6f7e3710(&DAT_6f9671bc);
+    FUN_6f7e3710(&DAT_6f967194);
+    FUN_6f7e3710(&DAT_6f967194);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f968d18);
+    FUN_6f7e3710(&DAT_6f968d18);
+    FUN_6f7e3710(&DAT_6f968d3c);
+    FUN_6f7e3710(&DAT_6f968d60);
+    FUN_6f7e3710(&DAT_6f968d7c);
+    FUN_6f7e3710(&DAT_6f968c40);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f968dfc);
+    FUN_6f7e3710(&DAT_6f968d3c);
+    FUN_6f7e3710(&DAT_6f968d18);
+    FUN_6f7e3710(&DAT_6f968d18);
+    FUN_6f7e3710(&DAT_6f968d7c);
+    FUN_6f7e3710(&DAT_6f968c40);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968c40);
+    FUN_6f7e3710(&DAT_6f968f6c);
+    FUN_6f7e3710(&DAT_6f968fbc);
+    FUN_6f7e3710(&DAT_6f9689ac);
+    FUN_6f7e3710(&DAT_6f9689ac);
+    FUN_6f7e3710(&DAT_6f969038);
+    FUN_6f7e3710(&DAT_6f969088);
+    FUN_6f7e3710(&DAT_6f9690ac);
+    FUN_6f7e3710(&DAT_6f9690e4);
+    FUN_6f7e3710(&DAT_6f968d18);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f96896c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f969178);
+    FUN_6f7e3710(&DAT_6f9691c8);
+    FUN_6f7e3710(&DAT_6f969208);
+    FUN_6f7e3710(&DAT_6f969208);
+    FUN_6f7e3710(&DAT_6f9681cc);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f96929c);
+    FUN_6f7e3710(&DAT_6f9692d8);
+    FUN_6f7e3710(&DAT_6f968694);
+    FUN_6f7e3710(&DAT_6f969328);
+    FUN_6f7e3710(&DAT_6f969358);
+    FUN_6f7e3710(&DAT_6f968694);
+    FUN_6f7e3710(&DAT_6f96939c);
+    FUN_6f7e3710(&DAT_6f9693b8);
+    FUN_6f7e3710(&DAT_6f968694);
+    FUN_6f7e3710(&DAT_6f968694);
+    FUN_6f7e3710(&DAT_6f9686e4);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f968d60);
+    FUN_6f7e3710(&DAT_6f968d7c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f96896c);
+    FUN_6f7e3710(&DAT_6f968678);
+    FUN_6f7e3710(&DAT_6f9694a0);
+    FUN_6f7e3710(&DAT_6f9694c0);
+    FUN_6f7e3710(&DAT_6f9694c0);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f96896c);
+    FUN_6f7e3710(&DAT_6f96896c);
+    FUN_6f7e3710(&DAT_6f968d7c);
+    FUN_6f7e3710(&DAT_6f968d7c);
+    FUN_6f7e3710(&DAT_6f968c40);
+    FUN_6f7e3710(&DAT_6f968c40);
+    FUN_6f7e3710(&DAT_6f96957c);
+    FUN_6f7e3710(&DAT_6f969594);
+    FUN_6f7e3710(&DAT_6f9695b0);
+    FUN_6f7e3710(&DAT_6f9695b0);
+    FUN_6f7e3710(&DAT_6f969594);
+    FUN_6f7e3710(&DAT_6f9695f0);
+    FUN_6f7e3710(&DAT_6f969620);
+    FUN_6f7e3710(&DAT_6f969654);
+    FUN_6f7e3710(&DAT_6f969688);
+    FUN_6f7e3710(&DAT_6f9696c0);
+    FUN_6f7e3710(&DAT_6f9696f8);
+    FUN_6f7e3710(&DAT_6f969728);
+    FUN_6f7e3710(&DAT_6f969764);
+    FUN_6f7e3710(&DAT_6f9697a0);
+    FUN_6f7e3710(&DAT_6f9696c0);
+    FUN_6f7e3710(&DAT_6f969800);
+    FUN_6f7e3710(&DAT_6f969820);
+    FUN_6f7e3710(&DAT_6f969844);
+    FUN_6f7e3710(&DAT_6f969864);
+    FUN_6f7e3710(&DAT_6f969890);
+    FUN_6f7e3710(&DAT_6f9698b4);
+    FUN_6f7e3710(&DAT_6f9698e4);
+    FUN_6f7e3710(&DAT_6f96990c);
+    FUN_6f7e3710(&DAT_6f969938);
+    FUN_6f7e3710(&DAT_6f969950);
+    FUN_6f7e3710(&DAT_6f969970);
+    FUN_6f7e3710(&DAT_6f969988);
+    FUN_6f7e3710(&DAT_6f9699a4);
+    FUN_6f7e3710(&DAT_6f9699a4);
+    FUN_6f7e3710(&DAT_6f969988);
+    FUN_6f7e3710(&DAT_6f9699e8);
+    FUN_6f7e3710(&DAT_6f969a14);
+    FUN_6f7e3710(&DAT_6f969a44);
+    FUN_6f7e3710(&DAT_6f969a44);
+    FUN_6f7e3710(&DAT_6f969a88);
+    FUN_6f7e3710(&DAT_6f969aa0);
+    FUN_6f7e3710(&DAT_6f969abc);
+    FUN_6f7e3710(&DAT_6f969aa0);
+    FUN_6f7e3710(&DAT_6f969aa0);
+    FUN_6f7e3710(&DAT_6f969af4);
+    FUN_6f7e3710(&DAT_6f969b20);
+    FUN_6f7e3710(&DAT_6f969af4);
+    FUN_6f7e3710(&DAT_6f969b20);
+    FUN_6f7e3710(&DAT_6f969b7c);
+    FUN_6f7e3710(&DAT_6f969b7c);
+    FUN_6f7e3710(&DAT_6f969bb8);
+    FUN_6f7e3710(&DAT_6f969be8);
+    FUN_6f7e3710(&DAT_6f969c18);
+    FUN_6f7e3710(&DAT_6f969c48);
+    FUN_6f7e3710(&DAT_6f969c74);
+    FUN_6f7e3710(&DAT_6f969c74);
+    FUN_6f7e3710(&DAT_6f969cb0);
+    FUN_6f7e3710(&DAT_6f969c74);
+    FUN_6f7e3710(&DAT_6f969cb0);
+    FUN_6f7e3710(&DAT_6f969c74);
+    FUN_6f7e3710(&DAT_6f969d1c);
+    FUN_6f7e3710(&DAT_6f969d48);
+    FUN_6f7e3710(&DAT_6f969d48);
+    FUN_6f7e3710(&DAT_6f969cb0);
+    FUN_6f7e3710(&DAT_6f969bb8);
+    FUN_6f7e3710(&DAT_6f969c74);
+    FUN_6f7e3710(&DAT_6f969cb0);
+    FUN_6f7e3710(&DAT_6f969e08);
+    FUN_6f7e3710(&DAT_6f969e30);
+    FUN_6f7e3710(&DAT_6f969e54);
+    FUN_6f7e3710(&DAT_6f969e80);
+    FUN_6f7e3710(&DAT_6f969eb0);
+    FUN_6f7e3710(&DAT_6f969e30);
+    FUN_6f7e3710(&DAT_6f969ef8);
+    FUN_6f7e3710(&DAT_6f969f20);
+    FUN_6f7e3710(&DAT_6f969f20);
+    FUN_6f7e3710(&DAT_6f969f4c);
+    FUN_6f7e3710(&DAT_6f969f4c);
+    FUN_6f7e3710(&DAT_6f969f6c);
+    FUN_6f7e3710(&DAT_6f969f88);
+    FUN_6f7e3710(&DAT_6f969f88);
+    FUN_6f7e3710(&DAT_6f969fac);
+    FUN_6f7e3710(&DAT_6f969fac);
+    FUN_6f7e3710(&DAT_6f969fe0);
+    FUN_6f7e3710(&DAT_6f96a004);
+    FUN_6f7e3710(&DAT_6f969f88);
+    FUN_6f7e3710(&DAT_6f969f88);
+    FUN_6f7e3710(&DAT_6f969f88);
+    FUN_6f7e3710(&DAT_6f969f20);
+    FUN_6f7e3710(&DAT_6f96a084);
+    FUN_6f7e3710(&DAT_6f96a0a0);
+    FUN_6f7e3710(&DAT_6f969f20);
+    FUN_6f7e3710(&DAT_6f969f4c);
+    FUN_6f7e3710(&DAT_6f96a0e4);
+    FUN_6f7e3710(&DAT_6f96a0e4);
+    FUN_6f7e3710(&DAT_6f96a108);
+    FUN_6f7e3710(&DAT_6f96a124);
+    FUN_6f7e3710(&DAT_6f96a0e4);
+    FUN_6f7e3710(&DAT_6f96a108);
+    FUN_6f7e3710(&DAT_6f96a108);
+    FUN_6f7e3710(&DAT_6f96a0e4);
+    FUN_6f7e3710(&DAT_6f96a0e4);
+    FUN_6f7e3710(&DAT_6f96a0e4);
+    FUN_6f7e3710(&DAT_6f969f6c);
+    FUN_6f7e3710(&DAT_6f969f88);
+    FUN_6f7e3710(&DAT_6f969f88);
+    FUN_6f7e3710(&DAT_6f969f88);
+    FUN_6f7e3710(&DAT_6f969f88);
+    FUN_6f7e3710(&DAT_6f969f88);
+    FUN_6f7e3710(&DAT_6f969f88);
+    FUN_6f7e3710(&DAT_6f969f88);
+    FUN_6f7e3710(&DAT_6f969f88);
+    FUN_6f7e3710(&DAT_6f96a0e4);
+    FUN_6f7e3710(&DAT_6f96a2a0);
+    FUN_6f7e3710(&DAT_6f96a2c8);
+    FUN_6f7e3710(&DAT_6f96a2c8);
+    FUN_6f7e3710(&DAT_6f96a0e4);
+    FUN_6f7e3710(&DAT_6f96a314);
+    FUN_6f7e3710(&DAT_6f96a33c);
+    FUN_6f7e3710(&DAT_6f96a33c);
+    FUN_6f7e3710(&DAT_6f96a370);
+    FUN_6f7e3710(&DAT_6f96a3a8);
+    FUN_6f7e3710(&DAT_6f96a3cc);
+    FUN_6f7e3710(&DAT_6f96a3f4);
+    FUN_6f7e3710(&DAT_6f96a0e4);
+    FUN_6f7e3710(&DAT_6f96a0e4);
+    FUN_6f7e3710(&DAT_6f96a43c);
+    FUN_6f7e3710(&DAT_6f96a460);
+    FUN_6f7e3710(&DAT_6f969f6c);
+    FUN_6f7e3710(&DAT_6f96a494);
+    FUN_6f7e3710(&DAT_6f96a4b0);
+    FUN_6f7e3710(&DAT_6f96a4b0);
+    FUN_6f7e3710(&DAT_6f96a4b0);
+    FUN_6f7e3710(&DAT_6f96a4e0);
+    FUN_6f7e3710(&DAT_6f96a4e0);
+    FUN_6f7e3710(&DAT_6f96a4e0);
+    FUN_6f7e3710(&DAT_6f969f20);
+    FUN_6f7e3710(&DAT_6f96a524);
+    FUN_6f7e3710(&DAT_6f96a524);
+    FUN_6f7e3710(&DAT_6f969f20);
+    FUN_6f7e3710(&DAT_6f96a4b0);
+    FUN_6f7e3710(&DAT_6f96a4b0);
+    FUN_6f7e3710(&DAT_6f96a4b0);
+    FUN_6f7e3710(&DAT_6f969f20);
+    FUN_6f7e3710(&DAT_6f969f20);
+    FUN_6f7e3710(&DAT_6f96a0a0);
+    FUN_6f7e3710(&DAT_6f969f6c);
+    FUN_6f7e3710(&DAT_6f96a5d4);
+    FUN_6f7e3710(&DAT_6f96a3a8);
+    FUN_6f7e3710(&DAT_6f96a600);
+    FUN_6f7e3710(&DAT_6f96a620);
+    FUN_6f7e3710(&DAT_6f96a63c);
+    FUN_6f7e3710(&DAT_6f969f6c);
+    FUN_6f7e3710(&DAT_6f969f6c);
+    FUN_6f7e3710(&DAT_6f969f6c);
+    FUN_6f7e3710(&DAT_6f96a5d4);
+    FUN_6f7e3710(&DAT_6f96a6a4);
+    FUN_6f7e3710(&DAT_6f96a6c0);
+    FUN_6f7e3710(&DAT_6f96a6e0);
+    FUN_6f7e3710(&DAT_6f96a704);
+    FUN_6f7e3710(&DAT_6f96a6c0);
+    FUN_6f7e3710(&DAT_6f96a6a4);
+    FUN_6f7e3710(&DAT_6f96a6c0);
+    FUN_6f7e3710(&DAT_6f969f20);
+    FUN_6f7e3710(&DAT_6f96a76c);
+    FUN_6f7e3710(&DAT_6f96a794);
+    FUN_6f7e3710(&DAT_6f96a7bc);
+    FUN_6f7e3710(&DAT_6f96a6a4);
+    FUN_6f7e3710(&DAT_6f96a76c);
+    FUN_6f7e3710(&DAT_6f96a7bc);
+    FUN_6f7e3710(&DAT_6f969f20);
+    FUN_6f7e3710(&DAT_6f96a3a8);
+    FUN_6f7e3710(&DAT_6f96a3a8);
+    FUN_6f7e3710(&DAT_6f969f20);
+    FUN_6f7e3710(&DAT_6f969f6c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96a43c);
+    FUN_6f7e3710(&DAT_6f96a89c);
+    FUN_6f7e3710(&DAT_6f96a494);
+    FUN_6f7e3710(&DAT_6f96a494);
+    FUN_6f7e3710(&DAT_6f969f6c);
+    FUN_6f7e3710(&DAT_6f96a8e0);
+    FUN_6f7e3710(&DAT_6f96a904);
+    FUN_6f7e3710(&DAT_6f96a928);
+    FUN_6f7e3710(&DAT_6f96a928);
+    FUN_6f7e3710(&DAT_6f96a928);
+    FUN_6f7e3710(&DAT_6f96a928);
+    FUN_6f7e3710(&DAT_6f96a928);
+    FUN_6f7e3710(&DAT_6f96a928);
+    FUN_6f7e3710(&DAT_6f96a928);
+    FUN_6f7e3710(&DAT_6f96a928);
+    FUN_6f7e3710(&DAT_6f96a928);
+    FUN_6f7e3710(&DAT_6f96a9c8);
+    FUN_6f7e3710(&DAT_6f96a9e4);
+    FUN_6f7e3710(&DAT_6f96aa04);
+    FUN_6f7e3710(&DAT_6f96aa1c);
+    FUN_6f7e3710(&DAT_6f96aa40);
+    FUN_6f7e3710(&DAT_6f96aa60);
+    FUN_6f7e3710(&DAT_6f96a5d4);
+    FUN_6f7e3710(&DAT_6f96a5d4);
+    FUN_6f7e3710(&DAT_6f96aa04);
+    FUN_6f7e3710(&DAT_6f96a5d4);
+    FUN_6f7e3710(&DAT_6f96aad0);
+    FUN_6f7e3710(&DAT_6f96aae8);
+    FUN_6f7e3710(&DAT_6f96ab08);
+    FUN_6f7e3710(&DAT_6f96a2c8);
+    FUN_6f7e3710(&DAT_6f969f6c);
+    FUN_6f7e3710(&DAT_6f96a9e4);
+    FUN_6f7e3710(&DAT_6f96a9e4);
+    FUN_6f7e3710(&DAT_6f96a524);
+    FUN_6f7e3710(&DAT_6f96a524);
+    FUN_6f7e3710(&DAT_6f96ab90);
+    FUN_6f7e3710(&DAT_6f96abb8);
+    FUN_6f7e3710(&DAT_6f96abdc);
+    FUN_6f7e3710(&DAT_6f96ac04);
+    FUN_6f7e3710(&DAT_6f96ac20);
+    FUN_6f7e3710(&DAT_6f969f6c);
+    FUN_6f7e3710(&DAT_6f96a5d4);
+    FUN_6f7e3710(&DAT_6f969f6c);
+    FUN_6f7e3710(&DAT_6f96a5d4);
+    FUN_6f7e3710(&DAT_6f96a5d4);
+    FUN_6f7e3710(&DAT_6f96a494);
+    FUN_6f7e3710(&DAT_6f96acac);
+    FUN_6f7e3710(&DAT_6f96accc);
+    FUN_6f7e3710(&DAT_6f96a5d4);
+    FUN_6f7e3710(&DAT_6f96ad00);
+    FUN_6f7e3710(&DAT_6f96ad48);
+    FUN_6f7e3710(&DAT_6f96a600);
+    FUN_6f7e3710(&DAT_6f96a600);
+    FUN_6f7e3710(&DAT_6f96adc0);
+    FUN_6f7e3710(&DAT_6f96a494);
+    FUN_6f7e3710(&DAT_6f96a3a8);
+    FUN_6f7e3710(&DAT_6f96a3a8);
+    FUN_6f7e3710(&DAT_6f969f6c);
+    FUN_6f7e3710(&DAT_6f969f6c);
+    FUN_6f7e3710(&DAT_6f96a524);
+    FUN_6f7e3710(&DAT_6f96ae68);
+    FUN_6f7e3710(&DAT_6f96ae8c);
+    FUN_6f7e3710(&DAT_6f96aebc);
+    FUN_6f7e3710(&DAT_6f96aee8);
+    FUN_6f7e3710(&DAT_6f96af1c);
+    FUN_6f7e3710(&DAT_6f96ae68);
+    FUN_6f7e3710(&DAT_6f96af68);
+    FUN_6f7e3710(&DAT_6f96af9c);
+    FUN_6f7e3710(&DAT_6f96afd0);
+    FUN_6f7e3710(&DAT_6f96b008);
+    FUN_6f7e3710(&DAT_6f96b028);
+    FUN_6f7e3710(&DAT_6f96b048);
+    FUN_6f7e3710(&DAT_6f96b074);
+    FUN_6f7e3710(&DAT_6f96b09c);
+    FUN_6f7e3710(&DAT_6f96b0cc);
+    FUN_6f7e3710(&DAT_6f96b028);
+    FUN_6f7e3710(&DAT_6f96b110);
+    FUN_6f7e3710(&DAT_6f96b140);
+    FUN_6f7e3710(&DAT_6f96b170);
+    FUN_6f7e3710(&DAT_6f969f88);
+    FUN_6f7e3710(&DAT_6f969f88);
+    FUN_6f7e3710(&DAT_6f96a108);
+    FUN_6f7e3710(&DAT_6f969f6c);
+    FUN_6f7e3710(&DAT_6f96a5d4);
+    FUN_6f7e3710(&DAT_6f96b20c);
+    FUN_6f7e3710(&DAT_6f96b228);
+    FUN_6f7e3710(&DAT_6f96b20c);
+    FUN_6f7e3710(&DAT_6f96b228);
+    FUN_6f7e3710(&DAT_6f967900);
+    FUN_6f7e3710(&DAT_6f96a3a8);
+    FUN_6f7e3710(&DAT_6f967900);
+    FUN_6f7e3710(&DAT_6f96a3a8);
+    FUN_6f7e3710(&DAT_6f967900);
+    FUN_6f7e3710(&DAT_6f967900);
+    FUN_6f7e3710(&DAT_6f96a3a8);
+    FUN_6f7e3710(&DAT_6f96a3a8);
+    FUN_6f7e3710(&DAT_6f969f20);
+    FUN_6f7e3710(&DAT_6f96a3a8);
+    FUN_6f7e3710(&DAT_6f96b334);
+    FUN_6f7e3710(&DAT_6f96b34c);
+    FUN_6f7e3710(&DAT_6f96b364);
+    FUN_6f7e3710(&DAT_6f96b388);
+    FUN_6f7e3710(&DAT_6f96b3a4);
+    FUN_6f7e3710(&DAT_6f96b3a4);
+    FUN_6f7e3710(&DAT_6f96b3c8);
+    FUN_6f7e3710(&DAT_6f96b3e4);
+    FUN_6f7e3710(&DAT_6f96b3e4);
+    FUN_6f7e3710(&DAT_6f96b3e4);
+    FUN_6f7e3710(&DAT_6f96b428);
+    FUN_6f7e3710(&DAT_6f96b3e4);
+    FUN_6f7e3710(&DAT_6f96b460);
+    FUN_6f7e3710(&DAT_6f96b388);
+    FUN_6f7e3710(&DAT_6f96b490);
+    FUN_6f7e3710(&DAT_6f96b3e4);
+    FUN_6f7e3710(&DAT_6f96b460);
+    FUN_6f7e3710(&DAT_6f969c18);
+    FUN_6f7e3710(&DAT_6f96b460);
+    FUN_6f7e3710(&DAT_6f96b460);
+    FUN_6f7e3710(&DAT_6f96b460);
+    FUN_6f7e3710(&DAT_6f96b460);
+    FUN_6f7e3710(&DAT_6f96aad0);
+    FUN_6f7e3710(&DAT_6f96aad0);
+    FUN_6f7e3710(&DAT_6f96aad0);
+    FUN_6f7e3710(&DAT_6f96b554);
+    FUN_6f7e3710(&DAT_6f96b570);
+    FUN_6f7e3710(&DAT_6f96b388);
+    FUN_6f7e3710(&DAT_6f96b554);
+    FUN_6f7e3710(&DAT_6f96b388);
+    FUN_6f7e3710(&DAT_6f96b554);
+    FUN_6f7e3710(&DAT_6f96b5c8);
+    FUN_6f7e3710(&DAT_6f96896c);
+    FUN_6f7e3710(&DAT_6f96b5ec);
+    FUN_6f7e3710(&DAT_6f96b5ec);
+    FUN_6f7e3710(&DAT_6f96b620);
+    FUN_6f7e3710(&DAT_6f967eac);
+    FUN_6f7e3710(&DAT_6f96b658);
+    FUN_6f7e3710(&DAT_6f967df8);
+    FUN_6f7e3710(&DAT_6f96b688);
+    FUN_6f7e3710(&DAT_6f96b6b0);
+    FUN_6f7e3710(&DAT_6f96b688);
+    FUN_6f7e3710(&DAT_6f96b688);
+    FUN_6f7e3710(&DAT_6f96b708);
+    FUN_6f7e3710(&DAT_6f96b730);
+    FUN_6f7e3710(&DAT_6f96b754);
+    FUN_6f7e3710(&DAT_6f96b780);
+    FUN_6f7e3710(&DAT_6f96b7a4);
+    FUN_6f7e3710(&DAT_6f96b780);
+    FUN_6f7e3710(&DAT_6f96b7e4);
+    FUN_6f7e3710(&DAT_6f96b808);
+    FUN_6f7e3710(&DAT_6f96b7e4);
+    FUN_6f7e3710(&DAT_6f96b808);
+    FUN_6f7e3710(&DAT_6f96b7e4);
+    FUN_6f7e3710(&DAT_6f96b808);
+    FUN_6f7e3710(&DAT_6f96b89c);
+    FUN_6f7e3710(&DAT_6f96b8c8);
+    FUN_6f7e3710(&DAT_6f96b8f4);
+    FUN_6f7e3710(&DAT_6f96b920);
+    FUN_6f7e3710(&DAT_6f96b958);
+    FUN_6f7e3710(&DAT_6f96b988);
+    FUN_6f7e3710(&DAT_6f967e48);
+    FUN_6f7e3710(&DAT_6f96b9bc);
+    FUN_6f7e3710(&DAT_6f967e48);
+    FUN_6f7e3710(&DAT_6f96b9bc);
+    FUN_6f7e3710(&DAT_6f967c48);
+    FUN_6f7e3710(&DAT_6f96ba1c);
+    FUN_6f7e3710(&DAT_6f96ba40);
+    FUN_6f7e3710(&DAT_6f96ba58);
+    FUN_6f7e3710(&DAT_6f96ba58);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f96ba98);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96ba98);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f96badc);
+    FUN_6f7e3710(&DAT_6f96baf8);
+    FUN_6f7e3710(&DAT_6f96badc);
+    FUN_6f7e3710(&DAT_6f96baf8);
+    FUN_6f7e3710(&DAT_6f96bb34);
+    FUN_6f7e3710(&DAT_6f96bb5c);
+    FUN_6f7e3710(&DAT_6f96bb80);
+    FUN_6f7e3710(&DAT_6f96bba8);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f9688f8);
+    FUN_6f7e3710(&DAT_6f96bbec);
+    FUN_6f7e3710(&DAT_6f96bbec);
+    FUN_6f7e3710(&DAT_6f96bbec);
+    FUN_6f7e3710(&DAT_6f96bc24);
+    FUN_6f7e3710(&DAT_6f96bc48);
+    FUN_6f7e3710(&DAT_6f96bc70);
+    FUN_6f7e3710(&DAT_6f96bc9c);
+    FUN_6f7e3710(&DAT_6f96bcc4);
+    FUN_6f7e3710(&DAT_6f96bce0);
+    FUN_6f7e3710(&DAT_6f96bd00);
+    FUN_6f7e3710(&DAT_6f967900);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96bce0);
+    FUN_6f7e3710(&DAT_6f96bce0);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f967b9c);
+    FUN_6f7e3710(&DAT_6f9679a8);
+    FUN_6f7e3710(&DAT_6f968528);
+    FUN_6f7e3710(&DAT_6f96bce0);
+    FUN_6f7e3710(&DAT_6f96aad0);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96be34);
+    FUN_6f7e3710(&DAT_6f96be54);
+    FUN_6f7e3710(&DAT_6f96be74);
+    FUN_6f7e3710(&DAT_6f96be98);
+    FUN_6f7e3710(&DAT_6f96beb8);
+    FUN_6f7e3710(&DAT_6f96bedc);
+    FUN_6f7e3710(&DAT_6f96bf00);
+    FUN_6f7e3710(&DAT_6f96bf20);
+    FUN_6f7e3710(&DAT_6f96bf40);
+    FUN_6f7e3710(&DAT_6f96bf60);
+    FUN_6f7e3710(&DAT_6f96bf80);
+    FUN_6f7e3710(&DAT_6f96bf9c);
+    FUN_6f7e3710(&DAT_6f96bfcc);
+    FUN_6f7e3710(&DAT_6f96bffc);
+    FUN_6f7e3710(&DAT_6f96c034);
+    FUN_6f7e3710(&DAT_6f96c05c);
+    FUN_6f7e3710(&DAT_6f96c084);
+    FUN_6f7e3710(&DAT_6f96c0b4);
+    FUN_6f7e3710(&DAT_6f96c0dc);
+    FUN_6f7e3710(&DAT_6f96c10c);
+    FUN_6f7e3710(&DAT_6f96c13c);
+    FUN_6f7e3710(&DAT_6f96c17c);
+    FUN_6f7e3710(&DAT_6f96c1b4);
+    FUN_6f7e3710(&DAT_6f96c1e4);
+    FUN_6f7e3710(&DAT_6f96c20c);
+    FUN_6f7e3710(&DAT_6f96c234);
+    FUN_6f7e3710(&DAT_6f96c264);
+    FUN_6f7e3710(&DAT_6f96c28c);
+    FUN_6f7e3710(&DAT_6f96c2c0);
+    FUN_6f7e3710(&DAT_6f96c2e8);
+    FUN_6f7e3710(&DAT_6f96c318);
+    FUN_6f7e3710(&DAT_6f96c348);
+    FUN_6f7e3710(&DAT_6f96c378);
+    FUN_6f7e3710(&DAT_6f96c3a0);
+    FUN_6f7e3710(&DAT_6f96c3d0);
+    FUN_6f7e3710(&DAT_6f96c410);
+    FUN_6f7e3710(&DAT_6f96c448);
+    FUN_6f7e3710(&DAT_6f96c480);
+    FUN_6f7e3710(&DAT_6f96c4b8);
+    FUN_6f7e3710(&DAT_6f96c4f8);
+    FUN_6f7e3710(&DAT_6f96c528);
+    FUN_6f7e3710(&DAT_6f96c558);
+    FUN_6f7e3710(&DAT_6f96c588);
+    FUN_6f7e3710(&DAT_6f96c5b8);
+    FUN_6f7e3710(&DAT_6f96c5e8);
+    FUN_6f7e3710(&DAT_6f96c610);
+    FUN_6f7e3710(&DAT_6f96c640);
+    FUN_6f7e3710(&DAT_6f96c670);
+    FUN_6f7e3710(&DAT_6f96c6a8);
+    FUN_6f7e3710(&DAT_6f96c6d0);
+    FUN_6f7e3710(&DAT_6f96c700);
+    FUN_6f7e3710(&DAT_6f96c700);
+    FUN_6f7e3710(&DAT_6f96c700);
+    FUN_6f7e3710(&DAT_6f96c700);
+    FUN_6f7e3710(&DAT_6f96c700);
+    FUN_6f7e3710(&DAT_6f96c770);
+    FUN_6f7e3710(&DAT_6f96c798);
+    FUN_6f7e3710(&DAT_6f96c7bc);
+    FUN_6f7e3710(&DAT_6f96c7e4);
+    FUN_6f7e3710(&DAT_6f96c814);
+    FUN_6f7e3710(&DAT_6f96c7bc);
+    FUN_6f7e3710(&DAT_6f96c7bc);
+    FUN_6f7e3710(&DAT_6f96c7bc);
+    FUN_6f7e3710(&DAT_6f96c7bc);
+    FUN_6f7e3710(&DAT_6f96c7bc);
+    FUN_6f7e3710(&DAT_6f96c894);
+    FUN_6f7e3710(&DAT_6f96c8b4);
+    FUN_6f7e3710(&DAT_6f96c700);
+    FUN_6f7e3710(&DAT_6f96c700);
+    FUN_6f7e3710(&DAT_6f96c700);
+    FUN_6f7e3710(&DAT_6f96c700);
+    FUN_6f7e3710(&DAT_6f96c700);
+    FUN_6f7e3710(&DAT_6f96c934);
+    FUN_6f7e3710(&DAT_6f96c954);
+    FUN_6f7e3710(&DAT_6f96c974);
+    FUN_6f7e3710(&DAT_6f96c994);
+    FUN_6f7e3710(&DAT_6f96c9b4);
+    FUN_6f7e3710(&DAT_6f96c9d0);
+    FUN_6f7e3710(&DAT_6f96c9fc);
+    FUN_6f7e3710(&DAT_6f96ca28);
+    FUN_6f7e3710(&DAT_6f96ca60);
+    FUN_6f7e3710(&DAT_6f96ca88);
+    FUN_6f7e3710(&DAT_6f96cab0);
+    FUN_6f7e3710(&DAT_6f96cae0);
+    FUN_6f7e3710(&DAT_6f96cb08);
+    FUN_6f7e3710(&DAT_6f96cb34);
+    FUN_6f7e3710(&DAT_6f96cb64);
+    FUN_6f7e3710(&DAT_6f96cba4);
+    FUN_6f7e3710(&DAT_6f96cbdc);
+    FUN_6f7e3710(&DAT_6f96cc0c);
+    FUN_6f7e3710(&DAT_6f96cc34);
+    FUN_6f7e3710(&DAT_6f96cc5c);
+    FUN_6f7e3710(&DAT_6f96cc8c);
+    FUN_6f7e3710(&DAT_6f96ccb4);
+    FUN_6f7e3710(&DAT_6f96cce8);
+    FUN_6f7e3710(&DAT_6f96cd10);
+    FUN_6f7e3710(&DAT_6f96cd3c);
+    FUN_6f7e3710(&DAT_6f96cd6c);
+    FUN_6f7e3710(&DAT_6f96cd9c);
+    FUN_6f7e3710(&DAT_6f96cdc4);
+    FUN_6f7e3710(&DAT_6f96cdf4);
+    FUN_6f7e3710(&DAT_6f96ce34);
+    FUN_6f7e3710(&DAT_6f96ce6c);
+    FUN_6f7e3710(&DAT_6f96cea4);
+    FUN_6f7e3710(&DAT_6f96ced8);
+    FUN_6f7e3710(&DAT_6f96cf14);
+    FUN_6f7e3710(&DAT_6f96cf44);
+    FUN_6f7e3710(&DAT_6f96cf70);
+    FUN_6f7e3710(&DAT_6f96cf9c);
+    FUN_6f7e3710(&DAT_6f96cfcc);
+    FUN_6f7e3710(&DAT_6f96cffc);
+    FUN_6f7e3710(&DAT_6f96d024);
+    FUN_6f7e3710(&DAT_6f96d054);
+    FUN_6f7e3710(&DAT_6f96d084);
+    FUN_6f7e3710(&DAT_6f96d0bc);
+    FUN_6f7e3710(&DAT_6f96d0ec);
+    FUN_6f7e3710(&DAT_6f96d0ec);
+    FUN_6f7e3710(&DAT_6f96d0ec);
+    FUN_6f7e3710(&DAT_6f96d0ec);
+    FUN_6f7e3710(&DAT_6f96d0ec);
+    FUN_6f7e3710(&DAT_6f96d158);
+    FUN_6f7e3710(&DAT_6f96d158);
+    FUN_6f7e3710(&DAT_6f96d158);
+    FUN_6f7e3710(&DAT_6f96d158);
+    FUN_6f7e3710(&DAT_6f96d158);
+    FUN_6f7e3710(&DAT_6f96d1cc);
+    FUN_6f7e3710(&DAT_6f96d1f4);
+    FUN_6f7e3710(&DAT_6f967a94);
+    FUN_6f7e3710(&DAT_6f96715c);
+    FUN_6f7e3710(&DAT_6f96d238);
+    FUN_6f7e3710(&DAT_6f96d258);
+    FUN_6f7e3710(&DAT_6f96d278);
+    FUN_6f7e3710(&DAT_6f96d29c);
+    FUN_6f7e3710(&DAT_6f96d2c4);
+    FUN_6f7e3710(&DAT_6f96d2f4);
+    FUN_6f7e3710(&DAT_6f96d314);
+    FUN_6f7e3710(&DAT_6f96d334);
+    FUN_6f7e3710(&DAT_6f96d358);
+    FUN_6f7e3710(&DAT_6f96d380);
+    FUN_6f7e3710(&DAT_6f969f4c);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f969f4c);
+    FUN_6f7e3710(&DAT_6f96d3e8);
+    FUN_6f7e3710(&DAT_6f967900);
+    FUN_6f7e3710(&DAT_6f96d41c);
+    FUN_6f7e3710(&DAT_6f96d440);
+    FUN_6f7e3710(&DAT_6f96d440);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96d508);
+    FUN_6f7e3710(&DAT_6f96d508);
+    FUN_6f7e3710(&DAT_6f96d530);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96d55c);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f96939c);
+    FUN_6f7e3710(&DAT_6f968d18);
+    FUN_6f7e3710(&DAT_6f96d5c0);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f96d5e4);
+    FUN_6f7e3710(&DAT_6f96d5f8);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f96d69c);
+    FUN_6f7e3710(&DAT_6f96d6b8);
+    FUN_6f7e3710(&DAT_6f96d6d8);
+    FUN_6f7e3710(&DAT_6f96d6f8);
+    FUN_6f7e3710(&DAT_6f96d718);
+    FUN_6f7e3710(&DAT_6f96d740);
+    FUN_6f7e3710(&DAT_6f96d764);
+    FUN_6f7e3710(&DAT_6f96d788);
+    FUN_6f7e3710(&DAT_6f96d788);
+    FUN_6f7e3710(&DAT_6f96d788);
+    FUN_6f7e3710(&DAT_6f96d7d8);
+    FUN_6f7e3710(&DAT_6f96d7d8);
+    FUN_6f7e3710(&DAT_6f96d7d8);
+    FUN_6f7e3710(&DAT_6f967900);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f967900);
+    FUN_6f7e3710(&DAT_6f968528);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f96d89c);
+    FUN_6f7e3710(&DAT_6f96d89c);
+    FUN_6f7e3710(&DAT_6f96d89c);
+    FUN_6f7e3710(&DAT_6f96d89c);
+    FUN_6f7e3710(&DAT_6f96d8f4);
+    FUN_6f7e3710(&DAT_6f96d918);
+    FUN_6f7e3710(&DAT_6f96d918);
+    FUN_6f7e3710(&DAT_6f96d980);
+    FUN_6f7e3710(&DAT_6f96d9a8);
+    FUN_6f7e3710(&DAT_6f96d9c0);
+    FUN_6f7e3710(&DAT_6f96d9dc);
+    FUN_6f7e3710(&DAT_6f96d9dc);
+    FUN_6f7e3710(&DAT_6f96d9dc);
+    FUN_6f7e3710(&DAT_6f96da20);
+    FUN_6f7e3710(&DAT_6f96da20);
+    FUN_6f7e3710(&DAT_6f96da20);
+    FUN_6f7e3710(&DAT_6f96da20);
+    FUN_6f7e3710(&DAT_6f96da20);
+    FUN_6f7e3710(&DAT_6f96da88);
+    FUN_6f7e3710(&DAT_6f96da88);
+    FUN_6f7e3710(&DAT_6f96da88);
+    FUN_6f7e3710(&DAT_6f96da88);
+    FUN_6f7e3710(&DAT_6f96da88);
+    FUN_6f7e3710(&DAT_6f96daec);
+    FUN_6f7e3710(&DAT_6f96db14);
+    FUN_6f7e3710(&DAT_6f96db3c);
+    FUN_6f7e3710(&DAT_6f96db64);
+    FUN_6f7e3710(&DAT_6f96db8c);
+    FUN_6f7e3710(&DAT_6f96dbb8);
+    FUN_6f7e3710(&DAT_6f96dbe8);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96dc50);
+    FUN_6f7e3710(&DAT_6f96dc7c);
+    FUN_6f7e3710(&DAT_6f96dca4);
+    FUN_6f7e3710(&DAT_6f96dccc);
+    FUN_6f7e3710(&DAT_6f96dccc);
+    FUN_6f7e3710(&DAT_6f96dd18);
+    FUN_6f7e3710(&DAT_6f96dd40);
+    FUN_6f7e3710(&DAT_6f96dd68);
+    FUN_6f7e3710(&DAT_6f96dd18);
+    FUN_6f7e3710(&DAT_6f96ddb4);
+    FUN_6f7e3710(&DAT_6f96ddd8);
+    FUN_6f7e3710(&DAT_6f96de00);
+    FUN_6f7e3710(&DAT_6f96de2c);
+    FUN_6f7e3710(&DAT_6f96de60);
+    FUN_6f7e3710(&DAT_6f96de2c);
+    FUN_6f7e3710(&DAT_6f96dea8);
+    FUN_6f7e3710(&DAT_6f96dee0);
+    FUN_6f7e3710(&DAT_6f96dee0);
+    FUN_6f7e3710(&DAT_6f96dee0);
+    FUN_6f7e3710(&DAT_6f96ddd8);
+    FUN_6f7e3710(&DAT_6f96dee0);
+    FUN_6f7e3710(&DAT_6f96df74);
+    FUN_6f7e3710(&DAT_6f96dfa0);
+    FUN_6f7e3710(&DAT_6f96dfcc);
+    FUN_6f7e3710(&DAT_6f96e000);
+    FUN_6f7e3710(&DAT_6f96e030);
+    FUN_6f7e3710(&DAT_6f96e068);
+    FUN_6f7e3710(&DAT_6f96e0a0);
+    FUN_6f7e3710(&DAT_6f96e0c8);
+    FUN_6f7e3710(&DAT_6f96e0c8);
+    FUN_6f7e3710(&DAT_6f96e118);
+    FUN_6f7e3710(&DAT_6f96e144);
+    FUN_6f7e3710(&DAT_6f96e170);
+    FUN_6f7e3710(&DAT_6f96e19c);
+    FUN_6f7e3710(&DAT_6f96e1cc);
+    FUN_6f7e3710(&DAT_6f96e1cc);
+    FUN_6f7e3710(&DAT_6f96e224);
+    FUN_6f7e3710(&DAT_6f96e248);
+    FUN_6f7e3710(&DAT_6f96e26c);
+    FUN_6f7e3710(&DAT_6f96e26c);
+    FUN_6f7e3710(&DAT_6f96e2a8);
+    FUN_6f7e3710(&DAT_6f96e2a8);
+    FUN_6f7e3710(&DAT_6f96e248);
+    FUN_6f7e3710(&DAT_6f96e2f8);
+    FUN_6f7e3710(&DAT_6f96e324);
+    FUN_6f7e3710(&DAT_6f96e34c);
+    FUN_6f7e3710(&DAT_6f96e37c);
+    FUN_6f7e3710(&DAT_6f96e37c);
+    FUN_6f7e3710(&DAT_6f96e3c0);
+    FUN_6f7e3710(&DAT_6f96e3c0);
+    FUN_6f7e3710(&DAT_6f96e408);
+    FUN_6f7e3710(&DAT_6f96e34c);
+    FUN_6f7e3710(&DAT_6f96e2f8);
+    FUN_6f7e3710(&DAT_6f96e46c);
+    FUN_6f7e3710(&DAT_6f96e2f8);
+    FUN_6f7e3710(&DAT_6f96e4b0);
+    FUN_6f7e3710(&DAT_6f96e4e8);
+    FUN_6f7e3710(&DAT_6f96e514);
+    FUN_6f7e3710(&DAT_6f96e544);
+    FUN_6f7e3710(&DAT_6f96e574);
+    FUN_6f7e3710(&DAT_6f96e5a8);
+    FUN_6f7e3710(&DAT_6f96e544);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f96e60c);
+    FUN_6f7e3710(&DAT_6f96e628);
+    FUN_6f7e3710(&DAT_6f96e628);
+    FUN_6f7e3710(&DAT_6f96939c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96e628);
+    FUN_6f7e3710(&DAT_6f96d5e4);
+    FUN_6f7e3710(&DAT_6f96d5e4);
+    FUN_6f7e3710(&DAT_6f96e6b0);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f96e6e4);
+    FUN_6f7e3710(&DAT_6f96e6e4);
+    FUN_6f7e3710(&DAT_6f96e71c);
+    FUN_6f7e3710(&DAT_6f96a108);
+    FUN_6f7e3710(&DAT_6f96e6b0);
+    FUN_6f7e3710(&DAT_6f96e778);
+    FUN_6f7e3710(&DAT_6f96e79c);
+    FUN_6f7e3710(&DAT_6f96e7d0);
+    FUN_6f7e3710(&DAT_6f96e804);
+    FUN_6f7e3710(&DAT_6f96e834);
+    FUN_6f7e3710(&DAT_6f96e870);
+    FUN_6f7e3710(&DAT_6f96e870);
+    FUN_6f7e3710(&DAT_6f96e8bc);
+    FUN_6f7e3710(&DAT_6f96e8e4);
+    FUN_6f7e3710(&DAT_6f96e910);
+    FUN_6f7e3710(&DAT_6f96e944);
+    FUN_6f7e3710(&DAT_6f96e628);
+    FUN_6f7e3710(&DAT_6f96e628);
+    FUN_6f7e3710(&DAT_6f96e9ac);
+    FUN_6f7e3710(&DAT_6f96e9ac);
+    FUN_6f7e3710(&DAT_6f96939c);
+    FUN_6f7e3710(&DAT_6f96717c);
+    FUN_6f7e3710(&DAT_6f968d18);
+    FUN_6f7e3710(&DAT_6f968d18);
+    FUN_6f7e3710(&DAT_6f968d18);
+    FUN_6f7e3710(&DAT_6f968d18);
+    FUN_6f7e3710(&DAT_6f96ea60);
+    FUN_6f7e3710(&DAT_6f968d18);
+    FUN_6f7e3710(&DAT_6f968d18);
+    FUN_6f7e3710(&DAT_6f968d18);
+    FUN_6f7e3710(&DAT_6f968d3c);
+    FUN_6f7e3710(&DAT_6f968d18);
+    FUN_6f7e3710(&DAT_6f968d18);
+    FUN_6f7e3710(&DAT_6f968d18);
+    FUN_6f7e3710(&DAT_6f968d3c);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f96eb6c);
+    FUN_6f7e3710(&DAT_6f96eb94);
+    FUN_6f7e3710(&DAT_6f96e6b0);
+    FUN_6f7e3710(&DAT_6f96e6b0);
+    FUN_6f7e3710(&DAT_6f96ebf0);
+    FUN_6f7e3710(&DAT_6f96ebf0);
+    FUN_6f7e3710(&DAT_6f96939c);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968528);
+    FUN_6f7e3710(&DAT_6f96ec6c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f96ecd8);
+    FUN_6f7e3710(&DAT_6f96ecd8);
+    FUN_6f7e3710(&DAT_6f96ed18);
+    FUN_6f7e3710(&DAT_6f96ed40);
+    FUN_6f7e3710(&DAT_6f96ed60);
+    FUN_6f7e3710(&DAT_6f96ed60);
+    FUN_6f7e3710(&DAT_6f96ed8c);
+    FUN_6f7e3710(&DAT_6f96ed8c);
+    FUN_6f7e3710(&DAT_6f96edc4);
+    FUN_6f7e3710(&DAT_6f96ede8);
+    FUN_6f7e3710(&DAT_6f96ede8);
+    FUN_6f7e3710(&DAT_6f9693b8);
+    FUN_6f7e3710(&DAT_6f96ede8);
+    FUN_6f7e3710(&DAT_6f96ee3c);
+    FUN_6f7e3710(&DAT_6f9693b8);
+    FUN_6f7e3710(&DAT_6f96ee78);
+    FUN_6f7e3710(&DAT_6f96ee9c);
+    FUN_6f7e3710(&DAT_6f96ee9c);
+    FUN_6f7e3710(&DAT_6f96ee9c);
+    FUN_6f7e3710(&DAT_6f96eeec);
+    FUN_6f7e3710(&DAT_6f96ef14);
+    FUN_6f7e3710(&DAT_6f96ef2c);
+    FUN_6f7e3710(&DAT_6f96ef14);
+    FUN_6f7e3710(&DAT_6f96ef5c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f96ef8c);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f96efcc);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f967900);
+    FUN_6f7e3710(&DAT_6f967900);
+    FUN_6f7e3710(&DAT_6f967900);
+    FUN_6f7e3710(&DAT_6f96ede8);
+    FUN_6f7e3710(&DAT_6f96f058);
+    FUN_6f7e3710(&DAT_6f9671bc);
+    FUN_6f7e3710(&DAT_6f96f090);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96f0d0);
+    FUN_6f7e3710(&DAT_6f96f0d0);
+    FUN_6f7e3710(&DAT_6f96f104);
+    FUN_6f7e3710(&DAT_6f96f104);
+    FUN_6f7e3710(&DAT_6f96f144);
+    FUN_6f7e3710(&DAT_6f96f174);
+    FUN_6f7e3710(&DAT_6f96f19c);
+    FUN_6f7e3710(&DAT_6f96f1c4);
+    FUN_6f7e3710(&DAT_6f96f1f8);
+    FUN_6f7e3710(&DAT_6f96f230);
+    FUN_6f7e3710(&DAT_6f96f268);
+    FUN_6f7e3710(&DAT_6f96f29c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96f2e4);
+    FUN_6f7e3710(&DAT_6f96f300);
+    FUN_6f7e3710(&DAT_6f96f324);
+    FUN_6f7e3710(&DAT_6f96f350);
+    FUN_6f7e3710(&DAT_6f96f380);
+    FUN_6f7e3710(&DAT_6f96f3ac);
+    FUN_6f7e3710(&DAT_6f96f3e4);
+    FUN_6f7e3710(&DAT_6f96f414);
+    FUN_6f7e3710(&DAT_6f96f450);
+    FUN_6f7e3710(&DAT_6f96f48c);
+    FUN_6f7e3710(&DAT_6f96f4cc);
+    FUN_6f7e3710(&DAT_6f96f4f0);
+    FUN_6f7e3710(&DAT_6f96f518);
+    FUN_6f7e3710(&DAT_6f96f53c);
+    FUN_6f7e3710(&DAT_6f96f53c);
+    FUN_6f7e3710(&DAT_6f96f53c);
+    FUN_6f7e3710(&DAT_6f96f53c);
+    FUN_6f7e3710(&DAT_6f96f59c);
+    FUN_6f7e3710(&DAT_6f96f5c0);
+    FUN_6f7e3710(&DAT_6f96f5e8);
+    FUN_6f7e3710(&DAT_6f96f610);
+    FUN_6f7e3710(&DAT_6f96f638);
+    FUN_6f7e3710(&DAT_6f96f664);
+    FUN_6f7e3710(&DAT_6f96f684);
+    FUN_6f7e3710(&DAT_6f96f6a8);
+    FUN_6f7e3710(&DAT_6f96ebf0);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f96f6a8);
+    FUN_6f7e3710(&DAT_6f96f6a8);
+    FUN_6f7e3710(&DAT_6f96f710);
+    FUN_6f7e3710(&DAT_6f96f72c);
+    FUN_6f7e3710(&DAT_6f96f754);
+    FUN_6f7e3710(&DAT_6f96f77c);
+    FUN_6f7e3710(&DAT_6f96f7a0);
+    FUN_6f7e3710(&DAT_6f96f7bc);
+    FUN_6f7e3710(&DAT_6f96f7d4);
+    FUN_6f7e3710(&DAT_6f96f7fc);
+    FUN_6f7e3710(&DAT_6f96f820);
+    FUN_6f7e3710(&DAT_6f96f7bc);
+    FUN_6f7e3710(&DAT_6f96f7bc);
+    FUN_6f7e3710(&DAT_6f96f868);
+    FUN_6f7e3710(&DAT_6f96f88c);
+    FUN_6f7e3710(&DAT_6f96f8a8);
+    FUN_6f7e3710(&DAT_6f96f8d0);
+    FUN_6f7e3710(&DAT_6f96f8d0);
+    FUN_6f7e3710(&DAT_6f96f8d0);
+    FUN_6f7e3710(&DAT_6f96f914);
+    FUN_6f7e3710(&DAT_6f96f914);
+    FUN_6f7e3710(&DAT_6f96f914);
+    FUN_6f7e3710(&DAT_6f96f964);
+    FUN_6f7e3710(&DAT_6f96f980);
+    FUN_6f7e3710(&DAT_6f96f9a8);
+    FUN_6f7e3710(&DAT_6f96f9cc);
+    FUN_6f7e3710(&DAT_6f96f9ec);
+    FUN_6f7e3710(&DAT_6f96fa18);
+    FUN_6f7e3710(&DAT_6f96fa30);
+    FUN_6f7e3710(&DAT_6f96fa50);
+    FUN_6f7e3710(&DAT_6f967dd8);
+    FUN_6f7e3710(&DAT_6f967dd8);
+    FUN_6f7e3710(&DAT_6f96b688);
+    FUN_6f7e3710(&DAT_6f967d40);
+    FUN_6f7e3710(&DAT_6f96fab0);
+    FUN_6f7e3710(&DAT_6f96a494);
+    FUN_6f7e3710(&DAT_6f96a494);
+    FUN_6f7e3710(&DAT_6f96b988);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f968528);
+    FUN_6f7e3710(&DAT_6f968528);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f96939c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f9678d8);
+    FUN_6f7e3710(&DAT_6f96efcc);
+    FUN_6f7e3710(&DAT_6f96efcc);
+    FUN_6f7e3710(&DAT_6fa576cc);
+    FUN_6f7e3710(&DAT_6fa576d4);
+    FUN_6f7e3710(&DAT_6fa576ec);
+    FUN_6f7e3710(&DAT_6fa57704);
+    FUN_6f7e3710(&DAT_6f967a4c);
+    FUN_6f7e3710(&DAT_6f96b20c);
+    FUN_6f7e3710(&DAT_6f96939c);
+    FUN_6f7e3710(&DAT_6fa57744);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f968528);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6fa57744);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f969f4c);
+    FUN_6f7e3710(&DAT_6f96b6b0);
+    FUN_6f7e3710(&DAT_6fa577d8);
+    FUN_6f7e3710(&DAT_6f969f4c);
+    FUN_6f7e3710(&DAT_6f969f4c);
+    FUN_6f7e3710(&DAT_6f969f4c);
+    FUN_6f7e3710(&DAT_6f969f4c);
+    FUN_6f7e3710(&DAT_6f969f4c);
+    FUN_6f7e3710(&DAT_6f969f4c);
+    FUN_6f7e3710(&DAT_6f969f4c);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f96aad0);
+    FUN_6f7e3710(&DAT_6f96aad0);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f96a524);
+    FUN_6f7e3710(&DAT_6fa57918);
+    FUN_6f7e3710(&DAT_6f96a494);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6fa57960);
+    FUN_6f7e3710(&DAT_6fa57974);
+    FUN_6f7e3710(&DAT_6fa57988);
+    FUN_6f7e3710(&DAT_6f96aad0);
+    FUN_6f7e3710(&DAT_6f96a494);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f967a4c);
+    FUN_6f7e3710(&DAT_6f967a4c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f967a08);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f967a08);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96e628);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f96e628);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96b988);
+    FUN_6f7e3710(&DAT_6f96b988);
+    FUN_6f7e3710(&DAT_6f96e628);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f968528);
+    FUN_6f7e3710(&DAT_6f968528);
+    FUN_6f7e3710(&DAT_6f968528);
+    FUN_6f7e3710(&DAT_6f968528);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6fa57b78);
+    FUN_6f7e3710(&DAT_6f968528);
+    FUN_6f7e3710(&DAT_6f968528);
+    FUN_6f7e3710(&DAT_6f968528);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96a5d4);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6fa57988);
+    FUN_6f7e3710(&DAT_6fa57988);
+    FUN_6f7e3710(&DAT_6fa57c2c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f968528);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f968b2c);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f96e628);
+    FUN_6f7e3710(&DAT_6f96a494);
+    FUN_6f7e3710(&DAT_6f967a4c);
+    FUN_6f7e3710(&DAT_6f967a4c);
+    FUN_6f7e3710(&DAT_6fa57cfc);
+    FUN_6f7e3710(&DAT_6fa57cfc);
+    FUN_6f7e3710(&DAT_6f96a5d4);
+    FUN_6f7e3710(&DAT_6f96a5d4);
+    FUN_6f7e3710(&DAT_6f969f4c);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f968510);
+    FUN_6f7e3710(&DAT_6f967900);
+    FUN_6f7e3710(&DAT_6f96940c);
+    FUN_6f7e3710(&DAT_6f967ad4);
+    FUN_6f7e3710(&DAT_6f967900);
+    DAT_6fbed4d8 = 1;
+  }
+  return;
+}
+
+
+
+### SEED 0x6f96e630
+  xref 6f1ee6c2 DATA in FUN_6f1e9a50
+  xref 6f6fa97a DATA in FUN_6f6f5d00
+NO FUNCTION; insns:
+  6f96e630  ??
+
+### SEED 0x6f99244c
+  xref 6f387dfb DATA in FUN_6f387dd0
+  xref 6f382178 DATA in FUN_6f382140
+NO FUNCTION; insns:
+  6f99244c  ??
+
+### SEED 0x6f99256c
+  xref 6f383125 DATA in FUN_6f383100
+NO FUNCTION; insns:
+  6f99256c  ??
+
+### SEED 0x6f992578
+  xref 6f3a3053 DATA in FUN_6f3a2fa0
+NO FUNCTION; insns:
+  6f992578  ??
+
+### xref-funcs of 6f99244c
+  from 6f387dfb DATA in FUN_6f387dd0@6f387dd0
+
+===== FUNCTION FUN_6f387dd0 @ 6f387dd0 size=636 =====
+  6f387dd0  PUSH EBP
+  6f387dd1  MOV EBP,ESP
+  6f387dd3  PUSH -0x1
+  6f387dd5  PUSH 0x6f8defd2
+  6f387dda  MOV EAX,FS:[0x0]
+  6f387de0  PUSH EAX
+  6f387de1  PUSH ECX
+  6f387de2  PUSH EBX
+  6f387de3  PUSH ESI
+  6f387de4  PUSH EDI
+  6f387de5  MOV EAX,[0x6fb6a774]
+  6f387dea  XOR EAX,EBP
+  6f387dec  PUSH EAX
+  6f387ded  LEA EAX,[EBP + -0xc]
+  6f387df0  MOV FS:[0x0],EAX
+  6f387df6  MOV ESI,ECX
+  6f387df8  MOV dword ptr [EBP + -0x10],ESI
+  6f387dfb  MOV dword ptr [ESI],0x6f99244c
+  6f387e01  MOV dword ptr [ESI + 0xb4],0x6f992538
+  6f387e0b  MOV dword ptr [EBP + -0x4],0xd
+  6f387e12  CALL 0x6f3913b0
+  6f387e17  XOR EBX,EBX
+  6f387e19  CMP dword ptr [ESI + 0x5d4],EBX
+  6f387e1f  JBE 0x6f387e4e
+  6f387e21  XOR EDI,EDI
+  6f387e23  MOV EAX,dword ptr [ESI + 0x5d8]
+  6f387e29  MOV ECX,dword ptr [EDI + EAX*0x1]
+  6f387e2c  TEST ECX,ECX
+  6f387e2e  JZ 0x6f387e42
+  6f387e30  CALL 0x6f04f1a0
+  6f387e35  MOV EAX,dword ptr [ESI + 0x5d8]
+  6f387e3b  MOV dword ptr [EDI + EAX*0x1],0x0
+  6f387e42  INC EBX
+  6f387e43  ADD EDI,0x28
+  6f387e46  CMP EBX,dword ptr [ESI + 0x5d4]
+  6f387e4c  JC 0x6f387e23
+  6f387e4e  XOR EBX,EBX
+  6f387e50  CMP dword ptr [ESI + 0x5e8],EBX
+  6f387e56  JBE 0x6f387e8b
+  6f387e58  XOR EDI,EDI
+  6f387e5a  LEA EBX,[EBX]
+  6f387e60  MOV EAX,dword ptr [ESI + 0x5ec]
+  6f387e66  MOV ECX,dword ptr [EDI + EAX*0x1]
+  6f387e69  TEST ECX,ECX
+  6f387e6b  JZ 0x6f387e7f
+  6f387e6d  CALL 0x6f04f1a0
+  6f387e72  MOV EAX,dword ptr [ESI + 0x5ec]
+  6f387e78  MOV dword ptr [EDI + EAX*0x1],0x0
+  6f387e7f  INC EBX
+  6f387e80  ADD EDI,0x28
+  6f387e83  CMP EBX,dword ptr [ESI + 0x5e8]
+  6f387e89  JC 0x6f387e60
+  6f387e8b  XOR EDI,EDI
+  6f387e8d  CMP dword ptr [ESI + 0x1a0],EDI
+  6f387e93  JBE 0x6f387ebd
+  6f387e95  MOV EAX,dword ptr [ESI + 0x1a4]
+  6f387e9b  MOV ECX,dword ptr [EAX + EDI*0x4]
+  6f387e9e  TEST ECX,ECX
+  6f387ea0  JZ 0x6f387ea7
+  6f387ea2  CALL 0x6f04f1a0
+  6f387ea7  MOV EAX,dword ptr [ESI + 0x1a4]
+  6f387ead  MOV dword ptr [EAX + EDI*0x4],0x0
+  6f387eb4  INC EDI
+  6f387eb5  CMP EDI,dword ptr [ESI + 0x1a0]
+  6f387ebb  JC 0x6f387e95
+  6f387ebd  XOR EDI,EDI
+  6f387ebf  CMP dword ptr [ESI + 0x1b0],EDI
+  6f387ec5  JBE 0x6f387ef8
+  6f387ec7  JMP 0x6f387ed0
+  6f387ec9  ??
+--- DECOMPILE ---
+
+void __fastcall FUN_6f387dd0(undefined4 *param_1)
+
+{
+  uint uVar1;
+  int iVar2;
+  void *pvStack_10;
+  undefined *puStack_c;
+  undefined4 uStack_8;
+  
+  puStack_c = &DAT_6f8defd2;
+  pvStack_10 = ExceptionList;
+  uVar1 = DAT_6fb6a774 ^ (uint)&stack0xfffffffc;
+  ExceptionList = &pvStack_10;
+  *param_1 = CMinimap::vftable;
+  param_1[0x2d] = CMinimap::vftable;
+  uStack_8 = 0xd;
+  FUN_6f3913b0(uVar1);
+  uVar1 = 0;
+  if (param_1[0x175] != 0) {
+    iVar2 = 0;
+    do {
+      if (*(int *)(iVar2 + param_1[0x176]) != 0) {
+        FUN_6f04f1a0();
+        *(undefined4 *)(iVar2 + param_1[0x176]) = 0;
+      }
+      uVar1 = uVar1 + 1;
+      iVar2 = iVar2 + 0x28;
+    } while (uVar1 < (uint)param_1[0x175]);
+  }
+  if (param_1[0x17a] != 0) {
+    iVar2 = 0;
+    uVar1 = 0;
+    do {
+      if (*(int *)(iVar2 + param_1[0x17b]) != 0) {
+        FUN_6f04f1a0();
+        *(undefined4 *)(iVar2 + param_1[0x17b]) = 0;
+      }
+      uVar1 = uVar1 + 1;
+      iVar2 = iVar2 + 0x28;
+    } while (uVar1 < (uint)param_1[0x17a]);
+  }
+  uVar1 = 0;
+  if (param_1[0x68] != 0) {
+    do {
+      if (*(int *)(param_1[0x69] + uVar1 * 4) != 0) {
+        FUN_6f04f1a0();
+      }
+      *(undefined4 *)(param_1[0x69] + uVar1 * 4) = 0;
+      uVar1 = uVar1 + 1;
+    } while (uVar1 < (uint)param_1[0x68]);
+  }
+  uVar1 = 0;
+  if (param_1[0x6c] != 0) {
+    do {
+      if (*(int *)(param_1[0x6d] + uVar1 * 4) != 0) {
+        FUN_6f04f1a0();
+      }
+      *(undefined4 *)(param_1[0x6d] + uVar1 * 4) = 0;
+      uVar1 = uVar1 + 1;
+    } while (uVar1 < (uint)param_1[0x6c]);
+  }
+  if (param_1[0x17f] != 0) {
+    Ordinal_403(param_1[0x17f],s__I_6fb7b868,0xfffffffe,0);
+  }
+  if (param_1[0x17b] != 0) {
+    Ordinal_403(param_1[0x17b],s___AUPing___6fb8df0c,0xfffffffe,0);
+  }
+  if (param_1[0x176] != 0) {
+    Ordinal_403(param_1[0x176],s___AUPing___6fb8df0c,0xfffffffe,0);
+  }
+  if (param_1[0x171] != 0) {
+    Ordinal_403(param_1[0x171],s___AVC3Vector_NTempest___6fb7df54,0xfffffffe,0);
+  }
+  uStack_8._0_1_ = 8;
+  FUN_6f771b16(param_1 + 0x120,0x10,0x10,FUN_6f0d4ec0);
+  uStack_8 = CONCAT31(uStack_8._1_3_,7);
+  FUN_6f771b16(param_1 + 0xbd,0x10,0x11,FUN_6f0d4ec0);
+  if (param_1[0xbc] != 0) {
+    Ordinal_403(param_1[0xbc],s__I_6fb7b868,0xfffffffe,0);
+  }
+  if (param_1[0xb9] != 0) {
+    Ordinal_403(param_1[0xb9],s__I_6fb7b868,0xfffffffe,0);
+  }
+  if (param_1[0xaf] != 0) {
+    Ordinal_403(param_1[0xaf],s___AVC3Vector_NTempest___6fb7df54,0xfffffffe,0);
+  }
+  if (param_1[0xa3] != 0) {
+    Ordinal_403(param_1[0xa3],s___AVC3Vector_NTempest___6fb7df54,0xfffffffe,0);
+  }
+  uStack_8 = CONCAT31(uStack_8._1_3_,2);
+  FUN_6f050a40();
+  if (param_1[0x6d] != 0) {
+    Ordinal_403(param_1[0x6d],s__PAUHSPRITEBASE_____6fb7d040,0xfffffffe,0);
+  }
+  if (param_1[0x69] != 0) {
+    Ordinal_403(param_1[0x69],s__PAUHSPRITEBASE_____6fb7d040,0xfffffffe,0);
+  }
+  uStack_8 = 0xffffffff;
+  FUN_6f0a0f00();
+  ExceptionList = pvStack_10;
+  return;
+}
+
+
+  from 6f382178 DATA in FUN_6f382140@6f382140
+
+===== FUNCTION FUN_6f382140 @ 6f382140 size=4017 =====
+  6f382140  PUSH EBP
+  6f382141  MOV EBP,ESP
+  6f382143  PUSH -0x1
+  6f382145  PUSH 0x6f8ddb35
+  6f38214a  MOV EAX,FS:[0x0]
+  6f382150  PUSH EAX
+  6f382151  SUB ESP,0xc
+  6f382154  PUSH ESI
+  6f382155  PUSH EDI
+  6f382156  MOV EAX,[0x6fb6a774]
+  6f38215b  XOR EAX,EBP
+  6f38215d  PUSH EAX
+  6f38215e  LEA EAX,[EBP + -0xc]
+  6f382161  MOV FS:[0x0],EAX
+  6f382167  MOV EDI,ECX
+  6f382169  MOV dword ptr [EBP + -0x18],EDI
+  6f38216c  PUSH 0x0
+  6f38216e  PUSH 0x0
+  6f382170  PUSH dword ptr [EBP + 0x8]
+  6f382173  CALL 0x6f0a0b80
+  6f382178  MOV dword ptr [EDI],0x6f99244c
+  6f38217e  MOV dword ptr [EDI + 0xb4],0x6f992538
+  6f382188  MOV dword ptr [EDI + 0x168],0x0
+  6f382192  MOV dword ptr [EDI + 0x16c],0x0
+  6f38219c  MOV dword ptr [EDI + 0x170],0x0
+  6f3821a6  MOV dword ptr [EDI + 0x174],0x0
+  6f3821b0  MOV dword ptr [EDI + 0x178],0x0
+  6f3821ba  MOV dword ptr [EDI + 0x17c],0x0
+  6f3821c4  MOV dword ptr [EDI + 0x180],0x0
+  6f3821ce  MOV dword ptr [EDI + 0x184],0x0
+  6f3821d8  MOV dword ptr [EDI + 0x188],0x0
+  6f3821e2  MOV dword ptr [EDI + 0x18c],0x0
+  6f3821ec  MOV dword ptr [EDI + 0x190],0x0
+  6f3821f6  MOV dword ptr [EDI + 0x194],0x0
+  6f382200  MOV dword ptr [EDI + 0x198],0x0
+  6f38220a  MOV dword ptr [EBP + -0x4],0x0
+  6f382211  MOV dword ptr [EDI + 0x19c],0x0
+  6f38221b  MOV dword ptr [EDI + 0x1a0],0x0
+  6f382225  MOV dword ptr [EDI + 0x1a4],0x0
+  6f38222f  MOV dword ptr [EDI + 0x1a8],0x0
+  6f382239  MOV dword ptr [EDI + 0x1ac],0x0
+  6f382243  MOV dword ptr [EDI + 0x1b0],0x0
+  6f38224d  MOV dword ptr [EDI + 0x1b4],0x0
+  6f382257  MOV dword ptr [EDI + 0x1b8],0x0
+  6f382261  LEA ECX,[EDI + 0x1c0]
+  6f382267  MOV dword ptr [EDI + 0x1bc],0x0
+  6f382271  MOV dword ptr [EBP + -0x14],ECX
+  6f382274  MOV dword ptr [ECX + 0x4],0x0
+  6f38227b  MOV dword ptr [ECX],0x6f952f7c
+  6f382281  MOV dword ptr [ECX + 0x8],0x0
+  6f382288  PUSH 0x0
+  6f38228a  MOV byte ptr [EBP + -0x4],0x4
+  6f38228e  CALL 0x6f051310
+  6f382293  MOV dword ptr [EDI + 0x1cc],0x0
+  6f38229d  XORPS XMM0,XMM0
+  6f3822a0  MOV dword ptr [EDI + 0x1d0],0x0
+  6f3822aa  MOV dword ptr [EDI + 0x1d4],0x0
+  6f3822b4  MOV dword ptr [EDI + 0x1d8],0x0
+  6f3822be  MOV dword ptr [EDI + 0x1dc],0x0
+  6f3822c8  MOV dword ptr [EDI + 0x1e0],0x0
+  6f3822d2  MOV dword ptr [EDI + 0x1e4],0x0
+  6f3822dc  MOV dword ptr [EDI + 0x1e8],0x0
+  6f3822e6  MOV dword ptr [EDI + 0x1ec],0x0
+  6f3822f0  MOV dword ptr [EDI + 0x1f0],0x0
+  6f3822fa  MOV dword ptr [EDI + 0x1f4],0x0
+  6f382304  MOV dword ptr [EDI + 0x1f8],0x0
+  6f38230e  MOV dword ptr [EDI + 0x1fc],0x0
+  6f382318  MOV dword ptr [EDI + 0x200],0x0
+  6f382322  MOV dword ptr [EDI + 0x204],0x0
+  6f38232c  MOV dword ptr [EDI + 0x208],0x0
+  6f382336  MOV dword ptr [EDI + 0x21c],0x0
+  6f382340  MOV dword ptr [EDI + 0x220],0x0
+  6f38234a  MOVDQU xmmword ptr [EDI + 0x23c],XMM0
+  6f382352  MOVDQU xmmword ptr [EDI + 0x24c],XMM0
+  6f38235a  MOVDQU xmmword ptr [EDI + 0x25c],XMM0
+  6f382362  MOVDQU xmmword ptr [EDI + 0x26c],XMM0
+  6f38236a  MOV dword ptr [EDI + 0x27c],0x0
+  6f382374  MOV dword ptr [EDI + 0x280],0x0
+  6f38237e  MOV dword ptr [EDI + 0x284],0x0
+  6f382388  MOV dword ptr [EDI + 0x288],0x0
+--- DECOMPILE ---
+
+undefined4 * __thiscall FUN_6f382140(undefined4 *param_1,int param_2)
+
+{
+  undefined4 uVar1;
+  int iVar2;
+  uint uVar3;
+  int iVar4;
+  float10 fVar5;
+  undefined4 uVar6;
+  undefined4 uVar7;
+  undefined4 uVar8;
+  uint uStack_14;
+  void *pvStack_10;
+  undefined *puStack_c;
+  undefined4 uStack_8;
+  
+  uStack_8 = 0xffffffff;
+  puStack_c = &DAT_6f8ddb35;
+  pvStack_10 = ExceptionList;
+  ExceptionList = &pvStack_10;
+  FUN_6f0a0b80(param_2,0,0);
+  *param_1 = CMinimap::vftable;
+  param_1[0x2d] = CMinimap::vftable;
+  param_1[0x5a] = 0;
+  param_1[0x5b] = 0;
+  param_1[0x5c] = 0;
+  param_1[0x5d] = 0;
+  param_1[0x5e] = 0;
+  param_1[0x5f] = 0;
+  param_1[0x60] = 0;
+  param_1[0x61] = 0;
+  param_1[0x62] = 0;
+  param_1[99] = 0;
+  param_1[100] = 0;
+  param_1[0x65] = 0;
+  param_1[0x66] = 0;
+  param_1[0x67] = 0;
+  param_1[0x68] = 0;
+  param_1[0x69] = 0;
+  param_1[0x6a] = 0;
+  param_1[0x6b] = 0;
+  param_1[0x6c] = 0;
+  param_1[0x6d] = 0;
+  param_1[0x6e] = 0;
+  param_1[0x6f] = 0;
+  param_1[0x71] = 0;
+  param_1[0x70] = RCString::vftable;
+  param_1[0x72] = 0;
+  uStack_8._0_1_ = 4;
+  uStack_8._1_3_ = 0;
+  FUN_6f051310(0);
+  param_1[0x73] = 0;
+  param_1[0x74] = 0;
+  param_1[0x75] = 0;
+  param_1[0x76] = 0;
+  param_1[0x77] = 0;
+  param_1[0x78] = 0;
+  param_1[0x79] = 0;
+  param_1[0x7a] = 0;
+  param_1[0x7b] = 0;
+  param_1[0x7c] = 0;
+  param_1[0x7d] = 0;
+  param_1[0x7e] = 0;
+  param_1[0x7f] = 0;
+  param_1[0x80] = 0;
+  param_1[0x81] = 0;
+  param_1[0x82] = 0;
+  param_1[0x87] = 0;
+  param_1[0x88] = 0;
+  param_1[0x8f] = 0;
+  param_1[0x90] = 0;
+  param_1[0x91] = 0;
+  param_1[0x92] = 0;
+  param_1[0x93] = 0;
+  param_1[0x94] = 0;
+  param_1[0x95] = 0;
+  param_1[0x96] = 0;
+  param_1[0x97] = 0;
+  param_1[0x98] = 0;
+  param_1[0x99] = 0;
+  param_1[0x9a] = 0;
+  param_1[0x9b] = 0;
+  param_1[0x9c] = 0;
+  param_1[0x9d] = 0;
+  param_1[0x9e] = 0;
+  param_1[0x9f] = 0;
+  param_1[0xa0] = 0;
+  param_1[0xa1] = 0;
+  param_1[0xa2] = 0;
+  param_1[0xa3] = 0;
+  param_1[0xa4] = 0;
+  param_1[0xab] = 0;
+  param_1[0xac] = 0;
+  param_1[0xad] = 0;
+  param_1[0xae] = 0;
+  param_1[0xaf] = 0;
+  param_1[0xb0] = 0;
+  param_1[0xb7] = 0;
+  param_1[0xb8] = 0;
+  param_1[0xb9] = 0;
+  param_1[0xba] = 0;
+  param_1[0xbb] = 0;
+  param_1[0xbc] = 0;
+  uStack_8._0_1_ = 9;
+  FUN_6f771ab4(param_1 + 0xbd,0x10,0x11,&DAT_6f0d3dc0,FUN_6f0d4ec0);
+  param_1[0x101] = 0;
+  param_1[0x102] = 0;
+  uStack_8._0_1_ = 10;
+  param_1[0x103] = 0;
+  param_1[0x104] = 0;
+  param_1[0x105] = 0;
+  param_1[0x106] = 0;
+  param_1[0x107] = 0;
+  param_1[0x108] = 0;
+  param_1[0x109] = 0;
+  param_1[0x10a] = 0;
+  param_1[0x10b] = 0;
+  param_1[0x10c] = 0;
+  param_1[0x10d] = 0;
+  param_1[0x10e] = 0;
+  FUN_6f771ab4(param_1 + 0x120,0x10,0x10,&DAT_6f0d3dc0,FUN_6f0d4ec0);
+  param_1[0x160] = 0;
+  param_1[0x161] = 0;
+  param_1[0x162] = 0;
+  param_1[0x163] = 0;
+  param_1[0x164] = 0;
+  param_1[0x165] = 0;
+  param_1[0x166] = 0;
+  param_1[0x167] = 0;
+  param_1[0x168] = 0;
+  param_1[0x169] = 0;
+  param_1[0x16a] = 0;
+  param_1[0x16b] = 0;
+  param_1[0x16c] = 0;
+  param_1[0x16d] = 0;
+  param_1[0x16f] = 0;
+  param_1[0x170] = 0;
+  param_1[0x171] = 0;
+  param_1[0x174] = 0;
+  param_1[0x175] = 0;
+  param_1[0x176] = 0;
+  param_1[0x177] = 0;
+  param_1[0x178] = 0;
+  param_1[0x179] = 0;
+  param_1[0x17a] = 0;
+  param_1[0x17b] = 0;
+  param_1[0x17c] = 0;
+  param_1[0x17d] = 0;
+  param_1[0x17e] = 0;
+  param_1[0x17f] = 0;
+  param_1[0x180] = 0;
+  uStack_8 = CONCAT31(uStack_8._1_3_,0xf);
+  param_1[0x181] = 0;
+  param_1[0x182] = 0;
+  param_1[0x183] = 0;
+  param_1[0x184] = 0;
+  param_1[0x185] = 0;
+  param_1[0x186] = 0;
+  param_1[0x187] = 0;
+  param_1[0x188] = 1;
+  param_1[0x189] = 1;
+  param_1[0x18a] = 0;
+  param_1[0x18b] = 1;
+  param_1[0x18c] = 1;
+  param_1[0x18d] = 1;
+  param_1[0x18e] = 1;
+  param_1[399] = 1;
+  param_1[0x191] = 0;
+  param_1[0x192] = 0;
+  param_1[0x193] = 0;
+  param_1[0x194] = 0;
+  param_1[0x195] = 0x3f800000;
+  param_1[0x196] = 0;
+  param_1[0x197] = 0;
+  param_1[0x198] = 0;
+  param_1[0x199] = 0x3f800000;
+  param_1[0x19a] = 0;
+  param_1[0x19b] = 0;
+  param_1[0x19c] = 0;
+  param_1[0x19d] = 0x3f800000;
+  param_1[0x19e] = 0x3f800000;
+  param_1[0x19f] = 0;
+  param_1[0x1a0] = 0;
+  param_1[0x1a1] = 0;
+  param_1[0x1a2] = 0x3f800000;
+  param_1[0x1a3] = 0;
+  param_1[0x1a4] = 0;
+  param_1[0x1a5] = 0;
+  param_1[0x1a6] = 0x3f800000;
+  param_1[0x1a7] = 0x3f800000;
+  param_1[0x1a8] = 0;
+  param_1[0x1a9] = 0;
+  param_1[0x1aa] = 0;
+  param_1[0x1ab] = 0x3f800000;
+  param_1[0x1ac] = 0;
+  param_1[0x1ad] = 0;
+  param_1[0x1ae] = 0;
+  param_1[0x1af] = 0x3f800000;
+  param_1[0x1b0] = 0x3f800000;
+  param_1[0x1b1] = 0;
+  param_1[0x1b2] = 0;
+  param_1[0x1b3] = 0;
+  param_1[0x1b4] = 0x3f800000;
+  param_1[0x1b5] = 0;
+  param_1[0x1b6] = 0;
+  param_1[0x1b7] = 0;
+  param_1[0x1b8] = 0x3f800000;
+  param_1[0x1b9] = 0x3f800000;
+  param_1[0x1ba] = 0;
+  param_1[0x1bb] = 0;
+  param_1[0x1bc] = 0;
+  param_1[0x1bd] = 0x3f800000;
+  param_1[0x1be] = 0;
+  param_1[0x1bf] = 0;
+  param_1[0x1c0] = 0;
+  param_1[0x1c1] = 0x3f800000;
+  param_1[0x1c2] = 0x3f800000;
+  param_1[0x1c3] = 0;
+  param_1[0x1c4] = 0;
+  param_1[0x1c5] = 0;
+  param_1[0x1c6] = 0x3f800000;
+  param_1[0x1c7] = 0;
+  param_1[0x1c8] = 0;
+  param_1[0x1c9] = 0;
+  param_1[0x1ca] = 0x3f800000;
+  param_1[0x1cb] = 0x3f800000;
+  param_1[0x1cc] = 0;
+  param_1[0x1cd] = 0;
+  param_1[0x1ce] = 0;
+  param_1[0x1cf] = 0x3f800000;
+  param_1[0x1d0] = 0;
+  param_1[0x1d1] = 0;
+  param_1[0x1d2] = 0;
+  param_1[0x1d3] = 0x3f800000;
+  param_1[0x1d4] = 0x3f800000;
+  param_1[0x1d5] = 0;
+  param_1[0x1d6] = 0;
+  param_1[0x1d7] = 0;
+  param_1[0x1d8] = 0x3f800000;
+  param_1[0x1d9] = 0;
+  param_1[0x1da] = 0;
+  param_1[0x1db] = 0;
+  param_1[0x1dc] = 0x3f800000;
+  param_1[0x1dd] = 0x3f800000;
+  param_1[0x1de] = 0;
+  param_1[0x1df] = 0;
+  param_1[0x1e0] = 0;
+  param_1[0x1e1] = 0x3f800000;
+  param_1[0x1e2] = 0;
+  param_1[0x1e3] = 0;
+  param_1[0x1e4] = 0;
+  param_1[0x1e5] = 0x3f800000;
+  param_1[0x1e6] = 0x3f800000;
+  param_1[0x1e7] = 0;
+  param_1[0x1e8] = 0;
+  param_1[0x1e9] = 0;
+  param_1[0x1ea] = 0x3f800000;
+  param_1[0x1eb] = 0;
+  param_1[0x1ec] = 0;
+  param_1[0x1ed] = 0;
+  param_1[0x1ee] = 0x3f800000;
+  param_1[0x1ef] = 0;
+  param_1[0x1f0] = 0;
+  param_1[0x1f1] = 0;
+  param_1[0x1f2] = 0;
+  param_1[499] = 0;
+  param_1[500] = 0;
+  param_1[0x1f5] = 0;
+  param_1[0x1f6] = 0;
+  param_1[0x1f7] = 0;
+  param_1[0x1fc] = 0;
+  param_1[0x1fd] = 0;
+  param_1[0x201] = 0;
+  param_1[0x202] = 0;
+  param_1[0x203] = 0;
+  param_1[0x205] = 0;
+  FUN_6f02a260(&DAT_6f98ead4,0);
+  param_1[0x1ef] = uStack_14;
+  FUN_6f02a260(&DAT_6f98eae4,0);
+  param_1[0x1f0] = uStack_14;
+  FUN_6f02a260(&DAT_6f98eaf4,0);
+  param_1[0x1f1] = uStack_14;
+  FUN_6f02a260(&DAT_6f98dab8,0);
+  param_1[0x1f2] = uStack_14;
+  FUN_6f02a260(&DAT_6f98eb04,0);
+  param_1[499] = uStack_14;
+  FUN_6f02a260(&DAT_6f98eb14,0);
+  param_1[500] = uStack_14;
+  FUN_6f02a260(&DAT_6f98eb24,0);
+  param_1[0x1f5] = uStack_14;
+  FUN_6f02a260(&DAT_6f98eb50,0);
+  param_1[0x1f6] = uStack_14;
+  FUN_6f02a260(&DAT_6f98eb3c,0);
+  param_1[0x1f7] = uStack_14;
+  uVar1 = FUN_6f02a380(0);
+  param_1[0x1f8] = uVar1;
+  uVar1 = FUN_6f02a380(0);
+  param_1[0x1f9] = uVar1;
+  uVar1 = FUN_6f02a380(0);
+  param_1[0x1fa] = uVar1;
+  uVar1 = FUN_6f02a380(0);
+  param_1[0x1fb] = uVar1;
+  FUN_6f02a260(&DAT_6f98ebc4,0);
+  param_1[0x1fc] = uStack_14;
+  FUN_6f02a260(&DAT_6f98ebd8,0);
+  param_1[0x1fd] = uStack_14;
+  uVar1 = FUN_6f02a380(0);
+  param_1[0x1fe] = uVar1;
+  uVar1 = FUN_6f02a380(0);
+  param_1[0x1ff] = uVar1;
+  fVar5 = (float10)FUN_6f02a2f0(0);
+  param_1[0x200] = (float)fVar5;
+  FUN_6f02a260(&DAT_6f98ec44,0);
+  param_1[0x201] = uStack_14;
+  FUN_6f02a260(&DAT_6f98ec5c,0);
+  param_1[0x202] = uStack_14;
+  FUN_6f02a260(&DAT_6f98ec74,0);
+  param_1[0x203] = uStack_14;
+  fVar5 = (float10)FUN_6f02a2f0(0);
+  param_1[0x204] = (float)fVar5;
+  FUN_6f1ae7e0(param_1);
+  if (param_1[0xb8] != 0x10) {
+    FUN_6f060920(0x10);
+    param_1[0xb8] = 0x10;
+  }
+  if (param_1[0xbb] != 0x10) {
+    FUN_6f060920(0x10);
+    param_1[0xbb] = 0x10;
+  }
+  uVar3 = 0;
+  do {
+    *(undefined4 *)(uVar3 + param_1[0xb9]) = 0;
+    *(undefined4 *)(uVar3 + param_1[0xbc]) = 0;
+    uVar3 = uVar3 + 4;
+  } while (uVar3 < 0x40);
+  FUN_6f3b0160(0x10);
+  FUN_6f3b0160(0x100);
+  if (((uint)param_1[0x17e] < 0x100) && ((uint)param_1[0x17d] < 0x100)) {
+    uStack_14 = param_1[0x180];
+    if (uStack_14 == 0) {
+      param_1[0x180] = 0x40;
+      uStack_14 = 0x40;
+    }
+    iVar2 = 0x100;
+    iVar4 = (int)(0x100 % (ulonglong)uStack_14);
+    if (iVar4 != 0) {
+      iVar2 = (uStack_14 - iVar4) + 0x100;
+    }
+    FUN_6f060920(iVar2);
+  }
+  param_1[0x17e] = 0x100;
+  uStack_14 = 0;
+  do {
+    iVar2 = param_1[0x176];
+    uVar1 = FUN_6f1850d0();
+    uVar8 = 0;
+    *(undefined4 *)(iVar2 + uStack_14) = uVar1;
+    uVar7 = 0;
+    uVar6 = 0;
+    uVar1 = FUN_6f33e580(0,0,0);
+    FUN_6f324ad0(uVar1);
+    FUN_6f186a90(uVar1,uVar6,uVar7,uVar8);
+    uStack_14 = uStack_14 + 0x28;
+  } while (uStack_14 < 0x280);
+  uStack_14 = 0;
+  do {
+    iVar2 = param_1[0x17b];
+    uVar1 = FUN_6f1850d0();
+    *(undefined4 *)(iVar2 + uStack_14) = uVar1;
+    uVar8 = 0;
+    uVar7 = 0;
+    uVar6 = 0;
+    *(undefined4 *)(uStack_14 + 0x20 + param_1[0x17b]) = 0;
+    uVar1 = FUN_6f33e580(0,0,0);
+    FUN_6f324ad0(uVar1);
+    FUN_6f186a90(uVar1,uVar6,uVar7,uVar8);
+    uStack_14 = uStack_14 + 0x28;
+  } while (uStack_14 < 0x280);
+  uVar3 = 0;
+  do {
+    *(uint *)(param_1[0x17f] + uVar3 * 4) = 0xff - uVar3;
+    uVar3 = uVar3 + 1;
+  } while (uVar3 < 0x100);
+  if (((uint)param_1[0x68] < 2) && ((uint)param_1[0x67] < 2)) {
+    uVar3 = param_1[0x6a];
+    iVar2 = 2;
+    if (uVar3 == 0) {
+      uVar3 = 2;
+    }
+    iVar4 = (int)(2 % (ulonglong)uVar3);
+    if (iVar4 != 0) {
+      iVar2 = (uVar3 - iVar4) + 2;
+    }
+    FUN_6f0a3770(iVar2);
+  }
+  param_1[0x68] = 2;
+  uStack_14 = 0;
+  do {
+    iVar2 = param_1[0x69];
+    uVar1 = FUN_6f1850d0();
+    uVar8 = 0;
+    *(undefined4 *)(iVar2 + uStack_14) = uVar1;
+    uVar7 = 0;
+    uVar6 = 0;
+    uVar1 = FUN_6f33e580(0,0,0);
+    FUN_6f324ad0(uVar1);
+    FUN_6f186a90(uVar1,uVar6,uVar7,uVar8);
+    FUN_6f186590(1,0);
+    uStack_14 = uStack_14 + 4;
+  } while (uStack_14 < 8);
+  if (((uint)param_1[0x6c] < 2) && ((uint)param_1[0x6b] < 2)) {
+    uVar3 = param_1[0x6e];
+    if (uVar3 == 0) {
+      uVar3 = 2;
+    }
+    iVar2 = 2;
+    iVar4 = (int)(2 % (ulonglong)uVar3);
+    if (iVar4 != 0) {
+      iVar2 = (uVar3 - iVar4) + 2;
+    }
+    FUN_6f0a3770(iVar2);
+  }
+  param_1[0x6c] = 2;
+  uStack_14 = 0;
+  do {
+    iVar2 = param_1[0x6d];
+    uVar1 = FUN_6f1850d0();
+    uVar8 = 0;
+    *(undefined4 *)(iVar2 + uStack_14) = uVar1;
+    uVar7 = 0;
+    uVar6 = 0;
+    uVar1 = FUN_6f33e580(0,0,0);
+    FUN_6f324ad0(uVar1);
+    FUN_6f186a90(uVar1,uVar6,uVar7,uVar8);
+    FUN_6f186590(1,0);
+    uStack_14 = uStack_14 + 4;
+  } while (uStack_14 < 8);
+  uVar3 = FUN_6f155390();
+  param_1[0x5e] = param_1[0x5e] | uVar3 >> 1 & 1;
+  FUN_6f023e00();
+  FUN_6f023ed0(0x38,&param_2);
+  FUN_6f3b4fb0(param_2 != 0);
+  FUN_6f023ed0(0x39,&param_2);
+  FUN_6f3b4b70(param_2 != 0);
+  FUN_6f023ed0(0x3a,&param_2);
+  FUN_6f3b4fe0(param_2 != 0);
+  ExceptionList = pvStack_10;
+  return param_1;
+}
+
+
+
+### xref-funcs of 6f99256c
+  from 6f383125 DATA in FUN_6f383100@6f383100
+
+===== FUNCTION FUN_6f383100 @ 6f383100 size=44 =====
+  6f383100  MOV dword ptr [ECX + 0x4],0x0
+  6f383107  MOV EAX,ECX
+  6f383109  MOV dword ptr [ECX + 0x8],0x10064
+  6f383110  MOV dword ptr [ECX + 0xc],0x0
+  6f383117  MOV dword ptr [ECX + 0x14],0x0
+  6f38311e  MOV dword ptr [ECX + 0x18],0x0
+  6f383125  MOV dword ptr [ECX],0x6f99256c
+  6f38312b  RET
+  6f38312c  ??
+--- DECOMPILE ---
+
+undefined4 * __fastcall FUN_6f383100(undefined4 *param_1)
+
+{
+  param_1[1] = 0;
+  param_1[2] = 0x10064;
+  param_1[3] = 0;
+  param_1[5] = 0;
+  param_1[6] = 0;
+  *param_1 = CMinimapClickEvent::vftable;
+  return param_1;
+}
+
+
+
+### xref-funcs of 6f992578
+  from 6f3a3053 DATA in FUN_6f3a2fa0@6f3a2fa0
+
+### xref-funcs of 6f992c54
+  from 6f3934d7 DATA in FUN_6f393280@6f393280
+
+### xref-funcs of 6f96e630
+  from 6f1ee6c2 DATA in FUN_6f1e9a50@6f1e9a50
+  from 6f6fa97a DATA in FUN_6f6f5d00@6f6f5d00
+
+### xref-funcs of 6f96e644
+  from 6f1ee6d6 DATA in FUN_6f1e9a50@6f1e9a50
+  from 6f6fa98e DATA in FUN_6f6f5d00@6f6f5d00
+
+### xref-funcs of 6f96e67c
+  from 6f1ee712 DATA in FUN_6f1e9a50@6f1e9a50
+  from 6f6fa9ca DATA in FUN_6f6f5d00@6f6f5d00

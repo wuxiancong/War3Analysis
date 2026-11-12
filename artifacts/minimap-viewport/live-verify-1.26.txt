@@ -1,0 +1,11 @@
+pid=12408
+path=C:\Program Files (x86)\iCCup Warcraft III\Game.dll
+base=0x6f000000
+EventRouter=game.dll+0x00359C50 bytes_match_disk=YES
+ClickHandler=game.dll+0x0033BCE0 bytes_match_disk=YES
+MoveCameraToWorld=game.dll+0x0033BBF0 bytes_match_disk=YES
+PostCameraPositionAction=game.dll+0x0043FB80 bytes_match_disk=YES
+DrawViewRect=game.dll+0x00347F40 bytes_match_disk=YES
+method=ReadProcessMemory vs War3Launcher/versions/1.26.0.6401/game.dll
+x32dbg suggested BP: game.dll+0x33BBF0 (MoveCameraToWorld), game.dll+0x43FB80 (PostCamera 0xA0068)
+On minimap click expect hit MoveCamera then PostCamera; patching X/Y stack floats should move viewport rect.

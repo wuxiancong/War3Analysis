@@ -72,6 +72,7 @@ War3Analysis/
 - [Warcraft III 1.26 本地客户端物品栏 6 格顺序](analyses/warcraft-iii-1.26-inventory-six-slot-order.md)（[思维导图](analyses/warcraft-iii-1.26-inventory-six-slot-order-mindmap.md)；产物 `artifacts/inventory-slot-order/`）
 - [Warcraft III 1.27 录像自动保存实现路径](analyses/warcraft-iii-1.27-replay-autosave-implementation.md)（[思维导图](analyses/warcraft-iii-1.27-replay-autosave-implementation-mindmap.md)）
 - [Warcraft III 1.27 相机视距与鼠标滚轮缩放](analyses/warcraft-iii-1.27-camera-distance-mouse-wheel.md)（[思维导图](analyses/warcraft-iii-1.27-camera-distance-mouse-wheel-mindmap.md)）
+- [Warcraft III 小地图视口小长方体（相机框）移动逻辑](analyses/warcraft-iii-minimap-viewport-rect-move.md)（[思维导图](analyses/warcraft-iii-minimap-viewport-rect-move-mindmap.md)；产物 `artifacts/minimap-viewport/`）
 - [Warcraft III 1.27 `/fps` 显示值怎么计算](analyses/warcraft-iii-1.27-fps-display-calculation.md)（[思维导图](analyses/warcraft-iii-1.27-fps-display-calculation-mindmap.md)）
 - [Warcraft III 1.27 FPS 限制与解除路径](analyses/warcraft-iii-1.27-fps-unlock.md)（[思维导图](analyses/warcraft-iii-1.27-fps-unlock-mindmap.md)）
 - [Warcraft III 各版本 D3D Reset 边界与分辨率切换分析](analyses/warcraft-iii-all-versions-resolution-reset-boundaries.md)（[思维导图](analyses/warcraft-iii-all-versions-resolution-reset-boundaries-mindmap.md)）
