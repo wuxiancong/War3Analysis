@@ -1,0 +1,2 @@
+extract_war3_font.cpp
+EXIT=!ERRORLEVEL!
