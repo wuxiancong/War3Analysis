@@ -13,7 +13,7 @@
 | 子系统工程 | 技术栈 | 角色定位与核心职责 |
 | :--- | :--- | :--- |
 | **`War3Bot`** | C++17 / Qt 5.15 / W3GS | **分布式游戏主机宿主 (Host Bot) 与匹配引擎**：<br>1. 管理房间生命周期与 W3GS 锁步同步网络帧；<br>2. `MatchManager` 实现基于动态搜索半径扩张的撮合与蛇形平衡配队；<br>3. 实时捕获并解析 DotA 底层 `0x6B` 战绩同步包；<br>4. 游戏结束时自动持久化全量动作流为 `.dat` 归档并执行结算。 |
-| **`War3Launcher`** | C++ / Qt Quick (QML) | **客户端启动器与用户交互中心**：<br>1. 呈现大厅房间列表、天梯匹配 UI、个人资料与战报结算面板；<br>2. `RoomManager` 集中维护房间状态与天梯等级枚举；<br>3. `NetworkManager` 与服务端进行 TCP 二进制封包通信。 |
+| **`War3Launcher`** | C++ / Qt Quick (QML) | **客户端启动器与用户交互中心**：<br>1. 呈现大厅房间列表、天梯匹配 UI 与个人资料；<br>2. `RoomManager` 集中维护房间状态、天梯等级枚举与赛后 `0x31` 结算信号分发；<br>3. 通过 `FriendNotifyComponent` 单例与右下角置顶托盘消息面板（`trayNotifyHost`）展示可展开的积分结算卡片；<br>4. `NetworkManager` 与服务端进行 TCP 二进制封包通信。 |
 | **`War3Angular`** | Angular 21 / Node.js Express 5 / SSR | **Web 开放平台 API 与数据中枢**：<br>1. 提供对外 RESTful API（玩家天梯档案、全服排行榜、历史战绩）；<br>2. 暴露特权安全结算接口 `POST /api/ladder/settle`；<br>3. 维护 MySQL 高性能连接池与单事务 ACID 落库；<br>4. 前端提供天梯榜单展示与 Three.js 3D 轨迹回放。 |
 
 ---
@@ -100,25 +100,28 @@ $$\text{Performance} = 5.0 + 0.3 \times \left(3K + 1.5A - 2D\right) + 2.5 \times
 
 ---
 
-## 六、 赛后战绩提取与自动结算机制
+## 六、 赛后战绩提取、自动结算与客户端通知呈现机制
 
-在魔兽争霸 III 引擎中，DotA 6.83d 通过原生 `GameCache` 广播战绩：
-1. **实时监听**：`Client` 拦截玩家动作流中的 `0x6B (SyncStoredInteger)`；
-   * `spid`：对应玩家槽位索引（0~9）；
-   * `Key "1"`：杀敌（Kills）；
-   * `Key "2"`：死亡（Deaths）；
-   * `Key "3"`：正补（Last Hits）；
-   * `Key "4"`：反补（Denies）；
-   * `Key "5"`：助攻（Assists）；
-   * `Key "6"`：终局金钱（Gold）；
-   * `Key "9"`：英雄 FourCC 代码；
-2. **终局信号**：当一方基地（世界之树 / 冰封王座）倒塌时，DotA JASS 脚本广播：
-   `StoreInteger(cache, "Global", "Winner", 1 或 2)`；
-3. **闭环结算**：`Client` 收到 `Winner` 信号后，立即触发 `settleMatchResult(winnerTeam)`：
-   * 收集 10 名玩家的战绩与当前积分；
-   * 调用 `LadderScoreEngine::calculate` 结算变动分；
-   * 调用 `DbManager::instance().applyMatchSettlement` 在单一数据库事务中原子落库；
-   * 构建 `SCMatchResultPacket (0x31)` 广播给 10 个启动器客户端。
+在魔兽争霸 III 引擎中，DotA 6.83d 通过原生 `GameCache (0x6B SyncStoredInteger)` 实行**三层战绩同步机制**，服务端 `War3Bot` 对全量事件进行拦截与状态机汇聚：
+
+1. **三层 `0x6B` 数据采集管道**：
+   * **开局握手与选人同步**：出兵零点（`Data:GameStart=1`）时初始化赛前 10 个战斗槽位快照（锁定 `slot`、`color`、`pid`、`userName`、`clientId`），防止玩家中途秒退被移除导致结算漏算；同时捕获选人 `Key "9"`（英雄 FourCC ID）及模式信息 `Data:Mode*`。
+   * **局内周期性与实时事件广播**：
+     * **周期补刀快照（每 210 游戏秒 / 约 262.5 现实秒）**：由地图定时器 `SWO` 周期广播 `Data:CSK<colorId>`（正补）、`Data:CSD<colorId>`（反补）、`Data:NK<colorId>`（野怪数）；
+     * **实时战斗事件**：`Data:Hero<victim>=<killer>`、`Data:Assist<assist>=<victim>`（采用 1500ms 去重窗口防 N 端重复累加）、`Data:Level<lvl>=<colorId>`（记录真实英雄等级）、`Data:Tower*`/`Data:Rax*`；
+     * **强退瞬间快照**：玩家离线瞬间触发 `Data:CK<a>D<b>N<c>=<colorId>` 与 `<colorId>:8_0..8_5` 装备留档。
+   * **终局 `OJ2` 权威汇总**：当世界之树或冰封王座倒塌时，地图广播终局全员权威键值 `<colorId>:1..7`（K/D/A、补刀、金钱、打野）、`<colorId>:8_0..8_5`（六格装备）、`Global:m` / `Global:s`（精确比赛时长）以及胜负信号 `Global:Winner = 1 或 2`。
+2. **JASS 颜色编号与战斗槽位映射修正**：
+   * DotA 6.83d 中，近卫方 5 个玩家对应的 JASS `GetPlayerId` 为 **`1..5`**（`0` 为近卫建筑/小兵 AI），天灾方 5 个玩家为 **`7..11`**（`6` 为天灾 AI），对应物理槽位 `m_gameSlots[0..9].color`。
+   * `Client::updateDotaLiveSyncData` 与 `Client::settleMatchResult` 统一以 **真实颜色编号 (`1..5, 7..11`)** 作为战绩表主键索引（并对中途退出者从开局快照找回并标记 `isAbandon = true`），彻底避免槽位数组下标与颜色编号错位。
+3. **闭环结算与右下角托盘消息通知展示**：
+   * `Client` 收到 `Global:Winner` 信号后，优先采用 `Global:m/s` 计算比赛时长，调用 `LadderScoreEngine::calculate` 计算段位分变动、综合评分与 MVP/SVP；
+   * 调用 `DbManager::instance().applyMatchSettlement` 在单数据库事务中写入 `matches`、`match_results`（含真实 `hero_level`）与 `ladder_stats`，并签名上报 `POST /api/ladder/settle`；
+   * 构建 `SCMatchResultPacket (0x31)` 广播给房间内各 `War3Launcher` 客户端。
+   * **客户端右下角消息通知展现**：`War3Launcher` 在全局通知单例 `FriendNotifyComponent` 中监听 `RoomManager.matchResultReceived`，无论用户当前停留在任何标签页或已最小化到系统托盘，都会立即触发系统托盘图标红闪提醒，并在桌面右下角工作区（`trayNotifyHost`，与添加好友通知共用同一置顶消息面板）弹出天梯结算卡片：
+     * **摘要视图**：展示胜负图标、积分变动胶囊（`+28` / `-20` / `MVP` / `SVP` / `逃跑惩罚`）、新段位称号、个人 K/D/A、正反补与对局时长；
+     * **可展开详情（“战报详情”/“收起详情”）**：内联动态扩展窗口宽度与高度，直接渲染近卫/天灾 10 人紧凑计分板；
+     * **“知道了” / “稍后”机制**：点“知道了”确认并消费该条通知；点“稍后”收起面板并将未确认通知保留在闪烁托盘中，悬停或点击托盘图标即可再次呼出。
 
 ---
 
@@ -154,8 +157,8 @@ $$\text{Performance} = 5.0 + 0.3 \times \left(3K + 1.5A - 2D\right) + 2.5 \times
 
 ## 八、 总结与落地点
 
-1. **War3Bot**：实现了天梯战绩实时提取、动态 Elo 评级算法、本地数据库落库以及 `S_C_MATCH_RESULT (0x31)` 网络协议包的广播；
-2. **War3Launcher**：实现了 `LadderRankLevel` 枚举与 `RoomComponent.qml` 等级代码及中文称号的无缝并存展示；
+1. **War3Bot**：实现了三层 `0x6B` 战绩提取（周期性 `CSK/CSD/NK`、实时 `Hero/Assist/Level`、终局 `OJ2` 全量汇总）、开局名单快照保底强退扣分、动态 Elo 评级算法、本地数据库落库以及 `S_C_MATCH_RESULT (0x31)` 广播；
+2. **War3Launcher**：实现了 `LadderRankLevel` 枚举及中文称号并存体系，并将赛后积分结算面板统一接入 `FriendNotifyComponent` + `trayNotifyHost` 右下角托盘消息通知中心，支持未确认红闪角标、内联展开十人战报与“稍后”保留；
 3. **War3Angular**：完成了 Express 后端安全网关、特权验签中间件、防刷防伪审计、MySQL 事务落库接口与前端 `LadderService` 数据访问层。
 
 整套系统形成了从**游戏内锁步同步** $\to$ **主机战绩提取** $\to$ **天梯动态结算** $\to$ **数据库原子落库** $\to$ **Web API 安全鉴权与全端呈现**的完整闭环。

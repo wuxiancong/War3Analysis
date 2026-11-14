@@ -1,0 +1,114 @@
+PROGRAM /D:/Qt/workspace/War3Launcher/versions/1.27.0.52240/game.dll IMAGEBASE 6f000000
+
+##### ADDR 0x6f2522d0 -> FUN_6f2522d0@6f2522d0
+
+=== FUNCTION FUN_6f2522d0 @ 6f2522d0 (RVA 0x2522d0) ===
+callers: 6f376d70 6f3a76d0 
+
+void __fastcall FUN_6f2522d0(undefined4 *param_1,undefined4 *param_2)
+
+{
+  void *pvStack_10;
+  undefined *puStack_c;
+  undefined4 uStack_8;
+  
+  puStack_c = &DAT_6f8c9388;
+  pvStack_10 = ExceptionList;
+  ExceptionList = &pvStack_10;
+  uStack_8 = 0;
+  FUN_6f24d990(DAT_6fb6a774 ^ (uint)&stack0xfffffffc,CNetCommandAllyPing::vftable,0,0xa0068,0,2,0x68
+               ,*param_1,*param_2,DAT_6fbb81e8);
+  ExceptionList = pvStack_10;
+  return;
+}
+
+
+--- disasm ---
+6f2522d0  55                        PUSH EBP
+6f2522d1  8B EC                     MOV EBP,ESP
+6f2522d3  6A FF                     PUSH -0x1
+6f2522d5  68 88 93 8C 6F            PUSH 0x6f8c9388
+6f2522da  64 A1 00 00 00 00         MOV EAX,FS:[0x0]
+6f2522e0  50                        PUSH EAX
+6f2522e1  83 EC 24                  SUB ESP,0x24
+6f2522e4  A1 74 A7 B6 6F            MOV EAX,[0x6fb6a774]
+6f2522e9  33 C5                     XOR EAX,EBP
+6f2522eb  50                        PUSH EAX
+6f2522ec  8D 45 F4                  LEA EAX,[EBP + -0xc]
+6f2522ef  64 A3 00 00 00 00         MOV FS:[0x0],EAX
+6f2522f5  C7 45 D4 00 00 00 00      MOV dword ptr [EBP + -0x2c],0x0
+6f2522fc  C7 45 D8 68 00 0A 00      MOV dword ptr [EBP + -0x28],0xa0068
+6f252303  C7 45 DC 00 00 00 00      MOV dword ptr [EBP + -0x24],0x0
+6f25230a  C7 45 E0 02 00 00 00      MOV dword ptr [EBP + -0x20],0x2
+6f252311  66 C7 45 E4 68 00         MOV word ptr [EBP + -0x1c],0x68
+6f252317  C7 45 D0 E8 32 97 6F      MOV dword ptr [EBP + -0x30],0x6f9732e8
+6f25231e  8B 01                     MOV EAX,dword ptr [ECX]
+6f252320  8D 4D D0                  LEA ECX,[EBP + -0x30]
+6f252323  89 45 E8                  MOV dword ptr [EBP + -0x18],EAX
+6f252326  8B 02                     MOV EAX,dword ptr [EDX]
+6f252328  33 D2                     XOR EDX,EDX
+6f25232a  89 45 EC                  MOV dword ptr [EBP + -0x14],EAX
+6f25232d  A1 E8 81 BB 6F            MOV EAX,[0x6fbb81e8]
+6f252332  C7 45 FC 00 00 00 00      MOV dword ptr [EBP + -0x4],0x0
+6f252339  89 45 F0                  MOV dword ptr [EBP + -0x10],EAX
+6f25233c  E8 4F B6 FF FF            CALL 0x6f24d990
+6f252341  8B 4D F4                  MOV ECX,dword ptr [EBP + -0xc]
+6f252344  64 89 0D 00 00 00 00      MOV dword ptr FS:[0x0],ECX
+6f25234b  59                        POP ECX
+6f25234c  8B E5                     MOV ESP,EBP
+6f25234e  5D                        POP EBP
+6f25234f  C3                        RET
+
+##### ADDR 0x6f33b410 -> FUN_6f33b410@6f33b410
+
+=== FUNCTION FUN_6f33b410 @ 6f33b410 (RVA 0x33b410) ===
+callers: 6f376360 6f375220 6f376170 6f38d400 6f67a2e0 6f3a76d0 6f3a1f00 6f39f3e0 6f3a1aa0 6f377c80 6f3a1f30 6f3c2fe0 6f38d250 6f3c2f80 6f377cf0 6f3c2b90 6f33bcb0 6f375500 6f2d2950 
+
+void FUN_6f33b410(void)
+
+{
+  FUN_6f33bc20();
+  return;
+}
+
+
+--- disasm ---
+6f33b410  B9 7C 7B 97 6F            MOV ECX,0x6f977b7c
+6f33b415  E9 06 08 00 00            JMP 0x6f33bc20
+
+##### ADDR 0x6f3a5df0 -> FUN_6f3a5df0@6f3a5df0
+
+=== FUNCTION FUN_6f3a5df0 @ 6f3a5df0 (RVA 0x3a5df0) ===
+callers: 6f3a0920 
+
+undefined4 FUN_6f3a5df0(int param_1)
+
+{
+  if (*(int *)(param_1 + 0x28) == 1) {
+    FUN_6f3a76d0(param_1 + 0x1c);
+  }
+  FUN_6f398520();
+  FUN_6f356e50();
+  return 1;
+}
+
+
+--- disasm ---
+6f3a5df0  55                        PUSH EBP
+6f3a5df1  8B EC                     MOV EBP,ESP
+6f3a5df3  8B 45 08                  MOV EAX,dword ptr [EBP + 0x8]
+6f3a5df6  56                        PUSH ESI
+6f3a5df7  8B F1                     MOV ESI,ECX
+6f3a5df9  83 78 28 01               CMP dword ptr [EAX + 0x28],0x1
+6f3a5dfd  75 09                     JNZ 0x6f3a5e08
+6f3a5dff  83 C0 1C                  ADD EAX,0x1c
+6f3a5e02  50                        PUSH EAX
+6f3a5e03  E8 C8 18 00 00            CALL 0x6f3a76d0
+6f3a5e08  8B CE                     MOV ECX,ESI
+6f3a5e0a  E8 11 27 FF FF            CALL 0x6f398520
+6f3a5e0f  8B C8                     MOV ECX,EAX
+6f3a5e11  E8 3A 10 FB FF            CALL 0x6f356e50
+6f3a5e16  B8 01 00 00 00            MOV EAX,0x1
+6f3a5e1b  5E                        POP ESI
+6f3a5e1c  5D                        POP EBP
+6f3a5e1d  C2 04 00                  RET 0x4

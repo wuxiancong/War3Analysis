@@ -1,0 +1,31 @@
+PROGRAM /D:/Qt/workspace/War3Launcher/versions/1.27.0.52240/game.dll IMAGEBASE 6f000000
+
+##### ADDR 0x6f2cf510 -> FUN_6f2cf510@6f2cf510
+
+=== FUNCTION FUN_6f2cf510 @ 6f2cf510 (RVA 0x2cf510) ===
+callers: 6f2dd710 
+
+undefined4 __fastcall FUN_6f2cf510(int param_1)
+
+{
+  *(undefined4 *)(param_1 + 0x1d0) = *(undefined4 *)(param_1 + 0x284);
+  FUN_6f2ddbd0(5);
+  FUN_6f0b0450(&DAT_6f950d90,1);
+  return 1;
+}
+
+
+--- disasm ---
+6f2cf510  56                        PUSH ESI
+6f2cf511  8B F1                     MOV ESI,ECX
+6f2cf513  6A 05                     PUSH 0x5
+6f2cf515  8B 86 84 02 00 00         MOV EAX,dword ptr [ESI + 0x284]
+6f2cf51b  89 86 D0 01 00 00         MOV dword ptr [ESI + 0x1d0],EAX
+6f2cf521  E8 AA E6 00 00            CALL 0x6f2ddbd0
+6f2cf526  8B 8E FC 01 00 00         MOV ECX,dword ptr [ESI + 0x1fc]
+6f2cf52c  6A 01                     PUSH 0x1
+6f2cf52e  68 90 0D 95 6F            PUSH 0x6f950d90
+6f2cf533  E8 18 0F DE FF            CALL 0x6f0b0450
+6f2cf538  B8 01 00 00 00            MOV EAX,0x1
+6f2cf53d  5E                        POP ESI
+6f2cf53e  C3                        RET

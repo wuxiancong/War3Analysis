@@ -1,0 +1,77 @@
+PROGRAM /D:/Qt/workspace/War3Launcher/versions/1.27.0.52240/game.dll IMAGEBASE 6f000000
+
+##### ADDR 0x6f3a76d0 -> FUN_6f3a76d0@6f3a76d0
+
+=== FUNCTION FUN_6f3a76d0 @ 6f3a76d0 (RVA 0x3a76d0) ===
+callers: 6f3a5df0 6f3a6ac0 6f3a0fa0 6f377b90 6f3a4aa0 
+
+void FUN_6f3a76d0(undefined4 *param_1)
+
+{
+  FUN_6f33b410();
+  FUN_6f2522d0(*param_1,param_1[1]);
+  return;
+}
+
+
+--- disasm ---
+6f3a76d0  55                        PUSH EBP
+6f3a76d1  8B EC                     MOV EBP,ESP
+6f3a76d3  83 EC 08                  SUB ESP,0x8
+6f3a76d6  E8 35 3D F9 FF            CALL 0x6f33b410
+6f3a76db  8B 45 08                  MOV EAX,dword ptr [EBP + 0x8]
+6f3a76de  8D 55 FC                  LEA EDX,[EBP + -0x4]
+6f3a76e1  8D 4D F8                  LEA ECX,[EBP + -0x8]
+6f3a76e4  F3 0F 10 00               MOVSS XMM0,dword ptr [EAX]
+6f3a76e8  F3 0F 11 45 F8            MOVSS dword ptr [EBP + -0x8],XMM0
+6f3a76ed  F3 0F 10 40 04            MOVSS XMM0,dword ptr [EAX + 0x4]
+6f3a76f2  F3 0F 11 45 FC            MOVSS dword ptr [EBP + -0x4],XMM0
+6f3a76f7  E8 D4 AB EA FF            CALL 0x6f2522d0
+6f3a76fc  8B E5                     MOV ESP,EBP
+6f3a76fe  5D                        POP EBP
+6f3a76ff  C2 04 00                  RET 0x4
+
+##### ADDR 0x6f1f4200 -> FUN_6f1f4200@6f1f4200
+
+=== FUNCTION FUN_6f1f4200 @ 6f1f4200 (RVA 0x1f4200) ===
+callers: 
+
+void FUN_6f1f4200(undefined4 *param_1,undefined4 *param_2)
+
+{
+  int iVar1;
+  
+  iVar1 = FUN_6f34f3a0();
+  if (iVar1 != 0) {
+    iVar1 = FUN_6f34da20();
+    if (iVar1 != 0) {
+      FUN_6f346440(*param_1,*param_2);
+    }
+  }
+  return;
+}
+
+
+--- disasm ---
+6f1f4200  55                        PUSH EBP
+6f1f4201  8B EC                     MOV EBP,ESP
+6f1f4203  33 D2                     XOR EDX,EDX
+6f1f4205  8D 4A 01                  LEA ECX,[EDX + 0x1]
+6f1f4208  E8 93 B1 15 00            CALL 0x6f34f3a0
+6f1f420d  85 C0                     TEST EAX,EAX
+6f1f420f  74 2E                     JZ 0x6f1f423f
+6f1f4211  8B C8                     MOV ECX,EAX
+6f1f4213  E8 08 98 15 00            CALL 0x6f34da20
+6f1f4218  85 C0                     TEST EAX,EAX
+6f1f421a  74 23                     JZ 0x6f1f423f
+6f1f421c  8B 4D 0C                  MOV ECX,dword ptr [EBP + 0xc]
+6f1f421f  83 EC 08                  SUB ESP,0x8
+6f1f4222  F3 0F 10 01               MOVSS XMM0,dword ptr [ECX]
+6f1f4226  8B 4D 08                  MOV ECX,dword ptr [EBP + 0x8]
+6f1f4229  F3 0F 11 44 24 04         MOVSS dword ptr [ESP + 0x4],XMM0
+6f1f422f  F3 0F 10 01               MOVSS XMM0,dword ptr [ECX]
+6f1f4233  8B C8                     MOV ECX,EAX
+6f1f4235  F3 0F 11 04 24            MOVSS dword ptr [ESP],XMM0
+6f1f423a  E8 01 22 15 00            CALL 0x6f346440
+6f1f423f  5D                        POP EBP
+6f1f4240  C3                        RET

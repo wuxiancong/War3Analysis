@@ -50,12 +50,12 @@ graph LR
     M3 --> M3_1["War3Bot 主机与匹配服务"]
     M3_1 --> M3_1_1["MatchManager: 搜索半径动态扩张 (+-50 至 +-400)"]
     M3_1 --> M3_1_2["MatchManager: 蛇形排队平衡配队 (1/2-2/2-2/1)"]
-    M3_1 --> M3_1_3["Client: 监听 0x6B 胜负 (Winner) 与 1..9 战绩同步"]
-    M3_1 --> M3_1_4["Client: 赛后动作流 zlib 压缩存储为 .dat 归档"]
+    M3_1 --> M3_1_3["Client: 监听周期 SWO(210s CSK/CSD/NK)、实时 Data 与终局 OJ2(1..9/Winner)"]
+    M3_1 --> M3_1_4["Client: 锁定开局槽位快照 (颜色1..5/7..11) 防强退漏算并归档 .dat"]
     M3 --> M3_2["War3Launcher 启动器客户端"]
     M3_2 --> M3_2_1["RoomManager: 声明 LadderRankLevel 枚举暴露 QML"]
     M3_2 --> M3_2_2["RoomComponent: 数据库代码与中文称号并存展示"]
-    M3_2 --> M3_2_3["NetworkManager: 接收 S_C_MATCH_RESULT (0x31) 战报包"]
+    M3_2 --> M3_2_3["FriendNotifyComponent + trayNotifyHost: 右下角消息通知式积分结算与十人战报展开"]
     M3 --> M3_3["War3Angular Web API 与数据中枢"]
     M3_3 --> M3_3_1["Express + SSR 高性能网关服务"]
     M3_3 --> M3_3_2["MySQL 连接池与单事务 ACID 落库"]
@@ -143,22 +143,22 @@ sequenceDiagram
     participant Angular as War3Angular 安全网关
     participant DB as MySQL 数据库
 
-    Note over Game,Launcher: 1. 游戏对局中实时数据同步
-    loop 游戏进行中 (每当击杀/助攻/补刀/买装)
-        Game->>Bot: 0x6B SyncStoredInteger (spid: 1..9, Key/Value)
-        Bot->>Bot: Client::updateDotaLiveSyncData 聚合 10 名玩家战绩
+    Note over Game,Launcher: 1. 游戏对局中周期与实时数据同步
+    loop 游戏进行中 (每210游戏秒SWO正反补 + 击杀/助攻/升级/强退事件)
+        Game->>Bot: 0x6B SyncStoredInteger (Data:CSK/CSD/NK, Hero, Assist, Level & 1..9)
+        Bot->>Bot: Client::updateDotaLiveSyncData 按 JASS 颜色编号 (1..5, 7..11) 聚合战绩
     end
 
     Note over Game,Launcher: 2. 终局胜负触发与结算
-    Game->>Bot: 0x6B StoreInteger("Global", "Winner", 1) (近卫胜利)
+    Game->>Bot: 0x6B 终局 OJ2(1..7/8_x/Global:m,s) + Global:Winner (1 或 2)
     Bot->>Bot: 1. saveAllPlayerMatchLogs() 压缩归档 match_*.dat
-    Bot->>Bot: 2. 收集 10 名玩家当前分，调用 LadderScoreEngine
-    Bot->>Bot: 3. 计算 ΔScore、新积分、MVP/SVP 称号
+    Bot->>Bot: 2. 结合开局槽位快照收集 10 名玩家战绩 (含强退)，调用 LadderScoreEngine
+    Bot->>Bot: 3. 计算 ΔScore、新积分、MVP/SVP 称号与真实 heroLevel
 
-    par 路径 A：Bot 本地持久化与客户端通知
+    par 路径 A：Bot 本地持久化与客户端右下角通知
         Bot->>DB: DbManager::applyMatchSettlement (本地事务提交)
         Bot->>Launcher: S_C_MATCH_RESULT (0x31) TCP 广播战报
-        Launcher->>Launcher: 弹出结算卡片、段位加分动画
+        Launcher->>Launcher: FriendNotifyComponent 触发托盘红闪 + 右下角弹出结算消息 (支持展开10人详情)
     and 路径 B：通过 Web API 特权安全上传
         Bot->>Bot: 构造签名：HMAC_SHA256(ts + nonce + matchId + body, BOT_KEY)
         Bot->>Angular: POST /api/ladder/settle (携带 X-Bot-*)

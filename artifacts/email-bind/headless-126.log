@@ -1,0 +1,420 @@
+INFO  Using log config file: jar:file:/D:/Ghidra_12.1.4/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1500 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (34179 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\Ghidra_12.1.4\Ghidra\Processors\8051\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Processors\PIC\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Processors\JVM\ghidra_scripts
+    D:\Qt\workspace\War3Analysis\shared\ghidra-scripts
+    D:\Ghidra_12.1.4\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Features\BSim\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Processors\DATA\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Features\Base\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Features\PDB\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Features\PyGhidra\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Features\FunctionID\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\Ghidra_12.1.4\Ghidra\Features\SwiftDemangler\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Creating project: D:\Qt\workspace\War3Analysis\ghidra\projects\War3_126 (HeadlessAnalyzer)  
+INFO  Creating project: D:\Qt\workspace\War3Analysis\ghidra\projects\War3_126 (DefaultProject)  
+INFO  REPORT: Processing input files:  (HeadlessAnalyzer)  
+INFO       project: D:\Qt\workspace\War3Analysis\ghidra\projects\War3_126 (HeadlessAnalyzer)  
+INFO  IMPORTING: file:///D:/Qt/workspace/War3Launcher/versions/1.26.0.6401/game.dll (HeadlessAnalyzer)  
+INFO  Using Loader: Portable Executable (PE) (ProgramLoader)  
+INFO  Using Language/Compiler: x86:LE:32:default:windows (ProgramLoader)  
+INFO  Using Library Search Path: [., C:\Windows\SysWOW64, D:\ghidra_12.1.4\jdk\bin, C:\Windows\Sun\Java\bin, C:\Windows\system32, C:\Windows, C:\Users\wuxia\bin, C:\Program Files\Git\mingw64\bin, C:\Program Files\Git\usr\local\bin, C:\Program Files\Git\usr\bin, C:\Windows\System32\Wbem, C:\Windows\System32\WindowsPowerShell\v1.0, C:\Windows\System32\OpenSSH, C:\Program Files\Git\cmd, C:\Program Files\nodejs, C:\Users\wuxia\AppData\Local\Programs\Python\Python314\Scripts, C:\Users\wuxia\AppData\Local\Programs\Python\Python314, C:\Users\wuxia\AppData\Local\Microsoft\WindowsApps, C:\Users\wuxia\AppData\Roaming\npm, C:\Program Files\Git\usr\bin\vendor_perl, C:\Program Files\Git\usr\bin\core_perl] (ProgramLoader)  
+WARN  Invalid or missing function at 5bff1b7c (ExportDataDirectory)  
+INFO  TLS callbacks at 52083754 (TLSDirectory)  
+WARN  Invalid or missing function at 4d513e70 (ExportDataDirectory)  
+INFO  TLS callbacks at 68f051c0 (TLSDirectory)  
+INFO  TLS callbacks at 6982d760 (TLSDirectory)  
+WARN  Invalid or missing function at 69d3eed4 (ExportDataDirectory)  
+WARN  Invalid or missing function at 15047400 (ExportDataDirectory)  
+WARN  Invalid or missing function at 69e9ea48 (ExportDataDirectory)  
+INFO  TLS callbacks at 63005624 (TLSDirectory)  
+WARN  Invalid or missing function at 52e82048 (ExportDataDirectory)  
+INFO  Additional info:
+Loading file:///D:/Qt/workspace/War3Launcher/versions/1.26.0.6401/game.dll?MD5=ba5a2fe39f08a8272ddb1a45dfb62569...
+[game.dll]: failed to create IMAGE_BASE_RELOCATION at 6fae9000: Conflicting data exists at address 6fae8418 to 6fae9000
+------------------------------------------------
+
+Searching 17 paths for library ADVAPI32.DLL...
+Loading file:///C:/Windows/SysWOW64/advapi32.dll?MD5=b327fbfbaa156a4f8b94b41d6ce680f1...
+Created exports file: C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\advapi32.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 17 paths for library COMCTL32.DLL...
+Loading file:///C:/Windows/SysWOW64/comctl32.dll?MD5=a7a108f628bbd3b100dbe2e00b1f4723...
+Created exports file: C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\comctl32.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 17 paths for library COMDLG32.DLL...
+Loading file:///C:/Windows/SysWOW64/comdlg32.dll?MD5=37a26a04046c3ff46367e9f59f387c86...
+Created exports file: C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\comdlg32.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 17 paths for library GDI32.DLL...
+Loading file:///C:/Windows/SysWOW64/gdi32.dll?MD5=87a97f2b7436249756fa13b3e3e1ffb2...
+Created exports file: C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\gdi32.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 17 paths for library IJL15.DLL...
+Library not found.
+------------------------------------------------
+
+Searching 17 paths for library IMM32.DLL...
+Loading file:///C:/Windows/SysWOW64/imm32.dll?MD5=18229eae72e3d36d6b658549225ee342...
+Created exports file: C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\imm32.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 17 paths for library KERNEL32.DLL...
+Loading file:///C:/Windows/SysWOW64/kernel32.dll?MD5=eeaa667929c0415ea0b74b7b9e9f9c23...
+Created exports file: C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\kernel32.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 17 paths for library MSS32.DLL...
+Library not found.
+------------------------------------------------
+
+Searching 17 paths for library MSVCR80.DLL...
+Library not found.
+------------------------------------------------
+
+Searching 17 paths for library OLE32.DLL...
+Loading file:///C:/Windows/SysWOW64/ole32.dll?MD5=8902ccd34c7eb47a045535a51c815eda...
+[ole32.dll]: failed to create WEVTResource at 68fc5218: Failed to resolve data length for WEVTResource
+Created exports file: C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\ole32.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 17 paths for library OPENGL32.DLL...
+Loading file:///C:/Windows/SysWOW64/opengl32.dll?MD5=e38854532b94a75e33d04c0bc78a4eeb...
+Created exports file: C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\opengl32.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 17 paths for library SHELL32.DLL...
+Loading file:///C:/Windows/SysWOW64/shell32.dll?MD5=48f93b38abb4b16ae47ac5ab80d22987...
+Created exports file: C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\shell32.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 17 paths for library STORM.DLL...
+Loading file:///D:/Qt/workspace/War3Launcher/versions/1.26.0.6401/Storm.dll?MD5=9a2b885cabcadf8c9bdba934f88a818f...
+[Storm.dll]: failed to create byte[84] at 1505c3dc: Conflicting data exists at address 1505c288 to 1505c3de
+Created exports file: C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 17 paths for library USER32.DLL...
+Loading file:///C:/Windows/SysWOW64/user32.dll?MD5=87016f302e009bb5d38d2b8ec8611f8a...
+[user32.dll]: failed to create WEVTResource at 69eb5a70: Failed to resolve data length for WEVTResource
+Created exports file: C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\user32.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 17 paths for library WININET.DLL...
+Loading file:///C:/Windows/SysWOW64/wininet.dll?MD5=f8020a76e8616207ab1fe91334e5e934...
+[wininet.dll]: failed to create WEVTResource at 63428798: Failed to resolve data length for WEVTResource
+Created exports file: C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\wininet.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 17 paths for library WINMM.DLL...
+Loading file:///C:/Windows/SysWOW64/winmm.dll?MD5=cd17feff84b207001e3c3f4020bd33a5...
+[winmm.dll]: failed to create WEVTResource at 4f0a1310: Failed to resolve data length for WEVTResource
+Created exports file: C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\winmm.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 17 paths for library WSOCK32.DLL...
+Loading file:///C:/Windows/SysWOW64/wsock32.dll?MD5=8afeeda0f4402a363e9bbe612270554a...
+Created exports file: C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\wsock32.exports
+Library not saved to project.
+------------------------------------------------
+
+Applying C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\comctl32.exports
+Applying cached symbols from WINMM.DLL
+Applying cached symbols from KERNEL32.DLL
+Applying C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\comdlg32.exports
+Applying C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\advapi32.exports
+Applying cached symbols from WININET.DLL
+Applying cached symbols from STORM.DLL
+Unable to locate symbol [Ordinal_275] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_580] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_537] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_534] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_525] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_524] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_291] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_406] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_428] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_619] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_628] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_621] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_607] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_622] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_636] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_601] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_633] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_603] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_638] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_609] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_612] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_403] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_293] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_252] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_263] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_253] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_267] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_266] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_270] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_423] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_151] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_264] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_268] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_300] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_578] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_465] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_401] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_422] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_503] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_501] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_405] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_426] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_425] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_507] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_509] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_543] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_542] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_541] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_548] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_280] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_504] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_279] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_587] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_545] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_572] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_470] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_496] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_590] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_272] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_568] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_469] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_460] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_565] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_567] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_585] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_289] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_506] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_576] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_281] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_288] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_575] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_508] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_571] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_574] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_570] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_581] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_589] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_482] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_510] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_295] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_579] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_596] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_461] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_553] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_595] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_551] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_552] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_472] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_474] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_479] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_476] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_569] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_577] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_462] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_463] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_269] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_265] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_586] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_424] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_502] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_421] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_597] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_563] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_624] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_606] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_584] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_471] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_251] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_294] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_302] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_271] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Unable to locate symbol [Ordinal_544] in [C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\storm.exports]. Please verify the version is correct.
+Applying cached symbols from WSOCK32.DLL
+Applying C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\opengl32.exports
+Applying C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\imm32.exports
+Applying C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\user32.exports
+Applying C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\gdi32.exports
+Applying C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\shell32.exports
+Applying C:\Users\wuxia\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\symbols\win32\ole32.exports
+Linking the External Programs of 'game.dll' to imported libraries...
+  [COMCTL32.DLL] -> not found in project
+  [WINMM.DLL] -> not found in project
+  [KERNEL32.DLL] -> not found in project
+  [COMDLG32.DLL] -> not found in project
+  [ADVAPI32.DLL] -> not found in project
+  [WININET.DLL] -> not found in project
+  [STORM.DLL] -> not found in project
+  [IJL15.DLL] -> not found in project
+  [MSVCR80.DLL] -> not found in project
+  [WSOCK32.DLL] -> not found in project
+  [MSS32.DLL] -> not found in project
+  [OPENGL32.DLL] -> not found in project
+  [IMM32.DLL] -> not found in project
+  [USER32.DLL] -> not found in project
+  [GDI32.DLL] -> not found in project
+  [SHELL32.DLL] -> not found in project
+  [OLE32.DLL] -> not found in project
+------------------------------------------------
+
+ (ProgramLoader)  
+INFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: file:///D:/Qt/workspace/War3Launcher/versions/1.26.0.6401/game.dll (HeadlessAnalyzer)  
+WARN  Ignoring leading '_' chars on no-return name '___raise_securityfailure' specified in file: D:\Ghidra_12.1.4\Ghidra\Features\Base\data\PEFunctionsThatDoNotReturn (NoReturnFunctionAnalyzer)  
+WARN  Ignoring leading '_' chars on no-return name '___report_rangecheckfailure' specified in file: D:\Ghidra_12.1.4\Ghidra\Features\Base\data\PEFunctionsThatDoNotReturn (NoReturnFunctionAnalyzer)  
+INFO  Skipping PDB processing: failed to locate PDB file in configured locations (PdbUniversalAnalyzer)  
+INFO  Use a script to set the PDB file location. I.e.,
+    PdbAnalyzer.setPdbFileOption(currentProgram, new File("/path/to/pdb/file.pdb")); or
+    PdbUniversalAnalyzer.setPdbFileOption(currentProgram, new File("/path/to/pdb/file.pdb"));
+Or set the symbol server search configuration using:    PdbPlugin.saveSymbolServerServiceConfig(...);
+ This must be done using a pre-script (prior to analysis). (PdbUniversalAnalyzer)  
+INFO  Packed database cache: C:\Users\wuxia\AppData\Local\ghidra\packed-db-cache (PackedDatabaseCache)  
+INFO  Unprocessed TypeDescriptor: int (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: int (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: void * (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: void * (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: unsigned int (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: unsigned int (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: int (__fastcall *)(class CUnit *,struct TEnumData *) (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: int (__fastcall *)(class CUnit *,struct TEnumData *) (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: int (__fastcall *)(class CWidget *,struct TWidgetEnumData *) (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: int (__fastcall *)(class CWidget *,struct TWidgetEnumData *) (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: float (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: float (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: char const * (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: char const * (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: char * (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: char * (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: enum KEY (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: enum KEY (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: unsigned short (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: unsigned short (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: enum CursorMode (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: enum CursorMode (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: unsigned long (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: unsigned long (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: unsigned char (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: unsigned char (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: __int64 (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: __int64 (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: unsigned long * (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: unsigned long * (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: char (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: char (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: enum MDLPRIMITIVE (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: enum MDLPRIMITIVE (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: enum EGxRenderState (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: enum EGxRenderState (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: enum CHAT_ACTION (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: enum CHAT_ACTION (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: enum BattleNet::MMCHUNKID (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: enum BattleNet::MMCHUNKID (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: enum RACE_PREFERENCE (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: enum RACE_PREFERENCE (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: enum CMainMenu::CANCEL_EVENT (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: enum CMainMenu::CANCEL_EVENT (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: union NETADDR (TypeDescriptorModel)  
+INFO  Unprocessed TypeDescriptor: union NETADDR (TypeDescriptorModel)  
+ERROR Failed to disassemble at 6f506f50 (EHDataTypeUtilities)  
+ERROR Failed to disassemble at 6f506f50 (EHDataTypeUtilities)  
+ERROR Failed to disassemble at 6f506f50 (EHDataTypeUtilities)  
+ERROR Failed to disassemble at 6f506f50 (EHDataTypeUtilities)  
+ERROR Failed to disassemble at 6f506f50 (EHDataTypeUtilities)  
+INFO  Applied data type archive: windows_vs12_32 (ApplyDataArchiveAnalyzer)  
+INFO  Applied data type archive: windows_vs12_32 (ApplyDataArchiveAnalyzer)  
+INFO  -----------------------------------------------------
+    ASCII Strings                              1.448 secs
+    Apply Data Archives                        5.249 secs
+    Call Convention ID                         0.004 secs
+    Call-Fixup Installer                       2.137 secs
+    Create Address Tables                      4.283 secs
+    Create Address Tables - One Time           9.896 secs
+    Create Function                           11.084 secs
+    Data Reference                             6.426 secs
+    Decompiler Switch Analysis                60.985 secs
+    Demangler Microsoft                        0.951 secs
+    Disassemble                               20.899 secs
+    Disassemble Entry Points                   0.493 secs
+    Embedded Media                             0.095 secs
+    External Entry References                  0.001 secs
+    Function ID                              146.059 secs
+    Function Start Pre Search                  0.128 secs
+    Function Start Search                     11.246 secs
+    Function Start Search After Code           1.310 secs
+    Function Start Search After Data           8.599 secs
+    Function Start Search delayed - One Time   0.038 secs
+    Non-Returning Functions - Discovered       6.369 secs
+    Non-Returning Functions - Known            0.486 secs
+    PDB Universal                              0.803 secs
+    Reference                                  6.948 secs
+    Scalar Operand References                 15.343 secs
+    Shared Return Calls                        6.326 secs
+    Stack                                     80.899 secs
+    Subroutine References                      6.789 secs
+    Subroutine References - One Time           0.033 secs
+    Windows x86 PE Exception Handling         25.493 secs
+    Windows x86 PE RTTI Analyzer              76.543 secs
+    Windows x86 Thread Environment Block (TEB) Analyzer     0.043 secs
+    WindowsResourceReference                  46.566 secs
+    X86 Function Callee Purge                100.226 secs
+    x86 Constant Reference Analyzer           67.360 secs
+-----------------------------------------------------
+     Total Time   731 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: file:///D:/Qt/workspace/War3Launcher/versions/1.26.0.6401/game.dll (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: DumpEmailBind.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\Qt\workspace\War3Analysis\shared\ghidra-scripts\DumpEmailBind.java (HeadlessAnalyzer)  
+INFO  DumpEmailBind.java> DumpEmailBind -> D:\Qt\workspace\War3Analysis\artifacts\email-bind\game.dll-6f000000.txt (GhidraScript)  
+INFO  ANALYZING changes made by post scripts: file:///D:/Qt/workspace/War3Launcher/versions/1.26.0.6401/game.dll (HeadlessAnalyzer)  
+INFO  REPORT: Post-analysis succeeded for file: file:///D:/Qt/workspace/War3Launcher/versions/1.26.0.6401/game.dll (HeadlessAnalyzer)  
+INFO  /game.dll: file created (wuxia) (LocalFileSystem)  
+INFO  REPORT: Save succeeded for: /game.dll (War3_126:/game.dll) (HeadlessAnalyzer)  
+INFO  REPORT: Import succeeded (HeadlessAnalyzer)  

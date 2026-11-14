@@ -1,0 +1,60 @@
+PROGRAM /D:/Qt/workspace/War3Launcher/versions/1.27.0.52240/game.dll IMAGEBASE 6f000000
+
+##### ADDR 0x6f2ddc15 -> FUN_6f2ddbd0@6f2ddbd0
+
+=== FUNCTION FUN_6f2ddbd0 @ 6f2ddbd0 (RVA 0x2ddbd0) ===
+callers: 6f2c8810 6f2dca70 6f2c9100 6f2d9940 6f2dca90 6f2d9d30 6f2dcab0 6f2c84d0 6f2dcad0 6f2ce290 6f2d9b30 6f2cf510 6f2c90a0 6f2d9710 
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void __thiscall FUN_6f2ddbd0(int param_1,undefined4 param_2)
+
+{
+  float10 fVar1;
+  
+  _DAT_6fb662e8 = _DAT_6fb662e8 & 0xfffffffe;
+  (**(code **)(**(int **)(param_1 + 0x29c) + 0x10c))(0);
+  FUN_6f7c0f10();
+  FUN_6f7c0c20(0);
+  *(undefined4 *)(param_1 + 0x2a4) = param_2;
+  fVar1 = (float10)FUN_6f02a2f0(0);
+  FUN_6f3225f0(*(undefined4 *)(param_1 + 0x1d4),(float)fVar1,param_1,0x15);
+  return;
+}
+
+
+--- disasm ---
+6f2ddbd0  55                        PUSH EBP
+6f2ddbd1  8B EC                     MOV EBP,ESP
+6f2ddbd3  83 25 E8 62 B6 6F FE      AND dword ptr [0x6fb662e8],0xfffffffe
+6f2ddbda  56                        PUSH ESI
+6f2ddbdb  57                        PUSH EDI
+6f2ddbdc  8B F9                     MOV EDI,ECX
+6f2ddbde  6A 00                     PUSH 0x0
+6f2ddbe0  8B 8F 9C 02 00 00         MOV ECX,dword ptr [EDI + 0x29c]
+6f2ddbe6  8B 01                     MOV EAX,dword ptr [ECX]
+6f2ddbe8  FF 90 0C 01 00 00         CALL dword ptr [EAX + 0x10c]
+6f2ddbee  8D 8F EC 01 00 00         LEA ECX,[EDI + 0x1ec]
+6f2ddbf4  E8 17 33 4E 00            CALL 0x6f7c0f10
+6f2ddbf9  6A 00                     PUSH 0x0
+6f2ddbfb  8D 8F EC 01 00 00         LEA ECX,[EDI + 0x1ec]
+6f2ddc01  E8 1A 30 4E 00            CALL 0x6f7c0c20
+6f2ddc06  8B 45 08                  MOV EAX,dword ptr [EBP + 0x8]
+6f2ddc09  BA C8 93 97 6F            MOV EDX,0x6f9793c8
+6f2ddc0e  6A 00                     PUSH 0x0
+6f2ddc10  B9 DC 93 97 6F            MOV ECX,0x6f9793dc
+6f2ddc15  89 87 A4 02 00 00         MOV dword ptr [EDI + 0x2a4],EAX
+6f2ddc1b  E8 D0 C6 D4 FF            CALL 0x6f02a2f0
+6f2ddc20  6A 15                     PUSH 0x15
+6f2ddc22  57                        PUSH EDI
+6f2ddc23  51                        PUSH ECX
+6f2ddc24  D9 5D 08                  FSTP float ptr [EBP + 0x8]
+6f2ddc27  F3 0F 10 45 08            MOVSS XMM0,dword ptr [EBP + 0x8]
+6f2ddc2c  8D 8F 88 01 00 00         LEA ECX,[EDI + 0x188]
+6f2ddc32  F3 0F 11 04 24            MOVSS dword ptr [ESP],XMM0
+6f2ddc37  FF B7 D4 01 00 00         PUSH dword ptr [EDI + 0x1d4]
+6f2ddc3d  E8 AE 49 04 00            CALL 0x6f3225f0
+6f2ddc42  5F                        POP EDI
+6f2ddc43  5E                        POP ESI
+6f2ddc44  5D                        POP EBP
+6f2ddc45  C2 04 00                  RET 0x4
