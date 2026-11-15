@@ -119,43 +119,45 @@ RemoteControl / 游戏内聊天
 
 ---
 
-## 六、建议的控制接口设计
+## 六、已实现的控制接口（2026-11-14）
 
 ### 命令语法
 
 ```text
-move <x> <y>                 # RemoteControl
--move <x> <y>  /  /move <x> <y>   # 游戏内聊天（与 -buy 对称）
-可选：
--move attack <x> <y>         # 0x11 + 0xD000F
--move patrol <x> <y>         # 0x11 + 0xD0016
--stop                        # 0x10 + 0xD0004（急停，后续可做）
+move <x> <y>                      # RemoteControl（推荐；纯 IPC，无聊天）
+move attack|patrol|move <x> <y>
+-move / /move ...                 # 游戏内：Enqueue 拦截 + 组 0x11；默认擦除聊天文本
+aichat on|off                     # 是否允许游戏内指令回显到屏幕（默认 off）
 ```
 
-注意与现有 **`minimap move`** 命名空间隔离，避免歧义。
+`DebugConfig.ini [AiControl] ShowAiCommandChat=false`（默认）。
 
-### 实现分层（对齐 buy）
+注意与 **`minimap move`**（镜头）隔离。
 
-1. **`SharedMemory.h`**：`MSG_TYPE_UNIT_MOVE` + `UnitMovePayload { float x,y; uint32_t orderId; }`  
-2. **`AiControlManager`**：解析 `move`/`-move`/`/move`，发 IPC（与 `buy` 同级）  
-3. **`NetworkManager`**：聊天路径识别 `-move`/`/move`（对标 `/buy`）  
-4. **`war3hook_process.cpp`**：  
-   - `requestUnitMove(x,y,orderId)` 标记 pending  
-   - Action 帧：`若未选中己方英雄 → buildSelectionSwitchAction` → 组 `0x11` → `enqueue*RawAction`  
-5. **聊天 Hook**：`handleMoveCommand` 与 `handleBuyCommand` 并列  
+### 聊天防刷屏
 
-### 选中策略
+| 路径 | 是否发聊天 | 屏幕显示 |
+| :--- | :--- | :--- |
+| RemoteControl / Launcher IPC `MSG_TYPE_UNIT_MOVE` | **否** | 无 |
+| 大厅 NetworkManager `/move` | **否**（IPC） | 无 |
+| 游戏内键入 `-move` | 入队前擦除 0x60 文本（`ShowAiCommandChat=0`） | 本地 `*ppText` 置空 |
+| `aichat on` | 保留原文本 | 可见（仅调试） |
 
-- 优先：当前全局选中已是本地英雄 → 直接 `0x11`。  
-- 否则：用已有本地英雄 handle / 选人后缓存的 agent，切选中后再移动（复用 buy 的切选模式）。  
-- 不要用屏幕 `rclick` 做权威移动（分辨率/镜头/迷雾不可靠）；`rclick` 仅适合人工调试。
+**禁止**用 `say -move ...` 驱动移动（会走聊天注入）；AI 应只调 `move` / IPC。
+
+### 实现分层
+
+1. `MSG_TYPE_UNIT_MOVE` + `UnitMovePayload`；`MSG_TYPE_AI_COMMAND_SHOW_CHAT`
+2. `AiControlManager::moveUnit` / `setAiCommandShowChat`
+3. `NetworkManager` `/move|-move` → IPC
+4. `war3hook`：`requestUnitMove` → Action 帧选中英雄 → `0x11` 入队
+5. `tryInterceptUnitMoveChatAction`（Enqueue 擦除）+ `handleMoveCommand`（Recipient）
 
 ### 验收
 
-- Launcher RemoteControl：`move -1500 1200` → `OK`  
-- hook 日志出现 `[UnitMove] 0x11 ... order=0xD0003 x=... y=...`  
-- `War3Bot` `player_actions` 出现对应 `actionId=0x11`、同坐标  
-- 英雄实际走向该点（主机权威同步后）
+- `.\scripts\ai_control.ps1 move -- "-1500" 1200` → `OK move ...`
+- Heropick3 日志 `[UnitMove] 0x11 ...`
+- 屏幕无 `-move` 刷屏；`aichat on` 后游戏内键入才可见
 
 ---
 
@@ -165,14 +167,10 @@ move <x> <y>                 # RemoteControl
 | :--- | :--- | :--- |
 | `-minimap ping x y` | 盟友信号 | `CNetCommandAllyPing` / action `0x68` |
 | `-minimap move x y` | **仅本地镜头** | JASS `SetCameraPosition` |
-| `-move x y`（新） | **单位移动指令** | Action `0x11` + Order `0xD0003` |
-
-三者都接收世界坐标，但语义完全不同；文档与帮助字符串务必分开。
+| `-move x y` / RemoteControl `move` | **单位移动指令** | Action `0x11` + Order `0xD0003` |
 
 ---
 
 ## 八、总结
 
-当前代码路径**可行**，且与购买同属「组 Action → EnqueuePlayerAction」范式。  
-**不需要**为移动再逆向出专用「控制单位移动函数」；需要的是按已证实的 **`0x11` 布局组包**，并保证目标单位被选中。  
-可选抓一条真实右键包做 flags 校准后即可开工实现 AI 接口。
+已按 buy 同款落地：`EnqueuePlayerAction` + Action `0x11`；AI 主路径纯 IPC，默认禁止聊天回显。
