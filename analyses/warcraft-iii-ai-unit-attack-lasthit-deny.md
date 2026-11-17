@@ -2,7 +2,8 @@
 
 > **日期**：2026-11-14  
 > **代码**：`War3Launcher/hooker/war3hook_ai.cpp`、`AiControlManager.cpp`、`scripts/ai_control.ps1`  
-> **关联**：[`warcraft-iii-ai-hero-move-command.md`](./warcraft-iii-ai-hero-move-command.md)
+> **关联**：[`warcraft-iii-ai-hero-move-command.md`](./warcraft-iii-ai-hero-move-command.md)  
+> **真人习惯（方案）**：[`dota-player-lasthit-habit-recorder.md`](./dota-player-lasthit-habit-recorder.md)
 
 ## 结论
 

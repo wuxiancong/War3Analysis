@@ -1,5 +1,7 @@
 # Warcraft III 战争迷雾的实现位置与机制（Game.dll 1.26 + DotA 6.83d war3map.j）
 
+> **绕视野 / AI 操作方案（续）**：[`dota-683d-vision-and-fog-juke.md`](./dota-683d-vision-and-fog-juke.md)
+
 日期：2026-11-11
 样本：
 - `C:\Program Files (x86)\iCCup Warcraft III\game.dll`（与 `War3Launcher\versions\1.26.0.6401\game.dll` MD5 相同，基址 `0x6F000000`）

@@ -1,4 +1,4 @@
-﻿# War3Analysis
+# War3Analysis
 
 魔兽争霸 III 逆向分析工作区，用于整理不同版本的二进制样本、Ghidra 项目、分析结论和可复现的验证步骤。
 
@@ -74,6 +74,9 @@ War3Analysis/
 - [Warcraft III 1.27 相机视距与鼠标滚轮缩放](analyses/warcraft-iii-1.27-camera-distance-mouse-wheel.md)（[思维导图](analyses/warcraft-iii-1.27-camera-distance-mouse-wheel-mindmap.md)）
 - [Warcraft III 小地图视口小长方体（相机框）移动逻辑](analyses/warcraft-iii-minimap-viewport-rect-move.md)（[思维导图](analyses/warcraft-iii-minimap-viewport-rect-move-mindmap.md)；产物 `artifacts/minimap-viewport/`）
 - [AI 英雄移动命令（`-move`/`/move`）可行性：复用 EnqueuePlayerAction + Action `0x11`](analyses/warcraft-iii-ai-hero-move-command.md)（[思维导图](analyses/warcraft-iii-ai-hero-move-command-mindmap.md)）
+- [DotA AI 自动拉野（`-camp pull/auto/stack`）实现方案：无需新逆向 game.dll](analyses/dota-ai-neutral-creep-pull.md)（[思维导图](analyses/dota-ai-neutral-creep-pull-mindmap.md)）
+- [DotA AI 智能购买与使用物品（`-use`/`-items`/`-autoitem`/`-courier`/`-rune`/`-ward`）实现方案](analyses/dota-ai-smart-item-buy-and-use.md)（[思维导图](analyses/dota-ai-smart-item-buy-and-use-mindmap.md)）
+- [DotA AI 10ms 动态玩家状态上报系统（`-state` / `SharedData::AiPlayerLiveState`）设计方案：免逐版本逆向](analyses/dota-ai-player-live-state-10ms-reporter.md)（[思维导图](analyses/dota-ai-player-live-state-10ms-reporter-mindmap.md)）
 - [Warcraft III 1.27 `/fps` 显示值怎么计算](analyses/warcraft-iii-1.27-fps-display-calculation.md)（[思维导图](analyses/warcraft-iii-1.27-fps-display-calculation-mindmap.md)）
 - [Warcraft III 1.27 FPS 限制与解除路径](analyses/warcraft-iii-1.27-fps-unlock.md)（[思维导图](analyses/warcraft-iii-1.27-fps-unlock-mindmap.md)）
 - [Warcraft III 各版本 D3D Reset 边界与分辨率切换分析](analyses/warcraft-iii-all-versions-resolution-reset-boundaries.md)（[思维导图](analyses/warcraft-iii-all-versions-resolution-reset-boundaries-mindmap.md)）
