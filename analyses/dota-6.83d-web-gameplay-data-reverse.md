@@ -119,6 +119,8 @@ node D:\Qt\workspace\War3Analysis\shared\scripts\mpq_extract_known.cjs "D:\Maps\
 
 ## 6. 出兵与成长（`war3map.j`）
 
+> **兵线轨迹 / 卡兵前置（续）**：[`dota-lane-creep-trajectory.md`](./dota-lane-creep-trajectory.md)
+
 证据摘录见 `artifacts/dota-web-gameplay/war3map.j-creep-spawn-excerpt.txt`。
 
 | 行号 | 代码 | 含义 |

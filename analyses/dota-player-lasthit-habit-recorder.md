@@ -11,6 +11,7 @@
 | **代码现状** | `War3Launcher/hooker/war3hook_ai.cpp`（`AiLastHitRoutine` / `humanmode` / S-Cancel·Strafe·Hybrid） |
 | **数据源** | `War3Bot` `data/player_actions/<player>/match_*.dat`；可选 hook 增强采样 |
 | **配套思维导图** | [`dota-player-lasthit-habit-recorder-mindmap.md`](./dota-player-lasthit-habit-recorder-mindmap.md) |
+| **相关（卡兵）** | [`dota-player-block-habit-recorder.md`](./dota-player-block-habit-recorder.md)（同级 `data/block_habits/`） |
 
 ---
 

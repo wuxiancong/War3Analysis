@@ -10,7 +10,7 @@
 | **机制依据** | [`dota-hero-skill-point-learn-flow.md`](./dota-hero-skill-point-learn-flow.md)、[`dota-ai-skill-command-implementation.md`](./dota-ai-skill-command-implementation.md) |
 | **数据源** | `War3Bot` `data/player_actions/<player>/match_*.dat`；解析逻辑对标 `matchstatsprovider.cpp` |
 | **配套思维导图** | [`dota-player-learn-habit-recorder-mindmap.md`](./dota-player-learn-habit-recorder-mindmap.md) |
-| **相关（补刀）** | [`dota-player-lasthit-habit-recorder.md`](./dota-player-lasthit-habit-recorder.md)（正补/反补习惯，同级 `data/`） |
+| **相关** | 补刀 [`dota-player-lasthit-habit-recorder.md`](./dota-player-lasthit-habit-recorder.md)；卡兵 [`dota-player-block-habit-recorder.md`](./dota-player-block-habit-recorder.md)（同级 `data/`） |
 
 ---
 

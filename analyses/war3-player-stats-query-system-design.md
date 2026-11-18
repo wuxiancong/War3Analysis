@@ -224,6 +224,16 @@ sign = HMAC-SHA256( userName + "." + t + "." + nonce + "." + session_id , APP_SE
 | `RoomComponent.qml` | 右键「查看战绩」；槽位战绩行单击跳转 |
 | `MatchComponent.qml` / `main.qml` | 好友战绩与 `viewPlayerStatsRequested` → Tab0 |
 
+### 5.1.2 本地联调适配（War3Angular + War3Bot，2026-11-17）
+
+| 项 | 说明 |
+| :--- | :--- |
+| Angular `.env` | `APP_MODE=local`，`DATABASE_URL=127.0.0.1`，`PUBLIC_API_BASE=http://127.0.0.1:4000/api` |
+| `runtime-config.ts` | 统一 local/test/production；`isEligibleLadderMode` 仅放行 5v5 / SOLO |
+| 结算门禁 | **非正规模式永不落库**；debug/local 允许人数不足但仍须双方各≥1 |
+| War3Bot | `ladder.api_base`→本机 Angular；上报真实 `mode` + `debugMode`/`localMode` |
+| 注意 | `users.db`（bnetd 账号）≠ 天梯 MySQL；`lib/sqlite3/x86` 只是 SQLite 源码 |
+
 ### 5.1.1 UI 迭代（致敬 [iCCup Gaming Profile](https://iccup.com/dota/gamingprofile/HanzoSolomon)）
 
 | 项 | 说明 |
