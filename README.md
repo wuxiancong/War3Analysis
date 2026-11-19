@@ -87,7 +87,10 @@ War3Analysis/
 - [全版本地图大小限制与补丁](analyses/warcraft-iii-all-versions-map-size-unlock.md)（[思维导图](analyses/warcraft-iii-all-versions-map-size-unlock-mindmap.md)，补丁：`patch/grok/dll_game/<版本>-map-size-unlock/`）
 - [Warcraft III 1.27 Battle.net 按钮状态分析](analyses/warcraft-iii-1.27-battlenet-button.md)
 - [Warcraft III 战网登录「密码不正确」对话框](analyses/warcraft-iii-battlenet-badpassword-dialog.md)（[思维导图](analyses/warcraft-iii-battlenet-badpassword-dialog-mindmap.md)）
+- [DotA 6.83d 吃树（Tango）与砍树（Quelling Blade）逆向分析及 AI 接口设计](analyses/dota-6.83d-eat-and-cut-tree-reverse.md)（[思维导图](analyses/dota-6.83d-eat-and-cut-tree-reverse-mindmap.md)；`EnumWidgetsInRect` / `GetWidgetWorldPos` 全 11 版 RVA + `AiControl` 查树/吃树/砍树接口）
+- [DotA 6.83d 吃大药、吃净化药水及全部主动物品机制逆向与命令设计](analyses/dota-6.83d-active-items-and-consumables-reverse.md)（[思维导图](analyses/dota-6.83d-active-items-and-consumables-reverse-mindmap.md)；`GetItemSlotOrderId` + `CAbilityRegeneration::GetOrderFlags` 全 11 版 RVA、四组装备对比、全量物品五分类与 `-use`/`-items` 命令规范）
 - [DotA v6.83d SD 三选一英雄候选链路分析](analyses/dota-6.83d-single-draft-candidates.md)
+- [DotA 6.83d 英雄使用技能（Cast）深度逆向与 AI 控制体系设计（结合现有代码审计）](analyses/dota-6.83d-hero-ability-cast-deep-reverse-and-ai-design.md)（[思维导图](analyses/dota-6.83d-hero-ability-cast-deep-reverse-and-ai-design-mindmap.md)；盘点已有 4 篇文档、`CUnit`/`CAbilitySpell` 实时状态与 `CheckCanCast`/`GetCooldownRemaining` 全 11 版 RVA、Action `0x10/0x11/0x12` Flags 位掩码、112 英雄 8 大缺陷定位与分阶段升级蓝图）
 
 ## 注意事项
 

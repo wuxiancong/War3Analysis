@@ -10,6 +10,7 @@
 | **代码基线** | `D:\Qt\workspace\War3Launcher\hooker\war3hook_ai.cpp`（2089 行版本）、`war3hook_jass.cpp`、`shared/SharedMemory.h` |
 | **前置文档** | [`warcraft-iii-ai-unit-attack-lasthit-deny.md`](./warcraft-iii-ai-unit-attack-lasthit-deny.md)、[`warcraft-iii-ai-hero-move-command.md`](./warcraft-iii-ai-hero-move-command.md) |
 | **配套思维导图** | [`dota-ai-neutral-creep-pull-mindmap.md`](./dota-ai-neutral-creep-pull-mindmap.md) |
+| **封野几何** | [`dota-neutral-camp-spawn-box.md`](./dota-neutral-camp-spawn-box.md)（AABB，非 600 圆） |
 
 ---
 
