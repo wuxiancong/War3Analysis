@@ -91,6 +91,7 @@ War3Analysis/
 - [DotA 6.83d 吃大药、吃净化药水及全部主动物品机制逆向与命令设计](analyses/dota-6.83d-active-items-and-consumables-reverse.md)（[思维导图](analyses/dota-6.83d-active-items-and-consumables-reverse-mindmap.md)；`GetItemSlotOrderId` + `CAbilityRegeneration::GetOrderFlags` 全 11 版 RVA、四组装备对比、全量物品五分类与 `-use`/`-items` 命令规范）
 - [DotA v6.83d SD 三选一英雄候选链路分析](analyses/dota-6.83d-single-draft-candidates.md)
 - [DotA 6.83d 英雄使用技能（Cast）深度逆向与 AI 控制体系设计（结合现有代码审计）](analyses/dota-6.83d-hero-ability-cast-deep-reverse-and-ai-design.md)（[思维导图](analyses/dota-6.83d-hero-ability-cast-deep-reverse-and-ai-design-mindmap.md)；盘点已有 4 篇文档、`CUnit`/`CAbilitySpell` 实时状态与 `CheckCanCast`/`GetCooldownRemaining` 全 11 版 RVA、Action `0x10/0x11/0x12` Flags 位掩码、112 英雄 8 大缺陷定位与分阶段升级蓝图）
+- [Warcraft III 单位移动字段（坐标、朝向、移速、当前指令）](analyses/war3-unit-movement-fields.md)（[思维导图](analyses/war3-unit-movement-fields-mindmap.md)；11 版 JASS RVA，1.22–1.27 的 `CUnit` 偏移，iCCup 实机只读样本在 `artifacts/unit-movement/`）
 
 ## 注意事项
 
