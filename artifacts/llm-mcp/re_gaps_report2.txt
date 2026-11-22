@@ -1,0 +1,503 @@
+=== 1.27 (D:\Qt\workspace\War3Launcher\versions\1.27.0.52240\Game.dll) ===
+
+[CUnit::ResetCooldown @ RVA 0x471690]
+  6F471690: 55                 push        ebp
+  6F471691: 8B EC              mov         ebp,esp
+  6F471693: 6A FF              push        0FFFFFFFFh
+  6F471695: 68 B0 50 8F 6F     push        6F8F50B0h
+  6F47169A: 64 A1 00 00 00 00  mov         eax,dword ptr fs:[00000000h]
+  6F4716A0: 50                 push        eax
+  6F4716A1: 83 EC 0C           sub         esp,0Ch
+  6F4716A4: 53                 push        ebx
+  6F4716A5: 56                 push        esi
+  6F4716A6: 57                 push        edi
+  6F4716A7: A1 74 A7 B6 6F     mov         eax,dword ptr ds:[6FB6A774h]
+  6F4716AC: 33 C5              xor         eax,ebp
+  6F4716AE: 50                 push        eax
+  6F4716AF: 8D 45 F4           lea         eax,[ebp-0Ch]
+  6F4716B2: 64 A3 00 00 00 00  mov         dword ptr fs:[00000000h],eax
+  6F4716B8: 8B C1              mov         eax,ecx
+  6F4716BA: 89 45 E8           mov         dword ptr [ebp-18h],eax
+  6F4716BD: 33 F6              xor         esi,esi
+  6F4716BF: 89 75 EC           mov         dword ptr [ebp-14h],esi
+  6F4716C2: 8D 88 DC 01 00 00  lea         ecx,[eax+000001DCh]
+  6F4716C8: C7 45 FC 01 00 00  mov         dword ptr [ebp-4],1
+  6F4716CF: 8B 41 04           mov         eax,dword ptr [ecx+4]
+  6F4716D2: 23 01              and         eax,dword ptr [ecx]
+  6F4716D4: 83 F8 FF           cmp         eax,0FFFFFFFFh
+  6F4716D7: 74 7E              je          6F471757
+  6F4716D9: E8 72 2A BD FF     call        6F044150
+  6F4716DE: 85 C0              test        eax,eax
+  6F4716E0: 74 75              je          6F471757
+  6F4716E2: 8D 48 24           lea         ecx,[eax+24h]
+  6F4716E5: 8B F8              mov         edi,eax
+  6F4716E7: 8B 41 04           mov         eax,dword ptr [ecx+4]
+  6F4716EA: 23 01              and         eax,dword ptr [ecx]
+  6F4716EC: 83 F8 FF           cmp         eax,0FFFFFFFFh
+  6F4716EF: 75 04              jne         6F4716F5
+  6F4716F1: 33 C0              xor         eax,eax
+  6F4716F3: EB 05              jmp         6F4716FA
+  6F4716F5: E8 56 2A BD FF     call        6F044150
+  6F4716FA: 89 45 F0           mov         dword ptr [ebp-10h],eax
+  6F4716FD: 85 FF              test        edi,edi
+  6F4716FF: 74 1F              je          6F471720
+  6F471701: E8 0A 6C F8 FF     call        6F3F8310
+  6F471706: 8B 17              mov         edx,dword ptr [edi]
+  6F471708: 8B CF              mov         ecx,edi
+  6F47170A: 8B D8              mov         ebx,eax
+  6F47170C: FF 52 1C           call        dword ptr [edx+1Ch]
+  6F47170F: 8B D3              mov         edx,ebx
+  6F471711: 8B C8              mov         ecx,eax
+  6F471713: E8 D8 E4 BB FF     call        6F02FBF0
+  6F471718: 85 C0              test        eax,eax
+  6F47171A: 74 04              je          6F471720
+  6F47171C: 8B DF              mov         ebx,edi
+  6F47171E: EB 02              jmp         6F471722
+  6F471720: 33 DB              xor         ebx,ebx
+  6F471722: 3B F3              cmp         esi,ebx
+  6F471724: 74 1F              je          6F471745
+  6F471726: 85 F6              test        esi,esi
+  6F471728: 74 0B              je          6F471735
+  6F47172A: FF 4E 04           dec         dword ptr [esi+4]
+  6F47172D: 75 06              jne         6F471735
+  6F47172F: 8B 06              mov         eax,dword ptr [esi]
+  6F471731: 8B CE              mov         ecx,esi
+  6F471733: FF 10              call        dword ptr [eax]
+  6F471735: 85 DB              test        ebx,ebx
+  6F471737: 74 07              je          6F471740
+  6F471739: 85 FF              test        edi,edi
+  6F47173B: 74 03              je          6F471740
+  6F47173D: FF 47 04           inc         dword ptr [edi+4]
+  6F471740: 8B F3              mov         esi,ebx
+  6F471742: 89 75 EC           mov         dword ptr [ebp-14h],esi
+  6F471745: 85 F6              test        esi,esi
+  6F471747: 74 07              je          6F471750
+  6F471749: 8B CE              mov         ecx,esi
+  6F47174B: E8 50 8B F6 FF     call        6F3DA2A0
+  6F471750: 8B 45 F0           mov         eax,dword ptr [ebp-10h]
+  6F471753: 85 C0              test        eax,eax
+  6F471755: 75 8B              jne         6F4716E2
+  6F471757: 8B 4D E8           mov         ecx,dword ptr [ebp-18h]
+  6F47175A: E8 F1 71 EE FF     call        6F358950
+  6F47175F: C7 45 FC FF FF FF  mov         dword ptr [ebp-4],0FFFFFFFFh
+  6F471766: 85 F6              test        esi,esi
+  6F471768: 74 0B              je          6F471775
+  6F47176A: FF 4E 04           dec         dword ptr [esi+4]
+  6F47176D: 75 06              jne         6F471775
+  6F47176F: 8B 06              mov         eax,dword ptr [esi]
+  6F471771: 8B CE              mov         ecx,esi
+  6F471773: FF 10              call        dword ptr [eax]
+  6F471775: 8B 4D F4           mov         ecx,dword ptr [ebp-0Ch]
+  6F471778: 64 89 0D 00 00 00  mov         dword ptr fs:[00000000h],ecx
+  6F47177F: 59                 pop         ecx
+  6F471780: 5F                 pop         edi
+  6F471781: 5E                 pop         esi
+  6F471782: 5B                 pop         ebx
+  6F471783: 8B E5              mov         esp,ebp
+  6F471785: 5D                 pop         ebp
+  6F471786: C3                 ret
+  6F471787: CC                 int         3
+  6F471788: CC                 int         3
+  6F471789: CC                 int         3
+  6F47178A: CC                 int         3
+  6F47178B: CC                 int         3
+  6F47178C: CC                 int         3
+  6F47178D: CC                 int         3
+  6F47178E: CC                 int         3
+  6F47178F: CC                 int         3
+  6F471790: 55                 push        ebp
+
+[CUnit::CountBuffsEx @ RVA 0x46E630]
+  6F46E630: 55                 push        ebp
+  6F46E631: 8B EC              mov         ebp,esp
+  6F46E633: 51                 push        ecx
+  6F46E634: 8B 81 E0 01 00 00  mov         eax,dword ptr [ecx+000001E0h]
+  6F46E63A: 81 C1 DC 01 00 00  add         ecx,1DCh
+  6F46E640: 57                 push        edi
+  6F46E641: 33 FF              xor         edi,edi
+  6F46E643: 89 7D FC           mov         dword ptr [ebp-4],edi
+  6F46E646: 23 01              and         eax,dword ptr [ecx]
+  6F46E648: 83 F8 FF           cmp         eax,0FFFFFFFFh
+  6F46E64B: 0F 84 2E 01 00 00  je          6F46E77F
+  6F46E651: 53                 push        ebx
+  6F46E652: E8 F9 5A BD FF     call        6F044150
+  6F46E657: 8B D8              mov         ebx,eax
+  6F46E659: 85 DB              test        ebx,ebx
+  6F46E65B: 0F 84 14 01 00 00  je          6F46E775
+  6F46E661: 56                 push        esi
+  6F46E662: 8B 43 28           mov         eax,dword ptr [ebx+28h]
+  6F46E665: 8D 4B 24           lea         ecx,[ebx+24h]
+  6F46E668: 23 01              and         eax,dword ptr [ecx]
+  6F46E66A: 8B F3              mov         esi,ebx
+  6F46E66C: 83 F8 FF           cmp         eax,0FFFFFFFFh
+  6F46E66F: 75 04              jne         6F46E675
+  6F46E671: 33 DB              xor         ebx,ebx
+  6F46E673: EB 07              jmp         6F46E67C
+  6F46E675: E8 D6 5A BD FF     call        6F044150
+  6F46E67A: 8B D8              mov         ebx,eax
+  6F46E67C: 85 F6              test        esi,esi
+  6F46E67E: 0F 84 DE 00 00 00  je          6F46E762
+  6F46E684: 8B 06              mov         eax,dword ptr [esi]
+  6F46E686: 8B CE              mov         ecx,esi
+  6F46E688: FF 90 E0 01 00 00  call        dword ptr [eax+000001E0h]
+  6F46E68E: 85 C0              test        eax,eax
+  6F46E690: 75 12              jne         6F46E6A4
+  6F46E692: 8B 06              mov         eax,dword ptr [esi]
+  6F46E694: 8B CE              mov         ecx,esi
+  6F46E696: FF 90 E4 01 00 00  call        dword ptr [eax+000001E4h]
+  6F46E69C: 85 C0              test        eax,eax
+  6F46E69E: 0F 84 BE 00 00 00  je          6F46E762
+  6F46E6A4: 8B 06              mov         eax,dword ptr [esi]
+  6F46E6A6: 8B CE              mov         ecx,esi
+  6F46E6A8: FF 90 E4 01 00 00  call        dword ptr [eax+000001E4h]
+  6F46E6AE: 8B F8              mov         edi,eax
+  6F46E6B0: 8B CE              mov         ecx,esi
+  6F46E6B2: 8B 06              mov         eax,dword ptr [esi]
+  6F46E6B4: FF 90 E0 01 00 00  call        dword ptr [eax+000001E0h]
+  6F46E6BA: 8B 4D 1C           mov         ecx,dword ptr [ebp+1Ch]
+  6F46E6BD: 8B 55 20           mov         edx,dword ptr [ebp+20h]
+  6F46E6C0: 85 FF              test        edi,edi
+  6F46E6C2: 74 0C              je          6F46E6D0
+  6F46E6C4: 85 C9              test        ecx,ecx
+  6F46E6C6: 75 08              jne         6F46E6D0
+  6F46E6C8: 85 D2              test        edx,edx
+  6F46E6CA: 0F 85 8F 00 00 00  jne         6F46E75F
+  6F46E6D0: 85 C0              test        eax,eax
+  6F46E6D2: 74 0C              je          6F46E6E0
+  6F46E6D4: 85 D2              test        edx,edx
+  6F46E6D6: 75 08              jne         6F46E6E0
+  6F46E6D8: 85 C9              test        ecx,ecx
+  6F46E6DA: 0F 85 7F 00 00 00  jne         6F46E75F
+  6F46E6E0: 83 7D 14 00        cmp         dword ptr [ebp+14h],0
+  6F46E6E4: 75 0E              jne         6F46E6F4
+  6F46E6E6: 8B 06              mov         eax,dword ptr [esi]
+  6F46E6E8: 8B CE              mov         ecx,esi
+  6F46E6EA: FF 90 E8 01 00 00  call        dword ptr [eax+000001E8h]
+  6F46E6F0: 85 C0              test        eax,eax
+  6F46E6F2: 75 6B              jne         6F46E75F
+  6F46E6F4: 83 7D 10 00        cmp         dword ptr [ebp+10h],0
+  6F46E6F8: 75 0E              jne         6F46E708
+  6F46E6FA: 8B 06              mov         eax,dword ptr [esi]
+  6F46E6FC: 8B CE              mov         ecx,esi
+  6F46E6FE: FF 90 2C 03 00 00  call        dword ptr [eax+0000032Ch]
+  6F46E704: 85 C0              test        eax,eax
+  6F46E706: 75 57              jne         6F46E75F
+  6F46E708: 83 7D 08 00        cmp         dword ptr [ebp+8],0
+  6F46E70C: 74 0E              je          6F46E71C
+  6F46E70E: 8B 06              mov         eax,dword ptr [esi]
+  6F46E710: 8B CE              mov         ecx,esi
+  6F46E712: FF 90 DC 01 00 00  call        dword ptr [eax+000001DCh]
+  6F46E718: 85 C0              test        eax,eax
+  6F46E71A: 74 43              je          6F46E75F
+  6F46E71C: 83 7D 0C 00        cmp         dword ptr [ebp+0Ch],0
+  6F46E720: 74 0E              je          6F46E730
+  6F46E722: 8B 06              mov         eax,dword ptr [esi]
+  6F46E724: 8B CE              mov         ecx,esi
+  6F46E726: FF 90 D8 01 00 00  call        dword ptr [eax+000001D8h]
+  6F46E72C: 85 C0              test        eax,eax
+  6F46E72E: 74 2F              je          6F46E75F
+  6F46E730: 83 7D 18 00        cmp         dword ptr [ebp+18h],0
+  6F46E734: 74 11              je          6F46E747
+  6F46E736: 8B 06              mov         eax,dword ptr [esi]
+  6F46E738: 8B CE              mov         ecx,esi
+  6F46E73A: FF 75 24           push        dword ptr [ebp+24h]
+  6F46E73D: FF 90 30 03 00 00  call        dword ptr [eax+00000330h]
+  6F46E743: 85 C0              test        eax,eax
+  6F46E745: 74 18              je          6F46E75F
+  6F46E747: 83 7D 28 00        cmp         dword ptr [ebp+28h],0
+  6F46E74B: 75 09              jne         6F46E756
+  6F46E74D: F7 46 20 00 00 00  test        dword ptr [esi+20h],20000000h
+  6F46E754: 75 09              jne         6F46E75F
+  6F46E756: 8B 7D FC           mov         edi,dword ptr [ebp-4]
+  6F46E759: 47                 inc         edi
+  6F46E75A: 89 7D FC           mov         dword ptr [ebp-4],edi
+  6F46E75D: EB 03              jmp         6F46E762
+  6F46E75F: 8B 7D FC           mov         edi,dword ptr [ebp-4]
+  6F46E762: 85 DB              test        ebx,ebx
+  6F46E764: 0F 85 F8 FE FF FF  jne         6F46E662
+  6F46E76A: 5E                 pop         esi
+  6F46E76B: 5B                 pop         ebx
+  6F46E76C: 8B C7              mov         eax,edi
+  6F46E76E: 5F                 pop         edi
+  6F46E76F: 8B E5              mov         esp,ebp
+  6F46E771: 5D                 pop         ebp
+  6F46E772: C2 24 00           ret         24h
+  6F46E775: 5B                 pop         ebx
+  6F46E776: 8B C7              mov         eax,edi
+  6F46E778: 5F                 pop         edi
+  6F46E779: 8B E5              mov         esp,ebp
+  6F46E77B: 5D                 pop         ebp
+  6F46E77C: C2 24 00           ret         24h
+  6F46E77F: 8B C7              mov         eax,edi
+  6F46E781: 5F                 pop         edi
+  6F46E782: 8B E5              mov         esp,ebp
+  6F46E784: 5D                 pop         ebp
+  6F46E785: C2 24 00           ret         24h
+  6F46E788: CC                 int         3
+  6F46E789: CC                 int         3
+  6F46E78A: CC                 int         3
+  6F46E78B: CC                 int         3
+  6F46E78C: CC                 int         3
+  6F46E78D: CC                 int         3
+  6F46E78E: CC                 int         3
+  6F46E78F: CC                 int         3
+  6F46E790: 55                 push        ebp
+=== 1.26 (D:\Qt\workspace\War3Launcher\versions\1.26.0.6401\Game.dll) ===
+
+[CUnit::ResetCooldown @ RVA 0x78C00]
+  6F078C00: 6A FF              push        0FFFFFFFFh
+  6F078C02: 68 18 E7 7E 6F     push        6F7EE718h
+  6F078C07: 64 A1 00 00 00 00  mov         eax,dword ptr fs:[00000000h]
+  6F078C0D: 50                 push        eax
+  6F078C0E: 83 EC 08           sub         esp,8
+  6F078C11: 53                 push        ebx
+  6F078C12: 55                 push        ebp
+  6F078C13: 56                 push        esi
+  6F078C14: 57                 push        edi
+  6F078C15: A1 40 E1 AA 6F     mov         eax,dword ptr ds:[6FAAE140h]
+  6F078C1A: 33 C4              xor         eax,esp
+  6F078C1C: 50                 push        eax
+  6F078C1D: 8D 44 24 1C        lea         eax,[esp+1Ch]
+  6F078C21: 64 A3 00 00 00 00  mov         dword ptr fs:[00000000h],eax
+  6F078C27: 8B F1              mov         esi,ecx
+  6F078C29: 89 74 24 18        mov         dword ptr [esp+18h],esi
+  6F078C2D: 6A 00              push        0
+  6F078C2F: 8D 4C 24 18        lea         ecx,[esp+18h]
+  6F078C33: E8 E8 EA FF FF     call        6F077720
+  6F078C38: 8B 96 DC 01 00 00  mov         edx,dword ptr [esi+000001DCh]
+  6F078C3E: 8B 86 E0 01 00 00  mov         eax,dword ptr [esi+000001E0h]
+  6F078C44: 8D 8E DC 01 00 00  lea         ecx,[esi+000001DCh]
+  6F078C4A: 23 C2              and         eax,edx
+  6F078C4C: 83 F8 FF           cmp         eax,0FFFFFFFFh
+  6F078C4F: C7 44 24 24 00 00  mov         dword ptr [esp+24h],0
+  6F078C57: 0F 84 A9 00 00 00  je          6F078D06
+  6F078C5D: E8 4E FA 3F 00     call        6F4786B0
+  6F078C62: 8B E8              mov         ebp,eax
+  6F078C64: 85 ED              test        ebp,ebp
+  6F078C66: 0F 84 9A 00 00 00  je          6F078D06
+  6F078C6C: 8B 74 24 14        mov         esi,dword ptr [esp+14h]
+  6F078C70: 8B 55 24           mov         edx,dword ptr [ebp+24h]
+  6F078C73: 8B 45 28           mov         eax,dword ptr [ebp+28h]
+  6F078C76: 8D 4D 24           lea         ecx,[ebp+24h]
+  6F078C79: 23 C2              and         eax,edx
+  6F078C7B: 83 F8 FF           cmp         eax,0FFFFFFFFh
+  6F078C7E: 8B FD              mov         edi,ebp
+  6F078C80: 75 04              jne         6F078C86
+  6F078C82: 33 ED              xor         ebp,ebp
+  6F078C84: EB 0B              jmp         6F078C91
+  6F078C86: E8 25 FA 3F 00     call        6F4786B0
+  6F078C8B: 8B 74 24 14        mov         esi,dword ptr [esp+14h]
+  6F078C8F: 8B E8              mov         ebp,eax
+  6F078C91: 85 FF              test        edi,edi
+  6F078C93: 74 25              je          6F078CBA
+  6F078C95: E8 96 02 FB FF     call        6F028F30
+  6F078C9A: 8B F0              mov         esi,eax
+  6F078C9C: 8B 07              mov         eax,dword ptr [edi]
+  6F078C9E: 8B 50 1C           mov         edx,dword ptr [eax+1Ch]
+  6F078CA1: 8B CF              mov         ecx,edi
+  6F078CA3: FF D2              call        edx
+  6F078CA5: 8B D6              mov         edx,esi
+  6F078CA7: 8B C8              mov         ecx,eax
+  6F078CA9: E8 62 8C 3F 00     call        6F471910
+  6F078CAE: 85 C0              test        eax,eax
+  6F078CB0: 8B 74 24 14        mov         esi,dword ptr [esp+14h]
+  6F078CB4: 74 04              je          6F078CBA
+  6F078CB6: 8B DF              mov         ebx,edi
+  6F078CB8: EB 02              jmp         6F078CBC
+  6F078CBA: 33 DB              xor         ebx,ebx
+  6F078CBC: 3B F3              cmp         esi,ebx
+  6F078CBE: 74 2B              je          6F078CEB
+  6F078CC0: 85 F6              test        esi,esi
+  6F078CC2: 74 15              je          6F078CD9
+  6F078CC4: 83 46 04 FF        add         dword ptr [esi+4],0FFFFFFFFh
+  6F078CC8: 83 7E 04 00        cmp         dword ptr [esi+4],0
+  6F078CCC: 8D 46 04           lea         eax,[esi+4]
+  6F078CCF: 8B CE              mov         ecx,esi
+  6F078CD1: 75 06              jne         6F078CD9
+  6F078CD3: 8B 01              mov         eax,dword ptr [ecx]
+  6F078CD5: 8B 10              mov         edx,dword ptr [eax]
+  6F078CD7: FF D2              call        edx
+  6F078CD9: 85 DB              test        ebx,ebx
+  6F078CDB: 74 08              je          6F078CE5
+  6F078CDD: 85 FF              test        edi,edi
+  6F078CDF: 74 04              je          6F078CE5
+  6F078CE1: 83 47 04 01        add         dword ptr [edi+4],1
+  6F078CE5: 8B F3              mov         esi,ebx
+  6F078CE7: 89 74 24 14        mov         dword ptr [esp+14h],esi
+  6F078CEB: 85 F6              test        esi,esi
+  6F078CED: 74 0B              je          6F078CFA
+  6F078CEF: 8B CE              mov         ecx,esi
+  6F078CF1: E8 1A F1 FB FF     call        6F037E10
+  6F078CF6: 8B 74 24 14        mov         esi,dword ptr [esp+14h]
+  6F078CFA: 85 ED              test        ebp,ebp
+  6F078CFC: 0F
+  6F078CFD: 85 6E FF           test        dword ptr [esi-1],ebp
+  6F078D00: FF
+
+[CUnit::CountBuffsEx @ RVA 0x76E60]
+  6F076E60: 51                 push        ecx
+  6F076E61: 8B 81 E0 01 00 00  mov         eax,dword ptr [ecx+000001E0h]
+  6F076E67: 23 81 DC 01 00 00  and         eax,dword ptr [ecx+000001DCh]
+  6F076E6D: 81 C1 DC 01 00 00  add         ecx,1DCh
+  6F076E73: 56                 push        esi
+  6F076E74: 33 F6              xor         esi,esi
+  6F076E76: 83 F8 FF           cmp         eax,0FFFFFFFFh
+  6F076E79: 89 74 24 04        mov         dword ptr [esp+4],esi
+  6F076E7D: 0F 84 46 01 00 00  je          6F076FC9
+  6F076E83: 53                 push        ebx
+  6F076E84: E8 27 18 40 00     call        6F4786B0
+  6F076E89: 8B D8              mov         ebx,eax
+  6F076E8B: 85 DB              test        ebx,ebx
+  6F076E8D: 0F 84 2E 01 00 00  je          6F076FC1
+  6F076E93: 57                 push        edi
+  6F076E94: 8B 53 28           mov         edx,dword ptr [ebx+28h]
+  6F076E97: 23 53 24           and         edx,dword ptr [ebx+24h]
+  6F076E9A: 8D 4B 24           lea         ecx,[ebx+24h]
+  6F076E9D: 83 FA FF           cmp         edx,0FFFFFFFFh
+  6F076EA0: 8B F3              mov         esi,ebx
+  6F076EA2: 75 04              jne         6F076EA8
+  6F076EA4: 33 DB              xor         ebx,ebx
+  6F076EA6: EB 07              jmp         6F076EAF
+  6F076EA8: E8 03 18 40 00     call        6F4786B0
+  6F076EAD: 8B D8              mov         ebx,eax
+  6F076EAF: 85 F6              test        esi,esi
+  6F076EB1: 0F 84 F7 00 00 00  je          6F076FAE
+  6F076EB7: 8B 06              mov         eax,dword ptr [esi]
+  6F076EB9: 8B 90 E0 01 00 00  mov         edx,dword ptr [eax+000001E0h]
+  6F076EBF: 8B CE              mov         ecx,esi
+  6F076EC1: FF D2              call        edx
+  6F076EC3: 85 C0              test        eax,eax
+  6F076EC5: 75 14              jne         6F076EDB
+  6F076EC7: 8B 06              mov         eax,dword ptr [esi]
+  6F076EC9: 8B 90 E4 01 00 00  mov         edx,dword ptr [eax+000001E4h]
+  6F076ECF: 8B CE              mov         ecx,esi
+  6F076ED1: FF D2              call        edx
+  6F076ED3: 85 C0              test        eax,eax
+  6F076ED5: 0F 84 D3 00 00 00  je          6F076FAE
+  6F076EDB: 8B 06              mov         eax,dword ptr [esi]
+  6F076EDD: 8B 90 E4 01 00 00  mov         edx,dword ptr [eax+000001E4h]
+  6F076EE3: 8B CE              mov         ecx,esi
+  6F076EE5: FF D2              call        edx
+  6F076EE7: 8B F8              mov         edi,eax
+  6F076EE9: 8B 06              mov         eax,dword ptr [esi]
+  6F076EEB: 8B 90 E0 01 00 00  mov         edx,dword ptr [eax+000001E0h]
+  6F076EF1: 8B CE              mov         ecx,esi
+  6F076EF3: FF D2              call        edx
+  6F076EF5: 85 FF              test        edi,edi
+  6F076EF7: 74 12              je          6F076F0B
+  6F076EF9: 83 7C 24 28 00     cmp         dword ptr [esp+28h],0
+  6F076EFE: 75 0B              jne         6F076F0B
+  6F076F00: 83 7C 24 2C 00     cmp         dword ptr [esp+2Ch],0
+  6F076F05: 0F 85 A3 00 00 00  jne         6F076FAE
+  6F076F0B: 85 C0              test        eax,eax
+  6F076F0D: 74 12              je          6F076F21
+  6F076F0F: 83 7C 24 2C 00     cmp         dword ptr [esp+2Ch],0
+  6F076F14: 75 0B              jne         6F076F21
+  6F076F16: 83 7C 24 28 00     cmp         dword ptr [esp+28h],0
+  6F076F1B: 0F 85 8D 00 00 00  jne         6F076FAE
+  6F076F21: 83 7C 24 20 00     cmp         dword ptr [esp+20h],0
+  6F076F26: 75 10              jne         6F076F38
+  6F076F28: 8B 06              mov         eax,dword ptr [esi]
+  6F076F2A: 8B 90 E8 01 00 00  mov         edx,dword ptr [eax+000001E8h]
+  6F076F30: 8B CE              mov         ecx,esi
+  6F076F32: FF D2              call        edx
+  6F076F34: 85 C0              test        eax,eax
+  6F076F36: 75 76              jne         6F076FAE
+  6F076F38: 83 7C 24 1C 00     cmp         dword ptr [esp+1Ch],0
+  6F076F3D: 75 10              jne         6F076F4F
+  6F076F3F: 8B 06              mov         eax,dword ptr [esi]
+  6F076F41: 8B 90 2C 03 00 00  mov         edx,dword ptr [eax+0000032Ch]
+  6F076F47: 8B CE              mov         ecx,esi
+  6F076F49: FF D2              call        edx
+  6F076F4B: 85 C0              test        eax,eax
+  6F076F4D: 75 5F              jne         6F076FAE
+  6F076F4F: 83 7C 24 14 00     cmp         dword ptr [esp+14h],0
+  6F076F54: 74 10              je          6F076F66
+  6F076F56: 8B 06              mov         eax,dword ptr [esi]
+  6F076F58: 8B 90 DC 01 00 00  mov         edx,dword ptr [eax+000001DCh]
+  6F076F5E: 8B CE              mov         ecx,esi
+  6F076F60: FF D2              call        edx
+  6F076F62: 85 C0              test        eax,eax
+  6F076F64: 74 48              je          6F076FAE
+  6F076F66: 83 7C 24 18 00     cmp         dword ptr [esp+18h],0
+  6F076F6B: 74 10              je          6F076F7D
+  6F076F6D: 8B 06              mov         eax,dword ptr [esi]
+  6F076F6F: 8B 90 D8 01 00 00  mov         edx,dword ptr [eax+000001D8h]
+  6F076F75: 8B CE              mov         ecx,esi
+  6F076F77: FF D2              call        edx
+  6F076F79: 85 C0              test        eax,eax
+  6F076F7B: 74 31              je          6F076FAE
+  6F076F7D: 83 7C 24 24 00     cmp         dword ptr [esp+24h],0
+  6F076F82: 74 15              je          6F076F99
+  6F076F84: 8B 4C 24 30        mov         ecx,dword ptr [esp+30h]
+  6F076F88: 8B 06              mov         eax,dword ptr [esi]
+  6F076F8A: 8B 90 30 03 00 00  mov         edx,dword ptr [eax+00000330h]
+  6F076F90: 51                 push        ecx
+  6F076F91: 8B CE              mov         ecx,esi
+  6F076F93: FF D2              call        edx
+  6F076F95: 85 C0              test        eax,eax
+  6F076F97: 74 15              je          6F076FAE
+  6F076F99: 83 7C 24 34 00     cmp         dword ptr [esp+34h],0
+  6F076F9E: 75 09              jne         6F076FA9
+  6F076FA0: F7 46 20 00 00 00  test        dword ptr [esi+20h],20000000h
+  6F076FA7: 75 05              jne         6F076FAE
+  6F076FA9: 83 44 24 0C 01     add         dword ptr [esp+0Ch],1
+  6F076FAE: 85 DB              test        ebx,ebx
+  6F076FB0: 0F 85 DE FE FF FF  jne         6F076E94
+  6F076FB6: 8B 44 24 0C        mov         eax,dword ptr [esp+0Ch]
+  6F076FBA: 5F                 pop         edi
+  6F076FBB: 5B                 pop         ebx
+  6F076FBC: 5E                 pop         esi
+  6F076FBD: 59                 pop         ecx
+  6F076FBE: C2 24 00           ret         24h
+
+=== AiControlManager::handleRemoteCommand 命令分支 ===
+  匹配到的命令动词 (0): 
+  if 条件 QStringLiteral (0): 
+
+=== 定位 war3map.j ===
+  找到 war3map.j: ['D:\\Qt\\workspace\\War3Script\\war3map.j']
+  --- 肉山相关 (1848651852='n00L' / Roshan / D4) ---
+    L13345: if GetUnitTypeId(UX1)==1848651852 then
+    L13899: return GetUnitTypeId(GetDyingUnit())==1848651852
+    L13913: set N0=CreateUnitAtLoc(Player(12),1848651852,BFO,bj_UNIT_FACING)
+    L13942: call FL1("Roshan",0)
+    L13951: call FL1("Roshan",1)
+    L17887: if GetEventDamage()>2 and(T2I(GetOwningPlayer(GetEventDamageSource()))or GetUnitTypeId(GetEventDamageSource())==1848651852)and GetUnitAbilit
+    L19731: elseif GetItemTypeId(BA1)==FR0[VL0]and GetUnitTypeId(SFI)!=1848651852 and FX0==false then
+    L19734: call FL1("AegisOn",GetPlayerId(GetOwningPlayer(SFI)))
+    L21095: if GetSpellAbilityId()==1093744973 and GetUnitTypeId(GetSpellTargetUnit())!=1848651852 then
+    L21389: if GetTriggerEventId()==EVENT_UNIT_DEATH or(GetTriggerEventId()==EVENT_UNIT_DAMAGED and(KUO(GetUnitTypeId(GetEventDamageSource()))==false an
+    L22916: set N0=CreateUnitAtLoc(Player(12),1848651852,BFO,bj_UNIT_FACING)
+    L28408: if L90[R20]>0 and IsUnitType(GetTriggerUnit(),UNIT_TYPE_STRUCTURE)==false and GetUnitTypeId(GetTriggerUnit())!=1848651852 and IsUnitIllusion
+    L28529: if GetUnitTypeId(GetTriggerUnit())==1848651852 then
+    L41611: if GetUnitAbilityLevel(GetAttacker(),1093752374)>0 and IsUnitType(GetTriggerUnit(),UNIT_TYPE_STRUCTURE)==false and GetAttacker()==(LoadUnitH
+    L44811: if GetSpellAbilityId()==1093743698 and GetUnitTypeId(GetSpellTargetUnit())!=1848651852 and NNI(GetSpellTargetUnit())==false then
+    L49581: return GetSpellAbilityId()==1093682998 and GetUnitTypeId(GetSpellTargetUnit())!=1848651852 and NNI(GetSpellTargetUnit())==false
+    L56775: if GetUnitTypeId(P8I)!=1848651852 and ZXO then
+    L58959: if(GetSpellAbilityId()==1093744975 or GetSpellAbilityId()==1093750102)and NNI(GetSpellTargetUnit())==false and GetUnitTypeId(GetSpellTargetU
+    L59953: if IsUnitEnemy(P8I,GetOwningPlayer(P7I))and GetUnitTypeId(P8I)!=1848651852 then
+    L61980: if GetUnitAbilityLevel(GetAttacker(),1093808967)>0 and IsUnitType(GetTriggerUnit(),UNIT_TYPE_STRUCTURE)==false and GetAttacker()==(LoadUnitH
+    L63975: return RKI(GetFilterUnit())==false and IsUnitEnemy(GetFilterUnit(),GetOwningPlayer(XO))and(BU1(GetFilterUnit())==false or IsUnitVisible(GetF
+    L67180: if GetUnitAbilityLevel(GetAttacker(),1093686099)>0 and IsUnitType(GetTriggerUnit(),UNIT_TYPE_STRUCTURE)==false and GetAttacker()==(LoadUnitH
+    L70477: if(IsUnitVisible(GetFilterUnit(),GetOwningPlayer(GK))and IsUnitEnemy(GK,GetOwningPlayer(GetFilterUnit()))and(GetUnitAbilityLevel(GetFilterUn
+    L70486: if(IsUnitVisible(GetFilterUnit(),GetOwningPlayer(GK))and IsUnitEnemy(GK,GetOwningPlayer(GetFilterUnit()))and(GetUnitAbilityLevel(GetFilterUn
+    L71730: if GetUnitAbilityLevel(GetAttacker(),1093682997)>0 and IsUnitIllusion(GetAttacker())==false and IsUnitType(GetTriggerUnit(),UNIT_TYPE_STRUCT
+    [CreateRoshan] L13911: call B9O()
+    [CreateRoshan] L13912: set FM0=FM0+1
+    [CreateRoshan] L13913: set N0=CreateUnitAtLoc(Player(12),1848651852,BFO,bj_UNIT_FACING)
+    [CreateRoshan] L13914: call SetUnitAcquireRange(N0,150)
+    [CreateRoshan] L13915: call B5O(N0)
+    [CreateRoshan] L13916: call UnitAddAbility(N0,1093743666)
+    [CreateRoshan] L22914: function NQO takes nothing returns nothing
+    [CreateRoshan] L22915: local location BFO=GetRectCenter(P4)
+    [CreateRoshan] L22916: set N0=CreateUnitAtLoc(Player(12),1848651852,BFO,bj_UNIT_FACING)
+    [CreateRoshan] L22917: call SetUnitAcquireRange(N0,150)
+    [CreateRoshan] L22918: call B5O(N0)
+    [CreateRoshan] L22919: call RemoveLocation(BFO)
+    [CreateRoshan] L96126: call TriggerAddCondition(t,Condition(function NTO))
+    [CreateRoshan] L96127: set BFO=GetRectCenter(P4)
+    [CreateRoshan] L96128: set N0=CreateUnitAtLoc(Player(12),1848651852,BFO,bj_UNIT_FACING)
+    [CreateRoshan] L96129: call SetUnitAcquireRange(N0,150)
+    [CreateRoshan] L96130: call B5O(N0)
+    [CreateRoshan] L96131: call RemoveLocation(BFO)

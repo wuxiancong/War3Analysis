@@ -1,0 +1,80 @@
+共扫描本地录像副本: 20 场 (目录: D:\Qt\workspace\War3Analysis\artifacts\replay-dataset\data)
+===================================================================================================================
+录像文件名                                          | 版本    |    时长s | 玩家与英雄                            |    总动作 |    APM |  0x6B数 |   聊天数
+---------------------------------------------------------------------------------------------------------------------------------------
+20261120_225621_TestUser01_水晶室女.w3g            | 1.27  | 1532.0 | TestUser01(Hjai)                 |   1794 |   70.2 |    199 |     0
+20261120_231621_player_水晶室女.w3g                | PARSE ERROR: Not a valid w3g file: D:\Qt\workspace\War3Analysis\artifacts\replay-dataset\data\20261120_231621_player_水晶室女.w3g
+20261120_234910_TestUser01_水晶室女.w3g            | 1.27  |  684.6 | TestUser01(Hjai)                 |   1057 |   92.3 |     77 |     1
+20261121_033803_player_NoHero.w3g              | PARSE ERROR: Not a valid w3g file: D:\Qt\workspace\War3Analysis\artifacts\replay-dataset\data\20261121_033803_player_NoHero.w3g
+20261121_035138_player_NoHero.w3g              | PARSE ERROR: Not a valid w3g file: D:\Qt\workspace\War3Analysis\artifacts\replay-dataset\data\20261121_035138_player_NoHero.w3g
+20261121_045144_TestUser01_水晶室女.w3g            | 1.27  | 1441.2 | TestUser01(Hjai)                 |  18545 |  771.9 |    196 |     0
+20261121_051145_player_水晶室女.w3g                | PARSE ERROR: Not a valid w3g file: D:\Qt\workspace\War3Analysis\artifacts\replay-dataset\data\20261121_051145_player_水晶室女.w3g
+20261121_052239_TestUser01_水晶室女.w3g            | 1.27  | 1516.9 | TestUser01(Hjai)                 |   5836 |  230.8 |    195 |     0
+20261121_054240_player_水晶室女.w3g                | PARSE ERROR: Not a valid w3g file: D:\Qt\workspace\War3Analysis\artifacts\replay-dataset\data\20261121_054240_player_水晶室女.w3g
+20261121_055306_TestUser01_水晶室女.w3g            | 1.27  |  734.0 | TestUser01(Hjai)                 |   5024 |  410.5 |     73 |     0
+20261121_075619_TestUser01_水晶室女.w3g            | 1.27  |  889.7 | TestUser01(Hjai)                 |   1964 |  132.3 |    103 |     0
+20261121_084940_TestUser01_水晶室女.w3g            | 1.27  | 1442.1 | TestUser01(Hjai)                 |     38 |    1.5 |    194 |     0
+20261121_090941_player_水晶室女.w3g                | PARSE ERROR: Not a valid w3g file: D:\Qt\workspace\War3Analysis\artifacts\replay-dataset\data\20261121_090941_player_水晶室女.w3g
+20261121_091942_player_水晶室女.w3g                | PARSE ERROR: Not a valid w3g file: D:\Qt\workspace\War3Analysis\artifacts\replay-dataset\data\20261121_091942_player_水晶室女.w3g
+20261121_093129_TestUser01_水晶室女.w3g            | 1.27  |  734.4 | TestUser01(Hjai)                 |   1880 |  153.4 |     73 |     0
+20261121_095753_player_水晶室女.w3g                | PARSE ERROR: Not a valid w3g file: D:\Qt\workspace\War3Analysis\artifacts\replay-dataset\data\20261121_095753_player_水晶室女.w3g
+20261121_100754_player_水晶室女.w3g                | PARSE ERROR: Not a valid w3g file: D:\Qt\workspace\War3Analysis\artifacts\replay-dataset\data\20261121_100754_player_水晶室女.w3g
+20261121_101754_player_水晶室女.w3g                | PARSE ERROR: Not a valid w3g file: D:\Qt\workspace\War3Analysis\artifacts\replay-dataset\data\20261121_101754_player_水晶室女.w3g
+20261121_102906_player_水晶室女.w3g                | PARSE ERROR: Not a valid w3g file: D:\Qt\workspace\War3Analysis\artifacts\replay-dataset\data\20261121_102906_player_水晶室女.w3g
+20261121_103906_player_水晶室女.w3g                | PARSE ERROR: Not a valid w3g file: D:\Qt\workspace\War3Analysis\artifacts\replay-dataset\data\20261121_103906_player_水晶室女.w3g
+
+===================================================================================================================
+【汇总统计】总动作=36138 | 总 0x6B 事件=1110 | 总聊天=1 | 生成 JSONL 样本=3000 条
+活跃玩家 APM 分布 (n=8): 最小=1.5, 中位=153.4, 均值=232.9, 最大=771.9
+
+--- 1. 按底层 Action ID 分布 ---
+  0x12    :   10114 (27.99%)
+  0x1B    :    8659 (23.96%)
+  0x16    :    8376 (23.18%)
+  0x19    :    8333 (23.06%)
+  0x10    :     490 ( 1.36%)
+  0x18    :     142 ( 0.39%)
+  0x60    :      20 ( 0.06%)
+  0x17    :       2 ( 0.01%)
+  0x66    :       1 ( 0.00%)
+  0x11    :       1 ( 0.00%)
+
+--- 2. 按模仿学习高层操作类别 (action.category) 分布 ---
+  select_or_group   :   25513 (70.60%)
+  move              :   10081 (27.90%)
+  stop_hold         :     459 ( 1.27%)
+  attack_unit       :      33 ( 0.09%)
+  buy_item          :      31 ( 0.09%)
+  ping_or_chat      :      20 ( 0.06%)
+  use_item          :       1 ( 0.00%)
+
+--- 3. Top 20 高频 OrderId / FourCC ---
+  0x000D0012 move(移动 M)                                  :    8128
+  0x000D0003 smart(右键移动/攻击/拾取)                           :    1986
+  0x000D0004 stop(停止 S)                                  :     459
+  0x486A6169 pick_hero:Hjai(水晶室女 (Crystal Maiden))       :      27
+  0x6830314B buy_or_unit:h01K                            :       2
+  0x68303833 buy_or_unit:h083                            :       2
+  0x000D0028 useslot1(使用物品格1)                            :       1
+
+--- 4. Top 20 高频 0x6B GameCache 事件 ---
+  Data:CSK1                          :      33
+  Data:CSD1                          :      33
+  Data:NK1                           :      33
+  Data:CSK7                          :      33
+  Data:CSD7                          :      33
+  Data:NK7                           :      33
+  Data:CSK2                          :      33
+  Data:CSD2                          :      33
+  Data:NK2                           :      33
+  Data:CSK8                          :      33
+  Data:CSD8                          :      33
+  Data:NK8                           :      33
+  Data:CSK3                          :      33
+  Data:CSD3                          :      33
+  Data:NK3                           :      33
+  Data:CSK9                          :      33
+  Data:CSD9                          :      33
+  Data:NK9                           :      33
+  Data:CSK4                          :      33
+  Data:CSD4                          :      33

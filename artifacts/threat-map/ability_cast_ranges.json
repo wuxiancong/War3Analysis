@@ -1,0 +1,10220 @@
+{
+  "count": 1135,
+  "abilities": [
+    {
+      "id": "A01O",
+      "code": "AEbl",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "50"
+    },
+    {
+      "id": "A02R",
+      "code": "Aslo",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "1"
+    },
+    {
+      "id": "A031",
+      "code": "ANfb",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A032",
+      "code": "ANfb",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A033",
+      "code": "ANfb",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A036",
+      "code": "ANin",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "400",
+      "Cool1": "12"
+    },
+    {
+      "id": "A03I",
+      "code": "AEbl",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "9"
+    },
+    {
+      "id": "A03W",
+      "code": "Afae",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A05O",
+      "code": "ANfb",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A05Q",
+      "code": "AUfn",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "1",
+      "Cool1": null
+    },
+    {
+      "id": "A05R",
+      "code": "AHbn",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A05S",
+      "code": "AOcl",
+      "levels": "10",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "500",
+      "Cool1": null
+    },
+    {
+      "id": "A068",
+      "code": "ANab",
+      "levels": "8",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "1",
+      "Cool1": null
+    },
+    {
+      "id": "A06E",
+      "code": "Ainf",
+      "levels": "8",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A06T",
+      "code": "AEer",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A06Z",
+      "code": "AUim",
+      "levels": "7",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "275",
+      "Cool1": "9"
+    },
+    {
+      "id": "A070",
+      "code": "AUim",
+      "levels": "6",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "275",
+      "Cool1": "9"
+    },
+    {
+      "id": "A075",
+      "code": "AUim",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "275",
+      "Cool1": "9"
+    },
+    {
+      "id": "A077",
+      "code": "AUim",
+      "levels": "8",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "275",
+      "Cool1": "9"
+    },
+    {
+      "id": "A07T",
+      "code": "AUsl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A07W",
+      "code": "AEbl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A07X",
+      "code": "AOcl",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "99999",
+      "Cool1": "90"
+    },
+    {
+      "id": "A087",
+      "code": "ANbf",
+      "levels": "10",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "350",
+      "Cool1": null
+    },
+    {
+      "id": "A08K",
+      "code": "Ainf",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A08U",
+      "code": "AOhx",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "13"
+    },
+    {
+      "id": "A091",
+      "code": "AUfn",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "3600"
+    },
+    {
+      "id": "A09H",
+      "code": "AOhx",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "13"
+    },
+    {
+      "id": "A0AA",
+      "code": "Ablo",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0AB",
+      "code": "Ablo",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0AC",
+      "code": "Ablo",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0AD",
+      "code": "Ablo",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0AE",
+      "code": "Ablo",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0AL",
+      "code": "AOcl",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "99999",
+      "Cool1": "90"
+    },
+    {
+      "id": "A0AT",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0B0",
+      "code": "ANab",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A0CX",
+      "code": "AHmt",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "50",
+      "Cool1": "65"
+    },
+    {
+      "id": "A0FI",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0FZ",
+      "code": "ANab",
+      "levels": "16",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0GI",
+      "code": "Afae",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A0GJ",
+      "code": "Afae",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "40"
+    },
+    {
+      "id": "A0HA",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0HL",
+      "code": "AOfs",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "2000",
+      "Cool1": "60"
+    },
+    {
+      "id": "A0HO",
+      "code": "Aivs",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0J7",
+      "code": "AHtb",
+      "levels": "13",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "8"
+    },
+    {
+      "id": "A0JD",
+      "code": "AHtb",
+      "levels": "10",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "8"
+    },
+    {
+      "id": "A0JE",
+      "code": "Aslo",
+      "levels": "12",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0KZ",
+      "code": "Ainf",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0L2",
+      "code": "ANsi",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "99999",
+      "Cool1": null
+    },
+    {
+      "id": "A0LG",
+      "code": "Ablo",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0LS",
+      "code": "ANso",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0LX",
+      "code": "ANpr",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0LY",
+      "code": "ANpr",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0M8",
+      "code": "Ablo",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "1"
+    },
+    {
+      "id": "A0ME",
+      "code": "AEbl",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A0ML",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "500",
+      "Cool1": "40"
+    },
+    {
+      "id": "A0N8",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A0N9",
+      "code": "AIil",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A0NL",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0NN",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0QF",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0R0",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "130"
+    },
+    {
+      "id": "A0SA",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A0SD",
+      "code": "ANsi",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "400",
+      "Cool1": null
+    },
+    {
+      "id": "A0T0",
+      "code": "Aslo",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0VG",
+      "code": "AHbz",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "200",
+      "Cool1": "30"
+    },
+    {
+      "id": "A0WY",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0YI",
+      "code": "AHbz",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "200",
+      "Cool1": "60"
+    },
+    {
+      "id": "A0Z6",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "575",
+      "Cool1": "20"
+    },
+    {
+      "id": "A10F",
+      "code": "AIil",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A10G",
+      "code": "AIil",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A10H",
+      "code": "AIil",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A10I",
+      "code": "AIil",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A10U",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A11Y",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A11Z",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A137",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "65"
+    },
+    {
+      "id": "A14M",
+      "code": "Ainf",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A14N",
+      "code": "Ainf",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A14O",
+      "code": "AUcs",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A176",
+      "code": "Ablo",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A17B",
+      "code": "Aslo",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A19U",
+      "code": "Aslo",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A19X",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1A7",
+      "code": "AHbn",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1CE",
+      "code": "Aslo",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1H1",
+      "code": "Aslo",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "1"
+    },
+    {
+      "id": "A1HY",
+      "code": "ANso",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1IY",
+      "code": "AIil",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A1MI",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "40"
+    },
+    {
+      "id": "A1N1",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A1P8",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1QV",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A1R5",
+      "code": "ANto",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "65"
+    },
+    {
+      "id": "A1RD",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "100",
+      "Cool1": "30"
+    },
+    {
+      "id": "A1RJ",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "36"
+    },
+    {
+      "id": "A1S9",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "1"
+    },
+    {
+      "id": "A1SX",
+      "code": "ANso",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1TB",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "90"
+    },
+    {
+      "id": "A1TU",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "8"
+    },
+    {
+      "id": "A1U2",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "0.02"
+    },
+    {
+      "id": "A1U3",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "0.02"
+    },
+    {
+      "id": "A1U7",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "500",
+      "Cool1": null
+    },
+    {
+      "id": "A1V4",
+      "code": "AEbl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1VU",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "8"
+    },
+    {
+      "id": "A1W8",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "90"
+    },
+    {
+      "id": "A1W9",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "90"
+    },
+    {
+      "id": "A1WF",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "700",
+      "Cool1": "1"
+    },
+    {
+      "id": "A1X0",
+      "code": "Ablo",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "18"
+    },
+    {
+      "id": "A1YW",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "3"
+    },
+    {
+      "id": "A209",
+      "code": "Aivs",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A21O",
+      "code": "Acrs",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A21U",
+      "code": "Aslo",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A231",
+      "code": "ANto",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "50"
+    },
+    {
+      "id": "A235",
+      "code": "AHbz",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "600",
+      "Cool1": "55"
+    },
+    {
+      "id": "A249",
+      "code": "AIil",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "50",
+      "Cool1": null
+    },
+    {
+      "id": "A27B",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "400",
+      "Cool1": "24"
+    },
+    {
+      "id": "A27X",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2AH",
+      "code": "Afae",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2C1",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "400",
+      "Cool1": null
+    },
+    {
+      "id": "A2FV",
+      "code": "AEbl",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "4"
+    },
+    {
+      "id": "A2HE",
+      "code": "ANsi",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A2JL",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2M2",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "26"
+    },
+    {
+      "id": "A2ML",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "32"
+    },
+    {
+      "id": "A2QE",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": "40"
+    },
+    {
+      "id": "A2QX",
+      "code": "AOcl",
+      "levels": "8",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "400",
+      "Cool1": null
+    },
+    {
+      "id": "A2QY",
+      "code": "AOcl",
+      "levels": "8",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "400",
+      "Cool1": null
+    },
+    {
+      "id": "A2QZ",
+      "code": "AOcl",
+      "levels": "8",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "400",
+      "Cool1": null
+    },
+    {
+      "id": "A2R0",
+      "code": "AOcl",
+      "levels": "8",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "400",
+      "Cool1": null
+    },
+    {
+      "id": "A2RT",
+      "code": "AIil",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A2TG",
+      "code": "ANso",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2X7",
+      "code": "AIil",
+      "levels": "1",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A2ZE",
+      "code": "Aslo",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2ZI",
+      "code": "Aslo",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A30A",
+      "code": "ANsi",
+      "levels": "4",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": "600",
+      "Cool1": null
+    },
+    {
+      "id": "A316",
+      "code": "AEer",
+      "levels": "3",
+      "Rng1": "99999",
+      "Rng1_max": 99999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A18D",
+      "code": "Aprg",
+      "levels": "4",
+      "Rng1": "10000",
+      "Rng1_max": 10000.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2T2",
+      "code": "Aprg",
+      "levels": "6",
+      "Rng1": "10000",
+      "Rng1_max": 10000.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A01A",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": null,
+      "Cool1": "9"
+    },
+    {
+      "id": "A04U",
+      "code": "AHtb",
+      "levels": "5",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": null,
+      "Cool1": "9"
+    },
+    {
+      "id": "A0AY",
+      "code": "ANdh",
+      "levels": "11",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A0BA",
+      "code": "Aens",
+      "levels": "4",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": null,
+      "Cool1": "14"
+    },
+    {
+      "id": "A0L7",
+      "code": "AHtb",
+      "levels": "11",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": null,
+      "Cool1": "500"
+    },
+    {
+      "id": "A0S7",
+      "code": "AEmb",
+      "levels": "1",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A12I",
+      "code": "AHtb",
+      "levels": "5",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1SH",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": null,
+      "Cool1": "9"
+    },
+    {
+      "id": "A1SY",
+      "code": "AOcl",
+      "levels": "10",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": "9999",
+      "Cool1": null
+    },
+    {
+      "id": "A1SZ",
+      "code": "AOcl",
+      "levels": "10",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": "9999",
+      "Cool1": null
+    },
+    {
+      "id": "A1T0",
+      "code": "AOcl",
+      "levels": "10",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": "9999",
+      "Cool1": null
+    },
+    {
+      "id": "A1UQ",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": null,
+      "Cool1": "9"
+    },
+    {
+      "id": "A21P",
+      "code": "Aslo",
+      "levels": "4",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2AE",
+      "code": "Aens",
+      "levels": "4",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2FU",
+      "code": "Aens",
+      "levels": "1",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2H4",
+      "code": "Aens",
+      "levels": "4",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2JM",
+      "code": "Acrs",
+      "levels": "2",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": null,
+      "Cool1": "8"
+    },
+    {
+      "id": "A2SV",
+      "code": "AHbn",
+      "levels": "1",
+      "Rng1": "9999",
+      "Rng1_max": 9999.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1DJ",
+      "code": "AOcl",
+      "levels": "1",
+      "Rng1": "9000",
+      "Rng1_max": 9000.0,
+      "Area1": "500",
+      "Cool1": null
+    },
+    {
+      "id": "A2E1",
+      "code": "ANsi",
+      "levels": "1",
+      "Rng1": "8888",
+      "Rng1_max": 8888.0,
+      "Area1": "300",
+      "Cool1": null
+    },
+    {
+      "id": "A0KG",
+      "code": "ANcs",
+      "levels": "4",
+      "Rng1": "8000",
+      "Rng1_max": 8000.0,
+      "Area1": "275",
+      "Cool1": null
+    },
+    {
+      "id": "A10M",
+      "code": "ANcs",
+      "levels": "4",
+      "Rng1": "8000",
+      "Rng1_max": 8000.0,
+      "Area1": "275",
+      "Cool1": null
+    },
+    {
+      "id": "A13S",
+      "code": "ANcs",
+      "levels": "4",
+      "Rng1": "8000",
+      "Rng1_max": 8000.0,
+      "Area1": "275",
+      "Cool1": null
+    },
+    {
+      "id": "A1AK",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "5000",
+      "Rng1_max": 5000.0,
+      "Area1": "5000",
+      "Cool1": null
+    },
+    {
+      "id": "A24K",
+      "code": "AIil",
+      "levels": "4",
+      "Rng1": "5000",
+      "Rng1_max": 5000.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A0L8",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "3000",
+      "Rng1_max": 3000.0,
+      "Area1": null,
+      "Cool1": "17"
+    },
+    {
+      "id": "A0S9",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "3000",
+      "Rng1_max": 3000.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A1QW",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "3000",
+      "Rng1_max": 3000.0,
+      "Area1": null,
+      "Cool1": "36"
+    },
+    {
+      "id": "A2TJ",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "3000",
+      "Rng1_max": 3000.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A12K",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "2600",
+      "Rng1_max": 2600.0,
+      "Area1": null,
+      "Cool1": "9"
+    },
+    {
+      "id": "A1AU",
+      "code": "AHtb",
+      "levels": "3",
+      "Rng1": "2500",
+      "Rng1_max": 2500.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A1A1",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "2400",
+      "Rng1_max": 2400.0,
+      "Area1": null,
+      "Cool1": "100"
+    },
+    {
+      "id": "A2ZH",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "2400",
+      "Rng1_max": 2400.0,
+      "Area1": null,
+      "Cool1": "100"
+    },
+    {
+      "id": "A04P",
+      "code": "AHtb",
+      "levels": "3",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A085",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A0HW",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A0MJ",
+      "code": "ANfl",
+      "levels": "4",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A0OE",
+      "code": "AHfs",
+      "levels": "3",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": "225",
+      "Cool1": null
+    },
+    {
+      "id": "A0PN",
+      "code": "AEmb",
+      "levels": "1",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": "MBUR",
+      "Cool1": null
+    },
+    {
+      "id": "A0QL",
+      "code": "AIil",
+      "levels": "6",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A0RP",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": "300",
+      "Cool1": "11"
+    },
+    {
+      "id": "A0VK",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A0YB",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": "25"
+    },
+    {
+      "id": "A0Z8",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": "70"
+    },
+    {
+      "id": "A0ZB",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A10Q",
+      "code": "AHbz",
+      "levels": "3",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": "575",
+      "Cool1": "40"
+    },
+    {
+      "id": "A120",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A17N",
+      "code": "AEsh",
+      "levels": "4",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1B2",
+      "code": "AHfs",
+      "levels": "3",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": "225",
+      "Cool1": null
+    },
+    {
+      "id": "A1CV",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A1DB",
+      "code": "AHbz",
+      "levels": "3",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": "775",
+      "Cool1": "40"
+    },
+    {
+      "id": "A1HM",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": "2.5"
+    },
+    {
+      "id": "A1Z3",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A20N",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A21J",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A24E",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A29O",
+      "code": "AEer",
+      "levels": "4",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2HD",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A2LL",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "2000",
+      "Rng1_max": 2000.0,
+      "Area1": null,
+      "Cool1": "4"
+    },
+    {
+      "id": "A064",
+      "code": "AHbz",
+      "levels": "1",
+      "Rng1": "1800",
+      "Rng1_max": 1800.0,
+      "Area1": "450",
+      "Cool1": null
+    },
+    {
+      "id": "A1TA",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "1800",
+      "Rng1_max": 1800.0,
+      "Area1": "1",
+      "Cool1": "12"
+    },
+    {
+      "id": "A1YO",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1800",
+      "Rng1_max": 1800.0,
+      "Area1": null,
+      "Cool1": "18"
+    },
+    {
+      "id": "A2EE",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1800",
+      "Rng1_max": 1800.0,
+      "Area1": "300",
+      "Cool1": "10"
+    },
+    {
+      "id": "A2ZP",
+      "code": "AHbz",
+      "levels": "1",
+      "Rng1": "1800",
+      "Rng1_max": 1800.0,
+      "Area1": "450",
+      "Cool1": null
+    },
+    {
+      "id": "A2ZQ",
+      "code": "AHbz",
+      "levels": "1",
+      "Rng1": "1800",
+      "Rng1_max": 1800.0,
+      "Area1": "450",
+      "Cool1": null
+    },
+    {
+      "id": "A2ZR",
+      "code": "AHbz",
+      "levels": "1",
+      "Rng1": "1800",
+      "Rng1_max": 1800.0,
+      "Area1": "450",
+      "Cool1": null
+    },
+    {
+      "id": "A17O",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1700",
+      "Rng1_max": 1700.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A1B1",
+      "code": "AOsh",
+      "levels": "3",
+      "Rng1": "1600",
+      "Rng1_max": 1600.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A02V",
+      "code": "Aprg",
+      "levels": "3",
+      "Rng1": "1500",
+      "Rng1_max": 1500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0MH",
+      "code": "Ablo",
+      "levels": "4",
+      "Rng1": "1500",
+      "Rng1_max": 1500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0NV",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "1500",
+      "Rng1_max": 1500.0,
+      "Area1": null,
+      "Cool1": "7"
+    },
+    {
+      "id": "A0QX",
+      "code": "Aprg",
+      "levels": "1",
+      "Rng1": "1500",
+      "Rng1_max": 1500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A136",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "1500",
+      "Rng1_max": 1500.0,
+      "Area1": "225",
+      "Cool1": "12"
+    },
+    {
+      "id": "A13U",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1500",
+      "Rng1_max": 1500.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A19V",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1500",
+      "Rng1_max": 1500.0,
+      "Area1": "375",
+      "Cool1": "14"
+    },
+    {
+      "id": "A1HS",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "1500",
+      "Rng1_max": 1500.0,
+      "Area1": "250",
+      "Cool1": "4"
+    },
+    {
+      "id": "A1S4",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1500",
+      "Rng1_max": 1500.0,
+      "Area1": null,
+      "Cool1": "2.75"
+    },
+    {
+      "id": "A2JK",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "1500",
+      "Rng1_max": 1500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2JO",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1500",
+      "Rng1_max": 1500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2JP",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1500",
+      "Rng1_max": 1500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2JQ",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1500",
+      "Rng1_max": 1500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2JR",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1500",
+      "Rng1_max": 1500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2X9",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1500",
+      "Rng1_max": 1500.0,
+      "Area1": "600",
+      "Cool1": "29"
+    },
+    {
+      "id": "A07V",
+      "code": "AUim",
+      "levels": "3",
+      "Rng1": "1400",
+      "Rng1_max": 1400.0,
+      "Area1": "250",
+      "Cool1": "100"
+    },
+    {
+      "id": "A0SK",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1400",
+      "Rng1_max": 1400.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A1Z2",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1400",
+      "Rng1_max": 1400.0,
+      "Area1": "175",
+      "Cool1": null
+    },
+    {
+      "id": "A2EN",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1400",
+      "Rng1_max": 1400.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A2SQ",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "1400",
+      "Rng1_max": 1400.0,
+      "Area1": "200",
+      "Cool1": "20"
+    },
+    {
+      "id": "A2V9",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "1400",
+      "Rng1_max": 1400.0,
+      "Area1": null,
+      "Cool1": "2"
+    },
+    {
+      "id": "A0BZ",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1300",
+      "Rng1_max": 1300.0,
+      "Area1": "300",
+      "Cool1": "9"
+    },
+    {
+      "id": "A0O1",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "1300",
+      "Rng1_max": 1300.0,
+      "Area1": "100",
+      "Cool1": "13"
+    },
+    {
+      "id": "A1MF",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "1300",
+      "Rng1_max": 1300.0,
+      "Area1": "100",
+      "Cool1": "30"
+    },
+    {
+      "id": "A1YY",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1300",
+      "Rng1_max": 1300.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A2F4",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1300",
+      "Rng1_max": 1300.0,
+      "Area1": null,
+      "Cool1": "18"
+    },
+    {
+      "id": "A2G2",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "1300",
+      "Rng1_max": 1300.0,
+      "Area1": "1",
+      "Cool1": "420"
+    },
+    {
+      "id": "A2L0",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1300",
+      "Rng1_max": 1300.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A1S7",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1250",
+      "Rng1_max": 1250.0,
+      "Area1": null,
+      "Cool1": "21"
+    },
+    {
+      "id": "A2XK",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1250",
+      "Rng1_max": 1250.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A06P",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": "650",
+      "Cool1": "50"
+    },
+    {
+      "id": "A0B4",
+      "code": "Afae",
+      "levels": "3",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": null,
+      "Cool1": "4"
+    },
+    {
+      "id": "A0DK",
+      "code": "AUim",
+      "levels": "4",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": "300",
+      "Cool1": "15"
+    },
+    {
+      "id": "A0M0",
+      "code": "AUim",
+      "levels": "4",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": "300",
+      "Cool1": "15"
+    },
+    {
+      "id": "A0YM",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": null,
+      "Cool1": "6"
+    },
+    {
+      "id": "A0YX",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": "350",
+      "Cool1": "20"
+    },
+    {
+      "id": "A12F",
+      "code": "AHbz",
+      "levels": "1",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": "225",
+      "Cool1": "30"
+    },
+    {
+      "id": "A1A8",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A1FM",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": "500",
+      "Cool1": "3"
+    },
+    {
+      "id": "A1YX",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": null,
+      "Cool1": "45"
+    },
+    {
+      "id": "A261",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": "325",
+      "Cool1": "12"
+    },
+    {
+      "id": "A284",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": "440",
+      "Cool1": "3"
+    },
+    {
+      "id": "A2BG",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": "170",
+      "Cool1": "60"
+    },
+    {
+      "id": "A2E0",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": null,
+      "Cool1": "1"
+    },
+    {
+      "id": "A2E5",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": "200",
+      "Cool1": "8"
+    },
+    {
+      "id": "A2EA",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A2HB",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": "400",
+      "Cool1": "10"
+    },
+    {
+      "id": "A2HS",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": null,
+      "Cool1": "35"
+    },
+    {
+      "id": "A2K3",
+      "code": "Aslo",
+      "levels": "1",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A2LA",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": "500",
+      "Cool1": "7"
+    },
+    {
+      "id": "A2QH",
+      "code": "AUin",
+      "levels": "4",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": "50",
+      "Cool1": null
+    },
+    {
+      "id": "A2TU",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": "170",
+      "Cool1": "20"
+    },
+    {
+      "id": "A2YO",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": "200",
+      "Cool1": "8"
+    },
+    {
+      "id": "A2ZJ",
+      "code": "Atru",
+      "levels": "1",
+      "Rng1": "1200",
+      "Rng1_max": 1200.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A00F",
+      "code": "ANab",
+      "levels": "4",
+      "Rng1": "1150",
+      "Rng1_max": 1150.0,
+      "Area1": "450",
+      "Cool1": "15"
+    },
+    {
+      "id": "A17Y",
+      "code": "ANab",
+      "levels": "4",
+      "Rng1": "1150",
+      "Rng1_max": 1150.0,
+      "Area1": "450",
+      "Cool1": null
+    },
+    {
+      "id": "A0O6",
+      "code": "ANbf",
+      "levels": "4",
+      "Rng1": "1100",
+      "Rng1_max": 1100.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A14K",
+      "code": "Adet",
+      "levels": "1",
+      "Rng1": "1100",
+      "Rng1_max": 1100.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1SR",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "1100",
+      "Rng1_max": 1100.0,
+      "Area1": "400",
+      "Cool1": "55"
+    },
+    {
+      "id": "A2QI",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1100",
+      "Rng1_max": 1100.0,
+      "Area1": null,
+      "Cool1": "13"
+    },
+    {
+      "id": "A2TH",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1100",
+      "Rng1_max": 1100.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2WB",
+      "code": "ANdh",
+      "levels": "4",
+      "Rng1": "1100",
+      "Rng1_max": 1100.0,
+      "Area1": null,
+      "Cool1": "14"
+    },
+    {
+      "id": "A31G",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1100",
+      "Rng1_max": 1100.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A31H",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1100",
+      "Rng1_max": 1100.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A31I",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1100",
+      "Rng1_max": 1100.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A31J",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1100",
+      "Rng1_max": 1100.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A31K",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1100",
+      "Rng1_max": 1100.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A31L",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1100",
+      "Rng1_max": 1100.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1SQ",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "1050",
+      "Rng1_max": 1050.0,
+      "Area1": "500",
+      "Cool1": "20"
+    },
+    {
+      "id": "A019",
+      "code": "Aclf",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "250",
+      "Cool1": null
+    },
+    {
+      "id": "A01T",
+      "code": "ANab",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "300",
+      "Cool1": "15"
+    },
+    {
+      "id": "A02S",
+      "code": "AOsh",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "150",
+      "Cool1": "10"
+    },
+    {
+      "id": "A02Z",
+      "code": "AHdr",
+      "levels": "3",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "1150",
+      "Cool1": null
+    },
+    {
+      "id": "A04V",
+      "code": "Ainf",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A06I",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "14"
+    },
+    {
+      "id": "A0BG",
+      "code": "AUin",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "900",
+      "Cool1": "30"
+    },
+    {
+      "id": "A0E7",
+      "code": "Aclf",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "250",
+      "Cool1": null
+    },
+    {
+      "id": "A0FN",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "11"
+    },
+    {
+      "id": "A0J2",
+      "code": "Aclf",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "425",
+      "Cool1": "20"
+    },
+    {
+      "id": "A0LH",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A0M5",
+      "code": "Adts",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0OA",
+      "code": "AUfn",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "8"
+    },
+    {
+      "id": "A0OB",
+      "code": "ANbf",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A0OC",
+      "code": "ACbf",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A0OD",
+      "code": "Abof",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A0PL",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "14"
+    },
+    {
+      "id": "A0QT",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "500",
+      "Cool1": "10"
+    },
+    {
+      "id": "A0VI",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0VM",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "40"
+    },
+    {
+      "id": "A0VZ",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A0X3",
+      "code": "Aclf",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "375",
+      "Cool1": null
+    },
+    {
+      "id": "A0X4",
+      "code": "Aclf",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "375",
+      "Cool1": null
+    },
+    {
+      "id": "A0YA",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A0YE",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "25"
+    },
+    {
+      "id": "A10E",
+      "code": "Aneu",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A11K",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A127",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "500",
+      "Cool1": "25"
+    },
+    {
+      "id": "A17X",
+      "code": "ANab",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "300",
+      "Cool1": null
+    },
+    {
+      "id": "A1MJ",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1NA",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "4"
+    },
+    {
+      "id": "A1T5",
+      "code": "AHbz",
+      "levels": "3",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "600",
+      "Cool1": "55"
+    },
+    {
+      "id": "A1U4",
+      "code": "Aclf",
+      "levels": "2",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "450",
+      "Cool1": null
+    },
+    {
+      "id": "A1U5",
+      "code": "Aclf",
+      "levels": "2",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "450",
+      "Cool1": null
+    },
+    {
+      "id": "A1ZI",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "7"
+    },
+    {
+      "id": "A271",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "13"
+    },
+    {
+      "id": "A27H",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A28D",
+      "code": "AHbz",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "600",
+      "Cool1": "30"
+    },
+    {
+      "id": "A2FL",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "40"
+    },
+    {
+      "id": "A2JB",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "330",
+      "Cool1": "18"
+    },
+    {
+      "id": "A2KA",
+      "code": "Agra",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2LB",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "17"
+    },
+    {
+      "id": "A2OI",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A2SO",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "175",
+      "Cool1": "4"
+    },
+    {
+      "id": "A2T1",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "300",
+      "Cool1": "80"
+    },
+    {
+      "id": "A2TF",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "300",
+      "Cool1": "20"
+    },
+    {
+      "id": "A2ZS",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "900",
+      "Cool1": "15"
+    },
+    {
+      "id": "A2ZT",
+      "code": "AHbz",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "900",
+      "Cool1": null
+    },
+    {
+      "id": "A2ZU",
+      "code": "AHbz",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "900",
+      "Cool1": null
+    },
+    {
+      "id": "A2ZV",
+      "code": "AHbz",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "900",
+      "Cool1": null
+    },
+    {
+      "id": "A2ZW",
+      "code": "AHbz",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "900",
+      "Cool1": null
+    },
+    {
+      "id": "A2ZX",
+      "code": "AHbz",
+      "levels": "1",
+      "Rng1": "1000",
+      "Rng1_max": 1000.0,
+      "Area1": "900",
+      "Cool1": null
+    },
+    {
+      "id": "A0CC",
+      "code": "AHdr",
+      "levels": "3",
+      "Rng1": "950",
+      "Rng1_max": 950.0,
+      "Area1": "1100",
+      "Cool1": "22"
+    },
+    {
+      "id": "A0VS",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "950",
+      "Rng1_max": 950.0,
+      "Area1": "700",
+      "Cool1": "30"
+    },
+    {
+      "id": "A1MO",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "950",
+      "Rng1_max": 950.0,
+      "Area1": null,
+      "Cool1": "7"
+    },
+    {
+      "id": "A289",
+      "code": "AHtb",
+      "levels": "3",
+      "Rng1": "950",
+      "Rng1_max": 950.0,
+      "Area1": null,
+      "Cool1": "45"
+    },
+    {
+      "id": "A00T",
+      "code": "AUcb",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "900",
+      "Cool1": "26"
+    },
+    {
+      "id": "A04Z",
+      "code": "AUsl",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A069",
+      "code": "ANch",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A07H",
+      "code": "ANsi",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "425",
+      "Cool1": "14"
+    },
+    {
+      "id": "A07I",
+      "code": "ANsi",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "425",
+      "Cool1": "13"
+    },
+    {
+      "id": "A07J",
+      "code": "ANsi",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "425",
+      "Cool1": "12"
+    },
+    {
+      "id": "A07K",
+      "code": "AUcb",
+      "levels": "3",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "900",
+      "Cool1": "6"
+    },
+    {
+      "id": "A07M",
+      "code": "ANsi",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "425",
+      "Cool1": "11"
+    },
+    {
+      "id": "A07Y",
+      "code": "Acri",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A095",
+      "code": "AOcl",
+      "levels": "3",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "500",
+      "Cool1": "160"
+    },
+    {
+      "id": "A09W",
+      "code": "AOcl",
+      "levels": "3",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "200",
+      "Cool1": "100"
+    },
+    {
+      "id": "A09Z",
+      "code": "AOcl",
+      "levels": "3",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "70"
+    },
+    {
+      "id": "A0C5",
+      "code": "ANab",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "25"
+    },
+    {
+      "id": "A0CM",
+      "code": "AHfa",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "3"
+    },
+    {
+      "id": "A0CN",
+      "code": "AHfa",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "6"
+    },
+    {
+      "id": "A0CR",
+      "code": "AHfa",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A0CS",
+      "code": "AHfa",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "4"
+    },
+    {
+      "id": "A0FD",
+      "code": "ANso",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "18"
+    },
+    {
+      "id": "A0HF",
+      "code": "AUcb",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "900",
+      "Cool1": "6"
+    },
+    {
+      "id": "A0HH",
+      "code": "Acri",
+      "levels": "3",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0HI",
+      "code": "Acri",
+      "levels": "3",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0HJ",
+      "code": "Acri",
+      "levels": "3",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0IL",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "625",
+      "Cool1": "22"
+    },
+    {
+      "id": "A0J5",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "25"
+    },
+    {
+      "id": "A0K6",
+      "code": "ANfl",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "125",
+      "Cool1": null
+    },
+    {
+      "id": "A0MI",
+      "code": "ANfl",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "200",
+      "Cool1": "45"
+    },
+    {
+      "id": "A0OR",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A0P6",
+      "code": "ANsi",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "425",
+      "Cool1": "15"
+    },
+    {
+      "id": "A0QB",
+      "code": "ANsi",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "300",
+      "Cool1": "13"
+    },
+    {
+      "id": "A0RZ",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0V5",
+      "code": "ANdo",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "25"
+    },
+    {
+      "id": "A10T",
+      "code": "Aslo",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A112",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "19"
+    },
+    {
+      "id": "A11V",
+      "code": "AHbz",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "650",
+      "Cool1": "16"
+    },
+    {
+      "id": "A11W",
+      "code": "AHbz",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "650",
+      "Cool1": "12"
+    },
+    {
+      "id": "A11X",
+      "code": "AHbz",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "650",
+      "Cool1": "20"
+    },
+    {
+      "id": "A14Q",
+      "code": "Amls",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A19N",
+      "code": "Amls",
+      "levels": "3",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1EV",
+      "code": "Aams",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1GG",
+      "code": "ANso",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1OQ",
+      "code": "AOcl",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "500",
+      "Cool1": "4"
+    },
+    {
+      "id": "A1SU",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "325",
+      "Cool1": "13"
+    },
+    {
+      "id": "A1TO",
+      "code": "Aslo",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1UZ",
+      "code": "AEsh",
+      "levels": "3",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A200",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "400",
+      "Cool1": "40"
+    },
+    {
+      "id": "A21M",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A28T",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A2A7",
+      "code": "ANso",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2EP",
+      "code": "ANsi",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "1",
+      "Cool1": null
+    },
+    {
+      "id": "A2F5",
+      "code": "AHbz",
+      "levels": "3",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "400",
+      "Cool1": "60"
+    },
+    {
+      "id": "A2G6",
+      "code": "Aspl",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "400",
+      "Cool1": "30"
+    },
+    {
+      "id": "A2L3",
+      "code": "AUcb",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "900",
+      "Cool1": "30"
+    },
+    {
+      "id": "A2LM",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": "275",
+      "Cool1": "50"
+    },
+    {
+      "id": "A2NT",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A2S6",
+      "code": "Aslo",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2WF",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "13"
+    },
+    {
+      "id": "A2YN",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A313",
+      "code": "ANch",
+      "levels": "1",
+      "Rng1": "900",
+      "Rng1_max": 900.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A007",
+      "code": "ANab",
+      "levels": "4",
+      "Rng1": "850",
+      "Rng1_max": 850.0,
+      "Area1": "150",
+      "Cool1": "15"
+    },
+    {
+      "id": "A020",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "850",
+      "Rng1_max": 850.0,
+      "Area1": "500",
+      "Cool1": "1.75"
+    },
+    {
+      "id": "A02N",
+      "code": "AHdr",
+      "levels": "4",
+      "Rng1": "850",
+      "Rng1_max": 850.0,
+      "Area1": "1200",
+      "Cool1": "20"
+    },
+    {
+      "id": "A08H",
+      "code": "AUsl",
+      "levels": "3",
+      "Rng1": "850",
+      "Rng1_max": 850.0,
+      "Area1": null,
+      "Cool1": "120"
+    },
+    {
+      "id": "A0MS",
+      "code": "AOwd",
+      "levels": "4",
+      "Rng1": "850",
+      "Rng1_max": 850.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A0O5",
+      "code": "AOsh",
+      "levels": "3",
+      "Rng1": "850",
+      "Rng1_max": 850.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A17W",
+      "code": "ANab",
+      "levels": "4",
+      "Rng1": "850",
+      "Rng1_max": 850.0,
+      "Area1": "150",
+      "Cool1": null
+    },
+    {
+      "id": "A1D8",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "850",
+      "Rng1_max": 850.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A26P",
+      "code": "ANrf",
+      "levels": "4",
+      "Rng1": "825",
+      "Rng1_max": 825.0,
+      "Area1": "450",
+      "Cool1": "16"
+    },
+    {
+      "id": "A00X",
+      "code": "AHbn",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A01F",
+      "code": "AOsh",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "275",
+      "Cool1": "8.5"
+    },
+    {
+      "id": "A02T",
+      "code": "AOsf",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "100",
+      "Cool1": "0.5"
+    },
+    {
+      "id": "A037",
+      "code": "Ainf",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A03D",
+      "code": "AOsf",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "200",
+      "Cool1": "30"
+    },
+    {
+      "id": "A03X",
+      "code": "AUfn",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "190",
+      "Cool1": null
+    },
+    {
+      "id": "A042",
+      "code": "ANfb",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "6"
+    },
+    {
+      "id": "A059",
+      "code": "Afzy",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A06V",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "650",
+      "Cool1": "4"
+    },
+    {
+      "id": "A08J",
+      "code": "ANfb",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "9"
+    },
+    {
+      "id": "A08R",
+      "code": "AUfu",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A092",
+      "code": "ANfd",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A0BW",
+      "code": "ANcs",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "275",
+      "Cool1": "11"
+    },
+    {
+      "id": "A0DU",
+      "code": "ANfb",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "9"
+    },
+    {
+      "id": "A0EC",
+      "code": "ANso",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A0FE",
+      "code": "AHfs",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "700",
+      "Cool1": "10"
+    },
+    {
+      "id": "A0G2",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "500",
+      "Cool1": "11"
+    },
+    {
+      "id": "A0GL",
+      "code": "ACbf",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "150",
+      "Cool1": null
+    },
+    {
+      "id": "A0GQ",
+      "code": "AHhb",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A0I3",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A0K9",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A0KM",
+      "code": "ANdh",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "14"
+    },
+    {
+      "id": "A0LB",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "200",
+      "Cool1": "11"
+    },
+    {
+      "id": "A0LD",
+      "code": "AUin",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "300",
+      "Cool1": "11"
+    },
+    {
+      "id": "A0PZ",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0R9",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0RJ",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0RT",
+      "code": "AOsf",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "100",
+      "Cool1": "0.5"
+    },
+    {
+      "id": "A0SF",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0SG",
+      "code": "AHtb",
+      "levels": "3",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0SJ",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0YY",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "25"
+    },
+    {
+      "id": "A0Z0",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "90"
+    },
+    {
+      "id": "A12J",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "500",
+      "Cool1": "12"
+    },
+    {
+      "id": "A13X",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A14L",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "350",
+      "Cool1": "20"
+    },
+    {
+      "id": "A173",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "22"
+    },
+    {
+      "id": "A19M",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A19W",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "35"
+    },
+    {
+      "id": "A1HQ",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "525",
+      "Cool1": "50"
+    },
+    {
+      "id": "A1OR",
+      "code": "AUfu",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A1Q4",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "45"
+    },
+    {
+      "id": "A1QD",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A1R4",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1SA",
+      "code": "Aprg",
+      "levels": "3",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "50"
+    },
+    {
+      "id": "A1SN",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1TV",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A1U6",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "425",
+      "Cool1": "90"
+    },
+    {
+      "id": "A1UO",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1UP",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A27G",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A2AB",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2BE",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "500",
+      "Cool1": "5"
+    },
+    {
+      "id": "A2E3",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "4"
+    },
+    {
+      "id": "A2H5",
+      "code": "Aams",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "35"
+    },
+    {
+      "id": "A2HO",
+      "code": "ANdh",
+      "levels": "2",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2HQ",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A2IQ",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A2J2",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A2K5",
+      "code": "ANdh",
+      "levels": "2",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2LO",
+      "code": "Aprg",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A2NW",
+      "code": "ANdh",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2S4",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2V8",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": "425",
+      "Cool1": "90"
+    },
+    {
+      "id": "A2X8",
+      "code": "ANso",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2XB",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2XC",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2XD",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2XE",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2XI",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2XQ",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2XR",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2Y4",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2YV",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2YW",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2YX",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2YY",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2YZ",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2Z0",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2ZL",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2ZO",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A311",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "800",
+      "Rng1_max": 800.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A1NH",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "775",
+      "Rng1_max": 775.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A26O",
+      "code": "ANrf",
+      "levels": "4",
+      "Rng1": "775",
+      "Rng1_max": 775.0,
+      "Area1": "450",
+      "Cool1": "16"
+    },
+    {
+      "id": "A01I",
+      "code": "ANrf",
+      "levels": "4",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": "400",
+      "Cool1": "14"
+    },
+    {
+      "id": "A05T",
+      "code": "AUsl",
+      "levels": "3",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": null,
+      "Cool1": "120"
+    },
+    {
+      "id": "A06W",
+      "code": "AUin",
+      "levels": "4",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": "150",
+      "Cool1": "9"
+    },
+    {
+      "id": "A08W",
+      "code": "Aspl",
+      "levels": "4",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": "500",
+      "Cool1": null
+    },
+    {
+      "id": "A090",
+      "code": "ANfd",
+      "levels": "1",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A0F6",
+      "code": "Ainf",
+      "levels": "4",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A0R5",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": null,
+      "Cool1": "24"
+    },
+    {
+      "id": "A0RA",
+      "code": "AHfs",
+      "levels": "4",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": "275",
+      "Cool1": "24"
+    },
+    {
+      "id": "A0RH",
+      "code": "ANrf",
+      "levels": "4",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": "400",
+      "Cool1": null
+    },
+    {
+      "id": "A0S1",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A0S8",
+      "code": "AHbz",
+      "levels": "3",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": "375",
+      "Cool1": "85"
+    },
+    {
+      "id": "A0SE",
+      "code": "AHfs",
+      "levels": "3",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": "380",
+      "Cool1": "85"
+    },
+    {
+      "id": "A0X7",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": null,
+      "Cool1": "13"
+    },
+    {
+      "id": "A10D",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": null,
+      "Cool1": "7"
+    },
+    {
+      "id": "A1QP",
+      "code": "AHbz",
+      "levels": "3",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": "375",
+      "Cool1": "85"
+    },
+    {
+      "id": "A262",
+      "code": "ANrf",
+      "levels": "4",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": "400",
+      "Cool1": null
+    },
+    {
+      "id": "A2QW",
+      "code": "ANfl",
+      "levels": "3",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": "125",
+      "Cool1": "60"
+    },
+    {
+      "id": "A2SG",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": null,
+      "Cool1": "3"
+    },
+    {
+      "id": "A2WP",
+      "code": "Atru",
+      "levels": "1",
+      "Rng1": "750",
+      "Rng1_max": 750.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1WB",
+      "code": "AEpa",
+      "levels": "3",
+      "Rng1": "740",
+      "Rng1_max": 740.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A006",
+      "code": "AUsl",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "6.5"
+    },
+    {
+      "id": "A00O",
+      "code": "AUcs",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "100",
+      "Cool1": "135"
+    },
+    {
+      "id": "A00Y",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "500",
+      "Cool1": "13"
+    },
+    {
+      "id": "A011",
+      "code": "ANab",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A034",
+      "code": "Afae",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A046",
+      "code": "ANab",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A06J",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "300",
+      "Cool1": "11"
+    },
+    {
+      "id": "A084",
+      "code": "AUim",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "225",
+      "Cool1": "9"
+    },
+    {
+      "id": "A08N",
+      "code": "AUfa",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A08X",
+      "code": "Acri",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A08Z",
+      "code": "ANfd",
+      "levels": "1",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "25"
+    },
+    {
+      "id": "A09F",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A0AF",
+      "code": "AUcs",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "100",
+      "Cool1": "100"
+    },
+    {
+      "id": "A0B1",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "600",
+      "Cool1": "35"
+    },
+    {
+      "id": "A0B7",
+      "code": "ANch",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "25"
+    },
+    {
+      "id": "A0BC",
+      "code": "Acrs",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A0BH",
+      "code": "ANpa",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A0CE",
+      "code": "AHbn",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A0CO",
+      "code": "ANpa",
+      "levels": "1",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "14"
+    },
+    {
+      "id": "A0DX",
+      "code": "Aslo",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A0FK",
+      "code": "AOcl",
+      "levels": "1",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "900",
+      "Cool1": "2.7"
+    },
+    {
+      "id": "A0G4",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "80"
+    },
+    {
+      "id": "A0G8",
+      "code": "AIil",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "200",
+      "Cool1": "80"
+    },
+    {
+      "id": "A0IN",
+      "code": "ANfl",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "125",
+      "Cool1": "45"
+    },
+    {
+      "id": "A0IZ",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "500",
+      "Cool1": "11"
+    },
+    {
+      "id": "A0J0",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "500",
+      "Cool1": "11"
+    },
+    {
+      "id": "A0JC",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "6"
+    },
+    {
+      "id": "A0JK",
+      "code": "AOcl",
+      "levels": "1",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "900",
+      "Cool1": null
+    },
+    {
+      "id": "A0KD",
+      "code": "ANab",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "25"
+    },
+    {
+      "id": "A0KE",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A0LK",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "19"
+    },
+    {
+      "id": "A0NJ",
+      "code": "Aslo",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0NM",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "500",
+      "Cool1": "20"
+    },
+    {
+      "id": "A0QU",
+      "code": "Aslo",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0R1",
+      "code": "AUcs",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "35"
+    },
+    {
+      "id": "A0R3",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A0R4",
+      "code": "Aslo",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0RU",
+      "code": "Aslo",
+      "levels": "5",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0S4",
+      "code": "Aslo",
+      "levels": "1",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0S5",
+      "code": "Aslo",
+      "levels": "1",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0TH",
+      "code": "Aslo",
+      "levels": "5",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0VN",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "55"
+    },
+    {
+      "id": "A0YF",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A0YL",
+      "code": "Aslo",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A11L",
+      "code": "Aslo",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A12Z",
+      "code": "Aneu",
+      "levels": "1",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A14S",
+      "code": "Aslo",
+      "levels": "1",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A17V",
+      "code": "ANab",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A180",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "35"
+    },
+    {
+      "id": "A19F",
+      "code": "Aslo",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A19P",
+      "code": "Aslo",
+      "levels": "1",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "1"
+    },
+    {
+      "id": "A1AI",
+      "code": "Aslo",
+      "levels": "1",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1AV",
+      "code": "Afae",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A1AW",
+      "code": "ANfl",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "125",
+      "Cool1": "10"
+    },
+    {
+      "id": "A1E9",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "400",
+      "Cool1": "15"
+    },
+    {
+      "id": "A1EK",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "250",
+      "Cool1": "60"
+    },
+    {
+      "id": "A1EL",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "375",
+      "Cool1": "3"
+    },
+    {
+      "id": "A1EM",
+      "code": "Aslo",
+      "levels": "10",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1EN",
+      "code": "Aslo",
+      "levels": "10",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1EO",
+      "code": "Aslo",
+      "levels": "10",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1EP",
+      "code": "Aslo",
+      "levels": "10",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1FN",
+      "code": "Aslo",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1FY",
+      "code": "AOwd",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A1ME",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "800",
+      "Cool1": "70"
+    },
+    {
+      "id": "A1MG",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A1OV",
+      "code": "AOsh",
+      "levels": "1",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "180",
+      "Cool1": "8"
+    },
+    {
+      "id": "A1PR",
+      "code": "Adet",
+      "levels": "1",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1RK",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "110"
+    },
+    {
+      "id": "A1SV",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "110",
+      "Cool1": "17"
+    },
+    {
+      "id": "A1T1",
+      "code": "AHtb",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "80"
+    },
+    {
+      "id": "A1T7",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "23"
+    },
+    {
+      "id": "A1VW",
+      "code": "AHbz",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "375",
+      "Cool1": "160"
+    },
+    {
+      "id": "A21N",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A24Q",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "14"
+    },
+    {
+      "id": "A28R",
+      "code": "AOsh",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "100",
+      "Cool1": "135"
+    },
+    {
+      "id": "A28S",
+      "code": "AOsh",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "100",
+      "Cool1": "40"
+    },
+    {
+      "id": "A2A8",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A2AA",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "90"
+    },
+    {
+      "id": "A2BF",
+      "code": "Aslo",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "7"
+    },
+    {
+      "id": "A2DX",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "250",
+      "Cool1": "30"
+    },
+    {
+      "id": "A2F0",
+      "code": "Aams",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A2FQ",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "1",
+      "Cool1": "12"
+    },
+    {
+      "id": "A2H0",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "250",
+      "Cool1": "30"
+    },
+    {
+      "id": "A2HN",
+      "code": "ANso",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "11"
+    },
+    {
+      "id": "A2RU",
+      "code": "AHbn",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2T5",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "500",
+      "Cool1": "12"
+    },
+    {
+      "id": "A2TD",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A2V4",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A2VE",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "17"
+    },
+    {
+      "id": "A2WQ",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": "110",
+      "Cool1": "6"
+    },
+    {
+      "id": "A2ZK",
+      "code": "AHbn",
+      "levels": "4",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A306",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "135"
+    },
+    {
+      "id": "A307",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "700",
+      "Rng1_max": 700.0,
+      "Area1": null,
+      "Cool1": "40"
+    },
+    {
+      "id": "A004",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "650",
+      "Rng1_max": 650.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A08Y",
+      "code": "ANfd",
+      "levels": "1",
+      "Rng1": "650",
+      "Rng1_max": 650.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A0J6",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "650",
+      "Rng1_max": 650.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A0V4",
+      "code": "ANdo",
+      "levels": "3",
+      "Rng1": "650",
+      "Rng1_max": 650.0,
+      "Area1": null,
+      "Cool1": "180"
+    },
+    {
+      "id": "A0VQ",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "650",
+      "Rng1_max": 650.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A0Y9",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "650",
+      "Rng1_max": 650.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A1WR",
+      "code": "AEer",
+      "levels": "4",
+      "Rng1": "650",
+      "Rng1_max": 650.0,
+      "Area1": null,
+      "Cool1": "18"
+    },
+    {
+      "id": "A24D",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "650",
+      "Rng1_max": 650.0,
+      "Area1": null,
+      "Cool1": "14"
+    },
+    {
+      "id": "A2FW",
+      "code": "ANdo",
+      "levels": "1",
+      "Rng1": "650",
+      "Rng1_max": 650.0,
+      "Area1": null,
+      "Cool1": "180"
+    },
+    {
+      "id": "A2G5",
+      "code": "ANdo",
+      "levels": "1",
+      "Rng1": "650",
+      "Rng1_max": 650.0,
+      "Area1": null,
+      "Cool1": "180"
+    },
+    {
+      "id": "A2QT",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "650",
+      "Rng1_max": 650.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A2VF",
+      "code": "ANdo",
+      "levels": "1",
+      "Rng1": "650",
+      "Rng1_max": 650.0,
+      "Area1": null,
+      "Cool1": "180"
+    },
+    {
+      "id": "A026",
+      "code": "AHca",
+      "levels": "4",
+      "Rng1": "625",
+      "Rng1_max": 625.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A027",
+      "code": "ANin",
+      "levels": "4",
+      "Rng1": "625",
+      "Rng1_max": 625.0,
+      "Area1": "225",
+      "Cool1": "7"
+    },
+    {
+      "id": "A02Q",
+      "code": "Amls",
+      "levels": "3",
+      "Rng1": "625",
+      "Rng1_max": 625.0,
+      "Area1": null,
+      "Cool1": "100"
+    },
+    {
+      "id": "A0TB",
+      "code": "Aneu",
+      "levels": "1",
+      "Rng1": "625",
+      "Rng1_max": 625.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A15S",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "625",
+      "Rng1_max": 625.0,
+      "Area1": "325",
+      "Cool1": "10"
+    },
+    {
+      "id": "A1D9",
+      "code": "Amls",
+      "levels": "3",
+      "Rng1": "625",
+      "Rng1_max": 625.0,
+      "Area1": null,
+      "Cool1": "100"
+    },
+    {
+      "id": "A0RI",
+      "code": "Aens",
+      "levels": "4",
+      "Rng1": "620",
+      "Rng1_max": 620.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1GZ",
+      "code": "Aens",
+      "levels": "1",
+      "Rng1": "620",
+      "Rng1_max": 620.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A03V",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "610",
+      "Rng1_max": 610.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A05X",
+      "code": "Aadm",
+      "levels": "4",
+      "Rng1": "610",
+      "Rng1_max": 610.0,
+      "Area1": null,
+      "Cool1": "2"
+    },
+    {
+      "id": "A00G",
+      "code": "Acri",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "45"
+    },
+    {
+      "id": "A010",
+      "code": "ANfl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "200",
+      "Cool1": "8"
+    },
+    {
+      "id": "A01D",
+      "code": "AUfn",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "400",
+      "Cool1": "15"
+    },
+    {
+      "id": "A01P",
+      "code": "AOcl",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "70"
+    },
+    {
+      "id": "A01Z",
+      "code": "Aivs",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A02E",
+      "code": "Aprg",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "13"
+    },
+    {
+      "id": "A02F",
+      "code": "Acri",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A02M",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "110",
+      "Cool1": "8"
+    },
+    {
+      "id": "A02O",
+      "code": "ANfd",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "35"
+    },
+    {
+      "id": "A04X",
+      "code": "AHdr",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "600",
+      "Cool1": "20"
+    },
+    {
+      "id": "A067",
+      "code": "AHtb",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "100"
+    },
+    {
+      "id": "A06N",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "110",
+      "Cool1": "7"
+    },
+    {
+      "id": "A06Q",
+      "code": "Acri",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "11"
+    },
+    {
+      "id": "A072",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "110",
+      "Cool1": "6"
+    },
+    {
+      "id": "A074",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "110",
+      "Cool1": "5"
+    },
+    {
+      "id": "A078",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "110",
+      "Cool1": "4"
+    },
+    {
+      "id": "A07F",
+      "code": "AUfn",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "200",
+      "Cool1": "8"
+    },
+    {
+      "id": "A07P",
+      "code": "AHfa",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "2.5"
+    },
+    {
+      "id": "A07R",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "9"
+    },
+    {
+      "id": "A083",
+      "code": "Ablo",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A08F",
+      "code": "Ablo",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A08G",
+      "code": "Ablo",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A08I",
+      "code": "Ablo",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A08P",
+      "code": "AHtb",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "70"
+    },
+    {
+      "id": "A094",
+      "code": "ANfb",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "8"
+    },
+    {
+      "id": "A09C",
+      "code": "Ablo",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A09R",
+      "code": "Acri",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "120"
+    },
+    {
+      "id": "A09V",
+      "code": "AEpa",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0A1",
+      "code": "AOwd",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "120"
+    },
+    {
+      "id": "A0B2",
+      "code": "AUdd",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "600",
+      "Cool1": "30"
+    },
+    {
+      "id": "A0B3",
+      "code": "ANab",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A0BV",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "9"
+    },
+    {
+      "id": "A0C4",
+      "code": "ANba",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "3"
+    },
+    {
+      "id": "A0D1",
+      "code": "Acri",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A0D4",
+      "code": "AEmb",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "MBUR",
+      "Cool1": "9"
+    },
+    {
+      "id": "A0D8",
+      "code": "Acri",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A0DA",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "9"
+    },
+    {
+      "id": "A0DO",
+      "code": "Avng",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "900",
+      "Cool1": "2"
+    },
+    {
+      "id": "A0DS",
+      "code": "Avng",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "900",
+      "Cool1": "2"
+    },
+    {
+      "id": "A0DT",
+      "code": "Avng",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "900",
+      "Cool1": "2"
+    },
+    {
+      "id": "A0E3",
+      "code": "AHtb",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "70"
+    },
+    {
+      "id": "A0F8",
+      "code": "AUin",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "550",
+      "Cool1": "90"
+    },
+    {
+      "id": "A0FW",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "1.5"
+    },
+    {
+      "id": "A0G0",
+      "code": "Ablo",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "1"
+    },
+    {
+      "id": "A0G6",
+      "code": "ANab",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A0GK",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "500",
+      "Cool1": "14"
+    },
+    {
+      "id": "A0GS",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0GV",
+      "code": "AEmb",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A0HG",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "75",
+      "Cool1": null
+    },
+    {
+      "id": "A0HK",
+      "code": "Acri",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0I7",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A0IJ",
+      "code": "ANba",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "2"
+    },
+    {
+      "id": "A0IU",
+      "code": "Ablo",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A0IW",
+      "code": "AHtb",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0J1",
+      "code": "ANcs",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "425",
+      "Cool1": "130"
+    },
+    {
+      "id": "A0JL",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "35"
+    },
+    {
+      "id": "A0JV",
+      "code": "AEmb",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A0JW",
+      "code": "AEmb",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A0LL",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "275",
+      "Cool1": "17"
+    },
+    {
+      "id": "A0LP",
+      "code": "Avng",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "900",
+      "Cool1": "2"
+    },
+    {
+      "id": "A0LV",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "24"
+    },
+    {
+      "id": "A0LZ",
+      "code": "AEpa",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0NQ",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A0NT",
+      "code": "ANto",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "80"
+    },
+    {
+      "id": "A0NX",
+      "code": "ANto",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "80"
+    },
+    {
+      "id": "A0O2",
+      "code": "AHtb",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "80"
+    },
+    {
+      "id": "A0OF",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "9"
+    },
+    {
+      "id": "A0OK",
+      "code": "AHbz",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "375",
+      "Cool1": "160"
+    },
+    {
+      "id": "A0OS",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "200"
+    },
+    {
+      "id": "A0P5",
+      "code": "AOhx",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0PG",
+      "code": "AOhx",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0QG",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "9"
+    },
+    {
+      "id": "A0QH",
+      "code": "Aprg",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A0R7",
+      "code": "Ablo",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A0SX",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0TI",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A0UL",
+      "code": "AUfn",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "200",
+      "Cool1": "11"
+    },
+    {
+      "id": "A0X6",
+      "code": "AHtb",
+      "levels": "24",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0XK",
+      "code": "Acyc",
+      "levels": "7",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0YC",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "700",
+      "Cool1": "40"
+    },
+    {
+      "id": "A0YZ",
+      "code": "AHtb",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0Z7",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0Z9",
+      "code": "AHtb",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A10C",
+      "code": "Acri",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A11J",
+      "code": "AEpa",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "6"
+    },
+    {
+      "id": "A122",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A12L",
+      "code": "Acyc",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A12P",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A13D",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A13R",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A13V",
+      "code": "Acyc",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A13W",
+      "code": "Acyc",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A14T",
+      "code": "ANsy",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A15H",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A15V",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A15X",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A17P",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "11"
+    },
+    {
+      "id": "A17T",
+      "code": "Ablo",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A188",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A18Y",
+      "code": "Ablo",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A18Z",
+      "code": "Ablo",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A190",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "255",
+      "Cool1": "13"
+    },
+    {
+      "id": "A192",
+      "code": "Ablo",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A195",
+      "code": "Ablo",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A196",
+      "code": "Ablo",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A19D",
+      "code": "Ablo",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A19E",
+      "code": "Ablo",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A19G",
+      "code": "Ablo",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A19H",
+      "code": "Ablo",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A19I",
+      "code": "Ablo",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A19J",
+      "code": "Ablo",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A19K",
+      "code": "Ablo",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A19L",
+      "code": "Ablo",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1AJ",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "22"
+    },
+    {
+      "id": "A1AN",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A1AO",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "80"
+    },
+    {
+      "id": "A1D6",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A1D7",
+      "code": "ANcs",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "425",
+      "Cool1": "60"
+    },
+    {
+      "id": "A1DP",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "25"
+    },
+    {
+      "id": "A1EX",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "130"
+    },
+    {
+      "id": "A1G9",
+      "code": "Ablo",
+      "levels": "30",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1H5",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "28"
+    },
+    {
+      "id": "A1HL",
+      "code": "Aams",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1MD",
+      "code": "AHbz",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "250",
+      "Cool1": "60"
+    },
+    {
+      "id": "A1NG",
+      "code": "AEpa",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1OT",
+      "code": "AEmb",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "MBUR",
+      "Cool1": "18"
+    },
+    {
+      "id": "A1P5",
+      "code": "Arai",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "900",
+      "Cool1": "25"
+    },
+    {
+      "id": "A1RL",
+      "code": "Acyc",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A1S8",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "500",
+      "Cool1": "25"
+    },
+    {
+      "id": "A1SB",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "450",
+      "Cool1": "13"
+    },
+    {
+      "id": "A1SW",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "500",
+      "Cool1": "60"
+    },
+    {
+      "id": "A1UV",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "80"
+    },
+    {
+      "id": "A1WQ",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1YF",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A21E",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "110",
+      "Cool1": "11"
+    },
+    {
+      "id": "A23Y",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "1",
+      "Cool1": "10"
+    },
+    {
+      "id": "A248",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A27A",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "350",
+      "Cool1": "20"
+    },
+    {
+      "id": "A282",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A28Y",
+      "code": "ANab",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "100"
+    },
+    {
+      "id": "A2DV",
+      "code": "Aslo",
+      "levels": "20",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A2DW",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "1",
+      "Cool1": "12"
+    },
+    {
+      "id": "A2EO",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "500",
+      "Cool1": "12"
+    },
+    {
+      "id": "A2FI",
+      "code": "Acyc",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2IR",
+      "code": "Adis",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "250",
+      "Cool1": "8"
+    },
+    {
+      "id": "A2JC",
+      "code": "Ablo",
+      "levels": "25",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2K4",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A2L1",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "275",
+      "Cool1": "22"
+    },
+    {
+      "id": "A2LG",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2M1",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A2MC",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "24"
+    },
+    {
+      "id": "A2N4",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2NJ",
+      "code": "AHtb",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2S9",
+      "code": "AOcl",
+      "levels": "1",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "500",
+      "Cool1": "45"
+    },
+    {
+      "id": "A2T6",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A2WE",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "500",
+      "Cool1": "70"
+    },
+    {
+      "id": "A2X6",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A30C",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "600",
+      "Rng1_max": 600.0,
+      "Area1": "325",
+      "Cool1": "25"
+    },
+    {
+      "id": "A00H",
+      "code": "AOwd",
+      "levels": "3",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "120"
+    },
+    {
+      "id": "A01J",
+      "code": "ANdh",
+      "levels": "1",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A049",
+      "code": "ANdh",
+      "levels": "4",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "14"
+    },
+    {
+      "id": "A04L",
+      "code": "AHdr",
+      "levels": "4",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": "725",
+      "Cool1": "12"
+    },
+    {
+      "id": "A08O",
+      "code": "ANdh",
+      "levels": "4",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "13"
+    },
+    {
+      "id": "A0A2",
+      "code": "ANdo",
+      "levels": "3",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "100"
+    },
+    {
+      "id": "A0BL",
+      "code": "ANdh",
+      "levels": "1",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0BM",
+      "code": "ANdh",
+      "levels": "1",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0BN",
+      "code": "ANdh",
+      "levels": "1",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0BO",
+      "code": "ANdh",
+      "levels": "1",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0CH",
+      "code": "ANdh",
+      "levels": "3",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": "200",
+      "Cool1": "12"
+    },
+    {
+      "id": "A0CI",
+      "code": "ANdh",
+      "levels": "3",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": "200",
+      "Cool1": "12"
+    },
+    {
+      "id": "A0CJ",
+      "code": "ANdh",
+      "levels": "3",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": "200",
+      "Cool1": "12"
+    },
+    {
+      "id": "A0DY",
+      "code": "AEpa",
+      "levels": "3",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0ET",
+      "code": "ANdh",
+      "levels": "4",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A0FM",
+      "code": "ANab",
+      "levels": "4",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A0MU",
+      "code": "ANdo",
+      "levels": "3",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "100"
+    },
+    {
+      "id": "A0QP",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "25"
+    },
+    {
+      "id": "A0QR",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A0RG",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": "250",
+      "Cool1": "11"
+    },
+    {
+      "id": "A0RW",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "24"
+    },
+    {
+      "id": "A0VT",
+      "code": "ANdh",
+      "levels": "7",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A10L",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A10W",
+      "code": "ANdh",
+      "levels": "3",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A10X",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A123",
+      "code": "ANdh",
+      "levels": "1",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A1A0",
+      "code": "ANdh",
+      "levels": "3",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1B3",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "4"
+    },
+    {
+      "id": "A1P6",
+      "code": "Aens",
+      "levels": "1",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A1SJ",
+      "code": "ANdh",
+      "levels": "1",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A27F",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "22"
+    },
+    {
+      "id": "A2HC",
+      "code": "ANdh",
+      "levels": "1",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2S0",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "25"
+    },
+    {
+      "id": "A2WG",
+      "code": "ANdh",
+      "levels": "4",
+      "Rng1": "550",
+      "Rng1_max": 550.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A02H",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "525",
+      "Rng1_max": 525.0,
+      "Area1": null,
+      "Cool1": "8"
+    },
+    {
+      "id": "A0JB",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "525",
+      "Rng1_max": 525.0,
+      "Area1": null,
+      "Cool1": "8"
+    },
+    {
+      "id": "A0NK",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "525",
+      "Rng1_max": 525.0,
+      "Area1": null,
+      "Cool1": "8"
+    },
+    {
+      "id": "A0NO",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "525",
+      "Rng1_max": 525.0,
+      "Area1": "180",
+      "Cool1": "20"
+    },
+    {
+      "id": "A0UP",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "525",
+      "Rng1_max": 525.0,
+      "Area1": null,
+      "Cool1": "8"
+    },
+    {
+      "id": "A00U",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "160"
+    },
+    {
+      "id": "A01U",
+      "code": "Ainf",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "7"
+    },
+    {
+      "id": "A02A",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "13"
+    },
+    {
+      "id": "A02K",
+      "code": "AEmb",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "4"
+    },
+    {
+      "id": "A02X",
+      "code": "Aeye",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "1"
+    },
+    {
+      "id": "A03F",
+      "code": "ANbf",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": "150",
+      "Cool1": "12"
+    },
+    {
+      "id": "A03H",
+      "code": "AEmb",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "7"
+    },
+    {
+      "id": "A03R",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "150"
+    },
+    {
+      "id": "A04C",
+      "code": "AEer",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A04H",
+      "code": "ANcl",
+      "levels": "10",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A04Y",
+      "code": "AUsl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A054",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "160"
+    },
+    {
+      "id": "A055",
+      "code": "ANfb",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A05F",
+      "code": "ANst",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": "900",
+      "Cool1": "40"
+    },
+    {
+      "id": "A065",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A06R",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "140"
+    },
+    {
+      "id": "A07B",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A07N",
+      "code": "Ainf",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "17"
+    },
+    {
+      "id": "A07U",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "180"
+    },
+    {
+      "id": "A07Z",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "70"
+    },
+    {
+      "id": "A080",
+      "code": "AEsh",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "80"
+    },
+    {
+      "id": "A082",
+      "code": "AOmi",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": "600",
+      "Cool1": "3"
+    },
+    {
+      "id": "A086",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A08C",
+      "code": "ANdh",
+      "levels": "5",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A08E",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A08M",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "200"
+    },
+    {
+      "id": "A08Q",
+      "code": "AIil",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A08V",
+      "code": "Aams",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "14"
+    },
+    {
+      "id": "A0A3",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "3"
+    },
+    {
+      "id": "A0A4",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "3"
+    },
+    {
+      "id": "A0AJ",
+      "code": "ANcl",
+      "levels": "10",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0AK",
+      "code": "AOwd",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A0AM",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "3"
+    },
+    {
+      "id": "A0AS",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A0AV",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "150"
+    },
+    {
+      "id": "A0AW",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "45"
+    },
+    {
+      "id": "A0D2",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A0D5",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "600"
+    },
+    {
+      "id": "A0DC",
+      "code": "AIil",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0DD",
+      "code": "AIil",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A0DP",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A0DQ",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A0E1",
+      "code": "Ainf",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0E8",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A0F3",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0F4",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A0F7",
+      "code": "AEer",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A0FB",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A0GC",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0GD",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A0GR",
+      "code": "AIil",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A0H0",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "40"
+    },
+    {
+      "id": "A0H4",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A0I6",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A0I9",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0IV",
+      "code": "Ainf",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A0JS",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "40"
+    },
+    {
+      "id": "A0K5",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A0KL",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0KU",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "140"
+    },
+    {
+      "id": "A0KV",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A0L3",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "130"
+    },
+    {
+      "id": "A0LF",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A0LM",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0LT",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "160"
+    },
+    {
+      "id": "A0MF",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": "1",
+      "Cool1": "12"
+    },
+    {
+      "id": "A0MN",
+      "code": "AOhx",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A0NB",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": "220",
+      "Cool1": "20"
+    },
+    {
+      "id": "A0NC",
+      "code": "Aens",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0O7",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A0OJ",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": "500",
+      "Cool1": "18"
+    },
+    {
+      "id": "A0OT",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "0.1"
+    },
+    {
+      "id": "A0PY",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "3"
+    },
+    {
+      "id": "A0QE",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": "250",
+      "Cool1": "28"
+    },
+    {
+      "id": "A0QK",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": "300",
+      "Cool1": "100"
+    },
+    {
+      "id": "A0R6",
+      "code": "Aams",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A0RE",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "17"
+    },
+    {
+      "id": "A0RQ",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "3"
+    },
+    {
+      "id": "A0RX",
+      "code": "AOhx",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "13"
+    },
+    {
+      "id": "A0S2",
+      "code": "Aams",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "100"
+    },
+    {
+      "id": "A0SC",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A0SM",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0SN",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0SP",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A0SV",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A0TD",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "0.5"
+    },
+    {
+      "id": "A0TM",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0V9",
+      "code": "ANcl",
+      "levels": "7",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0VA",
+      "code": "ANcl",
+      "levels": "7",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0VB",
+      "code": "ANcl",
+      "levels": "7",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0VF",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "22"
+    },
+    {
+      "id": "A0VO",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A0VP",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "25"
+    },
+    {
+      "id": "A0VR",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0WP",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "80"
+    },
+    {
+      "id": "A0WQ",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "45"
+    },
+    {
+      "id": "A0X5",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A0XI",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "55"
+    },
+    {
+      "id": "A0YG",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "70"
+    },
+    {
+      "id": "A0YH",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A0Z4",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "32"
+    },
+    {
+      "id": "A0Z5",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A0ZF",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "50"
+    },
+    {
+      "id": "A10V",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A113",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A114",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A118",
+      "code": "Aams",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "100"
+    },
+    {
+      "id": "A119",
+      "code": "Aams",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "100"
+    },
+    {
+      "id": "A11A",
+      "code": "Aams",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "100"
+    },
+    {
+      "id": "A11B",
+      "code": "Aams",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "80"
+    },
+    {
+      "id": "A11C",
+      "code": "Aams",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "100"
+    },
+    {
+      "id": "A11M",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A121",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A12N",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "65"
+    },
+    {
+      "id": "A138",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "3"
+    },
+    {
+      "id": "A13E",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "0.5"
+    },
+    {
+      "id": "A13Z",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A141",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "300"
+    },
+    {
+      "id": "A14C",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "3"
+    },
+    {
+      "id": "A14D",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "6"
+    },
+    {
+      "id": "A170",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "300"
+    },
+    {
+      "id": "A19T",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "35"
+    },
+    {
+      "id": "A19Y",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A1A6",
+      "code": "Ainf",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1AA",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "15"
+    },
+    {
+      "id": "A1AS",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "2"
+    },
+    {
+      "id": "A1AT",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "90"
+    },
+    {
+      "id": "A1B4",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "120"
+    },
+    {
+      "id": "A1B5",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A1CS",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A1EU",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1FO",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "3"
+    },
+    {
+      "id": "A1FP",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "35"
+    },
+    {
+      "id": "A1FZ",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "3"
+    },
+    {
+      "id": "A1HO",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A1IO",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "3"
+    },
+    {
+      "id": "A1IZ",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "35"
+    },
+    {
+      "id": "A1J7",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A1LC",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A1ML",
+      "code": "AIil",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": "200",
+      "Cool1": "80"
+    },
+    {
+      "id": "A1P4",
+      "code": "ANto",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "70"
+    },
+    {
+      "id": "A1P9",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A1RA",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1RF",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A1RU",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A1S5",
+      "code": "AIil",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1SF",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A1SM",
+      "code": "Aens",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1SO",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "7"
+    },
+    {
+      "id": "A1T9",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A1WI",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "300"
+    },
+    {
+      "id": "A1ZF",
+      "code": "Aens",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A1ZG",
+      "code": "Aens",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A21L",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A21Q",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": "300",
+      "Cool1": "100"
+    },
+    {
+      "id": "A2A9",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "13"
+    },
+    {
+      "id": "A2AI",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2B5",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A2E6",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2E7",
+      "code": "AIil",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A2JN",
+      "code": "AIil",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A2KN",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A2KS",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "1"
+    },
+    {
+      "id": "A2KX",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A2L9",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A2LH",
+      "code": "Aams",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "100"
+    },
+    {
+      "id": "A2O8",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2QC",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "130"
+    },
+    {
+      "id": "A2QV",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "14"
+    },
+    {
+      "id": "A2UO",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2VO",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2VY",
+      "code": "Aens",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2WI",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "1"
+    },
+    {
+      "id": "A2XN",
+      "code": "AIil",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A2YR",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "110"
+    },
+    {
+      "id": "A30B",
+      "code": "AIil",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": "200",
+      "Cool1": null
+    },
+    {
+      "id": "A30D",
+      "code": "AIil",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A30E",
+      "code": "AIil",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A30Q",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "500",
+      "Rng1_max": 500.0,
+      "Area1": null,
+      "Cool1": "35"
+    },
+    {
+      "id": "A2B4",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "480",
+      "Rng1_max": 480.0,
+      "Area1": null,
+      "Cool1": "14"
+    },
+    {
+      "id": "A04W",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "475",
+      "Rng1_max": 475.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A089",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "475",
+      "Rng1_max": 475.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A08A",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "475",
+      "Rng1_max": 475.0,
+      "Area1": null,
+      "Cool1": "8"
+    },
+    {
+      "id": "A08D",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "475",
+      "Rng1_max": 475.0,
+      "Area1": null,
+      "Cool1": "6"
+    },
+    {
+      "id": "A17U",
+      "code": "AHtb",
+      "levels": "4",
+      "Rng1": "475",
+      "Rng1_max": 475.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2KQ",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "475",
+      "Rng1_max": 475.0,
+      "Area1": null,
+      "Cool1": "6"
+    },
+    {
+      "id": "A2KR",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "475",
+      "Rng1_max": 475.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0OI",
+      "code": "AEpa",
+      "levels": "4",
+      "Rng1": "450",
+      "Rng1_max": 450.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0Q7",
+      "code": "AEsh",
+      "levels": "4",
+      "Rng1": "450",
+      "Rng1_max": 450.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A0QN",
+      "code": "AEpa",
+      "levels": "4",
+      "Rng1": "450",
+      "Rng1_max": 450.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A21K",
+      "code": "Adet",
+      "levels": "1",
+      "Rng1": "450",
+      "Rng1_max": 450.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1SI",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "425",
+      "Rng1_max": 425.0,
+      "Area1": "500",
+      "Cool1": "30"
+    },
+    {
+      "id": "A2N3",
+      "code": "AEpa",
+      "levels": "4",
+      "Rng1": "425",
+      "Rng1_max": 425.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2WH",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "420",
+      "Rng1_max": 420.0,
+      "Area1": null,
+      "Cool1": "1"
+    },
+    {
+      "id": "A00P",
+      "code": "Amls",
+      "levels": "4",
+      "Rng1": "400",
+      "Rng1_max": 400.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A02J",
+      "code": "AUim",
+      "levels": "4",
+      "Rng1": "400",
+      "Rng1_max": 400.0,
+      "Area1": "200",
+      "Cool1": "12"
+    },
+    {
+      "id": "A04Q",
+      "code": "Ainf",
+      "levels": "3",
+      "Rng1": "400",
+      "Rng1_max": 400.0,
+      "Area1": null,
+      "Cool1": "45"
+    },
+    {
+      "id": "A053",
+      "code": "Ainf",
+      "levels": "4",
+      "Rng1": "400",
+      "Rng1_max": 400.0,
+      "Area1": null,
+      "Cool1": "44"
+    },
+    {
+      "id": "A066",
+      "code": "Acri",
+      "levels": "3",
+      "Rng1": "400",
+      "Rng1_max": 400.0,
+      "Area1": null,
+      "Cool1": "130"
+    },
+    {
+      "id": "A07E",
+      "code": "Ainf",
+      "levels": "1",
+      "Rng1": "400",
+      "Rng1_max": 400.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A08L",
+      "code": "Acri",
+      "levels": "1",
+      "Rng1": "400",
+      "Rng1_max": 400.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A09K",
+      "code": "AUim",
+      "levels": "4",
+      "Rng1": "400",
+      "Rng1_max": 400.0,
+      "Area1": "200",
+      "Cool1": "11"
+    },
+    {
+      "id": "A0JI",
+      "code": "Atru",
+      "levels": "1",
+      "Rng1": "400",
+      "Rng1_max": 400.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0MT",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "400",
+      "Rng1_max": 400.0,
+      "Area1": "400",
+      "Cool1": "5.5"
+    },
+    {
+      "id": "A0RB",
+      "code": "AEsh",
+      "levels": "4",
+      "Rng1": "400",
+      "Rng1_max": 400.0,
+      "Area1": null,
+      "Cool1": "22"
+    },
+    {
+      "id": "A14U",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "400",
+      "Rng1_max": 400.0,
+      "Area1": null,
+      "Cool1": "11"
+    },
+    {
+      "id": "A1PH",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "400",
+      "Rng1_max": 400.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A1YP",
+      "code": "ANfl",
+      "levels": "3",
+      "Rng1": "400",
+      "Rng1_max": 400.0,
+      "Area1": "125",
+      "Cool1": "16"
+    },
+    {
+      "id": "A24I",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "400",
+      "Rng1_max": 400.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A2UM",
+      "code": "AEpa",
+      "levels": "4",
+      "Rng1": "400",
+      "Rng1_max": 400.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A0G7",
+      "code": "ANbf",
+      "levels": "3",
+      "Rng1": "375",
+      "Rng1_max": 375.0,
+      "Area1": "125",
+      "Cool1": "10"
+    },
+    {
+      "id": "A1E8",
+      "code": "AEpa",
+      "levels": "4",
+      "Rng1": "375",
+      "Rng1_max": 375.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A29Q",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "375",
+      "Rng1_max": 375.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A040",
+      "code": "ANba",
+      "levels": "4",
+      "Rng1": "350",
+      "Rng1_max": 350.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A047",
+      "code": "Ahwd",
+      "levels": "4",
+      "Rng1": "350",
+      "Rng1_max": 350.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A048",
+      "code": "AHfa",
+      "levels": "4",
+      "Rng1": "350",
+      "Rng1_max": 350.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A06O",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "350",
+      "Rng1_max": 350.0,
+      "Area1": null,
+      "Cool1": "11"
+    },
+    {
+      "id": "A0E6",
+      "code": "ANin",
+      "levels": "4",
+      "Rng1": "350",
+      "Rng1_max": 350.0,
+      "Area1": "250",
+      "Cool1": "15"
+    },
+    {
+      "id": "A0F1",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "350",
+      "Rng1_max": 350.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0M1",
+      "code": "AHtb",
+      "levels": "3",
+      "Rng1": "350",
+      "Rng1_max": 350.0,
+      "Area1": null,
+      "Cool1": "130"
+    },
+    {
+      "id": "A11N",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "350",
+      "Rng1_max": 350.0,
+      "Area1": null,
+      "Cool1": "19"
+    },
+    {
+      "id": "A1AX",
+      "code": "AHtb",
+      "levels": "3",
+      "Rng1": "350",
+      "Rng1_max": 350.0,
+      "Area1": null,
+      "Cool1": "70"
+    },
+    {
+      "id": "A1FD",
+      "code": "Aeat",
+      "levels": "1",
+      "Rng1": "350",
+      "Rng1_max": 350.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A1OU",
+      "code": "Aprg",
+      "levels": "1",
+      "Rng1": "350",
+      "Rng1_max": 350.0,
+      "Area1": null,
+      "Cool1": "5"
+    },
+    {
+      "id": "A1OZ",
+      "code": "Anhe",
+      "levels": "1",
+      "Rng1": "350",
+      "Rng1_max": 350.0,
+      "Area1": null,
+      "Cool1": "0.5"
+    },
+    {
+      "id": "A26N",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "350",
+      "Rng1_max": 350.0,
+      "Area1": null,
+      "Cool1": "16"
+    },
+    {
+      "id": "A0A0",
+      "code": "AEer",
+      "levels": "1",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A0A9",
+      "code": "Aspl",
+      "levels": "1",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": "500",
+      "Cool1": "15"
+    },
+    {
+      "id": "A0AU",
+      "code": "AHdr",
+      "levels": "4",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": "500",
+      "Cool1": "16"
+    },
+    {
+      "id": "A0BQ",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": "300",
+      "Cool1": "35"
+    },
+    {
+      "id": "A0HC",
+      "code": "Aivs",
+      "levels": "1",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0RL",
+      "code": "Aivs",
+      "levels": "4",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0VV",
+      "code": "AEpa",
+      "levels": "7",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0XD",
+      "code": "AHca",
+      "levels": "1",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A10R",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": null,
+      "Cool1": "70"
+    },
+    {
+      "id": "A12A",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": null,
+      "Cool1": "26"
+    },
+    {
+      "id": "A14R",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": "500",
+      "Cool1": "21"
+    },
+    {
+      "id": "A1GB",
+      "code": "Aivs",
+      "levels": "4",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": null,
+      "Cool1": "3"
+    },
+    {
+      "id": "A1P2",
+      "code": "AHca",
+      "levels": "1",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1QY",
+      "code": "AEpa",
+      "levels": "1",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2E2",
+      "code": "AUcs",
+      "levels": "4",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": null,
+      "Cool1": "8"
+    },
+    {
+      "id": "A2L5",
+      "code": "ANso",
+      "levels": "4",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": null,
+      "Cool1": "0.1"
+    },
+    {
+      "id": "A2N5",
+      "code": "Aivs",
+      "levels": "1",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2Q8",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": null,
+      "Cool1": "10"
+    },
+    {
+      "id": "A2R2",
+      "code": "Aivs",
+      "levels": "1",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2SI",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "300",
+      "Rng1_max": 300.0,
+      "Area1": null,
+      "Cool1": "25"
+    },
+    {
+      "id": "A1BX",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "275",
+      "Rng1_max": 275.0,
+      "Area1": "400",
+      "Cool1": "200"
+    },
+    {
+      "id": "A1GE",
+      "code": "ANsi",
+      "levels": "1",
+      "Rng1": "275",
+      "Rng1_max": 275.0,
+      "Area1": "275",
+      "Cool1": null
+    },
+    {
+      "id": "A2KZ",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "275",
+      "Rng1_max": 275.0,
+      "Area1": "500",
+      "Cool1": "22"
+    },
+    {
+      "id": "A2TX",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "275",
+      "Rng1_max": 275.0,
+      "Area1": "400",
+      "Cool1": "200"
+    },
+    {
+      "id": "A07Q",
+      "code": "Acri",
+      "levels": "3",
+      "Rng1": "250",
+      "Rng1_max": 250.0,
+      "Area1": null,
+      "Cool1": "120"
+    },
+    {
+      "id": "A0BX",
+      "code": "AIda",
+      "levels": "1",
+      "Rng1": "250",
+      "Rng1_max": 250.0,
+      "Area1": "700",
+      "Cool1": "35"
+    },
+    {
+      "id": "A0BY",
+      "code": "ANto",
+      "levels": "3",
+      "Rng1": "250",
+      "Rng1_max": 250.0,
+      "Area1": null,
+      "Cool1": "200"
+    },
+    {
+      "id": "A0CK",
+      "code": "AIda",
+      "levels": "1",
+      "Rng1": "250",
+      "Rng1_max": 250.0,
+      "Area1": "750",
+      "Cool1": "45"
+    },
+    {
+      "id": "A0K0",
+      "code": "AIra",
+      "levels": "1",
+      "Rng1": "250",
+      "Rng1_max": 250.0,
+      "Area1": null,
+      "Cool1": "40"
+    },
+    {
+      "id": "A0K7",
+      "code": "AImr",
+      "levels": "1",
+      "Rng1": "250",
+      "Rng1_max": 250.0,
+      "Area1": "600",
+      "Cool1": "55"
+    },
+    {
+      "id": "A1ZW",
+      "code": "AImr",
+      "levels": "1",
+      "Rng1": "250",
+      "Rng1_max": 250.0,
+      "Area1": "600",
+      "Cool1": "30"
+    },
+    {
+      "id": "A206",
+      "code": "AImr",
+      "levels": "1",
+      "Rng1": "250",
+      "Rng1_max": 250.0,
+      "Area1": "600",
+      "Cool1": "90"
+    },
+    {
+      "id": "A2K1",
+      "code": "AImr",
+      "levels": "1",
+      "Rng1": "250",
+      "Rng1_max": 250.0,
+      "Area1": "600",
+      "Cool1": "60"
+    },
+    {
+      "id": "A2QP",
+      "code": "AImr",
+      "levels": "1",
+      "Rng1": "250",
+      "Rng1_max": 250.0,
+      "Area1": "600",
+      "Cool1": "300"
+    },
+    {
+      "id": "A0HU",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "200",
+      "Rng1_max": 200.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0HX",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "200",
+      "Rng1_max": 200.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0QD",
+      "code": "Adet",
+      "levels": "1",
+      "Rng1": "200",
+      "Rng1_max": 200.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0XA",
+      "code": "AHbz",
+      "levels": "4",
+      "Rng1": "200",
+      "Rng1_max": 200.0,
+      "Area1": "200",
+      "Cool1": "25"
+    },
+    {
+      "id": "A194",
+      "code": "AOcl",
+      "levels": "4",
+      "Rng1": "200",
+      "Rng1_max": 200.0,
+      "Area1": "500",
+      "Cool1": "24"
+    },
+    {
+      "id": "A1G7",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "200",
+      "Rng1_max": 200.0,
+      "Area1": "175",
+      "Cool1": "85"
+    },
+    {
+      "id": "A1VG",
+      "code": "Agra",
+      "levels": "1",
+      "Rng1": "200",
+      "Rng1_max": 200.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A2QU",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "200",
+      "Rng1_max": 200.0,
+      "Area1": null,
+      "Cool1": "14"
+    },
+    {
+      "id": "A1MV",
+      "code": "AOcl",
+      "levels": "3",
+      "Rng1": "175",
+      "Rng1_max": 175.0,
+      "Area1": "500",
+      "Cool1": "130"
+    },
+    {
+      "id": "A1S6",
+      "code": "AHtb",
+      "levels": "3",
+      "Rng1": "165",
+      "Rng1_max": 165.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A01V",
+      "code": "Aesn",
+      "levels": "1",
+      "Rng1": "160",
+      "Rng1_max": 160.0,
+      "Area1": null,
+      "Cool1": "25"
+    },
+    {
+      "id": "A0FL",
+      "code": "Amls",
+      "levels": "3",
+      "Rng1": "160",
+      "Rng1_max": 160.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A1CX",
+      "code": "Amls",
+      "levels": "3",
+      "Rng1": "160",
+      "Rng1_max": 160.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A00L",
+      "code": "ANfb",
+      "levels": "4",
+      "Rng1": "150",
+      "Rng1_max": 150.0,
+      "Area1": null,
+      "Cool1": "8"
+    },
+    {
+      "id": "A06H",
+      "code": "Asta",
+      "levels": "4",
+      "Rng1": "150",
+      "Rng1_max": 150.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A0AR",
+      "code": "AHtb",
+      "levels": "8",
+      "Rng1": "150",
+      "Rng1_max": 150.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A0E2",
+      "code": "AOcl",
+      "levels": "3",
+      "Rng1": "150",
+      "Rng1_max": 150.0,
+      "Area1": "150",
+      "Cool1": "75"
+    },
+    {
+      "id": "A0H6",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "150",
+      "Rng1_max": 150.0,
+      "Area1": null,
+      "Cool1": "0.5"
+    },
+    {
+      "id": "A0H7",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "150",
+      "Rng1_max": 150.0,
+      "Area1": null,
+      "Cool1": "0.5"
+    },
+    {
+      "id": "A0JX",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "150",
+      "Rng1_max": 150.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0SW",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "150",
+      "Rng1_max": 150.0,
+      "Area1": null,
+      "Cool1": "100"
+    },
+    {
+      "id": "A1A5",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "150",
+      "Rng1_max": 150.0,
+      "Area1": null,
+      "Cool1": "36"
+    },
+    {
+      "id": "A1MR",
+      "code": "AOcl",
+      "levels": "3",
+      "Rng1": "150",
+      "Rng1_max": 150.0,
+      "Area1": "150",
+      "Cool1": "6"
+    },
+    {
+      "id": "A2CI",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "150",
+      "Rng1_max": 150.0,
+      "Area1": null,
+      "Cool1": "50"
+    },
+    {
+      "id": "A2ON",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "150",
+      "Rng1_max": 150.0,
+      "Area1": null,
+      "Cool1": "8"
+    },
+    {
+      "id": "A2QM",
+      "code": "Acri",
+      "levels": "4",
+      "Rng1": "150",
+      "Rng1_max": 150.0,
+      "Area1": null,
+      "Cool1": "22"
+    },
+    {
+      "id": "A2TK",
+      "code": "ANcl",
+      "levels": "1",
+      "Rng1": "150",
+      "Rng1_max": 150.0,
+      "Area1": null,
+      "Cool1": "300"
+    },
+    {
+      "id": "A2UU",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "150",
+      "Rng1_max": 150.0,
+      "Area1": null,
+      "Cool1": "22"
+    },
+    {
+      "id": "A2K7",
+      "code": "AHtb",
+      "levels": "1",
+      "Rng1": "140",
+      "Rng1_max": 140.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A03O",
+      "code": "AOmi",
+      "levels": "3",
+      "Rng1": "128",
+      "Rng1_max": 128.0,
+      "Area1": "400",
+      "Cool1": "140"
+    },
+    {
+      "id": "A063",
+      "code": "AOmi",
+      "levels": "4",
+      "Rng1": "128",
+      "Rng1_max": 128.0,
+      "Area1": "400",
+      "Cool1": "40"
+    },
+    {
+      "id": "A0B8",
+      "code": "AOmi",
+      "levels": "1",
+      "Rng1": "128",
+      "Rng1_max": 128.0,
+      "Area1": "1000",
+      "Cool1": "35"
+    },
+    {
+      "id": "A0CP",
+      "code": "ANms",
+      "levels": "3",
+      "Rng1": "128",
+      "Rng1_max": 128.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0DE",
+      "code": "ANms",
+      "levels": "1",
+      "Rng1": "128",
+      "Rng1_max": 128.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0DR",
+      "code": "ANms",
+      "levels": "3",
+      "Rng1": "128",
+      "Rng1_max": 128.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0MP",
+      "code": "ANms",
+      "levels": "4",
+      "Rng1": "128",
+      "Rng1_max": 128.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1AY",
+      "code": "AOmi",
+      "levels": "3",
+      "Rng1": "128",
+      "Rng1_max": 128.0,
+      "Area1": "1000",
+      "Cool1": "90"
+    },
+    {
+      "id": "A1GR",
+      "code": "ANms",
+      "levels": "7",
+      "Rng1": "128",
+      "Rng1_max": 128.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A1WE",
+      "code": "AOmi",
+      "levels": "1",
+      "Rng1": "128",
+      "Rng1_max": 128.0,
+      "Area1": "1000",
+      "Cool1": "50"
+    },
+    {
+      "id": "A1YH",
+      "code": "AOmi",
+      "levels": "1",
+      "Rng1": "128",
+      "Rng1_max": 128.0,
+      "Area1": "1000",
+      "Cool1": "20"
+    },
+    {
+      "id": "A28Q",
+      "code": "ANms",
+      "levels": "4",
+      "Rng1": "128",
+      "Rng1_max": 128.0,
+      "Area1": null,
+      "Cool1": "2"
+    },
+    {
+      "id": "A2NI",
+      "code": "ANms",
+      "levels": "1",
+      "Rng1": "128",
+      "Rng1_max": 128.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A2O9",
+      "code": "ANms",
+      "levels": "1",
+      "Rng1": "128",
+      "Rng1_max": 128.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A0R2",
+      "code": "ANdh",
+      "levels": "4",
+      "Rng1": "125",
+      "Rng1_max": 125.0,
+      "Area1": null,
+      "Cool1": "12"
+    },
+    {
+      "id": "A1UG",
+      "code": "ANcl",
+      "levels": "4",
+      "Rng1": "125",
+      "Rng1_max": 125.0,
+      "Area1": null,
+      "Cool1": "18"
+    },
+    {
+      "id": "A1ZS",
+      "code": "ANto",
+      "levels": "4",
+      "Rng1": "125",
+      "Rng1_max": 125.0,
+      "Area1": null,
+      "Cool1": "18"
+    },
+    {
+      "id": "A202",
+      "code": "ANcl",
+      "levels": "3",
+      "Rng1": "125",
+      "Rng1_max": 125.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A2K2",
+      "code": "Abun",
+      "levels": "1",
+      "Rng1": "120",
+      "Rng1_max": 120.0,
+      "Area1": "250",
+      "Cool1": "1"
+    },
+    {
+      "id": "A002",
+      "code": "ANba",
+      "levels": "1",
+      "Rng1": "100",
+      "Rng1_max": 100.0,
+      "Area1": null,
+      "Cool1": null
+    },
+    {
+      "id": "A05J",
+      "code": "AIpm",
+      "levels": "4",
+      "Rng1": "100",
+      "Rng1_max": 100.0,
+      "Area1": "200",
+      "Cool1": "19"
+    },
+    {
+      "id": "A05Y",
+      "code": "Adev",
+      "levels": "4",
+      "Rng1": "100",
+      "Rng1_max": 100.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A19O",
+      "code": "AOcl",
+      "levels": "3",
+      "Rng1": "100",
+      "Rng1_max": 100.0,
+      "Area1": "500",
+      "Cool1": "90"
+    },
+    {
+      "id": "A1VH",
+      "code": "Aesn",
+      "levels": "1",
+      "Rng1": "100",
+      "Rng1_max": 100.0,
+      "Area1": null,
+      "Cool1": "1"
+    },
+    {
+      "id": "A1ZL",
+      "code": "Aeat",
+      "levels": "1",
+      "Rng1": "100",
+      "Rng1_max": 100.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A1ZM",
+      "code": "Aeat",
+      "levels": "1",
+      "Rng1": "100",
+      "Rng1_max": 100.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A201",
+      "code": "AEpa",
+      "levels": "3",
+      "Rng1": "100",
+      "Rng1_max": 100.0,
+      "Area1": null,
+      "Cool1": "20"
+    },
+    {
+      "id": "A2VG",
+      "code": "Aeat",
+      "levels": "1",
+      "Rng1": "100",
+      "Rng1_max": 100.0,
+      "Area1": null,
+      "Cool1": "60"
+    },
+    {
+      "id": "A1IV",
+      "code": "Agra",
+      "levels": "3",
+      "Rng1": "32",
+      "Rng1_max": 32.0,
+      "Area1": null,
+      "Cool1": "30"
+    },
+    {
+      "id": "A003",
+      "code": "AOws",
+      "levels": "3",
+      "Rng1": "25",
+      "Rng1_max": 25.0,
+      "Area1": "99999",
+      "Cool1": "240"
+    },
+    {
+      "id": "A0FS",
+      "code": "AOws",
+      "levels": "3",
+      "Rng1": "25",
+      "Rng1_max": 25.0,
+      "Area1": "1",
+      "Cool1": "240"
+    },
+    {
+      "id": "A2UW",
+      "code": "Adts",
+      "levels": "1",
+      "Rng1": "1",
+      "Rng1_max": 1.0,
+      "Area1": null,
+      "Cool1": null
+    }
+  ]
+}

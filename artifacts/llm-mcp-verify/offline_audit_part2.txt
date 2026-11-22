@@ -1,0 +1,469 @@
+=== 1. B1: GZ1 / GM1 / ZS / WS / DIO / D4O ===
+  D7O_1: 1747990581 = 'h085'
+  D7O_2: 1747993174 = 'h0BV'
+  D7O_3: 1747993669 = 'h0DE'
+  D7O_msg: 1848659508 = 'n0N4'
+  --- function GZ1 ---
+  L7127: function GZ1 takes integer EE1 returns boolean
+  L7128: local integer i=0
+  L7129: loop
+  L7130: exitwhen i>59
+  L7131: if EE1==ZS[i]then
+  L7132: return true
+  L7133: endif
+  L7134: set i=i+1
+  L7135: endloop
+  L7136: return false
+  L7137: endfunction
+  --- function GM1 ---
+  L7209: function GM1 takes nothing returns boolean
+  L7210: local trigger t=GetTriggeringTrigger()
+  L7211: local integer S5I=GetHandleId(t)
+  L7212: local integer id=(LoadInteger(LY,(S5I),(34)))
+  L7213: local unit GJ1=D30[id]
+  L7214: local unit SFI=K1[id]
+  L7215: local integer SUI=GetHeroLevel(SFI)
+  L7216: local integer i=0
+  L7217: call RemoveUnitFromStock(GJ1,1747993652)
+  L7218: call AddUnitToStock(GJ1,ZS[GV1(SUI)],1,1)
+  L7219: set VS[id]=ZS[GV1(SUI)]
+  L7220: call FlushChildHashtable(LY,(S5I))
+  L7221: call S0I(t)
+  L7222: set t=null
+  L7223: set SFI=null
+  L7224: return false
+  L7225: endfunction
+  --- function GH1 ---
+  L7116: function GH1 takes unit P7I returns nothing
+  L7117: local trigger t=CreateTrigger()
+  L7118: local integer S5I=GetHandleId(t)
+  L7119: local unit I01=CreateUnit(GetOwningPlayer(P7I),GE1(P7I),GetUnitX(P7I),GetUnitY(P7I),0)
+  L7120: call TriggerRegisterTimerEvent(t,0.1,true)
+  L7121: call TriggerRegisterUnitEvent(t,P7I,EVENT_UNIT_DEATH)
+  L7122: call TriggerAddCondition(t,Condition(function GG1))
+  L7123: call SaveUnitHandle(LY,(S5I),(2),(P7I))
+  L7124: call SaveUnitHandle(LY,(S5I),(19),(I01))
+  L7125: set t=null
+  L7126: endfunction
+  --- function JPO ---
+  L20966: function JPO takes nothing returns nothing
+  L20967: local group g
+  L20968: local unit JRO=GetTriggerUnit()
+  L20969: local player p=GetOwningPlayer(JRO)
+  L20970: if(TII(p)and NH0==false)or(TII(p)==false and NZ0==false)then
+  L20971: set g=NTI()
+  L20972: set NG0=p
+  L20973: call GroupEnumUnitsInRange(g,0,0,12000,Condition(function JNO))
+  L20974: call ForGroup(g,function JSO)
+  L20975: call NSI(g)
+  L20976: if TII(p)then
+  L20977: set NH0=true
+  L20978: call JTO(JRO,p)
+  L20979: set NH0=false
+  L20980: else
+  L20981: set NZ0=true
+  L20982: call JTO(JRO,p)
+  L20983: set NZ0=false
+  L20984: endif
+  L20985: endif
+  L20986: set g=null
+  L20987: set JRO=null
+  L20988: set p=null
+  L20989: endfunction
+  --- ZS / WS 初始化示例 ---
+  L91383: set ZS[0]=1747990855
+  L91384: set WS[0]=50
+  L91385: set ZS[1]=1747990868
+  L91386: set WS[1]=100
+  L91387: set ZS[2]=1747990854
+  L91388: set WS[2]=150
+  L91389: set ZS[3]=1747990856
+  L91390: set WS[3]=200
+  L91391: set ZS[4]=1747990853
+  L91392: set WS[4]=250
+  L91393: set ZS[5]=1747990852
+  L91394: set WS[5]=300
+    ZS[0] = 'h09G'
+    ZS[1] = 'h09T'
+    ZS[2] = 'h09F'
+
+=== 2. B3: war3map.j 信使类型与技能 ===
+  L3691: return GetUnitTypeId(SWI)==1848651849 or GetUnitTypeId(SWI)==1848652338 or GetUnitTypeId(SWI)==1848652337 or GetUnitTypeId(SWI)==1848658777 or GetUnitTypeId(SWI)==1848658778 or GetUnitTypeId(SWI)==1848659013 or GetUnitTypeId(SWI)==1848652339 or GetUnitTypeId(SWI)==1848652340 or GetUnitTypeId(SWI)==1848652341 or GetUnitTypeId(SWI)==1848658992 or GetUnitTypeId(SWI)==1848658993 or GetUnitTypeId(SWI)==1848659252 or GetUnitTypeId(SWI)==1848651853 or GetUnitTypeId(SWI)==1848658006 or GetUnitTypeId(SWI)==1848659027
+    FourCCs: 'n00I'(1848651849), 'n00M'(1848651853), 'n021'(1848652337), 'n022'(1848652338), 'n023'(1848652339), 'n024'(1848652340), 'n025'(1848652341), 'n0HV'(1848658006), 'n0KY'(1848658777), 'n0KZ'(1848658778), 'n0L0'(1848658992), 'n0L1'(1848658993), 'n0LE'(1848659013), 'n0LS'(1848659027), 'n0M4'(1848659252)
+  L5352: return GetUnitTypeId(B71)==1848651828 or GetUnitTypeId(B71)==1848652088 or GetUnitTypeId(B71)==1848652099 or GetUnitTypeId(B71)==1848652103
+    FourCCs: 'n004'(1848651828), 'n018'(1848652088), 'n01C'(1848652099), 'n01G'(1848652103)
+  L5602: return C11==1848651828 or C11==1848652103 or C11==1848652099 or C11==1848652088 or C11==1697656907 or C11==1697656905 or C11==1697656908 or C11==1697657162
+    FourCCs: 'e00I'(1697656905), 'e00K'(1697656907), 'e00L'(1697656908), 'e01J'(1697657162), 'n004'(1848651828), 'n018'(1848652088), 'n01C'(1848652099), 'n01G'(1848652103)
+  --- function DIO ---
+  L15520: function DIO takes unit SFI,boolean D1O returns nothing
+  L15521: local trigger t=CreateTrigger()
+  L15522: local integer S5I=GetHandleId(t)
+  L15523: local unit BPO=GetSellingUnit()
+  L15524: local integer DOO=(LoadInteger(LY,(GetHandleId(BPO)),(8000)))
+  L15525: if SFI!=null then
+  L15526: if SFI!=(LoadUnitHandle(LY,(GetHandleId(BPO)),(8002+DOO)))and D1O then
+  L15527: set DOO=DOO+1
+  L15528: call SaveInteger(LY,(GetHandleId(BPO)),(8000),(DOO))
+  L15529: call SaveUnitHandle(LY,(GetHandleId(BPO)),(8002+DOO),(SFI))
+  L15530: endif
+  L15531: call SaveReal(LY,(S5I),(677),((GetUnitX(SFI))*1.0))
+  L15532: call SaveReal(LY,(S5I),(678),((GetUnitY(SFI))*1.0))
+  L15533: call IssueTargetOrder(BPO,"move",SFI)
+  L15534: call TriggerRegisterDeathEvent(t,BPO)
+  L15535: call TriggerRegisterDeathEvent(t,SFI)
+  L15536: call TriggerRegisterUnitEvent(t,BPO,EVENT_UNIT_ISSUED_ORDER)
+  L15537: call TriggerRegisterUnitEvent(t,BPO,EVENT_UNIT_ISSUED_TARGET_ORDER)
+  L15538: call TriggerRegisterUnitEvent(t,BPO,EVENT_UNIT_ISSUED_POINT_ORDER)
+  L15539: call TriggerRegisterTimerEvent(t,0.2,true)
+  L15540: call TriggerAddCondition(t,Condition(function D0O))
+  L15541: call SaveUnitHandle(LY,(S5I),(2),(SFI))
+  L15542: call SaveUnitHandle(LY,(S5I),(92),(BPO))
+  L15543: endif
+  L15544: set t=null
+  L15545: set BPO=null
+  L15546: endfunction
+  --- function D4O ---
+  L15581: function D4O takes unit SFI returns nothing
+  L15582: local unit u=GetSoldUnit()
+  L15583: local integer i=0
+  L15584: local item BA1
+  L15585: local integer id=GetPlayerId(GetOwningPlayer(u))
+  L15586: local region r=CreateRegion()
+  L15587: local trigger t
+  L15588: local integer S5I
+  L15589: local unit P7I=GetSellingUnit()
+  L15590: if TII(GetOwningPlayer(u))then
+  L15591: call RegionAddRect(r,G5)
+  L15592: else
+  L15593: call RegionAddRect(r,H5)
+  L15594: endif
+  L15595: if IsUnitInRegion(r,P7I)then
+  L15596: set t=CreateTrigger()
+  L15597: set S5I=GetHandleId(t)
+  L15598: call TriggerRegisterTimerEvent(t,0.05,true)
+  L15599: call TriggerAddCondition(t,Condition(function D3O))
+  L15600: call SaveUnitHandle(LY,(S5I),(53),(u))
+  L15601: call SaveUnitHandle(LY,(S5I),(2),(P7I))
+  L15602: loop
+  L15603: exitwhen i>5
+  L15604: set BA1=UnitItemInSlot(P7I,i)
+  L15605: if E91(EB1(BA1))==false and EB1(BA1)!=VL0 and EG1(BA1)==false then
+  L15606: call UnitRemoveItemFromSlot(P7I,i)
+  L15607: if IsUnitInRegion(r,P7I)and IsPlayerAlly(GetItemPlayer(BA1),GetOwningPlayer(P7I))==true then
+  L15608: set id=GetPlayerId(GetItemPlayer(BA1))
+  L15609: call SetItemPosition(BA1,D40[id],D50[id])
+  L15610: endif
+  L15611: endif
+  L15612: set i=i+1
+  L15613: endloop
+  L15614: endif
+  L15615: call RemoveRegion(r)
+  L15616: set u=null
+  L15617: set r=null
+  L15618: endfunction
+  --- 搜索 war3map.j 中的信使/储藏处 Order 字符串 ---
+    L20925: call IssueImmediateOrder(D30[i],"coldarrows")
+    L20929: call IssueImmediateOrder(D30[i],"coldarrows")
+    L20933: call IssueImmediateOrder(D30[i],"coldarrows")
+    L20937: call IssueImmediateOrder(D30[i],"coldarrows")
+    L20941: call IssueImmediateOrder(D30[i],"coldarrows")
+    L20946: call IssueImmediateOrder(D30[i],"coldarrows")
+    L20950: call IssueImmediateOrder(D30[i],"coldarrows")
+    L20954: call IssueImmediateOrder(D30[i],"coldarrows")
+    L20958: call IssueImmediateOrder(D30[i],"coldarrows")
+    L20962: call IssueImmediateOrder(D30[i],"coldarrows")
+
+=== 3. B4: TP 吸附规则 (MS0 & 1093677647) ===
+  1093677647 = 'A02O', 1093744708 = 'A18D', 1227895881 = 'I04I'
+    L1563: integer MM0=-1
+    L1564: constant real MN0=25
+    L1565: constant real MS0=575
+    L1566: region MT0
+    L1567: integer MR0
+    L1568: integer MP0=1093742918
+    L1569: integer MQ0=1093742917
+    ---
+    L19827: loop
+    L19828: exitwhen i>MM0
+    L19829: if(GW1<ML0[i]+MN0)and(QNI(x,y,MJ0[i],MK0[i])<MS0*2+50)and IsPlayerAlly(Player(id),MY0[i])==true then
+    L19830: set NPI=NPI+1
+    L19831: endif
+    L19832: set i=i+1
+    L19833: endloop
+    ---
+    L20122: set y=GetUnitY(P8I)
+    L20123: endif
+    L20124: if QNI(x,y,GetUnitX(P8I),GetUnitY(P8I))>MS0 then
+    L20125: set a=Atan2(y-GetUnitY(P8I),x-GetUnitX(P8I))
+    L20126: set x=GetUnitX(P8I)+MS0*Cos(a)
+    L20127: set y=GetUnitY(P8I)+MS0*Sin(a)
+    L20128: elseif QNI(x,y,GetUnitX(P8I),GetUnitY(P8I))<50 then
+    ---
+    L20124: if QNI(x,y,GetUnitX(P8I),GetUnitY(P8I))>MS0 then
+    L20125: set a=Atan2(y-GetUnitY(P8I),x-GetUnitX(P8I))
+    L20126: set x=GetUnitX(P8I)+MS0*Cos(a)
+    L20127: set y=GetUnitY(P8I)+MS0*Sin(a)
+    L20128: elseif QNI(x,y,GetUnitX(P8I),GetUnitY(P8I))<50 then
+    L20129: set a=Atan2(y-GetUnitY(P8I),x-GetUnitX(P8I))
+    L20130: set x=GetUnitX(P8I)+120*Cos(a)
+    ---
+    L20125: set a=Atan2(y-GetUnitY(P8I),x-GetUnitX(P8I))
+    L20126: set x=GetUnitX(P8I)+MS0*Cos(a)
+    L20127: set y=GetUnitY(P8I)+MS0*Sin(a)
+    L20128: elseif QNI(x,y,GetUnitX(P8I),GetUnitY(P8I))<50 then
+    L20129: set a=Atan2(y-GetUnitY(P8I),x-GetUnitX(P8I))
+    L20130: set x=GetUnitX(P8I)+120*Cos(a)
+    L20131: set y=GetUnitY(P8I)+120*Sin(a)
+    ---
+  --- L22200..L22245 ---
+    L22200: endfunction
+    L22201: function MSO takes nothing returns nothing
+    L22202: local integer MTO=0
+    L22203: if GetSpellAbilityId()==1093677647 then
+    L22204: set MTO=1
+    L22205: endif
+    L22206: if GetSpellAbilityId()==1093679193 then
+    L22207: set MTO=2
+    L22208: endif
+    L22209: if GetSpellAbilityId()==1093679194 then
+    L22210: set MTO=3
+    L22211: endif
+    L22212: if GetSpellAbilityId()==1093679408 then
+    L22213: set MTO=4
+    L22214: endif
+    L22215: if GetSpellAbilityId()==1093679410 then
+    L22216: set MTO=5
+    L22217: endif
+    L22218: if MTO>0 and NNI(GetSpellTargetUnit())==false then
+    L22219: call MNO(MTO,GetTriggerUnit(),GetSpellTargetUnit())
+    L22220: endif
+    L22221: endfunction
+    L22222: function MRO takes nothing returns nothing
+    L22223: if GetSpellAbilityId()==1093814353 then
+    L22224: call IKO(GetTriggerUnit(),GetSpellTargetUnit())
+    L22225: endif
+    L22226: endfunction
+    L22227: function MPO takes unit P7I,integer RII,real x,real y returns nothing
+    L22228: local unit MQO=CreateUnit(GetOwningPlayer(P7I),RII,x,y,0)
+    L22229: call UnitApplyTimedLife(MQO,1112820806,15)
+    L22230: set MQO=null
+    L22231: endfunction
+    L22232: function MUO takes nothing returns nothing
+    L22233: local unit MQO
+    L22234: local real x
+    L22235: local real y
+    L22236: if GetSpellAbilityId()==1093753420 then
+    L22237: set x=GetDestructableX(GetSpellTargetDestructable())
+    L22238: set y=GetDestructableY(GetSpellTargetDestructable())
+    L22239: call MPO(GetTriggerUnit(),1848659021,x,y)
+    L22240: elseif GetSpellAbilityId()==1093753421 then
+    L22241: set x=GetDestructableX(GetSpellTargetDestructable())
+    L22242: set y=GetDestructableY(GetSpellTargetDestructable())
+    L22243: call MPO(GetTriggerUnit(),1848659022,x,y)
+    L22244: endif
+    L22245: set MQO=null
+
+=== 4. 1.27 OrderId 表: coldarrows 附近 (0x46B900..0x46B960) ===
+  6F46B900: 9A 6F 68 64 02 0D  call        000D:0264686F
+  6F46B907: 8B CE              mov         ecx,esi
+  6F46B909: E8 12 DF D5 FF     call        6F1C9820
+  6F46B90E: 68 C0 D9 9A 6F     push        6F9AD9C0h
+  6F46B913: 68 65 02 0D 00     push        0D0265h
+  6F46B918: 8B CE              mov         ecx,esi
+  6F46B91A: E8 01 DF D5 FF     call        6F1C9820
+  6F46B91F: 68 C8 D9 9A 6F     push        6F9AD9C8h
+  6F46B924: 68 13 01 0D 00     push        0D0113h
+  6F46B929: 8B CE              mov         ecx,esi
+  6F46B92B: E8 F0 DE D5 FF     call        6F1C9820
+  6F46B930: 68 D8 D9 9A 6F     push        6F9AD9D8h
+  6F46B935: 68 14 01 0D 00     push        0D0114h
+  6F46B93A: 8B CE              mov         ecx,esi
+  6F46B93C: E8 DF DE D5 FF     call        6F1C9820
+  6F46B941: 68 E4 D9 9A 6F     push        6F9AD9E4h
+  6F46B946: 68 15 01 0D 00     push        0D0115h
+  6F46B94B: 8B CE              mov         ecx,esi
+  6F46B94D: E8 CE DE D5 FF     call        6F1C9820
+  6F46B952: 68 F4 D9 9A 6F     push        6F9AD9F4h
+  6F46B957: 68 67 02 0D 00     push        0D0267h
+  6F46B95C: 8B CE              mov         ecx,esi
+  6F46B95E: E8
+  6F46B95F: BD
+  6F46B960: DE
+
+=== 5. 1.27 CTimer (0x0434F0 & 0x043700) 布局 ===
+  [0x0434F0]
+  6F0434F0: 56                 push        esi
+  6F0434F1: 8B F1              mov         esi,ecx
+  6F0434F3: 8B 46 0C           mov         eax,dword ptr [esi+0Ch]
+  6F0434F6: 85 C0              test        eax,eax
+  6F0434F8: 74 0D              je          6F043507
+  6F0434FA: F6 40 12 01        test        byte ptr [eax+12h],1
+  6F0434FE: 75 07              jne         6F043507
+  6F043500: 81 48 10 00 00 01  or          dword ptr [eax+10h],10000h
+  6F043507: C7 46 0C 00 00 00  mov         dword ptr [esi+0Ch],0
+  6F04350E: 8B 4E 08           mov         ecx,dword ptr [esi+8]
+  6F043511: 85 C9              test        ecx,ecx
+  6F043513: 74 10              je          6F043525
+  6F043515: FF 49 04           dec         dword ptr [ecx+4]
+  6F043518: 75 04              jne         6F04351E
+  6F04351A: 8B 01              mov         eax,dword ptr [ecx]
+  6F04351C: FF 10              call        dword ptr [eax]
+  6F04351E: C7 46 08 00 00 00  mov         dword ptr [esi+8],0
+  6F043525: 83 66 10 F9        and         dword ptr [esi+10h],0FFFFFFF9h
+  6F043529: 5E                 pop         esi
+  6F04352A: C3                 ret
+  6F04352B: CC                 int         3
+  6F04352C: CC                 int         3
+  6F04352D: CC                 int         3
+  6F04352E: CC                 int         3
+  6F04352F: CC                 int         3
+  6F043530: 55                 push        ebp
+  6F043531: 8B EC              mov         ebp,esp
+  6F043533: 53                 push        ebx
+  6F043534: 8B 1D BC 82 BB 6F  mov         ebx,dword ptr ds:[6FBB82BCh]
+  6F04353A: 56                 push        esi
+  6F04353B: 57                 push        edi
+  6F04353C: 8B F9              mov         edi,ecx
+  6F04353E: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+  6F043541: 8D 57 08           lea         edx,[edi+8]
+  6F043544: E8 97 46 FF FF     call        6F037BE0
+  6F043549: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+  6F04354C: 8D 77 10           lea         esi,[edi+10h]
+  6F04354F: 56                 push        esi
+  6F043550: E8 9B 9F 00 00     call        6F04D4F0
+  6F043555: F6 06 04           test        byte ptr [esi],4
+  6F043558: 74 16              je          6F043570
+  6F04355A: 8B 53 44           mov         edx,dword ptr [ebx+44h]
+  6F04355D: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+  6F043560: 57                 push        edi
+  [0x043700]
+  6F043700: 55                 push        ebp
+  6F043701: 8B EC              mov         ebp,esp
+  6F043703: 6A FF              push        0FFFFFFFFh
+  6F043705: 68 A2 04 8B 6F     push        6F8B04A2h
+  6F04370A: 64 A1 00 00 00 00  mov         eax,dword ptr fs:[00000000h]
+  6F043710: 50                 push        eax
+  6F043711: 83 EC 08           sub         esp,8
+  6F043714: 53                 push        ebx
+  6F043715: 56                 push        esi
+  6F043716: 57                 push        edi
+  6F043717: A1 74 A7 B6 6F     mov         eax,dword ptr ds:[6FB6A774h]
+  6F04371C: 33 C5              xor         eax,ebp
+  6F04371E: 50                 push        eax
+  6F04371F: 8D 45 F4           lea         eax,[ebp-0Ch]
+  6F043722: 64 A3 00 00 00 00  mov         dword ptr fs:[00000000h],eax
+  6F043728: 8B F9              mov         edi,ecx
+  6F04372A: C7 45 F0 00 00 00  mov         dword ptr [ebp-10h],0
+  6F043731: 8B 45 10           mov         eax,dword ptr [ebp+10h]
+  6F043734: 85 C0              test        eax,eax
+  6F043736: 74 1C              je          6F043754
+  6F043738: 50                 push        eax
+  6F043739: 8D 4D EC           lea         ecx,[ebp-14h]
+  6F04373C: E8 5F 45 FF FF     call        6F037CA0
+  6F043741: 8B C8              mov         ecx,eax
+  6F043743: 8B 75 10           mov         esi,dword ptr [ebp+10h]
+  6F043746: BB 01 00 00 00     mov         ebx,1
+  6F04374B: C7 45 FC 00 00 00  mov         dword ptr [ebp-4],0
+  6F043752: EB 1C              jmp         6F043770
+  6F043754: 8B 77 08           mov         esi,dword ptr [edi+8]
+  6F043757: 89 75 10           mov         dword ptr [ebp+10h],esi
+  6F04375A: 85 F6              test        esi,esi
+  6F04375C: 74 03              je          6F043761
+  6F04375E: FF 46 04           inc         dword ptr [esi+4]
+  6F043761: 8D 4D 10           lea         ecx,[ebp+10h]
+  6F043764: C7 45 FC 01 00 00  mov         dword ptr [ebp-4],1
+  6F04376B: BB 02 00 00 00     mov         ebx,2
+  6F043770: FF 75 18           push        dword ptr [ebp+18h]
+  6F043773: 8B 07              mov         eax,dword ptr [edi]
+  6F043775: FF 75 14           push        dword ptr [ebp+14h]
+  6F043778: 89 5D F0           mov         dword ptr [ebp-10h],ebx
+  6F04377B: FF 75 0C           push        dword ptr [ebp+0Ch]
+  6F04377E: FF 75 08           push        dword ptr [ebp+8]
+  6F043781: FF 31              push        dword ptr [ecx]
+  6F043783: 8B CF              mov         ecx,edi
+  6F043785: FF 50 08           call        dword ptr [eax+8]
+  6F043788: C7 45 FC 00 00 00  mov         dword ptr [ebp-4],0
+  6F04378F: F6
+  6F043790: C3                 ret
+
+=== 6. 1.27 GetFloatGameState 内层 (0x2676D0 & 0x03ADF0) ===
+  [0x2676D0]
+  6F2676D0: 55                 push        ebp
+  6F2676D1: 8B EC              mov         ebp,esp
+  6F2676D3: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  6F2676D6: 83 C1 08           add         ecx,8
+  6F2676D9: C1 E0 04           shl         eax,4
+  6F2676DC: 03 C1              add         eax,ecx
+  6F2676DE: 5D                 pop         ebp
+  6F2676DF: C2 04 00           ret         4
+  6F2676E2: CC                 int         3
+  6F2676E3: CC                 int         3
+  6F2676E4: CC                 int         3
+  6F2676E5: CC                 int         3
+  6F2676E6: CC                 int         3
+  6F2676E7: CC                 int         3
+  6F2676E8: CC                 int         3
+  6F2676E9: CC                 int         3
+  6F2676EA: CC                 int         3
+  6F2676EB: CC                 int         3
+  6F2676EC: CC                 int         3
+  6F2676ED: CC                 int         3
+  6F2676EE: CC                 int         3
+  6F2676EF: CC                 int         3
+  6F2676F0: 55                 push        ebp
+  6F2676F1: 8B EC              mov         ebp,esp
+  6F2676F3: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  6F2676F6: 83 C1 3C           add         ecx,3Ch
+  6F2676F9: C1 E0 04           shl         eax,4
+  6F2676FC: 03 C1              add         eax,ecx
+  6F2676FE: 5D                 pop         ebp
+  6F2676FF: C2 04 00           ret         4
+  6F267702: CC                 int         3
+  6F267703: CC                 int         3
+  6F267704: CC                 int         3
+  6F267705: CC                 int         3
+  6F267706: CC                 int         3
+  6F267707: CC                 int         3
+  6F267708: CC                 int         3
+  6F267709: CC                 int         3
+  6F26770A: CC                 int         3
+  6F26770B: CC                 int         3
+  6F26770C: CC                 int         3
+  6F26770D: CC                 int         3
+  6F26770E: CC                 int         3
+  6F26770F: CC                 int         3
+  6F267710: 8B 01              mov         eax,dword ptr [ecx]
+  6F267712: C3                 ret
+  6F267713: CC                 int         3
+  6F267714: CC                 int         3
+  6F267715: CC                 int         3
+  [0x03ADF0]
+  6F03ADF0: 55                 push        ebp
+  6F03ADF1: 8B EC              mov         ebp,esp
+  6F03ADF3: 8B 51 0C           mov         edx,dword ptr [ecx+0Ch]
+  6F03ADF6: 83 EC 0C           sub         esp,0Ch
+  6F03ADF9: 8B 49 08           mov         ecx,dword ptr [ecx+8]
+  6F03ADFC: 56                 push        esi
+  6F03ADFD: E8 4E C5 FF FF     call        6F037350
+  6F03AE02: 8B F0              mov         esi,eax
+  6F03AE04: 8D 45 FC           lea         eax,[ebp-4]
+  6F03AE07: 50                 push        eax
+  6F03AE08: 8B CE              mov         ecx,esi
+  6F03AE0A: E8 81 29 0D 00     call        6F10D790
+  6F03AE0F: 50                 push        eax
+  6F03AE10: 8D 56 7C           lea         edx,[esi+7Ch]
+  6F03AE13: 8D 4D F8           lea         ecx,[ebp-8]
+  6F03AE16: E8 C5 79 01 00     call        6F0527E0
+  6F03AE1B: 50                 push        eax
+  6F03AE1C: 8D 56 78           lea         edx,[esi+78h]
+  6F03AE1F: 8D 4D F4           lea         ecx,[ebp-0Ch]
+  6F03AE22: E8 A9 7B 01 00     call        6F0529D0
+  6F03AE27: F3 0F 10 86 80 00  movss       xmm0,dword ptr [esi+00000080h]
+  6F03AE2F: 8D 8E 80 00 00 00  lea         ecx,[esi+00000080h]
+  6F03AE35: 8B
+
+=== 7. 1.27 CNetCommandUnitOrder / Shift flags ===
+  RTTI/Str 'CNetCommand': ['CNetCommandUnitOrderBasic@@', 'CNetCommandUnitOrderTargetImage2@@', 'CNetCommandUnitOrderTargetImage@@', 'CNetCommandUnitOrderTargetImageFogged2@@', 'CNetCommandUnitOrderTargetImageFogged@@', 'CNetCommandUnitOrderTargetPoint@@']
+  RTTI/Str 'CGameUI': []
+  RTTI/Str 'CTimer': ['CTimerDialog.h', 'CTimerDialog@@', 'CTimerDialog@@@@', 'CTimerDialogWar3', 'CTimerDialogWar3.cpp', 'CTimerDialogWar3@@', 'CTimerDialogWar3@@@@', 'CTimerEventReg', 'CTimerEventReg@@', 'CTimerEventReg@@@@', 'CTimerExpireEventData', 'CTimerExpireEventData@@', 'CTimerExpireEventData@@@@', 'CTimerExpireEventReg', 'CTimerExpireEventReg@@']
+  RTTI/Str 'CAbilitySpell': ['CAbilitySpell', 'CAbilitySpell::SetTooltip', 'CAbilitySpell@@', 'CAbilitySpell@@@@', 'CAbilitySpellBook', 'CAbilitySpellBook@@', 'CAbilitySpellBook@@@@', 'CAbilitySpellEffectBonus', 'CAbilitySpellEffectBonus@@', 'CAbilitySpellEffectBonus@@@@', 'CAbilitySpellShield', 'CAbilitySpellShield@@', 'CAbilitySpellShield@@@@', 'CAbilitySpellShieldAoe', 'CAbilitySpellShieldAoe@@']

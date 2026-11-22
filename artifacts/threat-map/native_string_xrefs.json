@@ -1,0 +1,1234 @@
+[
+  {
+    "ver": "1.0.17.5988",
+    "imageBase": "0x6f000000",
+    "IsTerrainPathable": {
+      "strRVA": "0x8138a0",
+      "xrefs": [
+        "0x2ac9ab",
+        "0x3eaa83"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsLocationVisibleToPlayer": {
+      "strRVA": "0x8166cc",
+      "xrefs": [
+        "0x2aab5b",
+        "0x3e8c33"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitVisible": {
+      "strRVA": "0x817570",
+      "xrefs": [
+        "0x2aa093",
+        "0x3e816b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitFogged": {
+      "strRVA": "0x817540",
+      "xrefs": [
+        "0x2aa0cf",
+        "0x3e81a7"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitMasked": {
+      "strRVA": "0x817530",
+      "xrefs": [
+        "0x2aa0e3",
+        "0x3e81bb"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitDetected": {
+      "strRVA": "0x817560",
+      "xrefs": [
+        "0x2aa0a7",
+        "0x3e817f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocalPlayer": {
+      "strRVA": "0x81690c",
+      "xrefs": [
+        "0x2aa9f3",
+        "0x3e8acb"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocationZ": {
+      "strRVA": "0x819e34",
+      "xrefs": [
+        "0x2a83fb",
+        "0x3e64d3"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetDestructableLife": {
+      "strRVA": "0x8181d0",
+      "xrefs": [
+        "0x2a967f",
+        "0x3e7757"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "EnumDestructablesInRect": {
+      "strRVA": "0x818274",
+      "xrefs": [
+        "0x2a961b",
+        "0x3e76f3"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "FogEnable": {
+      "strRVA": "0x819920",
+      "xrefs": [
+        "0x2a87bb",
+        "0x3e6893"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "CreateFogModifierRadius": {
+      "strRVA": "0x81988c",
+      "xrefs": [
+        "0x2a87f7",
+        "0x3e68cf"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    }
+  },
+  {
+    "ver": "1.0.20.6048",
+    "imageBase": "0x6f000000",
+    "IsTerrainPathable": {
+      "strRVA": "0x8148e0",
+      "xrefs": [
+        "0x2ac9ab",
+        "0x3eaf83"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsLocationVisibleToPlayer": {
+      "strRVA": "0x81770c",
+      "xrefs": [
+        "0x2aab5b",
+        "0x3e9133"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitVisible": {
+      "strRVA": "0x8185b0",
+      "xrefs": [
+        "0x2aa093",
+        "0x3e866b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitFogged": {
+      "strRVA": "0x818580",
+      "xrefs": [
+        "0x2aa0cf",
+        "0x3e86a7"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitMasked": {
+      "strRVA": "0x818570",
+      "xrefs": [
+        "0x2aa0e3",
+        "0x3e86bb"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitDetected": {
+      "strRVA": "0x8185a0",
+      "xrefs": [
+        "0x2aa0a7",
+        "0x3e867f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocalPlayer": {
+      "strRVA": "0x81794c",
+      "xrefs": [
+        "0x2aa9f3",
+        "0x3e8fcb"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocationZ": {
+      "strRVA": "0x81ae74",
+      "xrefs": [
+        "0x2a83fb",
+        "0x3e69d3"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetDestructableLife": {
+      "strRVA": "0x819210",
+      "xrefs": [
+        "0x2a967f",
+        "0x3e7c57"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "EnumDestructablesInRect": {
+      "strRVA": "0x8192b4",
+      "xrefs": [
+        "0x2a961b",
+        "0x3e7bf3"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "FogEnable": {
+      "strRVA": "0x81a960",
+      "xrefs": [
+        "0x2a87bb",
+        "0x3e6d93"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "CreateFogModifierRadius": {
+      "strRVA": "0x81a8cc",
+      "xrefs": [
+        "0x2a87f7",
+        "0x3e6dcf"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    }
+  },
+  {
+    "ver": "1.20.4.6074",
+    "imageBase": "0x6f000000",
+    "IsTerrainPathable": {
+      "strRVA": "0x814900",
+      "xrefs": [
+        "0x2acacb",
+        "0x3eb0c3"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsLocationVisibleToPlayer": {
+      "strRVA": "0x81772c",
+      "xrefs": [
+        "0x2aac7b",
+        "0x3e9273"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitVisible": {
+      "strRVA": "0x8185d0",
+      "xrefs": [
+        "0x2aa1b3",
+        "0x3e87ab"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitFogged": {
+      "strRVA": "0x8185a0",
+      "xrefs": [
+        "0x2aa1ef",
+        "0x3e87e7"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitMasked": {
+      "strRVA": "0x818590",
+      "xrefs": [
+        "0x2aa203",
+        "0x3e87fb"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitDetected": {
+      "strRVA": "0x8185c0",
+      "xrefs": [
+        "0x2aa1c7",
+        "0x3e87bf"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocalPlayer": {
+      "strRVA": "0x81796c",
+      "xrefs": [
+        "0x2aab13",
+        "0x3e910b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocationZ": {
+      "strRVA": "0x81ae94",
+      "xrefs": [
+        "0x2a851b",
+        "0x3e6b13"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetDestructableLife": {
+      "strRVA": "0x819230",
+      "xrefs": [
+        "0x2a979f",
+        "0x3e7d97"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "EnumDestructablesInRect": {
+      "strRVA": "0x8192d4",
+      "xrefs": [
+        "0x2a973b",
+        "0x3e7d33"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "FogEnable": {
+      "strRVA": "0x81a980",
+      "xrefs": [
+        "0x2a88db",
+        "0x3e6ed3"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "CreateFogModifierRadius": {
+      "strRVA": "0x81a8ec",
+      "xrefs": [
+        "0x2a8917",
+        "0x3e6f0f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    }
+  },
+  {
+    "ver": "1.21.0.6263",
+    "imageBase": "0x6f000000",
+    "IsTerrainPathable": {
+      "strRVA": "0x815a10",
+      "xrefs": [
+        "0x2b009b",
+        "0x3ef013"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsLocationVisibleToPlayer": {
+      "strRVA": "0x81883c",
+      "xrefs": [
+        "0x2ae24b",
+        "0x3ed1c3"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitVisible": {
+      "strRVA": "0x8196e0",
+      "xrefs": [
+        "0x2ad783",
+        "0x3ec6fb"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": "0x2c97c0"
+    },
+    "IsUnitFogged": {
+      "strRVA": "0x8196b0",
+      "xrefs": [
+        "0x2ad7bf",
+        "0x3ec737"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitMasked": {
+      "strRVA": "0x8196a0",
+      "xrefs": [
+        "0x2ad7d3",
+        "0x3ec74b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitDetected": {
+      "strRVA": "0x8196d0",
+      "xrefs": [
+        "0x2ad797",
+        "0x3ec70f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocalPlayer": {
+      "strRVA": "0x818a7c",
+      "xrefs": [
+        "0x2ae0e3",
+        "0x3ed05b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocationZ": {
+      "strRVA": "0x81bfa4",
+      "xrefs": [
+        "0x2abaeb",
+        "0x3eaa63"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetDestructableLife": {
+      "strRVA": "0x81a340",
+      "xrefs": [
+        "0x2acd6f",
+        "0x3ebce7"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "EnumDestructablesInRect": {
+      "strRVA": "0x81a3e4",
+      "xrefs": [
+        "0x2acd0b",
+        "0x3ebc83"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "FogEnable": {
+      "strRVA": "0x81ba90",
+      "xrefs": [
+        "0x2abeab",
+        "0x3eae23"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "CreateFogModifierRadius": {
+      "strRVA": "0x81b9fc",
+      "xrefs": [
+        "0x2abee7",
+        "0x3eae5f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    }
+  },
+  {
+    "ver": "1.22.0.6328",
+    "imageBase": "0x6f000000",
+    "IsTerrainPathable": {
+      "strRVA": "0x931ec4",
+      "xrefs": [
+        "0x3d09cb",
+        "0x7120c3"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsLocationVisibleToPlayer": {
+      "strRVA": "0x934cf0",
+      "xrefs": [
+        "0x3ceb7b",
+        "0x710273"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitVisible": {
+      "strRVA": "0x935b94",
+      "xrefs": [
+        "0x3ce0b3",
+        "0x70f7ab"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": "0x3c0d90"
+    },
+    "IsUnitFogged": {
+      "strRVA": "0x935b64",
+      "xrefs": [
+        "0x3ce0ef",
+        "0x70f7e7"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitMasked": {
+      "strRVA": "0x935b54",
+      "xrefs": [
+        "0x3ce103",
+        "0x70f7fb"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitDetected": {
+      "strRVA": "0x935b84",
+      "xrefs": [
+        "0x3ce0c7",
+        "0x70f7bf"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocalPlayer": {
+      "strRVA": "0x934f30",
+      "xrefs": [
+        "0x3cea13",
+        "0x71010b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocationZ": {
+      "strRVA": "0x938458",
+      "xrefs": [
+        "0x3cc41b",
+        "0x70db13"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetDestructableLife": {
+      "strRVA": "0x9367f4",
+      "xrefs": [
+        "0x3cd69f",
+        "0x70ed97"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "EnumDestructablesInRect": {
+      "strRVA": "0x936898",
+      "xrefs": [
+        "0x3cd63b",
+        "0x70ed33"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "FogEnable": {
+      "strRVA": "0x937f44",
+      "xrefs": [
+        "0x3cc7db",
+        "0x70ded3"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "CreateFogModifierRadius": {
+      "strRVA": "0x937eb0",
+      "xrefs": [
+        "0x3cc817",
+        "0x70df0f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    }
+  },
+  {
+    "ver": "1.23.0.6352",
+    "imageBase": "0x6f000000",
+    "IsTerrainPathable": {
+      "strRVA": "0x94600c",
+      "xrefs": [
+        "0x3d26eb",
+        "0x714643"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsLocationVisibleToPlayer": {
+      "strRVA": "0x948e38",
+      "xrefs": [
+        "0x3d089b",
+        "0x7127f3"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitVisible": {
+      "strRVA": "0x949cdc",
+      "xrefs": [
+        "0x3cfdd3",
+        "0x711d2b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": "0x3c2c40"
+    },
+    "IsUnitFogged": {
+      "strRVA": "0x949cac",
+      "xrefs": [
+        "0x3cfe0f",
+        "0x711d67"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitMasked": {
+      "strRVA": "0x949c9c",
+      "xrefs": [
+        "0x3cfe23",
+        "0x711d7b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitDetected": {
+      "strRVA": "0x949ccc",
+      "xrefs": [
+        "0x3cfde7",
+        "0x711d3f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocalPlayer": {
+      "strRVA": "0x949078",
+      "xrefs": [
+        "0x3d0733",
+        "0x71268b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocationZ": {
+      "strRVA": "0x94c5a0",
+      "xrefs": [
+        "0x3ce13b",
+        "0x710093"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetDestructableLife": {
+      "strRVA": "0x94a93c",
+      "xrefs": [
+        "0x3cf3bf",
+        "0x711317"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "EnumDestructablesInRect": {
+      "strRVA": "0x94a9e0",
+      "xrefs": [
+        "0x3cf35b",
+        "0x7112b3"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "FogEnable": {
+      "strRVA": "0x94c08c",
+      "xrefs": [
+        "0x3ce4fb",
+        "0x710453"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "CreateFogModifierRadius": {
+      "strRVA": "0x94bff8",
+      "xrefs": [
+        "0x3ce537",
+        "0x71048f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    }
+  },
+  {
+    "ver": "1.24.1.6374",
+    "imageBase": "0x6f000000",
+    "IsTerrainPathable": {
+      "strRVA": "0x9553b4",
+      "xrefs": [
+        "0x3da217",
+        "0x72383f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsLocationVisibleToPlayer": {
+      "strRVA": "0x9592a4",
+      "xrefs": [
+        "0x3d7c1f",
+        "0x721247"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitVisible": {
+      "strRVA": "0x95a148",
+      "xrefs": [
+        "0x3d7157",
+        "0x72077f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": "0x3c8700"
+    },
+    "IsUnitFogged": {
+      "strRVA": "0x95a118",
+      "xrefs": [
+        "0x3d7193",
+        "0x7207bb"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitMasked": {
+      "strRVA": "0x95a108",
+      "xrefs": [
+        "0x3d71a7",
+        "0x7207cf"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitDetected": {
+      "strRVA": "0x95a138",
+      "xrefs": [
+        "0x3d716b",
+        "0x720793"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocalPlayer": {
+      "strRVA": "0x9594e4",
+      "xrefs": [
+        "0x3d7ab7",
+        "0x7210df"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocationZ": {
+      "strRVA": "0x95ca44",
+      "xrefs": [
+        "0x3d5483",
+        "0x71eaab"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetDestructableLife": {
+      "strRVA": "0x95ada8",
+      "xrefs": [
+        "0x3d6743",
+        "0x71fd6b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "EnumDestructablesInRect": {
+      "strRVA": "0x95ae4c",
+      "xrefs": [
+        "0x3d66df",
+        "0x71fd07"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "FogEnable": {
+      "strRVA": "0x95c530",
+      "xrefs": [
+        "0x3d5843",
+        "0x71ee6b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "CreateFogModifierRadius": {
+      "strRVA": "0x95c49c",
+      "xrefs": [
+        "0x3d587f",
+        "0x71eea7"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    }
+  },
+  {
+    "ver": "1.24.4.6387",
+    "imageBase": "0x6f000000",
+    "IsTerrainPathable": {
+      "strRVA": "0x9553cc",
+      "xrefs": [
+        "0x3da2d7",
+        "0x7238ff"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsLocationVisibleToPlayer": {
+      "strRVA": "0x9592bc",
+      "xrefs": [
+        "0x3d7cdf",
+        "0x721307"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitVisible": {
+      "strRVA": "0x95a160",
+      "xrefs": [
+        "0x3d7217",
+        "0x72083f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": "0x3c87c0"
+    },
+    "IsUnitFogged": {
+      "strRVA": "0x95a130",
+      "xrefs": [
+        "0x3d7253",
+        "0x72087b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitMasked": {
+      "strRVA": "0x95a120",
+      "xrefs": [
+        "0x3d7267",
+        "0x72088f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitDetected": {
+      "strRVA": "0x95a150",
+      "xrefs": [
+        "0x3d722b",
+        "0x720853"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocalPlayer": {
+      "strRVA": "0x9594fc",
+      "xrefs": [
+        "0x3d7b77",
+        "0x72119f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocationZ": {
+      "strRVA": "0x95ca5c",
+      "xrefs": [
+        "0x3d5543",
+        "0x71eb6b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetDestructableLife": {
+      "strRVA": "0x95adc0",
+      "xrefs": [
+        "0x3d6803",
+        "0x71fe2b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "EnumDestructablesInRect": {
+      "strRVA": "0x95ae64",
+      "xrefs": [
+        "0x3d679f",
+        "0x71fdc7"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "FogEnable": {
+      "strRVA": "0x95c548",
+      "xrefs": [
+        "0x3d5903",
+        "0x71ef2b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "CreateFogModifierRadius": {
+      "strRVA": "0x95c4b4",
+      "xrefs": [
+        "0x3d593f",
+        "0x71ef67"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    }
+  },
+  {
+    "ver": "1.25.1.6397",
+    "imageBase": "0x6f000000",
+    "IsTerrainPathable": {
+      "strRVA": "0x943274",
+      "xrefs": [
+        "0x3d9567",
+        "0x722f2f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsLocationVisibleToPlayer": {
+      "strRVA": "0x947164",
+      "xrefs": [
+        "0x3d6f6f",
+        "0x720937"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitVisible": {
+      "strRVA": "0x948008",
+      "xrefs": [
+        "0x3d64a7",
+        "0x71fe6f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": "0x3c7a50"
+    },
+    "IsUnitFogged": {
+      "strRVA": "0x947fd8",
+      "xrefs": [
+        "0x3d64e3",
+        "0x71feab"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitMasked": {
+      "strRVA": "0x947fc8",
+      "xrefs": [
+        "0x3d64f7",
+        "0x71febf"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitDetected": {
+      "strRVA": "0x947ff8",
+      "xrefs": [
+        "0x3d64bb",
+        "0x71fe83"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocalPlayer": {
+      "strRVA": "0x9473a4",
+      "xrefs": [
+        "0x3d6e07",
+        "0x7207cf"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocationZ": {
+      "strRVA": "0x94a904",
+      "xrefs": [
+        "0x3d47d3",
+        "0x71e19b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetDestructableLife": {
+      "strRVA": "0x948c68",
+      "xrefs": [
+        "0x3d5a93",
+        "0x71f45b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "EnumDestructablesInRect": {
+      "strRVA": "0x948d0c",
+      "xrefs": [
+        "0x3d5a2f",
+        "0x71f3f7"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "FogEnable": {
+      "strRVA": "0x94a3f0",
+      "xrefs": [
+        "0x3d4b93",
+        "0x71e55b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "CreateFogModifierRadius": {
+      "strRVA": "0x94a35c",
+      "xrefs": [
+        "0x3d4bcf",
+        "0x71e597"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    }
+  },
+  {
+    "ver": "1.26.0.6401",
+    "imageBase": "0x6f000000",
+    "IsTerrainPathable": {
+      "strRVA": "0x943274",
+      "xrefs": [
+        "0x3d9797",
+        "0x72315f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsLocationVisibleToPlayer": {
+      "strRVA": "0x947164",
+      "xrefs": [
+        "0x3d719f",
+        "0x720b67"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": "0x3c9940"
+    },
+    "IsUnitVisible": {
+      "strRVA": "0x948008",
+      "xrefs": [
+        "0x3d66d7",
+        "0x72009f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": "0x3c7af0"
+    },
+    "IsUnitFogged": {
+      "strRVA": "0x947fd8",
+      "xrefs": [
+        "0x3d6713",
+        "0x7200db"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitMasked": {
+      "strRVA": "0x947fc8",
+      "xrefs": [
+        "0x3d6727",
+        "0x7200ef"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitDetected": {
+      "strRVA": "0x947ff8",
+      "xrefs": [
+        "0x3d66eb",
+        "0x7200b3"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocalPlayer": {
+      "strRVA": "0x9473a4",
+      "xrefs": [
+        "0x3d7037",
+        "0x7209ff"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": "0x3bbb60"
+    },
+    "GetLocationZ": {
+      "strRVA": "0x94a904",
+      "xrefs": [
+        "0x3d4a03",
+        "0x71e3cb"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetDestructableLife": {
+      "strRVA": "0x948c68",
+      "xrefs": [
+        "0x3d5cc3",
+        "0x71f68b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": "0x3c4890"
+    },
+    "EnumDestructablesInRect": {
+      "strRVA": "0x948d0c",
+      "xrefs": [
+        "0x3d5c5f",
+        "0x71f627"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": "0x3c4a90"
+    },
+    "FogEnable": {
+      "strRVA": "0x94a3f0",
+      "xrefs": [
+        "0x3d4dc3",
+        "0x71e78b"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "CreateFogModifierRadius": {
+      "strRVA": "0x94a35c",
+      "xrefs": [
+        "0x3d4dff",
+        "0x71e7c7"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    }
+  },
+  {
+    "ver": "1.27.0.52240",
+    "imageBase": "0x6f000000",
+    "IsTerrainPathable": {
+      "strRVA": "0x96f740",
+      "xrefs": [
+        "0x1ef1c7",
+        "0x6fb47f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsLocationVisibleToPlayer": {
+      "strRVA": "0x96b820",
+      "xrefs": [
+        "0x1ecbcf",
+        "0x6f8e87"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": "0x1e7de0"
+    },
+    "IsUnitVisible": {
+      "strRVA": "0x96a968",
+      "xrefs": [
+        "0x1ec107",
+        "0x6f83bf"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": "0x1e8e80"
+    },
+    "IsUnitFogged": {
+      "strRVA": "0x96a998",
+      "xrefs": [
+        "0x1ec143",
+        "0x6f83fb"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitMasked": {
+      "strRVA": "0x96a9a8",
+      "xrefs": [
+        "0x1ec157",
+        "0x6f840f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "IsUnitDetected": {
+      "strRVA": "0x96a978",
+      "xrefs": [
+        "0x1ec11b",
+        "0x6f83d3"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetLocalPlayer": {
+      "strRVA": "0x96b5dc",
+      "xrefs": [
+        "0x1eca67",
+        "0x6f8d1f"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": "0x1e3150"
+    },
+    "GetLocationZ": {
+      "strRVA": "0x96801c",
+      "xrefs": [
+        "0x1ea433",
+        "0x6f66eb"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "GetDestructableLife": {
+      "strRVA": "0x969cd8",
+      "xrefs": [
+        "0x1eb6f3",
+        "0x6f79ab"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": "0x1e1f70"
+    },
+    "EnumDestructablesInRect": {
+      "strRVA": "0x969c30",
+      "xrefs": [
+        "0x1eb68f",
+        "0x6f7947"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": "0x1e0140"
+    },
+    "FogEnable": {
+      "strRVA": "0x968540",
+      "xrefs": [
+        "0x1ea7f3",
+        "0x6f6aab"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    },
+    "CreateFogModifierRadius": {
+      "strRVA": "0x9685c8",
+      "xrefs": [
+        "0x1ea82f",
+        "0x6f6ae7"
+      ],
+      "nativeCandidates": [],
+      "nativeGuess": null
+    }
+  }
+]

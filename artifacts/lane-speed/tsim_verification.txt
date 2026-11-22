@@ -1,0 +1,1 @@
+Valid moving creeps (low-load 0.5Hz): n=0, avg v_sim=0.0/s, avg v_wall=0.0/s

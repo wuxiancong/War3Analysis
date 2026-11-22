@@ -1,0 +1,1068 @@
+{
+  "header": {
+    "file": "20261120_225621_TestUser01_水晶室女.w3g",
+    "file_size": 820749,
+    "header_size": 68,
+    "header_version": 1,
+    "compressed_size": 820749,
+    "decompressed_size": 1740116,
+    "num_blocks": 213,
+    "game_id": "W3XP",
+    "patch_version": "1.27",
+    "build_number": 6059,
+    "flags": 32768,
+    "duration_ms": 1532000,
+    "crc32": "0x5BE6BAEE"
+  },
+  "meta": {
+    "game_name": "[AP83] asdqwd",
+    "map_path": "Maps\\Download\\DotA v6.83d.w3x",
+    "creator_name": "TestUser01",
+    "player_count": 11,
+    "players": {
+      "1": {
+        "pid": 1,
+        "name": "TestUser01",
+        "is_host": true,
+        "team": 0,
+        "color": 1,
+        "slot": 0,
+        "hero_code": "Hjai",
+        "hero_name": "水晶室女 (Crystal Maiden)",
+        "hero_obj1": "",
+        "apm_actions": 1792,
+        "apm": 70.2
+      },
+      "2": {
+        "pid": 2,
+        "name": "CC.Dota.Test",
+        "is_host": false,
+        "hero_code": "",
+        "hero_name": "Unknown",
+        "hero_obj1": "",
+        "apm_actions": 0,
+        "apm": 0.0
+      }
+    },
+    "slots": [
+      {
+        "slot": 0,
+        "pid": 1,
+        "status": 2,
+        "is_comp": 0,
+        "team": 0,
+        "color": 1,
+        "race": 4,
+        "handicap": 100
+      },
+      {
+        "slot": 1,
+        "pid": 0,
+        "status": 0,
+        "is_comp": 0,
+        "team": 0,
+        "color": 2,
+        "race": 4,
+        "handicap": 100
+      },
+      {
+        "slot": 2,
+        "pid": 0,
+        "status": 0,
+        "is_comp": 0,
+        "team": 0,
+        "color": 3,
+        "race": 4,
+        "handicap": 100
+      },
+      {
+        "slot": 3,
+        "pid": 0,
+        "status": 0,
+        "is_comp": 0,
+        "team": 0,
+        "color": 4,
+        "race": 4,
+        "handicap": 100
+      },
+      {
+        "slot": 4,
+        "pid": 0,
+        "status": 0,
+        "is_comp": 0,
+        "team": 0,
+        "color": 5,
+        "race": 4,
+        "handicap": 100
+      },
+      {
+        "slot": 5,
+        "pid": 0,
+        "status": 0,
+        "is_comp": 0,
+        "team": 1,
+        "color": 7,
+        "race": 8,
+        "handicap": 100
+      },
+      {
+        "slot": 6,
+        "pid": 0,
+        "status": 0,
+        "is_comp": 0,
+        "team": 1,
+        "color": 8,
+        "race": 8,
+        "handicap": 100
+      },
+      {
+        "slot": 7,
+        "pid": 0,
+        "status": 0,
+        "is_comp": 0,
+        "team": 1,
+        "color": 9,
+        "race": 8,
+        "handicap": 100
+      },
+      {
+        "slot": 8,
+        "pid": 0,
+        "status": 0,
+        "is_comp": 0,
+        "team": 1,
+        "color": 10,
+        "race": 8,
+        "handicap": 100
+      },
+      {
+        "slot": 9,
+        "pid": 0,
+        "status": 0,
+        "is_comp": 0,
+        "team": 1,
+        "color": 11,
+        "race": 8,
+        "handicap": 100
+      }
+    ]
+  },
+  "parsed_duration_ms": 1532020,
+  "sample_actions_first_50": [
+    {
+      "t_ms": 10,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_add",
+      "count": 1,
+      "objs": [
+        "0x00006FCB"
+      ]
+    },
+    {
+      "t_ms": 10,
+      "pid": 1,
+      "aid": "0x19",
+      "aid_int": 25,
+      "type": "select_subgroup",
+      "unit_type": "ncop",
+      "obj1": "0x00006FCB"
+    },
+    {
+      "t_ms": 10,
+      "pid": 1,
+      "aid": "0x19",
+      "aid_int": 25,
+      "type": "select_subgroup",
+      "unit_type": "ncop",
+      "obj1": "0x00006FCB"
+    },
+    {
+      "t_ms": 280,
+      "pid": 1,
+      "aid": "0x60",
+      "aid_int": 96,
+      "type": "trigger_chat",
+      "text": "-ap"
+    },
+    {
+      "t_ms": 280,
+      "pid": 1,
+      "aid": "0x60",
+      "aid_int": 96,
+      "type": "trigger_chat",
+      "text": "-ap"
+    },
+    {
+      "t_ms": 35610,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 35610,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 35610,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_remove",
+      "count": 1,
+      "objs": [
+        "0x00006FCB"
+      ]
+    },
+    {
+      "t_ms": 35610,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_add",
+      "count": 1,
+      "objs": [
+        "0x00007227"
+      ]
+    },
+    {
+      "t_ms": 35610,
+      "pid": 1,
+      "aid": "0x19",
+      "aid_int": 25,
+      "type": "select_subgroup",
+      "unit_type": "n0LI",
+      "obj1": "0x00007227"
+    },
+    {
+      "t_ms": 36660,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 36660,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 36660,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_remove",
+      "count": 1,
+      "objs": [
+        "0x00007227"
+      ]
+    },
+    {
+      "t_ms": 36660,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_add",
+      "count": 1,
+      "objs": [
+        "0x000071F5"
+      ]
+    },
+    {
+      "t_ms": 36660,
+      "pid": 1,
+      "aid": "0x19",
+      "aid_int": 25,
+      "type": "select_subgroup",
+      "unit_type": "n007",
+      "obj1": "0x000071F5"
+    },
+    {
+      "t_ms": 37530,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 37530,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 37530,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_remove",
+      "count": 1,
+      "objs": [
+        "0x000071F5"
+      ]
+    },
+    {
+      "t_ms": 37530,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_add",
+      "count": 1,
+      "objs": [
+        "0x000071DC"
+      ]
+    },
+    {
+      "t_ms": 37530,
+      "pid": 1,
+      "aid": "0x19",
+      "aid_int": 25,
+      "type": "select_subgroup",
+      "unit_type": "n01N",
+      "obj1": "0x000071DC"
+    },
+    {
+      "t_ms": 38410,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 38410,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 38410,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_remove",
+      "count": 1,
+      "objs": [
+        "0x000071DC"
+      ]
+    },
+    {
+      "t_ms": 38410,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_add",
+      "count": 1,
+      "objs": [
+        "0x00007272"
+      ]
+    },
+    {
+      "t_ms": 38410,
+      "pid": 1,
+      "aid": "0x19",
+      "aid_int": 25,
+      "type": "select_subgroup",
+      "unit_type": "n0GK",
+      "obj1": "0x00007272"
+    },
+    {
+      "t_ms": 39060,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 39060,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 39060,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_remove",
+      "count": 1,
+      "objs": [
+        "0x00007272"
+      ]
+    },
+    {
+      "t_ms": 39060,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_add",
+      "count": 1,
+      "objs": [
+        "0x00007227"
+      ]
+    },
+    {
+      "t_ms": 39060,
+      "pid": 1,
+      "aid": "0x19",
+      "aid_int": 25,
+      "type": "select_subgroup",
+      "unit_type": "n0LI",
+      "obj1": "0x00007227"
+    },
+    {
+      "t_ms": 39450,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 39450,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 39450,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_remove",
+      "count": 1,
+      "objs": [
+        "0x00007227"
+      ]
+    },
+    {
+      "t_ms": 39450,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_add",
+      "count": 1,
+      "objs": [
+        "0x000071C3"
+      ]
+    },
+    {
+      "t_ms": 39450,
+      "pid": 1,
+      "aid": "0x19",
+      "aid_int": 25,
+      "type": "select_subgroup",
+      "unit_type": "n0LH",
+      "obj1": "0x000071C3"
+    },
+    {
+      "t_ms": 39970,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 39970,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 39970,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_remove",
+      "count": 1,
+      "objs": [
+        "0x000071C3"
+      ]
+    },
+    {
+      "t_ms": 39970,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_add",
+      "count": 1,
+      "objs": [
+        "0x000071AA"
+      ]
+    },
+    {
+      "t_ms": 39970,
+      "pid": 1,
+      "aid": "0x19",
+      "aid_int": 25,
+      "type": "select_subgroup",
+      "unit_type": "n01D",
+      "obj1": "0x000071AA"
+    },
+    {
+      "t_ms": 40660,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 40660,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 40660,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_remove",
+      "count": 1,
+      "objs": [
+        "0x000071AA"
+      ]
+    },
+    {
+      "t_ms": 40660,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_add",
+      "count": 1,
+      "objs": [
+        "0x00007191"
+      ]
+    },
+    {
+      "t_ms": 40660,
+      "pid": 1,
+      "aid": "0x19",
+      "aid_int": 25,
+      "type": "select_subgroup",
+      "unit_type": "n0GJ",
+      "obj1": "0x00007191"
+    },
+    {
+      "t_ms": 40830,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 41240,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 41240,
+      "pid": 1,
+      "aid": "0x1B",
+      "aid_int": 27,
+      "type": "select_trigger_unit"
+    },
+    {
+      "t_ms": 41240,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_remove",
+      "count": 1,
+      "objs": [
+        "0x00007191"
+      ]
+    },
+    {
+      "t_ms": 41240,
+      "pid": 1,
+      "aid": "0x16",
+      "aid_int": 22,
+      "type": "select_add",
+      "count": 1,
+      "objs": [
+        "0x00007178"
+      ]
+    }
+  ],
+  "sample_events_first_50": [
+    {
+      "t_ms": 0,
+      "pid": 2,
+      "source": "0x17_leave",
+      "reason": 1
+    },
+    {
+      "t_ms": 280,
+      "pid": 1,
+      "source": "0x60_chat",
+      "text": "-ap"
+    },
+    {
+      "t_ms": 280,
+      "pid": 1,
+      "source": "0x60_chat",
+      "text": "-ap"
+    },
+    {
+      "t_ms": 1030,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "Modeap",
+      "val": 1
+    },
+    {
+      "t_ms": 15210,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "1",
+      "key": "id",
+      "val": 1
+    },
+    {
+      "t_ms": 15210,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "7",
+      "key": "id",
+      "val": 6
+    },
+    {
+      "t_ms": 15210,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "2",
+      "key": "id",
+      "val": 2
+    },
+    {
+      "t_ms": 15210,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "8",
+      "key": "id",
+      "val": 7
+    },
+    {
+      "t_ms": 15210,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "3",
+      "key": "id",
+      "val": 3
+    },
+    {
+      "t_ms": 15210,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "9",
+      "key": "id",
+      "val": 8
+    },
+    {
+      "t_ms": 15210,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "4",
+      "key": "id",
+      "val": 4
+    },
+    {
+      "t_ms": 15210,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "10",
+      "key": "id",
+      "val": 9
+    },
+    {
+      "t_ms": 15210,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "5",
+      "key": "id",
+      "val": 5
+    },
+    {
+      "t_ms": 15210,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "11",
+      "key": "id",
+      "val": 10
+    },
+    {
+      "t_ms": 43480,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "1",
+      "key": "9",
+      "val": 1214931305,
+      "decoded": "end_hero:Hjai"
+    },
+    {
+      "t_ms": 48120,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "PUI_1",
+      "val": 1227895880
+    },
+    {
+      "t_ms": 56250,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "PUI_1",
+      "val": 1227901494
+    },
+    {
+      "t_ms": 151550,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "GameStart",
+      "val": 1
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSK1",
+      "val": 0,
+      "decoded": "creep_kill:CSK1=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSD1",
+      "val": 0,
+      "decoded": "creep_deny:CSD1=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "NK1",
+      "val": 0
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSK7",
+      "val": 0,
+      "decoded": "creep_kill:CSK7=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSD7",
+      "val": 0,
+      "decoded": "creep_deny:CSD7=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "NK7",
+      "val": 0
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSK2",
+      "val": 0,
+      "decoded": "creep_kill:CSK2=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSD2",
+      "val": 0,
+      "decoded": "creep_deny:CSD2=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "NK2",
+      "val": 0
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSK8",
+      "val": 0,
+      "decoded": "creep_kill:CSK8=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSD8",
+      "val": 0,
+      "decoded": "creep_deny:CSD8=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "NK8",
+      "val": 0
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSK3",
+      "val": 0,
+      "decoded": "creep_kill:CSK3=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSD3",
+      "val": 0,
+      "decoded": "creep_deny:CSD3=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "NK3",
+      "val": 0
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSK9",
+      "val": 0,
+      "decoded": "creep_kill:CSK9=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSD9",
+      "val": 0,
+      "decoded": "creep_deny:CSD9=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "NK9",
+      "val": 0
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSK4",
+      "val": 0,
+      "decoded": "creep_kill:CSK4=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSD4",
+      "val": 0,
+      "decoded": "creep_deny:CSD4=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "NK4",
+      "val": 0
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSK10",
+      "val": 0,
+      "decoded": "creep_kill:CSK10=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSD10",
+      "val": 0,
+      "decoded": "creep_deny:CSD10=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "NK10",
+      "val": 0
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSK5",
+      "val": 0,
+      "decoded": "creep_kill:CSK5=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSD5",
+      "val": 0,
+      "decoded": "creep_deny:CSD5=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "NK5",
+      "val": 0
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSK11",
+      "val": 0,
+      "decoded": "creep_kill:CSK11=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSD11",
+      "val": 0,
+      "decoded": "creep_deny:CSD11=0"
+    },
+    {
+      "t_ms": 331940,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "NK11",
+      "val": 0
+    },
+    {
+      "t_ms": 542210,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSK1",
+      "val": 0,
+      "decoded": "creep_kill:CSK1=0"
+    },
+    {
+      "t_ms": 542210,
+      "pid": 1,
+      "source": "0x6B",
+      "cache": "dr.x",
+      "mkey": "Data",
+      "key": "CSD1",
+      "val": 0,
+      "decoded": "creep_deny:CSD1=0"
+    }
+  ],
+  "chats": []
+}

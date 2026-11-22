@@ -1,0 +1,5 @@
+open "D:\Qt\workspace\War3Launcher\versions\1.27.0.52240\War3Patch.mpq"
+extract Units\UnitBalance.slk UnitBalance_out
+extract Units\UnitWeapons.slk UnitWeapons_out
+extract Units\MiscData.txt MiscData_out
+close

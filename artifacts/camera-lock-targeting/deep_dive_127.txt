@@ -1,0 +1,760 @@
+====================================================================================================
+1. CTargetMode::OnWorldLBtn (0x3A6AF0) 尾部 + 0x3A6850..0x3A68E4
+====================================================================================================
+
+--- 0x3A6E80..0x3A7096 (0x3A6AF0 尾部，含 HasTargetController @ 0x3A7056) ---
+  0x3A6FF0: sal     bl, 1
+  0x3A6FF2: movups  xmmword ptr [esp + 4], xmm0
+  0x3A6FF7: movss   xmm0, dword ptr [esi]
+  0x3A6FFB: movss   dword ptr [esp], xmm0
+  0x3A7000: push    dword ptr [ebp - 0x10]
+  0x3A7003: push    dword ptr [edi + 0x10]
+  0x3A7006: call    0x6f3ae5d0 ; RVA 0x3AE5D0
+  0x3A700B: mov     ebx, dword ptr [ebp - 0x20]
+  0x3A700E: push    ebx
+  0x3A700F: push    esi
+  0x3A7010: push    0
+  0x3A7012: jmp     0x6f3a6dee ; RVA 0x3A6DEE
+  0x3A7017: cmp     ecx, 2
+  0x3A701A: jne     0x6f3a7082
+  0x3A701C: mov     ecx, edi
+  0x3A701E: call    0x6f398520 ; RVA 0x398520
+  0x3A7023: mov     edi, eax
+  0x3A7025: mov     ecx, dword ptr [edi + 0x24c]
+  0x3A702B: cmp     dword ptr [ecx + 0xa0], 0
+  0x3A7032: jne     0x6f3a6e8e
+  0x3A7038: mov     ebx, dword ptr [edi + 0x250]
+  0x3A703E: mov     ecx, ebx
+  0x3A7040: call    0x6f374ae0 ; RVA 0x374AE0
+  0x3A7045: test    eax, eax
+  0x3A7047: jne     0x6f3a6e8e
+  0x3A704D: mov     ecx, edi
+  0x3A704F: call    0x6f34da20 ; RVA 0x34DA20
+  0x3A7054: mov     ecx, eax
+  0x3A7056: call    0x6f343250 ; RVA 0x343250
+  0x3A705B: test    eax, eax
+  0x3A705D: jne     0x6f3a6e8e
+  0x3A7063: push    1
+  0x3A7065: push    dword ptr [edi + 0x21c]
+  0x3A706B: mov     ecx, edi
+  0x3A706D: call    0x6f356ac0 ; RVA 0x356AC0
+  0x3A7072: lea     eax, [esi + 0x1c]
+  0x3A7075: mov     ecx, ebx
+  0x3A7077: push    eax
+  0x3A7078: call    0x6f3739e0 ; RVA 0x3739E0
+  0x3A707D: jmp     0x6f3a6e8e ; RVA 0x3A6E8E
+  0x3A7082: xor     eax, eax
+  0x3A7084: mov     ecx, dword ptr [ebp - 0xc]
+  0x3A7087: mov     dword ptr fs:[0], ecx
+  0x3A708E: pop     ecx
+  0x3A708F: pop     edi
+  0x3A7090: pop     esi
+  0x3A7091: pop     ebx
+  0x3A7092: mov     esp, ebp
+  0x3A7094: pop     ebp
+  0x3A7095: ret     4
+
+--- 0x3A62A0..0x3A6480 (IssueTargetOrder?) ---
+  0x3A62A0: push    ebp
+  0x3A62A1: mov     ebp, esp
+  0x3A62A3: push    -1
+  0x3A62A5: push    0x6f8e0958
+  0x3A62AA: mov     eax, dword ptr fs:[0]
+  0x3A62B0: push    eax
+  0x3A62B1: sub     esp, 0x5c
+  0x3A62B4: push    ebx
+  0x3A62B5: push    esi
+  0x3A62B6: push    edi
+  0x3A62B7: mov     eax, dword ptr [0x6fb6a774]
+  0x3A62BC: xor     eax, ebp
+  0x3A62BE: push    eax
+  0x3A62BF: lea     eax, [ebp - 0xc]
+  0x3A62C2: mov     dword ptr fs:[0], eax
+  0x3A62C8: mov     edi, ecx
+  0x3A62CA: xor     edx, edx
+  0x3A62CC: lea     ecx, [edx + 1]
+  0x3A62CF: call    0x6f34f3a0 ; RVA 0x34F3A0
+  0x3A62D4: mov     ebx, eax
+  0x3A62D6: mov     eax, dword ptr [0x6fbe4238]
+  0x3A62DB: mov     ecx, eax
+  0x3A62DD: mov     dword ptr [ebp - 0x1c], eax
+  0x3A62E0: movzx   edx, word ptr [eax + 0x28]
+  0x3A62E4: push    edx
+  0x3A62E5: call    0x6f1c3330 ; RVA 0x1C3330
+  0x3A62EA: mov     eax, dword ptr [eax + 0x34]
+  0x3A62ED: mov     ecx, eax
+  0x3A62EF: mov     dword ptr [ebp - 0x14], eax
+  0x3A62F2: call    0x6f2725e0 ; RVA 0x2725E0
+  0x3A62F7: mov     dword ptr [ebp - 0x18], eax
+  0x3A62FA: test    eax, eax
+  0x3A62FC: je      0x6f3a6831
+  0x3A6302: mov     esi, dword ptr [ebp + 0xc]
+  0x3A6305: cmp     esi, 4
+  0x3A6308: jne     0x6f3a6328
+  0x3A630A: mov     ecx, ebx
+  0x3A630C: call    0x6f356e50 ; RVA 0x356E50
+  0x3A6311: lea     eax, [esi - 3]
+  0x3A6314: mov     ecx, dword ptr [ebp - 0xc]
+  0x3A6317: mov     dword ptr fs:[0], ecx
+  0x3A631E: pop     ecx
+  0x3A631F: pop     edi
+  0x3A6320: pop     esi
+  0x3A6321: pop     ebx
+  0x3A6322: mov     esp, ebp
+  0x3A6324: pop     ebp
+  0x3A6325: ret     0xc
+  0x3A6328: mov     ecx, edi
+  0x3A632A: call    0x6f399560 ; RVA 0x399560
+  0x3A632F: mov     dword ptr [ebp - 0x10], eax
+  0x3A6332: cmp     esi, 1
+  0x3A6335: jne     0x6f3a6873
+  0x3A633B: push    dword ptr [ebp + 8]
+  0x3A633E: lea     ecx, [ebp + 0xc]
+  0x3A6341: call    0x6f1d5720 ; RVA 0x1D5720
+  0x3A6346: mov     ecx, dword ptr [ebp + 0xc]
+  0x3A6349: mov     dword ptr [ebp - 4], 0
+  0x3A6350: test    ecx, ecx
+  0x3A6352: je      0x6f3a6847
+  0x3A6358: test    byte ptr [ecx + 0x20], 4
+  0x3A635C: je      0x6f3a6847
+  0x3A6362: mov     eax, dword ptr [ebp + 0x10]
+  0x3A6365: test    eax, eax
+  0x3A6367: je      0x6f3a637e
+  0x3A6369: movq    xmm0, qword ptr [eax + 0x1c]
+  0x3A636E: mov     eax, dword ptr [eax + 0x24]
+  0x3A6371: mov     dword ptr [ebp - 0x48], eax
+  0x3A6374: lea     eax, [ebp - 0x50]
+  0x3A6377: movq    qword ptr [ebp - 0x50], xmm0
+  0x3A637C: jmp     0x6f3a6390 ; RVA 0x3A6390
+  0x3A637E: mov     eax, dword ptr [ecx]
+  0x3A6380: lea     edx, [ebp - 0x50]
+  0x3A6383: push    0
+  0x3A6385: push    -1
+  0x3A6387: push    0
+  0x3A6389: push    edx
+  0x3A638A: call    dword ptr [eax + 0xe0]
+  0x3A6390: movq    xmm0, qword ptr [eax]
+  0x3A6394: push    dword ptr [edi + 0x10]
+  0x3A6397: mov     ecx, dword ptr [ebx + 0x3c8]
+  0x3A639D: push    dword ptr [edi + 0xc]
+  0x3A63A0: movq    qword ptr [ebp - 0x44], xmm0
+  0x3A63A5: mov     eax, dword ptr [eax + 8]
+  0x3A63A8: mov     dword ptr [ebp - 0x3c], eax
+  0x3A63AB: call    0x6f398950 ; RVA 0x398950
+  0x3A63B0: mov     ecx, dword ptr [ebp - 0x14]
+  0x3A63B3: mov     dword ptr [ebp - 0x28], eax
+  0x3A63B6: call    0x6f272610 ; RVA 0x272610
+  0x3A63BB: xor     ecx, ecx
+  0x3A63BD: mov     esi, eax
+  0x3A63BF: call    0x6f0576f0 ; RVA 0x576F0
+  0x3A63C4: mov     dword ptr [ebp - 0x24], eax
+  0x3A63C7: mov     eax, dword ptr [edi + 0x14]
+  0x3A63CA: shr     eax, 0x19
+  0x3A63CD: and     eax, 1
+  0x3A63D0: mov     dword ptr [ebp - 0x20], eax
+  0x3A63D3: cmp     esi, 1
+  0x3A63D6: jbe     0x6f3a63ff
+  0x3A63D8: mov     ecx, dword ptr [ebp - 0x18]
+  0x3A63DB: push    1
+  0x3A63DD: call    0x6f66ea60 ; RVA 0x66EA60
+  0x3A63E2: test    eax, eax
+  0x3A63E4: jne     0x6f3a63ff
+  0x3A63E6: mov     ecx, edi
+  0x3A63E8: mov     dword ptr [ebp + 8], 1
+  0x3A63EF: call    0x6f3bedd0 ; RVA 0x3BEDD0
+  0x3A63F4: test    eax, eax
+  0x3A63F6: je      0x6f3a6406
+  0x3A63F8: mov     edx, 1
+  0x3A63FD: jmp     0x6f3a6408 ; RVA 0x3A6408
+  0x3A63FF: mov     dword ptr [ebp + 8], 0
+  0x3A6406: xor     edx, edx
+  0x3A6408: mov     eax, dword ptr [ebp - 0x28]
+  0x3A640B: test    eax, eax
+  0x3A640D: je      0x6f3a6417
+  0x3A640F: mov     ecx, dword ptr [eax + 0x5b8]
+  0x3A6415: jmp     0x6f3a641c ; RVA 0x3A641C
+  0x3A6417: mov     ecx, 1
+  0x3A641C: mov     eax, dword ptr [edi + 0x14]
+
+====================================================================================================
+2. CGameUI::PopMode (0x356E50) 与 CGameUI::SetMode (0x356AC0) Xrefs 检查
+====================================================================================================
+--- CGameUI::PopMode (0x356E50) 本体 ---
+  0x356E50: push    esi
+  0x356E51: push    edi
+  0x356E52: push    0
+  0x356E54: mov     edi, ecx
+  0x356E56: call    0x6f34f760 ; RVA 0x34F760
+  0x356E5B: push    eax
+  0x356E5C: mov     ecx, edi
+  0x356E5E: call    0x6f356ac0 ; RVA 0x356AC0
+  0x356E63: mov     esi, dword ptr [edi + 0x1bc]
+  0x356E69: test    esi, esi
+  0x356E6B: je      0x6f356e70
+  0x356E6D: dec     esi
+  0x356E6E: jmp     0x6f356e72 ; RVA 0x356E72
+  0x356E70: xor     esi, esi
+  0x356E72: add     edi, 0x1b8
+  0x356E78: cmp     esi, dword ptr [edi + 4]
+  0x356E7B: jbe     0x6f356eac
+  0x356E7D: cmp     esi, dword ptr [edi]
+  0x356E7F: jbe     0x6f356eac
+  0x356E81: push    ebx
+  0x356E82: mov     ebx, dword ptr [edi + 0xc]
+  0x356E85: test    ebx, ebx
+  0x356E87: jne     0x6f356e93
+  0x356E89: push    esi
+  0x356E8A: mov     ecx, edi
+  0x356E8C: call    0x6f34d960 ; RVA 0x34D960
+  0x356E91: mov     ebx, eax
+  0x356E93: xor     edx, edx
+  0x356E95: mov     eax, esi
+  0x356E97: div     ebx
+  0x356E99: mov     ecx, esi
+  0x356E9B: test    edx, edx
+  0x356E9D: je      0x6f356ea3
+  0x356E9F: sub     ecx, edx
+  0x356EA1: add     ecx, ebx
+  0x356EA3: push    ecx
+  0x356EA4: mov     ecx, edi
+  0x356EA6: call    0x6f354b10 ; RVA 0x354B10
+  0x356EAB: pop     ebx
+  0x356EAC: mov     dword ptr [edi + 4], esi
+  0x356EAF: pop     edi
+  0x356EB0: pop     esi
+  0x356EB1: ret     
+  0x356EB2: int3    
+  0x356EB3: int3    
+  0x356EB4: int3    
+  0x356EB5: int3    
+  0x356EB6: int3    
+  0x356EB7: int3    
+  0x356EB8: int3    
+  0x356EB9: int3    
+  0x356EBA: int3    
+  0x356EBB: int3    
+  0x356EBC: int3    
+  0x356EBD: int3    
+  0x356EBE: int3    
+  0x356EBF: int3    
+  0x356EC0: push    ebp
+  0x356EC1: mov     ebp, esp
+  0x356EC3: push    ebx
+PopMode (0x356E50) xrefs (65): ['0x34da95', '0x34e70b', '0x34e76b', '0x34ecf2', '0x34ed32', '0x34f170', '0x356bd5', '0x357e42', '0x375e0e', '0x391273', '0x39297c', '0x392b69', '0x3930e5', '0x399fa6', '0x39a1fa', '0x39ed74', '0x39f29f', '0x39f2f4', '0x39f323', '0x39f361', '0x39f47a', '0x39f86e', '0x39f99b', '0x39fc8a', '0x3a064a', '0x3a08bb', '0x3a0f91', '0x3a0fc1', '0x3a103d', '0x3a1222', '0x3a1a41', '0x3a1bcb', '0x3a1c4a', '0x3a1c8f', '0x3a1ce1', '0x3a1e94', '0x3a1edf', '0x3a1f16', '0x3a207d', '0x3a20cb', '0x3a4adf', '0x3a4e25', '0x3a4fc8', '0x3a500a', '0x3a5611', '0x3a59b4', '0x3a59f7', '0x3a5de1', '0x3a5e11', '0x3a630c', '0x3a6570', '0x3a6a5a', '0x3a6ae1', '0x3a6b68', '0x3a6e00', '0x3abad9', '0x3c2c06', '0x3c2d6d', '0x3c2e11', '0x3c2fbd', '0x3c3020', '0x3c30dd', '0x3c31a1', '0x3c332c', '0x3c3fbe']
+SetMode (0x356AC0) xrefs (28): ['0x34b6e2', '0x34e6f0', '0x34e750', '0x34ebf6', '0x34f2a5', '0x34f379', '0x352209', '0x352326', '0x3525d3', '0x352636', '0x3526e3', '0x352733', '0x353079', '0x356e5e', '0x35734a', '0x359434', '0x3594ed', '0x3751e1', '0x3768d5', '0x376d48', '0x377b74', '0x377c1a', '0x3a0b4f', '0x3a0b72', '0x3a0b95', '0x3a0bb8', '0x3a68bb', '0x3a706d']
+CCameraWar3 内调用 PopMode/SetMode: pop=[], set=[]
+
+====================================================================================================
+3. CWorldFrameWar3 中发出 0x1A0064 / 0x1A0065 / 0x1A0066 事件的位置
+====================================================================================================
+Event 0x1A0064 in CWorldFrameWar3: ['0x35f94c', '0x35f951', '0x368038']
+  --- @ 0x35F94C (func ~0x35F844) ---
+  0x35F90C: add     byte ptr [eax], al
+  0x35F90E: add     byte ptr [eax], al
+  0x35F910: mov     eax, dword ptr [ebx + 0x378]
+  0x35F916: sub     ecx, 0x18
+  0x35F919: mov     dword ptr [ecx + eax], 0xffffffff
+  0x35F920: jne     0x6f35f910
+  0x35F922: push    4
+  0x35F924: mov     ecx, ebx
+  0x35F926: call    0x6f0a1270 ; RVA 0xA1270
+  0x35F92B: or      dword ptr [ebx + 0x10], 5
+  0x35F92F: mov     ecx, ebx
+  0x35F931: or      dword ptr [ebx + 0xc], 5
+  0x35F935: push    5
+  0x35F937: call    0x6f36d6e0 ; RVA 0x36D6E0
+  0x35F93C: push    7
+  0x35F93E: mov     ecx, ebx
+  0x35F940: call    0x6f36d9a0 ; RVA 0x36D9A0
+  0x35F945: mov     esi, dword ptr [ebp + 8]
+  0x35F948: mov     ecx, ebx
+  0x35F94A: push    esi
+  0x35F94B: push    0x1a0064
+  0x35F950: push    0x1a0064
+  0x35F955: call    0x6f056af0 ; RVA 0x56AF0
+  0x35F95A: push    esi
+  0x35F95B: push    0x1a0065
+  0x35F960: push    0x1a0065
+  0x35F965: mov     ecx, ebx
+  0x35F967: call    0x6f056af0 ; RVA 0x56AF0
+  0x35F96C: push    esi
+  0x35F96D: push    0x1a0068
+  0x35F972: push    0x1a0068
+  0x35F977: mov     ecx, ebx
+  0x35F979: call    0x6f056af0 ; RVA 0x56AF0
+  0x35F97E: push    esi
+  0x35F97F: push    0x400500c9
+  0x35F984: push    0x400500c9
+  0x35F989: mov     ecx, ebx
+  0x35F98B: call    0x6f056af0 ; RVA 0x56AF0
+  0x35F990: call    0x6f191320 ; RVA 0x191320
+  0x35F995: mov     ecx, ebx
+  0x35F997: mov     dword ptr [ebx + 0x334], eax
+  --- @ 0x35F951 (func ~0x35F844) ---
+  0x35F911: cmp     dword ptr [eax + 3], 0
+  0x35F915: add     byte ptr [ebx + 0x4c718e9], al
+  0x35F91B: add     edi, edi
+Event 0x1A0065 in CWorldFrameWar3: ['0x35f95c', '0x35f961', '0x367f64']
+  --- @ 0x35F95C (func ~0x35F844) ---
+  --- @ 0x35F961 (func ~0x35F844) ---
+  0x35F921: out     dx, al
+  0x35F922: push    4
+  0x35F924: mov     ecx, ebx
+  0x35F926: call    0x6f0a1270 ; RVA 0xA1270
+  0x35F92B: or      dword ptr [ebx + 0x10], 5
+  0x35F92F: mov     ecx, ebx
+  0x35F931: or      dword ptr [ebx + 0xc], 5
+  0x35F935: push    5
+  0x35F937: call    0x6f36d6e0 ; RVA 0x36D6E0
+  0x35F93C: push    7
+  0x35F93E: mov     ecx, ebx
+  0x35F940: call    0x6f36d9a0 ; RVA 0x36D9A0
+  0x35F945: mov     esi, dword ptr [ebp + 8]
+  0x35F948: mov     ecx, ebx
+  0x35F94A: push    esi
+  0x35F94B: push    0x1a0064
+  0x35F950: push    0x1a0064
+  0x35F955: call    0x6f056af0 ; RVA 0x56AF0
+  0x35F95A: push    esi
+  0x35F95B: push    0x1a0065
+  0x35F960: push    0x1a0065
+  0x35F965: mov     ecx, ebx
+  0x35F967: call    0x6f056af0 ; RVA 0x56AF0
+  0x35F96C: push    esi
+  0x35F96D: push    0x1a0068
+  0x35F972: push    0x1a0068
+  0x35F977: mov     ecx, ebx
+  0x35F979: call    0x6f056af0 ; RVA 0x56AF0
+  0x35F97E: push    esi
+  0x35F97F: push    0x400500c9
+  0x35F984: push    0x400500c9
+  0x35F989: mov     ecx, ebx
+  0x35F98B: call    0x6f056af0 ; RVA 0x56AF0
+  0x35F990: call    0x6f191320 ; RVA 0x191320
+  0x35F995: mov     ecx, ebx
+  0x35F997: mov     dword ptr [ebx + 0x334], eax
+  0x35F99D: call    0x6f36c390 ; RVA 0x36C390
+  0x35F9A2: push    0x6f98dec8
+  0x35F9A7: push    0x6f98df10
+  0x35F9AC: mov     ecx, ebx
+  0x35F9AE: call    0x6f366f10 ; RVA 0x366F10
+Event 0x1A0066 in CWorldFrameWar3: ['0x36c291', '0x36efae', '0x3725f1', '0x3725f6']
+  --- @ 0x36C291 (func ~0x36C1C0) ---
+  0x36C251: sub     esp, 0x38
+  0x36C254: push    ebx
+  0x36C255: push    esi
+  0x36C256: push    edi
+  0x36C257: mov     eax, dword ptr [0x6fb6a774]
+  0x36C25C: xor     eax, ebp
+  0x36C25E: push    eax
+  0x36C25F: lea     eax, [ebp - 0xc]
+  0x36C262: mov     dword ptr fs:[0], eax
+  0x36C268: mov     esi, ecx
+  0x36C26A: xor     edx, edx
+  0x36C26C: lea     ecx, [edx + 1]
+  0x36C26F: call    0x6f34f3a0 ; RVA 0x34F3A0
+  0x36C274: mov     ecx, dword ptr [esi + 0x240]
+  0x36C27A: mov     ebx, eax
+  0x36C27C: test    ecx, ecx
+  0x36C27E: je      0x6f36c304
+  0x36C284: xorps   xmm0, xmm0
+  0x36C287: mov     dword ptr [ebp - 0x40], 0
+  0x36C28E: mov     dword ptr [ebp - 0x3c], 0x1a0066
+  0x36C295: mov     dword ptr [ebp - 0x38], 0
+  0x36C29C: movups  xmmword ptr [ebp - 0x30], xmm0
+  0x36C2A0: mov     dword ptr [ebp - 0x20], 0
+  0x36C2A7: mov     dword ptr [ebp - 0x44], 0x6f98de04
+  0x36C2AE: mov     eax, dword ptr [esi + 0x244]
+  0x36C2B4: mov     dword ptr [ebp - 0x18], ecx
+  0x36C2B7: mov     ecx, eax
+  0x36C2B9: mov     dword ptr [ebp - 4], 0
+  0x36C2C0: mov     dword ptr [ebp - 0x14], eax
+  0x36C2C3: mov     dword ptr [ebp - 0x10], 0
+  0x36C2CA: mov     dword ptr [esi + 0x240], 0
+  0x36C2D4: test    ecx, ecx
+  0x36C2D6: je      0x6f36c2eb
+  0x36C2D8: dec     dword ptr [ecx + 4]
+  0x36C2DB: jne     0x6f36c2e1
+  0x36C2DD: mov     eax, dword ptr [ecx]
+  0x36C2DF: call    dword ptr [eax]
+  --- @ 0x36EFAE (func ~0x36EEE0) ---
+  0x36EF6E: add     byte ptr [eax], al
+  0x36EF70: add     byte ptr [eax], al
+  0x36EF72: test    ecx, ecx
+  0x36EF74: jne     0x6f36ef7e
+  0x36EF76: test    ebx, ebx
+  0x36EF78: je      0x6f36f1d6
+  0x36EF7E: push    dword ptr [ebp - 0x44]
+  0x36EF81: lea     ecx, [ebp + 8]
+  0x36EF84: call    0x6f1fdaa0 ; RVA 0x1FDAA0
+  0x36EF89: cmp     dword ptr [ebp + 8], 0
+  0x36EF8D: mov     byte ptr [ebp - 4], 2
+  0x36EF91: jne     0x6f36f11a
+  0x36EF97: push    dword ptr [ebp - 0x44]
+  0x36EF9A: lea     ecx, [ebp + 0xc]
+  0x36EF9D: call    0x6f1d5020 ; RVA 0x1D5020
+  0x36EFA2: mov     ecx, dword ptr [ebp + 0xc]
+  0x36EFA5: test    ecx, ecx
+  0x36EFA7: jne     0x6f36f09f
+  0x36EFAD: push    0x1a0066
+  0x36EFB2: lea     ecx, [ebp - 0x8c]
+  0x36EFB8: call    0x6f35eea0 ; RVA 0x35EEA0
+  0x36EFBD: mov     byte ptr [ebp - 4], 4
+  0x36EFC1: test    ebx, ebx
+  0x36EFC3: je      0x6f36f017
+  0x36EFC5: mov     eax, dword ptr [esi + 0x240]
+  0x36EFCB: movq    xmm0, qword ptr [ebp - 0x40]
+  0x36EFD0: mov     dword ptr [ebp - 0x60], eax
+  0x36EFD3: mov     eax, dword ptr [edi]
+  0x36EFD5: mov     dword ptr [esi + 0x240], 0
+  0x36EFDF: mov     ecx, dword ptr [edi]
+  0x36EFE1: mov     dword ptr [ebp - 0x5c], eax
+  0x36EFE4: mov     eax, dword ptr [ebp - 0x38]
+  0x36EFE7: mov     dword ptr [ebp - 0x58], 0
+  0x36EFEE: movq    qword ptr [ebp - 0x70], xmm0
+  0x36EFF3: mov     dword ptr [ebp - 0x68], eax
+  0x36EFF6: test    ecx, ecx
+  0x36EFF8: je      0x6f36f009
+  0x36EFFA: dec     dword ptr [ecx + 4]
+  0x36EFFD: jne     0x6f36f003
+Event 0x1A0067 in CWorldFrameWar3: ['0x35ee0c', '0x372603', '0x372608']
+  --- @ 0x35EE0C (func ~0x35EE00) ---
+  0x35EE00: mov     dword ptr [ecx + 4], 0
+  0x35EE07: mov     eax, ecx
+  0x35EE09: mov     dword ptr [ecx + 8], 0x1a0067
+  0x35EE10: mov     dword ptr [ecx + 0xc], 0
+  0x35EE17: mov     dword ptr [ecx + 0x14], 0
+  0x35EE1E: mov     dword ptr [ecx + 0x18], 0
+  0x35EE25: mov     dword ptr [ecx + 0x1c], 0
+  0x35EE2C: mov     dword ptr [ecx + 0x20], 0
+  0x35EE33: mov     dword ptr [ecx + 0x24], 0
+  0x35EE3A: mov     dword ptr [ecx], 0x6f98de10
+  0x35EE40: ret     
+  0x35EE41: int3    
+  0x35EE42: int3    
+  0x35EE43: int3    
+  0x35EE44: int3    
+  0x35EE45: int3    
+  0x35EE46: int3    
+  0x35EE47: int3    
+  0x35EE48: int3    
+  0x35EE49: int3    
+  0x35EE4A: int3    
+  0x35EE4B: int3    
+  0x35EE4C: int3    
+  0x35EE4D: int3    
+  0x35EE4E: int3    
+  0x35EE4F: int3    
+  0x35EE50: push    ebp
+  0x35EE51: mov     ebp, esp
+  0x35EE53: mov     eax, dword ptr [ebp + 8]
+  0x35EE56: mov     dword ptr [ecx + 8], eax
+  0x35EE59: mov     eax, ecx
+  0x35EE5B: mov     dword ptr [ecx + 4], 0
+  --- @ 0x372603 (func ~0x372590) ---
+  0x3725C3: cmp     dword ptr [esi + 0x1c0], 0
+  0x3725CA: mov     ecx, esi
+  0x3725CC: push    0
+  0x3725CE: je      0x6f3725db
+  0x3725D0: push    1
+  0x3725D2: push    1
+  0x3725D4: call    0x6f369810 ; RVA 0x369810
+  0x3725D9: jmp     0x6f3725eb ; RVA 0x3725EB
+  0x3725DB: push    0
+  0x3725DD: push    0
+  0x3725DF: call    0x6f36d230 ; RVA 0x36D230
+  0x3725E4: mov     ecx, esi
+  0x3725E6: call    0x6f36c240 ; RVA 0x36C240
+  0x3725EB: mov     eax, dword ptr [esi]
+  0x3725ED: mov     ecx, esi
+  0x3725EF: push    edi
+  0x3725F0: push    0x1a0066
+  0x3725F5: push    0x1a0066
+  0x3725FA: call    dword ptr [eax + 8]
+  0x3725FD: mov     eax, dword ptr [esi]
+  0x3725FF: mov     ecx, esi
+  0x372601: push    edi
+  0x372602: push    0x1a0067
+  0x372607: push    0x1a0067
+  0x37260C: call    dword ptr [eax + 8]
+  0x37260F: mov     ecx, esi
+  0x372611: call    0x6f36f210 ; RVA 0x36F210
+  0x372616: pop     esi
+  0x372617: mov     eax, 1
+  0x37261C: pop     edi
+  0x37261D: ret     
+  0x37261E: int3    
+  0x37261F: int3    
+  0x372620: push    ebp
+  0x372621: mov     ebp, esp
+  0x372623: push    -1
+  0x372625: push    0x6f8dc162
+  0x37262A: mov     eax, dword ptr fs:[0]
+  0x372630: push    eax
+  0x372631: sub     esp, 0x3c
+  0x372634: push    ebx
+  0x372635: push    esi
+  0x372636: push    edi
+  0x372637: mov     eax, dword ptr [0x6fb6a774]
+  0x37263C: xor     eax, ebp
+Event 0x1A0068 in CWorldFrameWar3: ['0x35f96e', '0x35f973', '0x367e35', '0x367ee5', '0x367fb6', '0x368087']
+  --- @ 0x35F96E (func ~0x35F844) ---
+  0x35F92E: add     eax, 0x4b83cb8b
+  0x35F933: or      al, 5
+  0x35F935: push    5
+  0x35F937: call    0x6f36d6e0 ; RVA 0x36D6E0
+  0x35F93C: push    7
+  0x35F93E: mov     ecx, ebx
+  0x35F940: call    0x6f36d9a0 ; RVA 0x36D9A0
+  0x35F945: mov     esi, dword ptr [ebp + 8]
+  0x35F948: mov     ecx, ebx
+  0x35F94A: push    esi
+  0x35F94B: push    0x1a0064
+  0x35F950: push    0x1a0064
+  0x35F955: call    0x6f056af0 ; RVA 0x56AF0
+  0x35F95A: push    esi
+  0x35F95B: push    0x1a0065
+  0x35F960: push    0x1a0065
+  0x35F965: mov     ecx, ebx
+  0x35F967: call    0x6f056af0 ; RVA 0x56AF0
+  0x35F96C: push    esi
+  0x35F96D: push    0x1a0068
+  0x35F972: push    0x1a0068
+  0x35F977: mov     ecx, ebx
+  0x35F979: call    0x6f056af0 ; RVA 0x56AF0
+  0x35F97E: push    esi
+  0x35F97F: push    0x400500c9
+  0x35F984: push    0x400500c9
+  0x35F989: mov     ecx, ebx
+  0x35F98B: call    0x6f056af0 ; RVA 0x56AF0
+  0x35F990: call    0x6f191320 ; RVA 0x191320
+  0x35F995: mov     ecx, ebx
+  0x35F997: mov     dword ptr [ebx + 0x334], eax
+  0x35F99D: call    0x6f36c390 ; RVA 0x36C390
+  0x35F9A2: push    0x6f98dec8
+  0x35F9A7: push    0x6f98df10
+  0x35F9AC: mov     ecx, ebx
+  0x35F9AE: call    0x6f366f10 ; RVA 0x366F10
+  0x35F9B3: mov     ecx, ebx
+  0x35F9B5: call    0x6f367040 ; RVA 0x367040
+  0x35F9BA: mov     ecx, ebx
+  0x35F9BC: call    0x6f367170 ; RVA 0x367170
+  --- @ 0x35F973 (func ~0x35F844) ---
+  0x35F933: or      al, 5
+  0x35F935: push    5
+  0x35F937: call    0x6f36d6e0 ; RVA 0x36D6E0
+  0x35F93C: push    7
+  0x35F93E: mov     ecx, ebx
+  0x35F940: call    0x6f36d9a0 ; RVA 0x36D9A0
+  0x35F945: mov     esi, dword ptr [ebp + 8]
+  0x35F948: mov     ecx, ebx
+  0x35F94A: push    esi
+  0x35F94B: push    0x1a0064
+  0x35F950: push    0x1a0064
+  0x35F955: call    0x6f056af0 ; RVA 0x56AF0
+  0x35F95A: push    esi
+  0x35F95B: push    0x1a0065
+  0x35F960: push    0x1a0065
+  0x35F965: mov     ecx, ebx
+  0x35F967: call    0x6f056af0 ; RVA 0x56AF0
+  0x35F96C: push    esi
+  0x35F96D: push    0x1a0068
+  0x35F972: push    0x1a0068
+  0x35F977: mov     ecx, ebx
+  0x35F979: call    0x6f056af0 ; RVA 0x56AF0
+  0x35F97E: push    esi
+  0x35F97F: push    0x400500c9
+  0x35F984: push    0x400500c9
+  0x35F989: mov     ecx, ebx
+  0x35F98B: call    0x6f056af0 ; RVA 0x56AF0
+  0x35F990: call    0x6f191320 ; RVA 0x191320
+  0x35F995: mov     ecx, ebx
+  0x35F997: mov     dword ptr [ebx + 0x334], eax
+  0x35F99D: call    0x6f36c390 ; RVA 0x36C390
+  0x35F9A2: push    0x6f98dec8
+  0x35F9A7: push    0x6f98df10
+  0x35F9AC: mov     ecx, ebx
+  0x35F9AE: call    0x6f366f10 ; RVA 0x366F10
+  0x35F9B3: mov     ecx, ebx
+  0x35F9B5: call    0x6f367040 ; RVA 0x367040
+  0x35F9BA: mov     ecx, ebx
+  0x35F9BC: call    0x6f367170 ; RVA 0x367170
+  0x35F9C1: mov     ecx, ebx
+
+====================================================================================================
+4. CCameraWar3::Update (0x3474E0) 全貌 & [cam+0x2C] / [cam+0x30] 用途
+====================================================================================================
+  0x3474E0: push    ebp
+  0x3474E1: mov     ebp, esp
+  0x3474E3: and     esp, 0xfffffff8
+  0x3474E6: sub     esp, 0xc4
+  0x3474EC: push    esi
+  0x3474ED: lea     eax, [esp + 0xc]
+  0x3474F1: mov     esi, ecx
+  0x3474F3: push    eax
+  0x3474F4: call    0x6f342890 ; RVA 0x342890
+  0x3474F9: mov     eax, dword ptr [esi + 0x38]
+  0x3474FC: mov     dword ptr [esp + 0x18], 0
+  0x347504: mov     dword ptr [esp + 0x1c], 0
+  0x34750C: mov     dword ptr [esp + 0x20], 0
+  0x347514: sub     eax, 0
+  0x347517: je      0x6f347634
+  0x34751D: dec     eax
+  0x34751E: je      0x6f34753c
+  0x347520: dec     eax
+  0x347521: jne     0x6f34784e
+  0x347527: movq    xmm0, qword ptr [esp + 0xc]
+  0x34752D: mov     eax, dword ptr [esp + 0x14]
+  0x347531: movq    qword ptr [esp + 0x18], xmm0
+  0x347537: jmp     0x6f34784a ; RVA 0x34784A
+  0x34753C: lea     eax, [esp + 0x7c]
+  0x347540: mov     ecx, esi
+  0x347542: push    eax
+  0x347543: call    0x6f343150 ; RVA 0x343150
+  0x347548: movq    xmm0, qword ptr [eax]
+  0x34754C: movq    qword ptr [esp + 0x18], xmm0
+  0x347552: movss   xmm0, dword ptr [esp + 0x1c]
+  0x347558: subss   xmm0, dword ptr [esp + 0x10]
+  0x34755E: movss   xmm2, dword ptr [esp + 0x18]
+  0x347564: subss   xmm2, dword ptr [esp + 0xc]
+  0x34756A: mov     eax, dword ptr [eax + 8]
+  0x34756D: mov     dword ptr [esp + 0x20], eax
+  0x347571: movss   xmm3, dword ptr [esp + 0x20]
+  0x347577: movaps  xmm1, xmm0
+  0x34757A: subss   xmm3, dword ptr [esp + 0x14]
+  0x347580: mulss   xmm1, xmm0
+  0x347584: movss   dword ptr [esp + 0x50], xmm0
+  0x34758A: movaps  xmm0, xmm2
+  0x34758D: mulss   xmm0, xmm2
+  0x347591: movq    qword ptr [esp + 0x28], xmm2
+  0x347597: movss   dword ptr [esp + 0x48], xmm3
+  0x34759D: addss   xmm1, xmm0
+  0x3475A1: movaps  xmm0, xmm3
+  0x3475A4: mulss   xmm0, xmm3
+  0x3475A8: addss   xmm1, xmm0
+  0x3475AC: xorps   xmm0, xmm0
+  0x3475AF: cvtss2sd xmm0, xmm1
+  0x3475B3: call    0x6f771f7a ; RVA 0x771F7A
+  0x3475B8: cvtsd2ss xmm0, xmm0
+  0x3475BC: push    0
+  0x3475BE: mov     edx, 0x6f98b27c
+  0x3475C3: mov     ecx, 0x6f98b29c
+  0x3475C8: movss   dword ptr [esp + 8], xmm0
+  0x3475CE: call    0x6f02a2f0 ; RVA 0x2A2F0
+  0x3475D3: movss   xmm0, dword ptr [esp + 4]
+  0x3475D9: fstp    dword ptr [esp + 0x24]
+  0x3475DD: movss   xmm3, dword ptr [esp + 0x24]
+  0x3475E3: comiss  xmm3, xmm0
+  0x3475E6: jae     0x6f34784e
+  0x3475EC: divss   xmm3, xmm0
+  0x3475F0: movq    xmm0, qword ptr [esp + 0x28]
+  0x3475F6: movss   xmm2, dword ptr [esp + 0x50]
+  0x3475FC: movss   xmm1, dword ptr [esp + 0x48]
+  0x347602: mulss   xmm0, xmm3
+  0x347606: mulss   xmm2, xmm3
+  0x34760A: addss   xmm0, dword ptr [esp + 0xc]
+  0x347610: mulss   xmm1, xmm3
+  0x347614: addss   xmm2, dword ptr [esp + 0x10]
+  0x34761A: addss   xmm1, dword ptr [esp + 0x14]
+  0x347620: unpcklps xmm0, xmm2
+  0x347623: movq    qword ptr [esp + 0x18], xmm0
+  0x347629: movss   dword ptr [esp + 0x44], xmm1
+  0x34762F: jmp     0x6f347846 ; RVA 0x347846
+  0x347634: mov     ecx, esi
+  0x347636: call    0x6f3436b0 ; RVA 0x3436B0
+  0x34763B: test    eax, eax
+  0x34763D: je      0x6f34765d
+  0x34763F: lea     eax, [esp + 0x64]
+  0x347643: mov     ecx, esi
+  0x347645: push    eax
+  0x347646: call    0x6f343150 ; RVA 0x343150
+  0x34764B: movq    xmm0, qword ptr [eax]
+  0x34764F: movq    qword ptr [esp + 0x18], xmm0
+  0x347655: mov     eax, dword ptr [eax + 8]
+  0x347658: jmp     0x6f34784a ; RVA 0x34784A
+  0x34765D: lea     eax, [esp + 0x4c]
+  0x347661: push    eax
+  0x347662: lea     ecx, [esi + 0xcc]
+  0x347668: call    0x6f03adf0 ; RVA 0x3ADF0
+  0x34766D: movss   xmm0, dword ptr [esp + 0x4c]
+  0x347673: lea     eax, [esp + 0x54]
+  0x347677: push    eax
+  0x347678: lea     ecx, [esi + 0xe4]
+  0x34767E: movss   dword ptr [esp + 0x28], xmm0
+  0x347684: call    0x6f045740 ; RVA 0x45740
+  0x347689: movss   xmm0, dword ptr [esp + 0x54]
+  0x34768F: lea     eax, [esp + 8]
+  0x347693: push    eax
+  0x347694: lea     ecx, [esi + 0x15c]
+  0x34769A: movss   dword ptr [esp + 8], xmm0
+  0x3476A0: call    0x6f045740 ; RVA 0x45740
+  0x3476A5: movss   xmm0, dword ptr [esi + 0x5a4]
+  0x3476AD: ucomiss xmm0, dword ptr [esp + 0xc]
+  0x3476B2: lahf    
+  0x3476B3: test    ah, 0x44
+  0x3476B6: jp      0x6f347725
+  0x3476B8: movss   xmm0, dword ptr [esi + 0x5a8]
+  0x3476C0: ucomiss xmm0, dword ptr [esp + 0x10]
+  0x3476C5: lahf    
+  0x3476C6: test    ah, 0x44
+  0x3476C9: jp      0x6f347725
+  0x3476CB: movss   xmm0, dword ptr [esi + 0x5ac]
+  0x3476D3: ucomiss xmm0, dword ptr [esp + 0x14]
+  0x3476D8: lahf    
+  0x3476D9: test    ah, 0x44
+  0x3476DC: jp      0x6f347725
+  0x3476DE: movss   xmm0, dword ptr [esi + 0x5b0]
+  0x3476E6: ucomiss xmm0, dword ptr [esp + 0x24]
+  0x3476EB: movss   xmm1, dword ptr [esp + 4]
+  0x3476F1: movss   xmm2, dword ptr [esp + 8]
+  0x3476F7: lahf    
+  0x3476F8: test    ah, 0x44
+  0x3476FB: jp      0x6f347731
+  0x3476FD: movss   xmm0, dword ptr [esi + 0x5b4]
+
+--- CCameraWar3 内 0x3436B0 (被 0x343DD0 滚屏事件调用) ---
+  0x3436B0: mov     ecx, dword ptr [ecx + 0x464]
+  0x3436B6: test    ecx, ecx
+  0x3436B8: je      0x6f3436cf
+  0x3436BA: mov     edx, dword ptr [ecx + 0xc]
+  0x3436BD: mov     ecx, dword ptr [ecx + 8]
+  0x3436C0: call    0x6f037350 ; RVA 0x37350
+  0x3436C5: test    eax, eax
+  0x3436C7: je      0x6f3436cf
+  0x3436C9: mov     eax, 1
+  0x3436CE: ret     
+  0x3436CF: xor     eax, eax
+  0x3436D1: ret     
+  0x3436D2: int3    
+  0x3436D3: int3    
+  0x3436D4: int3    
+  0x3436D5: int3    
+  0x3436D6: int3    
+  0x3436D7: int3    
+  0x3436D8: int3    
+  0x3436D9: int3    
+  0x3436DA: int3    
+  0x3436DB: int3    
+  0x3436DC: int3    
+  0x3436DD: int3    
+  0x3436DE: int3    
+  0x3436DF: int3    
+  0x3436E0: push    ebp
+  0x3436E1: mov     ebp, esp
+  0x3436E3: push    ecx
+  0x3436E4: push    ebx
+  0x3436E5: mov     eax, ecx
+  0x3436E7: push    esi
+  0x3436E8: push    edi
+  0x3436E9: xor     esi, esi
+  0x3436EB: mov     dword ptr [ebp - 4], eax
+  0x3436EE: xor     ebx, ebx
+  0x3436F0: lea     edi, [eax + 0x45c]
+  0x3436F6: cmp     ebx, 2
+  0x3436F9: jge     0x6f343742
+  0x3436FB: mov     ecx, dword ptr [edi - 8]
+  0x3436FE: test    ecx, ecx
+  0x343700: je      0x6f343718
+  0x343702: mov     edx, dword ptr [ecx + 0xc]
+  0x343705: mov     ecx, dword ptr [ecx + 8]
+  0x343708: call    0x6f037350 ; RVA 0x37350

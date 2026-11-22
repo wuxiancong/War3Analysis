@@ -1,0 +1,563 @@
+[
+  {
+    "id": 1,
+    "name": "Q4/H4",
+    "side": "Radiant bot/ancients-ish",
+    "note": "\u4e1c\u4fa7\u5f00\u9614",
+    "spawn": [
+      4640,
+      -976
+    ],
+    "check": [
+      3904,
+      -1408,
+      4960,
+      -640
+    ],
+    "edges": {
+      "W": 736,
+      "E": 320,
+      "S": 432,
+      "N": 336
+    },
+    "nearest_dir": "E",
+    "nearest_dist": 320,
+    "prefer_dir": "E",
+    "prefer_dist": 320,
+    "path_factor": 1.6,
+    "leash_ok_nearest": true,
+    "leash_ok_prefer": true,
+    "over_leash": {
+      "W": 736
+    },
+    "spd_typ": 270,
+    "spd_worst": 270,
+    "theor_melee": 57.95,
+    "theor_ranged": 57.75,
+    "pract_melee": 55.89,
+    "pract_ranged": 55.69,
+    "pract_melee_worst": 55.39,
+    "pract_ranged_worst": 55.19,
+    "pract_melee_4stack": 53.89,
+    "pract_ranged_4stack": 53.69,
+    "rec_melee": 55,
+    "rec_ranged": 55,
+    "rec_4stack_melee": 53,
+    "rec_4stack_ranged": 53
+  },
+  {
+    "id": 2,
+    "name": "U4/Z4",
+    "side": "Dire bot/ancients-ish",
+    "note": "\u897f\u4fa7\u5f00\u9614",
+    "spawn": [
+      -3216,
+      -256
+    ],
+    "check": [
+      -3552,
+      -768,
+      -2528,
+      320
+    ],
+    "edges": {
+      "W": 336,
+      "E": 688,
+      "S": 512,
+      "N": 576
+    },
+    "nearest_dir": "W",
+    "nearest_dist": 336,
+    "prefer_dir": "W",
+    "prefer_dist": 336,
+    "path_factor": 1.6,
+    "leash_ok_nearest": true,
+    "leash_ok_prefer": true,
+    "over_leash": {
+      "E": 688
+    },
+    "spd_typ": 270,
+    "spd_worst": 270,
+    "theor_melee": 57.89,
+    "theor_ranged": 57.69,
+    "pract_melee": 55.8,
+    "pract_ranged": 55.6,
+    "pract_melee_worst": 55.3,
+    "pract_ranged_worst": 55.1,
+    "pract_melee_4stack": 53.8,
+    "pract_ranged_4stack": 53.6,
+    "rec_melee": 55,
+    "rec_ranged": 55,
+    "rec_4stack_melee": 53,
+    "rec_4stack_ranged": 53
+  },
+  {
+    "id": 3,
+    "name": "I5/V4",
+    "side": "Radiant easy/mid",
+    "note": "\u504f\u5317\u51fa\u76d2\u8fd1",
+    "spawn": [
+      1584,
+      -3984
+    ],
+    "check": [
+      1056,
+      -5216,
+      2368,
+      -3744
+    ],
+    "edges": {
+      "W": 528,
+      "E": 784,
+      "S": 1232,
+      "N": 240
+    },
+    "nearest_dir": "N",
+    "nearest_dist": 240,
+    "prefer_dir": "N",
+    "prefer_dist": 240,
+    "path_factor": 1.8,
+    "leash_ok_nearest": true,
+    "leash_ok_prefer": true,
+    "over_leash": {
+      "E": 784,
+      "S": 1232
+    },
+    "spd_typ": 300,
+    "spd_worst": 270,
+    "theor_melee": 58.34,
+    "theor_ranged": 58.14,
+    "pract_melee": 56.05,
+    "pract_ranged": 55.85,
+    "pract_melee_worst": 55.36,
+    "pract_ranged_worst": 55.16,
+    "pract_melee_4stack": 53.86,
+    "pract_ranged_4stack": 53.66,
+    "rec_melee": 55,
+    "rec_ranged": 55,
+    "rec_4stack_melee": 53,
+    "rec_4stack_ranged": 53
+  },
+  {
+    "id": 4,
+    "name": "O5/W4",
+    "side": "Dire easy/mid",
+    "note": "\u504f\u5357",
+    "spawn": [
+      -4512,
+      3408
+    ],
+    "check": [
+      -5120,
+      3008,
+      -3648,
+      4320
+    ],
+    "edges": {
+      "W": 608,
+      "E": 864,
+      "S": 400,
+      "N": 912
+    },
+    "nearest_dir": "S",
+    "nearest_dist": 400,
+    "prefer_dir": "S",
+    "prefer_dist": 400,
+    "path_factor": 1.8,
+    "leash_ok_nearest": true,
+    "leash_ok_prefer": true,
+    "over_leash": {
+      "W": 608,
+      "E": 864,
+      "N": 912
+    },
+    "spd_typ": 300,
+    "spd_worst": 270,
+    "theor_melee": 57.81,
+    "theor_ranged": 57.61,
+    "pract_melee": 55.09,
+    "pract_ranged": 54.89,
+    "pract_melee_worst": 54.29,
+    "pract_ranged_worst": 54.09,
+    "pract_melee_4stack": 52.79,
+    "pract_ranged_4stack": 52.59,
+    "rec_melee": 54,
+    "rec_ranged": 54,
+    "rec_4stack_melee": 52,
+    "rec_4stack_ranged": 52
+  },
+  {
+    "id": 5,
+    "name": "A5/X4",
+    "side": "Dire ancient",
+    "note": "\u53e4\u6811\uff1b\u9876\u8fb9608>leash",
+    "spawn": [
+      -3088,
+      4256
+    ],
+    "check": [
+      -3456,
+      3808,
+      -2656,
+      4864
+    ],
+    "edges": {
+      "W": 368,
+      "E": 432,
+      "S": 448,
+      "N": 608
+    },
+    "nearest_dir": "W",
+    "nearest_dist": 368,
+    "prefer_dir": "W",
+    "prefer_dist": 368,
+    "path_factor": 2.0,
+    "leash_ok_nearest": true,
+    "leash_ok_prefer": true,
+    "over_leash": {
+      "N": 608
+    },
+    "spd_typ": 270,
+    "spd_worst": 270,
+    "theor_melee": 57.77,
+    "theor_ranged": 57.57,
+    "pract_melee": 54.99,
+    "pract_ranged": 54.79,
+    "pract_melee_worst": 54.49,
+    "pract_ranged_worst": 54.29,
+    "pract_melee_4stack": 52.99,
+    "pract_ranged_4stack": 52.79,
+    "rec_melee": 54,
+    "rec_ranged": 54,
+    "rec_4stack_melee": 52,
+    "rec_4stack_ranged": 52
+  },
+  {
+    "id": 6,
+    "name": "B5/Y4",
+    "side": "Radiant ancient",
+    "note": "\u5317\u7f18\u6781\u8fd180",
+    "spawn": [
+      2960,
+      -5008
+    ],
+    "check": [
+      2272,
+      -6080,
+      3776,
+      -4928
+    ],
+    "edges": {
+      "W": 688,
+      "E": 816,
+      "S": 1072,
+      "N": 80
+    },
+    "nearest_dir": "N",
+    "nearest_dist": 80,
+    "prefer_dir": "N",
+    "prefer_dist": 80,
+    "path_factor": 1.5,
+    "leash_ok_nearest": true,
+    "leash_ok_prefer": true,
+    "over_leash": {
+      "W": 688,
+      "E": 816,
+      "S": 1072
+    },
+    "spd_typ": 270,
+    "spd_worst": 270,
+    "theor_melee": 58.84,
+    "theor_ranged": 58.64,
+    "pract_melee": 57.36,
+    "pract_ranged": 57.16,
+    "pract_melee_worst": 56.86,
+    "pract_ranged_worst": 56.66,
+    "pract_melee_4stack": 55.36,
+    "pract_ranged_4stack": 55.16,
+    "rec_melee": 55,
+    "rec_ranged": 55,
+    "rec_4stack_melee": 54,
+    "rec_4stack_ranged": 54
+  },
+  {
+    "id": 7,
+    "name": "C5/J4",
+    "side": "Dire hard near mid",
+    "note": "\u5357144",
+    "spawn": [
+      -1648,
+      2352
+    ],
+    "check": [
+      -1888,
+      2208,
+      -992,
+      3040
+    ],
+    "edges": {
+      "W": 240,
+      "E": 656,
+      "S": 144,
+      "N": 688
+    },
+    "nearest_dir": "S",
+    "nearest_dist": 144,
+    "prefer_dir": "S",
+    "prefer_dist": 144,
+    "path_factor": 1.7,
+    "leash_ok_nearest": true,
+    "leash_ok_prefer": true,
+    "over_leash": {
+      "E": 656,
+      "N": 688
+    },
+    "spd_typ": 270,
+    "spd_worst": 270,
+    "theor_melee": 58.6,
+    "theor_ranged": 58.4,
+    "pract_melee": 56.57,
+    "pract_ranged": 56.37,
+    "pract_melee_worst": 56.07,
+    "pract_ranged_worst": 55.87,
+    "pract_melee_4stack": 54.57,
+    "pract_ranged_4stack": 54.37,
+    "rec_melee": 55,
+    "rec_ranged": 55,
+    "rec_4stack_melee": 54,
+    "rec_4stack_ranged": 54
+  },
+  {
+    "id": 8,
+    "name": "E5/K4",
+    "side": "Radiant hard near mid",
+    "note": "\u5317384",
+    "spawn": [
+      3072,
+      -3712
+    ],
+    "check": [
+      2592,
+      -4800,
+      3744,
+      -3328
+    ],
+    "edges": {
+      "W": 480,
+      "E": 672,
+      "S": 1088,
+      "N": 384
+    },
+    "nearest_dir": "N",
+    "nearest_dist": 384,
+    "prefer_dir": "N",
+    "prefer_dist": 384,
+    "path_factor": 1.7,
+    "leash_ok_nearest": true,
+    "leash_ok_prefer": true,
+    "over_leash": {
+      "E": 672,
+      "S": 1088
+    },
+    "spd_typ": 270,
+    "spd_worst": 270,
+    "theor_melee": 57.71,
+    "theor_ranged": 57.51,
+    "pract_melee": 55.05,
+    "pract_ranged": 54.86,
+    "pract_melee_worst": 54.55,
+    "pract_ranged_worst": 54.36,
+    "pract_melee_4stack": 53.05,
+    "pract_ranged_4stack": 52.86,
+    "rec_melee": 54,
+    "rec_ranged": 54,
+    "rec_4stack_melee": 52,
+    "rec_4stack_ranged": 52
+  },
+  {
+    "id": 9,
+    "name": "D5/L4",
+    "side": "Dire medium",
+    "note": "\u4e1c400",
+    "spawn": [
+      1232,
+      3040
+    ],
+    "check": [
+      416,
+      2624,
+      1632,
+      3648
+    ],
+    "edges": {
+      "W": 816,
+      "E": 400,
+      "S": 416,
+      "N": 608
+    },
+    "nearest_dir": "E",
+    "nearest_dist": 400,
+    "prefer_dir": "E",
+    "prefer_dist": 400,
+    "path_factor": 1.8,
+    "leash_ok_nearest": true,
+    "leash_ok_prefer": true,
+    "over_leash": {
+      "W": 816,
+      "N": 608
+    },
+    "spd_typ": 300,
+    "spd_worst": 270,
+    "theor_melee": 57.81,
+    "theor_ranged": 57.61,
+    "pract_melee": 55.09,
+    "pract_ranged": 54.89,
+    "pract_melee_worst": 54.29,
+    "pract_ranged_worst": 54.09,
+    "pract_melee_4stack": 52.79,
+    "pract_ranged_4stack": 52.59,
+    "rec_melee": 54,
+    "rec_ranged": 54,
+    "rec_4stack_melee": 52,
+    "rec_4stack_ranged": 52
+  },
+  {
+    "id": 10,
+    "name": "F5/M4",
+    "side": "Radiant medium",
+    "note": "\u5357224",
+    "spawn": [
+      -416,
+      -3584
+    ],
+    "check": [
+      -1024,
+      -3808,
+      192,
+      -2752
+    ],
+    "edges": {
+      "W": 608,
+      "E": 608,
+      "S": 224,
+      "N": 832
+    },
+    "nearest_dir": "S",
+    "nearest_dist": 224,
+    "prefer_dir": "S",
+    "prefer_dist": 224,
+    "path_factor": 1.7,
+    "leash_ok_nearest": true,
+    "leash_ok_prefer": true,
+    "over_leash": {
+      "W": 608,
+      "E": 608,
+      "N": 832
+    },
+    "spd_typ": 270,
+    "spd_worst": 270,
+    "theor_melee": 58.3,
+    "theor_ranged": 58.1,
+    "pract_melee": 56.06,
+    "pract_ranged": 55.86,
+    "pract_melee_worst": 55.56,
+    "pract_ranged_worst": 55.36,
+    "pract_melee_4stack": 54.06,
+    "pract_ranged_4stack": 53.86,
+    "rec_melee": 55,
+    "rec_ranged": 55,
+    "rec_4stack_melee": 53,
+    "rec_4stack_ranged": 53
+  },
+  {
+    "id": 11,
+    "name": "Z5/V5",
+    "side": "Dire hard/tri",
+    "note": "\u4e1c352",
+    "spawn": [
+      -288,
+      3456
+    ],
+    "check": [
+      -800,
+      3072,
+      64,
+      4032
+    ],
+    "edges": {
+      "W": 512,
+      "E": 352,
+      "S": 384,
+      "N": 576
+    },
+    "nearest_dir": "E",
+    "nearest_dist": 352,
+    "prefer_dir": "E",
+    "prefer_dist": 352,
+    "path_factor": 1.8,
+    "leash_ok_nearest": true,
+    "leash_ok_prefer": true,
+    "over_leash": {},
+    "spd_typ": 270,
+    "spd_worst": 270,
+    "theor_melee": 57.83,
+    "theor_ranged": 57.63,
+    "pract_melee": 55.11,
+    "pract_ranged": 54.91,
+    "pract_melee_worst": 54.61,
+    "pract_ranged_worst": 54.41,
+    "pract_melee_4stack": 53.11,
+    "pract_ranged_4stack": 52.91,
+    "rec_melee": 54,
+    "rec_ranged": 54,
+    "rec_4stack_melee": 52,
+    "rec_4stack_ranged": 52
+  },
+  {
+    "id": 12,
+    "name": "W5/X5",
+    "side": "Radiant hard/tri",
+    "note": "\u4e1c288",
+    "spawn": [
+      -1056,
+      -4592
+    ],
+    "check": [
+      -1728,
+      -5056,
+      -768,
+      -3840
+    ],
+    "edges": {
+      "W": 672,
+      "E": 288,
+      "S": 464,
+      "N": 752
+    },
+    "nearest_dir": "E",
+    "nearest_dist": 288,
+    "prefer_dir": "E",
+    "prefer_dist": 288,
+    "path_factor": 1.7,
+    "leash_ok_nearest": true,
+    "leash_ok_prefer": true,
+    "over_leash": {
+      "W": 672,
+      "N": 752
+    },
+    "spd_typ": 300,
+    "spd_worst": 270,
+    "theor_melee": 58.18,
+    "theor_ranged": 57.98,
+    "pract_melee": 55.87,
+    "pract_ranged": 55.67,
+    "pract_melee_worst": 55.16,
+    "pract_ranged_worst": 54.96,
+    "pract_melee_4stack": 53.66,
+    "pract_ranged_4stack": 53.46,
+    "rec_melee": 55,
+    "rec_ranged": 55,
+    "rec_4stack_melee": 53,
+    "rec_4stack_ranged": 53
+  }
+]

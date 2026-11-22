@@ -1,0 +1,52 @@
+{
+  "schema": "unit-collision/dota-collision/v1",
+  "mergeOrder": [
+    "war3.mpq",
+    "War3x.mpq",
+    "War3Patch.mpq",
+    "map Units_UnitBalance.slk"
+  ],
+  "note": "edry has no map override; speed-profile doc claiming 8 is not reproduced by SLK merge",
+  "units": {
+    "esen": {
+      "collision": 16,
+      "spd": 325,
+      "layer": "map"
+    },
+    "edry": {
+      "collision": 32,
+      "spd": 325,
+      "layer": "War3Patch"
+    },
+    "ebal": {
+      "collision": 16,
+      "spd": 325,
+      "layer": "map"
+    },
+    "ugho": {
+      "collision": 31,
+      "spd": 325,
+      "layer": "War3Patch"
+    },
+    "unec": {
+      "collision": 8,
+      "spd": 325,
+      "layer": "map"
+    },
+    "umtw": {
+      "collision": 48,
+      "spd": 325,
+      "layer": "War3Patch"
+    },
+    "Hjai": {
+      "collision": 32,
+      "spd": 280,
+      "layer": "War3Patch"
+    }
+  },
+  "contactExample": {
+    "hero": "Hjai",
+    "creep": "esen",
+    "sum": 48
+  }
+}

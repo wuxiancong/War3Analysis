@@ -1,0 +1,191 @@
+=== 1. B5: CNetCommandUnitOrderBasic (vt 0x986D7C) / 0x10 处理器 ===
+  [Basic_slot04 @ 0x305EE0]
+    6F305EE0: 55                 push        ebp
+    6F305EE1: 8B EC              mov         ebp,esp
+    6F305EE3: F6 45 08 01        test        byte ptr [ebp+8],1
+    6F305EE7: 56                 push        esi
+    6F305EE8: 8B F1              mov         esi,ecx
+    6F305EEA: C7 06 4C 21 95 6F  mov         dword ptr [esi],6F95214Ch
+    6F305EF0: 74 0F              je          6F305F01
+    6F305EF2: 6A 00              push        0
+    6F305EF4: 6A FF              push        0FFFFFFFFh
+    6F305EF6: 68 70 0B 95 6F     push        6F950B70h
+    6F305EFB: 56                 push        esi
+    6F305EFC: E8 CD A6 E1 FF     call        6F1205CE
+    6F305F01: 8B C6              mov         eax,esi
+    6F305F03: 5E                 pop         esi
+    6F305F04: 5D                 pop         ebp
+    6F305F05: C2 04 00           ret         4
+    6F305F08: CC                 int         3
+    6F305F09: CC                 int         3
+    6F305F0A: CC                 int         3
+    6F305F0B: CC                 int         3
+    6F305F0C: CC                 int         3
+    6F305F0D: CC                 int         3
+    6F305F0E: CC                 int         3
+    6F305F0F: CC                 int         3
+    6F305F10: 55                 push        ebp
+  [TargetPoint_slot04 @ 0x305FD0]
+    6F305FD0: 55                 push        ebp
+    6F305FD1: 8B EC              mov         ebp,esp
+    6F305FD3: F6 45 08 01        test        byte ptr [ebp+8],1
+    6F305FD7: 56                 push        esi
+    6F305FD8: 8B F1              mov         esi,ecx
+    6F305FDA: C7 06 4C 21 95 6F  mov         dword ptr [esi],6F95214Ch
+    6F305FE0: 74 0F              je          6F305FF1
+    6F305FE2: 6A 00              push        0
+    6F305FE4: 6A FF              push        0FFFFFFFFh
+    6F305FE6: 68 70 0B 95 6F     push        6F950B70h
+    6F305FEB: 56                 push        esi
+    6F305FEC: E8 DD A5 E1 FF     call        6F1205CE
+    6F305FF1: 8B C6              mov         eax,esi
+    6F305FF3: 5E                 pop         esi
+    6F305FF4: 5D                 pop         ebp
+    6F305FF5: C2 04 00           ret         4
+    6F305FF8: CC                 int         3
+    6F305FF9: CC                 int         3
+    6F305FFA: CC                 int         3
+    6F305FFB: CC                 int         3
+    6F305FFC: CC                 int         3
+    6F305FFD: CC                 int         3
+    6F305FFE: CC                 int         3
+    6F305FFF: CC                 int         3
+    6F306000: 55                 push        ebp
+  xref vt_Basic (0x6F986D7C): 0x2FB9A7
+  xref vt_Point (0x6F986D88): 0x2FBE95
+  xref vt_Target (0x6F986D94): 0x2FBB9B
+
+=== 2. A6: 1.27 SyncStoredInteger 原生反汇编 ===
+  SyncStoredInteger @ RVA 0x1F8940
+    6F1F8940: 55                 push        ebp
+    6F1F8941: 8B EC              mov         ebp,esp
+    6F1F8943: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+    6F1F8946: 56                 push        esi
+    6F1F8947: E8 44 6F FD FF     call        6F1CF890
+    6F1F894C: 8B F0              mov         esi,eax
+    6F1F894E: 85 F6              test        esi,esi
+    6F1F8950: 74 3C              je          6F1F898E
+    6F1F8952: E8 49 60 11 00     call        6F30E9A0
+    6F1F8957: 85 C0              test        eax,eax
+    6F1F8959: 75 33              jne         6F1F898E
+    6F1F895B: 8B 0D 38 42 BE 6F  mov         ecx,dword ptr ds:[6FBE4238h]
+    6F1F8961: 57                 push        edi
+    6F1F8962: E8 09 A8 FC FF     call        6F1C3170
+    6F1F8967: 8D 4E 24           lea         ecx,[esi+24h]
+    6F1F896A: 8B F8              mov         edi,eax
+    6F1F896C: E8 8F 83 E5 FF     call        6F050D00
+    6F1F8971: 8B 4D 10           mov         ecx,dword ptr [ebp+10h]
+    6F1F8974: 8B F0              mov         esi,eax
+    6F1F8976: E8 75 8D E5 FF     call        6F0516F0
+    6F1F897B: 8B 4D 0C           mov         ecx,dword ptr [ebp+0Ch]
+    6F1F897E: 50                 push        eax
+    6F1F897F: E8 6C 8D E5 FF     call        6F0516F0
+    6F1F8984: 50                 push        eax
+    6F1F8985: 56                 push        esi
+    6F1F8986: 8B CF              mov         ecx,edi
+    6F1F8988: E8 F3 49 03 00     call        6F22D380
+    6F1F898D: 5F                 pop         edi
+    6F1F898E: 5E                 pop         esi
+    6F1F898F: 5D                 pop         ebp
+    6F1F8990: C3                 ret
+    6F1F8991: CC                 int         3
+    6F1F8992: CC                 int         3
+    6F1F8993: CC                 int         3
+    6F1F8994: CC                 int         3
+    6F1F8995: CC                 int         3
+    6F1F8996: CC                 int         3
+    6F1F8997: CC                 int         3
+    6F1F8998: CC                 int         3
+    6F1F8999: CC                 int         3
+    6F1F899A: CC                 int         3
+    6F1F899B: CC                 int         3
+    6F1F899C: CC                 int         3
+    6F1F899D: CC                 int         3
+    6F1F899E: CC                 int         3
+    6F1F899F: CC                 int         3
+    6F1F89A0: 55                 push        ebp
+    6F1F89A1: 8B EC              mov         ebp,esp
+    6F1F89A3: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+    6F1F89A6: 56                 push        esi
+    6F1F89A7: E8 E4 6E FD FF     call        6F1CF890
+    6F1F89AC: 8B F0              mov         esi,eax
+    6F1F89AE: 85 F6              test        esi,esi
+    6F1F89B0: 74 3C              je          6F1F89EE
+    6F1F89B2: E8 E9 5F 11 00     call        6F30E9A0
+    6F1F89B7: 85 C0              test        eax,eax
+    6F1F89B9: 75 33              jne         6F1F89EE
+    6F1F89BB: 8B 0D 38 42 BE 6F  mov         ecx,dword ptr ds:[6FBE4238h]
+
+=== 3. B5: 1.27 IssueImmediateOrderById (验证内部 Order flags bit 0 = Queue) ===
+  IssueImmediateOrderById @ RVA 0x1E90A0
+    6F1E90A0: 55                 push        ebp
+    6F1E90A1: 8B EC              mov         ebp,esp
+    6F1E90A3: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+    6F1E90A6: 56                 push        esi
+    6F1E90A7: E8 A4 84 FE FF     call        6F1D1550
+    6F1E90AC: 8B F0              mov         esi,eax
+    6F1E90AE: 85 F6              test        esi,esi
+    6F1E90B0: 75 03              jne         6F1E90B5
+    6F1E90B2: 5E                 pop         esi
+    6F1E90B3: 5D                 pop         ebp
+    6F1E90B4: C3                 ret
+    6F1E90B5: 8B 06              mov         eax,dword ptr [esi]
+    6F1E90B7: 8B CE              mov         ecx,esi
+    6F1E90B9: FF 50 64           call        dword ptr [eax+64h]
+    6F1E90BC: FF 75 0C           push        dword ptr [ebp+0Ch]
+    6F1E90BF: 6A 00              push        0
+    6F1E90C1: 50                 push        eax
+    6F1E90C2: 56                 push        esi
+    6F1E90C3: E8 08 00 00 00     call        6F1E90D0
+    6F1E90C8: 83 C4 10           add         esp,10h
+    6F1E90CB: 5E                 pop         esi
+    6F1E90CC: 5D                 pop         ebp
+    6F1E90CD: C3                 ret
+    6F1E90CE: CC                 int         3
+    6F1E90CF: CC                 int         3
+    6F1E90D0: 55                 push        ebp
+    6F1E90D1: 8B EC              mov         ebp,esp
+    6F1E90D3: FF 75 10           push        dword ptr [ebp+10h]
+    6F1E90D6: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+    6F1E90D9: FF 75 0C           push        dword ptr [ebp+0Ch]
+    6F1E90DC: FF 75 14           push        dword ptr [ebp+14h]
+    6F1E90DF: E8 5C 74 49 00     call        6F680540
+    6F1E90E4: 85 C0              test        eax,eax
+    6F1E90E6: 74 0B              je          6F1E90F3
+    6F1E90E8: 3D DC 00 00 00     cmp         eax,0DCh
+    6F1E90ED: 74 04              je          6F1E90F3
+    6F1E90EF: 33 C0              xor         eax,eax
+    6F1E90F1: 5D                 pop         ebp
+    6F1E90F2: C3                 ret
+    6F1E90F3: 8B 55 0C           mov         edx,dword ptr [ebp+0Ch]
+    6F1E90F6: 8B 4D 14           mov         ecx,dword ptr [ebp+14h]
+    6F1E90F9: 6A 01              push        1
+    6F1E90FB: 6A 01              push        1
+    6F1E90FD: FF 75 10           push        dword ptr [ebp+10h]
+    6F1E9100: E8
+
+=== 4. A6: War3Launcher/hooker 中 0x6B 现有处理 ===
+  war3hook_engine.cpp:L4370: WriteAsyncLogTo(g_wlogWar3ChatPath, L"│ 🚀 [发送 0x6B] 模式识别为: -%S | Size: %u | 玩家数: %d",
+  war3hook_engine.cpp:L4374: unsigned char arRaw[] = { 0x6B, 0x64, 0x72, 0x2E, 0x78, 0x00, 0x37, 0x00, 0x39, 0x00, 0x72, 0x61, 0x66, 0x4F };
+  war3hook_ipc.cpp:L1069: WriteAsyncLogTo(g_wlogWar3ChatPath, L"⚡ [IPC信号] 收到服务端全员确认反馈！允许补发 0x6B 结果包");
+  war3hook_lobby.cpp:L396: // 识别同步指令 (SyncData = 0x6B)
+  war3hook_lobby.cpp:L397: if (actionType == 0x6B && size > 1) {
+  war3hook_lobby.cpp:L4532: // 🎯 情况 C: 拦截 0x60 (聊天) 或 0x6B (模式与同步指令)
+  war3hook_lobby.cpp:L4533: else if (actionType == 0x60 || actionType == 0x6B)
+  war3hook_lobby.cpp:L4538: } else if (actionType == 0x6B && actionLen > 1) {
+  war3hook_lobby.cpp:L4555: if (actionType == 0x6B
+  war3hook_lobby.cpp:L4588: if (actionType == 0x6B) {
+  war3hook_offsets.cpp:L2900: {"1.24.1.6374", 0x6B1402},  {"1.24.4.6387", 0x6B14B2},  {"1.25.1.6397", 0x6B0AE2},
+  war3hook_offsets.cpp:L2901: {"1.26.0.6401", 0x6B0D12},  {"1.27.0.52240",0x7B2A90}
+  war3hook_offsets.cpp:L3000: {"1.21.0.6263", 0x6B3F0D},  {"1.22.0.6328", 0x44ACFC},  {"1.23.0.6352", 0x44CA8C},
+  war3hook_offsets.cpp:L3006: {"1.21.0.6263", 0x6B3E00},  {"1.22.0.6328", 0x449F90},  {"1.23.0.6352", 0x44BD20},
+  war3hook_offsets.cpp:L3021: {"1.21.0.6263", 0x6B3F20},  {"1.22.0.6328", 0x44BFE0},  {"1.23.0.6352", 0x44DD70},
+  war3hook_offsets.cpp:L3031: {"1.21.0.6263", 0x6B18A4},  {"1.22.0.6328", 0x44D9E5},  {"1.23.0.6352", 0x44F775},
+  war3hook_offsets.cpp:L3053: {"1.21.0.6263", 0x6B1E73},  {"1.22.0.6328", 0x44DB20},  {"1.23.0.6352", 0x44F8B0},
+  war3hook_offsets.cpp:L3245: {"1.24.1.6374", 0x6B289E},  {"1.24.4.6387", 0x6B294E},  {"1.25.1.6397", 0x6B1F7E},
+  war3hook_offsets.cpp:L3246: {"1.26.0.6401", 0x6B21AE},  {"1.27.0.52240",0x7BD08D}
+  war3hook_offsets.cpp:L3271: {"1.24.1.6374", 0x6B2804},  {"1.24.4.6387", 0x6B28B4},  {"1.25.1.6397", 0x6B1EE4},
+  war3hook_offsets.cpp:L3272: {"1.26.0.6401", 0x6B2114},  {"1.27.0.52240",0x7BCF93}
+  war3hook_offsets.cpp:L3527: {"1.21.0.6263", 0x01F50C},  {"1.22.0.6328", 0x6B6523},  {"1.23.0.6352", 0x6B8AA3},
+  war3hook_offsets.cpp:L3862: {"1.21.0.6263", 0x10E37},   {"1.22.0.6328",  0x6B3C2A}, {"1.23.0.6352", 0x6B61AA},
+  war3hook_process.cpp:L4190: // 0x6B 同步包经可打印字符提取后常见形态:

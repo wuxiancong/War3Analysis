@@ -1,0 +1,46 @@
+{
+  "note": "Design only — not implemented. All queries read SharedMemory snapshots filled on game thread.",
+  "update": {
+    "pathing_tree_overlay_ms": 500,
+    "vision_last_seen_ms": 100,
+    "threat_field_ms": 200,
+    "full_repath_cache_ms": 1000
+  },
+  "queries": {
+    "is_walkable": { "args": ["x", "y"], "returns": "bool", "source": "static_wpm XOR live_tree_bits + optional IsTerrainPathable sample" },
+    "is_visible": { "args": ["x", "y"], "returns": "bool", "source": "IsLocationVisibleToPlayer(lp)" },
+    "is_safe": {
+      "args": ["x", "y", "margin?"],
+      "returns": { "safe": "bool", "score": "0..100", "reasons": ["tower", "hero", "creep", "fog"] },
+      "formula": "score = 100 - sum(threat_weights); safe if score>=threshold and walkable"
+    },
+    "safe_path": {
+      "args": ["from", "to", "options?"],
+      "returns": { "ok": "bool", "polyline": [["x","y"]], "cost": "number", "max_threat": "number" },
+      "algo": "A* on 32 or 64 world grid; edge cost = dist * (1 + k*threat); never enter masked-unknown as free if policy=conservative"
+    },
+    "last_seen": {
+      "args": ["hero_handle_or_pid"],
+      "returns": { "x": "float?", "y": "float?", "t_ms": "int?", "visible_now": "bool" },
+      "redline": "coords only from last Visible frame"
+    },
+    "threat_at": {
+      "args": ["x", "y"],
+      "returns": {
+        "tower": "0..1",
+        "enemy_hero": "0..1",
+        "enemy_creep": "0..1",
+        "day_night": "day|night",
+        "own_vision": "bool"
+      }
+    }
+  },
+  "threat_inputs": {
+    "tower_range": 700,
+    "tower_cite": "war3-tower-creep-aggro.md",
+    "creep_acquire": { "melee": 500, "ranged_edry": 800, "ranged_unec": 600, "siege": 800 },
+    "hero_attack_range": "from CAbilityAttack+0x258 or SLK",
+    "hero_spell_range": "AbilityData.slk Rng1 / runtime ability level — see ability_cast_ranges.json",
+    "sight_day_night": "UnitBalance sight/nsight; GetFloatGameState TIME_OF_DAY"
+  }
+}

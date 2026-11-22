@@ -1,0 +1,5 @@
+# hero=cm type=Hjai lane=top laneIndex=0 mode=human pass=70 start=2026-11-21 05:27:45
+# passWhy=近卫上路，移速 280（≤280 慢 / ≥310 快）→ 及格 70（快英雄 80）
+# moveSpeed=280 range=600 ranged=1
+# wave,attempt,wave,score,pass,result,seconds,joinSeconds,detail
+# trace,wave,t,heroX,heroY,creep1X,creep1Y,...

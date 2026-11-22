@@ -1,0 +1,75 @@
+{
+  "map": "DotA 6.83d",
+  "source": "War3Script/war3map_9.j Rect literals + GetRectCenter assignments L11588-L11599",
+  "notes": "CreateNUnitsAtLoc uses Location centers; units scatter inside pathing of that point. Melee/ranged/siege share lane; ranged+siege use ranged rect.",
+  "lanes": [
+    {
+      "id": "radiant_top",
+      "side": "radiant",
+      "lane": "top",
+      "o2Level": 2,
+      "melee": { "rect": "B4", "loc": "B1", "min": [-6336, -4224], "max": [-5984, -3904], "center": [-6160, -4064], "types": ["esen", "e00V"] },
+      "ranged": { "rect": "R3", "loc": "E1", "min": [-6304, -4384], "max": [-6080, -4224], "center": [-6192, -4304], "types": ["edry", "e00W", "ebal", "e026"] },
+      "handoffRect": { "name": "TA", "center": [-6304, -3696], "trigger": "S8O→attack CI" },
+      "t1": { "x": -6112, "y": 1568, "unit": "HV", "type": "e00S" },
+      "raxBuildings": { "melee": [-6080, -4480, "JV/eaom"], "ranged": [-6656, -4480, "KV/eaoe"], "midpointUsedByKAiLanes": [-6368, -4480] }
+    },
+    {
+      "id": "radiant_mid",
+      "side": "radiant",
+      "lane": "mid",
+      "o2Level": 3,
+      "melee": { "rect": "C4", "loc": "O1", "min": [-4896, -5504], "max": [-4608, -5184], "center": [-4752, -5344], "types": ["esen", "e00V"] },
+      "ranged": { "rect": "P3", "loc": "C1", "min": [-4928, -5760], "max": [-4736, -5536], "center": [-4832, -5648], "types": ["edry", "e00W", "ebal", "e026"] },
+      "handoffRect": { "name": "SA", "center": [-4256, -4656], "trigger": "S3O→attack BI" },
+      "t1": { "x": -1504, "y": -1824, "unit": "GV", "type": "e00S" }
+    },
+    {
+      "id": "radiant_bot",
+      "side": "radiant",
+      "lane": "bot",
+      "o2Level": 4,
+      "melee": { "rect": "A4", "loc": "A1", "min": [-3648, -6880], "max": [-3424, -6688], "center": [-3536, -6784], "types": ["esen", "e00V"] },
+      "ranged": { "rect": "T3", "loc": "D1", "min": [-4224, -6848], "max": [-3968, -6592], "center": [-4096, -6720], "types": ["edry", "e00W", "ebal", "e026"] },
+      "handoffRect": { "name": "NA", "center": [-3200, -6768], "trigger": "SCO→attack DI" },
+      "t1": { "x": 4960, "y": -6752, "unit": "EV", "type": "e00S" }
+    },
+    {
+      "id": "dire_top",
+      "side": "dire",
+      "lane": "top",
+      "o2Level": 2,
+      "melee": { "rect": "N3", "loc": "RI", "min": [2304, 5280], "max": [2752, 5728], "center": [2528, 5504], "types": ["ugho", "u001"] },
+      "ranged": { "rect": "I4", "loc": "I1", "min": [2752, 5408], "max": [3040, 5632], "center": [2896, 5520], "types": ["unec", "u002", "umtw", "u00R"] },
+      "handoffRect": { "name": "LA", "center": [2464, 6096], "trigger": "SAO→attack CI" },
+      "t1": { "x": -4704, "y": 5920, "unit": "GZ", "type": "u00M" }
+    },
+    {
+      "id": "dire_mid",
+      "side": "dire",
+      "lane": "mid",
+      "o2Level": 3,
+      "melee": { "rect": "M3", "loc": "TI", "min": [3616, 3584], "max": [3872, 3872], "center": [3744, 3728], "types": ["ugho", "u001"] },
+      "ranged": { "rect": "U3", "loc": "QI", "min": [4128, 3776], "max": [4352, 4032], "center": [4240, 3904], "types": ["unec", "u002", "umtw", "u00R"] },
+      "handoffRect": { "name": "KA", "center": [4032, 3120], "trigger": "S6O→attack BI" },
+      "t1": { "x": 1056, "y": -96, "unit": "MX", "type": "u00M" }
+    },
+    {
+      "id": "dire_bot",
+      "side": "dire",
+      "lane": "bot",
+      "o2Level": 4,
+      "melee": { "rect": "L3", "loc": "PI", "min": [6176, 3136], "max": [6400, 3392], "center": [6288, 3264], "types": ["ugho", "u001"] },
+      "ranged": { "rect": "Q3", "loc": "UI", "min": [6048, 3424], "max": [6304, 3776], "center": [6176, 3600], "types": ["unec", "u002", "umtw", "u00R"] },
+      "handoffRect": { "name": "MA", "center": [6432, 2128], "trigger": "SEO→attack DI" },
+      "t1": { "x": 6240, "y": -2080, "unit": "YZ", "type": "u00M" }
+    }
+  ],
+  "o2": {
+    "II": { "x": -5467.9, "y": -5891.1, "unit": "CZ", "level": 1 },
+    "CI": { "x": -6005.1, "y": 5458.6, "unit": "BZ", "level": 2 },
+    "BI": { "x": -561.7, "y": -651.7, "unit": "ZZ", "level": 3 },
+    "DI": { "x": 5901.5, "y": -6198.9, "unit": "DZ", "level": 4 },
+    "U0": { "x": 4901.8, "y": 4536.6, "unit": "OZ", "level": 5 }
+  }
+}

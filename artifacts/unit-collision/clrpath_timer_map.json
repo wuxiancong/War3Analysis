@@ -1,0 +1,50 @@
+{
+  "1.24.4.6387": {
+    "timer_dword_sites": [],
+    "ctors": []
+  },
+  "1.26.0.6401": {
+    "timer_dword_sites": [],
+    "ctors": []
+  },
+  "1.27.0.52240": {
+    "timer_dword_sites": [
+      "0x112050",
+      "0x1127F1"
+    ],
+    "ctors": [
+      {
+        "imm_site": "0x112050",
+        "fn": "0x111F10",
+        "vt": [
+          "00111F63  mov      dword ptr [esi], 0x6f961300"
+        ],
+        "head": [
+          "00111F10  push     ebp",
+          "00111F11  mov      ebp, esp",
+          "00111F13  push     -1",
+          "00111F15  push     0x6f8b8c48",
+          "00111F1A  mov      eax, dword ptr fs:[0]",
+          "00111F20  push     eax",
+          "00111F21  push     ecx",
+          "00111F22  push     esi"
+        ]
+      },
+      {
+        "imm_site": "0x1127F1",
+        "fn": "0x1127B0",
+        "vt": [],
+        "head": [
+          "001127B0  push     ebp",
+          "001127B1  mov      ebp, esp",
+          "001127B3  push     esi",
+          "001127B4  push     dword ptr [ebp + 8]",
+          "001127B7  mov      esi, ecx",
+          "001127B9  call     0x1a76f0",
+          "001127BE  mov      dword ptr [esi + 0x9c], 0",
+          "001127C8  mov      eax, dword ptr [0x6fbb81d4]"
+        ]
+      }
+    ]
+  }
+}

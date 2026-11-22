@@ -1,0 +1,2392 @@
+{
+  "1.24.4.6387": {
+    "version": "1.24.4.6387",
+    "vtables": {
+      "CMoveReq": [
+        {
+          "slot": 0,
+          "rva": "0xCDA0",
+          "kind": "fn"
+        },
+        {
+          "slot": 1,
+          "rva": "0x2028B0",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0x47C1A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0x3E8B30",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0x3E8B50",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x201B50",
+          "kind": "ret_imm"
+        }
+      ],
+      "CAbilityMove": [
+        {
+          "slot": 0,
+          "rva": "0x1F70",
+          "kind": "fn"
+        },
+        {
+          "slot": 1,
+          "rva": "0x207440",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0x62B140",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0x2079F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0x62A230",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x62AF50",
+          "kind": "fn"
+        },
+        {
+          "slot": 6,
+          "rva": "0x4735F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 7,
+          "rva": "0x2014A0",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 8,
+          "rva": "0x4726F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 9,
+          "rva": "0x2EC60",
+          "kind": "fn"
+        },
+        {
+          "slot": 10,
+          "rva": "0x2070A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 11,
+          "rva": "0x472740",
+          "kind": "fn"
+        },
+        {
+          "slot": 12,
+          "rva": "0x472730",
+          "kind": "fn"
+        },
+        {
+          "slot": 13,
+          "rva": "0x52FB0",
+          "kind": "fn"
+        },
+        {
+          "slot": 14,
+          "rva": "0x2070B0",
+          "kind": "fn"
+        },
+        {
+          "slot": 15,
+          "rva": "0x2070F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 16,
+          "rva": "0x202340",
+          "kind": "fn"
+        },
+        {
+          "slot": 17,
+          "rva": "0x207010",
+          "kind": "fn"
+        },
+        {
+          "slot": 18,
+          "rva": "0x207130",
+          "kind": "fn"
+        },
+        {
+          "slot": 19,
+          "rva": "0x2072F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 20,
+          "rva": "0x473060",
+          "kind": "fn"
+        },
+        {
+          "slot": 21,
+          "rva": "0x4738F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 22,
+          "rva": "0x201450",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 23,
+          "rva": "0x52FA0",
+          "kind": "fn"
+        },
+        {
+          "slot": 24,
+          "rva": "0x1BE0",
+          "kind": "fn"
+        },
+        {
+          "slot": 25,
+          "rva": "0x1A20",
+          "kind": "fn"
+        },
+        {
+          "slot": 26,
+          "rva": "0x1DE0",
+          "kind": "fn"
+        },
+        {
+          "slot": 27,
+          "rva": "0x1AC0",
+          "kind": "fn"
+        },
+        {
+          "slot": 28,
+          "rva": "0x1E10",
+          "kind": "fn"
+        },
+        {
+          "slot": 29,
+          "rva": "0x1AD0",
+          "kind": "fn"
+        },
+        {
+          "slot": 30,
+          "rva": "0x52EB0",
+          "kind": "fn"
+        },
+        {
+          "slot": 31,
+          "rva": "0x390E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 32,
+          "rva": "0x53850",
+          "kind": "fn"
+        },
+        {
+          "slot": 33,
+          "rva": "0x53830",
+          "kind": "fn"
+        },
+        {
+          "slot": 34,
+          "rva": "0x21740",
+          "kind": "fn"
+        },
+        {
+          "slot": 35,
+          "rva": "0x21750",
+          "kind": "fn"
+        },
+        {
+          "slot": 36,
+          "rva": "0x52F60",
+          "kind": "fn"
+        },
+        {
+          "slot": 37,
+          "rva": "0x21760",
+          "kind": "fn"
+        },
+        {
+          "slot": 38,
+          "rva": "0x52F70",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 39,
+          "rva": "0x52F80",
+          "kind": "fn"
+        },
+        {
+          "slot": 40,
+          "rva": "0x52F90",
+          "kind": "fn"
+        },
+        {
+          "slot": 41,
+          "rva": "0x201BF0",
+          "kind": "fn"
+        },
+        {
+          "slot": 42,
+          "rva": "0x40C80",
+          "kind": "fn"
+        },
+        {
+          "slot": 43,
+          "rva": "0x52FC0",
+          "kind": "fn"
+        },
+        {
+          "slot": 44,
+          "rva": "0x52FD0",
+          "kind": "fn"
+        },
+        {
+          "slot": 45,
+          "rva": "0x52FE0",
+          "kind": "fn"
+        },
+        {
+          "slot": 46,
+          "rva": "0x52FF0",
+          "kind": "fn"
+        },
+        {
+          "slot": 47,
+          "rva": "0x40CE0",
+          "kind": "fn"
+        }
+      ],
+      "CLrPath": [
+        {
+          "slot": 0,
+          "rva": "0x49D670",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 1,
+          "rva": "0x49D880",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0x49D8C0",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0x49C190",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0x49E950",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x47A3E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 6,
+          "rva": "0x47A3F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 7,
+          "rva": "0x47A400",
+          "kind": "fn"
+        },
+        {
+          "slot": 8,
+          "rva": "0x47A410",
+          "kind": "fn"
+        },
+        {
+          "slot": 9,
+          "rva": "0x49DF60",
+          "kind": "fn"
+        },
+        {
+          "slot": 10,
+          "rva": "0x49E100",
+          "kind": "fn"
+        },
+        {
+          "slot": 11,
+          "rva": "0x47A700",
+          "kind": "fn"
+        },
+        {
+          "slot": 12,
+          "rva": "0x47A710",
+          "kind": "fn"
+        },
+        {
+          "slot": 13,
+          "rva": "0x47A720",
+          "kind": "fn"
+        },
+        {
+          "slot": 14,
+          "rva": "0x47A730",
+          "kind": "fn"
+        },
+        {
+          "slot": 15,
+          "rva": "0x49D8F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 16,
+          "rva": "0x49D680",
+          "kind": "fn"
+        }
+      ],
+      "CLrPathingSys": [
+        {
+          "slot": 0,
+          "rva": "0x4A2760",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 1,
+          "rva": "0x4A27B0",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0x4A4260",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0x4A1220",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0x4A4460",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x47A3E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 6,
+          "rva": "0x47A3F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 7,
+          "rva": "0x47A400",
+          "kind": "fn"
+        },
+        {
+          "slot": 8,
+          "rva": "0x47A410",
+          "kind": "fn"
+        },
+        {
+          "slot": 9,
+          "rva": "0x4A1560",
+          "kind": "fn"
+        },
+        {
+          "slot": 10,
+          "rva": "0x4A1590",
+          "kind": "fn"
+        },
+        {
+          "slot": 11,
+          "rva": "0x47A700",
+          "kind": "fn"
+        },
+        {
+          "slot": 12,
+          "rva": "0x47A710",
+          "kind": "fn"
+        },
+        {
+          "slot": 13,
+          "rva": "0x47A720",
+          "kind": "fn"
+        },
+        {
+          "slot": 14,
+          "rva": "0x47A730",
+          "kind": "fn"
+        },
+        {
+          "slot": 15,
+          "rva": "0x4AF960",
+          "kind": "fn"
+        },
+        {
+          "slot": 16,
+          "rva": "0x47A740",
+          "kind": "fn"
+        }
+      ],
+      "CLrPathingAcc": [
+        {
+          "slot": 0,
+          "rva": "0x489660",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 1,
+          "rva": "0x4896B0",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0x489E10",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0x49AE40",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0x49B110",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x47A3E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 6,
+          "rva": "0x47A3F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 7,
+          "rva": "0x47A400",
+          "kind": "fn"
+        },
+        {
+          "slot": 8,
+          "rva": "0x47A410",
+          "kind": "fn"
+        },
+        {
+          "slot": 9,
+          "rva": "0x498F70",
+          "kind": "fn"
+        },
+        {
+          "slot": 10,
+          "rva": "0x498FB0",
+          "kind": "fn"
+        },
+        {
+          "slot": 11,
+          "rva": "0x47A700",
+          "kind": "fn"
+        },
+        {
+          "slot": 12,
+          "rva": "0x47A710",
+          "kind": "fn"
+        },
+        {
+          "slot": 13,
+          "rva": "0x47A720",
+          "kind": "fn"
+        },
+        {
+          "slot": 14,
+          "rva": "0x47A730",
+          "kind": "fn"
+        },
+        {
+          "slot": 15,
+          "rva": "0x4AF960",
+          "kind": "fn"
+        },
+        {
+          "slot": 16,
+          "rva": "0x47A740",
+          "kind": "fn"
+        }
+      ],
+      "COrderPoint": [
+        {
+          "slot": 0,
+          "rva": "0x1F70",
+          "kind": "fn"
+        },
+        {
+          "slot": 1,
+          "rva": "0x287C40",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0x62B140",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0x17A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0x62A230",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x62AF50",
+          "kind": "fn"
+        },
+        {
+          "slot": 6,
+          "rva": "0x4735F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 7,
+          "rva": "0x271E80",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 8,
+          "rva": "0x4726F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 9,
+          "rva": "0x2878E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 10,
+          "rva": "0x287B40",
+          "kind": "fn"
+        },
+        {
+          "slot": 11,
+          "rva": "0x472740",
+          "kind": "fn"
+        },
+        {
+          "slot": 12,
+          "rva": "0x472730",
+          "kind": "fn"
+        },
+        {
+          "slot": 13,
+          "rva": "0x472750",
+          "kind": "fn"
+        },
+        {
+          "slot": 14,
+          "rva": "0x287DD0",
+          "kind": "fn"
+        },
+        {
+          "slot": 15,
+          "rva": "0x28CC00",
+          "kind": "fn"
+        },
+        {
+          "slot": 16,
+          "rva": "0x1850",
+          "kind": "fn"
+        },
+        {
+          "slot": 17,
+          "rva": "0x287B90",
+          "kind": "fn"
+        },
+        {
+          "slot": 18,
+          "rva": "0x287B50",
+          "kind": "fn"
+        },
+        {
+          "slot": 19,
+          "rva": "0x287BF0",
+          "kind": "fn"
+        },
+        {
+          "slot": 20,
+          "rva": "0x473060",
+          "kind": "fn"
+        },
+        {
+          "slot": 21,
+          "rva": "0x4738F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 22,
+          "rva": "0x271E30",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 23,
+          "rva": "0x4734A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 24,
+          "rva": "0x1BE0",
+          "kind": "fn"
+        },
+        {
+          "slot": 25,
+          "rva": "0x2878D0",
+          "kind": "fn"
+        },
+        {
+          "slot": 26,
+          "rva": "0x1DE0",
+          "kind": "fn"
+        },
+        {
+          "slot": 27,
+          "rva": "0x1AC0",
+          "kind": "fn"
+        },
+        {
+          "slot": 28,
+          "rva": "0x1E10",
+          "kind": "fn"
+        },
+        {
+          "slot": 29,
+          "rva": "0x1AD0",
+          "kind": "fn"
+        },
+        {
+          "slot": 30,
+          "rva": "0x26EE10",
+          "kind": "fn"
+        },
+        {
+          "slot": 31,
+          "rva": "0x287BE0",
+          "kind": "fn"
+        }
+      ]
+    },
+    "xrefs": {
+      "CMoveReq": [
+        {
+          "rva": "0x201F52",
+          "dis": "mov dword ptr [eax], 0x6f93c170"
+        },
+        {
+          "rva": "0x2CE8BA",
+          "dis": "mov dword ptr [eax], 0x6f93c170"
+        },
+        {
+          "rva": "0x2CEE08",
+          "dis": "mov dword ptr [eax], 0x6f93c170"
+        },
+        {
+          "rva": "0x2E9199",
+          "dis": "mov dword ptr [eax], 0x6f93c170"
+        }
+      ],
+      "CAbilityMove": [
+        {
+          "rva": "0x206F10",
+          "dis": "mov dword ptr [esi], 0x6f93c1b4"
+        }
+      ],
+      "CLrPath": [
+        {
+          "rva": "0x49D561",
+          "dis": "mov dword ptr [esi], 0x6f9654c4"
+        }
+      ],
+      "CLrPathingSys": [
+        {
+          "rva": "0x4A2652",
+          "dis": "mov dword ptr [esi], 0x6f9656f4"
+        }
+      ],
+      "CLrPathingAcc": [
+        {
+          "rva": "0x489542",
+          "dis": "mov dword ptr [esi], 0x6f964894"
+        }
+      ],
+      "COrderPoint": []
+    },
+    "ctors": {
+      "CMoveReq": [
+        {
+          "xref": "0x201F52",
+          "fn": "0x201E93"
+        }
+      ],
+      "CAbilityMove": [
+        {
+          "xref": "0x206F10",
+          "fn": "0x206F10"
+        }
+      ],
+      "CLrPath": [
+        {
+          "xref": "0x49D561",
+          "fn": "0x49D52F"
+        }
+      ],
+      "CLrPathingSys": [
+        {
+          "xref": "0x4A2652",
+          "fn": "0x4A2611"
+        }
+      ],
+      "CLrPathingAcc": [
+        {
+          "xref": "0x489542",
+          "fn": "0x489501"
+        }
+      ]
+    }
+  },
+  "1.26.0.6401": {
+    "version": "1.26.0.6401",
+    "vtables": {
+      "CMoveReq": [
+        {
+          "slot": 0,
+          "rva": "0xC060",
+          "kind": "fn"
+        },
+        {
+          "slot": 1,
+          "rva": "0x201DA0",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0x47B690",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0x3E7FF0",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0x3E8010",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x201040",
+          "kind": "ret_imm"
+        }
+      ],
+      "CAbilityMove": [
+        {
+          "slot": 0,
+          "rva": "0x1F70",
+          "kind": "fn"
+        },
+        {
+          "slot": 1,
+          "rva": "0x206930",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0x62A9A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0x206EE0",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0x629A90",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x62A7B0",
+          "kind": "fn"
+        },
+        {
+          "slot": 6,
+          "rva": "0x472AE0",
+          "kind": "fn"
+        },
+        {
+          "slot": 7,
+          "rva": "0x200990",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 8,
+          "rva": "0x471BE0",
+          "kind": "fn"
+        },
+        {
+          "slot": 9,
+          "rva": "0x2DF20",
+          "kind": "fn"
+        },
+        {
+          "slot": 10,
+          "rva": "0x206590",
+          "kind": "fn"
+        },
+        {
+          "slot": 11,
+          "rva": "0x471C30",
+          "kind": "fn"
+        },
+        {
+          "slot": 12,
+          "rva": "0x471C20",
+          "kind": "fn"
+        },
+        {
+          "slot": 13,
+          "rva": "0x52270",
+          "kind": "fn"
+        },
+        {
+          "slot": 14,
+          "rva": "0x2065A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 15,
+          "rva": "0x2065E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 16,
+          "rva": "0x201830",
+          "kind": "fn"
+        },
+        {
+          "slot": 17,
+          "rva": "0x206500",
+          "kind": "fn"
+        },
+        {
+          "slot": 18,
+          "rva": "0x206620",
+          "kind": "fn"
+        },
+        {
+          "slot": 19,
+          "rva": "0x2067E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 20,
+          "rva": "0x472550",
+          "kind": "fn"
+        },
+        {
+          "slot": 21,
+          "rva": "0x472DE0",
+          "kind": "fn"
+        },
+        {
+          "slot": 22,
+          "rva": "0x200940",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 23,
+          "rva": "0x52260",
+          "kind": "fn"
+        },
+        {
+          "slot": 24,
+          "rva": "0x1BE0",
+          "kind": "fn"
+        },
+        {
+          "slot": 25,
+          "rva": "0x1A20",
+          "kind": "fn"
+        },
+        {
+          "slot": 26,
+          "rva": "0x1DE0",
+          "kind": "fn"
+        },
+        {
+          "slot": 27,
+          "rva": "0x1AC0",
+          "kind": "fn"
+        },
+        {
+          "slot": 28,
+          "rva": "0x1E10",
+          "kind": "fn"
+        },
+        {
+          "slot": 29,
+          "rva": "0x1AD0",
+          "kind": "fn"
+        },
+        {
+          "slot": 30,
+          "rva": "0x52170",
+          "kind": "fn"
+        },
+        {
+          "slot": 31,
+          "rva": "0x383A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 32,
+          "rva": "0x52B10",
+          "kind": "fn"
+        },
+        {
+          "slot": 33,
+          "rva": "0x52AF0",
+          "kind": "fn"
+        },
+        {
+          "slot": 34,
+          "rva": "0x20A00",
+          "kind": "fn"
+        },
+        {
+          "slot": 35,
+          "rva": "0x20A10",
+          "kind": "fn"
+        },
+        {
+          "slot": 36,
+          "rva": "0x52220",
+          "kind": "fn"
+        },
+        {
+          "slot": 37,
+          "rva": "0x20A20",
+          "kind": "fn"
+        },
+        {
+          "slot": 38,
+          "rva": "0x52230",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 39,
+          "rva": "0x52240",
+          "kind": "fn"
+        },
+        {
+          "slot": 40,
+          "rva": "0x52250",
+          "kind": "fn"
+        },
+        {
+          "slot": 41,
+          "rva": "0x2010E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 42,
+          "rva": "0x3FF40",
+          "kind": "fn"
+        },
+        {
+          "slot": 43,
+          "rva": "0x52280",
+          "kind": "fn"
+        },
+        {
+          "slot": 44,
+          "rva": "0x52290",
+          "kind": "fn"
+        },
+        {
+          "slot": 45,
+          "rva": "0x522A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 46,
+          "rva": "0x522B0",
+          "kind": "fn"
+        },
+        {
+          "slot": 47,
+          "rva": "0x3FFA0",
+          "kind": "fn"
+        }
+      ],
+      "CLrPath": [
+        {
+          "slot": 0,
+          "rva": "0x49CB60",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 1,
+          "rva": "0x49CD70",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0x49CDB0",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0x49B680",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0x49DE40",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x4798D0",
+          "kind": "fn"
+        },
+        {
+          "slot": 6,
+          "rva": "0x4798E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 7,
+          "rva": "0x4798F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 8,
+          "rva": "0x479900",
+          "kind": "fn"
+        },
+        {
+          "slot": 9,
+          "rva": "0x49D450",
+          "kind": "fn"
+        },
+        {
+          "slot": 10,
+          "rva": "0x49D5F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 11,
+          "rva": "0x479BF0",
+          "kind": "fn"
+        },
+        {
+          "slot": 12,
+          "rva": "0x479C00",
+          "kind": "fn"
+        },
+        {
+          "slot": 13,
+          "rva": "0x479C10",
+          "kind": "fn"
+        },
+        {
+          "slot": 14,
+          "rva": "0x479C20",
+          "kind": "fn"
+        },
+        {
+          "slot": 15,
+          "rva": "0x49CDE0",
+          "kind": "fn"
+        },
+        {
+          "slot": 16,
+          "rva": "0x49CB70",
+          "kind": "fn"
+        }
+      ],
+      "CLrPathingSys": [
+        {
+          "slot": 0,
+          "rva": "0x4A1C60",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 1,
+          "rva": "0x4A1CB0",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0x4A3760",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0x4A0710",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0x4A3960",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x4798D0",
+          "kind": "fn"
+        },
+        {
+          "slot": 6,
+          "rva": "0x4798E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 7,
+          "rva": "0x4798F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 8,
+          "rva": "0x479900",
+          "kind": "fn"
+        },
+        {
+          "slot": 9,
+          "rva": "0x4A0A50",
+          "kind": "fn"
+        },
+        {
+          "slot": 10,
+          "rva": "0x4A0A80",
+          "kind": "fn"
+        },
+        {
+          "slot": 11,
+          "rva": "0x479BF0",
+          "kind": "fn"
+        },
+        {
+          "slot": 12,
+          "rva": "0x479C00",
+          "kind": "fn"
+        },
+        {
+          "slot": 13,
+          "rva": "0x479C10",
+          "kind": "fn"
+        },
+        {
+          "slot": 14,
+          "rva": "0x479C20",
+          "kind": "fn"
+        },
+        {
+          "slot": 15,
+          "rva": "0x4AEE60",
+          "kind": "fn"
+        },
+        {
+          "slot": 16,
+          "rva": "0x479C30",
+          "kind": "fn"
+        }
+      ],
+      "CLrPathingAcc": [
+        {
+          "slot": 0,
+          "rva": "0x488B50",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 1,
+          "rva": "0x488BA0",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0x489300",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0x49A330",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0x49A600",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x4798D0",
+          "kind": "fn"
+        },
+        {
+          "slot": 6,
+          "rva": "0x4798E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 7,
+          "rva": "0x4798F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 8,
+          "rva": "0x479900",
+          "kind": "fn"
+        },
+        {
+          "slot": 9,
+          "rva": "0x498460",
+          "kind": "fn"
+        },
+        {
+          "slot": 10,
+          "rva": "0x4984A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 11,
+          "rva": "0x479BF0",
+          "kind": "fn"
+        },
+        {
+          "slot": 12,
+          "rva": "0x479C00",
+          "kind": "fn"
+        },
+        {
+          "slot": 13,
+          "rva": "0x479C10",
+          "kind": "fn"
+        },
+        {
+          "slot": 14,
+          "rva": "0x479C20",
+          "kind": "fn"
+        },
+        {
+          "slot": 15,
+          "rva": "0x4AEE60",
+          "kind": "fn"
+        },
+        {
+          "slot": 16,
+          "rva": "0x479C30",
+          "kind": "fn"
+        }
+      ],
+      "COrderPoint": [
+        {
+          "slot": 0,
+          "rva": "0x1F70",
+          "kind": "fn"
+        },
+        {
+          "slot": 1,
+          "rva": "0x287120",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0x62A9A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0x17A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0x629A90",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x62A7B0",
+          "kind": "fn"
+        },
+        {
+          "slot": 6,
+          "rva": "0x472AE0",
+          "kind": "fn"
+        },
+        {
+          "slot": 7,
+          "rva": "0x271360",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 8,
+          "rva": "0x471BE0",
+          "kind": "fn"
+        },
+        {
+          "slot": 9,
+          "rva": "0x286DC0",
+          "kind": "fn"
+        },
+        {
+          "slot": 10,
+          "rva": "0x287020",
+          "kind": "fn"
+        },
+        {
+          "slot": 11,
+          "rva": "0x471C30",
+          "kind": "fn"
+        },
+        {
+          "slot": 12,
+          "rva": "0x471C20",
+          "kind": "fn"
+        },
+        {
+          "slot": 13,
+          "rva": "0x471C40",
+          "kind": "fn"
+        },
+        {
+          "slot": 14,
+          "rva": "0x2872B0",
+          "kind": "fn"
+        },
+        {
+          "slot": 15,
+          "rva": "0x28C0E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 16,
+          "rva": "0x1850",
+          "kind": "fn"
+        },
+        {
+          "slot": 17,
+          "rva": "0x287070",
+          "kind": "fn"
+        },
+        {
+          "slot": 18,
+          "rva": "0x287030",
+          "kind": "fn"
+        },
+        {
+          "slot": 19,
+          "rva": "0x2870D0",
+          "kind": "fn"
+        },
+        {
+          "slot": 20,
+          "rva": "0x472550",
+          "kind": "fn"
+        },
+        {
+          "slot": 21,
+          "rva": "0x472DE0",
+          "kind": "fn"
+        },
+        {
+          "slot": 22,
+          "rva": "0x271310",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 23,
+          "rva": "0x472990",
+          "kind": "fn"
+        },
+        {
+          "slot": 24,
+          "rva": "0x1BE0",
+          "kind": "fn"
+        },
+        {
+          "slot": 25,
+          "rva": "0x286DB0",
+          "kind": "fn"
+        },
+        {
+          "slot": 26,
+          "rva": "0x1DE0",
+          "kind": "fn"
+        },
+        {
+          "slot": 27,
+          "rva": "0x1AC0",
+          "kind": "fn"
+        },
+        {
+          "slot": 28,
+          "rva": "0x1E10",
+          "kind": "fn"
+        },
+        {
+          "slot": 29,
+          "rva": "0x1AD0",
+          "kind": "fn"
+        },
+        {
+          "slot": 30,
+          "rva": "0x26E2F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 31,
+          "rva": "0x2870C0",
+          "kind": "fn"
+        }
+      ]
+    },
+    "xrefs": {
+      "CMoveReq": [
+        {
+          "rva": "0x201442",
+          "dis": "mov dword ptr [eax], 0x6f92a010"
+        },
+        {
+          "rva": "0x203619",
+          "dis": "adc byte ptr [eax - 0xf74906e], ah"
+        },
+        {
+          "rva": "0x2CD1C9",
+          "dis": "adc byte ptr [eax + 0x40836f92], ah"
+        },
+        {
+          "rva": "0x2CD23A",
+          "dis": "adc byte ptr [eax + 0x6eb6f92], ah"
+        },
+        {
+          "rva": "0x2CD2AC",
+          "dis": "adc byte ptr [eax + 0x40836f92], ah"
+        },
+        {
+          "rva": "0x2CD72D",
+          "dis": "adc byte ptr [eax + 0x40836f92], ah"
+        },
+        {
+          "rva": "0x2CD79C",
+          "dis": "adc byte ptr [eax + 0x40836f92], ah"
+        },
+        {
+          "rva": "0x2CD811",
+          "dis": "adc byte ptr [eax + 0xdeb6f92], ah"
+        },
+        {
+          "rva": "0x2CDCB6",
+          "dis": "adc byte ptr [eax + 0x40836f92], ah"
+        },
+        {
+          "rva": "0x2CDD25",
+          "dis": "adc byte ptr [eax + 0x40836f92], ah"
+        },
+        {
+          "rva": "0x2CDD9A",
+          "dis": "mov dword ptr [eax], 0x6f92a010"
+        },
+        {
+          "rva": "0x2CE1FB",
+          "dis": "adc byte ptr [eax + 0x40836f92], ah"
+        },
+        {
+          "rva": "0x2CE2E8",
+          "dis": "mov dword ptr [eax], 0x6f92a010"
+        },
+        {
+          "rva": "0x2CE75C",
+          "dis": "adc byte ptr [eax + 0x40836f92], ah"
+        },
+        {
+          "rva": "0x2CE843",
+          "dis": "adc byte ptr [eax + 0x13eb6f92], ah"
+        },
+        {
+          "rva": "0x2E8659",
+          "dis": "mov dword ptr [eax], 0x6f92a010"
+        },
+        {
+          "rva": "0x3F516F",
+          "dis": "adc byte ptr [eax - 0xf74906e], ah"
+        },
+        {
+          "rva": "0x3F5355",
+          "dis": "adc byte ptr [eax - 0xf74906e], ah"
+        },
+        {
+          "rva": "0x3F552B",
+          "dis": "adc byte ptr [eax - 0xf74906e], ah"
+        }
+      ],
+      "CAbilityMove": [
+        {
+          "rva": "0x206400",
+          "dis": "mov dword ptr [esi], 0x6f92a054"
+        }
+      ],
+      "CLrPath": [
+        {
+          "rva": "0x49CA51",
+          "dis": "mov dword ptr [esi], 0x6f95336c"
+        }
+      ],
+      "CLrPathingSys": [
+        {
+          "rva": "0x4A1B52",
+          "dis": "mov dword ptr [esi], 0x6f95359c"
+        }
+      ],
+      "CLrPathingAcc": [
+        {
+          "rva": "0x488A32",
+          "dis": "mov dword ptr [esi], 0x6f95273c"
+        }
+      ],
+      "COrderPoint": []
+    },
+    "ctors": {
+      "CMoveReq": [
+        {
+          "xref": "0x201442",
+          "fn": "0x201383"
+        }
+      ],
+      "CAbilityMove": [
+        {
+          "xref": "0x206400",
+          "fn": "0x206400"
+        }
+      ],
+      "CLrPath": [
+        {
+          "xref": "0x49CA51",
+          "fn": "0x49CA1F"
+        }
+      ],
+      "CLrPathingSys": [
+        {
+          "xref": "0x4A1B52",
+          "fn": "0x4A1B11"
+        }
+      ],
+      "CLrPathingAcc": [
+        {
+          "xref": "0x488A32",
+          "fn": "0x4889F1"
+        }
+      ]
+    }
+  },
+  "1.27.0.52240": {
+    "version": "1.27.0.52240",
+    "vtables": {
+      "CMoveReq": [
+        {
+          "slot": 0,
+          "rva": "0x31FB0",
+          "kind": "fn"
+        },
+        {
+          "slot": 1,
+          "rva": "0x208A40",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0x7733B0",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0x22BF30",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0x20A310",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x21CDB0",
+          "kind": "ret_imm"
+        }
+      ],
+      "CAbilityMove": [
+        {
+          "slot": 0,
+          "rva": "0x218C0",
+          "kind": "fn"
+        },
+        {
+          "slot": 1,
+          "rva": "0x5DCBF0",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0x56AF0",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0x5E02F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0x562E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x56300",
+          "kind": "fn"
+        },
+        {
+          "slot": 6,
+          "rva": "0x38EB0",
+          "kind": "fn"
+        },
+        {
+          "slot": 7,
+          "rva": "0x5DF620",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 8,
+          "rva": "0x385C0",
+          "kind": "fn"
+        },
+        {
+          "slot": 9,
+          "rva": "0x3DB820",
+          "kind": "fn"
+        },
+        {
+          "slot": 10,
+          "rva": "0x5DD5F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 11,
+          "rva": "0x38BB0",
+          "kind": "fn"
+        },
+        {
+          "slot": 12,
+          "rva": "0x38BA0",
+          "kind": "fn"
+        },
+        {
+          "slot": 13,
+          "rva": "0x3E9910",
+          "kind": "fn"
+        },
+        {
+          "slot": 14,
+          "rva": "0x5E1500",
+          "kind": "fn"
+        },
+        {
+          "slot": 15,
+          "rva": "0x5DF830",
+          "kind": "fn"
+        },
+        {
+          "slot": 16,
+          "rva": "0x5E0C40",
+          "kind": "fn"
+        },
+        {
+          "slot": 17,
+          "rva": "0x5DE6E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 18,
+          "rva": "0x5E1560",
+          "kind": "fn"
+        },
+        {
+          "slot": 19,
+          "rva": "0x5DF890",
+          "kind": "fn"
+        },
+        {
+          "slot": 20,
+          "rva": "0x39300",
+          "kind": "fn"
+        },
+        {
+          "slot": 21,
+          "rva": "0x38DA0",
+          "kind": "fn"
+        },
+        {
+          "slot": 22,
+          "rva": "0x5DF400",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 23,
+          "rva": "0x3E9670",
+          "kind": "fn"
+        },
+        {
+          "slot": 24,
+          "rva": "0x21A90",
+          "kind": "fn"
+        },
+        {
+          "slot": 25,
+          "rva": "0x219D0",
+          "kind": "fn"
+        },
+        {
+          "slot": 26,
+          "rva": "0x21760",
+          "kind": "fn"
+        },
+        {
+          "slot": 27,
+          "rva": "0x21740",
+          "kind": "fn"
+        },
+        {
+          "slot": 28,
+          "rva": "0x217E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 29,
+          "rva": "0x217C0",
+          "kind": "fn"
+        },
+        {
+          "slot": 30,
+          "rva": "0x3FF280",
+          "kind": "fn"
+        },
+        {
+          "slot": 31,
+          "rva": "0x3F9570",
+          "kind": "fn"
+        },
+        {
+          "slot": 32,
+          "rva": "0x3FD640",
+          "kind": "fn"
+        },
+        {
+          "slot": 33,
+          "rva": "0x3FD620",
+          "kind": "fn"
+        },
+        {
+          "slot": 34,
+          "rva": "0x414450",
+          "kind": "fn"
+        },
+        {
+          "slot": 35,
+          "rva": "0x4150D0",
+          "kind": "fn"
+        },
+        {
+          "slot": 36,
+          "rva": "0x3FA570",
+          "kind": "fn"
+        },
+        {
+          "slot": 37,
+          "rva": "0x414BF0",
+          "kind": "fn"
+        },
+        {
+          "slot": 38,
+          "rva": "0x3DEDF0",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 39,
+          "rva": "0x3EC8C0",
+          "kind": "fn"
+        },
+        {
+          "slot": 40,
+          "rva": "0x3F68C0",
+          "kind": "fn"
+        },
+        {
+          "slot": 41,
+          "rva": "0x5DCCA0",
+          "kind": "fn"
+        },
+        {
+          "slot": 42,
+          "rva": "0x4124E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 43,
+          "rva": "0x3EE450",
+          "kind": "fn"
+        },
+        {
+          "slot": 44,
+          "rva": "0x3EE440",
+          "kind": "fn"
+        },
+        {
+          "slot": 45,
+          "rva": "0x4187C0",
+          "kind": "fn"
+        },
+        {
+          "slot": 46,
+          "rva": "0x4187B0",
+          "kind": "fn"
+        },
+        {
+          "slot": 47,
+          "rva": "0x409ED0",
+          "kind": "fn"
+        }
+      ],
+      "CLrPath": [
+        {
+          "slot": 0,
+          "rva": "0x114A50",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 1,
+          "rva": "0x114050",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0x1121A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0x1127B0",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0x112820",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x3A750",
+          "kind": "fn"
+        },
+        {
+          "slot": 6,
+          "rva": "0x3A830",
+          "kind": "fn"
+        },
+        {
+          "slot": 7,
+          "rva": "0x3A970",
+          "kind": "fn"
+        },
+        {
+          "slot": 8,
+          "rva": "0x3A450",
+          "kind": "fn"
+        },
+        {
+          "slot": 9,
+          "rva": "0x113ED0",
+          "kind": "fn"
+        },
+        {
+          "slot": 10,
+          "rva": "0x113D50",
+          "kind": "fn"
+        },
+        {
+          "slot": 11,
+          "rva": "0x3A4C0",
+          "kind": "fn"
+        },
+        {
+          "slot": 12,
+          "rva": "0x3A8C0",
+          "kind": "fn"
+        },
+        {
+          "slot": 13,
+          "rva": "0x3A490",
+          "kind": "fn"
+        },
+        {
+          "slot": 14,
+          "rva": "0x3A8A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 15,
+          "rva": "0x112C60",
+          "kind": "fn"
+        },
+        {
+          "slot": 16,
+          "rva": "0x112B10",
+          "kind": "fn"
+        }
+      ],
+      "CLrPathingSys": [
+        {
+          "slot": 0,
+          "rva": "0xF6C00",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 1,
+          "rva": "0xF4A80",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0xF41A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0xF44B0",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0xF44D0",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x3A750",
+          "kind": "fn"
+        },
+        {
+          "slot": 6,
+          "rva": "0x3A830",
+          "kind": "fn"
+        },
+        {
+          "slot": 7,
+          "rva": "0x3A970",
+          "kind": "fn"
+        },
+        {
+          "slot": 8,
+          "rva": "0x3A450",
+          "kind": "fn"
+        },
+        {
+          "slot": 9,
+          "rva": "0xF4970",
+          "kind": "fn"
+        },
+        {
+          "slot": 10,
+          "rva": "0xF4940",
+          "kind": "fn"
+        },
+        {
+          "slot": 11,
+          "rva": "0x3A4C0",
+          "kind": "fn"
+        },
+        {
+          "slot": 12,
+          "rva": "0x3A8C0",
+          "kind": "fn"
+        },
+        {
+          "slot": 13,
+          "rva": "0x3A490",
+          "kind": "fn"
+        },
+        {
+          "slot": 14,
+          "rva": "0x3A8A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 15,
+          "rva": "0x1A77E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 16,
+          "rva": "0x3A350",
+          "kind": "fn"
+        }
+      ],
+      "CLrPathingAcc": [
+        {
+          "slot": 0,
+          "rva": "0x101EC0",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 1,
+          "rva": "0x100770",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0xFCE60",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0x10F090",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0x10F100",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x3A750",
+          "kind": "fn"
+        },
+        {
+          "slot": 6,
+          "rva": "0x3A830",
+          "kind": "fn"
+        },
+        {
+          "slot": 7,
+          "rva": "0x3A970",
+          "kind": "fn"
+        },
+        {
+          "slot": 8,
+          "rva": "0x3A450",
+          "kind": "fn"
+        },
+        {
+          "slot": 9,
+          "rva": "0x10F720",
+          "kind": "fn"
+        },
+        {
+          "slot": 10,
+          "rva": "0x10F4F0",
+          "kind": "fn"
+        },
+        {
+          "slot": 11,
+          "rva": "0x3A4C0",
+          "kind": "fn"
+        },
+        {
+          "slot": 12,
+          "rva": "0x3A8C0",
+          "kind": "fn"
+        },
+        {
+          "slot": 13,
+          "rva": "0x3A490",
+          "kind": "fn"
+        },
+        {
+          "slot": 14,
+          "rva": "0x3A8A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 15,
+          "rva": "0x1A77E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 16,
+          "rva": "0x3A350",
+          "kind": "fn"
+        }
+      ],
+      "COrderPoint": [
+        {
+          "slot": 0,
+          "rva": "0x218C0",
+          "kind": "fn"
+        },
+        {
+          "slot": 1,
+          "rva": "0x649CD0",
+          "kind": "fn"
+        },
+        {
+          "slot": 2,
+          "rva": "0x56AF0",
+          "kind": "fn"
+        },
+        {
+          "slot": 3,
+          "rva": "0x21BB0",
+          "kind": "fn"
+        },
+        {
+          "slot": 4,
+          "rva": "0x562E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 5,
+          "rva": "0x56300",
+          "kind": "fn"
+        },
+        {
+          "slot": 6,
+          "rva": "0x38EB0",
+          "kind": "fn"
+        },
+        {
+          "slot": 7,
+          "rva": "0x66ACA0",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 8,
+          "rva": "0x385C0",
+          "kind": "fn"
+        },
+        {
+          "slot": 9,
+          "rva": "0x64E010",
+          "kind": "fn"
+        },
+        {
+          "slot": 10,
+          "rva": "0x64E120",
+          "kind": "fn"
+        },
+        {
+          "slot": 11,
+          "rva": "0x38BB0",
+          "kind": "fn"
+        },
+        {
+          "slot": 12,
+          "rva": "0x38BA0",
+          "kind": "fn"
+        },
+        {
+          "slot": 13,
+          "rva": "0x38610",
+          "kind": "fn"
+        },
+        {
+          "slot": 14,
+          "rva": "0x678A90",
+          "kind": "fn"
+        },
+        {
+          "slot": 15,
+          "rva": "0x66F1A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 16,
+          "rva": "0x21BC0",
+          "kind": "fn"
+        },
+        {
+          "slot": 17,
+          "rva": "0x654B60",
+          "kind": "fn"
+        },
+        {
+          "slot": 18,
+          "rva": "0x6794A0",
+          "kind": "fn"
+        },
+        {
+          "slot": 19,
+          "rva": "0x670270",
+          "kind": "fn"
+        },
+        {
+          "slot": 20,
+          "rva": "0x39300",
+          "kind": "fn"
+        },
+        {
+          "slot": 21,
+          "rva": "0x38DA0",
+          "kind": "fn"
+        },
+        {
+          "slot": 22,
+          "rva": "0x667CA0",
+          "kind": "ret_imm"
+        },
+        {
+          "slot": 23,
+          "rva": "0x385D0",
+          "kind": "fn"
+        },
+        {
+          "slot": 24,
+          "rva": "0x21A90",
+          "kind": "fn"
+        },
+        {
+          "slot": 25,
+          "rva": "0x6688C0",
+          "kind": "fn"
+        },
+        {
+          "slot": 26,
+          "rva": "0x21760",
+          "kind": "fn"
+        },
+        {
+          "slot": 27,
+          "rva": "0x21740",
+          "kind": "fn"
+        },
+        {
+          "slot": 28,
+          "rva": "0x217E0",
+          "kind": "fn"
+        },
+        {
+          "slot": 29,
+          "rva": "0x217C0",
+          "kind": "fn"
+        },
+        {
+          "slot": 30,
+          "rva": "0x678810",
+          "kind": "fn"
+        },
+        {
+          "slot": 31,
+          "rva": "0x66E560",
+          "kind": "fn"
+        }
+      ]
+    },
+    "xrefs": {
+      "CMoveReq": [],
+      "CAbilityMove": [
+        {
+          "rva": "0x5DC87D",
+          "dis": "mov dword ptr [esi], 0x6fa34fd8"
+        }
+      ],
+      "CLrPath": [],
+      "CLrPathingSys": [
+        {
+          "rva": "0xF3DD0",
+          "dis": "mov dword ptr [edi], 0x6f95ffac"
+        }
+      ],
+      "CLrPathingAcc": [
+        {
+          "rva": "0xFBD3A",
+          "dis": "mov dword ptr [edi], 0x6f960300"
+        }
+      ],
+      "COrderPoint": [
+        {
+          "rva": "0x642FC8",
+          "dis": "mov dword ptr [esi], 0x6fa4b0c0"
+        },
+        {
+          "rva": "0x643028",
+          "dis": "mov dword ptr [esi], 0x6fa4b0c0"
+        },
+        {
+          "rva": "0x6430D8",
+          "dis": "mov dword ptr [esi], 0x6fa4b0c0"
+        },
+        {
+          "rva": "0x6630C6",
+          "dis": "mov dword ptr [esi], 0x6fa4b0c0"
+        },
+        {
+          "rva": "0x664DFD",
+          "dis": "mov dword ptr [esi], 0x6fa4b0c0"
+        }
+      ]
+    },
+    "ctors": {
+      "CAbilityMove": [
+        {
+          "xref": "0x5DC87D",
+          "fn": "0x5DC850"
+        }
+      ],
+      "CLrPathingSys": [
+        {
+          "xref": "0xF3DD0",
+          "fn": "0xF3D60"
+        }
+      ],
+      "CLrPathingAcc": [
+        {
+          "xref": "0xFBD3A",
+          "fn": "0xFBCD0"
+        }
+      ],
+      "COrderPoint": [
+        {
+          "xref": "0x642FC8",
+          "fn": "0x642F00"
+        }
+      ]
+    }
+  }
+}

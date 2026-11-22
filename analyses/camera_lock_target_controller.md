@@ -60,5 +60,25 @@ flowchart LR
 
 1. [war3hook_internal.h](file:///d:/Qt/workspace/War3Launcher/hooker/war3hook_internal.h)：声明 `g_offsetsForGameCameraTargetController` / `g_offsetsForGameResetToGameCamera` / `g_offsetsForGameCameraTargetPositionX` / `g_offsetsForGameCameraTargetPositionY` 及 `resolveGameCameraLockNatives()`、`callGameCameraTargetController()`、`callGameResetToGameCamera()`、`callGameCameraTargetPosition()`。
 2. [war3hook_jass.cpp](file:///d:/Qt/workspace/War3Launcher/hooker/war3hook_jass.cpp)：封装全版本 RVA 表与 SEH 保护调用（避开选人/读图阶段调用导致空指针崩溃）。
-3. [war3hook_ai.cpp](file:///d:/Qt/workspace/War3Launcher/hooker/war3hook_ai.cpp)：`AI_UNIT_CMD_CAMERA_LOCK` 开启时立即调用 `callGameCameraTargetController(hero)`，关闭时调用 `callGameResetToGameCamera()`；`aiTickCameraLock()` 每 40ms 对比英雄坐标与 `GetCameraTargetPositionX/Y()`，偏差超过 100 单位或英雄切换时自动重锁。
+3. [war3hook_ai.cpp](file:///d:/Qt/workspace/War3Launcher/hooker/war3hook_ai.cpp)：`AI_UNIT_CMD_CAMERA_LOCK` 开启时立即调用 `callGameCameraTargetController(hero)`，关闭时调用 `callGameResetToGameCamera()`；`aiTickCameraLock()` 每 40ms 对比英雄坐标与 `GetCameraTargetPositionX/Y()`。
+
+## 五、preLockState 与临时解锁（设置 → 显示 → 锁定英雄的镜头）
+
+| 概念 | 变量 | 含义 |
+|---|---|---|
+| 当前锁定 | `g_aiCameraLock` | tick 是否正在 `SetCameraTargetController` + `SetCameraPosition` 锁定跟随 |
+| 偏好 `preLockState` | `g_aiCameraLockPreferred` | 玩家明确意图：启动初始设置 `lockHeroCamera=on`、或手动输入 `-lock on` / `-lock off` |
+| 共享内存 | `SharedData::lockHeroCamera` | Launcher 设置同步；开局 / 变更时写入 `preLockState` + 当前锁定 |
+
+交互与命令：
+
+1. **锁定时禁止鼠标自由滚屏**：当 `g_aiCameraLock == true` 时，`aiTickCameraLock()` 检测镜头与英雄偏差 `> 16` 立即调用 `SetCameraPosition` + `SetCameraTargetController` 拉回英雄坐标，防止鼠标边缘移屏脱锁。
+2. **左击小地图临时解锁**：在 `newWndProc` 的 `WM_LBUTTONDOWN` / `WM_LBUTTONDBLCLK`（及按住左键在小地图拖动）且命中左下角小地图区域时，在 `CallWindowProcA` 之前调用 `ResetToGameCamera` 并置 `g_aiCameraLock = false`，同时**保留** `preLockState = true`。
+3. **右击地面或小地图恢复锁定**：在 `newWndProc` 的 `WM_RBUTTONDOWN` / `WM_RBUTTONDBLCLK` 中，先通过 `CallWindowProcA` 让游戏完成当前视角下的地面/小地图右击寻路或攻击指令，随后若 `preLockState == true && !g_aiCameraLock`，立即调用 `SetCameraPosition(hx, hy)` + `SetCameraTargetController(hero)` 恢复 `-lock on`。
+4. **命令集（支持 `-` 或 `/` 前缀）**：
+   - `-lock on`：开启锁定并置 `preLockState = on`
+   - `-lock off`：关闭锁定并置 `preLockState = off`
+   - `-lock`：切换锁定状态并同步更新 `preLockState`
+   - `-lock state` / `-lock status`：查询当前锁定状态、`preLockState`、设置项及英雄/镜头坐标（输出至屏幕提示与 `AiUnit.log`，不改变当前状态）
+
 

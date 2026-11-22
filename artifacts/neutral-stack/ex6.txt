@@ -1,0 +1,17 @@
+open "D:\iCCup Warcraft III\War3x.mpq"
+list Units\UnitBalance.slk
+extract Units\UnitBalance.slk UBALANCE
+extract Units\UnitWeapons.slk UWEAPONS
+extract Units\MiscData.txt MDATA
+close
+open "D:\Qt\workspace\War3Launcher\versions\1.27.0.52240\war3.mpq"
+list Units\UnitBalance.slk
+extract Units\UnitBalance.slk UBALANCE_W3
+extract Units\UnitWeapons.slk UWEAPONS_W3
+close
+open "D:\Qt\workspace\War3Launcher\versions\1.27.0.52240\War3Patch.mpq"
+list Units\UnitBalance.slk
+list Units\UnitWeapons.slk
+list Units\MiscGame.txt
+list Units\MiscData.txt
+close

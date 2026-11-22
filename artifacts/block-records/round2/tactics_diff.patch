@@ -1,0 +1,442 @@
+﻿diff --git a/hooker/war3hook_ai_tactics.inl b/hooker/war3hook_ai_tactics.inl
+index 05f629f..fcff9bf 100644
+--- a/hooker/war3hook_ai_tactics.inl
++++ b/hooker/war3hook_ai_tactics.inl
+@@ -2732,6 +2732,8 @@ struct AiBlockState {
+     bool active = false;
+     ULONGLONG nextDbgLog = 0;      // 诊断行（🎯）节流
+     ULONGLONG sideLockUntil = 0;   // 第十一版：兵分两撮时选定挡哪撮，锁到这个时刻
++    float medPrev = 0.0f; ULONGLONG medTick = 0; float medVel = 0.0f;   // 边路整波中位的横向漂移速度（/s，平滑）
++    float driftAdj = 0.0f;   // 诊断：本次因漂移加到目标横向上的量
+     float sideLat = 0.0f;          // 选定那撮的目标横向
+     ULONGLONG until = 0;
+     ULONGLONG nextMove = 0;
+@@ -2795,14 +2797,17 @@ static AiBlockStats g_aiBlockStats;
+ 
+ // 各路：兵营（近战 / 远程兵营中点）与己方一塔。车道轴 = 兵营 → 一塔（每一路这一段都是直线）。
+ // 坐标来自 War3Angular/public/assets/maps/dota683/buildings.json。
+-struct AiLaneDef { float raxX, raxY, towerX, towerY; const wchar_t *name; };
++// spawnX/Y = 地图真实出兵点：近战 rect 中心与远程 rect 中心的中点（War3Analysis/analyses/dota-lane-spawn-waypoints.md，
++// war3map_9.j Rect B4/R3、C4/P3、A4/T3、N3/I4、M3/U3、L3/Q3）。兵营建筑中点 rax 离真实出兵点 300~500，
++// 2026-11-21 前用 rax 找新一波：上 / 下路近战兵沿车道已过「门口 150」被排除，只靠远程兵才认到（号角前开 block 整局没认到）
++struct AiLaneDef { float raxX, raxY, towerX, towerY; const wchar_t *name; float spawnX, spawnY; };
+ static const AiLaneDef kAiLanes[6] = {
+-    { -6368.0f, -4480.0f, -6112.0f,  1568.0f, L"近卫上路" },
+-    { -4640.0f, -5152.0f, -1504.0f, -1824.0f, L"近卫中路" },
+-    { -4032.0f, -6784.0f,  4960.0f, -6752.0f, L"近卫下路" },
+-    {  3392.0f,  5792.0f, -4704.0f,  5920.0f, L"天灾上路" },
+-    {  4128.0f,  3744.0f,  1056.0f,   -96.0f, L"天灾中路" },
+-    {  6368.0f,  2912.0f,  6240.0f, -2080.0f, L"天灾下路" },
++    { -6368.0f, -4480.0f, -6112.0f,  1568.0f, L"近卫上路", -6176.0f, -4184.0f },
++    { -4640.0f, -5152.0f, -1504.0f, -1824.0f, L"近卫中路", -4792.0f, -5496.0f },
++    { -4032.0f, -6784.0f,  4960.0f, -6752.0f, L"近卫下路", -3816.0f, -6752.0f },
++    {  3392.0f,  5792.0f, -4704.0f,  5920.0f, L"天灾上路",  2712.0f,  5512.0f },
++    {  4128.0f,  3744.0f,  1056.0f,   -96.0f, L"天灾中路",  3992.0f,  3816.0f },
++    {  6368.0f,  2912.0f,  6240.0f, -2080.0f, L"天灾下路",  6232.0f,  3432.0f },
+ };
+ static int aiBlockLane() { const int l = g_aiBlockStats.lane; return (l >= 0 && l < 6) ? l : 1; }
+ // 等兵位离门口的距离（沿车道）。中路 450（真人数据 330~750，中路实测 94~96 分）；
+@@ -2831,10 +2836,60 @@ static bool aiBlockMarkWaitPoint(float *x, float *y)
+     return found;
+ }
+ 
++static void aiLaneAxis(int lane, float *dx, float *dy);
++static void aiBlockSideWaitPt(int l, float *x, float *y);
++// 边路固定等兵位（Grok dota-lane-spawn-waypoints.md §6.2：近战出兵点沿折线往一塔 ~350）。
++// 2026-11-21：门口改按「最前兵」学习后，上路学到的门口前移 ~300（-4100 → -3800），等兵位跟着前移，上路从 91 分掉到 54 分；
++// 上路 91 分那次实际等兵位 (-6164,-3686) 与这张表的 (-6140,-3710) 几乎重合，所以边路等兵位直接用表，不再随学到的门口漂。
++static const float kAiSideWait[6][2] = {
++    { -6140.0f, -3710.0f }, { 0, 0 }, { -3180.0f, -6775.0f },
++    {  2400.0f,  5750.0f }, { 0, 0 }, {  6320.0f,  2910.0f },
++};
++static const float kAiSideWaitNormal[6][2] = {
++    { -6150.0f, -3400.0f }, { 0, 0 }, { -2750.0f, -6775.0f },
++    {  2400.0f,  5750.0f }, { 0, 0 }, {  6320.0f,  2910.0f },
++};
++// 近卫下路手动等兵位：二塔沿车道 + g_aiBlockBotT2Offset（正 = 往一塔方向，负 = 往基地）。-block wait <n> 设置，-block wait auto 清除
++// 2026-11-21 用户：「在往二塔前走一点，如果还是失败继续往前走」；实测二塔后 350：13 / 38 / 10 分，二塔前 300：36 / 58 分
++static const float kAiBlockWaitAuto = -1e9f;
++static float g_aiBlockBotT2Offset = kAiBlockWaitAuto;
++// 前 7 分钟兵线加速 / 减速（dota-lane-creep-speed-profile.md：SPO 里 SZO / SVO，每波刷出后 15s）：
++//   近卫下路、天灾上路（优势路）+25% → 406/s，约覆盖前 5800~6000；近卫上路、天灾下路 -25% → 244/s。
++// 冰女移速 280，406 的兵根本挡不住（下路门口起卡 6 波 0~12 分），244 的兵容易挡（上路平均 91）。
++// 加速路在 7 分钟内改到加速结束处再卡：门口沿车道 6400（离一塔至少留 1400 卡兵段）。
++static bool aiBlockLaneBoosted(int l) { return l == 2 || l == 3; }
++// 光环期：地图计时器 M < 420s（M 从读图结束起算，不是从第一波）；实测到优势路新一波已是常速就提前判结束。
++// 2026-11-21 Gemini（dota-lane-speed-by-time.md）：优势路光环期「绝不该卡」——兵速 406 比任何无鞋英雄都快，
++// 在光环结束处（车道 ~6150）再卡只剩 ~2000 段 + S 弯，实测平均 47 分上限，且实战会把兵线卡进自家塔下。
++static bool aiBlockBoostActive()
++{
++    return !g_aiBoostOver && g_aiMapPlayTick != 0 && GetTickCount64() < g_aiMapPlayTick + 420000;
++}
++// 测速探针：优势路新一波刷出后 2.5s 看领头兵沿车道的速度（英雄离它 700 以上才测，避免被挡过）
++struct AiBoostProbe { uint32_t h = 0; float x = 0, y = 0; ULONGLONG t = 0; int lane = -1; };
++static AiBoostProbe g_aiBoostProbe;
+ static float aiBlockWaitDist()
+ {
+     const int l = aiBlockLane();
+     if (l == 1 || l == 4) return 450.0f;
++    // 近卫下路：到二塔前面再卡（2026-11-21 用户：「下路小兵前面那段速度特别快，冰女速度太慢根本卡不住，建议到二塔附近才开始卡」；
++    // 地图前 7 分钟给部分路兵线加速（SZO/SVO，见 dota-lane-spawn-waypoints.md §5）。实测门口起卡 6 波 0~12 分）。
++    // 等兵位 = 二塔（FV，-544,-6688）沿车道往基地方向 350；英雄在那里站住等，兵到前距 300 才起步（kWalkOn）
++    if (l == 2 && g_aiBlockStats.hasHome && g_aiBlockBotT2Offset > kAiBlockWaitAuto + 1.0f) {   // 手动 -block wait <n>
++        float ldx = 0, ldy = 0;
++        aiLaneAxis(l, &ldx, &ldy);
++        const float t2Along = (-544.0f - g_aiBlockStats.homeX) * ldx + (-6688.0f - g_aiBlockStats.homeY) * ldy;
++        if (t2Along > 1000.0f) return t2Along + g_aiBlockBotT2Offset;
++    }
++    // （2026-11-21 试过「加速路在光环结束处 6400 等」：平均 47 分，物理上限 ~52；改为光环期优势路不卡、不计分，见 aiTickCreepBlock）
++    if (g_aiBlockStats.hasHome) {   // 边路：固定等兵位沿车道离门口多远
++        float ldx = 0, ldy = 0;
++        aiLaneAxis(l, &ldx, &ldy);
++        float wx = 0, wy = 0;
++        aiBlockSideWaitPt(l, &wx, &wy);
++        const float a = (wx - g_aiBlockStats.homeX) * ldx + (wy - g_aiBlockStats.homeY) * ldy;
++        return (std::max)(150.0f, a);
++    }
+     // 边路：真人在上路站在兵出现处前方 ~350（刷兵 40~50，站 370~410）。近卫下路学到的门口离刷兵点更远
+     // （兵出现在 ~300），固定 400 只领先几十，0.5~2s 就漏（2026-11-20 下路平均 ~20 分）→ 按实际刷兵位置 + 350。
+     const float sp = g_aiBlockStats.spawnProj;
+@@ -2843,10 +2898,27 @@ static float aiBlockWaitDist()
+ // 2026-11-20 真人近卫上路录制（4 个卡兵波，前 1500 在兵前 100%、延迟 5.5~7.2s）：刷兵时站在门口前方 370~410
+ // （650 太远：兵出门就是一排快兵，英雄等不到也追不上），0.5~1s 内、前距 ~300 时就起步，2s 后前距保持 100~200。
+ static bool aiBlockIsSideLane() { const int l = aiBlockLane(); return !(l == 1 || l == 4); }
++// 劣势路（近卫上、天灾下）光环期兵速 244（-25%）
++static bool aiBlockLaneSlowed() { const int l = aiBlockLane(); return (l == 0 || l == 5) && aiBlockBoostActive(); }
++// 前排中点最大宽度：边路 96 = 2 × (英雄碰撞 32 + 近战兵 16)；中路保持 110（中路 96 分不动）
++static float aiBlockRowWidthMax() { return aiBlockIsSideLane() ? 96.0f : 110.0f; }
++// 边路常速期（兵 325）等兵位：出兵时离最前近战兵至少 ~650（Gemini §5.1：常速期 gap0 ≥ 650；上表是减速期 / 默认值，
++// 近卫下路上表只领先 ~300）。天灾两路还没实测，暂用上表。
++// 边路等兵位：减速期用 kAiSideWait，其它时间（常速 / 优势路）用 kAiSideWaitNormal
++static void aiBlockSideWaitPt(int l, float *x, float *y)
++{
++    const float (*t)[2] = aiBlockLaneSlowed() ? kAiSideWait : kAiSideWaitNormal;
++    *x = t[l][0]; *y = t[l][1];
++}
+ // 等兵位坐标：边路有标记点用标记点，否则「门口 + 等兵距离」
+ static void aiBlockWaitXY(float hx, float hy, float dx, float dy, float *x, float *y)
+ {
+     if (aiBlockMarkWaitPoint(x, y)) return;
++    const int wl = aiBlockLane();
++    if (aiBlockIsSideLane() && !(wl == 2 && g_aiBlockBotT2Offset > kAiBlockWaitAuto + 1.0f)) {   // 边路固定等兵位（手动 -block wait 优先）
++        aiBlockSideWaitPt(wl, x, y);
++        return;
++    }
+     *x = hx + dx * aiBlockWaitDist(); *y = hy + dy * aiBlockWaitDist();
+ }
+ 
+@@ -3254,7 +3326,8 @@ static void aiTickBlockReturnHome(ULONGLONG now)
+     // 卡兵模式（第七版，按真人数据）：站到门口前方 450、车道中线上，原地等兵过来。
+     // 真人 4 个成功波起手站在门口前方 330~750，最前兵追到身后 ~220 才起步——领先距离是「等」出来的。
+     // （第六轮站门口 +25：出兵时只领先 ~190，2s 后就被超。）
+-    float tx = st.homeX + dx * aiBlockWaitDist(), ty = st.homeY + dy * aiBlockWaitDist();
++    float tx = 0, ty = 0;
++    aiBlockWaitXY(st.homeX, st.homeY, dx, dy, &tx, &ty);   // 边路固定等兵位 / 标记点 / 门口 + 等兵距离
+     // 从一塔回来时走车道侧面 450 的平行线，到等兵位置附近（前进 < 700）才切回中线，
+     // 避免迎面撞上正在走的基线波（等于在卡兵，污染基线）
+     const float hpNow = (hx - st.homeX) * dx + (hy - st.homeY) * dy;
+@@ -3344,11 +3417,18 @@ static AiWaveScore g_aiWaveScore;
+ struct AiScoreTotals { int waves = 0; float sum = 0; int perfect = 0; int humanWaves = 0; float humanSum = 0; int humanPerfect = 0; };
+ static AiScoreTotals g_aiScoreTotals;
+ 
++// -block end：手动结束正在测的这一波（评分器下一次检查时按当前状态出分）
++static bool g_aiWaveScoreForceEnd = false;
++
+ static void aiStartWaveScore(ULONGLONG now, int wave, bool human, const AiHeroCtx &c, const AiUnitState *lead,
+                              float sx, float sy, float dx, float dy)
+ {
+     AiWaveScore &w = g_aiWaveScore;
++    // 用户用 -block start 指定要统计的那一波还在测：下一波出兵不覆盖它
++    // （卡住的一波要 30~48s 才到一塔，比出兵间隔 30s 长，原来新一波一出兵就把上一波的评分冲掉）
++    if (w.active && aiScoreProtectsWave(w.wave)) return;
+     w = AiWaveScore{};
++    g_aiWaveScoreForceEnd = false;
+     w.active = true; w.human = human; w.wave = wave;
+     w.sx = sx; w.sy = sy; w.dx = dx; w.dy = dy;
+     float tx = 0, ty = 0;
+@@ -3410,7 +3490,9 @@ static void aiTickWaveScore(ULONGLONG now)
+     }
+     // 超时按车道长度：卡住时兵约 150/s（中路 4500 ≈ 30s，近卫下路 ~9000 ≈ 60s）
+     const float timeoutS = (std::max)(45.0f, w.towerProj / 150.0f + 10.0f);
+-    if (!atTower && !engaged && alive > 0 && t < timeoutS) return;
++    const bool forced = g_aiWaveScoreForceEnd;
++    if (!atTower && !engaged && !forced && alive > 0 && t < timeoutS) return;
++    g_aiWaveScoreForceEnd = false;
+     if (engaged && g_aiBlock.active && g_aiBlock.handledWave == w.wave) {
+         g_aiBlock.active = false;
+         WriteAsyncLogTo(aiLogPath(), L"🚧 [Tactic] 卡兵：第 %d 波兵线接敌（车道 %.0f，离塔 %.0f），结束", w.wave, front, w.towerProj - front);
+@@ -3421,7 +3503,8 @@ static void aiTickWaveScore(ULONGLONG now)
+     for (int i = 0; i < w.creepCount; ++i) {
+         const bool never = !(w.nearMask & (1u << i));
+         if (never) ++neverNear;
+-        if ((w.escapedMask & (1u << i)) || never) ++escaped;
++        // 手动结束（-block end）时还没走到英雄跟前的兵不算漏（只算真的超过英雄的）
++        if ((w.escapedMask & (1u << i)) || (never && !forced)) ++escaped;
+     }
+     const float score = w.creepCount ? 100.0f * (float)(w.creepCount - escaped) / (float)w.creepCount : 0.0f;
+     AiScoreTotals &tot = g_aiScoreTotals;
+@@ -3431,8 +3514,34 @@ static void aiTickWaveScore(ULONGLONG now)
+     WriteAsyncLogTo(aiLogPath(),
+                     L"🏁 [Tactic] %ls卡兵评分 第 %d 波：%ls 用时 %.1fs | 漏兵 %d/%d（其中从没靠近英雄 %d）→ 得分 %.0f %ls | 累计 %d 波 平均 %.0f 分，满分 %d 波",
+                     w.human ? L"真人" : L"AI ", w.wave,
+-                    atTower ? L"卡到一塔" : (engaged ? L"兵线接敌" : (alive ? L"超时未到一塔" : L"本波兵全部死亡")),
++                    atTower ? L"卡到一塔" : (engaged ? L"兵线接敌" : (forced ? L"手动结束" : (alive ? L"超时未到一塔" : L"本波兵全部死亡"))),
+                     t, escaped, w.creepCount, neverNear, score, escaped == 0 ? L"✅" : L"❌", n, avg, perfect);
++    // 拖延分（2026-11-20 用户同意加）：近卫下路车道 8700，真人第 9 波比不卡多拖了 17s（42.9s / 25.5s）但最后 4 只都溜过去，
++    // 只看漏兵是 0 分，和完全不卡一样。拖延 = 本波走到一塔（或接敌处）的用时 − 不卡时走到同一位置的用时；
++    // 满分 = 比不卡多走 50% 的时间。不卡用时按这一路学到的自然速度：本波兵从没进过英雄 400 内（没被卡）且走到一塔时记一次。
++    // 边路（上 / 下路，长）综合分 = (漏兵分 + 拖延分) / 2；中路短、漏兵分已经 94~96，照旧只用漏兵分。
++    static float s_natT[6] = {};      // 各路不卡时从门口走到一塔的用时（平滑）
++    float delay = 0.0f, delayScore = 0.0f, finalScore = score;
++    {
++        const int lane = aiBlockLane();
++        if (atTower && neverNear == w.creepCount && t > 5.0f)
++            s_natT[lane] = s_natT[lane] > 0.0f ? s_natT[lane] * 0.7f + t * 0.3f : t;
++        const float natSpeed = s_natT[lane] > 0.0f ? w.towerProj / s_natT[lane] : 340.0f;
++        const float reach = atTower ? w.towerProj : (std::max)(1.0f, front);
++        delay = (std::max)(0.0f, t - reach / natSpeed);
++        const float target = 0.5f * w.towerProj / natSpeed;
++        delayScore = target > 0.0f ? 100.0f * (std::min)(1.0f, delay / target) : 0.0f;
++        if (aiBlockIsSideLane()) finalScore = (score + delayScore) / 2.0f;
++        WriteAsyncLogTo(aiLogPath(), L"⏱ [Tactic] 拖延 第 %d 波：用时 %.1fs，不卡约 %.1fs（自然速度 %.0f/s%ls）→ 多拖 %.1fs（满分 %.1fs）→ 拖延分 %.0f | 漏兵分 %.0f → 综合 %.0f%ls",
++                        w.wave, t, reach / natSpeed, natSpeed, s_natT[lane] > 0.0f ? L"" : L"，还没学到，按 340",
++                        delay, target, delayScore, score, finalScore, aiBlockIsSideLane() ? L"" : L"（中路只看漏兵分）");
++    }
++    {   // 测试评分（-block start / -score start block）
++        wchar_t d[128];
++        swprintf_s(d, L"%ls leak %d/%d %.1fs leakScore %.0f delay %.1fs delayScore %.0f",
++                   atTower ? L"tower" : (engaged ? L"engaged" : L"timeout"), escaped, w.creepCount, t, score, delay, delayScore);
++        aiScoreOnResult(AI_SCORE_BLOCK, finalScore, w.wave, d);
++    }
+     w.active = false;
+ }
+ 
+@@ -3455,6 +3564,25 @@ static void aiTickCreepBlock(ULONGLONG now)
+     aiTickWaveScore(now);
+     aiTickLanePathRec(now);
+     aiTickBlockReturnHome(now);
++    if (g_aiBoostProbe.h && now >= g_aiBoostProbe.t + 2500) {
++        AiBoostProbe &pr = g_aiBoostProbe;
++        float x = 0, y = 0, pdx = 0, pdy = 0;
++        if (aiQueryPosition(pr.h, &x, &y)) {
++            aiLaneAxis(pr.lane, &pdx, &pdy);
++            const float v = ((x - pr.x) * pdx + (y - pr.y) * pdy) * 1000.0f / (float)(now - pr.t);
++            WriteAsyncLogTo(aiLogPath(), L"⏱ [Tactic] 优势路测速：%ls 第 %d 波领头兵 %.0f/s（> 370 = 光环加速中，300~345 = 常速）",
++                            kAiLanes[pr.lane].name, g_aiWaveCount, v);
++            // 连续两波都是常速才判结束（2026-11-21 实测光环期有一波被同伴挤到 347/s，单次判断容易误判）
++            static int s_normalStreak = 0;
++            s_normalStreak = (v >= 290.0f && v <= 345.0f) ? s_normalStreak + 1 : 0;
++            if (s_normalStreak >= 2 && !g_aiBoostOver) {
++                s_normalStreak = 0;
++                g_aiBoostOver = true;
++                aiMarkSay(kAiMsgInfo, L"⏱ [评分] %ls兵线已恢复常速（%.0f/s）：光环期结束，从下一波起正常卡兵、计分", kAiLanes[pr.lane].name, v);
++            }
++        }
++        pr.h = 0;
++    }
+     if (!g_aiTacticEnabled[AI_TACTIC_CREEP_BLOCK] && !b.active) return;
+ 
+     // 新一波刚刷出：0.45s 后立即接管（搜索半径 1400），避免等到 1s 后兵已散开或提速
+@@ -3472,16 +3600,22 @@ static void aiTickCreepBlock(ULONGLONG now)
+         // 新一波的兵：在门口（未学到时用几何默认门口）900 内、且沿车道还没走出门口 150 的兵——
+         // 上一波已经走远的兵沿车道进度大，不会被误认成新一波
+         const bool byHome = g_aiBlockStats.hasHome;
+-        const float findX = byHome ? g_aiBlockStats.homeX : L.raxX + laneDx * 80.0f;
+-        const float findY = byHome ? g_aiBlockStats.homeY : L.raxY + laneDy * 80.0f;
++        const float findX = byHome ? g_aiBlockStats.homeX : L.spawnX;
++        const float findY = byHome ? g_aiBlockStats.homeY : L.spawnY;
+         AiHeroCtx c;
+         if (!aiBuildCtx(c, 12000.0f)) return;
+         const AiUnitState *lead = nullptr;
+-        float leadD = 1e9f;
++        float leadD = 1e9f, leadAlong = -1e9f;
++        // 边路领头兵 = 新一波里沿车道最靠前的那只（2026-11-21 近卫下路：近战出兵点比远程沿车道靠前 ~560，
++        // 原来取「离门口最近」= 远程兵，门口 / 等兵位按它算，出兵时近战兵已和英雄平齐（前距 4），6 波 2s 内全漏）。
++        // 中路保持「离门口最近」（中路实测 96 分，不动）
++        const bool frontLead = aiBlockIsSideLane();
+         for (const AiUnitState *s : c.allyCreeps) {
+             const float d = aiDist(s->x, s->y, findX, findY);
+             const float along = (s->x - findX) * laneDx + (s->y - findY) * laneDy;
+-            if (d < 900.0f && along < 150.0f && d < leadD) { lead = s; leadD = d; }
++            // 沿车道 < 700：近战 / 远程两个出兵 rect 沿车道最多相差 ~560，都要算进来；上一波已走出几千，不会误认
++            if (d >= 900.0f || along >= 700.0f) continue;
++            if (frontLead ? (along > leadAlong) : (d < leadD)) { lead = s; leadD = d; leadAlong = along; }
+         }
+         if (!lead) return;
+         // 车道轴 = 兵营 → 本路一塔；门口点 = 刷出 0.45s 时领头兵位置沿车道前推 180
+@@ -3490,9 +3624,9 @@ static void aiTickCreepBlock(ULONGLONG now)
+             // 门口 = 领头兵位置沿车道前推 180；但必须在「兵营中心 + 车道方向 80」400 以内，否则用几何默认值。
+             // （实测 11:29 学到的门口比真实门口靠前 ~600：把上一波还在兵营附近的兵当成了新一波，
+             //   等兵位置随之前移，英雄出兵时领先 1250，超出卡兵逻辑的 1200 视野，本波直接判「全部漏掉」。）
+-            const float defX = L.raxX + laneDx * 80.0f, defY = L.raxY + laneDy * 80.0f;
++            const float defX = L.spawnX, defY = L.spawnY;   // 真实出兵点（不再用兵营建筑中点）
+             float hx0 = lead->x + laneDx * 180.0f, hy0 = lead->y + laneDy * 180.0f;
+-            if (aiDist(hx0, hy0, defX, defY) > 400.0f) {
++            if (aiDist(hx0, hy0, defX, defY) > 800.0f) {   // 默认点已是真实出兵点中点；近战最前兵 + 180 离它可到 ~460
+                 WriteAsyncLogTo(aiLogPath(), L"⚠ [Tactic] 卡兵：学到的门口 %.0f,%.0f 离兵营太远，改用默认 %.0f,%.0f", hx0, hy0, defX, defY);
+                 hx0 = defX; hy0 = defY;
+             }
+@@ -3533,6 +3667,17 @@ static void aiTickCreepBlock(ULONGLONG now)
+             m.wave = g_aiWaveCount;
+             m.human = g_aiBlockStats.human;
+         }
++        if (aiBlockLaneBoosted(lane) && aiBlockBoostActive()) {
++            if (aiDist(c.x, c.y, lead->x, lead->y) > 500.0f) {   // 门口等兵位离刷兵点 ~585
++                g_aiBoostProbe = AiBoostProbe{};
++                g_aiBoostProbe.h = lead->handle; g_aiBoostProbe.x = lead->x; g_aiBoostProbe.y = lead->y;
++                g_aiBoostProbe.t = now; g_aiBoostProbe.lane = lane;
++            }
++            g_aiBlockMeasure.active = false;   // 这一波不测量、不卡、不计分
++            aiMarkSay(kAiMsgInfo, L"⏩ [评分] 第 %d 波：%ls光环加速期（兵速 406，比无鞋英雄快）不卡、不计分；加速结束后自动开始（-ap 约游戏钟 5:15）",
++                      g_aiWaveCount, L.name);
++            return;
++        }
+         if (g_aiBlockStats.human) {
+             WriteAsyncLogTo(aiLogPath(), L"📏 [Tactic] 真人卡兵：第 %d 波开始测量（AI 不动英雄，领头兵 0x%08X）%ls",
+                             g_aiWaveCount, lead->handle, midLane ? L"" : L"——不在中路，本波不测");
+@@ -3602,7 +3747,8 @@ static void aiTickCreepBlock(ULONGLONG now)
+     b.nextMove = now + (ULONGLONG)aiLogNormal(85.0f, 0.15f, 60.0f, 120.0f);
+ 
+     AiHeroCtx c;
+-    const float viewR = aiBlockIsSideLane() ? 3500.0f : 1300.0f;   // 边路用标记点等兵时离刷兵点 2000~2800
++    // 边路用标记点等兵时离刷兵点 2000~2800；加速路前 7 分钟在车道 ~5700 等（aiBlockWaitDist），视野要盖住等兵距离 + 1200
++    const float viewR = aiBlockIsSideLane() ? (std::max)(3500.0f, aiBlockWaitDist() + 1200.0f) : 1300.0f;
+     if (!aiBuildCtx(c, viewR)) { b.active = false; return; }
+     const float dx = b.dx, dy = b.dy;
+     float heroProj = 0, heroLat = 0;
+@@ -3659,7 +3805,7 @@ static void aiTickCreepBlock(ULONGLONG now)
+             hi = (std::max)(hi, candL[i]);
+             ++rowN;
+         }
+-        if (rowN >= 2 && hi - lo <= 110.0f) aimLat = (lo + hi) / 2.0f;
++        if (rowN >= 2 && hi - lo <= aiBlockRowWidthMax()) aimLat = (lo + hi) / 2.0f;
+     }
+     // 第十一版（2026-11-20 01:43 第 22 波 25 分）：兵出门就分成两撮（一只甩到 +223，其余在 -150），
+     // 「只对准最前那只」让英雄先追到 +213，最前兵一换成 -156 那只，横向差 260 来不及，另一撮全漏。
+@@ -3669,7 +3815,11 @@ static void aiTickCreepBlock(ULONGLONG now)
+     bool medianAim = false;
+     // 边路（真人录制）：真人始终站在整波兵横向的中间（-20~+35），两侧的兵（-77、+55）换着领先也不去追。
+     // 目标 = 最前 300 内本波还没超过英雄的兵的横向中位数；不用「对准最前一排 / 挡兵多的那撮」。
+-    if (front && aiBlockIsSideLane() && candN >= 2) {
++    // 2026-11-21 近卫下路 7 分钟后（兵速 325）门口起卡 5 波 3~21 分：出兵时远程兵刷在近战后面、横向偏 ~70，
++    // 整波中位被它拉到 -78（最前兵 -10），横向差大 → 触发「先横移、前进压到 70」，冰女前进只有 ~155/s，1.5s 前距 585 → 29。
++    // 兵还没贴上来（前距 > 150）时只对准最前一排；贴身后才用整波中位挡外侧兵。
++    // 只在近卫下路启用（远程出兵 rect 横向偏 ~64）；上路启用后从 91 → 54 / 35 分，先回退待 Gemini 记录分析（2026-11-21）
++    if (front && aiBlockIsSideLane() && candN >= 2 && (aiBlockLane() != 2 || heroProj - predProj <= 150.0f)) {
+         float ls[16];
+         int n = 0;
+         float loL = 1e9f, loP = -1e9f, hiL = -1e9f, hiP = -1e9f;   // 最左 / 最右那只兵的横向和（预测）前进
+@@ -3687,10 +3837,10 @@ static void aiTickCreepBlock(ULONGLONG now)
+             // （兵比英雄横 -52~-61，英雄来不及横移）。前排优先：
+             //   前排（预测前进离最前 70 内）≥ 2 只且宽 ≤ 110 → 对准前排中点（两边都在英雄 ±55 内）；
+             //   前排只有 1 只、离整波中位 > 40 且离英雄 < 150 → 直接对准它（往中位收 20）。
+-            if (rowN >= 2 && hi - lo <= 110.0f) {
++            if (rowN >= 2 && hi - lo <= aiBlockRowWidthMax()) {
+                 aimLat = (lo + hi) / 2.0f;
+             } else if (rowN == 1 && std::fabs(predLat - aimLat) > 40.0f && heroProj - predProj < 150.0f) {
+-                aimLat = predLat + (aimLat > predLat ? 20.0f : -20.0f);
++                aimLat = predLat + (aimLat > predLat ? 10.0f : -10.0f);   // 往中位收 20 → 10（2026-11-21 Gemini dota-ai-block-records-analysis.md §5.1，离线轨迹回放验证：原漏兵时刻前距 +90~+117）
+             }
+             // 2026-11-20 上路 6 波全 75 分：每波漏的都是外侧那只（两侧兵 -60 / +60，英雄站中间离两边都 > 48 挡不住，
+             // 外侧兵往外绕 +53 → +100 走过去）。真人第 4 波站在偏领先那侧（+25）。
+@@ -3703,10 +3853,35 @@ static void aiTickCreepBlock(ULONGLONG now)
+                 aimLat = pickHi ? hiL - 35.0f : loL + 35.0f;
+                 b.sideLat = aimLat;
+             }
++            // 2026-11-21 近卫上路 AI 10 波只过 1 波（平均 37）：上路弯道处整波兵一直往 + 侧漂（第 29 波 9s 内中位 -16 → +139），
++            // 英雄瞄整波中位、还落后 10~30，前距掉到 ~0 时最外侧那只（比英雄横 +40~+110）从漂移那一侧溜走（15 次漏兵 13 次在 + 侧）。
++            // 改为瞄「漂移后的位置」：中位 + 漂移速度 × 0.7s，再往漂移那一侧偏 一排半宽 × 0.6（最多 35），把外侧那只也罩住。
++            {
++                const float med = aimLat;
++                // 中位单帧跳 > 32（有兵刚进出 300 窗口 / 刚切到中位）：不算漂移，只重置基准（消除假漂移脉冲）（2026-11-21 Gemini dota-ai-block-records-analysis.md §5.1，离线轨迹回放验证：原漏兵时刻前距 +90~+117）
++                if (b.medTick != 0 && std::fabs(med - b.medPrev) > 32.0f) { b.medPrev = med; b.medTick = now; }
++                else if (b.medTick != 0 && now > b.medTick + 80 && now < b.medTick + 900) {
++                    const float v = (med - b.medPrev) * 1000.0f / (float)(now - b.medTick);
++                    b.medVel = b.medVel * 0.6f + (std::max)(-120.0f, (std::min)(120.0f, v)) * 0.4f;
++                }
++                if (b.medTick == 0 || now > b.medTick + 80) { b.medPrev = med; b.medTick = now; }
++                float adj = (std::max)(-60.0f, (std::min)(60.0f, b.medVel * 0.7f));
++                if (std::fabs(b.medVel) > 8.0f) {
++                    const float halfW = (hiL - loL) / 2.0f;
++                    const float lean = (std::min)(35.0f, (std::max)(0.0f, halfW * 0.6f));
++                    adj += (b.medVel > 0.0f) ? lean : -lean;
++                }
++                // 出兵后前 ~900 兵还没排成形，中位随兵加入来回跳（2026-11-21 近卫下路：修正 +73 → -71），
++                // 横向差大会触发「先横移、前进压到 70」，英雄停在原地被兵追上（6 波 0~12 分）。
++                // 上路漏兵都在车道 1000~2800 的弯道，只在车道 900 以后修正。
++                if (heroProj < (aiBlockLane() == 2 ? 1600.0f : 900.0f)) adj = 0.0f;   // 下路出门绕树林段推迟到 1600（2026-11-21 Gemini dota-ai-block-records-analysis.md §5.1，离线轨迹回放验证：原漏兵时刻前距 +90~+117）
++                b.driftAdj = adj;
++                aimLat = med + adj;
++            }
+             medianAim = true;
+         }
+     }
+-    if (!medianAim && front && rowN >= 2 && hi - lo > 110.0f) {
++    if (!medianAim && front && rowN >= 2 && hi - lo > aiBlockRowWidthMax()) {
+         float ls[16], ps[16];
+         int n = 0;
+         for (int i = 0; i < candN; ++i) {
+@@ -3755,6 +3930,8 @@ static void aiTickCreepBlock(ULONGLONG now)
+         b.active = false;
+         return;
+     }
++    // 本波兵一只都还没看到（英雄在远处等兵，兵还在视野外）：继续等，不要判「全部超过」（2026-11-21 下路 5700 等兵 5 波全 0 分）
++    if (!front && anyFront <= -1e8f) return;
+     if (!front) {
+         WriteAsyncLogTo(aiLogPath(), L"🚧 [Tactic] 卡兵 v8：本波兵全部超过英雄，结束（前进 %d 次，站住 %d 次，横移 %d 次）", b.moves, b.stops, b.intercepts);
+         b.active = false;
+@@ -3766,9 +3943,10 @@ static void aiTickCreepBlock(ULONGLONG now)
+     {   // 诊断：整波每 0.25s 一行（轨迹 📍 只覆盖前 1500，中段的漏兵看这里）
+         if (now >= b.nextDbgLog) {
+             b.nextDbgLog = now + 250;
+-            WriteAsyncLogTo(aiLogPath(), L"🎯 [Tactic] 卡兵 第 %d 波 车道 %.0f | 前距 %.0f | 英雄横 %.0f → 目标横 %.0f（最前兵 %.0f，一排 %d 只 %.0f~%.0f 宽 %.0f%ls）",
++            WriteAsyncLogTo(aiLogPath(), L"🎯 [Tactic] 卡兵 第 %d 波 车道 %.0f | 前距 %.0f | 英雄横 %.0f → 目标横 %.0f（最前兵 %.0f，一排 %d 只 %.0f~%.0f 宽 %.0f%ls，漂移 %.0f/s 修正 %+.0f）",
+                             b.handledWave, heroProj, gap, heroLat, aimLat, predLat, rowN, lo, hi, hi - lo,
+-                            medianAim ? L"，边路：整波中位" : (splitAim ? L"，太宽：挡兵多的那撮" : L""));
++                            medianAim ? L"，边路：整波中位" : (splitAim ? L"，太宽：挡兵多的那撮" : L""),
++                            medianAim ? b.medVel : 0.0f, medianAim ? b.driftAdj : 0.0f);
+         }
+     }
+ 
+@@ -3782,9 +3960,11 @@ static void aiTickCreepBlock(ULONGLONG now)
+     // 第十版：起步阈值按真人「最前兵追到身后 190~240 才起步」——从站立到真正往前走要先转身 + 指令延迟，
+     // 第七~九版在前距 100 才起步，本机实测起步时兵已贴身（0.3s 内前距 122 → 9）直接被超。
+     // 边路按真人录制：前距 ~300 就起步（英雄 280 比兵 325 慢，早走才能把前距维持在 100~200）
+-    const float kHoldOn  = aiBlockIsSideLane() ? 340.0f : 220.0f;   // 前距 > 此值：站住等兵
+-    const float kWalkOn  = aiBlockIsSideLane() ? 300.0f : 180.0f;   // 前距 < 此值：往前走（中间保持当前状态，避免抖动）
+-    static const float kLatTol  = 25.0f;    // 站着时横向偏差 > 25 才横移对齐
++    // 边路：减速期（兵 244）320 / 280；常速期（兵 325 > 冰女 280）380 / 350（原 340 / 300，实际起步时只剩 ~275）（2026-11-21 Gemini dota-ai-block-records-analysis.md §5.1，离线轨迹回放验证：原漏兵时刻前距 +90~+117）
++    const bool sideSlow = aiBlockIsSideLane() && aiBlockLaneSlowed();
++    const float kHoldOn  = aiBlockIsSideLane() ? (sideSlow ? 320.0f : 380.0f) : 220.0f;   // 前距 > 此值：站住等兵
++    const float kWalkOn  = aiBlockIsSideLane() ? (sideSlow ? 280.0f : 350.0f) : 180.0f;   // 前距 < 此值：往前走（中间保持当前状态，避免抖动）
++    const float kLatTol  = aiBlockIsSideLane() ? 18.0f : 25.0f;    // 站着时横向偏差 > 此值才横移对齐（边路 25 → 18）
+     static const float kLatStep = 40.0f;    // 每次横向修正最多 40
+ 
+     // （v8：不再「被超就放弃」——目标已换成下一只还在英雄身后的兵，继续卡）
+@@ -3821,7 +4001,9 @@ static void aiTickCreepBlock(ULONGLONG now)
+         // 目标往外侧 > 20 时英雄横移速度只有 ~28/s（前距 ≥ 150）、外侧兵追到身旁后（前距 < 150）≈ 0——
+         // 往外走会撞上并排的那只兵。往里横移 25~90/s 正常。原因是点地点至少在前方 120、横向只差 ~30，
+         // 走的方向几乎是正前方。边路横向差 > 20 时把前进量压到 70，先横移到位（斜度约翻倍），趁兵还在身后。
+-        if (aiBlockIsSideLane() && std::fabs(latErr) > 20.0f) targetProj = heroProj + 70.0f;
++        // 2026-11-21：原「横向差 > 20 → 前进压到 70」让冰女边路前进只剩 49~73/s（满分波 ~210/s），被 325 的兵追上——
++        // 放宽到 > 40、前进量 115（2026-11-21 Gemini dota-ai-block-records-analysis.md §5.1，离线轨迹回放验证：原漏兵时刻前距 +90~+117）
++        if (aiBlockIsSideLane() && std::fabs(latErr) > 40.0f) targetProj = heroProj + 115.0f;
+         ++b.moves;
+     }
+     b.sinceStop = 1;
+@@ -4021,6 +4203,7 @@ static void aiTickStack(ULONGLONG now)
+         }
+         WriteAsyncLogTo(aiLogPath(), L"🌲 [Tactic] 拉野：第 %d/%d 波完成（野点 #%d，本分钟该野点新刷 %d 只 %ls；当前存活 %d 只，总血 %.0f）",
+                         s.done, s.wanted, s.camp, spawned, spawned > 0 ? L"✅ 囤上" : L"❌ 没刷新", cp.alive, cp.sumMaxLife);
++        aiScoreOnResult(AI_SCORE_STACK, spawned > 0 ? 100.0f : 0.0f, s.done, spawned > 0 ? L"stacked" : L"no respawn");
+         s.phase = 0;
+         s.jitter = aiRandRange(0.0f, 1.3f);   // 下一分钟出手：hitSec-0.8 ~ hitSec+0.5
+         if (s.done >= s.wanted) {
+@@ -4243,6 +4426,7 @@ static void aiTickLanePull(ULONGLONG now)
+     const bool ok = followers > 0 && ownNear > 0;
+     if (!ok && now - s.arriveAt < 4000) return;
+     s.active = false;
++    aiScoreOnResult(AI_SCORE_PULL, ok ? 100.0f : 0.0f, 0, ok ? L"pulled" : (followers == 0 ? L"no neutrals followed" : L"no own creeps"));
+     if (ok)
+         aiMarkSay(kAiMsgOk, L"✅ [Pull] %ls 拉野成功：终点附近野怪 %d 只、本方小兵 %d 个（出手到碰上 %.1fs）", lb, followers, ownNear,
+                   (now - s.hitAt) / 1000.0f);

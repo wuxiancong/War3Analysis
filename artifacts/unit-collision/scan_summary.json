@@ -1,0 +1,254 @@
+{
+  "1.24.4.6387": {
+    "version": "1.24.4.6387",
+    "size": 12140544,
+    "image_base": "0x6F000000",
+    "rtti": [
+      {
+        "name": ".?AVCMoveReq@@",
+        "td_rva": 11030112,
+        "vtables": [
+          9683312
+        ]
+      },
+      {
+        "name": ".?AVCPathingFootprint@@",
+        "td_rva": 11080920,
+        "vtables": [
+          9824180
+        ]
+      },
+      {
+        "name": ".?AVCPathingMapIndicator@@",
+        "td_rva": 11069680,
+        "vtables": [
+          9775944
+        ]
+      },
+      {
+        "name": ".?AVCAbilityMove@@",
+        "td_rva": 11030240,
+        "vtables": [
+          9683380
+        ]
+      },
+      {
+        "name": ".?AVCLrPath@NIpse@@",
+        "td_rva": 11117456,
+        "vtables": [
+          9852100
+        ]
+      },
+      {
+        "name": ".?AVCLrPathingAcc@NIpse@@",
+        "td_rva": 11117420,
+        "vtables": [
+          9848980
+        ]
+      },
+      {
+        "name": ".?AVCLrPathingSys@NIpse@@",
+        "td_rva": 11117280,
+        "vtables": [
+          9852660
+        ]
+      },
+      {
+        "name": ".?AVCOrderPoint@@",
+        "td_rva": 11039940,
+        "vtables": [
+          9707780
+        ]
+      },
+      {
+        "name": ".?AVCOrderPoint2@@",
+        "td_rva": 11040072,
+        "vtables": [
+          9707980
+        ]
+      }
+    ],
+    "ucol": {
+      "raw_off": -1,
+      "rev_off": 9687012,
+      "imm_sites": []
+    },
+    "strings": {
+      "ucol": -1,
+      "collision": 9700844,
+      "Collision": 10049476,
+      "pathing": 9786300,
+      "Pathing": 9720477,
+      "CMoveReq": 11030124
+    },
+    "ucol_follow": []
+  },
+  "1.26.0.6401": {
+    "version": "1.26.0.6401",
+    "size": 12042240,
+    "image_base": "0x6F000000",
+    "rtti": [
+      {
+        "name": ".?AVCMoveReq@@",
+        "td_rva": 10939968,
+        "vtables": [
+          9609232
+        ]
+      },
+      {
+        "name": ".?AVCPathingFootprint@@",
+        "td_rva": 10990776,
+        "vtables": [
+          9750108
+        ]
+      },
+      {
+        "name": ".?AVCPathingMapIndicator@@",
+        "td_rva": 10979536,
+        "vtables": [
+          9701872
+        ]
+      },
+      {
+        "name": ".?AVCAbilityMove@@",
+        "td_rva": 10940096,
+        "vtables": [
+          9609300
+        ]
+      },
+      {
+        "name": ".?AVCLrPath@NIpse@@",
+        "td_rva": 11027312,
+        "vtables": [
+          9778028
+        ]
+      },
+      {
+        "name": ".?AVCLrPathingAcc@NIpse@@",
+        "td_rva": 11027276,
+        "vtables": [
+          9774908
+        ]
+      },
+      {
+        "name": ".?AVCLrPathingSys@NIpse@@",
+        "td_rva": 11027136,
+        "vtables": [
+          9778588
+        ]
+      },
+      {
+        "name": ".?AVCOrderPoint@@",
+        "td_rva": 10949796,
+        "vtables": [
+          9633700
+        ]
+      },
+      {
+        "name": ".?AVCOrderPoint2@@",
+        "td_rva": 10949928,
+        "vtables": [
+          9633900
+        ]
+      }
+    ],
+    "ucol": {
+      "raw_off": -1,
+      "rev_off": 9612932,
+      "imm_sites": []
+    },
+    "strings": {
+      "ucol": -1,
+      "collision": 9626764,
+      "Collision": 9976604,
+      "pathing": 9712228,
+      "Pathing": 9646397,
+      "CMoveReq": 10939980
+    },
+    "ucol_follow": []
+  },
+  "1.27.0.52240": {
+    "version": "1.27.0.52240",
+    "size": 13187048,
+    "image_base": "0x6F000000",
+    "rtti": [
+      {
+        "name": ".?AVCMoveReq@@",
+        "td_rva": 12076220,
+        "vtables": [
+          9897864
+        ]
+      },
+      {
+        "name": ".?AVCPathingFootprint@@",
+        "td_rva": 12074992,
+        "vtables": [
+          9898984
+        ]
+      },
+      {
+        "name": ".?AVCPathingMapIndicator@@",
+        "td_rva": 12115196,
+        "vtables": [
+          10018908
+        ]
+      },
+      {
+        "name": ".?AVCAbilityMove@@",
+        "td_rva": 12228928,
+        "vtables": [
+          10702808
+        ]
+      },
+      {
+        "name": ".?AVCLrPath@NIpse@@",
+        "td_rva": 12054524,
+        "vtables": [
+          9835264
+        ]
+      },
+      {
+        "name": ".?AVCLrPathingAcc@NIpse@@",
+        "td_rva": 12053212,
+        "vtables": [
+          9831168
+        ]
+      },
+      {
+        "name": ".?AVCLrPathingSys@NIpse@@",
+        "td_rva": 12052248,
+        "vtables": [
+          9830316
+        ]
+      },
+      {
+        "name": ".?AVCOrderPoint@@",
+        "td_rva": 12246148,
+        "vtables": [
+          10793152
+        ]
+      },
+      {
+        "name": ".?AVCOrderPoint2@@",
+        "td_rva": 12246176,
+        "vtables": [
+          10793300
+        ]
+      }
+    ],
+    "ucol": {
+      "raw_off": -1,
+      "rev_off": 10144776,
+      "imm_sites": []
+    },
+    "strings": {
+      "ucol": -1,
+      "collision": 10802696,
+      "Collision": 10895584,
+      "pathing": 9844442,
+      "Pathing": 9827314,
+      "CMoveReq": 12070088
+    },
+    "ucol_follow": []
+  }
+}

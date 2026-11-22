@@ -1,0 +1,349 @@
+{
+  "schema": 1,
+  "map": "DotA v6.83d",
+  "coordSystem": "world GetUnitX/Y",
+  "note": "Eye spots live in dota-683d-ward-and-deward.md — not duplicated here. Camp AABB: dota-neutral-camp-spawn-box.md.",
+  "runes": {
+    "refresh": {
+      "firstSpawn": "GameStart → TriggerEvaluate(J20) immediately (J40=true → both spots Bounty I0RC)",
+      "intervalSec": 120,
+      "timer": "J20 TriggerRegisterTimerEvent(..., 120, true) after GAME_STATE_TIME_OF_DAY=6; function CBO",
+      "source": "war3map_3.j ~6836; war3map_2.j CBO; war3map_9.j J20=CBO"
+    },
+    "spots": [
+      {
+        "id": "rune_top",
+        "x": -2352.0,
+        "y": 1648.0,
+        "rect": "G4",
+        "rectBounds": [-2464, 1536, -2240, 1760],
+        "locationVar": "F1=GetRectCenter(G4)",
+        "source": "script",
+        "use": "top river rune; contest / bottle"
+      },
+      {
+        "id": "rune_bot",
+        "x": 3008.0,
+        "y": -2832.0,
+        "rect": "D4",
+        "rectBounds": [2912, -2944, 3104, -2720],
+        "locationVar": "G1=GetRectCenter(D4)",
+        "source": "script",
+        "use": "bot river rune; contest / bottle"
+      }
+    ],
+    "itemTypes": [
+      { "code": "I007", "name": "Illusion", "roll": "CAO 1..5 when J40=false" },
+      { "code": "I006", "name": "Haste", "roll": "CAO 1..5" },
+      { "code": "I00K", "name": "Double Damage", "roll": "CAO 1..5" },
+      { "code": "I008", "name": "Regen", "roll": "CAO 1..5" },
+      { "code": "I00J", "name": "Invisibility", "roll": "CAO 1..5" },
+      { "code": "I0RC", "name": "Bounty", "roll": "always on the other spot; both spots on first spawn" }
+    ],
+    "spawnRule": "Each tick: wipe old runes in G4/D4; pick random power rune at one spot (not same as last J30), Bounty at the other; spots swap randomly."
+  },
+  "roshan": {
+    "unitType": "n00L",
+    "spawn": {
+      "x": 4176.0,
+      "y": -2288.0,
+      "rect": "P4",
+      "rectBounds": [4032, -2432, 4320, -2144],
+      "source": "script NQO / war3map_9.j CreateUnitAtLoc(Player(12), n00L, GetRectCenter(P4))",
+      "use": "authoritative Roshan spawn point",
+      "confidence": "high (script); verify live that combat AABB matches"
+    },
+    "standHints": [
+      {
+        "id": "roshan_approach_w",
+        "x": 3900.0,
+        "y": -2288.0,
+        "source": "derived (−276 from spawn)",
+        "use": "approach from west / river; tank/kite",
+        "confidence": "medium"
+      },
+      {
+        "id": "roshan_approach_n",
+        "x": 4176.0,
+        "y": -2000.0,
+        "source": "derived",
+        "use": "north lip stand",
+        "confidence": "medium"
+      }
+    ],
+    "relatedLandmarks": [
+      {
+        "id": "kb_nw_river",
+        "x": -2368.0,
+        "y": 1664.0,
+        "rect": "KB",
+        "use": "NW river / top-rune control (NOT script Roshan spawn)",
+        "source": "script rect KB"
+      },
+      {
+        "id": "z6_nw_high",
+        "x": -2176.0,
+        "y": 2320.0,
+        "rect": "Z6",
+        "use": "NW high ground near top rune",
+        "source": "script rect Z6"
+      }
+    ]
+  },
+  "ancientCamps": [
+    {
+      "id": "ancient_pool_camp1",
+      "campIndex": 1,
+      "spawn": { "x": 4640.0, "y": -976.0, "rect": "H4" },
+      "check": "Q4",
+      "source": "P3O→PIO; RAO (n0LC/n0LD Ancient Lizards) is 1/5 of pool",
+      "use": "possible ancient composition; Furion/Medusa farm when lizards spawn",
+      "standTerrain": {
+        "x": 4900.0,
+        "y": -1200.0,
+        "note": "offset SE toward trees/cliff so ancients cannot path; tune with wpm/live",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "ancient_pool_camp2",
+      "campIndex": 2,
+      "spawn": { "x": -3216.0, "y": -256.0, "rect": "Z4" },
+      "check": "U4",
+      "source": "P3O→P1O; same RAO 1/5 pool",
+      "use": "possible ancient composition (west jungle)",
+      "standTerrain": {
+        "x": -3450.0,
+        "y": -500.0,
+        "note": "offset SW tree/cliff; tune live",
+        "confidence": "medium"
+      }
+    }
+  ],
+  "fountains": [
+    {
+      "id": "fountain_radiant",
+      "x": -7296.0,
+      "y": -7200.0,
+      "unitType": "nfoh",
+      "team": "radiant",
+      "source": "script CreateUnit Player(15)",
+      "use": "heal / spawn / TP default"
+    },
+    {
+      "id": "fountain_dire",
+      "x": 6784.0,
+      "y": 6368.0,
+      "unitType": "ndfl",
+      "team": "dire",
+      "source": "script CreateUnit (污染生命之泉)",
+      "use": "heal / spawn / TP default"
+    }
+  ],
+  "shops": [
+    {
+      "id": "secret_radiant_side",
+      "x": -7296.0,
+      "y": 4224.0,
+      "unitType": "u00Z",
+      "name": "地精实验室",
+      "source": "script",
+      "use": "secret shop (radiant-accessible side)"
+    },
+    {
+      "id": "secret_radiant_side_vendor",
+      "x": -7296.0,
+      "y": 4416.0,
+      "unitType": "u010",
+      "name": "地精商人",
+      "source": "script",
+      "use": "secret shop companion"
+    },
+    {
+      "id": "secret_dire_side",
+      "x": 7360.0,
+      "y": -4416.0,
+      "unitType": "u00Z",
+      "name": "地精实验室",
+      "source": "script",
+      "use": "secret shop (dire-accessible side)"
+    },
+    {
+      "id": "secret_dire_side_vendor",
+      "x": 7360.0,
+      "y": -4224.0,
+      "unitType": "u010",
+      "name": "地精商人",
+      "source": "script",
+      "use": "secret shop companion"
+    },
+    {
+      "id": "radiant_home_support",
+      "x": -6752.0,
+      "y": -6496.0,
+      "unitType": "n002",
+      "name": "支援法衣",
+      "team": "radiant",
+      "source": "script",
+      "use": "home side shop"
+    },
+    {
+      "id": "radiant_home_arcane",
+      "x": -6880.0,
+      "y": -6496.0,
+      "unitType": "n00V",
+      "name": "秘法圣所",
+      "team": "radiant",
+      "source": "script",
+      "use": "home side shop"
+    },
+    {
+      "id": "radiant_home_ancient_weapons",
+      "x": -7264.0,
+      "y": -6560.0,
+      "unitType": "n00W",
+      "name": "远古兵器",
+      "team": "radiant",
+      "source": "script",
+      "use": "home side shop"
+    },
+    {
+      "id": "radiant_home_enchanted",
+      "x": -7136.0,
+      "y": -6496.0,
+      "unitType": "n00X",
+      "name": "附魔古物",
+      "team": "radiant",
+      "source": "script",
+      "use": "home side shop"
+    },
+    {
+      "id": "radiant_home_relic",
+      "x": -6624.0,
+      "y": -6560.0,
+      "unitType": "n009",
+      "name": "圣物关口",
+      "team": "radiant",
+      "source": "script",
+      "use": "home side shop"
+    },
+    {
+      "id": "radiant_home_weapon",
+      "x": -7264.0,
+      "y": -6752.0,
+      "unitType": "n01K",
+      "name": "武器商人",
+      "team": "radiant",
+      "source": "script",
+      "use": "home side shop"
+    },
+    {
+      "id": "radiant_home_trinket",
+      "x": -7264.0,
+      "y": -6944.0,
+      "unitType": "nC38",
+      "name": "饰品商人 希娜",
+      "team": "radiant",
+      "source": "script",
+      "use": "home side shop"
+    },
+    {
+      "id": "radiant_fountain_tree",
+      "x": -6624.0,
+      "y": -7200.0,
+      "unitType": "e025",
+      "name": "奇迹古树",
+      "team": "radiant",
+      "source": "script",
+      "use": "fountain-area vendor"
+    },
+    {
+      "id": "radiant_fountain_vault",
+      "x": -6944.0,
+      "y": -7200.0,
+      "unitType": "hC95",
+      "name": "奎尔瑟兰的密室",
+      "team": "radiant",
+      "source": "script",
+      "use": "fountain-area vendor"
+    },
+    {
+      "id": "dire_home_support",
+      "x": 5984.0,
+      "y": 6112.0,
+      "unitType": "n002",
+      "name": "支援法衣",
+      "team": "dire",
+      "source": "script Player(6)",
+      "use": "home side shop"
+    },
+    {
+      "id": "dire_home_arcane",
+      "x": 5984.0,
+      "y": 6240.0,
+      "unitType": "n00V",
+      "name": "秘法圣所",
+      "team": "dire",
+      "source": "script",
+      "use": "home side shop"
+    },
+    {
+      "id": "dire_home_ancient_weapons",
+      "x": 6048.0,
+      "y": 6624.0,
+      "unitType": "n00W",
+      "name": "远古兵器",
+      "team": "dire",
+      "source": "script",
+      "use": "home side shop"
+    },
+    {
+      "id": "dire_home_enchanted",
+      "x": 5984.0,
+      "y": 6496.0,
+      "unitType": "n00X",
+      "name": "附魔古物",
+      "team": "dire",
+      "source": "script",
+      "use": "home side shop"
+    },
+    {
+      "id": "dire_home_relic",
+      "x": 6048.0,
+      "y": 5984.0,
+      "unitType": "n009",
+      "name": "圣物关口",
+      "team": "dire",
+      "source": "script",
+      "use": "home side shop"
+    },
+    {
+      "id": "dire_home_weapon",
+      "x": 6368.0,
+      "y": 6624.0,
+      "unitType": "n01K",
+      "name": "武器商人",
+      "team": "dire",
+      "source": "script",
+      "use": "home side shop"
+    },
+    {
+      "id": "dire_home_trinket",
+      "x": 6560.0,
+      "y": 6624.0,
+      "unitType": "nC38",
+      "name": "饰品商人",
+      "team": "dire",
+      "source": "script",
+      "use": "home side shop"
+    }
+  ],
+  "riverPath": [
+    { "id": "river_top_rune", "x": -2352.0, "y": 1648.0, "source": "G4", "use": "NW river node" },
+    { "id": "river_mid_y5", "x": -368.0, "y": -656.0, "source": "Y5 center", "use": "mid river hub" },
+    { "id": "river_mid_east", "x": 3200.0, "y": -64.0, "source": "script unit uC74", "use": "east mid river marker" },
+    { "id": "river_mid_west", "x": -4544.0, "y": 1152.0, "source": "script unit uC74", "use": "west mid river marker" },
+    { "id": "river_bot_rune", "x": 3008.0, "y": -2832.0, "source": "D4", "use": "SE river node" },
+    { "id": "river_bot_oc", "x": 2656.0, "y": -3136.0, "source": "OC center", "use": "bot river approach" }
+  ]
+}

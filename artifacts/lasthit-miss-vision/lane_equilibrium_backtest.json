@@ -1,0 +1,26 @@
+[
+  {
+    "file": "sf_mid_20261121-172855_lh9of16_dn5of16_pts-4_rate44.csv",
+    "frames": 949,
+    "mean_meet_t": 0.5935,
+    "mean_abs_err_vs_count_model": 0.3265,
+    "river_t": 0.5164,
+    "safe_if_meet_t_lt": 0.1573
+  },
+  {
+    "file": "sf_mid_20261121-225436_lh8of20_dn6of19_pts-11_rate36.csv",
+    "frames": 942,
+    "mean_meet_t": 0.6269,
+    "mean_abs_err_vs_count_model": 0.3008,
+    "river_t": 0.5164,
+    "safe_if_meet_t_lt": 0.1573
+  },
+  {
+    "file": "sf_mid_20261121-231144_lh20of44_dn12of43_pts-23_rate37.csv",
+    "frames": 2349,
+    "mean_meet_t": 0.6367,
+    "mean_abs_err_vs_count_model": 0.2822,
+    "river_t": 0.5164,
+    "safe_if_meet_t_lt": 0.1573
+  }
+]

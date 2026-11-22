@@ -1,0 +1,1042 @@
+[
+  {
+    "ver": "1.0.17.5988",
+    "imageBase": "0x6f000000",
+    "size": 9371708,
+    "CallForHelp": {
+      "strRVA": "0x80632c",
+      "xrefs": [
+        "0x1c6043",
+        "0x1c60b7"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x1c6043",
+          "guessFunc": "0x1c6040"
+        },
+        {
+          "xrefRVA": "0x1c60b7",
+          "guessFunc": "0x1c6040"
+        }
+      ]
+    },
+    "CreepCallForHelp": {
+      "strRVA": "0x806338",
+      "xrefs": [
+        "0x1c6018"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x1c6018",
+          "guessFunc": "0x1c5e78"
+        }
+      ]
+    },
+    "GetUnitAcquireRange": {
+      "strRVA": "0x817cdc",
+      "xrefs": [
+        "0x2a9a2b",
+        "0x3e7b03"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x2a9a2b",
+          "guessFunc": "0x2a9a2b"
+        },
+        {
+          "xrefRVA": "0x3e7b03",
+          "guessFunc": "0x3e7b03"
+        }
+      ]
+    },
+    "SetUnitAcquireRange": {
+      "strRVA": "0x817c24",
+      "xrefs": [
+        "0x2a9acb",
+        "0x3e7ba3"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x2a9acb",
+          "guessFunc": "0x2a9acb"
+        },
+        {
+          "xrefRVA": "0x3e7ba3",
+          "guessFunc": "0x3e7ba3"
+        }
+      ]
+    },
+    "AttackNotifyRange": {
+      "strRVA": "0x7fd384",
+      "xrefs": [
+        "0xf5497",
+        "0xf56be"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0xf5497",
+          "guessFunc": "0xf5400"
+        },
+        {
+          "xrefRVA": "0xf56be",
+          "guessFunc": "0xf54c7"
+        }
+      ]
+    }
+  },
+  {
+    "ver": "1.0.20.6048",
+    "imageBase": "0x6f000000",
+    "size": 9375804,
+    "CallForHelp": {
+      "strRVA": "0x80736c",
+      "xrefs": [
+        "0x1c6043",
+        "0x1c60b7"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x1c6043",
+          "guessFunc": "0x1c6040"
+        },
+        {
+          "xrefRVA": "0x1c60b7",
+          "guessFunc": "0x1c6040"
+        }
+      ]
+    },
+    "CreepCallForHelp": {
+      "strRVA": "0x807378",
+      "xrefs": [
+        "0x1c6018"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x1c6018",
+          "guessFunc": "0x1c5e78"
+        }
+      ]
+    },
+    "GetUnitAcquireRange": {
+      "strRVA": "0x818d1c",
+      "xrefs": [
+        "0x2a9a2b",
+        "0x3e8003"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x2a9a2b",
+          "guessFunc": "0x2a9a2b"
+        },
+        {
+          "xrefRVA": "0x3e8003",
+          "guessFunc": "0x3e8003"
+        }
+      ]
+    },
+    "SetUnitAcquireRange": {
+      "strRVA": "0x818c64",
+      "xrefs": [
+        "0x2a9acb",
+        "0x3e80a3"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x2a9acb",
+          "guessFunc": "0x2a9acb"
+        },
+        {
+          "xrefRVA": "0x3e80a3",
+          "guessFunc": "0x3e80a3"
+        }
+      ]
+    },
+    "AttackNotifyRange": {
+      "strRVA": "0x7fe3c4",
+      "xrefs": [
+        "0xf5497",
+        "0xf56be"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0xf5497",
+          "guessFunc": "0xf5400"
+        },
+        {
+          "xrefRVA": "0xf56be",
+          "guessFunc": "0xf54c7"
+        }
+      ]
+    }
+  },
+  {
+    "ver": "1.20.4.6074",
+    "imageBase": "0x6f000000",
+    "size": 9375804,
+    "CallForHelp": {
+      "strRVA": "0x80736c",
+      "xrefs": [
+        "0x1c60b3",
+        "0x1c6127"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x1c60b3",
+          "guessFunc": "0x1c60b0"
+        },
+        {
+          "xrefRVA": "0x1c6127",
+          "guessFunc": "0x1c60b0"
+        }
+      ]
+    },
+    "CreepCallForHelp": {
+      "strRVA": "0x807378",
+      "xrefs": [
+        "0x1c6088"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x1c6088",
+          "guessFunc": "0x1c5ee8"
+        }
+      ]
+    },
+    "GetUnitAcquireRange": {
+      "strRVA": "0x818d3c",
+      "xrefs": [
+        "0x2a9b4b",
+        "0x3e8143"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x2a9b4b",
+          "guessFunc": "0x2a9b4b"
+        },
+        {
+          "xrefRVA": "0x3e8143",
+          "guessFunc": "0x3e8143"
+        }
+      ]
+    },
+    "SetUnitAcquireRange": {
+      "strRVA": "0x818c84",
+      "xrefs": [
+        "0x2a9beb",
+        "0x3e81e3"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x2a9beb",
+          "guessFunc": "0x2a9beb"
+        },
+        {
+          "xrefRVA": "0x3e81e3",
+          "guessFunc": "0x3e81e3"
+        }
+      ]
+    },
+    "AttackNotifyRange": {
+      "strRVA": "0x7fe3c4",
+      "xrefs": [
+        "0xf5497",
+        "0xf56be"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0xf5497",
+          "guessFunc": "0xf5400"
+        },
+        {
+          "xrefRVA": "0xf56be",
+          "guessFunc": "0xf54c7"
+        }
+      ]
+    }
+  },
+  {
+    "ver": "1.21.0.6263",
+    "imageBase": "0x6f000000",
+    "size": 9375804,
+    "CallForHelp": {
+      "strRVA": "0x808484",
+      "xrefs": [
+        "0x1c9273",
+        "0x1c92e7"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x1c9273",
+          "guessFunc": "0x1c9270"
+        },
+        {
+          "xrefRVA": "0x1c92e7",
+          "guessFunc": "0x1c9270"
+        }
+      ]
+    },
+    "CreepCallForHelp": {
+      "strRVA": "0x808490",
+      "xrefs": [
+        "0x1c9248"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x1c9248",
+          "guessFunc": "0x1c90a8"
+        }
+      ]
+    },
+    "GetUnitAcquireRange": {
+      "strRVA": "0x819e4c",
+      "xrefs": [
+        "0x2ad11b",
+        "0x3ec093"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x2ad11b",
+          "guessFunc": "0x2ad11b"
+        },
+        {
+          "xrefRVA": "0x3ec093",
+          "guessFunc": "0x3ec093"
+        }
+      ]
+    },
+    "SetUnitAcquireRange": {
+      "strRVA": "0x819d94",
+      "xrefs": [
+        "0x2ad1bb",
+        "0x3ec133"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x2ad1bb",
+          "guessFunc": "0x2ad1bb"
+        },
+        {
+          "xrefRVA": "0x3ec133",
+          "guessFunc": "0x3ec133"
+        }
+      ]
+    },
+    "AttackNotifyRange": {
+      "strRVA": "0x7ff3cc",
+      "xrefs": [
+        "0xf54b7",
+        "0xf56de"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0xf54b7",
+          "guessFunc": "0xf5420"
+        },
+        {
+          "xrefRVA": "0xf56de",
+          "guessFunc": "0xf54e7"
+        }
+      ]
+    }
+  },
+  {
+    "ver": "1.22.0.6328",
+    "imageBase": "0x6f000000",
+    "size": 11956224,
+    "CallForHelp": {
+      "strRVA": "0x91de70",
+      "xrefs": [
+        "0x26c3f3",
+        "0x27b19a",
+        "0x2a333a"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x26c3f3",
+          "guessFunc": "0x26c3f0"
+        },
+        {
+          "xrefRVA": "0x27b19a",
+          "guessFunc": "0x27b197"
+        },
+        {
+          "xrefRVA": "0x2a333a",
+          "guessFunc": "0x2a3230"
+        }
+      ]
+    },
+    "CreepCallForHelp": {
+      "strRVA": "0x91de7c",
+      "xrefs": [
+        "0x26c413",
+        "0x27b174"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x26c413",
+          "guessFunc": "0x26c410"
+        },
+        {
+          "xrefRVA": "0x27b174",
+          "guessFunc": "0x27b160"
+        }
+      ]
+    },
+    "GetUnitAcquireRange": {
+      "strRVA": "0x936300",
+      "xrefs": [
+        "0x3cda4b",
+        "0x70f143"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x3cda4b",
+          "guessFunc": "0x3cda4b"
+        },
+        {
+          "xrefRVA": "0x70f143",
+          "guessFunc": "0x70ef5a"
+        }
+      ]
+    },
+    "SetUnitAcquireRange": {
+      "strRVA": "0x936248",
+      "xrefs": [
+        "0x3cdaeb",
+        "0x70f1e3"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x3cdaeb",
+          "guessFunc": "0x3cdaeb"
+        },
+        {
+          "xrefRVA": "0x70f1e3",
+          "guessFunc": "0x70ef5a"
+        }
+      ]
+    },
+    "AttackNotifyRange": {
+      "strRVA": "0x9231b8",
+      "xrefs": [
+        "0x2f0573",
+        "0x2f99a2",
+        "0x2f9bd6"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x2f0573",
+          "guessFunc": "0x2f0570"
+        },
+        {
+          "xrefRVA": "0x2f99a2",
+          "guessFunc": "0x2f97c0"
+        },
+        {
+          "xrefRVA": "0x2f9bd6",
+          "guessFunc": "0x2f9b60"
+        }
+      ]
+    }
+  },
+  {
+    "ver": "1.23.0.6352",
+    "imageBase": "0x6f000000",
+    "size": 12062720,
+    "CallForHelp": {
+      "strRVA": "0x931fb0",
+      "xrefs": [
+        "0x26d933",
+        "0x27c6da",
+        "0x2a487a"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x26d933",
+          "guessFunc": "0x26d930"
+        },
+        {
+          "xrefRVA": "0x27c6da",
+          "guessFunc": "0x27c6d7"
+        },
+        {
+          "xrefRVA": "0x2a487a",
+          "guessFunc": "0x2a4770"
+        }
+      ]
+    },
+    "CreepCallForHelp": {
+      "strRVA": "0x931fbc",
+      "xrefs": [
+        "0x26d953",
+        "0x27c6b4"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x26d953",
+          "guessFunc": "0x26d950"
+        },
+        {
+          "xrefRVA": "0x27c6b4",
+          "guessFunc": "0x27c6a0"
+        }
+      ]
+    },
+    "GetUnitAcquireRange": {
+      "strRVA": "0x94a448",
+      "xrefs": [
+        "0x3cf76b",
+        "0x7116c3"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x3cf76b",
+          "guessFunc": "0x3cf76b"
+        },
+        {
+          "xrefRVA": "0x7116c3",
+          "guessFunc": "0x7116c3"
+        }
+      ]
+    },
+    "SetUnitAcquireRange": {
+      "strRVA": "0x94a390",
+      "xrefs": [
+        "0x3cf80b",
+        "0x711763"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x3cf80b",
+          "guessFunc": "0x3cf80b"
+        },
+        {
+          "xrefRVA": "0x711763",
+          "guessFunc": "0x711763"
+        }
+      ]
+    },
+    "AttackNotifyRange": {
+      "strRVA": "0x9372f8",
+      "xrefs": [
+        "0x2f1ab3",
+        "0x2faee2",
+        "0x2fb116"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x2f1ab3",
+          "guessFunc": "0x2f1ab0"
+        },
+        {
+          "xrefRVA": "0x2faee2",
+          "guessFunc": "0x2fad00"
+        },
+        {
+          "xrefRVA": "0x2fb116",
+          "guessFunc": "0x2fb0a0"
+        }
+      ]
+    }
+  },
+  {
+    "ver": "1.24.1.6374",
+    "imageBase": "0x6f000000",
+    "size": 12140544,
+    "CallForHelp": {
+      "strRVA": "0x9410e8",
+      "xrefs": [
+        "0x26d9e3",
+        "0x27c79a",
+        "0x2a493a"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x26d9e3",
+          "guessFunc": "0x26d9e0"
+        },
+        {
+          "xrefRVA": "0x27c79a",
+          "guessFunc": "0x27c797"
+        },
+        {
+          "xrefRVA": "0x2a493a",
+          "guessFunc": "0x2a4830"
+        }
+      ]
+    },
+    "CreepCallForHelp": {
+      "strRVA": "0x9410f4",
+      "xrefs": [
+        "0x26da03",
+        "0x27c774"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x26da03",
+          "guessFunc": "0x26da00"
+        },
+        {
+          "xrefRVA": "0x27c774",
+          "guessFunc": "0x27c760"
+        }
+      ]
+    },
+    "GetUnitAcquireRange": {
+      "strRVA": "0x95a8b4",
+      "xrefs": [
+        "0x3d6aef",
+        "0x720117"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x3d6aef",
+          "guessFunc": "0x3d6aef"
+        },
+        {
+          "xrefRVA": "0x720117",
+          "guessFunc": "0x720117"
+        }
+      ]
+    },
+    "SetUnitAcquireRange": {
+      "strRVA": "0x95a7fc",
+      "xrefs": [
+        "0x3d6b8f",
+        "0x7201b7"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x3d6b8f",
+          "guessFunc": "0x3d6b8f"
+        },
+        {
+          "xrefRVA": "0x7201b7",
+          "guessFunc": "0x7201b7"
+        }
+      ]
+    },
+    "AttackNotifyRange": {
+      "strRVA": "0x946430",
+      "xrefs": [
+        "0x2f1b73",
+        "0x2fafa2",
+        "0x2fb1d6"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x2f1b73",
+          "guessFunc": "0x2f1b70"
+        },
+        {
+          "xrefRVA": "0x2fafa2",
+          "guessFunc": "0x2fadc0"
+        },
+        {
+          "xrefRVA": "0x2fb1d6",
+          "guessFunc": "0x2fb160"
+        }
+      ]
+    }
+  },
+  {
+    "ver": "1.24.4.6387",
+    "imageBase": "0x6f000000",
+    "size": 12140544,
+    "CallForHelp": {
+      "strRVA": "0x9410e8",
+      "xrefs": [
+        "0x26da43",
+        "0x27c7fa",
+        "0x2a49ea"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x26da43",
+          "guessFunc": "0x26da40"
+        },
+        {
+          "xrefRVA": "0x27c7fa",
+          "guessFunc": "0x27c7f7"
+        },
+        {
+          "xrefRVA": "0x2a49ea",
+          "guessFunc": "0x2a48e0"
+        }
+      ]
+    },
+    "CreepCallForHelp": {
+      "strRVA": "0x9410f4",
+      "xrefs": [
+        "0x26da63",
+        "0x27c7d4"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x26da63",
+          "guessFunc": "0x26da60"
+        },
+        {
+          "xrefRVA": "0x27c7d4",
+          "guessFunc": "0x27c7c0"
+        }
+      ]
+    },
+    "GetUnitAcquireRange": {
+      "strRVA": "0x95a8cc",
+      "xrefs": [
+        "0x3d6baf",
+        "0x7201d7"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x3d6baf",
+          "guessFunc": "0x3d6baf"
+        },
+        {
+          "xrefRVA": "0x7201d7",
+          "guessFunc": "0x7201d7"
+        }
+      ]
+    },
+    "SetUnitAcquireRange": {
+      "strRVA": "0x95a814",
+      "xrefs": [
+        "0x3d6c4f",
+        "0x720277"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x3d6c4f",
+          "guessFunc": "0x3d6c4f"
+        },
+        {
+          "xrefRVA": "0x720277",
+          "guessFunc": "0x720277"
+        }
+      ]
+    },
+    "AttackNotifyRange": {
+      "strRVA": "0x946430",
+      "xrefs": [
+        "0x2f1c33",
+        "0x2fb062",
+        "0x2fb296"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x2f1c33",
+          "guessFunc": "0x2f1c30"
+        },
+        {
+          "xrefRVA": "0x2fb062",
+          "guessFunc": "0x2fae80"
+        },
+        {
+          "xrefRVA": "0x2fb296",
+          "guessFunc": "0x2fb220"
+        }
+      ]
+    }
+  },
+  {
+    "ver": "1.25.1.6397",
+    "imageBase": "0x6f000000",
+    "size": 12042240,
+    "CallForHelp": {
+      "strRVA": "0x92ef88",
+      "xrefs": [
+        "0x26cd03",
+        "0x27baaa",
+        "0x2a3c9a"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x26cd03",
+          "guessFunc": "0x26cd00"
+        },
+        {
+          "xrefRVA": "0x27baaa",
+          "guessFunc": "0x27baa7"
+        },
+        {
+          "xrefRVA": "0x2a3c9a",
+          "guessFunc": "0x2a3b90"
+        }
+      ]
+    },
+    "CreepCallForHelp": {
+      "strRVA": "0x92ef94",
+      "xrefs": [
+        "0x26cd23",
+        "0x27ba84"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x26cd23",
+          "guessFunc": "0x26cd20"
+        },
+        {
+          "xrefRVA": "0x27ba84",
+          "guessFunc": "0x27ba70"
+        }
+      ]
+    },
+    "GetUnitAcquireRange": {
+      "strRVA": "0x948774",
+      "xrefs": [
+        "0x3d5e3f",
+        "0x71f807"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x3d5e3f",
+          "guessFunc": "0x3d5e3f"
+        },
+        {
+          "xrefRVA": "0x71f807",
+          "guessFunc": "0x71f807"
+        }
+      ]
+    },
+    "SetUnitAcquireRange": {
+      "strRVA": "0x9486bc",
+      "xrefs": [
+        "0x3d5edf",
+        "0x71f8a7"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x3d5edf",
+          "guessFunc": "0x3d5edf"
+        },
+        {
+          "xrefRVA": "0x71f8a7",
+          "guessFunc": "0x71f8a7"
+        }
+      ]
+    },
+    "AttackNotifyRange": {
+      "strRVA": "0x9342d0",
+      "xrefs": [
+        "0x2f0ec3",
+        "0x2fa2f2",
+        "0x2fa526"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x2f0ec3",
+          "guessFunc": "0x2f0ec0"
+        },
+        {
+          "xrefRVA": "0x2fa2f2",
+          "guessFunc": "0x2fa110"
+        },
+        {
+          "xrefRVA": "0x2fa526",
+          "guessFunc": "0x2fa4b0"
+        }
+      ]
+    }
+  },
+  {
+    "ver": "1.26.0.6401",
+    "imageBase": "0x6f000000",
+    "size": 12042240,
+    "CallForHelp": {
+      "strRVA": "0x92ef88",
+      "xrefs": [
+        "0x26cf33",
+        "0x27bcda",
+        "0x2a3eca"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x26cf33",
+          "guessFunc": "0x26cf30"
+        },
+        {
+          "xrefRVA": "0x27bcda",
+          "guessFunc": "0x27bcd7"
+        },
+        {
+          "xrefRVA": "0x2a3eca",
+          "guessFunc": "0x2a3dc0"
+        }
+      ]
+    },
+    "CreepCallForHelp": {
+      "strRVA": "0x92ef94",
+      "xrefs": [
+        "0x26cf53",
+        "0x27bcb4"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x26cf53",
+          "guessFunc": "0x26cf50"
+        },
+        {
+          "xrefRVA": "0x27bcb4",
+          "guessFunc": "0x27bca0"
+        }
+      ]
+    },
+    "GetUnitAcquireRange": {
+      "strRVA": "0x948774",
+      "xrefs": [
+        "0x3d606f",
+        "0x71fa37"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x3d606f",
+          "guessFunc": "0x3d606f"
+        },
+        {
+          "xrefRVA": "0x71fa37",
+          "guessFunc": "0x71fa37"
+        }
+      ]
+    },
+    "SetUnitAcquireRange": {
+      "strRVA": "0x9486bc",
+      "xrefs": [
+        "0x3d610f",
+        "0x71fad7"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x3d610f",
+          "guessFunc": "0x3d610f"
+        },
+        {
+          "xrefRVA": "0x71fad7",
+          "guessFunc": "0x71fad7"
+        }
+      ]
+    },
+    "AttackNotifyRange": {
+      "strRVA": "0x9342d0",
+      "xrefs": [
+        "0x2f10f3",
+        "0x2fa522",
+        "0x2fa756"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x2f10f3",
+          "guessFunc": "0x2f10f0"
+        },
+        {
+          "xrefRVA": "0x2fa522",
+          "guessFunc": "0x2fa340"
+        },
+        {
+          "xrefRVA": "0x2fa756",
+          "guessFunc": "0x2fa6e0"
+        }
+      ]
+    }
+  },
+  {
+    "ver": "1.27.0.52240",
+    "imageBase": "0x6f000000",
+    "size": 13187048,
+    "CallForHelp": {
+      "strRVA": "0xa4ab20",
+      "xrefs": [
+        "0x6510f2",
+        "0x66a972",
+        "0x66a993"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x6510f2",
+          "guessFunc": "0x6510a0"
+        },
+        {
+          "xrefRVA": "0x66a972",
+          "guessFunc": "0x66a96f"
+        },
+        {
+          "xrefRVA": "0x66a993",
+          "guessFunc": "0x66a990"
+        }
+      ]
+    },
+    "CreepCallForHelp": {
+      "strRVA": "0xa4ab2c",
+      "xrefs": [
+        "0x65a543",
+        "0x66a948"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x65a543",
+          "guessFunc": "0x65a540"
+        },
+        {
+          "xrefRVA": "0x66a948",
+          "guessFunc": "0x66a930"
+        }
+      ]
+    },
+    "GetUnitAcquireRange": {
+      "strRVA": "0x96a1d4",
+      "xrefs": [
+        "0x1eba9f",
+        "0x6f7d57"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x1eba9f",
+          "guessFunc": "0x1eba9f"
+        },
+        {
+          "xrefRVA": "0x6f7d57",
+          "guessFunc": "0x6f7d57"
+        }
+      ]
+    },
+    "SetUnitAcquireRange": {
+      "strRVA": "0x96a28c",
+      "xrefs": [
+        "0x1ebb3f",
+        "0x6f7df7"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x1ebb3f",
+          "guessFunc": "0x1ebb3f"
+        },
+        {
+          "xrefRVA": "0x6f7df7",
+          "guessFunc": "0x6f7df7"
+        }
+      ]
+    },
+    "AttackNotifyRange": {
+      "strRVA": "0x98b880",
+      "xrefs": [
+        "0x34d6ac",
+        "0x34d873",
+        "0x35822a"
+      ],
+      "funcs": [
+        {
+          "xrefRVA": "0x34d6ac",
+          "guessFunc": "0x34d61d"
+        },
+        {
+          "xrefRVA": "0x34d873",
+          "guessFunc": "0x34d870"
+        },
+        {
+          "xrefRVA": "0x35822a",
+          "guessFunc": "0x3581b0"
+        }
+      ]
+    }
+  }
+]

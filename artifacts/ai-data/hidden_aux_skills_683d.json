@@ -1,0 +1,190 @@
+{
+  "schema": 1,
+  "map": "DotA v6.83d",
+  "purpose": "Map learnable/UI skill codes to real castable ability codes + OrderId for build_skill_table.py / AI cast",
+  "buildSkillTablePatch": {
+    "file": "War3Analysis/artifacts/ability-orders/build_skill_table.py",
+    "suggestion": "After resolve(), if hero has EXTRA_CAST_SLOTS or HIDDEN_CAST_MAP entry, append extra DotaHeroSkillSlot rows (or replace passive orderId). Do not drop slot>4 extras from dota_data.json when isExtra&&code.",
+    "pythonSnippet": "HIDDEN_CAST = {\n  # (hero, learnOrUiCode): {castCode, orderId, orderStr, target, hotkey, note}\n  ('Nfir','A0EY'): {'also':[('A0FH',852588,'howlofterror','none','X'),('A0F0',852599,'battleroar','none','C')]},\n  ('Nfir','A29J'): {'orderId':852273,'orderStr':'itemheal?','fix':'use vtable 0xD0131','target':'none'},\n}\n# Prefer explicit ORDER_OVERRIDE = {'A29J': ('', 0xD0131, 'none'), 'A0FH': ('howlofterror', 0xD026C, 'none'), ...}"
+  },
+  "orderOverrides": {
+    "A29J": { "orderId": 852273, "orderIdHex": "0xD0131", "target": "none", "action": "0x10", "note": "skills.json marks PASSIVE; engine vtable+0x308 = 0xD0131" },
+    "A0FH": { "orderId": 852588, "orderIdHex": "0xD026C", "orderStr": "howlofterror", "target": "none", "action": "0x10" },
+    "A0F0": { "orderId": 852599, "orderIdHex": "0xD0277", "orderStr": "battleroar", "target": "none", "action": "0x10" },
+    "A0EY": { "orderId": 852164, "orderIdHex": "0xD00C4", "orderStr": "roar", "target": "none", "action": "0x10" },
+    "A0SA": { "orderId": 852600, "orderIdHex": "0xD0278", "orderStr": "channel", "target": "none", "action": "0x10" },
+    "A13D": { "orderId": 852663, "orderIdHex": "0xD02B7", "orderStr": "chemicalrage", "target": "none", "action": "0x10" },
+    "A2JL": { "orderId": 852185, "orderIdHex": "0xD00D9", "orderStr": "acolyteharvest", "target": "none", "action": "0x10", "note": "confirm vs live; map Order=acolyteharvest" },
+    "A1Z2": { "orderId": 852185, "orderIdHex": "0xD00D9", "orderStr": "acolyteharvest", "target": "none", "action": "0x10" },
+    "A1YX": { "orderId": 852490, "orderIdHex": "0xD020A", "orderStr": "ancestralspirit", "target": "unit", "action": "0x12" }
+  },
+  "heroes": [
+    {
+      "hero": "Nfir",
+      "name": "影魔",
+      "entries": [
+        {
+          "uiCode": "A0EY",
+          "uiHotkey": "Z",
+          "uiName": "毁灭阴影 (近)",
+          "castCode": "A0EY",
+          "orderId": 852164,
+          "orderIdHex": "0xD00C4",
+          "orderStr": "roar",
+          "action": "0x10",
+          "relation": "self"
+        },
+        {
+          "uiCode": "A0EY",
+          "uiHotkey": "X",
+          "uiName": "毁灭阴影 (中)",
+          "castCode": "A0FH",
+          "orderId": 852588,
+          "orderIdHex": "0xD026C",
+          "orderStr": "howlofterror",
+          "action": "0x10",
+          "relation": "extra isExtra parent A0EY",
+          "dotaDataSlot": 5
+        },
+        {
+          "uiCode": "A0EY",
+          "uiHotkey": "C",
+          "uiName": "毁灭阴影 (远)",
+          "castCode": "A0F0",
+          "orderId": 852599,
+          "orderIdHex": "0xD0277",
+          "orderStr": "battleroar",
+          "action": "0x10",
+          "relation": "extra isExtra parent A0EY",
+          "dotaDataSlot": 6
+        },
+        {
+          "uiCode": "A29J",
+          "uiHotkey": "R",
+          "uiName": "魂之挽歌",
+          "castCode": "A29J",
+          "orderId": 852273,
+          "orderIdHex": "0xD0131",
+          "orderStr": "(vtable)",
+          "action": "0x10",
+          "relation": "false-passive in skill table",
+          "fakecast": true
+        }
+      ]
+    },
+    {
+      "hero": "N00B",
+      "name": "仙女龙",
+      "entries": [
+        {
+          "uiCode": "A0S9",
+          "uiName": "幻象法球",
+          "castCode": "A0SA",
+          "castHotkey": "E",
+          "castName": "灵动之翼",
+          "orderId": 852600,
+          "orderIdHex": "0xD0278",
+          "orderStr": "channel",
+          "action": "0x10",
+          "relation": "extra parent A0S9 — teleport to orb"
+        }
+      ]
+    },
+    {
+      "hero": "H06S",
+      "name": "舰队统帅",
+      "entries": [
+        {
+          "uiCode": "A11N",
+          "uiName": "X标记",
+          "castCode": "A13D",
+          "castHotkey": "X",
+          "castName": "X标记返回",
+          "orderId": 852663,
+          "orderIdHex": "0xD02B7",
+          "orderStr": "chemicalrage",
+          "action": "0x10",
+          "relation": "extra parent A11N"
+        }
+      ]
+    },
+    {
+      "hero": "N0M0",
+      "name": "灰烬之灵",
+      "entries": [
+        {
+          "uiCode": "A2JK",
+          "uiName": "火之余烬 (放置)",
+          "castCode": "A2JL",
+          "castHotkey": "R",
+          "castName": "火之余烬 (激活)",
+          "orderId": 852185,
+          "orderIdHex": "0xD00D9",
+          "orderStr": "acolyteharvest",
+          "action": "0x10",
+          "relation": "extra parent A2JK"
+        }
+      ]
+    },
+    {
+      "hero": "E02F",
+      "name": "凤凰",
+      "entries": [
+        {
+          "uiCode": "A1RJ",
+          "castCode": "A1Z2",
+          "castHotkey": "F",
+          "castName": "指定 烈火精灵",
+          "orderId": 852185,
+          "orderIdHex": "0xD00D9",
+          "orderStr": "acolyteharvest",
+          "action": "0x10",
+          "relation": "extra"
+        },
+        {
+          "uiCode": "A1YY",
+          "castCode": "A1YX",
+          "castName": "烈火精灵",
+          "orderId": 852490,
+          "orderIdHex": "0xD020A",
+          "orderStr": "ancestralspirit",
+          "action": "0x12",
+          "relation": "extra parent A1YY"
+        }
+      ]
+    },
+    {
+      "hero": "O00P",
+      "name": "变体精灵",
+      "entries": [
+        {
+          "uiCode": "A0KX",
+          "castCode": "A0KW",
+          "castHotkey": "F",
+          "castName": "敏捷转换",
+          "orderId": 852545,
+          "orderIdHex": "0xD0241",
+          "orderStr": "replenishlife",
+          "action": "0x10",
+          "relation": "extra; morph attribute toggle sibling"
+        }
+      ]
+    },
+    {
+      "hero": "H00U",
+      "name": "祈求者",
+      "entries": [
+        {
+          "uiCode": "A21Y",
+          "note": "Invoke installs dynamic spells — see invoker_orb_combos_683d.json; not static extras in dota_data"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "War3Bot/images/dota_data.json isExtra/parentCode",
+    "analyses/dota-6.83d-hero-ability-cast-deep-reverse-and-ai-design.md",
+    "artifacts/ability-orders/orders-1.27.json",
+    "map *AbilityFunc.txt Order="
+  ]
+}

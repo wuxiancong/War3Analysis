@@ -1,0 +1,9 @@
+open "D:\Qt\workspace\War3Launcher\versions\1.27.0.52240\War3Patch.mpq"
+extract "Units\UnitBalance.slk" "D:\Qt\workspace\War3Analysis\artifacts\neutral-stack\ub\UnitBalance.slk"
+extract "Units\UnitWeapons.slk" "D:\Qt\workspace\War3Analysis\artifacts\neutral-stack\uw\UnitWeapons.slk"
+extract "Units\MiscData.txt" "D:\Qt\workspace\War3Analysis\artifacts\neutral-stack\md\MiscData.txt"
+close
+open "D:\Qt\workspace\War3Launcher\versions\1.27.0.52240\war3.mpq"
+extract "Units\UnitBalance.slk" "D:\Qt\workspace\War3Analysis\artifacts\neutral-stack\ub\UnitBalance_war3.slk"
+extract "Units\UnitWeapons.slk" "D:\Qt\workspace\War3Analysis\artifacts\neutral-stack\uw\UnitWeapons_war3.slk"
+close

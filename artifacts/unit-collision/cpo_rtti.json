@@ -1,0 +1,17 @@
+{
+  "1.24.4.6387": {
+    ".?AVCPoSeparate@NIpse@@": "0xA9A504",
+    ".?AVCPoPosCl@NIpse@@": "0xA9A4E4",
+    ".?AVCPoPos@NIpse@@": "0xA9A47C"
+  },
+  "1.26.0.6401": {
+    ".?AVCPoSeparate@NIpse@@": "0xA844E4",
+    ".?AVCPoPosCl@NIpse@@": "0xA844C4",
+    ".?AVCPoPos@NIpse@@": "0xA8445C"
+  },
+  "1.27.0.52240": {
+    ".?AVCPoSeparate@NIpse@@": "0xB7F1A4",
+    ".?AVCPoPosCl@NIpse@@": "0xB7ECD0",
+    ".?AVCPoPos@NIpse@@": "0xB7EC00"
+  }
+}

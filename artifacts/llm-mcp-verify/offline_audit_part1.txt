@@ -1,0 +1,488 @@
+=== 1. A2: war3map.j 中的 EL0 ===
+  共 25 处引用，前 25 处：
+  L1130: integer array EL0
+  L3412: set EL0[GetPlayerId(MDI)]=EL0[GetPlayerId(MDI)]+ROI
+  L10535: set EL0[GetPlayerId(VV1)]=0
+  L12332: if UC1<EL0[id]then
+  L12333: set EL0[id]=UC1
+  L12338: if UC1<EL0[id]then
+  L12339: set EL0[id]=UC1
+  L12521: set EL0[GetPlayerId(EP0[i])]=EL0[GetPlayerId(EP0[i])]+R2I(ROI/NPI)
+  L12985: set EL0[GetPlayerId(BO[TGI])]=EL0[GetPlayerId(BO[TGI])]+AC1/VW1
+  L12995: set EL0[GetPlayerId(CO[TGI])]=EL0[GetPlayerId(CO[TGI])]+AC1/VW1
+  L13049: set EL0[GetPlayerId(GetOwningPlayer(GetEnumUnit()))]=EL0[GetPlayerId(GetOwningPlayer(GetEnumUnit()))]+F80
+  L13228: local integer AEO=ADO-EL0[GetPlayerId(I6O)]
+  L13461: set EL0[GetPlayerId(AB1)]=EL0[GetPlayerId(AB1)]+AC1
+  L13729: set EL0[GetPlayerId(AB1)]=EL0[GetPlayerId(AB1)]+150
+  L15654: set EL0[GetPlayerId(GetOwningPlayer(GetSoldUnit()))]=IMaxBJ(0,EL0[GetPlayerId(GetOwningPlayer(GetSoldUnit()))]-WS[GV1(GetHeroLevel(K1[GetPla
+  L22351: set EL0[GetPlayerId(GetOwningPlayer(P7I))]=EL0[GetPlayerId(GetOwningPlayer(P7I))]+190
+  L24449: set s2=" |c00838B8B("+PYO+"/"+PJO+"/"+PKO+" - "+PLO+"/"+PMO+" - |r|c00FFDC00"+I2S(EL0[id])+"|r |c00838B8B)|r"
+  L30378: set GV2=EL0[GetPlayerId(Me)]
+  L30379: set EL0[GetPlayerId(Me)]=EL0[GetPlayerId(GH2)]
+  L30380: set EL0[GetPlayerId(GH2)]=GV2
+  L32095: set GV2=EL0[GetPlayerId(p1)]
+  L32096: set EL0[GetPlayerId(p1)]=EL0[GetPlayerId(p2)]
+  L32097: set EL0[GetPlayerId(p2)]=GV2
+  L42163: set EL0[GetPlayerId(p)]=EL0[GetPlayerId(p)]+ROI
+  L42195: set EL0[GetPlayerId(p2)]=EL0[GetPlayerId(p2)]+ROI
+
+=== 2. A6: war3map.j 中的 FL1 定义与事件键 ===
+  L6819: function FL1 takes string FM1,integer U0I returns nothing
+  L6820: call StoreInteger(OS,"Data",FM1,U0I)
+  L6821: if T3I(WO)==false then
+  L6822: call RTI()
+  L6823: endif
+  L6824: if GetLocalPlayer()==WO then
+  L6825: call SyncStoredInteger(OS,"Data",FM1)
+  L6826: endif
+  L6827: endfunction
+  FL1 静态字符串键 (28 种):
+    "AA_Hits": 1 处, 首现 L49041 -> call FL1("AA_Hits"+I2S(GetPlayerId(GetOwningPlayer(SFI))),CTI[GetPlayerId(GetOwningPlayer(SFI))])
+    "AA_Total": 1 处, 首现 L49070 -> call FL1("AA_Total"+I2S(GetPlayerId(GetOwningPlayer(SFI))),CRI[GetPlayerId(GetOwningPlayer(SFI))])
+    "AegisOff": 3 处, 首现 L13875 -> call FL1("AegisOff",GetPlayerId(GetOwningPlayer(SFI)))
+    "AegisOn": 1 处, 首现 L19734 -> call FL1("AegisOn",GetPlayerId(GetOwningPlayer(SFI)))
+    "Assist": 1 处, 首现 L12413 -> call FL1("Assist"+I2S(O91),UY1)
+    "Ban": 6 处, 首现 L34037 -> call FL1("Ban"+I2S(GetPlayerId(GetOwningPlayer(GetSoldUnit()))),DC0[i])
+    "C": 1 处, 首现 L10623 -> call FL1("C"+"K"+I2S(A[GetPlayerId(GetTriggerPlayer())])+"D"+I2S(B[GetPlayerId(GetTriggerPlayer())])+"N"+I2S((LoadIntege
+    "CSD": 2 处, 首现 L23041 -> call FL1("CSD"+I2S(id),B[id])
+    "CSK": 2 处, 首现 L23040 -> call FL1("CSK"+I2S(id),A[id])
+    "Courier": 2 处, 首现 L14136 -> call FL1("Courier"+I2S(GetPlayerId(GetOwningPlayer(GetTriggerUnit()))),GetPlayerId(GetOwningPlayer(GetKillingUnit())))
+    "DRI_": 1 处, 首现 L17253 -> call FL1("DRI_"+I2S(GetPlayerId(GetOwningPlayer(SFI))),FR0[E71(EB1(BA1))])
+    "GameStart": 1 处, 首现 L27825 -> call FL1("GameStart",1)
+    "HA_Hits": 1 处, 首现 L69584 -> call FL1("HA_Hits"+I2S(GetPlayerId(GetOwningPlayer(SFI))),V0I[GetPlayerId(GetOwningPlayer(SFI))])
+    "HA_Total": 1 处, 首现 L69589 -> call FL1("HA_Total"+I2S(GetPlayerId(GetOwningPlayer(SFI))),VII[GetPlayerId(GetOwningPlayer(SFI))])
+    "Hero": 1 处, 首现 L13355 -> call FL1("Hero"+I2S(GetPlayerId(I6O)),GetPlayerId(AB1))
+    "Level": 1 处, 首现 L29353 -> call FL1("Level"+I2S(GetHeroLevel(GetTriggerUnit())),GetPlayerId(GetOwningPlayer(GetTriggerUnit())))
+    "Mode": 2 处, 首现 L33158 -> call FL1("Mode"+EL,0)
+    "NK": 2 处, 首现 L23042 -> call FL1("NK"+I2S(id),(LoadInteger(LY,(400+id),(79))))
+    "PUI_": 2 处, 首现 L16023 -> call FL1("PUI_"+I2S(GetPlayerId(GetOwningPlayer(EGO))),FR0[E71(E81)])
+    "Pick": 4 处, 首现 L36015 -> call FL1("Pick"+I2S(GetPlayerId(p)),DC0[U70[L32]])
+    "Pool": 1 处, 首现 L36376 -> call FL1("Pool"+I2S(i),DC0[U70[i]])
+    "Rax": 12 处, 首现 L23387 -> call FL1("Rax"+I2S(0)+I2S(0)+I2S(1),GetPlayerId(GetOwningPlayer(GetKillingUnit())))
+    "Roshan": 2 处, 首现 L13942 -> call FL1("Roshan",0)
+    "Rune": 6 处, 首现 L17075 -> call FL1("Rune"+FRO+"1",GetPlayerId(p))
+    "SWAP_": 2 处, 首现 L30549 -> call FL1("SWAP_"+I2S(GetPlayerId(GetOwningPlayer(u1)))+"_"+I2S(GetPlayerId(GetOwningPlayer(u2))),GetUnitTypeId(u1))
+    "Throne": 4 处, 首现 L23480 -> call FL1("Throne",75)
+    "Tower": 20 处, 首现 L28610 -> call FL1("Tower"+I2S(0)+I2S(1)+I2S(0),GetPlayerId(GetOwningPlayer(GetKillingUnit())))
+    "Tree": 4 处, 首现 L23460 -> call FL1("Tree",75)
+  FL1 动态键调用 (0 处，前 15 处):
+
+=== 3. A5/B1: 买活 D7O / GN1 / 触发注册 ===
+  --- function D7O ---
+  L15630: function D7O takes nothing returns nothing
+  L15631: if GetUnitTypeId(GetSoldUnit())==1747990581 then
+  L15632: if K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))]!=null and IC1(K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))])==false then
+  L15633: call DIO(K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))],true)
+  L15634: endif
+  L15635: call KillUnit(GetSoldUnit())
+  L15636: elseif GetUnitTypeId(GetSoldUnit())==1747993174 then
+  L15637: if K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))]!=null then
+  L15638: call D4O(K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))])
+  L15639: endif
+  L15640: call KillUnit(GetSoldUnit())
+  L15641: elseif GetUnitTypeId(GetSoldUnit())==1747993669 then
+  L15642: if K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))]!=null then
+  L15643: call DIO((LoadUnitHandle(LY,(GetHandleId(GetSellingUnit())),(8002+(LoadInteger(LY,(GetHandleId(GetSellingUnit())),(8000)))-1))),false)
+  L15644: endif
+  L15645: call KillUnit(GetSoldUnit())
+  L15646: elseif GZ1(GetUnitTypeId(GetSoldUnit()))then
+  L15647: if K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))]!=null then
+  L15648: if IC1(K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))])==true and GetOwningPlayer(GetSoldUnit())==GetOwningPlayer(GetSellingUnit())and((LoadInteger(LY,(GetHandleId((K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))]))),((4304))))==1)==false and(XS[GetPlayerId((GetOwningPlayer(GetSoldUnit())))]==false)then
+  L15649: call D6O(K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))])
+  L15650: set LW0=true
+  L15651: call ReviveHero(K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))],GetUnitX(GetSoldUnit()),GetUnitY(GetSoldUnit()),true)
+  L15652: set LW0=false
+  L15653: call SetUnitState(K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))],UNIT_STATE_MANA,10000)
+  L15654: set EL0[GetPlayerId(GetOwningPlayer(GetSoldUnit()))]=IMaxBJ(0,EL0[GetPlayerId(GetOwningPlayer(GetSoldUnit()))]-WS[GV1(GetHeroLevel(K1[GetPlayerId(GetOwningPlayer(GetSellingUnit()))]))])
+  L15655: call GN1(GetOwningPlayer(GetSoldUnit()))
+  L15656: else
+  L15657: call SetPlayerState(GetOwningPlayer(GetSoldUnit()),PLAYER_STATE_RESOURCE_GOLD,GetPlayerState(GetOwningPlayer(GetSoldUnit()),PLAYER_STATE_RESOURCE_GOLD)+WS[GV1(GetHeroLevel(K1[GetPlayerId(GetOwningPlayer(GetSellingUnit()))]))])
+  L15658: if(XS[GetPlayerId((GetOwningPlayer(GetSoldUnit())))]==false)==false then
+  L15659: call PZI(GetOwningPlayer(GetSoldUnit()),GetObjectName(1848659508))
+  L15660: endif
+  L15661: endif
+  L15662: endif
+  L15663: call KillUnit(GetSoldUnit())
+  L15664: endif
+  L15665: endfunction
+  --- function GN1 ---
+  L7226: function GN1 takes player p returns nothing
+  L7227: local integer id=GetPlayerId(p)
+  L7228: local unit GJ1=D30[id]
+  L7229: local unit SFI=K1[id]
+  L7230: local integer SUI=GetHeroLevel(SFI)
+  L7231: local integer i=0
+  L7232: local trigger t=CreateTrigger()
+  L7233: local integer S5I=GetHandleId(t)
+  L7234: call GH1(SFI)
+  L7235: loop
+  L7236: exitwhen i>59
+  L7237: call RemoveUnitFromStock(GJ1,ZS[i])
+  L7238: set i=i+1
+  L7239: endloop
+  L7240: call TriggerAddCondition(t,Condition(function GM1))
+  L7241: call TriggerRegisterTimerEvent(t,360,false)
+  L7242: call SaveInteger(LY,(S5I),(34),(id))
+  L7243: set VS[id]=1747993652
+  L7244: call RemoveUnitFromStock(GJ1,1747993652)
+  L7245: call AddUnitToStock(GJ1,1747993652,0,1)
+  L7246: set SFI=null
+  L7247: set GJ1=null
+  L7248: set t=null
+  L7249: endfunction
+  --- function GV1 ---
+  L7138: function GV1 takes integer SUI returns integer
+  L7139: local real GW1=TimerGetElapsed(M)-N
+  L7140: local real BX1=(R2I(GW1)/60)-(1/2)
+  L7141: local real GX1=100+SUI*SUI*1.5+BX1*15
+  L7142: local integer MLI
+  L7143: set MLI=R2I(GX1/50)
+  L7144: set MLI=IMinBJ(MLI,59)
+  L7145: set MLI=IMaxBJ(MLI,0)
+  L7146: return MLI
+  L7147: endfunction
+  [REF] L786: integer array WS
+  [REF] L7226: function GN1 takes player p returns nothing
+  [REF] L15630: function D7O takes nothing returns nothing
+  [REF] L15655: call GN1(GetOwningPlayer(GetSoldUnit()))
+  [REF] L16197: call D7O()
+
+=== 4. A5/B2: Glyph JQO / JSO / JTO ===
+  --- function JQO ---
+  L20990: function JQO takes nothing returns nothing
+  L20991: if GetSpellAbilityId()==1093743665 or GetSpellAbilityId()==1093752649 then
+  L20992: call JPO()
+  L20993: endif
+  L20994: endfunction
+  --- function JSO ---
+  L20900: function JSO takes nothing returns nothing
+  L20901: local trigger t=CreateTrigger()
+  L20902: local integer S5I=GetHandleId(t)
+  L20903: local unit JMO=GetEnumUnit()
+  L20904: local string s
+  L20905: call UnitAddAbility(JMO,1093744466)
+  L20906: call UnitAddAbility(JMO,1093809222)
+  L20907: if TII(NG0)then
+  L20908: set s="effects\\GlyphSent.mdx"
+  L20909: else
+  L20910: set s="effects\\GlyphScourge.mdx"
+  L20911: endif
+  L20912: call SaveEffectHandle(LY,(S5I),(32),(AddSpecialEffectTarget(s,JMO,"origin")))
+  L20913: call SaveUnitHandle(LY,(S5I),(134),(JMO))
+  L20914: call TriggerRegisterUnitEvent(t,JMO,EVENT_UNIT_DEATH)
+  L20915: call TriggerRegisterTimerEvent(t,NV0,false)
+  L20916: call TriggerAddCondition(t,Condition(function JLO))
+  L20917: set t=null
+  L20918: set JMO=null
+  L20919: endfunction
+  --- function JTO ---
+  L20920: function JTO takes unit JRO,player p returns nothing
+  L20921: local integer i
+  L20922: if TII(p)then
+  L20923: set i=1
+  L20924: if JRO!=D30[i]then
+  L20925: call IssueImmediateOrder(D30[i],"coldarrows")
+  L20926: endif
+  L20927: set i=2
+  L20928: if JRO!=D30[i]then
+  L20929: call IssueImmediateOrder(D30[i],"coldarrows")
+  L20930: endif
+  L20931: set i=3
+  L20932: if JRO!=D30[i]then
+  L20933: call IssueImmediateOrder(D30[i],"coldarrows")
+  L20934: endif
+  L20935: set i=4
+  L20936: if JRO!=D30[i]then
+  L20937: call IssueImmediateOrder(D30[i],"coldarrows")
+  L20938: endif
+  L20939: set i=5
+  L20940: if JRO!=D30[i]then
+  L20941: call IssueImmediateOrder(D30[i],"coldarrows")
+  L20942: endif
+  L20943: else
+  L20944: set i=7
+  L20945: if JRO!=D30[i]then
+  L20946: call IssueImmediateOrder(D30[i],"coldarrows")
+  L20947: endif
+  L20948: set i=8
+  L20949: if JRO!=D30[i]then
+  L20950: call IssueImmediateOrder(D30[i],"coldarrows")
+  L20951: endif
+  L20952: set i=9
+  L20953: if JRO!=D30[i]then
+  L20954: call IssueImmediateOrder(D30[i],"coldarrows")
+  L20955: endif
+  L20956: set i=10
+  L20957: if JRO!=D30[i]then
+  L20958: call IssueImmediateOrder(D30[i],"coldarrows")
+  L20959: endif
+  L20960: set i=11
+  L20961: if JRO!=D30[i]then
+  L20962: call IssueImmediateOrder(D30[i],"coldarrows")
+  L20963: endif
+  L20964: endif
+  L20965: endfunction
+
+=== 5. B3: war3map.j 信使相关 ===
+  n00I (1848651849): 3 处
+    L3691: return GetUnitTypeId(SWI)==1848651849 or GetUnitTypeId(SWI)==1848652338 or GetUnitTypeId(SWI)==1848652337 or GetUnitTypeId(SWI)==1
+    L19066: return 1848651849
+    L19330: if WSO==1848651849 then
+  n022 (1848652338): 3 处
+    L3691: return GetUnitTypeId(SWI)==1848651849 or GetUnitTypeId(SWI)==1848652338 or GetUnitTypeId(SWI)==1848652337 or GetUnitTypeId(SWI)==1
+    L19068: return 1848652338
+    L19332: elseif WSO==1848652338 then
+  n021 (1848652337): 3 处
+    L3691: return GetUnitTypeId(SWI)==1848651849 or GetUnitTypeId(SWI)==1848652338 or GetUnitTypeId(SWI)==1848652337 or GetUnitTypeId(SWI)==1
+    L19070: return 1848652337
+    L19334: elseif WSO==1848652337 then
+  n004 (1848651828): 14 处
+    L5352: return GetUnitTypeId(B71)==1848651828 or GetUnitTypeId(B71)==1848652088 or GetUnitTypeId(B71)==1848652099 or GetUnitTypeId(B71)==1
+    L5602: return C11==1848651828 or C11==1848652103 or C11==1848652099 or C11==1848652088 or C11==1697656907 or C11==1697656905 or C11==1697
+    L8595: call SYI(1848651828,1,DT0[10])
+    L30103: if(GetUnitTypeId(GetEnumUnit())==1848651828)then
+    L30346: if GetUnitTypeId(GetEnumUnit())==1848651828 then
+    L38193: if(GetUnitTypeId(GetEnumUnit())==1848651828)then
+  n018 (1848652088): 13 处
+    L5352: return GetUnitTypeId(B71)==1848651828 or GetUnitTypeId(B71)==1848652088 or GetUnitTypeId(B71)==1848652099 or GetUnitTypeId(B71)==1
+    L5602: return C11==1848651828 or C11==1848652103 or C11==1848652099 or C11==1848652088 or C11==1697656907 or C11==1697656905 or C11==1697
+    L8596: call SYI(1848652088,1.1,DT0[10])
+    L30106: if(GetUnitTypeId(GetEnumUnit())==1848652088)then
+    L52609: if((GetUnitTypeId(GetFilterUnit())==1848652088))then
+    L52748: if((GetUnitTypeId(GetFilterUnit())==1848652088))then
+  n01C (1848652099): 14 处
+    L5352: return GetUnitTypeId(B71)==1848651828 or GetUnitTypeId(B71)==1848652088 or GetUnitTypeId(B71)==1848652099 or GetUnitTypeId(B71)==1
+    L5602: return C11==1848651828 or C11==1848652103 or C11==1848652099 or C11==1848652088 or C11==1697656907 or C11==1697656905 or C11==1697
+    L8597: call SYI(1848652099,1.2,DT0[10])
+    L30109: if(GetUnitTypeId(GetEnumUnit())==1848652099)then
+    L52606: if((GetUnitTypeId(GetFilterUnit())==1848652099))then
+    L52745: if((GetUnitTypeId(GetFilterUnit())==1848652099))then
+  n01G (1848652103): 13 处
+    L5352: return GetUnitTypeId(B71)==1848651828 or GetUnitTypeId(B71)==1848652088 or GetUnitTypeId(B71)==1848652099 or GetUnitTypeId(B71)==1
+    L5602: return C11==1848651828 or C11==1848652103 or C11==1848652099 or C11==1848652088 or C11==1697656907 or C11==1697656905 or C11==1697
+    L8598: call SYI(1848652103,1.3,DT0[10])
+    L30112: if(GetUnitTypeId(GetEnumUnit())==1848652103)then
+    L52603: if((GetUnitTypeId(GetFilterUnit())==1848652103))then
+    L52801: call CreateNUnitsAtLoc(1,1848652103,GetOwningPlayer(GetTriggerUnit()),BFO,bj_UNIT_FACING)
+
+=== 6. B4: TP 回城卷轴相关 (war3map.j) ===
+  匹配 69 处（前 20 处）：
+  L1565: constant real MS0=575
+  L6085: return IB1==1095331943 or IB1==1093677654 or IB1==1094938741 or IB1==1093744708 or IB1==1093750613 or IB1==1095328633 or IB1==1093
+  L8498: set DQ0[i]="Lightning Bolt has a mini-stun that can be used against channeling spells and teleporting heroes."
+  L8522: set DQ0[i]="Use Morph Replicate to take the location of your Replicated unit, making it great for a quick escape or simply as a fr
+  L8693: set DT0[18]=1747989575
+  L8725: set DU0[i]="Teleportation shows allies and enemies where you intend to go, so if you want to surprise enemies, teleport where they
+  L9246: set DP0[i]="Void is your primary source of damage early game and can be used to interrupt spells and teleports with its mini-stun.
+  L9272: set DQ0[i]="Use the command -ma to find your opponents' level for potential LVL? Death targets. Its mini-stun will also interrupt 
+  L9422: set DU0[i]="Your ultimate can also be used to stun opponents in certain situations, such as interrupting channeling spells and tel
+  L9580: set DP0[i]="Poof is both a teleport and damage spell and is great against neutrals. Poof to yourself to deal double the damage (fr
+  L9593: set DQ0[i]="In addition to slowing and damaging opponents, Poison Touch will allow you to interrupt channeling spells and teleport
+  L9630: set DQ0[i]="Vacuum is an extremely powerful skill that can be used for initiating and combining with other spells. It can also int
+  L9746: set E00[i]="The first target of your Chain Frost can interrupt channeling and teleport spells if absolutely necessary."
+  L10242: set ED0[EE0]=1093677647
+  L15081: set FR0[GO0]=1227901525
+  L22203: if GetSpellAbilityId()==1093677647 then
+  L23547: call RemoveUnit(CreateUnitAtLoc(DO,1852534636,BFO,bj_UNIT_FACING))
+  L23548: call RemoveUnit(CreateUnitAtLoc(DO,1852534626,BFO,bj_UNIT_FACING))
+  L23549: call RemoveUnit(CreateUnitAtLoc(DO,1852534644,BFO,bj_UNIT_FACING))
+  L23646: call SetUnitPosition(CreateUnit(DO,1852534636,x,y,0),x,y)
+
+=== 7. 1.27 Game.dll OrderId 表核查 ===
+  coldarrows           -> [('0x46B931', '0x000D0113'), ('0x46B931', '0x000D0114'), ('0x46B931', '0x000D0115')]
+  coldarrowstarg       -> [('0x46B920', '0x000D0113'), ('0x46B920', '0x000D0114'), ('0x46B920', '0x000D0265')]
+  frostarrows          -> []
+  load                 -> [('0x46A721', '0x000D004C'), ('0x46A721', '0x000D004E'), ('0x46A721', '0x000D004F')]
+  unload               -> [('0x46A732', '0x000D004E'), ('0x46A732', '0x000D004F'), ('0x46A732', '0x000D0050')]
+  unloadall            -> [('0x46A743', '0x000D004F'), ('0x46A743', '0x000D0050'), ('0x46A743', '0x000D0051')]
+  unloadallinstant     -> [('0x46A754', '0x000D0050'), ('0x46A754', '0x000D0051'), ('0x46A754', '0x000D0052')]
+  blink                -> [('0x46B1B0', '0x000D00CB'), ('0x46B1B0', '0x000D00F6'), ('0x46B1B0', '0x000D022D')]
+  berserk              -> [('0x46ABFA', '0x000D0083'), ('0x46ABFA', '0x000D0084'), ('0x46ABFA', '0x000D0085')]
+  windwalk             -> [('0x46AE2B', '0x000D00A0'), ('0x46AE2B', '0x000D00A1'), ('0x46AE2B', '0x000D00A2')]
+  frenzy               -> [('0x46B799', '0x000D011D'), ('0x46B799', '0x000D0251'), ('0x46B799', '0x000D0252')]
+  useslot1             -> []
+  smart                -> []
+  attack               -> [('0x46A57A', '0x000D000F'), ('0x46A57A', '0x000D0010')]
+  move                 -> [('0x46A5BC', '0x000D0012'), ('0x46A5BC', '0x000D0014'), ('0x46A5BC', '0x000D01F2')]
+  stop                 -> [('0x46A864', '0x000D0004'), ('0x46A864', '0x000D000C'), ('0x46A864', '0x000D01F9')]
+  holdposition         -> [('0x46A5EF', '0x000D0016'), ('0x46A5EF', '0x000D0019'), ('0x46A5EF', '0x000D001A')]
+  dropitem             -> [('0x46A677', '0x000D001F'), ('0x46A677', '0x000D0021'), ('0x46A677', '0x000D004B')]
+  moveslot1            -> []
+  townportal           -> []
+  channel              -> [('0x46BB84', '0x000D0104'), ('0x46BB84', '0x000D0277'), ('0x46BB84', '0x000D0278')]
+
+=== 8. 1.27 GetFloatGameState (0x1E2500) 反汇编 ===
+  6F1E2500: 55                 push        ebp
+  6F1E2501: 8B EC              mov         ebp,esp
+  6F1E2503: 8B 0D 38 42 BE 6F  mov         ecx,dword ptr ds:[6FBE4238h]
+  6F1E2509: E8 F2 0C FE FF     call        6F1C3200
+  6F1E250E: 8B 55 08           mov         edx,dword ptr [ebp+8]
+  6F1E2511: 8D 4A FE           lea         ecx,[edx-2]
+  6F1E2514: 85 C9              test        ecx,ecx
+  6F1E2516: 74 04              je          6F1E251C
+  6F1E2518: 33 C0              xor         eax,eax
+  6F1E251A: 5D                 pop         ebp
+  6F1E251B: C3                 ret
+  6F1E251C: 52                 push        edx
+  6F1E251D: 8B C8              mov         ecx,eax
+  6F1E251F: E8 AC 51 08 00     call        6F2676D0
+  6F1E2524: 8D 4D 08           lea         ecx,[ebp+8]
+  6F1E2527: 51                 push        ecx
+  6F1E2528: 8B C8              mov         ecx,eax
+  6F1E252A: E8 C1 88 E5 FF     call        6F03ADF0
+  6F1E252F: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  6F1E2532: 5D                 pop         ebp
+  6F1E2533: C3                 ret
+  6F1E2534: CC                 int         3
+  6F1E2535: CC                 int         3
+  6F1E2536: CC                 int         3
+  6F1E2537: CC                 int         3
+  6F1E2538: CC                 int         3
+  6F1E2539: CC                 int         3
+  6F1E253A: CC                 int         3
+  6F1E253B: CC                 int         3
+  6F1E253C: CC                 int         3
+  6F1E253D: CC                 int         3
+  6F1E253E: CC                 int         3
+  6F1E253F: CC                 int         3
+  6F1E2540: 55                 push        ebp
+  6F1E2541: 8B EC              mov         ebp,esp
+  6F1E2543: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  6F1E2546: 8B 89 08 02 00 00  mov         ecx,dword ptr [ecx+00000208h]
+  6F1E254C: 89 08              mov         dword ptr [eax],ecx
+  6F1E254E: 5D                 pop         ebp
+  6F1E254F: C2 04 00           ret         4
+  6F1E2552: CC                 int         3
+  6F1E2553: CC                 int         3
+  6F1E2554: CC                 int         3
+  6F1E2555: CC                 int         3
+  6F1E2556: CC                 int         3
+  6F1E2557: CC                 int         3
+  6F1E2558: CC                 int         3
+  6F1E2559: CC                 int         3
+  6F1E255A: CC                 int         3
+  6F1E255B: CC                 int         3
+  6F1E255C: CC                 int         3
+  6F1E255D: CC                 int         3
+  6F1E255E: CC                 int         3
+  6F1E255F: CC                 int         3
+  6F1E2560: 55                 push        ebp
+  6F1E2561: 8B EC              mov         ebp,esp
+  6F1E2563: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+  6F1E2566: 5D                 pop         ebp
+  6F1E2567: E9 94 03 48 00     jmp         6F662900
+  6F1E256C: CC                 int         3
+  6F1E256D: CC                 int         3
+  6F1E256E: CC                 int         3
+  6F1E256F: CC                 int         3
+  6F1E2570: 55                 push        ebp
+  6F1E2571: 8B EC              mov         ebp,esp
+  6F1E2573: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+  6F1E2576: 5D                 pop         ebp
+  6F1E2577: E9 E4 03 48 00     jmp         6F662960
+  6F1E257C: CC                 int         3
+  6F1E257D: CC                 int         3
+  6F1E257E: CC                 int         3
+  6F1E257F: CC                 int         3
+  6F1E2580: 55                 push        ebp
+  6F1E2581: 8B EC              mov         ebp,esp
+  6F1E2583: 81 EC 18 05 00 00  sub         esp,518h
+  6F1E2589: A1 74 A7 B6 6F     mov         eax,dword ptr ds:[6FB6A774h]
+  6F1E258E: 33 C5              xor         eax,ebp
+  6F1E2590: 89
+
+=== 9. 1.27 CUnit::FindAbility (0x46F440) 反汇编 ===
+  6F46F440: 55                 push        ebp
+  6F46F441: 8B EC              mov         ebp,esp
+  6F46F443: 56                 push        esi
+  6F46F444: 8B 75 08           mov         esi,dword ptr [ebp+8]
+  6F46F447: 81 FE 75 62 4E 41  cmp         esi,414E6275h
+  6F46F44D: 7F 44              jg          6F46F493
+  6F46F44F: 74 5C              je          6F46F4AD
+  6F46F451: 81 FE 75 62 48 41  cmp         esi,41486275h
+  6F46F457: 7F 14              jg          6F46F46D
+  6F46F459: 74 52              je          6F46F4AD
+  6F46F45B: 81 FE 75 62 45 41  cmp         esi,41456275h
+  6F46F461: 74 4A              je          6F46F4AD
+  6F46F463: 81 FE 75 62 47 41  cmp         esi,41476275h
+  6F46F469: 74 42              je          6F46F4AD
+  6F46F46B: EB 62              jmp         6F46F4CF
+  6F46F46D: 81 FE 72 65 48 41  cmp         esi,41486572h
+  6F46F473: 74 13              je          6F46F488
+  6F46F475: 81 FE 76 6E 49 41  cmp         esi,41496E76h
+  6F46F47B: 75 52              jne         6F46F4CF
+  6F46F47D: 8B 81 F8 01 00 00  mov         eax,dword ptr [ecx+000001F8h]
+  6F46F483: 5E                 pop         esi
+  6F46F484: 5D                 pop         ebp
+  6F46F485: C2 14 00           ret         14h
+  6F46F488: 8B 81 F0 01 00 00  mov         eax,dword ptr [ecx+000001F0h]
+  6F46F48E: 5E                 pop         esi
+  6F46F48F: 5D                 pop         ebp
+  6F46F490: C2 14 00           ret         14h
+  6F46F493: 81 FE 6B 74 61 41  cmp         esi,4161746Bh
+  6F46F499: 7F 28              jg          6F46F4C3
+  6F46F49B: 74 1B              je          6F46F4B8
+  6F46F49D: 81 FE 75 62 4F 41  cmp         esi,414F6275h
+  6F46F4A3: 74 08              je          6F46F4AD
+  6F46F4A5: 81 FE 75 62 55 41  cmp         esi,41556275h
+  6F46F4AB: 75 22              jne         6F46F4CF
+  6F46F4AD: 8B 81 F4 01 00 00  mov         eax,dword ptr [ecx+000001F4h]
+  6F46F4B3: 5E                 pop         esi
+  6F46F4B4: 5D                 pop         ebp
+  6F46F4B5: C2 14 00           ret         14h
+  6F46F4B8: 8B 81 E8 01 00 00  mov         eax,dword ptr [ecx+000001E8h]
+  6F46F4BE: 5E                 pop         esi
+  6F46F4BF: 5D                 pop         ebp
+  6F46F4C0: C2 14 00           ret         14h
+  6F46F4C3: 81 FE 76 6F 6D 41  cmp         esi,416D6F76h
+  6F46F4C9: 0F 84 92 00 00 00  je          6F46F561
+  6F46F4CF: 8B 81 E0 01 00 00  mov         eax,dword ptr [ecx+000001E0h]
+  6F46F4D5: 81 C1 DC 01 00 00  add         ecx,1DCh
+  6F46F4DB: 53                 push        ebx
+  6F46F4DC: 57                 push        edi
+  6F46F4DD: 23 01              and         eax,dword ptr [ecx]
+  6F46F4DF: 83 F8 FF           cmp         eax,0FFFFFFFFh
+  6F46F4E2: 74 6B              je          6F46F54F
+  6F46F4E4: E8 67 4C BD FF     call        6F044150
+  6F46F4E9: 8B F8              mov         edi,eax
+  6F46F4EB: 85 FF              test        edi,edi
+  6F46F4ED: 74 60              je          6F46F54F
+  6F46F4EF: 90                 nop
+  6F46F4F0: 8B 47 28           mov         eax,dword ptr [edi+28h]
+  6F46F4F3: 8D 4F 24           lea         ecx,[edi+24h]
+  6F46F4F6: 23 01              and         eax,dword ptr [ecx]
+  6F46F4F8: 8B DF              mov         ebx,edi
+  6F46F4FA: 83 F8 FF           cmp         eax,0FFFFFFFFh
+  6F46F4FD: 75 04              jne         6F46F503
+  6F46F4FF: 33 FF              xor         edi,edi
+  6F46F501: EB 07              jmp         6F46F50A
+  6F46F503: E8 48 4C BD FF     call        6F044150
+  6F46F508: 8B F8              mov         edi,eax
+  6F46F50A: F6 43 20 20        test        byte ptr [ebx+20h],20h
+  6F46F50E: 74 06              je          6F46F516
+  6F46F510: 83 7D 18 00        cmp         dword ptr [ebp+18h],0
+  6F46F514: EB 04              jmp         6F46F51A
+  6F46F516: 83 7D 14 00        cmp         dword ptr [ebp+14h],0
+  6F46F51A: 74 2F              je          6F46F54B
+  6F46F51C: 8B 43 34           mov         eax,dword ptr [ebx+34h]
+  6F46F51F: 8B CB              mov         ecx,ebx
+  6F46F521: 89 45 08           mov         dword ptr [ebp+8],eax
+  6F46F524: 8B 03              mov         eax,dword ptr [ebx]
+  6F46F526: FF 50 1C           call        dword ptr [eax+1Ch]
+  6F46F529: 83 7D 10 00        cmp         dword ptr [ebp+10h],0
+  6F46F52D: 74 05              je          6F46F534
+  6F46F52F: 39 75 08           cmp         dword ptr [ebp+8],esi
+  6F46F532: EB 02              jmp         6F46F536
+  6F46F534: 3B C6              cmp         eax,esi
+  6F46F536: 74 20              je          6F46F558
+  6F46F538: 83 7D 0C 00        cmp         dword ptr [ebp+0Ch],0
+  6F46F53C: 74 0D              je          6F46F54B
+  6F46F53E: 8B D6              mov         edx,esi
+  6F46F540: 8B C8              mov         ecx,eax
+  6F46F542: E8 A9 06 BC FF     call        6F02FBF0
+  6F46F547: 85 C0              test        eax,eax
+  6F46F549: 75 0D              jne         6F46F558
+  6F46F54B: 85 FF              test        edi,edi
+  6F46F54D: 75 A1              jne         6F46F4F0
+  6F46F54F: 5F                 pop         edi
+  6F46F550: 5B                 pop         ebx

@@ -1,0 +1,201 @@
+{
+  "schema": 1,
+  "map": "DotA v6.83d",
+  "hero": { "unitType": "H00U", "name": "祈求者 / Invoker" },
+  "orbs": [
+    {
+      "slot": 1,
+      "hotkey": "Q",
+      "element": "Quas",
+      "name": "冰",
+      "ability": "A21W",
+      "base": "Aroa",
+      "orderStr": "roar",
+      "orderId": 852164,
+      "orderIdHex": "0xD00C4",
+      "action": "0x10",
+      "note": "push Quas orb onto 3-orb stack"
+    },
+    {
+      "slot": 2,
+      "hotkey": "W",
+      "element": "Wex",
+      "name": "雷",
+      "ability": "A21X",
+      "base": "AEfk",
+      "orderStr": "fanofknives",
+      "orderId": 852526,
+      "orderIdHex": "0xD022E",
+      "action": "0x10"
+    },
+    {
+      "slot": 3,
+      "hotkey": "E",
+      "element": "Exort",
+      "name": "火",
+      "ability": "A21V",
+      "base": "ANbr",
+      "orderStr": "battleroar",
+      "orderId": 852599,
+      "orderIdHex": "0xD0277",
+      "action": "0x10"
+    },
+    {
+      "slot": 4,
+      "hotkey": "R",
+      "element": "Invoke",
+      "name": "元素祈唤",
+      "ability": "A21Y",
+      "base": "ANht",
+      "orderStr": "howlofterror",
+      "orderId": 852588,
+      "orderIdHex": "0xD026C",
+      "action": "0x10",
+      "note": "consumes current 3-orb combo; installs spell into invoke slots (often two active invoked spells)"
+    }
+  ],
+  "comboRule": "Only the last three orb casts matter (order of Q/W/E presses). Then cast R. Then cast the invoked spell by its own ability/orderId (runtime UnitAddAbility).",
+  "spells": [
+    {
+      "combo": "QQQ",
+      "name": "急速冷却 / Cold Snap",
+      "abilityPrimary": "A0VZ",
+      "abilityAlt": ["A0YA"],
+      "orderStr": "autoentangle",
+      "orderId": 852505,
+      "orderIdHex": "0xD0219",
+      "action": "0x12",
+      "target": "unit",
+      "invokeSequence": ["Q", "Q", "Q", "R"]
+    },
+    {
+      "combo": "QQW",
+      "name": "幽灵漫步 / Ghost Walk",
+      "abilityPrimary": "A0XL",
+      "abilityAlt": ["A0YD"],
+      "orderStr": "windwalk",
+      "orderId": 852129,
+      "orderIdHex": "0xD00A1",
+      "action": "0x10",
+      "target": "none",
+      "invokeSequence": ["Q", "Q", "W", "R"]
+    },
+    {
+      "combo": "QQE",
+      "name": "寒冰之墙 / Ice Wall",
+      "abilityPrimary": "A0VP",
+      "abilityAlt": ["A0YH"],
+      "orderStr": "autodispeloff",
+      "orderId": 852134,
+      "orderIdHex": "0xD00A6",
+      "action": "0x10",
+      "target": "none",
+      "invokeSequence": ["Q", "Q", "E", "R"]
+    },
+    {
+      "combo": "WWW",
+      "name": "电磁脉冲 / EMP",
+      "abilityPrimary": "A0VS",
+      "abilityAlt": ["A0YC"],
+      "orderStr": "animatedead",
+      "orderId": 852217,
+      "orderIdHex": "0xD00F9",
+      "action": "0x11",
+      "target": "point",
+      "invokeSequence": ["W", "W", "W", "R"]
+    },
+    {
+      "combo": "WWQ",
+      "name": "强袭飓风 / Tornado",
+      "abilityPrimary": "A0VK",
+      "abilityAlt": [],
+      "orderStr": "ancestralspirittarget",
+      "orderId": 852491,
+      "orderIdHex": "0xD020B",
+      "action": "0x11",
+      "target": "point",
+      "invokeSequence": ["W", "W", "Q", "R"]
+    },
+    {
+      "combo": "WWE",
+      "name": "灵动迅捷 / Alacrity",
+      "abilityPrimary": "A0VQ",
+      "abilityAlt": ["A0Y9"],
+      "orderStr": "ancestralspirit",
+      "orderId": 852490,
+      "orderIdHex": "0xD020A",
+      "action": "0x12",
+      "target": "unit",
+      "invokeSequence": ["W", "W", "E", "R"],
+      "note": "Some AbilityStrings tip text mislabels as WWW; combo is WWE"
+    },
+    {
+      "combo": "EEE",
+      "name": "阳炎冲击 / Sun Strike",
+      "abilityPrimary": "A0VG",
+      "abilityAlt": ["A0YI"],
+      "orderStr": "blizzard",
+      "orderId": 852089,
+      "orderIdHex": "0xD0079",
+      "action": "0x11",
+      "target": "point",
+      "invokeSequence": ["E", "E", "E", "R"]
+    },
+    {
+      "combo": "EEQ",
+      "name": "熔炉精灵 / Forge Spirit",
+      "abilityPrimary": "A0VO",
+      "abilityAlt": ["A0YG"],
+      "orderStr": "autodispel",
+      "orderId": 852132,
+      "orderIdHex": "0xD00A4",
+      "action": "0x10",
+      "target": "none",
+      "invokeSequence": ["E", "E", "Q", "R"]
+    },
+    {
+      "combo": "EEW",
+      "name": "混沌陨石 / Chaos Meteor",
+      "abilityPrimary": "A0VN",
+      "abilityAlt": [],
+      "orderStr": "auravampiric",
+      "orderId": 852216,
+      "orderIdHex": "0xD00F8",
+      "action": "0x11",
+      "target": "point",
+      "invokeSequence": ["E", "E", "W", "R"]
+    },
+    {
+      "combo": "QWE",
+      "name": "超震声波 / Deafening Blast",
+      "abilityPrimary": "A0VM",
+      "abilityAlt": ["A0YE"],
+      "orderStr": "auraunholy",
+      "orderId": 852215,
+      "orderIdHex": "0xD00F7",
+      "action": "0x11",
+      "target": "point",
+      "invokeSequence": ["Q", "W", "E", "R"]
+    }
+  ],
+  "aiCastPattern": {
+    "example_tornado_meteor_blast": {
+      "steps": [
+        "W W Q R  → invoke Tornado (keep previous spell if slot free)",
+        "E E W R  → invoke Chaos Meteor",
+        "cast Tornado 0x11 at target",
+        "cast Meteor 0x11 along same vector after ~0.5–1.0s",
+        "Q W E R  → invoke Deafening Blast",
+        "cast Blast 0x11 as they land"
+      ],
+      "tacticKey": "invoker"
+    }
+  },
+  "sources": [
+    "War3Bot/images/dota_data.json H00U",
+    "artifacts/ability-orders/dota_hero_skills.json",
+    "artifacts/ability-orders/orders-1.27.json",
+    "map *AbilityFunc.txt Order=",
+    "analyses/dota-6.83d-hero-ability-cast-deep-reverse-and-ai-design.md §卡尔"
+  ]
+}

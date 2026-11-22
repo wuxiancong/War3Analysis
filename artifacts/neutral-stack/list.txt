@@ -1,0 +1,6 @@
+open "D:\Qt\workspace\War3Launcher\versions\1.27.0.52240\War3Patch.mpq"
+list Units\*
+close
+open "D:\Qt\workspace\War3Launcher\versions\1.26.0.6401\War3Patch.mpq"
+list Units\Unit*
+close

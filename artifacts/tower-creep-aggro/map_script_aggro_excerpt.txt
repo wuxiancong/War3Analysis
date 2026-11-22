@@ -1,0 +1,63 @@
+# DotA 6.83d lane-creep hero-aggro script (war3map_3.j)
+# CH2 / CV2 / CX2 / CY2 / CE2 / CC2 / CB2 / CA2 / CD2
+# Line numbers refer to War3Script/war3map_3.j
+
+# --- Summary ---
+# When a real hero issues attack/smart on an enemy hero (CV2), OR a hero is attacked
+# by a non-computer-creep unit (CX2), CH2(victimHero, aggressor):
+#   - Enum units in range 500 around aggressor
+#   - Filter: owned by BO[0] or CO[0], enemy of aggressor, not siege, userData==0
+#   - IssueTargetOrder attack aggressor; mark userData
+#   - Start 2.00s one-shot timer → CE2: clear marks, IssuePointOrderLoc attack O2[lane]
+# Siege excluded: ebal / e026 / umtw / u00R
+# Registration: world EnterRegion → CJ2 → if RRI(hero) then CY2(hero)
+# RRI (war3map_1.j ~3732): IsUnitType HERO && !illusion && not certain dummy typeids
+
+function CA2 takes nothing returns nothing
+call SetUnitUserData(GetEnumUnit(),0)
+call IssuePointOrderLoc(GetEnumUnit(),"attack",(O2[GetUnitAbilityLevel((GetEnumUnit()),I2)]))
+endfunction
+
+function CB2 takes nothing returns nothing
+call IssueTargetOrder(GetEnumUnit(),"attack",RE0)
+call GroupAddUnit(RD0,GetEnumUnit())
+call SetUnitUserData(GetEnumUnit(),RF0)
+endfunction
+
+function CC2 takes nothing returns boolean
+local integer id=GetUnitTypeId(GetFilterUnit())
+if id==1700946284 or id==1697657398 or id==1970107511 or id==1966092370 then
+return false
+endif
+if IsUnitEnemy(GetFilterUnit(),GetOwningPlayer(RE0))and(GetOwningPlayer(GetFilterUnit())==BO[0]or GetOwningPlayer(GetFilterUnit())==CO[0])and GetUnitUserData(GetFilterUnit())==0 then
+return true
+endif
+return false
+endfunction
+
+function CD2 takes nothing returns nothing
+if GetUnitCurrentOrder(GetEnumUnit())==0 and IsUnitInRange(GetEnumUnit(),RE0,GetUnitAcquireRange(GetEnumUnit()))==false then
+call GroupRemoveUnit(RD0,GetEnumUnit())
+call SetUnitUserData(GetEnumUnit(),0)
+call IssuePointOrderLoc(GetEnumUnit(),"attack",(O2[GetUnitAbilityLevel((GetEnumUnit()),I2)]))
+endif
+endfunction
+
+function CE2 takes nothing returns nothing
+...
+set RC0[CF2]=null
+call ForGroup(CG2,function CA2)
+call GroupClear(CG2)
+endfunction
+
+function CH2 takes unit SFI,unit Z4O returns nothing
+...
+call GroupEnumUnitsInRange(g,GetUnitX(Z4O),GetUnitY(Z4O),500,Condition(function CC2))
+call ForGroup(g,function CB2)
+...
+call TimerStart((LoadTimerHandle(LY,(GetHandleId(SFI)),(141))),2,false,function CE2)
+endfunction
+
+# CV2: hero issued 851983(attack) or 851971(smart) on enemy hero → CH2(target, issuer)
+# CX2: hero EVENT_UNIT_ATTACKED, attacker not BO[0]/CO[0] → CH2(hero, attacker)
+# Order ids: 851983 = attack, 851971 = smart

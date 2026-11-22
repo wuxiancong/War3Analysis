@@ -1,0 +1,716 @@
+=== 1. war3map.j 时间维度：SPO / SZO / SVO / AX1 / AW1 / TQO ===
+
+--- function SPO ---
+  L23194: function SPO takes nothing returns nothing
+  L23195: local boolean SQO=ModuloInteger(GetTriggerExecCount(ZG),7)==0
+  L23196: if R70 then
+  L23197: return
+  L23198: endif
+  L23199: call SXO(false)
+  L23200: if SQO then
+  L23201: call SWO()
+  L23202: endif
+  L23203: if GetTriggerExecCount(ZG)==1 and O2I==false then
+  L23204: call UnitResetCooldown(D30[1])
+  L23205: call UnitResetCooldown(D30[2])
+  L23206: call UnitResetCooldown(D30[3])
+  L23207: call UnitResetCooldown(D30[4])
+  L23208: call UnitResetCooldown(D30[5])
+  L23209: call UnitResetCooldown(D30[7])
+  L23210: call UnitResetCooldown(D30[8])
+  L23211: call UnitResetCooldown(D30[9])
+  L23212: call UnitResetCooldown(D30[10])
+  L23213: call UnitResetCooldown(D30[11])
+  L23214: call BK1(I70,false)
+  L23215: call BK1(I80,false)
+  L23216: call BK1(I90,false)
+  L23217: call BK1(BU0,false)
+  L23218: call BK1(C00,false)
+  L23219: call BK1(CI0,false)
+  L23220: elseif GetTriggerExecCount(ZG)==1 and O2I==true then
+  L23221: call BK1(I80,false)
+  L23222: call BK1(C00,false)
+  L23223: endif
+  L23224: if GetTriggerExecCount(ZG)==1 then
+  L23225: call EnableTrigger(EW0)
+  L23226: endif
+  L23227: if O2I==false and O7I==false then
+  L23228: if(HI)then
+  L23229: call CreateNUnitsAtLoc(NI,1969711215,CO[0],RI,bj_UNIT_FACING)
+  L23230: else
+  L23231: call CreateNUnitsAtLoc(NI,1966092337,CO[0],RI,bj_UNIT_FACING)
+  L23232: endif
+  L23233: call SZO(bj_lastCreatedGroup)
+  L23234: call SSO(bj_lastCreatedGroup,2)
+  L23235: endif
+  L23236: if O6I==false then
+  L23237: if(ZI)then
+  L23238: call CreateNUnitsAtLoc(NI,1969711215,CO[0],TI,bj_UNIT_FACING)
+  L23239: else
+  L23240: call CreateNUnitsAtLoc(NI,1966092337,CO[0],TI,bj_UNIT_FACING)
+  L23241: endif
+  L23242: call SSO(bj_lastCreatedGroup,3)
+  L23243: endif
+  L23244: if O2I==false and O4I==false then
+  L23245: if(VI)then
+  L23246: call CreateNUnitsAtLoc(NI,1969711215,CO[0],PI,bj_UNIT_FACING)
+  L23247: else
+  L23248: call CreateNUnitsAtLoc(NI,1966092337,CO[0],PI,bj_UNIT_FACING)
+  L23249: endif
+  L23250: call SVO(bj_lastCreatedGroup)
+  L23251: call SSO(bj_lastCreatedGroup,4)
+  L23252: endif
+  L23253: if O2I==false and O7I==false then
+  L23254: if(EI)then
+  L23255: call CreateNUnitsAtLoc(SI,1970169187,CO[0],I1,bj_UNIT_FACING)
+  L23256: else
+  L23257: call CreateNUnitsAtLoc(SI,1966092338,CO[0],I1,bj_UNIT_FACING)
+  L23258: endif
+  L23259: call SZO(bj_lastCreatedGroup)
+  L23260: call SSO(bj_lastCreatedGroup,2)
+  L23261: endif
+  L23262: if O6I==false then
+  L23263: if(FI)then
+  L23264: call CreateNUnitsAtLoc(SI,1970169187,CO[0],QI,bj_UNIT_FACING)
+  L23265: else
+  L23266: call CreateNUnitsAtLoc(SI,1966092338,CO[0],QI,bj_UNIT_FACING)
+  L23267: endif
+  L23268: call SSO(bj_lastCreatedGroup,3)
+  L23269: endif
+  L23270: if O2I==false and O4I==false then
+  L23271: if(GI)then
+  L23272: call CreateNUnitsAtLoc(SI,1970169187,CO[0],UI,bj_UNIT_FACING)
+  L23273: else
+  L23274: call CreateNUnitsAtLoc(SI,1966092338,CO[0],UI,bj_UNIT_FACING)
+  L23275: endif
+  L23276: call SVO(bj_lastCreatedGroup)
+  L23277: call SSO(bj_lastCreatedGroup,4)
+  L23278: endif
+  L23279: if SQO==true then
+  L23280: if O2I==false and O7I==false then
+  L23281: if(EI)then
+  L23282: call CreateNUnitsAtLoc(SI,1970107511,CO[0],I1,bj_UNIT_FACING)
+  L23283: else
+  L23284: call CreateNUnitsAtLoc(SI,1966092370,CO[0],I1,bj_UNIT_FACING)
+  L23285: endif
+  L23286: call SSO(bj_lastCreatedGroup,2)
+  L23287: endif
+  L23288: if O6I==false then
+  L23289: if(FI)then
+  L23290: call CreateNUnitsAtLoc(SI,1970107511,CO[0],QI,bj_UNIT_FACING)
+  L23291: else
+  L23292: call CreateNUnitsAtLoc(SI,1966092370,CO[0],QI,bj_UNIT_FACING)
+  L23293: endif
+  L23294: call SSO(bj_lastCreatedGroup,3)
+  L23295: endif
+  L23296: if O2I==false and O4I==false then
+  L23297: if(GI)then
+  L23298: call CreateNUnitsAtLoc(SI,1970107511,CO[0],UI,bj_UNIT_FACING)
+  L23299: else
+  L23300: call CreateNUnitsAtLoc(SI,1966092370,CO[0],UI,bj_UNIT_FACING)
+  L23301: endif
+  L23302: call SSO(bj_lastCreatedGroup,4)
+  L23303: endif
+  L23304: endif
+  L23305: if O2I==false and O7I==false then
+  L23306: if(JI)then
+  L23307: call CreateNUnitsAtLoc(NI,1702061422,BO[0],B1,bj_UNIT_FACING)
+  L23308: else
+  L23309: call CreateNUnitsAtLoc(NI,1697656918,BO[0],B1,bj_UNIT_FACING)
+  L23310: endif
+  L23311: call SVO(bj_lastCreatedGroup)
+  L23312: call SSO(bj_lastCreatedGroup,2)
+  L23313: endif
+  L23314: if O6I==false then
+  L23315: if(KI)then
+  L23316: call CreateNUnitsAtLoc(NI,1702061422,BO[0],O1,bj_UNIT_FACING)
+  L23317: else
+  L23318: call CreateNUnitsAtLoc(NI,1697656918,BO[0],O1,bj_UNIT_FACING)
+  L23319: endif
+  L23320: call SSO(bj_lastCreatedGroup,3)
+  L23321: endif
+  L23322: if O2I==false and O4I==false then
+  L23323: if(LI)then
+
+--- function SZO ---
+  L23018: function SZO takes group g returns nothing
+  L23019: if(TimerGetElapsed(M))<7*60 then
+  L23020: call ForGroup(g,function SGO)
+  L23021: endif
+  L23022: endfunction
+
+--- function SUO ---
+  [NOT FOUND] SUO
+
+--- function SVO ---
+  L23029: function SVO takes group g returns nothing
+  L23030: if(TimerGetElapsed(M))<7*60 then
+  L23031: call ForGroup(g,function SHO)
+  L23032: endif
+  L23033: endfunction
+
+--- function STO ---
+  [NOT FOUND] STO
+
+--- function AX1 ---
+  L5091: function AX1 takes unit P8I,integer AF1,integer SUI,real M5I,integer AV1 returns nothing
+  L5092: local trigger t=CreateTrigger()
+  L5093: local integer S5I=GetHandleId(t)
+  L5094: call IA1(P8I,AF1)
+  L5095: call SetUnitAbilityLevel(P8I,AF1,SUI)
+  L5096: call TriggerRegisterUnitEvent(t,P8I,EVENT_UNIT_DEATH)
+  L5097: call TriggerRegisterTimerEvent(t,M5I,false)
+  L5098: call TriggerAddCondition(t,Condition(function AW1))
+  L5099: call SaveUnitHandle(LY,(S5I),(17),(P8I))
+  L5100: call SaveInteger(LY,(S5I),(59),(AF1))
+  L5101: call SaveInteger(LY,(S5I),(60),(AV1))
+  L5102: set t=null
+  L5103: endfunction
+
+--- function AW1 ---
+  L5068: function AW1 takes nothing returns boolean
+  L5069: local trigger t=GetTriggeringTrigger()
+  L5070: local integer S5I=GetHandleId(t)
+  L5071: local unit P8I=(LoadUnitHandle(LY,(S5I),(17)))
+  L5072: local integer AF1=(LoadInteger(LY,(S5I),(59)))
+  L5073: local integer AV1=(LoadInteger(LY,(S5I),(60)))
+  L5074: call FlushChildHashtable(LY,(S5I))
+  L5075: call S0I(t)
+  L5076: call UnitRemoveAbility(P8I,AV1)
+  L5077: if UnitRemoveAbility(P8I,AF1)==false then
+  L5078: set t=CreateTrigger()
+  L5079: set S5I=GetHandleId(t)
+  L5080: call TriggerRegisterUnitEvent(t,P8I,EVENT_UNIT_DEATH)
+  L5081: call TriggerRegisterTimerEvent(t,1,true)
+  L5082: call TriggerAddCondition(t,Condition(function AZ1))
+  L5083: call SaveUnitHandle(LY,(S5I),(17),(P8I))
+  L5084: call SaveInteger(LY,(S5I),(59),(AF1))
+  L5085: call SaveInteger(LY,(S5I),(60),(AV1))
+  L5086: endif
+  L5087: set t=null
+  L5088: set P8I=null
+  L5089: return false
+  L5090: endfunction
+
+--- function TQO ---
+  L23520: function TQO takes nothing returns nothing
+  L23521: call SetPlayerTechResearchedSwap(1378889783,(GetPlayerTechCountSimple(1378889783,BO[0])+1),BO[0])
+  L23522: call SetPlayerTechResearchedSwap(1378889795,(GetPlayerTechCountSimple(1378889795,BO[0])+1),BO[0])
+  L23523: call SetPlayerTechResearchedSwap(1378889784,(GetPlayerTechCountSimple(1378889784,BO[0])+1),BO[0])
+  L23524: call SetPlayerTechResearchedSwap(1378889796,(GetPlayerTechCountSimple(1378889796,BO[0])+1),BO[0])
+  L23525: call SetPlayerTechResearchedSwap(1378889785,(GetPlayerTechCountSimple(1378889785,CO[0])+1),CO[0])
+  L23526: call SetPlayerTechResearchedSwap(1378889779,(GetPlayerTechCountSimple(1378889779,CO[0])+1),CO[0])
+  L23527: call SetPlayerTechResearchedSwap(1378889793,(GetPlayerTechCountSimple(1378889793,CO[0])+1),CO[0])
+  L23528: call SetPlayerTechResearchedSwap(1378889794,(GetPlayerTechCountSimple(1378889794,CO[0])+1),CO[0])
+  L23529: endfunction
+
+--- function SSO ---
+  L23185: function SSO takes group STO,integer SRO returns nothing
+  L23186: local unit u
+  L23187: loop
+  L23188: set u=FirstOfGroup(STO)
+  L23189: exitwhen(u==null)
+  L23190: call GroupRemoveUnit(STO,u)
+  L23191: call SetUnitAbilityLevel(u,I2,SRO)
+  L23192: endloop
+  L23193: endfunction
+
+--- A2V1 (1093813809) / A2V0 (1093813808) / B0H2 / B0H1 全图检索 ---
+  L23018: function SZO takes group g returns nothing
+  L23029: function SVO takes group g returns nothing
+  L23233: call SZO(bj_lastCreatedGroup)
+  L23250: call SVO(bj_lastCreatedGroup)
+  L23259: call SZO(bj_lastCreatedGroup)
+  L23276: call SVO(bj_lastCreatedGroup)
+  L23311: call SVO(bj_lastCreatedGroup)
+  L23328: call SZO(bj_lastCreatedGroup)
+  L23337: call SVO(bj_lastCreatedGroup)
+  L23354: call SZO(bj_lastCreatedGroup)
+  L87430: if GetSpellAbilityId()==1093813808 then
+
+--- 计时器 M 与出兵号角时间 N 的定义与启动 ---
+  L7392: call SetSkyModel("Environment\\Sky\\FoggedSky\\FoggedSky.mdl")
+  L7393: call SetCreepCampFilterState(true)
+  L7394: set D3="Normal Mode"
+  L7395: call TimerStart(M,99999.00,false,null)
+  L7396: set V3=AddWeatherEffect(bj_mapInitialPlayableArea,1380018290)
+  L7397: set Z3=AddWeatherEffect(bj_mapInitialPlayableArea,1397645939)
+  L7398: set KS=AddWeatherEffect(bj_mapInitialPlayableArea,1280470369)
+  L7399: set LS=AddWeatherEffect(bj_mapInitialPlayableArea,1464822903)
+  L7400: set BO[0]=Player(0)
+  ---
+  L27825: call FL1("GameStart",1)
+  L27826: call BW1(BX1,BY1,true)
+  L27827: set CL=true
+  L27828: set N=TimerGetElapsed(M)
+  L27829: call S0I(GetTriggeringTrigger())
+  L27830: call SetFloatGameState(GAME_STATE_TIME_OF_DAY,6.00)
+  L27831: call SuspendTimeOfDay(false)
+  L27832: call SetTimeOfDayScale(0.625)
+  L27833: if P0==false then
+  ---
+  L91544: call SetSkyModel("Environment\\Sky\\FoggedSky\\FoggedSky.mdl")
+  L91545: call SetCreepCampFilterState(true)
+  L91546: set D3="Normal Mode"
+  L91547: call TimerStart(M,99999.00,false,null)
+  L91548: set V3=AddWeatherEffect(bj_mapInitialPlayableArea,1380018290)
+  L91549: set Z3=AddWeatherEffect(bj_mapInitialPlayableArea,1397645939)
+  L91550: set KS=AddWeatherEffect(bj_mapInitialPlayableArea,1280470369)
+  L91551: set LS=AddWeatherEffect(bj_mapInitialPlayableArea,1464822903)
+  L91552: set BO[0]=Player(0)
+  ---
+
+=== 2. 全 11 版本 Game.dll 移速计算链 RVA ===
+  1.0.17.5988  : {'GetUnitMoveSpeed': '0x2BFD90', 'CUnit::GetMoveSpeed': '0x1A50F0', 'CAbilityMove::CalcMoveSpeed': '0x55AD80', 'GetUnitTurnSpeed': '0x2C0E30', 'GetUnitPropWindow': '0x2C0EF0'}
+  1.0.20.6048  : {'GetUnitMoveSpeed': '0x2BFD90', 'CUnit::GetMoveSpeed': '0x1A50F0', 'CAbilityMove::CalcMoveSpeed': '0x55B280', 'GetUnitTurnSpeed': '0x2C0E30', 'GetUnitPropWindow': '0x2C0EF0'}
+  1.20.4.6074  : {'GetUnitMoveSpeed': '0x2BFEB0', 'CUnit::GetMoveSpeed': '0x1A5100', 'CAbilityMove::CalcMoveSpeed': '0x55BB90', 'GetUnitTurnSpeed': '0x2C0F50', 'GetUnitPropWindow': '0x2C1010'}
+  1.21.0.6263  : {'GetUnitMoveSpeed': '0x2C3480', 'CUnit::GetMoveSpeed': '0x1A82C0', 'CAbilityMove::CalcMoveSpeed': '0x55FC20', 'GetUnitTurnSpeed': '0x2C4520', 'GetUnitPropWindow': '0x2C45E0'}
+  1.22.0.6328  : {'GetUnitMoveSpeed': '0x3BEAB0', 'CUnit::GetMoveSpeed': '0x26D2D0', 'CAbilityMove::CalcMoveSpeed': '0x201120', 'GetUnitTurnSpeed': '0x3BEFE0', 'GetUnitPropWindow': '0x3BF010'}
+  1.23.0.6352  : {'GetUnitMoveSpeed': '0x3C07D0', 'CUnit::GetMoveSpeed': '0x26E810', 'CAbilityMove::CalcMoveSpeed': '0x202660', 'GetUnitTurnSpeed': '0x3C0D00', 'GetUnitPropWindow': '0x3C0D30'}
+  1.24.1.6374  : {'GetUnitMoveSpeed': '0x3C6290', 'CUnit::GetMoveSpeed': '0x26E8D0', 'CAbilityMove::CalcMoveSpeed': '0x202710', 'GetUnitTurnSpeed': '0x3C67C0', 'GetUnitPropWindow': '0x3C67F0'}
+  1.24.4.6387  : {'GetUnitMoveSpeed': '0x3C6350', 'CUnit::GetMoveSpeed': '0x26E930', 'CAbilityMove::CalcMoveSpeed': '0x202770', 'GetUnitTurnSpeed': '0x3C6880', 'GetUnitPropWindow': '0x3C68B0'}
+  1.25.1.6397  : {'GetUnitMoveSpeed': '0x3C55E0', 'CUnit::GetMoveSpeed': '0x26DBF0', 'CAbilityMove::CalcMoveSpeed': '0x201A30', 'GetUnitTurnSpeed': '0x3C5B10', 'GetUnitPropWindow': '0x3C5B40'}
+  1.26.0.6401  : {'GetUnitMoveSpeed': '0x3C5810', 'CUnit::GetMoveSpeed': '0x26DE20', 'CAbilityMove::CalcMoveSpeed': '0x201C60', 'GetUnitTurnSpeed': '0x3C5D40', 'GetUnitPropWindow': '0x3C5D70'}
+  1.27.0.52240 : {'GetUnitMoveSpeed': '0x1E62E0', 'CUnit::GetMoveSpeed': '0x667BE0', 'CAbilityMove::CalcMoveSpeed': '0x5DF170', 'GetUnitTurnSpeed': '0x1E6640', 'GetUnitPropWindow': '0x1E63A0'}
+
+--- 1.27.0.52240 CAbilityMove::CalcMoveSpeed @ 0x5DF170 ---
+  6F5DF170: 55                 push        ebp
+  6F5DF171: 8B EC              mov         ebp,esp
+  6F5DF173: 51                 push        ecx
+  6F5DF174: 83 79 7C 00        cmp         dword ptr [ecx+7Ch],0
+  6F5DF178: 75 16              jne         6F5DF190
+  6F5DF17A: 8D 45 FC           lea         eax,[ebp-4]
+  6F5DF17D: 50                 push        eax
+  6F5DF17E: E8 5D 00 00 00     call        6F5DF1E0
+  6F5DF183: 8B 08              mov         ecx,dword ptr [eax]
+  6F5DF185: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  6F5DF188: 89 08              mov         dword ptr [eax],ecx
+  6F5DF18A: 8B E5              mov         esp,ebp
+  6F5DF18C: 5D                 pop         ebp
+  6F5DF18D: C2 04 00           ret         4
+  6F5DF190: A1 D4 81 BB 6F     mov         eax,dword ptr ds:[6FBB81D4h]
+  6F5DF195: 89 45 FC           mov         dword ptr [ebp-4],eax
+  6F5DF198: 8D 45 FC           lea         eax,[ebp-4]
+  6F5DF19B: 8B 08              mov         ecx,dword ptr [eax]
+  6F5DF19D: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  6F5DF1A0: 89 08              mov         dword ptr [eax],ecx
+  6F5DF1A2: 8B E5              mov         esp,ebp
+  6F5DF1A4: 5D                 pop         ebp
+  6F5DF1A5: C2 04 00           ret         4
+  6F5DF1A8: CC                 int         3
+  6F5DF1A9: CC                 int         3
+  6F5DF1AA: CC                 int         3
+  6F5DF1AB: CC                 int         3
+  6F5DF1AC: CC                 int         3
+  6F5DF1AD: CC                 int         3
+  6F5DF1AE: CC                 int         3
+  6F5DF1AF: CC                 int         3
+  6F5DF1B0: 8B 41 3C           mov         eax,dword ptr [ecx+3Ch]
+  6F5DF1B3: C3                 ret
+  6F5DF1B4: CC                 int         3
+  6F5DF1B5: CC                 int         3
+  6F5DF1B6: CC                 int         3
+  6F5DF1B7: CC                 int         3
+  6F5DF1B8: CC                 int         3
+  6F5DF1B9: CC                 int         3
+  6F5DF1BA: CC                 int         3
+  6F5DF1BB: CC                 int         3
+  6F5DF1BC: CC                 int         3
+  6F5DF1BD: CC                 int         3
+  6F5DF1BE: CC                 int         3
+  6F5DF1BF: CC                 int         3
+  6F5DF1C0: 55                 push        ebp
+  6F5DF1C1: 8B EC              mov         ebp,esp
+  6F5DF1C3: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  6F5DF1C6: 8B 49 38           mov         ecx,dword ptr [ecx+38h]
+  6F5DF1C9: 89 08              mov         dword ptr [eax],ecx
+  6F5DF1CB: 5D                 pop         ebp
+  6F5DF1CC: C2 04 00           ret         4
+  6F5DF1CF: CC                 int         3
+  6F5DF1D0: B8 76 6F 6D 41     mov         eax,416D6F76h
+  6F5DF1D5: C3                 ret
+  6F5DF1D6: CC                 int         3
+  6F5DF1D7: CC                 int         3
+  6F5DF1D8: CC                 int         3
+  6F5DF1D9: CC                 int         3
+  6F5DF1DA: CC                 int         3
+  6F5DF1DB: CC                 int         3
+  6F5DF1DC: CC                 int         3
+  6F5DF1DD: CC                 int         3
+  6F5DF1DE: CC                 int         3
+  6F5DF1DF: CC                 int         3
+  6F5DF1E0: 55                 push        ebp
+  6F5DF1E1: 8B EC              mov         ebp,esp
+  6F5DF1E3: 83 EC 24           sub         esp,24h
+  6F5DF1E6: 53                 push        ebx
+  6F5DF1E7: 56                 push        esi
+  6F5DF1E8: 57                 push        edi
+  6F5DF1E9: 8B F9              mov         edi,ecx
+  6F5DF1EB: 8B 77 30           mov         esi,dword ptr [edi+30h]
+  6F5DF1EE: 89 75 F4           mov         dword ptr [ebp-0Ch],esi
+  6F5DF1F1: 85 F6              test        esi,esi
+  6F5DF1F3: 75 0A              jne         6F5DF1FF
+  6F5DF1F5: E8 E6 98 A5 FF     call        6F038AE0
+  6F5DF1FA: 8B F0              mov         esi,eax
+  6F5DF1FC: 89 45 F4           mov         dword ptr [ebp-0Ch],eax
+  6F5DF1FF: 8D 45 E8           lea         eax,[ebp-18h]
+  6F5DF202: 8B CE              mov         ecx,esi
+  6F5DF204: 50                 push        eax
+  6F5DF205: E8 C6 2A E9 FF     call        6F471CD0
+  6F5DF20A: 8B 4D E8           mov         ecx,dword ptr [ebp-18h]
+  6F5DF20D: 8D 45 EC           lea         eax,[ebp-14h]
+  6F5DF210: 89 4D EC           mov         dword ptr [ebp-14h],ecx
+  6F5DF213: 8D 55 F0           lea         edx,[ebp-10h]
+  6F5DF216: 8B 4F 70           mov         ecx,dword ptr [edi+70h]
+  6F5DF219: 89 4D F0           mov         dword ptr [ebp-10h],ecx
+  6F5DF21C: 8D 4D E4           lea         ecx,[ebp-1Ch]
+  6F5DF21F: 50                 push        eax
+  6F5DF220: E8 AB 37 A7 FF     call        6F0529D0
+  6F5DF225: 8B 47 78           mov         eax,dword ptr [edi+78h]
+  6F5DF228: 8D 55 DC           lea         edx,[ebp-24h]
+  6F5DF22B: 8B 5D 08           mov         ebx,dword ptr [ebp+8]
+  6F5DF22E: 8B CB              mov         ecx,ebx
+  6F5DF230: 89 45 E0           mov         dword ptr [ebp-20h],eax
+  6F5DF233: 8B 45 E4           mov         eax,dword ptr [ebp-1Ch]
+  6F5DF236: 89 45 DC           mov         dword ptr [ebp-24h],eax
+  6F5DF239: 8D 45 E0           lea         eax,[ebp-20h]
+  6F5DF23C: 50                 push        eax
+  6F5DF23D: E8 9E 35 A7 FF     call        6F0527E0
+  6F5DF242: 6A 00              push        0
+  6F5DF244: 8B CE              mov         ecx,esi
+  6F5DF246: E8 15 F8 08 00     call        6F66EA60
+  6F5DF24B: 8B 7E 30           mov         edi,dword ptr [esi+30h]
+  6F5DF24E: 6A 01              push        1
+  6F5DF250: 6A 01              push        1
+  6F5DF252: 6A 00              push        0
+  6F5DF254: 6A 01              push        1
+  6F5DF256: 89 45 F0           mov         dword ptr [ebp-10h],eax
+  6F5DF259: E8 C2 CB 03 00     call        6F61BE20
+  6F5DF25E: 50                 push        eax
+  6F5DF25F: 8B CE              mov         ecx,esi
+  6F5DF261: E8 DA 01 E9 FF     call        6F46F440
+  6F5DF266: 85 C0              test        eax,eax
+  6F5DF268: 74 06              je          6F5DF270
+  6F5DF26A: 8B B8 14 01 00 00  mov         edi,dword ptr [eax+00000114h]
+  6F5DF270: 8B D7              mov         edx,edi
+  6F5DF272: 8D 4D FC           lea         ecx,[ebp-4]
+  6F5DF275: E8 66 26 09 00     call        6F6718E0
+  6F5DF27A: 8B D7              mov         edx,edi
+  6F5DF27C: 8D 4D F8           lea         ecx,[ebp-8]
+  6F5DF27F: E8 8C 23 09 00     call        6F671610
+  6F5DF284: 8B 4D F0           mov         ecx,dword ptr [ebp-10h]
+  6F5DF287: B8 50 C4 BE 6F     mov         eax,6FBEC450h
+  6F5DF28C: F3 0F 10 45 FC     movss       xmm0,dword ptr [ebp-4]
+
+--- 1.26.0.6401 CAbilityMove::CalcMoveSpeed @ 0x201C60 ---
+  6F201C60: 51                 push        ecx
+  6F201C61: 83 79 7C 00        cmp         dword ptr [ecx+7Ch],0
+  6F201C65: 75 15              jne         6F201C7C
+  6F201C67: 8D 04 24           lea         eax,[esp]
+  6F201C6A: 50                 push        eax
+  6F201C6B: E8 80 FD FF FF     call        6F2019F0
+  6F201C70: 8B 08              mov         ecx,dword ptr [eax]
+  6F201C72: 8B 44 24 08        mov         eax,dword ptr [esp+8]
+  6F201C76: 89 08              mov         dword ptr [eax],ecx
+  6F201C78: 59                 pop         ecx
+  6F201C79: C2 04 00           ret         4
+  6F201C7C: B8 70 E4 AA 6F     mov         eax,6FAAE470h
+  6F201C81: 8B 08              mov         ecx,dword ptr [eax]
+  6F201C83: 8B 44 24 08        mov         eax,dword ptr [esp+8]
+  6F201C87: 89 08              mov         dword ptr [eax],ecx
+  6F201C89: 59                 pop         ecx
+  6F201C8A: C2 04 00           ret         4
+  6F201C8D: CC                 int         3
+  6F201C8E: CC                 int         3
+  6F201C8F: CC                 int         3
+  6F201C90: 56                 push        esi
+  6F201C91: 8B F1              mov         esi,ecx
+  6F201C93: 83 BE 80 00 00 00  cmp         dword ptr [esi+00000080h],0
+  6F201C9A: 75 17              jne         6F201CB3
+  6F201C9C: 8B 46 30           mov         eax,dword ptr [esi+30h]
+  6F201C9F: 85 C0              test        eax,eax
+  6F201CA1: 75 05              jne         6F201CA8
+  6F201CA3: E8 E8 0B 27 00     call        6F472890
+  6F201CA8: 8D 88 64 01 00 00  lea         ecx,[eax+00000164h]
+  6F201CAE: E8 2D 45 27 00     call        6F4761E0
+  6F201CB3: 83 86 80 00 00 00  add         dword ptr [esi+00000080h],1
+  6F201CBA: 5E                 pop         esi
+  6F201CBB: C3                 ret
+  6F201CBC: CC                 int         3
+  6F201CBD: CC                 int         3
+  6F201CBE: CC                 int         3
+  6F201CBF: CC                 int         3
+  6F201CC0: 83 81 80 00 00 00  add         dword ptr [ecx+00000080h],0FFFFFFFFh
+  6F201CC7: C3                 ret
+  6F201CC8: CC                 int         3
+  6F201CC9: CC                 int         3
+  6F201CCA: CC                 int         3
+  6F201CCB: CC                 int         3
+  6F201CCC: CC                 int         3
+  6F201CCD: CC                 int         3
+  6F201CCE: CC                 int         3
+  6F201CCF: CC                 int         3
+  6F201CD0: 51                 push        ecx
+  6F201CD1: 56                 push        esi
+  6F201CD2: 8B 74 24 0C        mov         esi,dword ptr [esp+0Ch]
+  6F201CD6: 85 F6              test        esi,esi
+  6F201CD8: 74 2F              je          6F201D09
+  6F201CDA: 83 7C 24 10 00     cmp         dword ptr [esp+10h],0
+  6F201CDF: 74 28              je          6F201D09
+  6F201CE1: 8B 41 70           mov         eax,dword ptr [ecx+70h]
+  6F201CE4: 8D 54 24 0C        lea         edx,[esp+0Ch]
+  6F201CE8: 89 44 24 0C        mov         dword ptr [esp+0Ch],eax
+  6F201CEC: 52                 push        edx
+  6F201CED: 8D 44 24 08        lea         eax,[esp+8]
+  6F201CF1: 50                 push        eax
+  6F201CF2: E8 F9 FC FF FF     call        6F2019F0
+  6F201CF7: 8B D0              mov         edx,eax
+  6F201CF9: 8D 4C 24 14        lea         ecx,[esp+14h]
+  6F201CFD: E8 EE D1 4E 00     call        6F6EEEF0
+  6F201D02: 8B 4C 24 10        mov         ecx,dword ptr [esp+10h]
+  6F201D06: 89 4E 28           mov         dword ptr [esi+28h],ecx
+  6F201D09: 5E                 pop         esi
+  6F201D0A: 59                 pop         ecx
+  6F201D0B: C2 08 00           ret         8
+  6F201D0E: CC                 int         3
+  6F201D0F: CC                 int         3
+  6F201D10: 83 EC 0C           sub         esp,0Ch
+  6F201D13: 8B 41 70           mov         eax,dword ptr [ecx+70h]
+  6F201D16: 8D 14 24           lea         edx,[esp]
+  6F201D19: 89 04 24           mov         dword ptr [esp],eax
+  6F201D1C: 52                 push        edx
+  6F201D1D: 8D 44 24 0C        lea         eax,[esp+0Ch]
+  6F201D21: 50                 push        eax
+  6F201D22: E8 C9 FC FF FF     call        6F2019F0
+  6F201D27: 8B D0              mov         edx,eax
+  6F201D29: 8D 4C 24 08        lea         ecx,[esp+8]
+  6F201D2D: E8 BE D1 4E 00     call        6F6EEEF0
+  6F201D32: 8B 4C 24 10        mov         ecx,dword ptr [esp+10h]
+  6F201D36: 8B 54 24 04        mov         edx,dword ptr [esp+4]
+  6F201D3A: 89 51 28           mov         dword ptr [ecx+28h],edx
+  6F201D3D: 83 C4 0C           add         esp,0Ch
+  6F201D40: C2 04 00           ret         4
+  6F201D43: CC                 int         3
+  6F201D44: CC                 int         3
+  6F201D45: CC                 int         3
+  6F201D46: CC                 int         3
+  6F201D47: CC                 int         3
+  6F201D48: CC                 int         3
+  6F201D49: CC                 int         3
+  6F201D4A: CC                 int         3
+  6F201D4B: CC                 int         3
+  6F201D4C: CC                 int         3
+  6F201D4D: CC                 int         3
+  6F201D4E: CC                 int         3
+  6F201D4F: CC                 int         3
+  6F201D50: 51                 push        ecx
+  6F201D51: 56                 push        esi
+  6F201D52: 8D 44 24 04        lea         eax,[esp+4]
+  6F201D56: 50                 push        eax
+  6F201D57: 8B F1              mov         esi,ecx
+  6F201D59: E8 02 FF FF FF     call        6F201C60
+  6F201D5E: 8B 46 30           mov         eax,dword ptr [esi+30h]
+  6F201D61: 85 C0              test        eax,eax
+  6F201D63: 75 07              jne         6F201D6C
+  6F201D65: 8B CE              mov         ecx,esi
+  6F201D67: E8 24 0B 27 00     call        6F472890
+  6F201D6C: 8B 10              mov         edx,dword ptr [eax]
+  6F201D6E: 8B C8              mov         ecx,eax
+  6F201D70: 8B 82 B8 00 00 00  mov         eax,dword ptr [edx+000000B8h]
+  6F201D76: FF D0              call        eax
+  6F201D78: 8B 10              mov         edx,dword ptr [eax]
+  6F201D7A: 8B 52 18           mov         edx,dword ptr [edx+18h]
+  6F201D7D: 8D 4C 24 04        lea         ecx,[esp+4]
+
+=== 3. records/block/cm/*.csv 波次概况 ===
+  [cm_bot_20261121-065359_6waves_pass0_avg0.csv] (trace lines=126)
+    # passWhy=近卫下路，移速 280（≤280 慢 / ≥310 快）→ 及格 60（快英雄 70）
+    # moveSpeed=280 range=600 ranged=1
+    # wave,attempt,wave,score,pass,result,seconds,joinSeconds,detail
+    # trace,wave,t,heroX,heroY,creep1X,creep1Y,...
+    wave,1,1,0.0,60,fail,1.9,0.0,timeout leak 4/4 1.9s leakScore 0 delay 0.0s delayScore 0
+    wave,2,2,0.0,60,fail,2.9,0.1,timeout leak 4/4 2.9s leakScore 0 delay 0.0s delayScore 0
+    wave,3,3,0.0,60,fail,2.7,0.1,timeout leak 4/4 2.7s leakScore 0 delay 0.0s delayScore 0
+    wave,4,4,0.0,60,fail,2.8,0.1,timeout leak 4/4 2.8s leakScore 0 delay 0.0s delayScore 0
+    wave,5,5,0.0,60,fail,2.8,0.1,timeout leak 4/4 2.8s leakScore 0 delay 0.0s delayScore 0
+    wave,6,6,0.0,60,fail,2.8,0.1,timeout leak 4/4 2.8s leakScore 0 delay 0.0s delayScore 0
+  [cm_bot_20261121-070328_9waves_pass0_avg10.csv] (trace lines=976)
+    # passWhy=近卫下路，移速 280（≤280 慢 / ≥310 快）→ 及格 60（快英雄 70）
+    # moveSpeed=280 range=600 ranged=1
+    # wave,attempt,wave,score,pass,result,seconds,joinSeconds,detail
+    # trace,wave,t,heroX,heroY,creep1X,creep1Y,...
+    wave,1,1,1.3,60,fail,3.4,0.0,timeout leak 4/4 3.4s leakScore 0 delay 0.3s delayScore 3
+    wave,2,2,2.1,60,fail,5.1,0.0,timeout leak 4/4 5.1s leakScore 0 delay 0.5s delayScore 4
+    wave,3,3,1.2,60,fail,3.8,0.0,timeout leak 4/4 3.8s leakScore 0 delay 0.3s delayScore 2
+    wave,4,4,12.5,60,fail,22.6,0.0,tower leak 3/4 22.6s leakScore 25 delay 0.0s delayScore 0
+    wave,5,6,1.3,60,fail,4.4,0.1,timeout leak 4/4 4.3s leakScore 0 delay 0.3s delayScore 3
+    wave,6,7,0.0,60,fail,6.5,0.0,timeout leak 5/5 6.5s leakScore 0 delay 0.0s delayScore 0
+    wave,7,8,12.5,60,fail,22.6,0.0,tower leak 3/4 22.6s leakScore 25 delay 0.0s delayScore 0
+    wave,8,10,30.0,60,fail,28.3,0.3,tower leak 3/4 28.3s leakScore 25 delay 4.2s delayScore 35
+    wave,9,12,25.1,60,fail,27.1,0.3,tower leak 3/4 27.1s leakScore 25 delay 3.0s delayScore 25
+  [cm_bot_20261121-071636_3waves_pass0_avg20.csv] (trace lines=481)
+    # passWhy=近卫下路，移速 280（≤280 慢 / ≥310 快）→ 及格 60（快英雄 70）
+    # moveSpeed=280 range=600 ranged=1
+    # wave,attempt,wave,score,pass,result,seconds,joinSeconds,detail
+    # trace,wave,t,heroX,heroY,creep1X,creep1Y,...
+    wave,1,1,12.5,60,fail,16.1,6.2,timeout leak 4/4 16.1s leakScore 0 delay 3.0s delayScore 25
+    wave,2,2,38.2,60,fail,30.4,6.5,tower leak 3/4 30.4s leakScore 25 delay 6.2s delayScore 51
+    wave,3,4,10.4,60,fail,16.6,6.4,timeout leak 4/4 16.6s leakScore 0 delay 2.5s delayScore 21
+  [cm_bot_20261121-072545_2waves_pass0_avg47.csv] (trace lines=460)
+    # passWhy=近卫下路，移速 280（≤280 慢 / ≥310 快）→ 及格 60（快英雄 70）
+    # moveSpeed=280 range=600 ranged=1
+    # wave,attempt,wave,score,pass,result,seconds,joinSeconds,detail
+    # trace,wave,t,heroX,heroY,creep1X,creep1Y,...
+    wave,1,1,35.8,60,fail,29.9,6.9,tower leak 3/4 29.8s leakScore 25 delay 5.6s delayScore 47
+    wave,2,3,58.0,60,fail,35.2,9.9,tower leak 3/4 35.2s leakScore 25 delay 11.0s delayScore 91
+  [cm_bot_20261121-073038_0waves_pass0_avg0.csv] (trace lines=0)
+    # passWhy=近卫下路，移速 280（≤280 慢 / ≥310 快）→ 及格 60（快英雄 70）
+    # moveSpeed=280 range=600 ranged=1
+    # wave,attempt,wave,score,pass,result,seconds,joinSeconds,detail
+    # trace,wave,t,heroX,heroY,creep1X,creep1Y,...
+  [cm_bot_20261121-073907_5waves_pass0_avg0.csv] (trace lines=607)
+    # passWhy=近卫下路，移速 280（≤280 慢 / ≥310 快）→ 及格 60（快英雄 70）
+    # moveSpeed=280 range=600 ranged=1
+    # wave,attempt,wave,score,pass,result,seconds,joinSeconds,detail
+    # trace,wave,t,heroX,heroY,creep1X,creep1Y,...
+    wave,1,1,0.0,60,fail,16.8,13.3,timeout leak 4/4 16.8s leakScore 0 delay 0.0s delayScore 0
+    wave,2,2,0.0,60,fail,17.4,13.4,timeout leak 4/4 17.4s leakScore 0 delay 0.0s delayScore 0
+    wave,3,3,0.0,60,fail,17.4,13.3,timeout leak 4/4 17.4s leakScore 0 delay 0.0s delayScore 0
+    wave,4,4,0.0,60,fail,16.9,13.5,timeout leak 4/4 16.9s leakScore 0 delay 0.0s delayScore 0
+    wave,5,5,0.0,60,fail,17.4,13.4,timeout leak 4/4 17.4s leakScore 0 delay 0.0s delayScore 0
+  [cm_bot_20261121-074924_5waves_pass0_avg8.csv] (trace lines=731)
+    # passWhy=近卫下路，移速 280（≤280 慢 / ≥310 快）→ 及格 60（快英雄 70）
+    # moveSpeed=280 range=600 ranged=1
+    # wave,attempt,wave,score,pass,result,seconds,joinSeconds,detail
+    # trace,wave,t,heroX,heroY,creep1X,creep1Y,...
+    wave,1,1,12.5,60,fail,22.9,13.3,tower leak 3/4 22.9s leakScore 25 delay 0.0s delayScore 0
+    wave,2,2,0.0,60,fail,18.2,13.5,timeout leak 4/4 18.2s leakScore 0 delay 0.0s delayScore 0
+    wave,3,3,12.5,60,fail,23.0,13.5,tower leak 3/4 23.0s leakScore 25 delay 0.0s delayScore 0
+    wave,4,4,0.0,60,fail,18.7,13.5,timeout leak 4/4 18.7s leakScore 0 delay 0.0s delayScore 0
+    wave,5,5,12.5,60,fail,22.6,13.4,tower leak 3/4 22.6s leakScore 25 delay 0.0s delayScore 0
+  [cm_bot_20261121-075732_5waves_pass1_avg47.csv] (trace lines=938)
+    # passWhy=近卫下路，移速 280（≤280 慢 / ≥310 快）→ 及格 60（快英雄 70）
+    # moveSpeed=280 range=600 ranged=1
+    # wave,attempt,wave,score,pass,result,seconds,joinSeconds,detail
+    # trace,wave,t,heroX,heroY,creep1X,creep1Y,...
+    wave,1,1,46.0,60,fail,26.0,15.3,tower leak 1/4 26.0s leakScore 75 delay 2.0s delayScore 17
+    wave,2,2,44.0,60,fail,28.5,19.2,tower leak 2/4 28.5s leakScore 50 delay 4.6s delayScore 38
+    wave,3,3,17.6,60,fail,27.5,19.7,timeout leak 4/4 27.4s leakScore 0 delay 4.2s delayScore 35
+    wave,4,4,91.1,60,pass,32.3,22.0,engaged leak 0/4 32.2s leakScore 100 delay 9.8s delayScore 82
+    wave,5,5,33.8,60,fail,29.1,20.3,tower leak 3/4 29.1s leakScore 25 delay 5.1s delayScore 43
+  [cm_mid_20261121-045234_23waves_pass20_avg96.csv] (trace lines=3423)
+    # hero=cm type=Hjai lane=mid laneIndex=1 mode=ai pass=80 start=2026-11-21 04:52:34
+    # passWhy=近卫中路，移速 280（≤280 慢 / ≥310 快）→ 及格 80（快英雄 90）
+    # moveSpeed=280 range=600 ranged=1
+    # wave,attempt,wave,score,pass,result,seconds,joinSeconds,detail
+    # trace,wave,t,heroX,heroY,creep1X,creep1Y,...
+    wave,1,1,100.0,80,pass,22.1,0.7,tower leak 0/4 22.1s leakScore 100 delay 8.8s delayScore 100
+    wave,2,3,100.0,80,pass,19.9,0.5,tower leak 0/4 19.9s leakScore 100 delay 6.6s delayScore 100
+    wave,3,5,100.0,80,pass,19.3,0.5,tower leak 0/4 19.3s leakScore 100 delay 6.0s delayScore 90
+    wave,4,7,100.0,80,pass,23.2,0.7,tower leak 0/5 23.2s leakScore 100 delay 9.9s delayScore 100
+    wave,5,9,100.0,80,pass,24.9,0.5,tower leak 0/4 24.9s leakScore 100 delay 11.6s delayScore 100
+    wave,6,11,100.0,80,pass,21.4,0.7,engaged leak 0/4 21.4s leakScore 100 delay 9.2s delayScore 100
+    wave,7,13,100.0,80,pass,23.5,0.8,tower leak 0/4 23.5s leakScore 100 delay 10.2s delayScore 100
+    wave,8,15,100.0,80,pass,22.5,0.8,tower leak 0/4 22.5s leakScore 100 delay 9.2s delayScore 100
+    wave,9,17,100.0,80,pass,20.0,0.2,tower leak 0/4 20.0s leakScore 100 delay 6.7s delayScore 100
+    wave,10,19,75.0,80,fail,5.3,0.3,timeout leak 1/4 5.3s leakScore 75 delay 2.4s delayScore 36
+  [cm_top_20261121-052339_0waves_pass0_avg0.csv] (trace lines=0)
+    # hero=cm type=Hjai lane=top laneIndex=0 mode=ai pass=70 start=2026-11-21 05:23:39
+    # passWhy=近卫上路，移速 280（≤280 慢 / ≥310 快）→ 及格 70（快英雄 80）
+    # moveSpeed=280 range=600 ranged=1
+    # wave,attempt,wave,score,pass,result,seconds,joinSeconds,detail
+    # trace,wave,t,heroX,heroY,creep1X,creep1Y,...
+  [cm_top_20261121-052745_0waves_pass0_avg0.csv] (trace lines=0)
+    # hero=cm type=Hjai lane=top laneIndex=0 mode=human pass=70 start=2026-11-21 05:27:45
+    # passWhy=近卫上路，移速 280（≤280 慢 / ≥310 快）→ 及格 70（快英雄 80）
+    # moveSpeed=280 range=600 ranged=1
+    # wave,attempt,wave,score,pass,result,seconds,joinSeconds,detail
+    # trace,wave,t,heroX,heroY,creep1X,creep1Y,...
+  [cm_top_20261121-053614_10waves_pass1_avg37.csv] (trace lines=1009)
+    # hero=cm type=Hjai lane=top laneIndex=0 mode=ai pass=70 start=2026-11-21 05:36:14
+    # passWhy=近卫上路，移速 280（≤280 慢 / ≥310 快）→ 及格 70（快英雄 80）
+    # moveSpeed=280 range=600 ranged=1
+    # wave,attempt,wave,score,pass,result,seconds,joinSeconds,detail
+    # trace,wave,t,heroX,heroY,creep1X,creep1Y,...
+    wave,1,21,0.0,70,fail,0.1,0.1,timeout leak 5/5 0.1s leakScore 0 delay 0.0s delayScore 0
+    wave,2,22,34.0,70,fail,18.2,0.1,tower leak 2/4 18.2s leakScore 50 delay 1.5s delayScore 18
+    wave,3,23,96.5,70,pass,24.5,0.1,tower leak 0/4 24.5s leakScore 100 delay 7.8s delayScore 93
+    wave,4,25,40.7,70,fail,19.3,0.0,tower leak 2/4 19.3s leakScore 50 delay 2.6s delayScore 31
+    wave,5,26,18.6,70,fail,7.4,1.5,timeout leak 3/4 7.4s leakScore 25 delay 1.0s delayScore 12
+    wave,6,27,51.8,70,fail,19.1,0.1,tower leak 1/4 19.1s leakScore 75 delay 2.4s delayScore 29
+    wave,7,28,61.5,70,fail,20.3,1.8,tower leak 1/5 20.3s leakScore 80 delay 3.6s delayScore 43
+    wave,8,29,29.7,70,fail,12.9,2.1,timeout leak 3/4 12.9s leakScore 25 delay 2.9s delayScore 34
+    wave,9,30,12.5,70,fail,5.7,0.7,timeout leak 3/4 5.7s leakScore 25 delay 0.0s delayScore 0
+    wave,10,31,22.1,70,fail,11.2,0.0,timeout leak 3/4 11.2s leakScore 25 delay 1.6s delayScore 19
+  [cm_top_20261121-055720_4waves_pass3_avg91.csv] (trace lines=941)
+    # passWhy=近卫上路，移速 280（≤280 慢 / ≥310 快）→ 及格 70（快英雄 80）
+    # moveSpeed=280 range=600 ranged=1
+    # wave,attempt,wave,score,pass,result,seconds,joinSeconds,detail
+    # trace,wave,t,heroX,heroY,creep1X,creep1Y,...
+    wave,1,2,62.5,70,fail,32.4,0.1,timeout leak 3/4 32.4s leakScore 25 delay 18.2s delayScore 100
+    wave,2,6,100.0,70,pass,38.9,0.1,tower leak 0/4 38.9s leakScore 100 delay 22.3s delayScore 100
+    wave,3,10,100.0,70,pass,33.0,0.1,tower leak 0/4 33.0s leakScore 100 delay 16.4s delayScore 100
+    wave,4,12,100.0,70,pass,34.7,0.1,tower leak 0/4 34.7s leakScore 100 delay 18.1s delayScore 100
+
+=== 4. AiUnit.log 中基线/卡兵统计概况 ===
+  AiUnit.log 总行数=35298, 真人坐标行数=16159, 关键统计行数=5688
+    [08:02:33.727] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 2639 | 英雄横 -54 → 目标横 -50（最前兵 -49，一排 1 只 -49~-49 宽 0，边路：整波中位，漂移 -1/s 修正 -0）
+    [08:02:34.041] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 2539 | 英雄横 -54 → 目标横 -51（最前兵 -50，一排 1 只 -50~-50 宽 0，边路：整波中位，漂移 -1/s 修正 -1）
+    [08:02:34.391] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 2454 | 英雄横 -54 → 目标横 -51（最前兵 -50，一排 1 只 -50~-50 宽 0，边路：整波中位，漂移 -1/s 修正 -1）
+    [08:02:34.656] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 2407 | 英雄横 -54 → 目标横 -50（最前兵 -50，一排 1 只 -50~-50 宽 0，边路：整波中位，漂移 -0/s 修正 -0）
+    [08:02:35.007] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 2293 | 英雄横 -54 → 目标横 -51（最前兵 -51，一排 1 只 -51~-51 宽 0，边路：整波中位，漂移 -1/s 修正 -0）
+    [08:02:35.369] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 2156 | 英雄横 -54 → 目标横 -52（最前兵 -51，一排 1 只 -51~-51 宽 0，边路：整波中位，漂移 -1/s 修正 -1）
+    [08:02:35.647] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 2131 | 英雄横 -54 → 目标横 -51（最前兵 -51，一排 1 只 -51~-51 宽 0，边路：整波中位，漂移 -0/s 修正 -0）
+    [08:02:35.916] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 2042 | 英雄横 -54 → 目标横 -52（最前兵 -52，一排 1 只 -52~-52 宽 0，边路：整波中位，漂移 -1/s 修正 -1）
+    [08:02:36.289] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 1932 | 英雄横 -54 → 目标横 -53（最前兵 -52，一排 1 只 -52~-52 宽 0，边路：整波中位，漂移 -1/s 修正 -1）
+    [08:02:36.626] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 1836 | 英雄横 -54 → 目标横 -53（最前兵 -52，一排 1 只 -52~-52 宽 0，边路：整波中位，漂移 -1/s 修正 -1）
+    [08:02:36.899] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 1708 | 英雄横 -54 → 目标横 -53（最前兵 -52，一排 1 只 -52~-52 宽 0，边路：整波中位，漂移 -1/s 修正 -1）
+    [08:02:37.198] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 1592 | 英雄横 -54 → 目标横 -55（最前兵 -53，一排 1 只 -53~-53 宽 0，边路：整波中位，漂移 -3/s 修正 -2）
+    [08:02:37.518] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 1490 | 英雄横 -54 → 目标横 -54（最前兵 -53，一排 1 只 -53~-53 宽 0，边路：整波中位，漂移 -1/s 修正 -1）
+    [08:02:37.829] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 1340 | 英雄横 -54 → 目标横 -55（最前兵 -54，一排 1 只 -54~-54 宽 0，边路：整波中位，漂移 -2/s 修正 -1）
+    [08:02:38.148] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 1208 | 英雄横 -54 → 目标横 -56（最前兵 -54，一排 1 只 -54~-54 宽 0，边路：整波中位，漂移 -2/s 修正 -1）
+    [08:02:38.450] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 1190 | 英雄横 -54 → 目标横 -54（最前兵 -54，一排 1 只 -54~-54 宽 0，边路：整波中位，漂移 0/s 修正 +0）
+    [08:02:38.781] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 985 | 英雄横 -54 → 目标横 -56（最前兵 -55，一排 1 只 -55~-55 宽 0，边路：整波中位，漂移 -2/s 修正 -1）
+    [08:02:39.102] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 836 | 英雄横 -54 → 目标横 -56（最前兵 -56，一排 1 只 -56~-56 宽 0，边路：整波中位，漂移 -1/s 修正 -0）
+    [08:02:39.418] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 783 | 英雄横 -54 → 目标横 -56（最前兵 -56，一排 1 只 -56~-56 宽 0，漂移 0/s 修正 +0）
+    [08:02:39.817] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 615 | 英雄横 -54 → 目标横 -56（最前兵 -56，一排 1 只 -56~-56 宽 0，漂移 0/s 修正 +0）
+    [08:02:40.125] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 505 | 英雄横 -54 → 目标横 -57（最前兵 -57，一排 1 只 -57~-57 宽 0，漂移 0/s 修正 +0）
+    [08:02:40.355] 🧮 [评分] 第 5 次测试开始（第 5 波，4 只兵）：到一塔 / 接敌 / 低于及格线自动结束
+    [08:02:40.471] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 411 | 英雄横 -54 → 目标横 -57（最前兵 -57，一排 1 只 -57~-57 宽 0，漂移 0/s 修正 +0）
+    [08:02:40.785] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 320 | 英雄横 -54 → 目标横 -57（最前兵 -57，一排 1 只 -57~-57 宽 0，漂移 0/s 修正 +0）
+    [08:02:41.110] 🎯 [Tactic] 卡兵 第 5 波 车道 6458 | 前距 197 | 英雄横 -54 → 目标横 -58（最前兵 -58，一排 1 只 -58~-58 宽 0，漂移 0/s 修正 +0）
+    [08:02:41.436] 🎯 [Tactic] 卡兵 第 5 波 车道 6534 | 前距 175 | 英雄横 -57 → 目标横 -58（最前兵 -58，一排 1 只 -58~-58 宽 0，漂移 0/s 修正 +0）
+    [08:02:41.741] 🎯 [Tactic] 卡兵 第 5 波 车道 6612 | 前距 171 | 英雄横 -58 → 目标横 -33（最前兵 -33，一排 1 只 -33~-33 宽 0，漂移 0/s 修正 +0）
+    [08:02:42.033] 🎯 [Tactic] 卡兵 第 5 波 车道 6663 | 前距 161 | 英雄横 -41 → 目标横 -21（最前兵 -21，一排 1 只 -21~-21 宽 0，漂移 0/s 修正 +0）
+    [08:02:42.344] 🎯 [Tactic] 卡兵 第 5 波 车道 6734 | 前距 107 | 英雄横 -25 → 目标横 1（最前兵 1，一排 1 只 1~1 宽 0，漂移 0/s 修正 +0）
+    [08:02:42.608] 🎯 [Tactic] 卡兵 第 5 波 车道 6783 | 前距 98 | 英雄横 -7 → 目标横 12（最前兵 12，一排 1 只 12~12 宽 0，漂移 0/s 修正 +0）
+    [08:02:42.966] 🎯 [Tactic] 卡兵 第 5 波 车道 6834 | 前距 106 | 英雄横 3 → 目标横 20（最前兵 20，一排 1 只 20~20 宽 0，漂移 0/s 修正 +0）
+    [08:02:43.265] 🎯 [Tactic] 卡兵 第 5 波 车道 6872 | 前距 80 | 英雄横 8 → 目标横 31（最前兵 31，一排 1 只 31~31 宽 0，漂移 0/s 修正 +0）
+    [08:02:43.630] 🎯 [Tactic] 卡兵 第 5 波 车道 6912 | 前距 44 | 英雄横 19 → 目标横 45（最前兵 45，一排 1 只 45~45 宽 0，漂移 0/s 修正 +0）
+    [08:02:44.043] 🎯 [Tactic] 卡兵 第 5 波 车道 6985 | 前距 74 | 英雄横 43 → 目标横 53（最前兵 53，一排 1 只 53~53 宽 0，漂移 0/s 修正 +0）
+    [08:02:44.314] 🎯 [Tactic] 卡兵 第 5 波 车道 7028 | 前距 23 | 英雄横 51 → 目标横 70（最前兵 70，一排 1 只 70~70 宽 0，漂移 0/s 修正 +0）
+    [08:02:44.649] 🎯 [Tactic] 卡兵 第 5 波 车道 7090 | 前距 116 | 英雄横 56 → 目标横 30（最前兵 64，一排 1 只 64~64 宽 0，边路：整波中位，漂移 -28/s 修正 -55）
+    [08:02:45.006] 🎯 [Tactic] 卡兵 第 5 波 车道 7145 | 前距 21 | 英雄横 69 → 目标横 165（最前兵 92，一排 1 只 92~92 宽 0，边路：整波中位，漂移 26/s 修正 +53）
+    [08:02:45.295] 🎯 [Tactic] 卡兵 第 5 波 车道 7168 | 前距 99 | 英雄横 84 → 目标横 5（最前兵 82，一排 1 只 82~82 宽 0，边路：整波中位，漂移 -59/s 修正 -76）
+    [08:02:45.613] 🎯 [Tactic] 卡兵 第 5 波 车道 7201 | 前距 103 | 英雄横 71 → 目标横 35（最前兵 87，一排 1 只 87~87 宽 0，边路：整波中位，漂移 -24/s 修正 -52）
+    [08:02:45.998] 🎯 [Tactic] 卡兵 第 5 波 车道 7232 | 前距 30 | 英雄横 56 → 目标横 238（最前兵 151，一排 2 只 151~265 宽 114，边路：整波中位，漂移 75/s 修正 +88）
+    [08:02:46.301] 🎯 [Tactic] 卡兵 第 5 波 车道 7244 | 前距 11 | 英雄横 82 → 目标横 124（最前兵 127，一排 1 只 127~127 宽 0，边路：整波中位，漂移 -4/s 修正 -3）
+    [08:02:46.517] 🚨 [Tactic] 漏兵 第 5 波 t=26.5s：兵 18E9 车道 7269 横 128 | 英雄 车道 7244 横 82（兵比英雄 前 25 横 +46）| 离塔 882
+    [08:02:46.587] 🎯 [Tactic] 卡兵 第 5 波 车道 7244 | 前距 20 | 英雄横 82 → 目标横 310（最前兵 259，一排 1 只 259~259 宽 0，边路：整波中位，漂移 52/s 修正 +72）
+    [08:02:46.882] 🚨 [Tactic] 漏兵 第 5 波 t=26.8s：兵 18E8 车道 7276 横 258 | 英雄 车道 7244 横 82（兵比英雄 前 32 横 +176）| 离塔 875
+    [08:02:46.882] 🎯 [Tactic] 卡兵 第 5 波 车道 7244 | 前距 72 | 英雄横 82 → 目标横 27（最前兵 101，一排 1 只 101~101 宽 0，边路：整波中位，漂移 -29/s 修正 -54）
+    [08:02:47.165] 🎯 [Tactic] 卡兵 第 5 波 车道 7256 | 前距 72 | 英雄横 100 → 目标横 78（最前兵 103，一排 1 只 103~103 宽 0，边路：整波中位，漂移 -7/s 修正 -5）
+    [08:02:47.481] 🎯 [Tactic] 卡兵 第 5 波 车道 7292 | 前距 71 | 英雄横 86 → 目标横 93（最前兵 110，一排 1 只 110~110 宽 0，边路：整波中位，漂移 5/s 修正 +3）
+    [08:02:47.785] 🎯 [Tactic] 卡兵 第 5 波 车道 7324 | 前距 37 | 英雄横 92 → 目标横 160（最前兵 121，一排 1 只 121~121 宽 0，边路：整波中位，漂移 34/s 修正 +59）
+    [08:02:48.039] 🎯 [Tactic] 卡兵 第 5 波 车道 7354 | 前距 -45 | 英雄横 104 → 目标横 202（最前兵 143，一排 1 只 143~143 宽 0，边路：整波中位，漂移 63/s 修正 +79）
+    [08:02:48.314] 🎯 [Tactic] 卡兵 第 5 波 车道 7367 | 前距 14 | 英雄横 98 → 目标横 263（最前兵 214，一排 1 只 214~214 宽 0，边路：整波中位，漂移 49/s 修正 +69）
+    [08:02:48.614] 🎯 [Tactic] 卡兵 第 5 波 车道 7410 | 前距 -55 | 英雄横 109 → 目标横 120（最前兵 154，一排 1 只 154~154 宽 0，边路：整波中位，漂移 -26/s 修正 -24）
+    [08:02:48.826] 🚨 [Tactic] 漏兵 第 5 波 t=28.8s：兵 1853 车道 7482 横 153 | 英雄 车道 7428 横 116（兵比英雄 前 54 横 +37）| 离塔 669
+    [08:02:48.932] 🎯 [Tactic] 卡兵 第 5 波 车道 7428 | 前距 44 | 英雄横 116 → 目标横 178（最前兵 178，一排 1 只 178~178 宽 0，漂移 0/s 修正 +0）
+    [08:02:49.152] 🏁 [Tactic] AI 卡兵评分 第 5 波：卡到一塔 用时 29.1s | 漏兵 3/4（其中从没靠近英雄 0）→ 得分 25 ❌ | 累计 5 波 平均 50 分，满分 1 波
+    [08:02:49.152] ⏱ [Tactic] 拖延 第 5 波：用时 29.1s，不卡约 24.0s（自然速度 340/s，还没学到，按 340）→ 多拖 5.1s（满分 12.0s）→ 拖延分 43 | 漏兵分 25 → 综合 34
+    [08:02:49.152] 🧮 [评分] 卡兵 第 5 次（第 5 波）：34 分 ❌（及格 60）| 平均 47，及格 1/5
+    [08:02:52.667] ℹ [评分] 已经在统计近卫下路（-block 看总评，-block end 停止）
+    [08:02:54.707] [评分] 卡兵 结束：5 次，平均 47 分（最高 91 / 最低 18），1 次达到及格线 60 → ❌ 不及格（5.4 分钟）
+    [08:02:54.708] 💾 [评分] 已保存：cm_bot_20261121-075732_5waves_pass1_avg47.csv
+    [08:02:54.708] 🧮 [评分] 卡兵 结束：5 次，平均 47 分（最高 91 / 最低 18），1 次达到及格线 60 → ❌ 不及格（5.4 分钟）

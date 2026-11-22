@@ -1,0 +1,10 @@
+open "D:\Qt\workspace\War3Launcher\versions\1.27.0.52240\War3Patch.mpq"
+extract "Units\UnitBalance.slk" "UBAL"
+extract "Units\UnitWeapons.slk" "UWEP"
+extract "Units\MiscData.txt" "MDAT"
+close
+open "D:\Qt\workspace\War3Launcher\versions\1.27.0.52240\war3.mpq"
+extract "Units\UnitBalance.slk" "UBAL_W3"
+extract "Units\UnitWeapons.slk" "UWEP_W3"
+extract "Units\MiscData.txt" "MDAT_W3"
+close

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://war3analysis.local/schemas/dota-imitation-step-v1.json",
+  "title": "DotA 6.83d Imitation Learning Step Sample (0.5s Interval)",
+  "description": "每 0.5 秒一条「局面特征 state -> 玩家下一步操作 action」训练样本（JSONL，每行一个独立 JSON 对象）",
+  "type": "object",
+  "required": ["schema_version", "match_id", "t_ms", "pid", "hero", "state", "action"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0" },
+    "match_id": { "type": "string", "description": "录像文件名或唯一对局 ID" },
+    "patch": { "type": "string", "description": "War3 补丁版本，如 1.27" },
+    "t_ms": { "type": "integer", "minimum": 0, "description": "当前时间步（毫秒，500ms 网格对齐）" },
+    "pid": { "type": "integer", "description": "玩家 ID (1..12)" },
+    "team": { "type": "integer", "enum": [0, 1], "description": "0=近卫 Sentinel, 1=天灾 Scourge" },
+    "hero": { "type": "string", "description": "英雄 FourCC，如 Hjai / H008 / Nbbc" },
+    "state_source": {
+      "type": "string",
+      "enum": ["w3g_action_proxy", "war3_hook_replay", "web_sim"],
+      "description": "局面坐标来源：纯 w3g 动作近似 / 引擎回放 hook 采样 / 网页模拟器"
+    },
+    "state": {
+      "type": "object",
+      "required": ["game_phase", "hero_pos", "hero_level", "last_hits", "denies", "kills", "deaths"],
+      "properties": {
+        "game_phase": { "type": "string", "enum": ["pre_horn", "laning_0_10m", "mid_10_25m", "late_25m_plus"] },
+        "hero_pos": {
+          "type": "object",
+          "properties": {
+            "x": { "type": ["number", "null"] },
+            "y": { "type": ["number", "null"] },
+            "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+          }
+        },
+        "hero_level": { "type": "integer", "minimum": 1, "maximum": 25 },
+        "hp_ratio": { "type": ["number", "null"], "minimum": 0, "maximum": 1, "description": "hook 回放采样可填精确值，纯 w3g 为 null" },
+        "mp_ratio": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+        "gold_reliable": { "type": ["integer", "null"] },
+        "gold_unreliable": { "type": ["integer", "null"] },
+        "last_hits": { "type": "integer", "minimum": 0 },
+        "denies": { "type": "integer", "minimum": 0 },
+        "kills": { "type": "integer", "minimum": 0 },
+        "deaths": { "type": "integer", "minimum": 0 },
+        "learned_skills": { "type": "array", "items": { "type": "string" } },
+        "inventory_slots": { "type": "array", "items": { "type": ["string", "null"] }, "maxItems": 6 },
+        "selected_units": { "type": "array", "items": { "type": "string" } },
+        "nearby_units": {
+          "type": "array",
+          "description": "视野内附近单位列表（仅 war3_hook_replay 路线填充；纯 w3g 为空数组）",
+          "items": {
+            "type": "object",
+            "properties": {
+              "obj1": { "type": "string" },
+              "type": { "type": "string" },
+              "relation": { "type": "string", "enum": ["ally_hero", "enemy_hero", "ally_creep", "enemy_creep", "tower", "neutral"] },
+              "dx": { "type": "number" },
+              "dy": { "type": "number" },
+              "hp_ratio": { "type": "number" }
+            }
+          }
+        },
+        "recent_action_hist": { "type": "array", "items": { "type": "string" }, "description": "过去 2.5s 内的动作类别序列" }
+      }
+    },
+    "action": {
+      "type": "object",
+      "required": ["category", "action_count_in_window"],
+      "properties": {
+        "category": {
+          "type": "string",
+          "enum": ["noop", "move", "attack_unit", "attack_ground", "stop_hold", "cast_point", "cast_unit", "cast_immediate", "use_item", "buy_item", "learn_skill", "select_or_group", "ping_or_chat"]
+        },
+        "order_id": { "type": ["string", "null"] },
+        "order_name": { "type": ["string", "null"] },
+        "target_x": { "type": ["number", "null"] },
+        "target_y": { "type": ["number", "null"] },
+        "target_obj1": { "type": ["string", "null"] },
+        "action_count_in_window": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

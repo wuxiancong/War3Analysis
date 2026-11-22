@@ -1,0 +1,652 @@
+=== 1. SGO / SHO 与 SPO 下半段 ===
+--- function SGO ---
+  L23012: function SGO takes nothing returns nothing
+  L23013: call AX1(GetEnumUnit(),1093817905,1,15,1110460466)
+  L23014: endfunction
+--- function SHO ---
+  L23015: function SHO takes nothing returns nothing
+  L23016: call AX1(GetEnumUnit(),1093817904,1,15,1110460465)
+  L23017: endfunction
+--- SPO L23320..L23375 ---
+  L23320: call SSO(bj_lastCreatedGroup,3)
+  L23321: endif
+  L23322: if O2I==false and O4I==false then
+  L23323: if(LI)then
+  L23324: call CreateNUnitsAtLoc(NI,1702061422,BO[0],A1,bj_UNIT_FACING)
+  L23325: else
+  L23326: call CreateNUnitsAtLoc(NI,1697656918,BO[0],A1,bj_UNIT_FACING)
+  L23327: endif
+  L23328: call SZO(bj_lastCreatedGroup)
+  L23329: call SSO(bj_lastCreatedGroup,4)
+  L23330: endif
+  L23331: if O2I==false and O7I==false then
+  L23332: if(WI)then
+  L23333: call CreateNUnitsAtLoc(SI,1701081721,BO[0],E1,bj_UNIT_FACING)
+  L23334: else
+  L23335: call CreateNUnitsAtLoc(SI,1697656919,BO[0],E1,bj_UNIT_FACING)
+  L23336: endif
+  L23337: call SVO(bj_lastCreatedGroup)
+  L23338: call SSO(bj_lastCreatedGroup,2)
+  L23339: endif
+  L23340: if O6I==false then
+  L23341: if(XI)then
+  L23342: call CreateNUnitsAtLoc(SI,1701081721,BO[0],C1,bj_UNIT_FACING)
+  L23343: else
+  L23344: call CreateNUnitsAtLoc(SI,1697656919,BO[0],C1,bj_UNIT_FACING)
+  L23345: endif
+  L23346: call SSO(bj_lastCreatedGroup,3)
+  L23347: endif
+  L23348: if O2I==false and O4I==false then
+  L23349: if(YI)then
+  L23350: call CreateNUnitsAtLoc(SI,1701081721,BO[0],D1,bj_UNIT_FACING)
+  L23351: else
+  L23352: call CreateNUnitsAtLoc(SI,1697656919,BO[0],D1,bj_UNIT_FACING)
+  L23353: endif
+  L23354: call SZO(bj_lastCreatedGroup)
+  L23355: call SSO(bj_lastCreatedGroup,4)
+  L23356: endif
+  L23357: if SQO==true then
+  L23358: if O2I==false and O7I==false then
+  L23359: if(WI)then
+  L23360: call CreateNUnitsAtLoc(SI,1700946284,BO[0],E1,bj_UNIT_FACING)
+  L23361: else
+  L23362: call CreateNUnitsAtLoc(SI,1697657398,BO[0],E1,bj_UNIT_FACING)
+  L23363: endif
+  L23364: call SSO(bj_lastCreatedGroup,2)
+  L23365: endif
+  L23366: if O6I==false then
+  L23367: if(XI)then
+  L23368: call CreateNUnitsAtLoc(SI,1700946284,BO[0],C1,bj_UNIT_FACING)
+  L23369: else
+  L23370: call CreateNUnitsAtLoc(SI,1697657398,BO[0],C1,bj_UNIT_FACING)
+  L23371: endif
+  L23372: call SSO(bj_lastCreatedGroup,3)
+  L23373: endif
+  L23374: if O2I==false and O4I==false then
+  L23375: if(YI)then
+
+=== 2. ZG 刷兵触发器与号角时间 N (L27790..L27875) ===
+  L27790: call GroupEnumUnitsInRect(g,CB,Condition(function IY2))
+  L27791: call GroupEnumUnitsInRect(g,DB,Condition(function IY2))
+  L27792: call GroupEnumUnitsInRect(g,EB,Condition(function IY2))
+  L27793: call GroupEnumUnitsInRect(g,AB,Condition(function IJ2))
+  L27794: call GroupEnumUnitsInRect(g,ZB,Condition(function IK2))
+  L27795: call GroupEnumUnitsInRect(g,BB,Condition(function IL2))
+  L27796: call GroupEnumUnitsInRect(g,C6,Condition(function IM2))
+  L27797: call GroupEnumUnitsInRect(g,D6,Condition(function IM2))
+  L27798: call GroupEnumUnitsInRect(g,E6,Condition(function IM2))
+  L27799: call GroupEnumUnitsInRect(g,HB,Condition(function IM2))
+  L27800: call GroupEnumUnitsInRect(g,FB,Condition(function IM2))
+  L27801: call GroupEnumUnitsInRect(g,GB,Condition(function IM2))
+  L27802: call GroupEnumUnitsInRect(g,UA,Condition(function IN2))
+  L27803: call GroupEnumUnitsInRect(g,IB,Condition(function IS2))
+  L27804: call GroupEnumUnitsInRect(g,OB,Condition(function IT2))
+  L27805: call NSI(g)
+  L27806: set g=null
+  L27807: return false
+  L27808: endfunction
+  L27809: function IQ2 takes nothing returns boolean
+  L27810: call S0I(GetTriggeringTrigger())
+  L27811: call TriggerEvaluate(OH)
+  L27812: return false
+  L27813: endfunction
+  L27814: function IU2 takes nothing returns boolean
+  L27815: local real r=TimerGetRemaining(OL)
+  L27816: local real BQO=r
+  L27817: local integer QHI=R2I(BQO)
+  L27818: local integer BX1=QHI/60-1/2
+  L27819: local integer BY1=ModuloInteger(QHI,60)
+  L27820: local trigger t
+  L27821: local integer i
+  L27822: local player p
+  L27823: if r==0 then
+  L27824: set TN0=true
+  L27825: call FL1("GameStart",1)
+  L27826: call BW1(BX1,BY1,true)
+  L27827: set CL=true
+  L27828: set N=TimerGetElapsed(M)
+  L27829: call S0I(GetTriggeringTrigger())
+  L27830: call SetFloatGameState(GAME_STATE_TIME_OF_DAY,6.00)
+  L27831: call SuspendTimeOfDay(false)
+  L27832: call SetTimeOfDayScale(0.625)
+  L27833: if P0==false then
+  L27834: if HL then
+  L27835: call TriggerRegisterTimerEvent(J20,120,true)
+  L27836: else
+  L27837: call TriggerRegisterTimerEvent(J20,120,true)
+  L27838: endif
+  L27839: call TriggerEvaluate(J20)
+  L27840: endif
+  L27841: call TriggerRegisterTimerEvent(OH,60,true)
+  L27842: set t=CreateTrigger()
+  L27843: call TriggerRegisterTimerEvent(t,30,false)
+  L27844: call TriggerAddCondition(t,Condition(function IQ2))
+  L27845: set t=null
+  L27846: call TriggerRegisterTimerEventPeriodic(ZG,30.00)
+  L27847: call TriggerExecute(ZG)
+  L27848: call TriggerRegisterTimerEventPeriodic(UG,450.00)
+  L27849: call TriggerRegisterTimerEventSingle(GG,2699.00)
+  L27850: call TriggerRegisterTimerEventSingle(HG,999.00)
+  L27851: call TriggerRegisterTimerEventSingle(HG,1999.00)
+  L27852: call TriggerRegisterTimerEventSingle(HG,2999.00)
+  L27853: call TriggerRegisterTimerEvent(FL0,300,true)
+  L27854: call TriggerRegisterTimerEvent(R50,300,true)
+  L27855: call TriggerRegisterTimerEvent(HS,30,true)
+  L27856: call TriggerEvaluate(HS)
+  L27857: if Q0 then
+  L27858: call TriggerRegisterTimerEvent(BH,600,true)
+  L27859: endif
+  L27860: call ExecuteFunc("O02")
+  L27861: elseif r==7 then
+  L27862: set t=CreateTrigger()
+  L27863: call TriggerRegisterTimerEvent(t,30,true)
+  L27864: call TriggerAddCondition(t,Condition(function SNO))
+  L27865: elseif BQO<12 and DL==false then
+  L27866: set DL=true
+  L27867: call PlaySoundBJ(OE)
+  L27868: call BW1(BX1,BY1,true)
+  L27869: elseif BQO==20 then
+  L27870: if GetRandomInt(0,10)<2 then
+  L27871: call DisplayTimedTextToPlayer(GetLocalPlayer(),0,0,6,"|c006699CC"+GetObjectName(1848659015)+"|r")
+  L27872: endif
+  L27873: elseif BQO==60 then
+  L27874: call ExecuteFunc("UXO")
+  L27875: else
+--- 搜索 ZG 的所有引用 ---
+  L490: trigger ZG=null
+  L23195: local boolean SQO=ModuloInteger(GetTriggerExecCount(ZG),7)==0
+  L23203: if GetTriggerExecCount(ZG)==1 and O2I==false then
+  L23220: elseif GetTriggerExecCount(ZG)==1 and O2I==true then
+  L23224: if GetTriggerExecCount(ZG)==1 then
+  L27846: call TriggerRegisterTimerEventPeriodic(ZG,30.00)
+  L27847: call TriggerExecute(ZG)
+  L28341: call DisableTrigger(ZG)
+  L28980: call TriggerExecute(ZG)
+  L96258: set ZG=CreateTrigger()
+  L96259: call TriggerAddAction(ZG,function SPO)
+
+=== 3. TQO (每 450s 升级) 科技 FourCC ===
+  1378889783 = 'R007'
+  1378889795 = 'R00C'
+  1378889784 = 'R008'
+  1378889796 = 'R00D'
+  1378889785 = 'R009'
+  1378889779 = 'R003'
+  1378889793 = 'R00A'
+  1378889794 = 'R00B'
+  L23518: call DisableTrigger(QG)
+  L23519: endfunction
+  L23520: function TQO takes nothing returns nothing
+  L23521: call SetPlayerTechResearchedSwap(1378889783,(GetPlayerTechCountSimple(1378889783,BO[0])+1),BO[0])
+  L23522: call SetPlayerTechResearchedSwap(1378889795,(GetPlayerTechCountSimple(1378889795,BO[0])+1),BO[0])
+  L23523: call SetPlayerTechResearchedSwap(1378889784,(GetPlayerTechCountSimple(1378889784,BO[0])+1),BO[0])
+  L23524: call SetPlayerTechResearchedSwap(1378889796,(GetPlayerTechCountSimple(1378889796,BO[0])+1),BO[0])
+  L23525: call SetPlayerTechResearchedSwap(1378889785,(GetPlayerTechCountSimple(1378889785,CO[0])+1),CO[0])
+  ---
+  L96310: call TriggerAddAction(QG,function TRO)
+  L96311: set UG=CreateTrigger()
+  L96312: call TriggerAddAction(UG,function TQO)
+  L96313: set IH=CreateTrigger()
+  L96314: call TriggerRegisterTimerEventSingle(IH,75.00)
+  L96315: call TriggerAddAction(IH,function R0O)
+  L96316: set OH=CreateTrigger()
+  L96317: call TriggerAddCondition(OH,Condition(function P3O))
+  ---
+
+=== 4. 查找工作区中的 SLK 文件 ===
+  找到 SLK 文件: ['D:\\Qt\\workspace\\War3Analysis\\artifacts\\ability-orders\\map\\Units_AbilityData.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\ability-orders\\war3.mpq\\Units_AbilityData.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\ability-orders\\War3Patch.mpq\\Units_AbilityData.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\ability-orders\\War3x.mpq\\Units_AbilityData.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\neutral-stack\\patch_Units_UnitBalance.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\neutral-stack\\patch_Units_UnitWeapons.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\neutral-stack\\Units_UnitBalance.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\neutral-stack\\Units_UnitWeapons.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\neutral-stack\\UnitData.slk\\UnitData.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\scoring\\base\\war3.mpq\\Units_UnitBalance.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\scoring\\base\\war3.mpq\\Units_UnitData.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\scoring\\base\\war3.mpq\\Units_UnitWeapons.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\scoring\\base\\War3Patch.mpq\\Units_UnitBalance.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\scoring\\base\\War3Patch.mpq\\Units_UnitData.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\scoring\\base\\War3Patch.mpq\\Units_UnitWeapons.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\scoring\\base\\War3x.mpq\\Units_UnitBalance.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\scoring\\base\\War3x.mpq\\Units_UnitData.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\scoring\\base\\War3x.mpq\\Units_UnitWeapons.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\ward-deward\\map\\Units_AbilityBuffData.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\ward-deward\\map\\Units_AbilityData.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\ward-deward\\map\\Units_ItemData.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\ward-deward\\map\\Units_UnitAbilities.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\ward-deward\\map\\Units_UnitBalance.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\ward-deward\\map\\Units_UnitData.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\ward-deward\\map\\Units_UnitUI.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\ward-deward\\map\\Units_UnitWeapons.slk', 'D:\\Qt\\workspace\\War3Analysis\\artifacts\\ward-deward\\map\\Units_UpgradeData.slk']
+  [Units_AbilityData.slk] hit A2V0:
+    C;X1;K"A2V0"
+  [Units_AbilityData.slk] hit A2V1:
+    C;Y4127;K"A2V1"
+  [Units_AbilityData.slk] hit B0H1:
+    C;X33;K"B0H1"
+  [Units_AbilityData.slk] hit B0H2:
+    C;X33;K"B0H2"
+  [Units_AbilityBuffData.slk] hit B0H1:
+    C;Y817;K"B0H1"
+  [Units_AbilityBuffData.slk] hit B0H2:
+    C;X1;K"B0H2"
+  [Units_AbilityData.slk] hit A2V0:
+    C;X1;K"A2V0"
+  [Units_AbilityData.slk] hit A2V1:
+    C;Y4127;K"A2V1"
+  [Units_AbilityData.slk] hit B0H1:
+    C;X33;K"B0H1"
+  [Units_AbilityData.slk] hit B0H2:
+    C;X33;K"B0H2"
+  [Units_UnitBalance.slk] hit R007:
+    C;X50;K"R007"
+  [Units_UnitBalance.slk] hit R00J:
+    C;X50;K"R00J"
+  [Units_UnitBalance.slk] hit R008:
+    C;X50;K"R008"
+  [Units_UnitBalance.slk] hit R00K:
+  [Units_UnitBalance.slk] hit R009:
+    C;X50;K"R009"
+  [Units_UnitBalance.slk] hit R003:
+    C;X50;K"R003"
+  [Units_UnitBalance.slk] hit R00H:
+  [Units_UnitBalance.slk] hit R00I:
+  [Units_UpgradeData.slk] hit R007:
+    C;Y67;K"R007"
+  [Units_UpgradeData.slk] hit R00J:
+    C;Y85;K"R00J"
+  [Units_UpgradeData.slk] hit R008:
+    C;X1;K"R008"
+  [Units_UpgradeData.slk] hit R00K:
+    C;X1;K"R00K"
+  [Units_UpgradeData.slk] hit R009:
+    C;Y69;K"R009"
+  [Units_UpgradeData.slk] hit R003:
+    C;Y71;K"R003"
+  [Units_UpgradeData.slk] hit R00H:
+    C;Y83;K"R00H"
+  [Units_UpgradeData.slk] hit R00I:
+    C;X1;K"R00I"
+
+=== 5. C:\War3Run\War3Launcher 下的 lane_paths.txt / position_marks.txt ===
+  [scores.csv] (118 lines):
+    time,session,row,type,hero,abbrev,lane,mode,attempt,wave,score,pass,result,detail
+    2026-11-20 23:55:32,1,start,block,Hjai,cm,2,human,0,0,0.0,60,fail,
+    2026-11-20 23:55:43,1,summary,block,Hjai,cm,2,human,0,0,0.0,60,fail,pass 0 of 0
+    2026-11-20 23:56:05,2,start,block,Hjai,cm,2,human,0,0,0.0,60,fail,
+    2026-11-20 23:56:19,2,summary,block,Hjai,cm,2,human,0,0,0.0,60,fail,pass 0 of 0
+    2026-11-20 23:56:42,3,start,block,Hjai,cm,2,human,0,0,0.0,60,fail,
+    2026-11-20 23:57:17,3,summary,block,Hjai,cm,2,human,0,0,0.0,60,fail,pass 0 of 0
+    2026-11-20 23:57:58,4,start,block,Hjai,cm,2,human,0,0,0.0,60,fail,
+    2026-11-20 23:58:36,4,summary,block,Hjai,cm,2,human,0,0,0.0,60,fail,pass 0 of 0
+    2026-11-21 00:00:42,5,start,block,Hjai,cm,2,human,0,0,0.0,60,fail,
+    2026-11-21 00:01:22,5,summary,block,Hjai,cm,2,human,0,0,0.0,60,fail,pass 0 of 0
+    2026-11-21 00:22:38,1,start,block,Hjai,cm,1,human,0,0,0.0,80,fail,
+    2026-11-21 00:23:13,1,attempt,block,Hjai,cm,1,human,1,1,100.0,80,pass,tower leak 0/4 33.9s leakScore 100 delay 20.5s delayScore 100
+    2026-11-21 00:23:46,1,attempt,block,Hjai,cm,1,human,2,3,0.0,80,fail,tower leak 4/4 21.4s leakScore 0 delay 8.0s delayScore 100
+    2026-11-21 00:23:46,1,summary,block,Hjai,cm,1,human,2,0,50.0,80,fail,pass 1 of 2
+    2026-11-21 00:38:06,1,start,block,Hjai,cm,1,human,0,0,0.0,80,fail,
+    2026-11-21 00:39:09,1,attempt,block,Hjai,cm,1,human,1,5,0.0,80,fail,timeout leak 4/4 18.2s leakScore 0 delay 8.3s delayScore 100
+    2026-11-21 04:02:45,1,start,block,Hjai,cm,1,human,0,0,0.0,80,fail,
+    2026-11-21 04:03:19,1,attempt,block,Hjai,cm,1,human,1,3,100.0,80,pass,tower leak 0/4 34.0s leakScore 100 delay 20.5s delayScore 100
+    2026-11-21 04:03:54,1,attempt,block,Hjai,cm,1,human,2,4,75.0,80,fail,timeout leak 1/4 24.3s leakScore 75 delay 13.6s delayScore 100
+
+=== 6. AiUnit.log 中各路记录检索 ===
+  [22:58:42.331] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [22:59:21.616] 🏁 [Tactic] 真人卡兵评分 第 1 波开始：4 只兵，一塔在车道 8722 处
+  [22:59:51.539] 🏁 [Tactic] 真人卡兵评分 第 1 波：卡到一塔 用时 29.9s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 1 波 平均 0 分，满分 0 波
+  [22:59:59.010] 🏁 [Tactic] 真人卡兵评分 第 2 波开始：4 只兵，一塔在车道 8722 处
+  [23:00:32.872] 🏁 [Tactic] 真人卡兵评分 第 2 波：卡到一塔 用时 33.9s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 2 波 平均 0 分，满分 0 波
+  [23:00:41.836] 🏁 [Tactic] 真人卡兵评分 第 3 波开始：4 只兵，一塔在车道 8722 处
+  [23:01:15.636] 🏁 [Tactic] 真人卡兵评分 第 3 波：卡到一塔 用时 33.8s | 漏兵 1/4（其中从没靠近英雄 0）→ 得分 75 ❌ | 累计 3 波 平均 25 分，满分 0 波
+  [23:01:27.147] 🏁 [Tactic] 真人卡兵评分 第 5 波开始：4 只兵，一塔在车道 8722 处
+  [23:02:03.062] 🏁 [Tactic] 真人卡兵评分 第 5 波：卡到一塔 用时 35.9s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 4 波 平均 19 分，满分 0 波
+  [23:02:12.845] 🏁 [Tactic] 真人卡兵评分 第 7 波开始：4 只兵，一塔在车道 8722 处
+  [23:02:50.066] 🏁 [Tactic] 真人卡兵评分 第 7 波：卡到一塔 用时 37.2s | 漏兵 1/4（其中从没靠近英雄 0）→ 得分 75 ❌ | 累计 5 波 平均 30 分，满分 0 波
+  [23:02:58.654] 🏁 [Tactic] 真人卡兵评分 第 9 波开始：4 只兵，一塔在车道 8722 处
+  [23:03:41.527] 🏁 [Tactic] 真人卡兵评分 第 9 波：卡到一塔 用时 42.9s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 6 波 平均 25 分，满分 0 波
+  [23:03:51.969] 🏁 [Tactic] 真人卡兵评分 第 11 波开始：5 只兵，一塔在车道 8722 处
+  [23:04:30.508] 🏁 [Tactic] 真人卡兵评分 第 11 波：卡到一塔 用时 38.5s | 漏兵 5/5（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 7 波 平均 21 分，满分 0 波
+  [23:04:36.225] 🏁 [Tactic] 真人卡兵评分 第 12 波开始：4 只兵，一塔在车道 8722 处
+  [23:04:58.700] 🏁 [Tactic] 真人卡兵评分 第 12 波：卡到一塔 用时 22.5s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 8 波 平均 19 分，满分 0 波
+  [23:05:07.088] 🏁 [Tactic] 真人卡兵评分 第 13 波开始：4 只兵，一塔在车道 8722 处
+  [23:05:28.844] 🏁 [Tactic] 真人卡兵评分 第 13 波：卡到一塔 用时 21.8s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 9 波 平均 17 分，满分 0 波
+  [23:05:36.844] 🏁 [Tactic] 真人卡兵评分 第 14 波开始：4 只兵，一塔在车道 8722 处
+  [23:06:03.812] 🏁 [Tactic] 真人卡兵评分 第 14 波：卡到一塔 用时 27.0s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 10 波 平均 15 分，满分 0 波
+  [23:06:06.965] 🏁 [Tactic] 真人卡兵评分 第 15 波开始：4 只兵，一塔在车道 8722 处
+  [23:06:32.649] 🏁 [Tactic] 真人卡兵评分 第 15 波：卡到一塔 用时 25.7s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 11 波 平均 14 分，满分 0 波
+  [23:06:36.981] 🏁 [Tactic] 真人卡兵评分 第 16 波开始：4 只兵，一塔在车道 8722 处
+  [23:07:02.866] 🏁 [Tactic] 真人卡兵评分 第 16 波：卡到一塔 用时 25.9s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 12 波 平均 12 分，满分 0 波
+  [23:07:08.732] 🏁 [Tactic] 真人卡兵评分 第 17 波开始：4 只兵，一塔在车道 8722 处
+  [23:07:47.634] 🏁 [Tactic] 真人卡兵评分 第 17 波：卡到一塔 用时 38.9s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 13 波 平均 12 分，满分 0 波
+  [23:07:54.245] 🏁 [Tactic] 真人卡兵评分 第 19 波开始：5 只兵，一塔在车道 8722 处
+  [23:08:44.788] 🏁 [Tactic] 真人卡兵评分 第 21 波开始：4 只兵，一塔在车道 8722 处
+  [23:09:33.236] 🏁 [Tactic] 真人卡兵评分 第 21 波：卡到一塔 用时 48.4s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 14 波 平均 11 分，满分 0 波
+  [23:09:35.454] 🏁 [Tactic] 真人卡兵评分 第 23 波开始：4 只兵，一塔在车道 8722 处
+  [23:10:00.947] 🏁 [Tactic] 真人卡兵评分 第 23 波：卡到一塔 用时 25.5s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 15 波 平均 10 分，满分 0 波
+  [23:10:05.316] 🏁 [Tactic] 真人卡兵评分 第 24 波开始：4 只兵，一塔在车道 8722 处
+  [23:10:31.679] 🏁 [Tactic] 真人卡兵评分 第 24 波：卡到一塔 用时 26.4s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 16 波 平均 9 分，满分 0 波
+  [23:10:36.143] 🏁 [Tactic] 真人卡兵评分 第 25 波开始：4 只兵，一塔在车道 8722 处
+  [23:11:04.090] 🏁 [Tactic] 真人卡兵评分 第 25 波：卡到一塔 用时 28.0s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 17 波 平均 9 分，满分 0 波
+  [23:11:07.756] 🏁 [Tactic] 真人卡兵评分 第 26 波开始：4 只兵，一塔在车道 8722 处
+  [23:11:33.930] 🏁 [Tactic] 真人卡兵评分 第 26 波：卡到一塔 用时 26.2s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 18 波 平均 8 分，满分 0 波
+  [23:11:37.430] 🏁 [Tactic] 真人卡兵评分 第 27 波开始：4 只兵，一塔在车道 8722 处
+  [23:12:03.539] 🏁 [Tactic] 真人卡兵评分 第 27 波：卡到一塔 用时 26.1s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 19 波 平均 8 分，满分 0 波
+  [23:12:07.761] 🏁 [Tactic] 真人卡兵评分 第 28 波开始：5 只兵，一塔在车道 8722 处
+  [23:12:34.095] 🏁 [Tactic] 真人卡兵评分 第 28 波：卡到一塔 用时 25.6s | 漏兵 5/5（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 20 波 平均 8 分，满分 0 波
+  [23:12:38.395] 🏁 [Tactic] 真人卡兵评分 第 29 波开始：4 只兵，一塔在车道 8722 处
+  [23:13:04.956] 🏁 [Tactic] 真人卡兵评分 第 29 波：卡到一塔 用时 26.5s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 21 波 平均 7 分，满分 0 波
+  [23:13:09.577] 🏁 [Tactic] 真人卡兵评分 第 30 波开始：4 只兵，一塔在车道 8722 处
+  [23:13:36.469] 🏁 [Tactic] 真人卡兵评分 第 30 波：卡到一塔 用时 27.0s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 22 波 平均 7 分，满分 0 波
+  [23:13:38.958] 🏁 [Tactic] 真人卡兵评分 第 31 波开始：4 只兵，一塔在车道 8722 处
+  [23:14:05.252] 🏁 [Tactic] 真人卡兵评分 第 31 波：卡到一塔 用时 26.3s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 23 波 平均 7 分，满分 0 波
+  [23:14:09.057] 🏁 [Tactic] 真人卡兵评分 第 32 波开始：4 只兵，一塔在车道 8722 处
+  [23:14:35.312] 🏁 [Tactic] 真人卡兵评分 第 32 波：卡到一塔 用时 26.2s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 24 波 平均 6 分，满分 0 波
+  [23:14:39.402] 🏁 [Tactic] 真人卡兵评分 第 33 波开始：4 只兵，一塔在车道 8722 处
+  [23:15:07.300] 🏁 [Tactic] 真人卡兵评分 第 33 波：卡到一塔 用时 27.9s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 25 波 平均 6 分，满分 0 波
+  [23:15:11.800] 🏁 [Tactic] 真人卡兵评分 第 34 波开始：4 只兵，一塔在车道 8722 处
+  [23:15:48.187] 🏁 [Tactic] 真人卡兵评分 第 34 波：卡到一塔 用时 36.4s | 漏兵 2/4（其中从没靠近英雄 0）→ 得分 50 ❌ | 累计 26 波 平均 8 分，满分 0 波
+  [23:15:53.912] 🏁 [Tactic] 真人卡兵评分 第 35 波开始：5 只兵，一塔在车道 8722 处
+  [23:16:19.545] 🏁 [Tactic] 真人卡兵评分 第 35 波：卡到一塔 用时 25.6s | 漏兵 4/5（其中从没靠近英雄 0）→ 得分 20 ❌ | 累计 27 波 平均 8 分，满分 0 波
+  [23:16:23.899] 🏁 [Tactic] 真人卡兵评分 第 36 波开始：4 只兵，一塔在车道 8722 处
+  [23:16:50.605] 🏁 [Tactic] 真人卡兵评分 第 36 波：卡到一塔 用时 26.7s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 28 波 平均 8 分，满分 0 波
+  [23:16:54.065] 🏁 [Tactic] 真人卡兵评分 第 37 波开始：4 只兵，一塔在车道 8722 处
+  [23:17:19.940] 🏁 [Tactic] 真人卡兵评分 第 37 波：卡到一塔 用时 25.9s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 29 波 平均 8 分，满分 0 波
+  [23:17:24.271] 🏁 [Tactic] 真人卡兵评分 第 38 波开始：4 只兵，一塔在车道 8722 处
+  [23:17:50.631] 🏁 [Tactic] 真人卡兵评分 第 38 波：卡到一塔 用时 26.4s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 30 波 平均 7 分，满分 0 波
+  [23:17:54.349] 🏁 [Tactic] 真人卡兵评分 第 39 波开始：4 只兵，一塔在车道 8722 处
+  [23:18:20.223] 🏁 [Tactic] 真人卡兵评分 第 39 波：卡到一塔 用时 25.9s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 31 波 平均 7 分，满分 0 波
+  [23:18:24.404] 🏁 [Tactic] 真人卡兵评分 第 40 波开始：4 只兵，一塔在车道 8722 处
+  [23:18:50.726] 🏁 [Tactic] 真人卡兵评分 第 40 波：卡到一塔 用时 26.3s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 32 波 平均 7 分，满分 0 波
+  [23:18:54.437] 🏁 [Tactic] 真人卡兵评分 第 41 波开始：4 只兵，一塔在车道 8722 处
+  [23:19:20.840] 🏁 [Tactic] 真人卡兵评分 第 41 波：卡到一塔 用时 26.4s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 33 波 平均 7 分，满分 0 波
+  [23:19:24.580] 🏁 [Tactic] 真人卡兵评分 第 42 波开始：6 只兵，一塔在车道 8722 处
+  [23:19:50.090] 🏁 [Tactic] 真人卡兵评分 第 42 波：卡到一塔 用时 25.5s | 漏兵 6/6（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 34 波 平均 6 分，满分 0 波
+  [23:19:54.686] 🏁 [Tactic] 真人卡兵评分 第 43 波开始：5 只兵，一塔在车道 8722 处
+  [23:20:20.087] 🏁 [Tactic] 真人卡兵评分 第 43 波：卡到一塔 用时 25.4s | 漏兵 5/5（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 35 波 平均 6 分，满分 0 波
+  [23:20:24.641] 🏁 [Tactic] 真人卡兵评分 第 44 波开始：5 只兵，一塔在车道 8722 处
+  [23:20:50.563] 🏁 [Tactic] 真人卡兵评分 第 44 波：卡到一塔 用时 25.9s | 漏兵 5/5（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 36 波 平均 6 分，满分 0 波
+  [23:20:54.676] 🏁 [Tactic] 真人卡兵评分 第 45 波开始：5 只兵，一塔在车道 8722 处
+  [23:21:20.720] 🏁 [Tactic] 真人卡兵评分 第 45 波：卡到一塔 用时 26.0s | 漏兵 5/5（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 37 波 平均 6 分，满分 0 波
+  [23:21:24.660] 🏁 [Tactic] 真人卡兵评分 第 46 波开始：5 只兵，一塔在车道 8722 处
+  [23:21:50.815] 🏁 [Tactic] 真人卡兵评分 第 46 波：卡到一塔 用时 26.1s | 漏兵 3/5（其中从没靠近英雄 0）→ 得分 40 ❌ | 累计 38 波 平均 7 分，满分 0 波
+  [23:21:54.856] 🏁 [Tactic] 真人卡兵评分 第 47 波开始：5 只兵，一塔在车道 8722 处
+  [23:22:20.331] 🏁 [Tactic] 真人卡兵评分 第 47 波：卡到一塔 用时 25.5s | 漏兵 5/5（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 39 波 平均 7 分，满分 0 波
+  [23:22:25.062] 🏁 [Tactic] 真人卡兵评分 第 48 波开始：5 只兵，一塔在车道 8722 处
+  [23:22:50.887] 🏁 [Tactic] 真人卡兵评分 第 48 波：卡到一塔 用时 25.8s | 漏兵 5/5（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 40 波 平均 6 分，满分 0 波
+  [23:22:54.837] 🏁 [Tactic] 真人卡兵评分 第 49 波开始：6 只兵，一塔在车道 8722 处
+  [23:23:20.378] 🏁 [Tactic] 真人卡兵评分 第 49 波：卡到一塔 用时 25.5s | 漏兵 5/6（其中从没靠近英雄 0）→ 得分 17 ❌ | 累计 41 波 平均 7 分，满分 0 波
+  [23:23:25.048] 🏁 [Tactic] 真人卡兵评分 第 50 波开始：5 只兵，一塔在车道 8722 处
+  [23:23:50.383] 🏁 [Tactic] 真人卡兵评分 第 50 波：卡到一塔 用时 25.3s | 漏兵 4/5（其中从没靠近英雄 0）→ 得分 20 ❌ | 累计 42 波 平均 7 分，满分 0 波
+  [23:23:55.003] 🏁 [Tactic] 真人卡兵评分 第 51 波开始：5 只兵，一塔在车道 8722 处
+  [23:24:20.773] 🏁 [Tactic] 真人卡兵评分 第 51 波：卡到一塔 用时 25.8s | 漏兵 5/5（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 43 波 平均 7 分，满分 0 波
+  [23:24:25.450] 🏁 [Tactic] 真人卡兵评分 第 52 波开始：5 只兵，一塔在车道 8722 处
+  [23:24:50.973] 🏁 [Tactic] 真人卡兵评分 第 52 波：卡到一塔 用时 25.5s | 漏兵 5/5（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 44 波 平均 7 分，满分 0 波
+  [23:24:55.515] 🏁 [Tactic] 真人卡兵评分 第 53 波开始：5 只兵，一塔在车道 8722 处
+  [23:25:20.807] 🏁 [Tactic] 真人卡兵评分 第 53 波：卡到一塔 用时 25.3s | 漏兵 5/5（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 45 波 平均 7 分，满分 0 波
+  [23:55:32.371] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [23:56:05.948] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [23:56:42.625] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [23:57:13.052] 🏁 [Tactic] 真人卡兵评分 第 10 波开始：4 只兵，一塔在车道 8769 处
+  [23:57:44.453] 🏁 [Tactic] 真人卡兵评分 第 10 波：卡到一塔 用时 31.4s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 1 波 平均 0 分，满分 0 波
+  [23:57:44.453] ⏱ [Tactic] 拖延 第 10 波：用时 31.4s，不卡约 25.8s（自然速度 340/s，还没学到，按 340）→ 多拖 5.6s（满分 12.9s）→ 拖延分 44 | 漏兵分 0 → 综合 22
+  [23:57:58.270] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752）
+  [23:58:25.852] 🏁 [Tactic] 真人卡兵评分 第 12 波开始：4 只兵，一塔在车道 8769 处
+  [23:58:55.649] 🏁 [Tactic] 真人卡兵评分 第 12 波：卡到一塔 用时 29.8s | 漏兵 2/4（其中从没靠近英雄 2）→ 得分 50 ❌ | 累计 2 波 平均 25 分，满分 0 波
+  [23:58:55.649] ⏱ [Tactic] 拖延 第 12 波：用时 29.8s，不卡约 25.8s（自然速度 340/s，还没学到，按 340）→ 多拖 4.0s（满分 12.9s）→ 拖延分 31 | 漏兵分 50 → 综合 41
+  [00:00:42.071] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752）
+  [00:01:12.600] 🏁 [Tactic] 真人卡兵评分 第 17 波开始：4 只兵，一塔在车道 8769 处
+  [00:01:41.284] 🏁 [Tactic] 真人卡兵评分 第 17 波：卡到一塔 用时 28.7s | 漏兵 2/4（其中从没靠近英雄 1）→ 得分 50 ❌ | 累计 3 波 平均 33 分，满分 0 波
+  [00:01:41.285] ⏱ [Tactic] 拖延 第 17 波：用时 28.7s，不卡约 25.8s（自然速度 340/s，还没学到，按 340）→ 多拖 2.9s（满分 12.9s）→ 拖延分 22 | 漏兵分 50 → 综合 36
+  [00:22:38.471] 🚧 [Tactic] 卡兵路线：近卫中路（一塔 -1504,-1824），门口在下一波出兵时学习
+  [00:22:39.452] 🏁 [Tactic] 真人卡兵评分 第 1 波开始：4 只兵，一塔在车道 4550 处
+  [00:23:13.330] 🏁 [Tactic] 真人卡兵评分 第 1 波：卡到一塔 用时 33.9s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 1 波 平均 100 分，满分 1 波
+  [00:23:13.330] ⏱ [Tactic] 拖延 第 1 波：用时 33.9s，不卡约 13.4s（自然速度 340/s，还没学到，按 340）→ 多拖 20.5s（满分 6.7s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [00:23:24.803] 🏁 [Tactic] 真人卡兵评分 第 3 波开始：4 只兵，一塔在车道 4550 处
+  [00:23:46.206] 🏁 [Tactic] 真人卡兵评分 第 3 波：卡到一塔 用时 21.4s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 2 波 平均 50 分，满分 1 波
+  [00:23:46.206] ⏱ [Tactic] 拖延 第 3 波：用时 21.4s，不卡约 13.4s（自然速度 340/s，还没学到，按 340）→ 多拖 8.0s（满分 6.7s）→ 拖延分 100 | 漏兵分 0 → 综合 0（中路只看漏兵分）
+  [00:38:06.773] 🚧 [Tactic] 卡兵路线：近卫中路（一塔 -1504,-1824），门口在下一波出兵时学习
+  [00:38:06.778] 🏁 [Tactic] 真人卡兵评分 第 4 波开始：4 只兵，一塔在车道 4510 处
+  [00:38:41.284] 🏁 [Tactic] 真人卡兵评分 第 4 波：兵线接敌 用时 34.5s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 1 波 平均 100 分，满分 1 波
+  [00:38:41.284] ⏱ [Tactic] 拖延 第 4 波：用时 34.5s，不卡约 12.5s（自然速度 340/s，还没学到，按 340）→ 多拖 22.0s（满分 6.6s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [00:38:50.639] 🏁 [Tactic] 真人卡兵评分 第 5 波开始：4 只兵，一塔在车道 4510 处
+  [00:39:09.129] 🏁 [Tactic] 真人卡兵评分 第 5 波：手动结束 用时 18.2s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 2 波 平均 50 分，满分 1 波
+  [00:39:09.129] ⏱ [Tactic] 拖延 第 5 波：用时 18.2s，不卡约 9.8s（自然速度 340/s，还没学到，按 340）→ 多拖 8.3s（满分 6.6s）→ 拖延分 100 | 漏兵分 0 → 综合 0（中路只看漏兵分）
+  [04:02:45.366] 🚧 [Tactic] 卡兵路线：近卫中路（一塔 -1504,-1824），门口在下一波出兵时学习
+  [04:02:45.383] 🏁 [Tactic] 真人卡兵评分 第 3 波开始：4 只兵，一塔在车道 4558 处
+  [04:03:19.314] 🏁 [Tactic] 真人卡兵评分 第 3 波：卡到一塔 用时 34.0s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 1 波 平均 100 分，满分 1 波
+  [04:03:19.314] ⏱ [Tactic] 拖延 第 3 波：用时 34.0s，不卡约 13.4s（自然速度 340/s，还没学到，按 340）→ 多拖 20.5s（满分 6.7s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [04:03:30.230] 🏁 [Tactic] 真人卡兵评分 第 4 波开始：4 只兵，一塔在车道 4558 处
+  [04:03:54.567] 🏁 [Tactic] 真人卡兵评分 第 4 波：手动结束 用时 24.3s | 漏兵 1/4（其中从没靠近英雄 0）→ 得分 75 ❌ | 累计 2 波 平均 88 分，满分 1 波
+  [04:03:54.567] ⏱ [Tactic] 拖延 第 4 波：用时 24.3s，不卡约 10.8s（自然速度 340/s，还没学到，按 340）→ 多拖 13.6s（满分 6.7s）→ 拖延分 100 | 漏兵分 75 → 综合 75（中路只看漏兵分）
+  [04:04:15.128] 🏁 [Tactic] 真人卡兵评分 第 5 波开始：4 只兵，一塔在车道 4558 处
+  [04:04:48.620] 🏁 [Tactic] 真人卡兵评分 第 5 波：卡到一塔 用时 33.5s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 3 波 平均 92 分，满分 2 波
+  [04:04:48.622] ⏱ [Tactic] 拖延 第 5 波：用时 33.5s，不卡约 13.4s（自然速度 340/s，还没学到，按 340）→ 多拖 20.1s（满分 6.7s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [04:05:00.061] 🏁 [Tactic] 真人卡兵评分 第 6 波开始：4 只兵，一塔在车道 4558 处
+  [04:05:31.694] 🏁 [Tactic] 真人卡兵评分 第 6 波：卡到一塔 用时 31.6s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 4 波 平均 94 分，满分 3 波
+  [04:05:31.694] ⏱ [Tactic] 拖延 第 6 波：用时 31.6s，不卡约 13.4s（自然速度 340/s，还没学到，按 340）→ 多拖 18.2s（满分 6.7s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [04:05:44.260] 🏁 [Tactic] 真人卡兵评分 第 7 波开始：5 只兵，一塔在车道 4558 处
+  [04:05:54.719] 🏁 [Tactic] 真人卡兵评分 第 7 波：手动结束 用时 10.5s | 漏兵 2/5（其中从没靠近英雄 1）→ 得分 60 ❌ | 累计 5 波 平均 87 分，满分 3 波
+  [04:05:54.719] ⏱ [Tactic] 拖延 第 7 波：用时 10.5s，不卡约 5.6s（自然速度 340/s，还没学到，按 340）→ 多拖 4.9s（满分 6.7s）→ 拖延分 73 | 漏兵分 60 → 综合 60（中路只看漏兵分）
+  [04:06:27.399] 🏁 [Tactic] 真人卡兵评分 第 8 波开始：4 只兵，一塔在车道 4558 处
+  [04:06:57.531] 🏁 [Tactic] 真人卡兵评分 第 8 波：卡到一塔 用时 30.1s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 6 波 平均 89 分，满分 4 波
+  [04:06:57.531] ⏱ [Tactic] 拖延 第 8 波：用时 30.1s，不卡约 13.4s（自然速度 340/s，还没学到，按 340）→ 多拖 16.7s（满分 6.7s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [04:52:34.482] 🚧 [Tactic] 卡兵路线：近卫中路（一塔 -1504,-1824），门口在下一波出兵时学习
+  [04:52:34.493] 🚧 [Tactic] 卡兵路线：近卫中路（一塔 -1504,-1824），门口在下一波出兵时学习
+  [04:54:33.289] 🏁 [Tactic] AI 卡兵评分 第 1 波开始：4 只兵，一塔在车道 4518 处
+  [04:54:55.360] 🏁 [Tactic] AI 卡兵评分 第 1 波：卡到一塔 用时 22.1s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 1 波 平均 100 分，满分 1 波
+  [04:54:55.360] ⏱ [Tactic] 拖延 第 1 波：用时 22.1s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 8.8s（满分 6.6s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [04:55:40.019] 🏁 [Tactic] AI 卡兵评分 第 3 波开始：4 只兵，一塔在车道 4518 处
+  [04:55:59.929] 🏁 [Tactic] AI 卡兵评分 第 3 波：卡到一塔 用时 19.9s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 2 波 平均 100 分，满分 2 波
+  [04:55:59.929] ⏱ [Tactic] 拖延 第 3 波：用时 19.9s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 6.6s（满分 6.6s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [04:56:41.001] 🏁 [Tactic] AI 卡兵评分 第 5 波开始：4 只兵，一塔在车道 4518 处
+  [04:57:00.306] 🏁 [Tactic] AI 卡兵评分 第 5 波：卡到一塔 用时 19.3s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 3 波 平均 100 分，满分 3 波
+  [04:57:00.306] ⏱ [Tactic] 拖延 第 5 波：用时 19.3s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 6.0s（满分 6.6s）→ 拖延分 90 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [04:57:43.376] 🏁 [Tactic] AI 卡兵评分 第 7 波开始：5 只兵，一塔在车道 4518 处
+  [04:58:06.580] 🏁 [Tactic] AI 卡兵评分 第 7 波：卡到一塔 用时 23.2s | 漏兵 0/5（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 4 波 平均 100 分，满分 4 波
+  [04:58:06.580] ⏱ [Tactic] 拖延 第 7 波：用时 23.2s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 9.9s（满分 6.6s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [04:58:58.433] 🏁 [Tactic] AI 卡兵评分 第 9 波开始：4 只兵，一塔在车道 4518 处
+  [04:59:23.298] 🏁 [Tactic] AI 卡兵评分 第 9 波：卡到一塔 用时 24.9s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 5 波 平均 100 分，满分 5 波
+  [04:59:23.298] ⏱ [Tactic] 拖延 第 9 波：用时 24.9s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 11.6s（满分 6.6s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [05:00:14.465] 🏁 [Tactic] AI 卡兵评分 第 11 波开始：4 只兵，一塔在车道 4518 处
+  [05:00:35.871] 🏁 [Tactic] AI 卡兵评分 第 11 波：兵线接敌 用时 21.4s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 6 波 平均 100 分，满分 6 波
+  [05:00:35.871] ⏱ [Tactic] 拖延 第 11 波：用时 21.4s，不卡约 12.2s（自然速度 340/s，还没学到，按 340）→ 多拖 9.2s（满分 6.6s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [05:01:28.969] 🏁 [Tactic] AI 卡兵评分 第 13 波开始：4 只兵，一塔在车道 4518 处
+  [05:01:52.504] 🏁 [Tactic] AI 卡兵评分 第 13 波：卡到一塔 用时 23.5s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 7 波 平均 100 分，满分 7 波
+  [05:01:52.504] ⏱ [Tactic] 拖延 第 13 波：用时 23.5s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 10.2s（满分 6.6s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [05:02:46.975] 🏁 [Tactic] AI 卡兵评分 第 15 波开始：4 只兵，一塔在车道 4518 处
+  [05:03:09.768] 🏁 [Tactic] AI 卡兵评分 第 15 波：卡到一塔 用时 22.5s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 8 波 平均 100 分，满分 8 波
+  [05:03:09.768] ⏱ [Tactic] 拖延 第 15 波：用时 22.5s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 9.2s（满分 6.6s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [05:03:58.563] 🏁 [Tactic] AI 卡兵评分 第 17 波开始：4 只兵，一塔在车道 4518 处
+  [05:04:18.258] 🏁 [Tactic] AI 卡兵评分 第 17 波：卡到一塔 用时 20.0s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 9 波 平均 100 分，满分 9 波
+  [05:04:18.258] ⏱ [Tactic] 拖延 第 17 波：用时 20.0s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 6.7s（满分 6.6s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [05:04:58.422] 🏁 [Tactic] AI 卡兵评分 第 19 波开始：4 只兵，一塔在车道 4518 处
+  [05:05:03.739] 🏁 [Tactic] AI 卡兵评分 第 19 波：手动结束 用时 5.3s | 漏兵 1/4（其中从没靠近英雄 0）→ 得分 75 ❌ | 累计 10 波 平均 98 分，满分 9 波
+  [05:05:03.739] ⏱ [Tactic] 拖延 第 19 波：用时 5.3s，不卡约 2.9s（自然速度 340/s，还没学到，按 340）→ 多拖 2.4s（满分 6.6s）→ 拖延分 36 | 漏兵分 75 → 综合 75（中路只看漏兵分）
+  [05:05:28.585] 🏁 [Tactic] AI 卡兵评分 第 20 波开始：4 只兵，一塔在车道 4518 处
+  [05:05:48.952] 🏁 [Tactic] AI 卡兵评分 第 20 波：卡到一塔 用时 20.4s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 11 波 平均 98 分，满分 10 波
+  [05:05:48.952] ⏱ [Tactic] 拖延 第 20 波：用时 20.4s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 7.1s（满分 6.6s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [05:06:28.735] 🏁 [Tactic] AI 卡兵评分 第 22 波开始：4 只兵，一塔在车道 4518 处
+  [05:06:48.613] 🏁 [Tactic] AI 卡兵评分 第 22 波：卡到一塔 用时 19.9s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 12 波 平均 98 分，满分 11 波
+  [05:06:48.613] ⏱ [Tactic] 拖延 第 22 波：用时 19.9s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 6.6s（满分 6.6s）→ 拖延分 99 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [05:07:28.862] 🏁 [Tactic] AI 卡兵评分 第 24 波开始：4 只兵，一塔在车道 4518 处
+  [05:07:50.096] 🏁 [Tactic] AI 卡兵评分 第 24 波：卡到一塔 用时 21.2s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 13 波 平均 98 分，满分 12 波
+  [05:07:50.096] ⏱ [Tactic] 拖延 第 24 波：用时 21.2s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 7.9s（满分 6.6s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [05:08:29.608] 🏁 [Tactic] AI 卡兵评分 第 26 波开始：4 只兵，一塔在车道 4518 处
+  [05:08:49.139] 🏁 [Tactic] AI 卡兵评分 第 26 波：卡到一塔 用时 19.5s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 14 波 平均 98 分，满分 13 波
+  [05:08:49.140] ⏱ [Tactic] 拖延 第 26 波：用时 19.5s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 6.2s（满分 6.6s）→ 拖延分 94 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [05:09:29.675] 🏁 [Tactic] AI 卡兵评分 第 28 波开始：5 只兵，一塔在车道 4518 处
+  [05:09:36.214] 🏁 [Tactic] AI 卡兵评分 第 28 波：手动结束 用时 6.5s | 漏兵 2/5（其中从没靠近英雄 0）→ 得分 60 ❌ | 累计 15 波 平均 96 分，满分 13 波
+  [05:09:36.214] ⏱ [Tactic] 拖延 第 28 波：用时 6.5s，不卡约 4.4s（自然速度 340/s，还没学到，按 340）→ 多拖 2.1s（满分 6.6s）→ 拖延分 32 | 漏兵分 60 → 综合 60（中路只看漏兵分）
+  [05:09:59.738] 🏁 [Tactic] AI 卡兵评分 第 29 波开始：4 只兵，一塔在车道 4518 处
+  [05:10:21.184] 🏁 [Tactic] AI 卡兵评分 第 29 波：卡到一塔 用时 21.5s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 16 波 平均 96 分，满分 14 波
+  [05:10:21.184] ⏱ [Tactic] 拖延 第 29 波：用时 21.5s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 8.2s（满分 6.6s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [05:10:59.897] 🏁 [Tactic] AI 卡兵评分 第 31 波开始：4 只兵，一塔在车道 4518 处
+  [05:11:20.846] 🏁 [Tactic] AI 卡兵评分 第 31 波：卡到一塔 用时 21.0s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 17 波 平均 96 分，满分 15 波
+  [05:11:20.846] ⏱ [Tactic] 拖延 第 31 波：用时 21.0s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 7.7s（满分 6.6s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [05:12:00.332] 🏁 [Tactic] AI 卡兵评分 第 33 波开始：4 只兵，一塔在车道 4518 处
+  [05:12:20.430] 🏁 [Tactic] AI 卡兵评分 第 33 波：卡到一塔 用时 20.1s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 18 波 平均 96 分，满分 16 波
+  [05:12:20.430] ⏱ [Tactic] 拖延 第 33 波：用时 20.1s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 6.8s（满分 6.6s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [05:13:02.513] 🏁 [Tactic] AI 卡兵评分 第 35 波开始：6 只兵，一塔在车道 4518 处
+  [05:13:25.553] 🏁 [Tactic] AI 卡兵评分 第 35 波：卡到一塔 用时 23.0s | 漏兵 2/6（其中从没靠近英雄 2）→ 得分 67 ❌ | 累计 19 波 平均 95 分，满分 16 波
+  [05:13:25.553] ⏱ [Tactic] 拖延 第 35 波：用时 23.0s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 9.7s（满分 6.6s）→ 拖延分 100 | 漏兵分 67 → 综合 67（中路只看漏兵分）
+  [05:14:18.933] 🏁 [Tactic] AI 卡兵评分 第 37 波开始：5 只兵，一塔在车道 4518 处
+  [05:14:41.475] 🏁 [Tactic] AI 卡兵评分 第 37 波：卡到一塔 用时 22.5s | 漏兵 0/5（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 20 波 平均 95 分，满分 17 波
+  [05:14:41.475] ⏱ [Tactic] 拖延 第 37 波：用时 22.5s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 9.2s（满分 6.6s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [05:15:38.392] 🏁 [Tactic] AI 卡兵评分 第 39 波开始：5 只兵，一塔在车道 4518 处
+  [05:16:04.166] 🏁 [Tactic] AI 卡兵评分 第 39 波：卡到一塔 用时 25.8s | 漏兵 0/5（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 21 波 平均 95 分，满分 18 波
+  [05:16:04.166] ⏱ [Tactic] 拖延 第 39 波：用时 25.8s，不卡约 13.3s（自然速度 340/s，还没学到，按 340）→ 多拖 12.5s（满分 6.6s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [05:17:01.113] 🏁 [Tactic] AI 卡兵评分 第 41 波开始：5 只兵，一塔在车道 4518 处
+  [05:17:25.165] 🏁 [Tactic] AI 卡兵评分 第 41 波：兵线接敌 用时 24.1s | 漏兵 0/5（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 22 波 平均 96 分，满分 19 波
+  [05:17:25.165] ⏱ [Tactic] 拖延 第 41 波：用时 24.1s，不卡约 12.2s（自然速度 340/s，还没学到，按 340）→ 多拖 11.8s（满分 6.6s）→ 拖延分 100 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [05:18:14.081] 🏁 [Tactic] AI 卡兵评分 第 43 波开始：5 只兵，一塔在车道 4518 处
+  [05:18:22.943] 🏁 [Tactic] AI 卡兵评分 第 43 波：兵线接敌 用时 8.9s | 漏兵 0/5（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 23 波 平均 96 分，满分 20 波
+  [05:18:22.943] ⏱ [Tactic] 拖延 第 43 波：用时 8.9s，不卡约 6.0s（自然速度 340/s，还没学到，按 340）→ 多拖 2.9s（满分 6.6s）→ 拖延分 44 | 漏兵分 100 → 综合 100（中路只看漏兵分）
+  [05:23:39.367] 🚧 [Tactic] 卡兵路线：近卫上路（一塔 -6112,1568），门口在下一波出兵时学习
+  [05:23:39.376] 🚧 [Tactic] 卡兵路线：近卫上路（一塔 -6112,1568），门口在下一波出兵时学习
+  [05:27:45.797] 🚧 [Tactic] 卡兵路线：近卫上路（一塔 -6112,1568），门口在下一波出兵时学习
+  [05:36:14.342] 🚧 [Tactic] 卡兵路线：近卫上路（一塔 -6112,1568），门口在下一波出兵时学习
+  [05:36:14.352] 🚧 [Tactic] 卡兵路线：近卫上路（一塔 -6112,1568），门口在下一波出兵时学习
+  [05:36:33.674] 🏁 [Tactic] AI 卡兵评分 第 21 波开始：5 只兵，一塔在车道 5674 处
+  [05:36:33.798] 🏁 [Tactic] AI 卡兵评分 第 21 波：手动结束 用时 0.1s | 漏兵 5/5（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 1 波 平均 0 分，满分 0 波
+  [05:36:33.798] ⏱ [Tactic] 拖延 第 21 波：用时 0.1s，不卡约 0.2s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 8.3s）→ 拖延分 0 | 漏兵分 0 → 综合 0
+  [05:37:06.161] 🏁 [Tactic] AI 卡兵评分 第 22 波开始：4 只兵，一塔在车道 5674 处
+  [05:37:24.344] 🏁 [Tactic] AI 卡兵评分 第 22 波：卡到一塔 用时 18.2s | 漏兵 2/4（其中从没靠近英雄 0）→ 得分 50 ❌ | 累计 2 波 平均 25 分，满分 0 波
+  [05:37:24.345] ⏱ [Tactic] 拖延 第 22 波：用时 18.2s，不卡约 16.7s（自然速度 340/s，还没学到，按 340）→ 多拖 1.5s（满分 8.3s）→ 拖延分 18 | 漏兵分 50 → 综合 34
+  [05:37:38.584] 🏁 [Tactic] AI 卡兵评分 第 23 波开始：4 只兵，一塔在车道 5674 处
+  [05:38:03.040] 🏁 [Tactic] AI 卡兵评分 第 23 波：卡到一塔 用时 24.5s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 3 波 平均 50 分，满分 1 波
+  [05:38:03.040] ⏱ [Tactic] 拖延 第 23 波：用时 24.5s，不卡约 16.7s（自然速度 340/s，还没学到，按 340）→ 多拖 7.8s（满分 8.3s）→ 拖延分 93 | 漏兵分 100 → 综合 97
+  [05:38:45.166] 🏁 [Tactic] AI 卡兵评分 第 25 波开始：4 只兵，一塔在车道 5674 处
+  [05:39:04.479] 🏁 [Tactic] AI 卡兵评分 第 25 波：卡到一塔 用时 19.3s | 漏兵 2/4（其中从没靠近英雄 0）→ 得分 50 ❌ | 累计 4 波 平均 50 分，满分 1 波
+  [05:39:04.479] ⏱ [Tactic] 拖延 第 25 波：用时 19.3s，不卡约 16.7s（自然速度 340/s，还没学到，按 340）→ 多拖 2.6s（满分 8.3s）→ 拖延分 31 | 漏兵分 50 → 综合 41
+  [05:39:17.858] 🏁 [Tactic] AI 卡兵评分 第 26 波开始：4 只兵，一塔在车道 5674 处
+  [05:39:25.262] 🏁 [Tactic] AI 卡兵评分 第 26 波：手动结束 用时 7.4s | 漏兵 3/4（其中从没靠近英雄 0）→ 得分 25 ❌ | 累计 5 波 平均 45 分，满分 1 波
+  [05:39:25.262] ⏱ [Tactic] 拖延 第 26 波：用时 7.4s，不卡约 6.4s（自然速度 340/s，还没学到，按 340）→ 多拖 1.0s（满分 8.3s）→ 拖延分 12 | 漏兵分 25 → 综合 19
+  [05:39:49.797] 🏁 [Tactic] AI 卡兵评分 第 27 波开始：4 只兵，一塔在车道 5674 处
+  [05:40:08.878] 🏁 [Tactic] AI 卡兵评分 第 27 波：卡到一塔 用时 19.1s | 漏兵 1/4（其中从没靠近英雄 0）→ 得分 75 ❌ | 累计 6 波 平均 50 分，满分 1 波
+  [05:40:08.878] ⏱ [Tactic] 拖延 第 27 波：用时 19.1s，不卡约 16.7s（自然速度 340/s，还没学到，按 340）→ 多拖 2.4s（满分 8.3s）→ 拖延分 29 | 漏兵分 75 → 综合 52
+  [05:40:24.333] 🏁 [Tactic] AI 卡兵评分 第 28 波开始：5 只兵，一塔在车道 5674 处
+  [05:40:44.607] 🏁 [Tactic] AI 卡兵评分 第 28 波：卡到一塔 用时 20.3s | 漏兵 1/5（其中从没靠近英雄 0）→ 得分 80 ❌ | 累计 7 波 平均 54 分，满分 1 波
+  [05:40:44.607] ⏱ [Tactic] 拖延 第 28 波：用时 20.3s，不卡约 16.7s（自然速度 340/s，还没学到，按 340）→ 多拖 3.6s（满分 8.3s）→ 拖延分 43 | 漏兵分 80 → 综合 62
+  [05:40:59.233] 🏁 [Tactic] AI 卡兵评分 第 29 波开始：4 只兵，一塔在车道 5674 处
+  [05:41:12.131] 🏁 [Tactic] AI 卡兵评分 第 29 波：手动结束 用时 12.9s | 漏兵 3/4（其中从没靠近英雄 0）→ 得分 25 ❌ | 累计 8 波 平均 51 分，满分 1 波
+  [05:41:12.131] ⏱ [Tactic] 拖延 第 29 波：用时 12.9s，不卡约 10.0s（自然速度 340/s，还没学到，按 340）→ 多拖 2.9s（满分 8.3s）→ 拖延分 34 | 漏兵分 25 → 综合 30
+  [05:41:33.671] 🏁 [Tactic] AI 卡兵评分 第 30 波开始：4 只兵，一塔在车道 5674 处
+  [05:41:39.326] 🏁 [Tactic] AI 卡兵评分 第 30 波：手动结束 用时 5.7s | 漏兵 3/4（其中从没靠近英雄 0）→ 得分 25 ❌ | 累计 9 波 平均 48 分，满分 1 波
+  [05:41:39.326] ⏱ [Tactic] 拖延 第 30 波：用时 5.7s，不卡约 5.7s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 8.3s）→ 拖延分 0 | 漏兵分 25 → 综合 12
+  [05:42:03.718] 🏁 [Tactic] AI 卡兵评分 第 31 波开始：4 只兵，一塔在车道 5674 处
+  [05:42:14.922] 🏁 [Tactic] AI 卡兵评分 第 31 波：手动结束 用时 11.2s | 漏兵 3/4（其中从没靠近英雄 0）→ 得分 25 ❌ | 累计 10 波 平均 46 分，满分 1 波
+  [05:42:14.922] ⏱ [Tactic] 拖延 第 31 波：用时 11.2s，不卡约 9.6s（自然速度 340/s，还没学到，按 340）→ 多拖 1.6s（满分 8.3s）→ 拖延分 19 | 漏兵分 25 → 综合 22
+  [05:57:20.576] 🚧 [Tactic] 卡兵路线：近卫上路（一塔 -6112,1568），门口在下一波出兵时学习
+  [05:57:20.584] 🚧 [Tactic] 卡兵路线：近卫上路（一塔 -6112,1568），门口在下一波出兵时学习
+  [05:57:51.716] 🏁 [Tactic] AI 卡兵评分 第 2 波开始：4 只兵，一塔在车道 5652 处
+  [05:58:24.124] 🏁 [Tactic] AI 卡兵评分 第 2 波：手动结束 用时 32.4s | 漏兵 3/4（其中从没靠近英雄 0）→ 得分 25 ❌ | 累计 1 波 平均 25 分，满分 0 波
+  [05:58:24.124] ⏱ [Tactic] 拖延 第 2 波：用时 32.4s，不卡约 14.2s（自然速度 340/s，还没学到，按 340）→ 多拖 18.2s（满分 8.3s）→ 拖延分 100 | 漏兵分 25 → 综合 62
+  [05:59:26.897] 🏁 [Tactic] AI 卡兵评分 第 6 波开始：4 只兵，一塔在车道 5652 处
+  [06:00:05.798] 🏁 [Tactic] AI 卡兵评分 第 6 波：卡到一塔 用时 38.9s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 2 波 平均 62 分，满分 1 波
+  [06:00:05.798] ⏱ [Tactic] 拖延 第 6 波：用时 38.9s，不卡约 16.6s（自然速度 340/s，还没学到，按 340）→ 多拖 22.3s（满分 8.3s）→ 拖延分 100 | 漏兵分 100 → 综合 100
+  [06:01:03.378] 🏁 [Tactic] AI 卡兵评分 第 10 波开始：4 只兵，一塔在车道 5652 处
+  [06:01:36.378] 🏁 [Tactic] AI 卡兵评分 第 10 波：卡到一塔 用时 33.0s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 3 波 平均 75 分，满分 2 波
+  [06:01:36.378] ⏱ [Tactic] 拖延 第 10 波：用时 33.0s，不卡约 16.6s（自然速度 340/s，还没学到，按 340）→ 多拖 16.4s（满分 8.3s）→ 拖延分 100 | 漏兵分 100 → 综合 100
+  [06:02:30.609] 🏁 [Tactic] AI 卡兵评分 第 12 波开始：4 只兵，一塔在车道 5652 处
+  [06:03:05.296] 🏁 [Tactic] AI 卡兵评分 第 12 波：卡到一塔 用时 34.7s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 4 波 平均 81 分，满分 3 波
+  [06:03:05.297] ⏱ [Tactic] 拖延 第 12 波：用时 34.7s，不卡约 16.6s（自然速度 340/s，还没学到，按 340）→ 多拖 18.1s（满分 8.3s）→ 拖延分 100 | 漏兵分 100 → 综合 100
+  [06:53:59.147] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [06:53:59.163] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [06:56:12.074] 🏁 [Tactic] AI 卡兵评分 第 1 波开始：4 只兵，一塔在车道 8669 处
+  [06:56:13.986] 🏁 [Tactic] AI 卡兵评分 第 1 波：手动结束 用时 1.9s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 1 波 平均 0 分，满分 0 波
+  [06:56:13.986] ⏱ [Tactic] 拖延 第 1 波：用时 1.9s，不卡约 3.2s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.7s）→ 拖延分 0 | 漏兵分 0 → 综合 0
+  [06:56:42.012] 🏁 [Tactic] AI 卡兵评分 第 2 波开始：4 只兵，一塔在车道 8669 处
+  [06:56:44.940] 🏁 [Tactic] AI 卡兵评分 第 2 波：手动结束 用时 2.9s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 2 波 平均 0 分，满分 0 波
+  [06:56:44.940] ⏱ [Tactic] 拖延 第 2 波：用时 2.9s，不卡约 4.3s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.7s）→ 拖延分 0 | 漏兵分 0 → 综合 0
+  [06:57:12.058] 🏁 [Tactic] AI 卡兵评分 第 3 波开始：4 只兵，一塔在车道 8669 处
+  [06:57:14.707] 🏁 [Tactic] AI 卡兵评分 第 3 波：手动结束 用时 2.7s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 3 波 平均 0 分，满分 0 波
+  [06:57:14.707] ⏱ [Tactic] 拖延 第 3 波：用时 2.7s，不卡约 3.9s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.7s）→ 拖延分 0 | 漏兵分 0 → 综合 0
+  [06:57:42.146] 🏁 [Tactic] AI 卡兵评分 第 4 波开始：4 只兵，一塔在车道 8669 处
+  [06:57:44.939] 🏁 [Tactic] AI 卡兵评分 第 4 波：手动结束 用时 2.8s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 4 波 平均 0 分，满分 0 波
+  [06:57:44.939] ⏱ [Tactic] 拖延 第 4 波：用时 2.8s，不卡约 4.1s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.7s）→ 拖延分 0 | 漏兵分 0 → 综合 0
+  [06:58:12.376] 🏁 [Tactic] AI 卡兵评分 第 5 波开始：4 只兵，一塔在车道 8669 处
+  [06:58:15.134] 🏁 [Tactic] AI 卡兵评分 第 5 波：手动结束 用时 2.8s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 5 波 平均 0 分，满分 0 波
+  [06:58:15.134] ⏱ [Tactic] 拖延 第 5 波：用时 2.8s，不卡约 4.2s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.7s）→ 拖延分 0 | 漏兵分 0 → 综合 0
+  [06:58:42.424] 🏁 [Tactic] AI 卡兵评分 第 6 波开始：4 只兵，一塔在车道 8669 处
+  [06:58:45.174] 🏁 [Tactic] AI 卡兵评分 第 6 波：手动结束 用时 2.8s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 6 波 平均 0 分，满分 0 波
+  [06:58:45.174] ⏱ [Tactic] 拖延 第 6 波：用时 2.8s，不卡约 4.1s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.7s）→ 拖延分 0 | 漏兵分 0 → 综合 0
+  [07:03:28.191] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [07:03:28.221] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [07:05:14.798] 🏁 [Tactic] AI 卡兵评分 第 1 波开始：4 只兵，一塔在车道 8183 处
+  [07:05:18.188] 🏁 [Tactic] AI 卡兵评分 第 1 波：手动结束 用时 3.4s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 1 波 平均 0 分，满分 0 波
+  [07:05:18.188] ⏱ [Tactic] 拖延 第 1 波：用时 3.4s，不卡约 3.1s（自然速度 340/s，还没学到，按 340）→ 多拖 0.3s（满分 12.0s）→ 拖延分 3 | 漏兵分 0 → 综合 1
+  [07:05:44.847] 🏁 [Tactic] AI 卡兵评分 第 2 波开始：4 只兵，一塔在车道 8183 处
+  [07:05:49.969] 🏁 [Tactic] AI 卡兵评分 第 2 波：手动结束 用时 5.1s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 2 波 平均 0 分，满分 0 波
+  [07:05:49.970] ⏱ [Tactic] 拖延 第 2 波：用时 5.1s，不卡约 4.6s（自然速度 340/s，还没学到，按 340）→ 多拖 0.5s（满分 12.0s）→ 拖延分 4 | 漏兵分 0 → 综合 2
+  [07:06:14.902] 🏁 [Tactic] AI 卡兵评分 第 3 波开始：4 只兵，一塔在车道 8183 处
+  [07:06:18.650] 🏁 [Tactic] AI 卡兵评分 第 3 波：手动结束 用时 3.8s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 3 波 平均 0 分，满分 0 波
+  [07:06:18.650] ⏱ [Tactic] 拖延 第 3 波：用时 3.8s，不卡约 3.5s（自然速度 340/s，还没学到，按 340）→ 多拖 0.3s（满分 12.0s）→ 拖延分 2 | 漏兵分 0 → 综合 1
+  [07:06:44.968] 🏁 [Tactic] AI 卡兵评分 第 4 波开始：4 只兵，一塔在车道 8183 处
+  [07:07:07.608] 🏁 [Tactic] AI 卡兵评分 第 4 波：卡到一塔 用时 22.6s | 漏兵 3/4（其中从没靠近英雄 0）→ 得分 25 ❌ | 累计 4 波 平均 6 分，满分 0 波
+  [07:07:07.608] ⏱ [Tactic] 拖延 第 4 波：用时 22.6s，不卡约 24.1s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.0s）→ 拖延分 0 | 漏兵分 25 → 综合 12
+  [07:07:45.248] 🏁 [Tactic] AI 卡兵评分 第 6 波开始：4 只兵，一塔在车道 8183 处
+  [07:07:49.586] 🏁 [Tactic] AI 卡兵评分 第 6 波：手动结束 用时 4.3s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 5 波 平均 5 分，满分 0 波
+  [07:07:49.586] ⏱ [Tactic] 拖延 第 6 波：用时 4.3s，不卡约 4.0s（自然速度 340/s，还没学到，按 340）→ 多拖 0.3s（满分 12.0s）→ 拖延分 3 | 漏兵分 0 → 综合 1
+  [07:08:17.133] 🏁 [Tactic] AI 卡兵评分 第 7 波开始：5 只兵，一塔在车道 8183 处
+  [07:08:23.639] 🏁 [Tactic] AI 卡兵评分 第 7 波：手动结束 用时 6.5s | 漏兵 5/5（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 6 波 平均 4 分，满分 0 波
+  [07:08:23.639] ⏱ [Tactic] 拖延 第 7 波：用时 6.5s，不卡约 6.9s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.0s）→ 拖延分 0 | 漏兵分 0 → 综合 0
+  [07:08:47.158] 🏁 [Tactic] AI 卡兵评分 第 8 波开始：4 只兵，一塔在车道 8183 处
+  [07:09:09.748] 🏁 [Tactic] AI 卡兵评分 第 8 波：卡到一塔 用时 22.6s | 漏兵 3/4（其中从没靠近英雄 0）→ 得分 25 ❌ | 累计 7 波 平均 7 分，满分 0 波
+  [07:09:09.749] ⏱ [Tactic] 拖延 第 8 波：用时 22.6s，不卡约 24.1s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.0s）→ 拖延分 0 | 漏兵分 25 → 综合 12
+  [07:09:50.410] 🏁 [Tactic] AI 卡兵评分 第 10 波开始：4 只兵，一塔在车道 8183 处
+  [07:10:18.688] 🏁 [Tactic] AI 卡兵评分 第 10 波：卡到一塔 用时 28.3s | 漏兵 3/4（其中从没靠近英雄 0）→ 得分 25 ❌ | 累计 8 波 平均 9 分，满分 0 波
+  [07:10:18.688] ⏱ [Tactic] 拖延 第 10 波：用时 28.3s，不卡约 24.1s（自然速度 340/s，还没学到，按 340）→ 多拖 4.2s（满分 12.0s）→ 拖延分 35 | 漏兵分 25 → 综合 30
+  [07:10:57.308] 🏁 [Tactic] AI 卡兵评分 第 12 波开始：4 只兵，一塔在车道 8183 处
+  [07:11:24.413] 🏁 [Tactic] AI 卡兵评分 第 12 波：卡到一塔 用时 27.1s | 漏兵 3/4（其中从没靠近英雄 0）→ 得分 25 ❌ | 累计 9 波 平均 11 分，满分 0 波
+  [07:11:24.413] ⏱ [Tactic] 拖延 第 12 波：用时 27.1s，不卡约 24.1s（自然速度 340/s，还没学到，按 340）→ 多拖 3.0s（满分 12.0s）→ 拖延分 25 | 漏兵分 25 → 综合 25
+  [07:16:36.878] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [07:16:36.889] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [07:18:37.995] 🏁 [Tactic] AI 卡兵评分 第 1 波开始：4 只兵，一塔在车道 8221 处
+  [07:18:54.110] 🏁 [Tactic] AI 卡兵评分 第 1 波：手动结束 用时 16.1s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 1 波 平均 0 分，满分 0 波
+  [07:18:54.111] ⏱ [Tactic] 拖延 第 1 波：用时 16.1s，不卡约 13.1s（自然速度 340/s，还没学到，按 340）→ 多拖 3.0s（满分 12.1s）→ 拖延分 25 | 漏兵分 0 → 综合 13
+  [07:19:13.679] 🏁 [Tactic] AI 卡兵评分 第 2 波开始：4 只兵，一塔在车道 8221 处
+  [07:19:44.063] 🏁 [Tactic] AI 卡兵评分 第 2 波：卡到一塔 用时 30.4s | 漏兵 3/4（其中从没靠近英雄 0）→ 得分 25 ❌ | 累计 2 波 平均 12 分，满分 0 波
+  [07:19:44.063] ⏱ [Tactic] 拖延 第 2 波：用时 30.4s，不卡约 24.2s（自然速度 340/s，还没学到，按 340）→ 多拖 6.2s（满分 12.1s）→ 拖延分 51 | 漏兵分 25 → 综合 38
+  [07:20:25.560] 🏁 [Tactic] AI 卡兵评分 第 4 波开始：4 只兵，一塔在车道 8221 处
+  [07:20:42.156] 🏁 [Tactic] AI 卡兵评分 第 4 波：手动结束 用时 16.6s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 3 波 平均 8 分，满分 0 波
+  [07:20:42.156] ⏱ [Tactic] 拖延 第 4 波：用时 16.6s，不卡约 14.1s（自然速度 340/s，还没学到，按 340）→ 多拖 2.5s（满分 12.1s）→ 拖延分 21 | 漏兵分 0 → 综合 10
+  [07:21:00.712] 🏁 [Tactic] AI 卡兵评分 第 5 波开始：4 只兵，一塔在车道 8221 处
+  [07:25:45.955] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [07:25:45.981] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [07:27:36.590] 🏁 [Tactic] AI 卡兵评分 第 1 波开始：4 只兵，一塔在车道 8225 处
+  [07:28:06.429] 🏁 [Tactic] AI 卡兵评分 第 1 波：卡到一塔 用时 29.8s | 漏兵 3/4（其中从没靠近英雄 0）→ 得分 25 ❌ | 累计 1 波 平均 25 分，满分 0 波
+  [07:28:06.429] ⏱ [Tactic] 拖延 第 1 波：用时 29.8s，不卡约 24.2s（自然速度 340/s，还没学到，按 340）→ 多拖 5.6s（满分 12.1s）→ 拖延分 47 | 漏兵分 25 → 综合 36
+  [07:29:00.641] 🏁 [Tactic] AI 卡兵评分 第 3 波开始：4 只兵，一塔在车道 8225 处
+  [07:29:35.834] 🏁 [Tactic] AI 卡兵评分 第 3 波：卡到一塔 用时 35.2s | 漏兵 3/4（其中从没靠近英雄 0）→ 得分 25 ❌ | 累计 2 波 平均 25 分，满分 0 波
+  [07:29:35.834] ⏱ [Tactic] 拖延 第 3 波：用时 35.2s，不卡约 24.2s（自然速度 340/s，还没学到，按 340）→ 多拖 11.0s（满分 12.1s）→ 拖延分 91 | 漏兵分 25 → 综合 58
+  [07:30:38.477] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752）
+  [07:30:38.498] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752）
+  [07:39:07.147] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [07:39:07.158] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [07:41:01.234] 🏁 [Tactic] AI 卡兵评分 第 1 波开始：4 只兵，一塔在车道 8181 处
+  [07:41:18.028] 🏁 [Tactic] AI 卡兵评分 第 1 波：手动结束 用时 16.8s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 1 波 平均 0 分，满分 0 波
+  [07:41:18.028] ⏱ [Tactic] 拖延 第 1 波：用时 16.8s，不卡约 18.6s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.0s）→ 拖延分 0 | 漏兵分 0 → 综合 0
+  [07:41:31.232] 🏁 [Tactic] AI 卡兵评分 第 2 波开始：4 只兵，一塔在车道 8181 处
+  [07:41:48.604] 🏁 [Tactic] AI 卡兵评分 第 2 波：手动结束 用时 17.4s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 2 波 平均 0 分，满分 0 波
+  [07:41:48.604] ⏱ [Tactic] 拖延 第 2 波：用时 17.4s，不卡约 19.0s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.0s）→ 拖延分 0 | 漏兵分 0 → 综合 0
+  [07:42:01.342] 🏁 [Tactic] AI 卡兵评分 第 3 波开始：4 只兵，一塔在车道 8181 处
+  [07:42:18.733] 🏁 [Tactic] AI 卡兵评分 第 3 波：手动结束 用时 17.4s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 3 波 平均 0 分，满分 0 波
+  [07:42:18.733] ⏱ [Tactic] 拖延 第 3 波：用时 17.4s，不卡约 19.1s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.0s）→ 拖延分 0 | 漏兵分 0 → 综合 0
+  [07:42:31.406] 🏁 [Tactic] AI 卡兵评分 第 4 波开始：4 只兵，一塔在车道 8181 处
+  [07:42:48.311] 🏁 [Tactic] AI 卡兵评分 第 4 波：手动结束 用时 16.9s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 4 波 平均 0 分，满分 0 波
+  [07:42:48.311] ⏱ [Tactic] 拖延 第 4 波：用时 16.9s，不卡约 18.7s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.0s）→ 拖延分 0 | 漏兵分 0 → 综合 0
+  [07:43:01.502] 🏁 [Tactic] AI 卡兵评分 第 5 波开始：4 只兵，一塔在车道 8181 处
+  [07:43:18.886] 🏁 [Tactic] AI 卡兵评分 第 5 波：手动结束 用时 17.4s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 5 波 平均 0 分，满分 0 波
+  [07:43:18.886] ⏱ [Tactic] 拖延 第 5 波：用时 17.4s，不卡约 19.0s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.0s）→ 拖延分 0 | 漏兵分 0 → 综合 0
+  [07:49:24.899] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [07:49:24.907] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [07:51:20.736] 🏁 [Tactic] AI 卡兵评分 第 1 波开始：4 只兵，一塔在车道 8222 处
+  [07:51:43.644] 🏁 [Tactic] AI 卡兵评分 第 1 波：卡到一塔 用时 22.9s | 漏兵 3/4（其中从没靠近英雄 0）→ 得分 25 ❌ | 累计 1 波 平均 25 分，满分 0 波
+  [07:51:43.644] ⏱ [Tactic] 拖延 第 1 波：用时 22.9s，不卡约 24.2s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.1s）→ 拖延分 0 | 漏兵分 25 → 综合 12
+  [07:51:50.868] 🏁 [Tactic] AI 卡兵评分 第 2 波开始：4 只兵，一塔在车道 8222 处
+  [07:52:09.111] 🏁 [Tactic] AI 卡兵评分 第 2 波：手动结束 用时 18.2s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 2 波 平均 12 分，满分 0 波
+  [07:52:09.111] ⏱ [Tactic] 拖延 第 2 波：用时 18.2s，不卡约 19.8s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.1s）→ 拖延分 0 | 漏兵分 0 → 综合 0
+  [07:52:20.929] 🏁 [Tactic] AI 卡兵评分 第 3 波开始：4 只兵，一塔在车道 8222 处
+  [07:52:43.872] 🏁 [Tactic] AI 卡兵评分 第 3 波：卡到一塔 用时 23.0s | 漏兵 3/4（其中从没靠近英雄 0）→ 得分 25 ❌ | 累计 3 波 平均 17 分，满分 0 波
+  [07:52:43.872] ⏱ [Tactic] 拖延 第 3 波：用时 23.0s，不卡约 24.2s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.1s）→ 拖延分 0 | 漏兵分 25 → 综合 12
+  [07:52:50.902] 🏁 [Tactic] AI 卡兵评分 第 4 波开始：4 只兵，一塔在车道 8222 处
+  [07:53:09.636] 🏁 [Tactic] AI 卡兵评分 第 4 波：手动结束 用时 18.7s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 4 波 平均 12 分，满分 0 波
+  [07:53:09.637] ⏱ [Tactic] 拖延 第 4 波：用时 18.7s，不卡约 19.5s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.1s）→ 拖延分 0 | 漏兵分 0 → 综合 0
+  [07:53:21.071] 🏁 [Tactic] AI 卡兵评分 第 5 波开始：4 只兵，一塔在车道 8222 处
+  [07:53:43.685] 🏁 [Tactic] AI 卡兵评分 第 5 波：卡到一塔 用时 22.6s | 漏兵 3/4（其中从没靠近英雄 0）→ 得分 25 ❌ | 累计 5 波 平均 15 分，满分 0 波
+  [07:53:43.685] ⏱ [Tactic] 拖延 第 5 波：用时 22.6s，不卡约 24.2s（自然速度 340/s，还没学到，按 340）→ 多拖 0.0s（满分 12.1s）→ 拖延分 0 | 漏兵分 25 → 综合 12
+  [07:57:32.841] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [07:57:32.850] 🚧 [Tactic] 卡兵路线：近卫下路（一塔 4960,-6752），门口在下一波出兵时学习
+  [07:59:46.016] 🏁 [Tactic] AI 卡兵评分 第 1 波开始：4 只兵，一塔在车道 8151 处
+  [08:00:12.017] 🏁 [Tactic] AI 卡兵评分 第 1 波：卡到一塔 用时 26.0s | 漏兵 1/4（其中从没靠近英雄 0）→ 得分 75 ❌ | 累计 1 波 平均 75 分，满分 0 波
+  [08:00:12.017] ⏱ [Tactic] 拖延 第 1 波：用时 26.0s，不卡约 24.0s（自然速度 340/s，还没学到，按 340）→ 多拖 2.0s（满分 12.0s）→ 拖延分 17 | 漏兵分 75 → 综合 46
+  [08:00:23.438] 🏁 [Tactic] AI 卡兵评分 第 2 波开始：4 只兵，一塔在车道 8151 处
+  [08:00:51.955] 🏁 [Tactic] AI 卡兵评分 第 2 波：卡到一塔 用时 28.5s | 漏兵 2/4（其中从没靠近英雄 0）→ 得分 50 ❌ | 累计 2 波 平均 62 分，满分 0 波
+  [08:00:51.955] ⏱ [Tactic] 拖延 第 2 波：用时 28.5s，不卡约 24.0s（自然速度 340/s，还没学到，按 340）→ 多拖 4.6s（满分 12.0s）→ 拖延分 38 | 漏兵分 50 → 综合 44
+  [08:01:01.646] 🏁 [Tactic] AI 卡兵评分 第 3 波开始：4 只兵，一塔在车道 8151 处
+  [08:01:29.094] 🏁 [Tactic] AI 卡兵评分 第 3 波：手动结束 用时 27.4s | 漏兵 4/4（其中从没靠近英雄 0）→ 得分 0 ❌ | 累计 3 波 平均 42 分，满分 0 波
+  [08:01:29.094] ⏱ [Tactic] 拖延 第 3 波：用时 27.4s，不卡约 23.2s（自然速度 340/s，还没学到，按 340）→ 多拖 4.2s（满分 12.0s）→ 拖延分 35 | 漏兵分 0 → 综合 18
+  [08:01:37.754] 🏁 [Tactic] AI 卡兵评分 第 4 波开始：4 只兵，一塔在车道 8151 处
+  [08:02:10.011] 🏁 [Tactic] AI 卡兵评分 第 4 波：兵线接敌 用时 32.2s | 漏兵 0/4（其中从没靠近英雄 0）→ 得分 100 ✅ | 累计 4 波 平均 56 分，满分 1 波
+  [08:02:10.011] ⏱ [Tactic] 拖延 第 4 波：用时 32.2s，不卡约 22.4s（自然速度 340/s，还没学到，按 340）→ 多拖 9.8s（满分 12.0s）→ 拖延分 82 | 漏兵分 100 → 综合 91
+  [08:02:20.079] 🏁 [Tactic] AI 卡兵评分 第 5 波开始：4 只兵，一塔在车道 8151 处
+  [08:02:49.152] 🏁 [Tactic] AI 卡兵评分 第 5 波：卡到一塔 用时 29.1s | 漏兵 3/4（其中从没靠近英雄 0）→ 得分 25 ❌ | 累计 5 波 平均 50 分，满分 1 波
+  [08:02:49.152] ⏱ [Tactic] 拖延 第 5 波：用时 29.1s，不卡约 24.0s（自然速度 340/s，还没学到，按 340）→ 多拖 5.1s（满分 12.0s）→ 拖延分 43 | 漏兵分 25 → 综合 34

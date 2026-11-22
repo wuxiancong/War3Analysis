@@ -1,0 +1,29 @@
+{
+  "intervalSec": 30,
+  "firstWave": "GameStart (countdown remaining == 0); TriggerExecute(ZG) immediate",
+  "horn": "countdown remaining < 12 → PlaySoundBJ; first wave ≈ 12s after horn",
+  "initial": { "NI_melee": 3, "SI_ranged": 1, "siege": 0 },
+  "siegeRule": "ModuloInteger(GetTriggerExecCount(ZG), 7) == 0 → +1 siege per live lane (same ranged spawn loc)",
+  "countGrowth": [
+    { "atGameSec": 999, "effect": "NI += 1", "trigger": "HG → SOO" },
+    { "atGameSec": 1999, "effect": "NI += 1", "trigger": "HG → SOO" },
+    { "atGameSec": 2699, "effect": "SI += 1", "trigger": "GG → SIO" },
+    { "atGameSec": 2999, "effect": "NI += 1", "trigger": "HG → SOO" }
+  ],
+  "upgrade": {
+    "periodSec": 450,
+    "trigger": "UG → TQO",
+    "techs": ["R007", "R008", "R00C", "R00D", "R009", "R003", "R00A", "R00B"],
+    "approxPerTier": "melee +10 HP +1 atk; ranged +10 HP +2 atk (web approx); max ~30"
+  },
+  "superCreeps": "Per-lane rax death clears flag (JI/KI/LI melee, WI/XI/YI ranged radiant; HI/ZI/VI, EI/FI/GI dire) → SPO swaps to e00V/e00W/e026 or u001/u002/u00R",
+  "withinWaveOrder": "Same SPO tick: Dire 3 lanes melee → Dire ranged → Dire siege(if) → Radiant melee → Radiant ranged → Radiant siege(if). No Timer between CreateNUnitsAtLoc; melee/ranged appear same frame (engine may scatter by pathing).",
+  "expectedAliveAtSpawn": [
+    { "wave": 1, "gameSec": 0, "melee": 3, "ranged": 1, "siege": 0, "total": 4 },
+    { "wave": 7, "gameSec": 180, "melee": 3, "ranged": 1, "siege": 1, "total": 5 },
+    { "wave": 14, "gameSec": 390, "melee": 3, "ranged": 1, "siege": 1, "total": 5 },
+    { "wave": 34, "gameSec": 990, "note": "after 999s NI=4", "melee": 4, "ranged": 1, "siege": "if wave%7==0", "total": "5 or 6" },
+    { "wave": 91, "gameSec": 2700, "note": "after 2699s SI=2", "melee": 5, "ranged": 2, "siege": "mod7", "total": "7 or 8" }
+  ],
+  "why4or5Observed": "Non-siege waves = 4; every 7th wave = 5. Partial deaths / block miss / super-swap do not change spawn count."
+}

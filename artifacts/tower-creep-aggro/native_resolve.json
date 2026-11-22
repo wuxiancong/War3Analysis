@@ -1,0 +1,170 @@
+[
+  {
+    "ver": "1.0.17.5988",
+    "GetUnitAcquireRange_candidates": [],
+    "SetUnitAcquireRange_candidates": [],
+    "CallForHelp_xrefs": [
+      "0x1c6043",
+      "0x1c60b7"
+    ],
+    "CreepCallForHelp_xrefs": [
+      "0x1c6018"
+    ],
+    "CallForHelp_use_guess": "0x1c60b7",
+    "CreepCallForHelp_use_guess": "0x1c6018"
+  },
+  {
+    "ver": "1.0.20.6048",
+    "GetUnitAcquireRange_candidates": [],
+    "SetUnitAcquireRange_candidates": [],
+    "CallForHelp_xrefs": [
+      "0x1c6043",
+      "0x1c60b7"
+    ],
+    "CreepCallForHelp_xrefs": [
+      "0x1c6018"
+    ],
+    "CallForHelp_use_guess": "0x1c60b7",
+    "CreepCallForHelp_use_guess": "0x1c6018"
+  },
+  {
+    "ver": "1.20.4.6074",
+    "GetUnitAcquireRange_candidates": [],
+    "SetUnitAcquireRange_candidates": [],
+    "CallForHelp_xrefs": [
+      "0x1c60b3",
+      "0x1c6127"
+    ],
+    "CreepCallForHelp_xrefs": [
+      "0x1c6088"
+    ],
+    "CallForHelp_use_guess": "0x1c6127",
+    "CreepCallForHelp_use_guess": "0x1c6088"
+  },
+  {
+    "ver": "1.21.0.6263",
+    "GetUnitAcquireRange_candidates": [],
+    "SetUnitAcquireRange_candidates": [],
+    "CallForHelp_xrefs": [
+      "0x1c9273",
+      "0x1c92e7"
+    ],
+    "CreepCallForHelp_xrefs": [
+      "0x1c9248"
+    ],
+    "CallForHelp_use_guess": "0x1c92e7",
+    "CreepCallForHelp_use_guess": "0x1c9248"
+  },
+  {
+    "ver": "1.22.0.6328",
+    "GetUnitAcquireRange_candidates": [],
+    "SetUnitAcquireRange_candidates": [],
+    "CallForHelp_xrefs": [
+      "0x26c3f3",
+      "0x27b19a",
+      "0x2a333a"
+    ],
+    "CreepCallForHelp_xrefs": [
+      "0x26c413",
+      "0x27b174"
+    ],
+    "CallForHelp_use_guess": "0x27b19a",
+    "CreepCallForHelp_use_guess": "0x27b174"
+  },
+  {
+    "ver": "1.23.0.6352",
+    "GetUnitAcquireRange_candidates": [],
+    "SetUnitAcquireRange_candidates": [],
+    "CallForHelp_xrefs": [
+      "0x26d933",
+      "0x27c6da",
+      "0x2a487a"
+    ],
+    "CreepCallForHelp_xrefs": [
+      "0x26d953",
+      "0x27c6b4"
+    ],
+    "CallForHelp_use_guess": "0x27c6da",
+    "CreepCallForHelp_use_guess": "0x27c6b4"
+  },
+  {
+    "ver": "1.24.1.6374",
+    "GetUnitAcquireRange_candidates": [],
+    "SetUnitAcquireRange_candidates": [],
+    "CallForHelp_xrefs": [
+      "0x26d9e3",
+      "0x27c79a",
+      "0x2a493a"
+    ],
+    "CreepCallForHelp_xrefs": [
+      "0x26da03",
+      "0x27c774"
+    ],
+    "CallForHelp_use_guess": "0x27c79a",
+    "CreepCallForHelp_use_guess": "0x27c774"
+  },
+  {
+    "ver": "1.24.4.6387",
+    "GetUnitAcquireRange_candidates": [],
+    "SetUnitAcquireRange_candidates": [],
+    "CallForHelp_xrefs": [
+      "0x26da43",
+      "0x27c7fa",
+      "0x2a49ea"
+    ],
+    "CreepCallForHelp_xrefs": [
+      "0x26da63",
+      "0x27c7d4"
+    ],
+    "CallForHelp_use_guess": "0x27c7fa",
+    "CreepCallForHelp_use_guess": "0x27c7d4"
+  },
+  {
+    "ver": "1.25.1.6397",
+    "GetUnitAcquireRange_candidates": [],
+    "SetUnitAcquireRange_candidates": [],
+    "CallForHelp_xrefs": [
+      "0x26cd03",
+      "0x27baaa",
+      "0x2a3c9a"
+    ],
+    "CreepCallForHelp_xrefs": [
+      "0x26cd23",
+      "0x27ba84"
+    ],
+    "CallForHelp_use_guess": "0x27baaa",
+    "CreepCallForHelp_use_guess": "0x27ba84"
+  },
+  {
+    "ver": "1.26.0.6401",
+    "GetUnitAcquireRange_candidates": [],
+    "SetUnitAcquireRange_candidates": [],
+    "CallForHelp_xrefs": [
+      "0x26cf33",
+      "0x27bcda",
+      "0x2a3eca"
+    ],
+    "CreepCallForHelp_xrefs": [
+      "0x26cf53",
+      "0x27bcb4"
+    ],
+    "CallForHelp_use_guess": "0x27bcda",
+    "CreepCallForHelp_use_guess": "0x27bcb4"
+  },
+  {
+    "ver": "1.27.0.52240",
+    "GetUnitAcquireRange_candidates": [],
+    "SetUnitAcquireRange_candidates": [],
+    "CallForHelp_xrefs": [
+      "0x6510f2",
+      "0x66a972",
+      "0x66a993"
+    ],
+    "CreepCallForHelp_xrefs": [
+      "0x65a543",
+      "0x66a948"
+    ],
+    "CallForHelp_use_guess": "0x66a972",
+    "CreepCallForHelp_use_guess": "0x66a948"
+  }
+]

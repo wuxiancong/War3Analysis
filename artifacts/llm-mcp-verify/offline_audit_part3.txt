@@ -1,0 +1,525 @@
+=== 1. B5: 1.27 CNetCommandUnitOrder* 虚表与 abilityFlags ===
+  .?AVCNetCommandUnitOrderBasic@@: vtables=['0x986D7C']
+    slots: +0x00=0x31FB0, +0x04=0x305EE0, +0x08=0xA8420C, +0x0C=0x31FB0, +0x10=0x305FD0, +0x14=0xA8426C, +0x18=0x31FB0, +0x1C=0x305F40, +0x20=0xA842D0, +0x24=0x31FB0
+    --- slot +0x18 (0x31FB0) ---
+      6F031FB0: 85 C9              test        ecx,ecx
+      6F031FB2: 74 07              je          6F031FBB
+      6F031FB4: 8B 01              mov         eax,dword ptr [ecx]
+      6F031FB6: 6A 01              push        1
+      6F031FB8: FF 50 04           call        dword ptr [eax+4]
+      6F031FBB: C3                 ret
+      6F031FBC: CC                 int         3
+      6F031FBD: CC                 int         3
+      6F031FBE: CC                 int         3
+      6F031FBF: CC                 int         3
+      6F031FC0: 55                 push        ebp
+      6F031FC1: 8B EC              mov         ebp,esp
+      6F031FC3: 83 EC 18           sub         esp,18h
+      6F031FC6: 53                 push        ebx
+      6F031FC7: 8B D9              mov         ebx,ecx
+      6F031FC9: 8B 43 0C           mov         eax,dword ptr [ebx+0Ch]
+      6F031FCC: 8B 4B 1C           mov         ecx,dword ptr [ebx+1Ch]
+      6F031FCF: 8B 50 04           mov         edx,dword ptr [eax+4]
+      6F031FD2: 8B 44 88 FC        mov         eax,dword ptr [eax+ecx*4-4]
+      6F031FD6: 89 55 F8           mov         dword ptr [ebp-8],edx
+      6F031FD9: 89 45 FC           mov         dword ptr [ebp-4],eax
+      6F031FDC: 85 C9              test        ecx,ecx
+      6F031FDE: 74 0E              je          6F031FEE
+      6F031FE0: 49                 dec         ecx
+      6F031FE1: 6A 01              push        1
+      6F031FE3: 51                 push        ecx
+      6F031FE4: 8B CB              mov         ecx,ebx
+      6F031FE6: E8 F5 3A 00 00     call        6F035AE0
+      6F031FEB: 8B 55 F8           mov         edx,dword ptr [ebp-8]
+      6F031FEE: 8B 4B 1C           mov         ecx,dword ptr [ebx+1Ch]
+      6F031FF1: 83 F9 02           cmp         ecx,2
+      6F031FF4: 73 07              jae         6F031FFD
+      6F031FF6: 8B C2              mov         eax,edx
+      6F031FF8: 5B                 pop         ebx
+      6F031FF9: 8B E5              mov         esp,ebp
+    --- slot +0x1C (0x305F40) ---
+      6F305F40: 55                 push        ebp
+      6F305F41: 8B EC              mov         ebp,esp
+      6F305F43: F6 45 08 01        test        byte ptr [ebp+8],1
+      6F305F47: 56                 push        esi
+      6F305F48: 8B F1              mov         esi,ecx
+      6F305F4A: C7 06 4C 21 95 6F  mov         dword ptr [esi],6F95214Ch
+      6F305F50: 74 0F              je          6F305F61
+      6F305F52: 6A 00              push        0
+      6F305F54: 6A FF              push        0FFFFFFFFh
+      6F305F56: 68 70 0B 95 6F     push        6F950B70h
+      6F305F5B: 56                 push        esi
+      6F305F5C: E8 6D A6 E1 FF     call        6F1205CE
+      6F305F61: 8B C6              mov         eax,esi
+      6F305F63: 5E                 pop         esi
+      6F305F64: 5D                 pop         ebp
+      6F305F65: C2 04 00           ret         4
+      6F305F68: CC                 int         3
+      6F305F69: CC                 int         3
+      6F305F6A: CC                 int         3
+      6F305F6B: CC                 int         3
+      6F305F6C: CC                 int         3
+      6F305F6D: CC                 int         3
+      6F305F6E: CC                 int         3
+      6F305F6F: CC                 int         3
+      6F305F70: 55                 push        ebp
+      6F305F71: 8B EC              mov         ebp,esp
+      6F305F73: F6 45 08 01        test        byte ptr [ebp+8],1
+      6F305F77: 56                 push        esi
+      6F305F78: 8B F1              mov         esi,ecx
+      6F305F7A: C7 06 4C 21 95 6F  mov         dword ptr [esi],6F95214Ch
+      6F305F80: 74 0F              je          6F305F91
+      6F305F82: 6A 00              push        0
+      6F305F84: 6A FF              push        0FFFFFFFFh
+      6F305F86: 68 70 0B 95 6F     push        6F950B70h
+      6F305F8B: 56                 push        esi
+  .?AVCNetCommandUnitOrderTargetPoint@@: vtables=['0x986D88']
+    slots: +0x00=0x31FB0, +0x04=0x305FD0, +0x08=0xA8426C, +0x0C=0x31FB0, +0x10=0x305F40, +0x14=0xA842D0, +0x18=0x31FB0, +0x1C=0x305F10, +0x20=0xA84338, +0x24=0x31FB0
+    --- slot +0x18 (0x31FB0) ---
+      6F031FB0: 85 C9              test        ecx,ecx
+      6F031FB2: 74 07              je          6F031FBB
+      6F031FB4: 8B 01              mov         eax,dword ptr [ecx]
+      6F031FB6: 6A 01              push        1
+      6F031FB8: FF 50 04           call        dword ptr [eax+4]
+      6F031FBB: C3                 ret
+      6F031FBC: CC                 int         3
+      6F031FBD: CC                 int         3
+      6F031FBE: CC                 int         3
+      6F031FBF: CC                 int         3
+      6F031FC0: 55                 push        ebp
+      6F031FC1: 8B EC              mov         ebp,esp
+      6F031FC3: 83 EC 18           sub         esp,18h
+      6F031FC6: 53                 push        ebx
+      6F031FC7: 8B D9              mov         ebx,ecx
+      6F031FC9: 8B 43 0C           mov         eax,dword ptr [ebx+0Ch]
+      6F031FCC: 8B 4B 1C           mov         ecx,dword ptr [ebx+1Ch]
+      6F031FCF: 8B 50 04           mov         edx,dword ptr [eax+4]
+      6F031FD2: 8B 44 88 FC        mov         eax,dword ptr [eax+ecx*4-4]
+      6F031FD6: 89 55 F8           mov         dword ptr [ebp-8],edx
+      6F031FD9: 89 45 FC           mov         dword ptr [ebp-4],eax
+      6F031FDC: 85 C9              test        ecx,ecx
+      6F031FDE: 74 0E              je          6F031FEE
+      6F031FE0: 49                 dec         ecx
+      6F031FE1: 6A 01              push        1
+      6F031FE3: 51                 push        ecx
+      6F031FE4: 8B CB              mov         ecx,ebx
+      6F031FE6: E8 F5 3A 00 00     call        6F035AE0
+      6F031FEB: 8B 55 F8           mov         edx,dword ptr [ebp-8]
+      6F031FEE: 8B 4B 1C           mov         ecx,dword ptr [ebx+1Ch]
+      6F031FF1: 83 F9 02           cmp         ecx,2
+      6F031FF4: 73 07              jae         6F031FFD
+      6F031FF6: 8B C2              mov         eax,edx
+      6F031FF8: 5B                 pop         ebx
+      6F031FF9: 8B E5              mov         esp,ebp
+    --- slot +0x1C (0x305F10) ---
+      6F305F10: 55                 push        ebp
+      6F305F11: 8B EC              mov         ebp,esp
+      6F305F13: F6 45 08 01        test        byte ptr [ebp+8],1
+      6F305F17: 56                 push        esi
+      6F305F18: 8B F1              mov         esi,ecx
+      6F305F1A: C7 06 4C 21 95 6F  mov         dword ptr [esi],6F95214Ch
+      6F305F20: 74 0F              je          6F305F31
+      6F305F22: 6A 00              push        0
+      6F305F24: 6A FF              push        0FFFFFFFFh
+      6F305F26: 68 70 0B 95 6F     push        6F950B70h
+      6F305F2B: 56                 push        esi
+      6F305F2C: E8 9D A6 E1 FF     call        6F1205CE
+      6F305F31: 8B C6              mov         eax,esi
+      6F305F33: 5E                 pop         esi
+      6F305F34: 5D                 pop         ebp
+      6F305F35: C2 04 00           ret         4
+      6F305F38: CC                 int         3
+      6F305F39: CC                 int         3
+      6F305F3A: CC                 int         3
+      6F305F3B: CC                 int         3
+      6F305F3C: CC                 int         3
+      6F305F3D: CC                 int         3
+      6F305F3E: CC                 int         3
+      6F305F3F: CC                 int         3
+      6F305F40: 55                 push        ebp
+      6F305F41: 8B EC              mov         ebp,esp
+      6F305F43: F6 45 08 01        test        byte ptr [ebp+8],1
+      6F305F47: 56                 push        esi
+      6F305F48: 8B F1              mov         esi,ecx
+      6F305F4A: C7 06 4C 21 95 6F  mov         dword ptr [esi],6F95214Ch
+      6F305F50: 74 0F              je          6F305F61
+      6F305F52: 6A 00              push        0
+      6F305F54: 6A FF              push        0FFFFFFFFh
+      6F305F56: 68 70 0B 95 6F     push        6F950B70h
+      6F305F5B: 56                 push        esi
+  .?AVCNetCommandUnitOrderTargetImage@@: vtables=['0x986D94']
+    slots: +0x00=0x31FB0, +0x04=0x305F40, +0x08=0xA842D0, +0x0C=0x31FB0, +0x10=0x305F10, +0x14=0xA84338, +0x18=0x31FB0, +0x1C=0x305FA0, +0x20=0xA8439C, +0x24=0x31FB0
+    --- slot +0x18 (0x31FB0) ---
+      6F031FB0: 85 C9              test        ecx,ecx
+      6F031FB2: 74 07              je          6F031FBB
+      6F031FB4: 8B 01              mov         eax,dword ptr [ecx]
+      6F031FB6: 6A 01              push        1
+      6F031FB8: FF 50 04           call        dword ptr [eax+4]
+      6F031FBB: C3                 ret
+      6F031FBC: CC                 int         3
+      6F031FBD: CC                 int         3
+      6F031FBE: CC                 int         3
+      6F031FBF: CC                 int         3
+      6F031FC0: 55                 push        ebp
+      6F031FC1: 8B EC              mov         ebp,esp
+      6F031FC3: 83 EC 18           sub         esp,18h
+      6F031FC6: 53                 push        ebx
+      6F031FC7: 8B D9              mov         ebx,ecx
+      6F031FC9: 8B 43 0C           mov         eax,dword ptr [ebx+0Ch]
+      6F031FCC: 8B 4B 1C           mov         ecx,dword ptr [ebx+1Ch]
+      6F031FCF: 8B 50 04           mov         edx,dword ptr [eax+4]
+      6F031FD2: 8B 44 88 FC        mov         eax,dword ptr [eax+ecx*4-4]
+      6F031FD6: 89 55 F8           mov         dword ptr [ebp-8],edx
+      6F031FD9: 89 45 FC           mov         dword ptr [ebp-4],eax
+      6F031FDC: 85 C9              test        ecx,ecx
+      6F031FDE: 74 0E              je          6F031FEE
+      6F031FE0: 49                 dec         ecx
+      6F031FE1: 6A 01              push        1
+      6F031FE3: 51                 push        ecx
+      6F031FE4: 8B CB              mov         ecx,ebx
+      6F031FE6: E8 F5 3A 00 00     call        6F035AE0
+      6F031FEB: 8B 55 F8           mov         edx,dword ptr [ebp-8]
+      6F031FEE: 8B 4B 1C           mov         ecx,dword ptr [ebx+1Ch]
+      6F031FF1: 83 F9 02           cmp         ecx,2
+      6F031FF4: 73 07              jae         6F031FFD
+      6F031FF6: 8B C2              mov         eax,edx
+      6F031FF8: 5B                 pop         ebx
+      6F031FF9: 8B E5              mov         esp,ebp
+    --- slot +0x1C (0x305FA0) ---
+      6F305FA0: 55                 push        ebp
+      6F305FA1: 8B EC              mov         ebp,esp
+      6F305FA3: F6 45 08 01        test        byte ptr [ebp+8],1
+      6F305FA7: 56                 push        esi
+      6F305FA8: 8B F1              mov         esi,ecx
+      6F305FAA: C7 06 4C 21 95 6F  mov         dword ptr [esi],6F95214Ch
+      6F305FB0: 74 0F              je          6F305FC1
+      6F305FB2: 6A 00              push        0
+      6F305FB4: 6A FF              push        0FFFFFFFFh
+      6F305FB6: 68 70 0B 95 6F     push        6F950B70h
+      6F305FBB: 56                 push        esi
+      6F305FBC: E8 0D A6 E1 FF     call        6F1205CE
+      6F305FC1: 8B C6              mov         eax,esi
+      6F305FC3: 5E                 pop         esi
+      6F305FC4: 5D                 pop         ebp
+      6F305FC5: C2 04 00           ret         4
+      6F305FC8: CC                 int         3
+      6F305FC9: CC                 int         3
+      6F305FCA: CC                 int         3
+      6F305FCB: CC                 int         3
+      6F305FCC: CC                 int         3
+      6F305FCD: CC                 int         3
+      6F305FCE: CC                 int         3
+      6F305FCF: CC                 int         3
+      6F305FD0: 55                 push        ebp
+      6F305FD1: 8B EC              mov         ebp,esp
+      6F305FD3: F6 45 08 01        test        byte ptr [ebp+8],1
+      6F305FD7: 56                 push        esi
+      6F305FD8: 8B F1              mov         esi,ecx
+      6F305FDA: C7 06 4C 21 95 6F  mov         dword ptr [esi],6F95214Ch
+      6F305FE0: 74 0F              je          6F305FF1
+      6F305FE2: 6A 00              push        0
+      6F305FE4: 6A FF              push        0FFFFFFFFh
+      6F305FE6: 68 70 0B 95 6F     push        6F950B70h
+      6F305FEB: 56                 push        esi
+
+=== 2. A1: 1.27 CAbilitySpell & CTimer 虚表 ===
+  .?AVCAbilitySpell@@: vtables=['0x997DBC']
+  .?AVCTimer@@: vtables=[]
+  .?AVCAgentTimer@@: vtables=['0x95254C']
+    slots: +0x00=0x31FB0, +0x04=0x382D0, +0x08=0x42FC0, +0x0C=0x43AD0, +0x10=0x433C0, +0x14=0x435D0, +0x18=0x438C0, +0x1C=0x43460, +0x20=0x439D0, +0x24=0x43530
+    --- .?AVCAgentTimer@@ slot +0x14 (0x435D0) ---
+      6F0435D0: 55                 push        ebp
+      6F0435D1: 8B EC              mov         ebp,esp
+      6F0435D3: 8B 49 0C           mov         ecx,dword ptr [ecx+0Ch]
+      6F0435D6: 8B 45 08           mov         eax,dword ptr [ebp+8]
+      6F0435D9: 85 C9              test        ecx,ecx
+      6F0435DB: 75 0C              jne         6F0435E9
+      6F0435DD: 8B 0D D4 81 BB 6F  mov         ecx,dword ptr ds:[6FBB81D4h]
+      6F0435E3: 89 08              mov         dword ptr [eax],ecx
+      6F0435E5: 5D                 pop         ebp
+      6F0435E6: C2 04 00           ret         4
+      6F0435E9: 8B 49 08           mov         ecx,dword ptr [ecx+8]
+      6F0435EC: 89 08              mov         dword ptr [eax],ecx
+      6F0435EE: 5D                 pop         ebp
+      6F0435EF: C2 04 00           ret         4
+      6F0435F2: CC                 int         3
+      6F0435F3: CC                 int         3
+      6F0435F4: CC                 int         3
+      6F0435F5: CC                 int         3
+      6F0435F6: CC                 int         3
+      6F0435F7: CC                 int         3
+      6F0435F8: CC                 int         3
+      6F0435F9: CC                 int         3
+      6F0435FA: CC                 int         3
+      6F0435FB: CC                 int         3
+      6F0435FC: CC                 int         3
+      6F0435FD: CC                 int         3
+      6F0435FE: CC                 int         3
+      6F0435FF: CC                 int         3
+      6F043600: 55                 push        ebp
+      6F043601: 8B EC              mov         ebp,esp
+    --- .?AVCAgentTimer@@ slot +0x18 (0x438C0) ---
+      6F0438C0: 55                 push        ebp
+      6F0438C1: 8B EC              mov         ebp,esp
+      6F0438C3: 8B 51 0C           mov         edx,dword ptr [ecx+0Ch]
+      6F0438C6: 85 D2              test        edx,edx
+      6F0438C8: 75 0F              jne         6F0438D9
+      6F0438CA: 8B 45 08           mov         eax,dword ptr [ebp+8]
+      6F0438CD: 8B 0D D4 81 BB 6F  mov         ecx,dword ptr ds:[6FBB81D4h]
+      6F0438D3: 89 08              mov         dword ptr [eax],ecx
+      6F0438D5: 5D                 pop         ebp
+      6F0438D6: C2 04 00           ret         4
+      6F0438D9: 8B 42 0C           mov         eax,dword ptr [edx+0Ch]
+      6F0438DC: 83 C2 04           add         edx,4
+      6F0438DF: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+      6F0438E2: 83 C0 40           add         eax,40h
+      6F0438E5: 50                 push        eax
+      6F0438E6: E8 C5 EF 00 00     call        6F0528B0
+      6F0438EB: 8B 45 08           mov         eax,dword ptr [ebp+8]
+      6F0438EE: 5D                 pop         ebp
+      6F0438EF: C2 04 00           ret         4
+      6F0438F2: CC                 int         3
+      6F0438F3: CC                 int         3
+      6F0438F4: CC                 int         3
+      6F0438F5: CC                 int         3
+      6F0438F6: CC                 int         3
+      6F0438F7: CC                 int         3
+      6F0438F8: CC                 int         3
+      6F0438F9: CC                 int         3
+      6F0438FA: CC                 int         3
+      6F0438FB: CC                 int         3
+      6F0438FC: CC                 int         3
+    --- .?AVCAgentTimer@@ slot +0x1C (0x43460) ---
+      6F043460: 55                 push        ebp
+      6F043461: 8B EC              mov         ebp,esp
+      6F043463: 83 EC 08           sub         esp,8
+      6F043466: 56                 push        esi
+      6F043467: 8B F1              mov         esi,ecx
+      6F043469: 8D 4D FC           lea         ecx,[ebp-4]
+      6F04346C: 51                 push        ecx
+      6F04346D: 8B CE              mov         ecx,esi
+      6F04346F: 8B 06              mov         eax,dword ptr [esi]
+      6F043471: FF 50 18           call        dword ptr [eax+18h]
+      6F043474: 50                 push        eax
+      6F043475: 8B 06              mov         eax,dword ptr [esi]
+      6F043477: 8D 4D F8           lea         ecx,[ebp-8]
+      6F04347A: 51                 push        ecx
+      6F04347B: 8B CE              mov         ecx,esi
+      6F04347D: FF 50 10           call        dword ptr [eax+10h]
+      6F043480: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+      6F043483: 8B D0              mov         edx,eax
+      6F043485: E8 26 F4 00 00     call        6F0528B0
+      6F04348A: 8B 45 08           mov         eax,dword ptr [ebp+8]
+      6F04348D: 5E                 pop         esi
+      6F04348E: 8B E5              mov         esp,ebp
+      6F043490: 5D                 pop         ebp
+      6F043491: C2 04 00           ret         4
+      6F043494: CC                 int         3
+      6F043495: CC                 int         3
+      6F043496: CC                 int         3
+      6F043497: CC                 int         3
+      6F043498: CC                 int         3
+      6F043499: CC                 int         3
+  .?AVCSimpleTimer@@: vtables=[]
+  匹配 lea reg, [reg+0D0h]; call 的位置数: 48
+  候选 +0xD0 构造函数 RVA: 0x39810, 0x39860, 0x39900, 0x3AC00, 0x3ADF0, 0x3AFB0, 0x434F0, 0x43700, 0x527B0, 0x527D0
+  [ctor 0x39810]
+    6F039810: 55                 push        ebp
+    6F039811: 8B EC              mov         ebp,esp
+    6F039813: 56                 push        esi
+    6F039814: 68 00 27 95 6F     push        6F952700h
+    6F039819: FF 75 08           push        dword ptr [ebp+8]
+    6F03981C: 8B F1              mov         esi,ecx
+    6F03981E: E8 CD E3 16 00     call        6F1A7BF0
+    6F039823: FF 36              push        dword ptr [esi]
+    6F039825: 68 0C 27 95 6F     push        6F95270Ch
+    6F03982A: FF 75 08           push        dword ptr [ebp+8]
+    6F03982D: E8 BE E3 16 00     call        6F1A7BF0
+    6F039832: 83 C4 14           add         esp,14h
+    6F039835: 5E                 pop         esi
+    6F039836: 5D                 pop         ebp
+    6F039837: C2 04 00           ret         4
+  [ctor 0x39860]
+    6F039860: 8B 51 0C           mov         edx,dword ptr [ecx+0Ch]
+    6F039863: 8B 49 08           mov         ecx,dword ptr [ecx+8]
+    6F039866: E8 E5 DA FF FF     call        6F037350
+    6F03986B: 8B 40 78           mov         eax,dword ptr [eax+78h]
+    6F03986E: C3                 ret
+    6F03986F: CC                 int         3
+    6F039870: 8B 51 0C           mov         edx,dword ptr [ecx+0Ch]
+    6F039873: 8B 49 08           mov         ecx,dword ptr [ecx+8]
+    6F039876: E9 D5 DA FF FF     jmp         6F037350
+    6F03987B: CC                 int         3
+    6F03987C: CC                 int         3
+    6F03987D: CC                 int         3
+    6F03987E: CC                 int         3
+    6F03987F: CC                 int         3
+    6F039880: 55                 push        ebp
+  [ctor 0x39900]
+    6F039900: 55                 push        ebp
+    6F039901: 8B EC              mov         ebp,esp
+    6F039903: 8B 51 0C           mov         edx,dword ptr [ecx+0Ch]
+    6F039906: 8B 49 08           mov         ecx,dword ptr [ecx+8]
+    6F039909: E8 42 DA FF FF     call        6F037350
+    6F03990E: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+    6F039911: 6A 00              push        0
+    6F039913: 8B 50 78           mov         edx,dword ptr [eax+78h]
+    6F039916: 89 48 78           mov         dword ptr [eax+78h],ecx
+    6F039919: 8B C8              mov         ecx,eax
+    6F03991B: 52                 push        edx
+    6F03991C: E8 AF 3C 0D 00     call        6F10D5D0
+    6F039921: 5D                 pop         ebp
+    6F039922: C2 04 00           ret         4
+    6F039925: CC                 int         3
+  [ctor 0x3AC00]
+    6F03AC00: 55                 push        ebp
+    6F03AC01: 8B EC              mov         ebp,esp
+    6F03AC03: 56                 push        esi
+    6F03AC04: 68 40 29 95 6F     push        6F952940h
+    6F03AC09: FF 75 08           push        dword ptr [ebp+8]
+    6F03AC0C: 8B F1              mov         esi,ecx
+    6F03AC0E: E8 DD CF 16 00     call        6F1A7BF0
+    6F03AC13: 83 C4 08           add         esp,8
+    6F03AC16: 8D 4E 04           lea         ecx,[esi+4]
+    6F03AC19: BA 0A 00 00 00     mov         edx,0Ah
+    6F03AC1E: 6A 03              push        3
+    6F03AC20: E8 DB D2 16 00     call        6F1A7F00
+    6F03AC25: 50                 push        eax
+    6F03AC26: 68 4C 29 95 6F     push        6F95294Ch
+    6F03AC2B: FF 75 08           push        dword ptr [ebp+8]
+  [ctor 0x3ADF0]
+    6F03ADF0: 55                 push        ebp
+    6F03ADF1: 8B EC              mov         ebp,esp
+    6F03ADF3: 8B 51 0C           mov         edx,dword ptr [ecx+0Ch]
+    6F03ADF6: 83 EC 0C           sub         esp,0Ch
+    6F03ADF9: 8B 49 08           mov         ecx,dword ptr [ecx+8]
+    6F03ADFC: 56                 push        esi
+    6F03ADFD: E8 4E C5 FF FF     call        6F037350
+    6F03AE02: 8B F0              mov         esi,eax
+    6F03AE04: 8D 45 FC           lea         eax,[ebp-4]
+    6F03AE07: 50                 push        eax
+    6F03AE08: 8B CE              mov         ecx,esi
+    6F03AE0A: E8 81 29 0D 00     call        6F10D790
+    6F03AE0F: 50                 push        eax
+    6F03AE10: 8D 56 7C           lea         edx,[esi+7Ch]
+    6F03AE13: 8D 4D F8           lea         ecx,[ebp-8]
+
+=== 3. B4: war3map.j TP 选建筑 (L20080..L20135) ===
+  L20080: set SFI=null
+  L20081: set XPO=null
+  L20082: set XQO=null
+  L20083: set AR1=null
+  L20084: set P8I=null
+  L20085: return false
+  L20086: endfunction
+  L20087: function Y1O takes nothing returns nothing
+  L20088: local unit SFI=GetTriggerUnit()
+  L20089: local unit P8I=GetSpellTargetUnit()
+  L20090: local location l
+  L20091: local real x
+  L20092: local real y
+  L20093: local real a
+  L20094: local trigger t
+  L20095: local integer S5I
+  L20096: local unit XPO
+  L20097: local unit XQO
+  L20098: local ubersplat AR1
+  L20099: local integer id=GetPlayerId(GetOwningPlayer(SFI))
+  L20100: local integer NPI
+  L20101: local real YOO
+  L20102: set t=CreateTrigger()
+  L20103: set S5I=GetHandleId(t)
+  L20104: call SaveInteger(LY,(GetHandleId((SFI))),((4256)),(1))
+  L20105: if P8I==null then
+  L20106: set l=GetSpellTargetLoc()
+  L20107: set x=GetLocationX(l)
+  L20108: set y=GetLocationY(l)
+  L20109: if x==MW0[id]and y==MX0[id]then
+  L20110: if TII(GetOwningPlayer(SFI))then
+  L20111: set x=GetUnitX(PQ)
+  L20112: set y=GetUnitY(PQ)
+  L20113: else
+  L20114: set x=GetUnitX(BX0)
+  L20115: set y=GetUnitY(BX0)
+  L20116: endif
+  L20117: endif
+  L20118: set P8I=XKO(SFI,x,y)
+  L20119: call RemoveLocation(l)
+  L20120: else
+  L20121: set x=GetUnitX(P8I)
+  L20122: set y=GetUnitY(P8I)
+  L20123: endif
+  L20124: if QNI(x,y,GetUnitX(P8I),GetUnitY(P8I))>MS0 then
+  L20125: set a=Atan2(y-GetUnitY(P8I),x-GetUnitX(P8I))
+  L20126: set x=GetUnitX(P8I)+MS0*Cos(a)
+  L20127: set y=GetUnitY(P8I)+MS0*Sin(a)
+  L20128: elseif QNI(x,y,GetUnitX(P8I),GetUnitY(P8I))<50 then
+  L20129: set a=Atan2(y-GetUnitY(P8I),x-GetUnitX(P8I))
+  L20130: set x=GetUnitX(P8I)+120*Cos(a)
+  L20131: set y=GetUnitY(P8I)+120*Sin(a)
+  L20132: endif
+  L20133: if IsPointInRegion(LN,x,y)==true then
+  L20134: set a=Atan2(y-GetUnitY(P8I),x-GetUnitX(P8I))
+  L20135: set x=GetUnitX(P8I)+200*Cos(a)
+
+=== 4. B3: war3map.j L19325..L19370 & Speedburst ===
+  L19325: call EL1(WRO)
+  L19326: call EL1(WPO)
+  L19327: call EL1(WQO)
+  L19328: call EL1(WUO)
+  L19329: call EL1(X0O)
+  L19330: if WSO==1848651849 then
+  L19331: set WDO=1395667001
+  L19332: elseif WSO==1848652338 then
+  L19333: set WDO=1395667030
+  L19334: elseif WSO==1848652337 then
+  L19335: set WDO=1395667011
+  L19336: elseif WSO==1848652339 then
+  L19337: set WDO=1395667013
+  L19338: elseif WSO==1848652340 then
+  L19339: set WDO=1395667010
+  L19340: elseif WSO==1848652341 then
+  L19341: set WDO=1395667014
+  L19342: elseif WSO==1848658777 then
+  L19343: set WDO=1395667031
+  L19344: elseif WSO==1848658778 then
+  L19345: set WDO=1395667033
+  L19346: elseif WSO==1848658992 then
+  L19347: set WDO=1395667032
+  L19348: elseif WSO==1848658993 then
+  L19349: set WDO=1395667012
+  L19350: elseif WSO==1848659013 then
+  L19351: set WDO=1395667270
+  L19352: elseif WSO==1848659252 then
+  L19353: set WDO=1395667253
+  L19354: endif
+  L19355: if GetRandomInt(1,10)==1 then
+  L19356: set WDO=1395667015
+  L19357: endif
+  L19358: if GetRandomInt(1,10)<3 then
+  L19359: set WDO=1395667254
+  L19360: endif
+  L19361: if WSO==1848651853 then
+  L19362: set WDO=1395667020
+  L19363: elseif WSO==1848659027 then
+  L19364: set WDO=1395667020
+  L19365: elseif WSO==1848658006 then
+  L19366: set WDO=1395667014
+  L19367: endif
+  L19368: if WSO==1697657160 then
+  L19369: set WDO=1395667250
+  L19370: elseif WSO==1697657178 then
+  --- L5348..L5360 ---
+  L5348: function InitTrig_Regions takes nothing returns nothing
+  L5349: call B51()
+  L5350: endfunction
+  L5351: function B61 takes unit B71 returns boolean
+  L5352: return GetUnitTypeId(B71)==1848651828 or GetUnitTypeId(B71)==1848652088 or GetUnitTypeId(B71)==1848652099 or GetUnitTypeId(B71)==1848652103
+  L5353: endfunction
+  L5354: function B81 takes integer id returns boolean
+  L5355: return id==1311780941 or id==1211119431 or id==1211117657 or id==1211122232
+  L5356: endfunction
+  L5357: function B91 takes player p returns nothing
+  L5358: local unit SFI=K1[GetPlayerId(p)]
+  L5359: local integer i=0
+  L5360: local item BA1
