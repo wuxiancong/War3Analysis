@@ -1,0 +1,489 @@
+[
+  {
+    "ver": "1.0.17.5988",
+    "UnitAlive": {
+      "strRVA": "0x8108d4",
+      "xrefs": [
+        "0x26d65e",
+        "0x3eb5eb"
+      ]
+    },
+    "IsUnitAliveBJ": null,
+    "IsUnitDeadBJ": null,
+    "TimerGetRemaining": {
+      "strRVA": "0x819da4",
+      "xrefs": [
+        "0x2a8473",
+        "0x3e654b"
+      ]
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x819db8",
+      "xrefs": [
+        "0x2a845f",
+        "0x3e6537"
+      ]
+    },
+    "ReviveHero": {
+      "strRVA": "0x805cb7",
+      "xrefs": []
+    },
+    "ReviveHeroLoc": {
+      "strRVA": "0x817884",
+      "xrefs": [
+        "0x2a9dd7",
+        "0x3e7eaf"
+      ]
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x818400",
+      "xrefs": [
+        "0x2a952b",
+        "0x3e7603"
+      ]
+    }
+  },
+  {
+    "ver": "1.0.20.6048",
+    "UnitAlive": {
+      "strRVA": "0x811914",
+      "xrefs": [
+        "0x26d65e",
+        "0x3ebaeb"
+      ]
+    },
+    "IsUnitAliveBJ": null,
+    "IsUnitDeadBJ": null,
+    "TimerGetRemaining": {
+      "strRVA": "0x81ade4",
+      "xrefs": [
+        "0x2a8473",
+        "0x3e6a4b"
+      ]
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x81adf8",
+      "xrefs": [
+        "0x2a845f",
+        "0x3e6a37"
+      ]
+    },
+    "ReviveHero": {
+      "strRVA": "0x806cf7",
+      "xrefs": []
+    },
+    "ReviveHeroLoc": {
+      "strRVA": "0x8188c4",
+      "xrefs": [
+        "0x2a9dd7",
+        "0x3e83af"
+      ]
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x819440",
+      "xrefs": [
+        "0x2a952b",
+        "0x3e7b03"
+      ]
+    }
+  },
+  {
+    "ver": "1.20.4.6074",
+    "UnitAlive": {
+      "strRVA": "0x811934",
+      "xrefs": [
+        "0x26d77e",
+        "0x3ebc2b"
+      ]
+    },
+    "IsUnitAliveBJ": null,
+    "IsUnitDeadBJ": null,
+    "TimerGetRemaining": {
+      "strRVA": "0x81ae04",
+      "xrefs": [
+        "0x2a8593",
+        "0x3e6b8b"
+      ]
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x81ae18",
+      "xrefs": [
+        "0x2a857f",
+        "0x3e6b77"
+      ]
+    },
+    "ReviveHero": {
+      "strRVA": "0x806cf7",
+      "xrefs": []
+    },
+    "ReviveHeroLoc": {
+      "strRVA": "0x8188e4",
+      "xrefs": [
+        "0x2a9ef7",
+        "0x3e84ef"
+      ]
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x819460",
+      "xrefs": [
+        "0x2a964b",
+        "0x3e7c43"
+      ]
+    }
+  },
+  {
+    "ver": "1.21.0.6263",
+    "UnitAlive": {
+      "strRVA": "0x812a34",
+      "xrefs": [
+        "0x27093e",
+        "0x3efb7b"
+      ]
+    },
+    "IsUnitAliveBJ": null,
+    "IsUnitDeadBJ": null,
+    "TimerGetRemaining": {
+      "strRVA": "0x81bf14",
+      "xrefs": [
+        "0x2abb63",
+        "0x3eaadb"
+      ]
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x81bf28",
+      "xrefs": [
+        "0x2abb4f",
+        "0x3eaac7"
+      ]
+    },
+    "ReviveHero": {
+      "strRVA": "0x807e0f",
+      "xrefs": []
+    },
+    "ReviveHeroLoc": {
+      "strRVA": "0x8199f4",
+      "xrefs": [
+        "0x2ad4c7",
+        "0x3ec43f"
+      ]
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x81a570",
+      "xrefs": [
+        "0x2acc1b",
+        "0x3ebb93"
+      ]
+    }
+  },
+  {
+    "ver": "1.22.0.6328",
+    "UnitAlive": {
+      "strRVA": "0x922320",
+      "xrefs": [
+        "0x2e399e",
+        "0x712c2b"
+      ]
+    },
+    "IsUnitAliveBJ": null,
+    "IsUnitDeadBJ": null,
+    "TimerGetRemaining": {
+      "strRVA": "0x9383c8",
+      "xrefs": [
+        "0x3cc493",
+        "0x70db8b"
+      ]
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x9383dc",
+      "xrefs": [
+        "0x3cc47f",
+        "0x70db77"
+      ]
+    },
+    "ReviveHero": {
+      "strRVA": "0x920c33",
+      "xrefs": []
+    },
+    "ReviveHeroLoc": {
+      "strRVA": "0x935ea8",
+      "xrefs": [
+        "0x3cddf7",
+        "0x70f4ef"
+      ]
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x936a24",
+      "xrefs": [
+        "0x3cd54b",
+        "0x70ec43"
+      ]
+    }
+  },
+  {
+    "ver": "1.23.0.6352",
+    "UnitAlive": {
+      "strRVA": "0x936460",
+      "xrefs": [
+        "0x2e4ede",
+        "0x7151ab"
+      ]
+    },
+    "IsUnitAliveBJ": null,
+    "IsUnitDeadBJ": null,
+    "TimerGetRemaining": {
+      "strRVA": "0x94c510",
+      "xrefs": [
+        "0x3ce1b3",
+        "0x71010b"
+      ]
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x94c524",
+      "xrefs": [
+        "0x3ce19f",
+        "0x7100f7"
+      ]
+    },
+    "ReviveHero": {
+      "strRVA": "0x934d73",
+      "xrefs": []
+    },
+    "ReviveHeroLoc": {
+      "strRVA": "0x949ff0",
+      "xrefs": [
+        "0x3cfb17",
+        "0x711a6f"
+      ]
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x94ab6c",
+      "xrefs": [
+        "0x3cf26b",
+        "0x7111c3"
+      ]
+    }
+  },
+  {
+    "ver": "1.24.1.6374",
+    "UnitAlive": {
+      "strRVA": "0x945598",
+      "xrefs": [
+        "0x2e4f9e",
+        "0x7243a7"
+      ]
+    },
+    "IsUnitAliveBJ": null,
+    "IsUnitDeadBJ": null,
+    "TimerGetRemaining": {
+      "strRVA": "0x95c9b4",
+      "xrefs": [
+        "0x3d54fb",
+        "0x71eb23"
+      ]
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x95c9c8",
+      "xrefs": [
+        "0x3d54e7",
+        "0x71eb0f"
+      ]
+    },
+    "ReviveHero": {
+      "strRVA": "0x943eab",
+      "xrefs": []
+    },
+    "ReviveHeroLoc": {
+      "strRVA": "0x95a45c",
+      "xrefs": [
+        "0x3d6e9b",
+        "0x7204c3"
+      ]
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x95afd8",
+      "xrefs": [
+        "0x3d65ef",
+        "0x71fc17"
+      ]
+    }
+  },
+  {
+    "ver": "1.24.4.6387",
+    "UnitAlive": {
+      "strRVA": "0x945598",
+      "xrefs": [
+        "0x2e505e",
+        "0x724467"
+      ]
+    },
+    "IsUnitAliveBJ": null,
+    "IsUnitDeadBJ": null,
+    "TimerGetRemaining": {
+      "strRVA": "0x95c9cc",
+      "xrefs": [
+        "0x3d55bb",
+        "0x71ebe3"
+      ]
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x95c9e0",
+      "xrefs": [
+        "0x3d55a7",
+        "0x71ebcf"
+      ]
+    },
+    "ReviveHero": {
+      "strRVA": "0x943eab",
+      "xrefs": []
+    },
+    "ReviveHeroLoc": {
+      "strRVA": "0x95a474",
+      "xrefs": [
+        "0x3d6f5b",
+        "0x720583"
+      ]
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x95aff0",
+      "xrefs": [
+        "0x3d66af",
+        "0x71fcd7"
+      ]
+    }
+  },
+  {
+    "ver": "1.25.1.6397",
+    "UnitAlive": {
+      "strRVA": "0x933438",
+      "xrefs": [
+        "0x2e430e",
+        "0x723a97"
+      ]
+    },
+    "IsUnitAliveBJ": null,
+    "IsUnitDeadBJ": null,
+    "TimerGetRemaining": {
+      "strRVA": "0x94a874",
+      "xrefs": [
+        "0x3d484b",
+        "0x71e213"
+      ]
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x94a888",
+      "xrefs": [
+        "0x3d4837",
+        "0x71e1ff"
+      ]
+    },
+    "ReviveHero": {
+      "strRVA": "0x931d4b",
+      "xrefs": []
+    },
+    "ReviveHeroLoc": {
+      "strRVA": "0x94831c",
+      "xrefs": [
+        "0x3d61eb",
+        "0x71fbb3"
+      ]
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x948e98",
+      "xrefs": [
+        "0x3d593f",
+        "0x71f307"
+      ]
+    }
+  },
+  {
+    "ver": "1.26.0.6401",
+    "UnitAlive": {
+      "strRVA": "0x933438",
+      "xrefs": [
+        "0x2e453e",
+        "0x723cc7"
+      ]
+    },
+    "IsUnitAliveBJ": null,
+    "IsUnitDeadBJ": null,
+    "TimerGetRemaining": {
+      "strRVA": "0x94a874",
+      "xrefs": [
+        "0x3d4a7b",
+        "0x71e443"
+      ]
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x94a888",
+      "xrefs": [
+        "0x3d4a67",
+        "0x71e42f"
+      ]
+    },
+    "ReviveHero": {
+      "strRVA": "0x931d4b",
+      "xrefs": []
+    },
+    "ReviveHeroLoc": {
+      "strRVA": "0x94831c",
+      "xrefs": [
+        "0x3d641b",
+        "0x71fde3"
+      ]
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x948e98",
+      "xrefs": [
+        "0x3d5b6f",
+        "0x71f537"
+      ]
+    }
+  },
+  {
+    "ver": "1.27.0.52240",
+    "UnitAlive": {
+      "strRVA": "0xa57d30",
+      "xrefs": [
+        "0x6fbfe7",
+        "0x89356e"
+      ]
+    },
+    "IsUnitAliveBJ": null,
+    "IsUnitDeadBJ": null,
+    "TimerGetRemaining": {
+      "strRVA": "0x9680a8",
+      "xrefs": [
+        "0x1ea4ab",
+        "0x6f6763"
+      ]
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x968098",
+      "xrefs": [
+        "0x1ea497",
+        "0x6f674f"
+      ]
+    },
+    "ReviveHero": {
+      "strRVA": "0x96a630",
+      "xrefs": [
+        "0x1ebe37",
+        "0x6f80ef"
+      ]
+    },
+    "ReviveHeroLoc": {
+      "strRVA": "0x96a654",
+      "xrefs": [
+        "0x1ebe4b",
+        "0x6f8103"
+      ]
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x969aac",
+      "xrefs": [
+        "0x1eb59f",
+        "0x6f7857"
+      ]
+    }
+  }
+]

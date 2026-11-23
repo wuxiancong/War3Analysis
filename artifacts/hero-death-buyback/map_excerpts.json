@@ -1,0 +1,57 @@
+{
+  "GV1": "function GV1 takes integer SUI returns integer\nlocal real GW1=TimerGetElapsed(M)-N\nlocal real BX1=(R2I(GW1)/60)-(1/2)\nlocal real GX1=100+SUI*SUI*1.5+BX1*15\nlocal integer MLI\nset MLI=R2I(GX1/50)\nset MLI=IMinBJ(MLI,59)\nset MLI=IMaxBJ(MLI,0)\nreturn MLI\nendfunction",
+  "D7O_head": "function D7O takes nothing returns nothing\nif GetUnitTypeId(GetSoldUnit())==1747990581 then\nif K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))]!=null and IC1(K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))])==false then\ncall DIO(K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))],true)\nendif\ncall KillUnit(GetSoldUnit())\nelseif GetUnitTypeId(GetSoldUnit())==1747993174 then\nif K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))]!=null then\ncall D4O(K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))])\nendif\ncall KillUnit(GetSoldUnit())\nelseif GetUnitTypeId(GetSoldUnit())==1747993669 then\nif K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))]!=null then\ncall DIO((LoadUnitHandle(LY,(GetHandleId(GetSellingUnit())),(8002+(LoadInteger(LY,(GetHandleId(GetSellingUnit())),(8000)))-1))),false)\nendif\ncall KillUnit(GetSoldUnit())\nelseif GZ1(GetUnitTypeId(GetSoldUnit()))then\nif K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))]!=null then\nif IC1(K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))])==true and GetOwningPlayer(GetSoldUnit())==GetOwningPlayer(GetSellingUnit())and((LoadInteger(LY,(GetHandleId((K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))]))),((4304))))==1)==false and(XS[GetPlayerId((GetOwningPlayer(GetSoldUnit())))]==false)then\ncall D6O(K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))])\nset LW0=true\ncall ReviveHero(K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))],GetUnitX(GetSoldUnit()),GetUnitY(GetSoldUnit()),true)\nset LW0=false\ncall SetUnitState(K1[GetPlayerId(GetOwningPlayer(GetSoldUnit()))],UNIT_STATE_MANA,10000)\nset EL0[GetPlayerId(GetOwningPlayer(GetSoldUnit()))]=IMaxBJ(0,EL0[GetPlayerId(GetOwningPlayer(GetSoldUnit()))]-WS[GV1(GetHeroLevel(K1[GetPlayerId(GetOwningPlayer(GetSellingUnit()))]))])\ncall GN1(GetOwningPlayer(GetSoldUnit()))\nelse\ncall SetPlayerState(GetOwningPlayer(GetSoldUnit()),PLAYER_STATE_RESOURCE_GOLD,GetPlayerState(GetOwningPlayer(GetSoldUnit()),PLAYER_STATE_RESOURCE_GOLD)+WS[GV1(GetHeroLevel(K1[GetPlayerId(GetOwningPlayer(GetSellingUnit()))]))])\nif(XS[GetPlayerId((GetOwningPlayer(GetSoldUnit())))]==false)==false then\ncall PZI(GetOwningPlayer(GetSoldUnit()),GetObjectName(1848659508))\nendif\nendif\nendif\ncall KillUnit(GetSoldUnit())\nendif\nendfunction",
+  "GN1": "function GN1 takes player p returns nothing\nlocal integer id=GetPlayerId(p)\nlocal unit GJ1=D30[id]\nlocal unit SFI=K1[id]\nlocal integer SUI=GetHeroLevel(SFI)\nlocal integer i=0\nlocal trigger t=CreateTrigger()\nlocal integer S5I=GetHandleId(t)\ncall GH1(SFI)\nloop\nexitwhen i>59\ncall RemoveUnitFromStock(GJ1,ZS[i])\nset i=i+1\nendloop\ncall TriggerAddCondition(t,Condition(function GM1))\ncall TriggerRegisterTimerEvent(t,360,false)\ncall SaveInteger(LY,(S5I),(34),(id))\nset VS[id]=1747993652\ncall RemoveUnitFromStock(GJ1,1747993652)\ncall AddUnitToStock(GJ1,1747993652,0,1)\nset SFI=null\nset GJ1=null\nset t=null\nendfunction",
+  "GM1": "function GM1 takes nothing returns boolean\nlocal trigger t=GetTriggeringTrigger()\nlocal integer S5I=GetHandleId(t)\nlocal integer id=(LoadInteger(LY,(S5I),(34)))\nlocal unit GJ1=D30[id]\nlocal unit SFI=K1[id]\nlocal integer SUI=GetHeroLevel(SFI)\nlocal integer i=0\ncall RemoveUnitFromStock(GJ1,1747993652)\ncall AddUnitToStock(GJ1,ZS[GV1(SUI)],1,1)\nset VS[id]=ZS[GV1(SUI)]\ncall FlushChildHashtable(LY,(S5I))\ncall S0I(t)\nset t=null\nset SFI=null\nreturn false\nendfunction",
+  "ZS_count": 60,
+  "ZS_sample": [
+    {
+      "idx": 0,
+      "fourcc_int": 1747990855,
+      "fourcc": "G90h",
+      "gold": 50
+    },
+    {
+      "idx": 1,
+      "fourcc_int": 1747990868,
+      "fourcc": "T90h",
+      "gold": 100
+    },
+    {
+      "idx": 2,
+      "fourcc_int": 1747990854,
+      "fourcc": "F90h",
+      "gold": 150
+    },
+    {
+      "idx": 3,
+      "fourcc_int": 1747990856,
+      "fourcc": "H90h",
+      "gold": 200
+    },
+    {
+      "idx": 4,
+      "fourcc_int": 1747990853,
+      "fourcc": "E90h",
+      "gold": 250
+    },
+    {
+      "idx": 57,
+      "fourcc_int": 1747992910,
+      "fourcc": "NA0h",
+      "gold": 2900
+    },
+    {
+      "idx": 58,
+      "fourcc_int": 1747992918,
+      "fourcc": "VA0h",
+      "gold": 2950
+    },
+    {
+      "idx": 59,
+      "fourcc_int": 1747992919,
+      "fourcc": "WA0h",
+      "gold": 3000
+    }
+  ]
+}

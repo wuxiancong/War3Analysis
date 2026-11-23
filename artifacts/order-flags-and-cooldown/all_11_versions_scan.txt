@@ -1,0 +1,274 @@
+=== 全 11 版 War3 Game.dll 批量逆向扫描结果 ===
+
+[1.0.17.5988] (base=0x6F000000)
+  vt_CAgentTimer              : None
+  vt_CAbilitySpell            : None
+  vt_CAbilityChannel          : None
+  vt_CAbilityBlink            : None
+  vt_CAbilityItemTownPortal   : None
+  vt_CAbilityInventory        : None
+  vt_CItem                    : None
+  vt_NetCmdBasic              : None
+  vt_NetCmdPoint              : None
+  vt_NetCmdTarget             : None
+  client_flag_packers         : []
+  CAbilitySpell_StartCooldown : None
+  CAbilitySpell_timer_off     : None
+  CItem_StartCooldown         : 0x46F120
+  CItem_timer_off             : +0xD0
+  CItem_StartCD_callers       : ['0x51B95A', '0x51BC1A', '0x5A136A', '0x5A15BA', '0x5A7ACA']
+  Inv_sharedCd_cnt_off        : None
+  Inv_sharedCd_ids_off        : None
+  Inv_sharedCd_timer_off      : None
+  CItem_abil_array_98_9C      : True
+
+[1.0.20.6048] (base=0x6F000000)
+  vt_CAgentTimer              : None
+  vt_CAbilitySpell            : None
+  vt_CAbilityChannel          : None
+  vt_CAbilityBlink            : None
+  vt_CAbilityItemTownPortal   : None
+  vt_CAbilityInventory        : None
+  vt_CItem                    : None
+  vt_NetCmdBasic              : None
+  vt_NetCmdPoint              : None
+  vt_NetCmdTarget             : None
+  client_flag_packers         : []
+  CAbilitySpell_StartCooldown : None
+  CAbilitySpell_timer_off     : None
+  CItem_StartCooldown         : 0x46F620
+  CItem_timer_off             : +0xD0
+  CItem_StartCD_callers       : ['0x51BE5A', '0x51C11A', '0x5A186A', '0x5A1ABA', '0x5A7FCA']
+  Inv_sharedCd_cnt_off        : None
+  Inv_sharedCd_ids_off        : None
+  Inv_sharedCd_timer_off      : None
+  CItem_abil_array_98_9C      : True
+
+[1.20.4.6074] (base=0x6F000000)
+  vt_CAgentTimer              : None
+  vt_CAbilitySpell            : None
+  vt_CAbilityChannel          : None
+  vt_CAbilityBlink            : None
+  vt_CAbilityItemTownPortal   : None
+  vt_CAbilityInventory        : None
+  vt_CItem                    : None
+  vt_NetCmdBasic              : None
+  vt_NetCmdPoint              : None
+  vt_NetCmdTarget             : None
+  client_flag_packers         : []
+  CAbilitySpell_StartCooldown : None
+  CAbilitySpell_timer_off     : None
+  CItem_StartCooldown         : 0x46FB90
+  CItem_timer_off             : +0xD0
+  CItem_StartCD_callers       : ['0x51C4BA', '0x51C77A', '0x5A211A', '0x5A236A', '0x5A88CA']
+  Inv_sharedCd_cnt_off        : None
+  Inv_sharedCd_ids_off        : None
+  Inv_sharedCd_timer_off      : None
+  CItem_abil_array_98_9C      : True
+
+[1.21.0.6263] (base=0x6F000000)
+  vt_CAgentTimer              : None
+  vt_CAbilitySpell            : None
+  vt_CAbilityChannel          : None
+  vt_CAbilityBlink            : None
+  vt_CAbilityItemTownPortal   : None
+  vt_CAbilityInventory        : None
+  vt_CItem                    : None
+  vt_NetCmdBasic              : None
+  vt_NetCmdPoint              : None
+  vt_NetCmdTarget             : None
+  client_flag_packers         : []
+  CAbilitySpell_StartCooldown : None
+  CAbilitySpell_timer_off     : None
+  CItem_StartCooldown         : 0x473AC0
+  CItem_timer_off             : +0xD0
+  CItem_StartCD_callers       : ['0x52054A', '0x52080A', '0x5A60CA', '0x5A631A', '0x5AC8EA']
+  Inv_sharedCd_cnt_off        : None
+  Inv_sharedCd_ids_off        : None
+  Inv_sharedCd_timer_off      : None
+  CItem_abil_array_98_9C      : True
+
+[1.22.0.6328] (base=0x6F000000)
+  vt_CAgentTimer              : 0x867394
+  vt_CAbilitySpell            : 0x875414
+  vt_CAbilityChannel          : 0x8FD904
+  vt_CAbilityBlink            : 0x8FF764
+  vt_CAbilityItemTownPortal   : 0x87B644
+  vt_CAbilityInventory        : 0x8A5FD4
+  vt_CItem                    : 0x920F9C
+  vt_NetCmdBasic              : 0x921B78
+  vt_NetCmdPoint              : 0x921B84
+  vt_NetCmdTarget             : 0x921B90
+  CAgentTimer_GetTimeout      : 0x467A20
+  CAgentTimer_GetRemaining    : 0x467D60
+  CAgentTimer_offsets_ok      : True
+  client_flag_packers         : []
+  GetTargetType_vslot         : +0x30C
+  Blink_GetTargetType         : 0x1CE460 (0x100002)
+  TP_GetTargetType            : 0x0724A0 (0x100006)
+  Channel_GetTargetType       : 0x19E900 (has_6=True, has_100k=True)
+  CAbilitySpell_StartCooldown : 0x0502B0
+  CAbilitySpell_timer_off     : +0xD0
+  CItem_StartCooldown         : 0x2B5121
+  CItem_timer_off             : +0xE4
+  CItem_StartCD_callers       : []
+  CItem_abil_array_98_9C      : True
+
+[1.23.0.6352] (base=0x6F000000)
+  vt_CAgentTimer              : 0x87B4D4
+  vt_CAbilitySpell            : 0x889554
+  vt_CAbilityChannel          : 0x911A44
+  vt_CAbilityBlink            : 0x9138A4
+  vt_CAbilityItemTownPortal   : 0x88F784
+  vt_CAbilityInventory        : 0x8BA114
+  vt_CItem                    : 0x9350DC
+  vt_NetCmdBasic              : 0x935CB8
+  vt_NetCmdPoint              : 0x935CC4
+  vt_NetCmdTarget             : 0x935CD0
+  CAgentTimer_GetTimeout      : 0x4697B0
+  CAgentTimer_GetRemaining    : 0x469AF0
+  CAgentTimer_offsets_ok      : True
+  client_flag_packers         : []
+  GetTargetType_vslot         : +0x30C
+  Blink_GetTargetType         : 0x1CF9A0 (0x100002)
+  TP_GetTargetType            : 0x0739E0 (0x100006)
+  Channel_GetTargetType       : 0x19FE40 (has_6=True, has_100k=True)
+  CAbilitySpell_StartCooldown : 0x0517F0
+  CAbilitySpell_timer_off     : +0xD0
+  CItem_StartCooldown         : 0x2B6661
+  CItem_timer_off             : +0xE4
+  CItem_StartCD_callers       : []
+  CItem_abil_array_98_9C      : True
+
+[1.24.1.6374] (base=0x6F000000)
+  vt_CAgentTimer              : 0x88A60C
+  vt_CAbilitySpell            : 0x89868C
+  vt_CAbilityChannel          : 0x920B7C
+  vt_CAbilityBlink            : 0x9229DC
+  vt_CAbilityItemTownPortal   : 0x89E8BC
+  vt_CAbilityInventory        : 0x8C924C
+  vt_CItem                    : 0x944214
+  vt_NetCmdBasic              : 0x944DF0
+  vt_NetCmdPoint              : 0x944DFC
+  vt_NetCmdTarget             : 0x944E08
+  CAgentTimer_GetTimeout      : 0x478140
+  CAgentTimer_GetRemaining    : 0x478480
+  CAgentTimer_offsets_ok      : True
+  client_flag_packers         : []
+  GetTargetType_vslot         : +0x30C
+  Blink_GetTargetType         : 0x1CFA50 (0x100002)
+  TP_GetTargetType            : 0x073A90 (0x100006)
+  Channel_GetTargetType       : 0x19FEF0 (has_6=True, has_100k=True)
+  CAbilitySpell_StartCooldown : 0x0518A0
+  CAbilitySpell_timer_off     : +0xD0
+  CItem_StartCooldown         : 0x2B6721
+  CItem_timer_off             : +0xE4
+  CItem_StartCD_callers       : []
+  CItem_abil_array_98_9C      : True
+
+[1.24.4.6387] (base=0x6F000000)
+  vt_CAgentTimer              : 0x88A60C
+  vt_CAbilitySpell            : 0x89868C
+  vt_CAbilityChannel          : 0x920B7C
+  vt_CAbilityBlink            : 0x9229DC
+  vt_CAbilityItemTownPortal   : 0x89E8BC
+  vt_CAbilityInventory        : 0x8C924C
+  vt_CItem                    : 0x944214
+  vt_NetCmdBasic              : 0x944DF0
+  vt_NetCmdPoint              : 0x944DFC
+  vt_NetCmdTarget             : 0x944E08
+  CAgentTimer_GetTimeout      : 0x4781C0
+  CAgentTimer_GetRemaining    : 0x478500
+  CAgentTimer_offsets_ok      : True
+  client_flag_packers         : []
+  GetTargetType_vslot         : +0x30C
+  Blink_GetTargetType         : 0x1CFAB0 (0x100002)
+  TP_GetTargetType            : 0x073AA0 (0x100006)
+  Channel_GetTargetType       : 0x19FF50 (has_6=True, has_100k=True)
+  CAbilitySpell_StartCooldown : 0x0518B0
+  CAbilitySpell_timer_off     : +0xD0
+  CItem_StartCooldown         : 0x2B67E1
+  CItem_timer_off             : +0xE4
+  CItem_StartCD_callers       : []
+  CItem_abil_array_98_9C      : True
+
+[1.25.1.6397] (base=0x6F000000)
+  vt_CAgentTimer              : 0x8784AC
+  vt_CAbilitySpell            : 0x88652C
+  vt_CAbilityChannel          : 0x90EA1C
+  vt_CAbilityBlink            : 0x91087C
+  vt_CAbilityItemTownPortal   : 0x88C75C
+  vt_CAbilityInventory        : 0x8B70EC
+  vt_CItem                    : 0x9320B4
+  vt_NetCmdBasic              : 0x932C90
+  vt_NetCmdPoint              : 0x932C9C
+  vt_NetCmdTarget             : 0x932CA8
+  CAgentTimer_GetTimeout      : 0x477480
+  CAgentTimer_GetRemaining    : 0x4777C0
+  CAgentTimer_offsets_ok      : True
+  client_flag_packers         : []
+  GetTargetType_vslot         : +0x30C
+  Blink_GetTargetType         : 0x1CED70 (0x100002)
+  TP_GetTargetType            : 0x072E70 (0x100006)
+  Channel_GetTargetType       : 0x19F210 (has_6=True, has_100k=True)
+  CAbilitySpell_StartCooldown : 0x050B70
+  CAbilitySpell_timer_off     : +0xD0
+  CItem_StartCooldown         : 0x2B5A91
+  CItem_timer_off             : +0xE4
+  CItem_StartCD_callers       : []
+  CItem_abil_array_98_9C      : True
+
+[1.26.0.6401] (base=0x6F000000)
+  vt_CAgentTimer              : 0x8784AC
+  vt_CAbilitySpell            : 0x88652C
+  vt_CAbilityChannel          : 0x90EA1C
+  vt_CAbilityBlink            : 0x91087C
+  vt_CAbilityItemTownPortal   : 0x88C75C
+  vt_CAbilityInventory        : 0x8B70EC
+  vt_CItem                    : 0x9320B4
+  vt_NetCmdBasic              : 0x932C90
+  vt_NetCmdPoint              : 0x932C9C
+  vt_NetCmdTarget             : 0x932CA8
+  CAgentTimer_GetTimeout      : 0x4776B0
+  CAgentTimer_GetRemaining    : 0x4779F0
+  CAgentTimer_offsets_ok      : True
+  client_flag_packers         : []
+  GetTargetType_vslot         : +0x30C
+  Blink_GetTargetType         : 0x1CEFA0 (0x100002)
+  TP_GetTargetType            : 0x072E70 (0x100006)
+  Channel_GetTargetType       : 0x19F440 (has_6=True, has_100k=True)
+  CAbilitySpell_StartCooldown : 0x050B70
+  CAbilitySpell_timer_off     : +0xD0
+  CItem_StartCooldown         : 0x2B5CC1
+  CItem_timer_off             : +0xE4
+  CItem_StartCD_callers       : []
+  CItem_abil_array_98_9C      : True
+
+[1.27.0.52240] (base=0x6F000000)
+  vt_CAgentTimer              : 0x95254C
+  vt_CAbilitySpell            : 0x997DBC
+  vt_CAbilityChannel          : 0x9B7744
+  vt_CAbilityBlink            : 0x9C38D0
+  vt_CAbilityItemTownPortal   : 0x9A4068
+  vt_CAbilityInventory        : 0x9FAB6C
+  vt_CItem                    : 0xA4A2EC
+  vt_NetCmdBasic              : 0x986D7C
+  vt_NetCmdPoint              : 0x986D88
+  vt_NetCmdTarget             : 0x986D94
+  CAgentTimer_GetTimeout      : 0x0433C0
+  CAgentTimer_GetRemaining    : 0x0438C0
+  CAgentTimer_offsets_ok      : True
+  client_flag_packers         : ['0x3AE4E0', '0x3AE540', '0x3AE5D0', '0x3AE660', '0x3AE6F0', '0x3AE780']
+  GetTargetType_vslot         : +0x30C
+  Blink_GetTargetType         : 0x49F1F0 (0x100002)
+  TP_GetTargetType            : 0x3DC050 (0x100006)
+  Channel_GetTargetType       : 0x49F230 (has_6=True, has_100k=True)
+  CAbilitySpell_StartCooldown : 0x418D20
+  CAbilitySpell_timer_off     : +0xD0
+  CItem_StartCooldown         : 0x639E60
+  CItem_timer_off             : +0xE4
+  CItem_StartCD_callers       : ['0x549179']
+  Inv_sharedCd_cnt_off        : +0xBC
+  Inv_sharedCd_ids_off        : +0xC0
+  Inv_sharedCd_timer_off      : +0xDC
+  CItem_abil_array_98_9C      : True

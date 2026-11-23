@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "purpose": "Offline replay for aiScoreSkillCast — Shadow Fiend raze empty-cast interception",
+    "map": "DotA 6.83d",
+    "geometry": {
+      "A0EY": {"centerDist": 200, "radius": 275},
+      "A0FH": {"centerDist": 450, "radius": 275},
+      "A0F0": {"centerDist": 700, "radius": 275},
+      "damageByLevel": [100, 175, 250, 325],
+      "castPoint": 0.67,
+      "landSlack": 0.08,
+      "turnToleranceDeg": 9.0,
+      "blockBelow": 60.0
+    }
+  },
+  "cases": [
+    {
+      "id": "EMPTY_WRONG_SLOT",
+      "ability": "A0EY",
+      "level": 1,
+      "caster": {"x": 0, "y": 0, "facing": 0, "mana": 300},
+      "castFacing": 0,
+      "denyWaiting": false,
+      "creeps": [{"x": 700, "y": 0, "hp": 50, "ms": 0}],
+      "expectBlock": true,
+      "expectScore": 0,
+      "note": "Creep only in far-raze band; near-raze empty"
+    },
+    {
+      "id": "EMPTY_ANGLE_25",
+      "ability": "A0EY",
+      "level": 1,
+      "caster": {"x": 0, "y": 0, "facing": 0, "mana": 300},
+      "castFacing": 25,
+      "denyWaiting": false,
+      "creeps": [{"x": 200, "y": 0, "hp": 50, "ms": 0}],
+      "expectBlock": true,
+      "expectScore": 0,
+      "note": "Facing error 25° > 9° → intercept even if geometry would hit after turn"
+    },
+    {
+      "id": "EMPTY_ANGLE_15_MID",
+      "ability": "A0FH",
+      "level": 2,
+      "caster": {"x": 0, "y": 0, "facing": 90, "mana": 200},
+      "castFacing": 105,
+      "denyWaiting": false,
+      "creeps": [{"x": 0, "y": 450, "hp": 80, "ms": 0}],
+      "expectBlock": true,
+      "expectScoreMax": 59,
+      "note": "15° gap soft-fails threshold"
+    },
+    {
+      "id": "HIT_DUAL_NEAR",
+      "ability": "A0EY",
+      "level": 1,
+      "caster": {"x": 0, "y": 0, "facing": 0, "mana": 300},
+      "castFacing": 0,
+      "denyWaiting": false,
+      "creeps": [
+        {"x": 200, "y": 40, "hp": 40, "ms": 0},
+        {"x": 180, "y": -50, "hp": 55, "ms": 0}
+      ],
+      "expectBlock": false,
+      "expectScoreMin": 60,
+      "note": "Dual last-hit near raze"
+    },
+    {
+      "id": "SINGLE_LOW_MANA_FAR",
+      "ability": "A0F0",
+      "level": 1,
+      "caster": {"x": 0, "y": 0, "facing": 0, "mana": 80},
+      "castFacing": 0,
+      "denyWaiting": false,
+      "creeps": [{"x": 700, "y": 0, "hp": 40, "ms": 0}],
+      "expectBlock": true,
+      "note": "Single creep farm + mana not enough for deny exception"
+    },
+    {
+      "id": "SINGLE_DENY_OK",
+      "ability": "A0FH",
+      "level": 3,
+      "caster": {"x": 0, "y": 0, "facing": 0, "mana": 200},
+      "castFacing": 0,
+      "denyWaiting": true,
+      "creeps": [{"x": 450, "y": 0, "hp": 60, "ms": 0}],
+      "expectBlock": false,
+      "expectScoreMin": 55,
+      "note": "denyWaiting + mana>=150 allows single"
+    },
+    {
+      "id": "FAR_DIAGONAL_HIT",
+      "ability": "A0F0",
+      "level": 4,
+      "caster": {"x": 100, "y": 100, "facing": 45, "mana": 300},
+      "castFacing": 45,
+      "denyWaiting": false,
+      "creeps": [{"x": 595.71, "y": 595.71, "hp": 100, "ms": 0}],
+      "expectBlock": true,
+      "note": "Only 1 creep without deny → farm rule blocks despite geometric hit"
+    },
+    {
+      "id": "EMPTY_NO_CREEPS",
+      "ability": "A0EY",
+      "level": 4,
+      "caster": {"x": 0, "y": 0, "facing": 180, "mana": 400},
+      "castFacing": 180,
+      "denyWaiting": false,
+      "creeps": [],
+      "expectBlock": true,
+      "expectScore": 0,
+      "note": "Hard empty cast"
+    }
+  ]
+}

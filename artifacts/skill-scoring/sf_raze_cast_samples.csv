@@ -1,0 +1,11 @@
+case_id,hero,ability,level,hx,hy,facing_deg,cast_facing_deg,mana,deny_waiting,creep_x,creep_y,creep_hp,creep_ms,expected_score_max,expect_block,note
+SF_EMPTY_FACE_MISS,Nfir,A0EY,1,0,0,0,0,300,0,450,0,50,325,0,1,creep far outside near-raze circle; facing OK but wrong slot geometry
+SF_EMPTY_ANGLE_25,Nfir,A0EY,1,0,0,0,25,300,0,200,0,50,0,0,1,target on near-raze center but facing error 25deg > 9deg tolerance
+SF_EMPTY_ANGLE_15,Nfir,A0FH,2,0,0,90,105,200,0,0,450,80,0,0,1,mid-raze center hit geometrically after turn but pre-cast facing gap 15deg blocks
+SF_HIT_NEAR_2CREEPS,Nfir,A0EY,1,0,0,0,0,300,0,200,40,40,0,100,0,two creeps near 200 center; expect allow
+SF_HIT_NEAR_2CREEPS_B,Nfir,A0EY,1,0,0,0,0,300,0,180,-50,55,0,100,0,second creep for dual last-hit
+SF_SINGLE_LOW_MANA,Nfir,A0F0,1,0,0,0,0,80,0,700,0,40,0,0,1,single creep + low mana farm rule block
+SF_SINGLE_DENY_OK,Nfir,A0FH,3,0,0,0,0,200,1,450,0,60,0,55,0,single creep but deny waiting + mana>=150 allow mid score
+SF_FAR_HIT,Nfir,A0F0,4,100,100,45,45,300,0,595.71,595.71,100,0,55,0,far raze center at +700 along 45deg
+SF_REQUIEM_FAR_SOY,Nfir,A29J,2,0,0,0,0,200,0,650,0,600,0,35,0,requiem line sample far band; low key-weight soy
+SF_REQUIEM_CLOSE_CORE,Nfir,A29J,3,0,0,0,0,200,0,80,40,800,0,95,0,close band multi-line expected high

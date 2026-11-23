@@ -1,0 +1,404 @@
+[
+  {
+    "version": "1.0.17.5988",
+    "netcmd_0x10": [],
+    "netcmd_0x11": [],
+    "netcmd_0x12": [],
+    "flag_packers": [
+      "0x1408A0",
+      "0x140900",
+      "0x1409D0",
+      "0x140A10",
+      "0x140AB0",
+      "0x140B50"
+    ],
+    "CAbilitySpell_StartCD": "0x46F142",
+    "CAbilitySpell_timer_off": "+0xD0",
+    "CItem_StartCD": null,
+    "CItem_timer_off": null,
+    "Blink_0x100002": [
+      "0x479610",
+      "0x479BA0",
+      "0x4B9110",
+      "0x4BCF10",
+      "0x4C3B10"
+    ],
+    "TP_0x100006": [
+      "0x47A1B0",
+      "0x47B4E0",
+      "0x543940",
+      "0x5B4750"
+    ],
+    "CAgentTimer_GetRem_candidates": []
+  },
+  {
+    "version": "1.0.20.6048",
+    "netcmd_0x10": [],
+    "netcmd_0x11": [],
+    "netcmd_0x12": [],
+    "flag_packers": [
+      "0x1408A0",
+      "0x140900",
+      "0x1409D0",
+      "0x140A10",
+      "0x140AB0",
+      "0x140B50"
+    ],
+    "CAbilitySpell_StartCD": "0x46F642",
+    "CAbilitySpell_timer_off": "+0xD0",
+    "CItem_StartCD": null,
+    "CItem_timer_off": null,
+    "Blink_0x100002": [
+      "0x479B10",
+      "0x47A0A0",
+      "0x4B9610",
+      "0x4BD410",
+      "0x4C4010"
+    ],
+    "TP_0x100006": [
+      "0x47A6B0",
+      "0x47B9E0",
+      "0x543E40",
+      "0x5B4C50"
+    ],
+    "CAgentTimer_GetRem_candidates": []
+  },
+  {
+    "version": "1.20.4.6074",
+    "netcmd_0x10": [],
+    "netcmd_0x11": [],
+    "netcmd_0x12": [],
+    "flag_packers": [
+      "0x1408B0",
+      "0x140910",
+      "0x1409E0",
+      "0x140A20",
+      "0x140AC0",
+      "0x140B60"
+    ],
+    "CAbilitySpell_StartCD": "0x46FBB2",
+    "CAbilitySpell_timer_off": "+0xD0",
+    "CItem_StartCD": null,
+    "CItem_timer_off": null,
+    "Blink_0x100002": [
+      "0x47A080",
+      "0x47A610",
+      "0x4B9C70",
+      "0x4BDA70",
+      "0x4C4670"
+    ],
+    "TP_0x100006": [
+      "0x47AC20",
+      "0x47BF50",
+      "0x544500",
+      "0x5B5550"
+    ],
+    "CAgentTimer_GetRem_candidates": []
+  },
+  {
+    "version": "1.21.0.6263",
+    "netcmd_0x10": [],
+    "netcmd_0x11": [],
+    "netcmd_0x12": [],
+    "flag_packers": [
+      "0x140910",
+      "0x140970",
+      "0x140A40",
+      "0x140A80",
+      "0x140B20",
+      "0x140BC0"
+    ],
+    "CAbilitySpell_StartCD": "0x473AE2",
+    "CAbilitySpell_timer_off": "+0xD0",
+    "CItem_StartCD": null,
+    "CItem_timer_off": null,
+    "Blink_0x100002": [
+      "0x47DFB0",
+      "0x47E540",
+      "0x4BDBF0",
+      "0x4C19F0",
+      "0x4C85F0"
+    ],
+    "TP_0x100006": [
+      "0x47EB50",
+      "0x47FE80",
+      "0x548590",
+      "0x5B9570"
+    ],
+    "CAgentTimer_GetRem_candidates": []
+  },
+  {
+    "version": "1.22.0.6328",
+    "netcmd_0x10": [
+      "0x2CADCE",
+      "0x530B05"
+    ],
+    "netcmd_0x11": [
+      "0x2CAE8E",
+      "0x530BF6"
+    ],
+    "netcmd_0x12": [
+      "0x2CAF66",
+      "0x2CB09E",
+      "0x530CDB"
+    ],
+    "flag_packers": [],
+    "CAbilitySpell_StartCD": "0x0502B0",
+    "CAbilitySpell_timer_off": "+0xD0",
+    "CItem_StartCD": "0x2B5120",
+    "CItem_timer_off": "+0xE4",
+    "CItem_StartCD_callers": [
+      "0x0F0622"
+    ],
+    "Blink_0x100002": [
+      "0x06D380",
+      "0x071B50",
+      "0x0BE6A0",
+      "0x18EEA0",
+      "0x18F510"
+    ],
+    "TP_0x100006": [
+      "0x071DE0",
+      "0x0724A0",
+      "0x13FE20",
+      "0x1F7B80"
+    ],
+    "CAgentTimer_GetRem_candidates": []
+  },
+  {
+    "version": "1.23.0.6352",
+    "netcmd_0x10": [
+      "0x2CC30E",
+      "0x5328B5"
+    ],
+    "netcmd_0x11": [
+      "0x2CC3CE",
+      "0x5329A6"
+    ],
+    "netcmd_0x12": [
+      "0x2CC4A6",
+      "0x2CC5DE",
+      "0x532A8B"
+    ],
+    "flag_packers": [],
+    "CAbilitySpell_StartCD": "0x0517F0",
+    "CAbilitySpell_timer_off": "+0xD0",
+    "CItem_StartCD": "0x2B6660",
+    "CItem_timer_off": "+0xE4",
+    "CItem_StartCD_callers": [
+      "0x0F1B62"
+    ],
+    "Blink_0x100002": [
+      "0x06E8C0",
+      "0x073090",
+      "0x0BFBE0",
+      "0x1903E0",
+      "0x190A50"
+    ],
+    "TP_0x100006": [
+      "0x073320",
+      "0x0739E0",
+      "0x141360",
+      "0x1F90C0"
+    ],
+    "CAgentTimer_GetRem_candidates": []
+  },
+  {
+    "version": "1.24.1.6374",
+    "netcmd_0x10": [
+      "0x2CC3CE",
+      "0x541245"
+    ],
+    "netcmd_0x11": [
+      "0x2CC48E",
+      "0x541336"
+    ],
+    "netcmd_0x12": [
+      "0x2CC566",
+      "0x2CC69E",
+      "0x54141B"
+    ],
+    "flag_packers": [],
+    "CAbilitySpell_StartCD": "0x0518A0",
+    "CAbilitySpell_timer_off": "+0xD0",
+    "CItem_StartCD": "0x2B6720",
+    "CItem_timer_off": "+0xE4",
+    "CItem_StartCD_callers": [
+      "0x0F1C12"
+    ],
+    "Blink_0x100002": [
+      "0x06E970",
+      "0x073140",
+      "0x0BFC90",
+      "0x190490",
+      "0x190B00"
+    ],
+    "TP_0x100006": [
+      "0x0733D0",
+      "0x073A90",
+      "0x141410",
+      "0x1F9170"
+    ],
+    "CAgentTimer_GetRem_candidates": []
+  },
+  {
+    "version": "1.24.4.6387",
+    "netcmd_0x10": [
+      "0x2CC48E",
+      "0x5412C5"
+    ],
+    "netcmd_0x11": [
+      "0x2CC54E",
+      "0x5413B6"
+    ],
+    "netcmd_0x12": [
+      "0x2CC626",
+      "0x2CC75E",
+      "0x54149B"
+    ],
+    "flag_packers": [],
+    "CAbilitySpell_StartCD": "0x0518B0",
+    "CAbilitySpell_timer_off": "+0xD0",
+    "CItem_StartCD": "0x2B67E0",
+    "CItem_timer_off": "+0xE4",
+    "CItem_StartCD_callers": [
+      "0x0F1C22"
+    ],
+    "Blink_0x100002": [
+      "0x06E980",
+      "0x073150",
+      "0x0BFCA0",
+      "0x1904F0",
+      "0x190B60"
+    ],
+    "TP_0x100006": [
+      "0x0733E0",
+      "0x073AA0",
+      "0x141470",
+      "0x1F91D0"
+    ],
+    "CAgentTimer_GetRem_candidates": []
+  },
+  {
+    "version": "1.25.1.6397",
+    "netcmd_0x10": [
+      "0x2CB73E",
+      "0x540595"
+    ],
+    "netcmd_0x11": [
+      "0x2CB7FE",
+      "0x540686"
+    ],
+    "netcmd_0x12": [
+      "0x2CB8D6",
+      "0x2CBA0E",
+      "0x54076B"
+    ],
+    "flag_packers": [],
+    "CAbilitySpell_StartCD": "0x050B70",
+    "CAbilitySpell_timer_off": "+0xD0",
+    "CItem_StartCD": "0x2B5A90",
+    "CItem_timer_off": "+0xE4",
+    "CItem_StartCD_callers": [
+      "0x0F1072"
+    ],
+    "Blink_0x100002": [
+      "0x06DD50",
+      "0x072520",
+      "0x0BF070",
+      "0x18F7B0",
+      "0x18FE20"
+    ],
+    "TP_0x100006": [
+      "0x0727B0",
+      "0x072E70",
+      "0x140730",
+      "0x1F8490"
+    ],
+    "CAgentTimer_GetRem_candidates": []
+  },
+  {
+    "version": "1.26.0.6401",
+    "netcmd_0x10": [
+      "0x2CB96E",
+      "0x5407C5"
+    ],
+    "netcmd_0x11": [
+      "0x2CBA2E",
+      "0x5408B6"
+    ],
+    "netcmd_0x12": [
+      "0x2CBB06",
+      "0x2CBC3E",
+      "0x54099B"
+    ],
+    "flag_packers": [],
+    "CAbilitySpell_StartCD": "0x050B70",
+    "CAbilitySpell_timer_off": "+0xD0",
+    "CItem_StartCD": "0x2B5CC0",
+    "CItem_timer_off": "+0xE4",
+    "CItem_StartCD_callers": [
+      "0x0F1072"
+    ],
+    "Blink_0x100002": [
+      "0x06DD50",
+      "0x072520",
+      "0x0BF070",
+      "0x18F9E0",
+      "0x190050"
+    ],
+    "TP_0x100006": [
+      "0x0727B0",
+      "0x072E70",
+      "0x140960",
+      "0x1F86C0"
+    ],
+    "CAgentTimer_GetRem_candidates": []
+  },
+  {
+    "version": "1.27.0.52240",
+    "netcmd_0x10": [
+      "0x2FB995",
+      "0x69FFCF"
+    ],
+    "netcmd_0x11": [
+      "0x2FBE6E",
+      "0x69FCFF"
+    ],
+    "netcmd_0x12": [
+      "0x2FBB6E",
+      "0x69FEDF",
+      "0x6A0095"
+    ],
+    "flag_packers": [],
+    "CAbilitySpell_StartCD": "0x3DA2DE",
+    "CAbilitySpell_timer_off": "+0xD0",
+    "CItem_StartCD": "0x639E60",
+    "CItem_timer_off": "+0xE4",
+    "CItem_StartCD_callers": [
+      "0x549179"
+    ],
+    "Inv_sharedCd_cnt": "+0xBC",
+    "Inv_sharedCd_ids": "+0xC0",
+    "Inv_sharedCd_timer": "+0xDC",
+    "Blink_0x100002": [
+      "0x3DC010",
+      "0x3DC080",
+      "0x49F1F0",
+      "0x49F2E0",
+      "0x5637D0"
+    ],
+    "TP_0x100006": [
+      "0x3DC050",
+      "0x3DC060",
+      "0x4E4DA0",
+      "0x607410"
+    ],
+    "CAgentTimer_GetRem_candidates": [
+      "0x0438C0",
+      "0x043968",
+      "0x10C8C0",
+      "0x10E690"
+    ]
+  }
+]

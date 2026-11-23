@@ -1,0 +1,2596 @@
+{
+  "meta": {
+    "map": "DotA 6.83d",
+    "hero_count": 112,
+    "purpose": "Control/ult threat priors for aiRankTeamfightTargets / ccScore",
+    "note": "Runtime still reads live level+cooldown from CAbilitySpell; this table only supplies which abilities matter and base weights."
+  },
+  "heroes": {
+    "Hvwd": {
+      "name": "复仇之魂",
+      "controlPrior": 0.7,
+      "abilities": [
+        {
+          "code": "A02A",
+          "name": "魔法箭",
+          "slot": 1,
+          "hotkey": "C",
+          "tier": "HARD_CC",
+          "weight": 0.7,
+          "coolDs": 130,
+          "orderId": 852095,
+          "notes": ""
+        },
+        {
+          "code": "A17O",
+          "name": "恐怖波动",
+          "slot": 2,
+          "hotkey": "E",
+          "tier": "SOFT_CC",
+          "weight": 0.35,
+          "coolDs": 200,
+          "orderId": 852669,
+          "notes": ""
+        },
+        {
+          "code": "A0IN",
+          "name": "移形换位",
+          "slot": 4,
+          "hotkey": "W",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 450,
+          "orderId": 852587,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Hmbr": {
+      "name": "奥林匹斯之王",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A29G",
+          "name": "雷神之怒",
+          "slot": 4,
+          "hotkey": "W",
+          "tier": "NUKE_ULT",
+          "weight": 0.55,
+          "coolDs": 900,
+          "orderId": 852164,
+          "notes": ""
+        }
+      ]
+    },
+    "Emoo": {
+      "name": "魅惑魔女",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0DY",
+          "name": "推进",
+          "slot": 4,
+          "hotkey": "T",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 0,
+          "orderId": 852254,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "O00P": {
+      "name": "变体精灵",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0FN",
+          "name": "波浪形态",
+          "slot": 1,
+          "hotkey": "W",
+          "tier": "INIT",
+          "weight": 0.45,
+          "coolDs": 110,
+          "orderId": 852218,
+          "notes": ""
+        },
+        {
+          "code": "A0G8",
+          "name": "复制",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 800,
+          "orderId": 0,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Hjai": {
+      "name": "水晶室女",
+      "controlPrior": 1.0,
+      "abilities": [
+        {
+          "code": "A04C",
+          "name": "冰封禁制",
+          "slot": 2,
+          "hotkey": "E",
+          "tier": "HARD_CC",
+          "weight": 0.75,
+          "coolDs": 100,
+          "orderId": 852171,
+          "notes": ""
+        },
+        {
+          "code": "A03R",
+          "name": "极寒领域",
+          "slot": 4,
+          "hotkey": "F",
+          "tier": "TEAM_ULT",
+          "weight": 1.0,
+          "coolDs": 1500,
+          "orderId": 852600,
+          "notes": ""
+        }
+      ]
+    },
+    "H001": {
+      "name": "流浪剑客",
+      "controlPrior": 0.7,
+      "abilities": [
+        {
+          "code": "A190",
+          "name": "风暴之锤",
+          "slot": 1,
+          "hotkey": "T",
+          "tier": "HARD_CC",
+          "weight": 0.7,
+          "coolDs": 130,
+          "orderId": 852662,
+          "notes": ""
+        },
+        {
+          "code": "A1WH",
+          "name": "神之力量",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 800,
+          "orderId": 852663,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "HC49": {
+      "name": "娜迦海妖",
+      "controlPrior": 1.0,
+      "abilities": [
+        {
+          "code": "A24D",
+          "name": "诱捕",
+          "slot": 2,
+          "hotkey": "E",
+          "tier": "HARD_CC",
+          "weight": 0.7,
+          "coolDs": 140,
+          "orderId": 852095,
+          "notes": ""
+        },
+        {
+          "code": "A07U",
+          "name": "海妖之歌",
+          "slot": 4,
+          "hotkey": "G",
+          "tier": "TEAM_ULT",
+          "weight": 1.0,
+          "coolDs": 1800,
+          "orderId": 852600,
+          "notes": ""
+        }
+      ]
+    },
+    "Otch": {
+      "name": "撼地神牛",
+      "controlPrior": 1.0,
+      "abilities": [
+        {
+          "code": "A0SK",
+          "name": "沟壑",
+          "slot": 1,
+          "hotkey": "F",
+          "tier": "HARD_CC",
+          "weight": 0.85,
+          "coolDs": 150,
+          "orderId": 852600,
+          "notes": ""
+        },
+        {
+          "code": "A0DH",
+          "name": "回音击",
+          "slot": 4,
+          "hotkey": "C",
+          "tier": "TEAM_ULT",
+          "weight": 1.0,
+          "coolDs": 1500,
+          "orderId": 852526,
+          "notes": ""
+        }
+      ]
+    },
+    "HC92": {
+      "name": "隐形刺客",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0K9",
+          "name": "闪烁突袭",
+          "slot": 4,
+          "hotkey": "B",
+          "tier": "INIT",
+          "weight": 0.45,
+          "coolDs": 200,
+          "orderId": 852600,
+          "notes": ""
+        }
+      ]
+    },
+    "N01O": {
+      "name": "德鲁伊",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0AG",
+          "name": "真实形态",
+          "slot": 4,
+          "hotkey": "F",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 0,
+          "orderId": 852138,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "H004": {
+      "name": "秀逗魔导士",
+      "controlPrior": 0.8,
+      "abilities": [
+        {
+          "code": "A027",
+          "name": "光击阵",
+          "slot": 2,
+          "hotkey": "T",
+          "tier": "HARD_CC",
+          "weight": 0.8,
+          "coolDs": 70,
+          "orderId": 852232,
+          "notes": ""
+        },
+        {
+          "code": "A01P",
+          "name": "神灭斩",
+          "slot": 4,
+          "hotkey": "G",
+          "tier": "NUKE_ULT",
+          "weight": 0.75,
+          "coolDs": 700,
+          "orderId": 852581,
+          "notes": ""
+        }
+      ]
+    },
+    "Nbbc": {
+      "name": "主宰",
+      "controlPrior": 0.5,
+      "abilities": [
+        {
+          "code": "A05G",
+          "name": "剑刃风暴",
+          "slot": 1,
+          "hotkey": "F",
+          "tier": "SOFT_CC",
+          "weight": 0.5,
+          "coolDs": 300,
+          "orderId": 852128,
+          "notes": ""
+        },
+        {
+          "code": "A0M1",
+          "name": "无敌斩",
+          "slot": 4,
+          "hotkey": "E",
+          "tier": "NUKE_ULT",
+          "weight": 0.8,
+          "coolDs": 1300,
+          "orderId": 852095,
+          "notes": ""
+        }
+      ]
+    },
+    "N01A": {
+      "name": "沉默术士",
+      "controlPrior": 0.95,
+      "abilities": [
+        {
+          "code": "A0L3",
+          "name": "全领域静默",
+          "slot": 4,
+          "hotkey": "E",
+          "tier": "TEAM_ULT",
+          "weight": 0.95,
+          "coolDs": 1300,
+          "orderId": 852600,
+          "notes": ""
+        }
+      ]
+    },
+    "Hamg": {
+      "name": "树精卫士",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A07Z",
+          "name": "疯狂生长",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 700,
+          "orderId": 852600,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "O015": {
+      "name": "牛头人酋长",
+      "controlPrior": 0.8,
+      "abilities": [
+        {
+          "code": "A1AA",
+          "name": "回音重踏",
+          "slot": 1,
+          "hotkey": "T",
+          "tier": "HARD_CC",
+          "weight": 0.8,
+          "coolDs": 150,
+          "orderId": 852581,
+          "notes": ""
+        },
+        {
+          "code": "A1A1",
+          "name": "裂地者",
+          "slot": 4,
+          "hotkey": "E",
+          "tier": "TEAM_ULT",
+          "weight": 0.8,
+          "coolDs": 1000,
+          "orderId": 852600,
+          "notes": ""
+        }
+      ]
+    },
+    "Hblm": {
+      "name": "光之守卫",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A2XQ",
+          "name": "灵魂形态",
+          "slot": 4,
+          "hotkey": "F",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 0,
+          "orderId": 852581,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Huth": {
+      "name": "熊战士",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0LC",
+          "name": "激怒",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.65,
+          "coolDs": 250,
+          "orderId": 852100,
+          "notes": ""
+        }
+      ]
+    },
+    "Hmkg": {
+      "name": "食人魔魔法师",
+      "controlPrior": 0.75,
+      "abilities": [
+        {
+          "code": "A04W",
+          "name": "火焰爆轰",
+          "slot": 1,
+          "hotkey": "F",
+          "tier": "HARD_CC",
+          "weight": 0.75,
+          "coolDs": 120,
+          "orderId": 852095,
+          "notes": ""
+        },
+        {
+          "code": "A088",
+          "name": "多重施法",
+          "slot": 4,
+          "hotkey": "C",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 0,
+          "orderId": 0,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Ntin": {
+      "name": "修补匠",
+      "controlPrior": 0.6,
+      "abilities": [
+        {
+          "code": "A065",
+          "name": "再装填",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "SOFT_CC",
+          "weight": 0.6,
+          "coolDs": 0,
+          "orderId": 852600,
+          "notes": ""
+        }
+      ]
+    },
+    "Emns": {
+      "name": "先知",
+      "controlPrior": 0.55,
+      "abilities": [
+        {
+          "code": "A21E",
+          "name": "发芽",
+          "slot": 1,
+          "hotkey": "T",
+          "tier": "HARD_CC",
+          "weight": 0.55,
+          "coolDs": 110,
+          "orderId": 852218,
+          "notes": ""
+        },
+        {
+          "code": "A1W8",
+          "name": "自然之怒",
+          "slot": 4,
+          "hotkey": "W",
+          "tier": "NUKE_ULT",
+          "weight": 0.7,
+          "coolDs": 900,
+          "orderId": 852119,
+          "notes": ""
+        }
+      ]
+    },
+    "Ogrh": {
+      "name": "幻影长矛手",
+      "controlPrior": 0.7,
+      "abilities": [
+        {
+          "code": "A0YK",
+          "name": "幻影冲锋",
+          "slot": 3,
+          "hotkey": "R",
+          "tier": "HARD_CC",
+          "weight": 0.7,
+          "coolDs": 0,
+          "orderId": 852055,
+          "notes": ""
+        },
+        {
+          "code": "A0DB",
+          "name": "并列",
+          "slot": 4,
+          "hotkey": "X",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 0,
+          "orderId": 0,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Ucrl": {
+      "name": "山岭巨人",
+      "controlPrior": 0.85,
+      "abilities": [
+        {
+          "code": "A0LL",
+          "name": "山崩",
+          "slot": 1,
+          "hotkey": "V",
+          "tier": "HARD_CC",
+          "weight": 0.85,
+          "coolDs": 170,
+          "orderId": 852089,
+          "notes": ""
+        },
+        {
+          "code": "A0BZ",
+          "name": "投掷",
+          "slot": 2,
+          "hotkey": "T",
+          "tier": "HARD_CC",
+          "weight": 0.75,
+          "coolDs": 90,
+          "orderId": 852600,
+          "notes": ""
+        },
+        {
+          "code": "A0CY",
+          "name": "长大！",
+          "slot": 4,
+          "hotkey": "W",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 0,
+          "orderId": 0,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "H00K": {
+      "name": "地精工程师",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0AK",
+          "name": "遥控炸弹",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 100,
+          "orderId": 852504,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "H00A": {
+      "name": "圣骑士",
+      "controlPrior": 0.55,
+      "abilities": [
+        {
+          "code": "A0LT",
+          "name": "上帝之手",
+          "slot": 4,
+          "hotkey": "D",
+          "tier": "SOFT_CC",
+          "weight": 0.55,
+          "coolDs": 1600,
+          "orderId": 852600,
+          "notes": ""
+        }
+      ]
+    },
+    "E005": {
+      "name": "月之骑士",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A054",
+          "name": "月蚀",
+          "slot": 4,
+          "hotkey": "E",
+          "tier": "NUKE_ULT",
+          "weight": 0.75,
+          "coolDs": 1600,
+          "orderId": 852600,
+          "notes": ""
+        }
+      ]
+    },
+    "Usyl": {
+      "name": "矮人狙击手",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A04P",
+          "name": "暗杀",
+          "slot": 4,
+          "hotkey": "T",
+          "tier": "NUKE_ULT",
+          "weight": 0.7,
+          "coolDs": 200,
+          "orderId": 852095,
+          "notes": ""
+        }
+      ]
+    },
+    "N016": {
+      "name": "巨魔战将",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A1EJ",
+          "name": "战斗专注",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 300,
+          "orderId": 852526,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Orkn": {
+      "name": "暗影萨满",
+      "controlPrior": 0.9,
+      "abilities": [
+        {
+          "code": "A010",
+          "name": "苍穹震击",
+          "slot": 1,
+          "hotkey": "R",
+          "tier": "HARD_CC",
+          "weight": 0.7,
+          "coolDs": 80,
+          "orderId": 852587,
+          "notes": ""
+        },
+        {
+          "code": "A0RX",
+          "name": "妖术",
+          "slot": 2,
+          "hotkey": "D",
+          "tier": "HARD_CC",
+          "weight": 0.9,
+          "coolDs": 130,
+          "orderId": 852502,
+          "notes": ""
+        },
+        {
+          "code": "A00P",
+          "name": "枷锁",
+          "slot": 3,
+          "hotkey": "E",
+          "tier": "HARD_CC",
+          "weight": 0.85,
+          "coolDs": 160,
+          "orderId": 852480,
+          "notes": ""
+        },
+        {
+          "code": "A00H",
+          "name": "群蛇守卫",
+          "slot": 4,
+          "hotkey": "W",
+          "tier": "TEAM_ULT",
+          "weight": 0.75,
+          "coolDs": 1200,
+          "orderId": 852504,
+          "notes": ""
+        }
+      ]
+    },
+    "O01F": {
+      "name": "守护精灵",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A1TB",
+          "name": "重定位",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 900,
+          "orderId": 852662,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Npbm": {
+      "name": "熊猫酒仙",
+      "controlPrior": 0.85,
+      "abilities": [
+        {
+          "code": "A06M",
+          "name": "雷霆一击",
+          "slot": 1,
+          "hotkey": "C",
+          "tier": "HARD_CC",
+          "weight": 0.8,
+          "coolDs": 130,
+          "orderId": 852096,
+          "notes": ""
+        },
+        {
+          "code": "A0MQ",
+          "name": "元素分离",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "TEAM_ULT",
+          "weight": 0.85,
+          "coolDs": 1400,
+          "orderId": 852586,
+          "notes": ""
+        }
+      ]
+    },
+    "H000": {
+      "name": "半人马酋长",
+      "controlPrior": 0.8,
+      "abilities": [
+        {
+          "code": "A00S",
+          "name": "马蹄践踏",
+          "slot": 1,
+          "hotkey": "F",
+          "tier": "HARD_CC",
+          "weight": 0.8,
+          "coolDs": 130,
+          "orderId": 852127,
+          "notes": ""
+        },
+        {
+          "code": "A2O6",
+          "name": "奔袭冲撞",
+          "slot": 4,
+          "hotkey": "T",
+          "tier": "TEAM_ULT",
+          "weight": 0.8,
+          "coolDs": 900,
+          "orderId": 852526,
+          "notes": ""
+        }
+      ]
+    },
+    "Naka": {
+      "name": "赏金猎人",
+      "controlPrior": 0.35,
+      "abilities": [
+        {
+          "code": "A004",
+          "name": "投掷飞镖",
+          "slot": 1,
+          "hotkey": "T",
+          "tier": "SOFT_CC",
+          "weight": 0.35,
+          "coolDs": 100,
+          "orderId": 852095,
+          "notes": "Shuriken Toss nuke/slow — not Tiny Toss"
+        },
+        {
+          "code": "A0B4",
+          "name": "追踪术",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 40,
+          "orderId": 852149,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Hlgr": {
+      "name": "龙骑士",
+      "controlPrior": 0.75,
+      "abilities": [
+        {
+          "code": "A2AI",
+          "name": "神龙摆尾",
+          "slot": 2,
+          "hotkey": "T",
+          "tier": "HARD_CC",
+          "weight": 0.75,
+          "coolDs": 0,
+          "orderId": 852600,
+          "notes": ""
+        },
+        {
+          "code": "A03G",
+          "name": "真龙形态",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1150,
+          "orderId": 852180,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Edem": {
+      "name": "敌法师",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "AEbl",
+          "name": "闪烁",
+          "slot": 2,
+          "hotkey": "B",
+          "tier": "INIT",
+          "weight": 0.45,
+          "coolDs": 120,
+          "orderId": 852525,
+          "notes": ""
+        },
+        {
+          "code": "A2WE",
+          "name": "法力虚空",
+          "slot": 4,
+          "hotkey": "V",
+          "tier": "NUKE_ULT",
+          "weight": 0.8,
+          "coolDs": 700,
+          "orderId": 852662,
+          "notes": ""
+        }
+      ]
+    },
+    "Nbrn": {
+      "name": "卓尔游侠",
+      "controlPrior": 0.6,
+      "abilities": [
+        {
+          "code": "A2WF",
+          "name": "阵风",
+          "slot": 2,
+          "hotkey": "E",
+          "tier": "SOFT_CC",
+          "weight": 0.6,
+          "coolDs": 130,
+          "orderId": 852669,
+          "notes": ""
+        },
+        {
+          "code": "A0VC",
+          "name": "射手天赋",
+          "slot": 4,
+          "hotkey": "M",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 0,
+          "orderId": 852576,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Harf": {
+      "name": "全能骑士",
+      "controlPrior": 0.7,
+      "abilities": [
+        {
+          "code": "A0ER",
+          "name": "守护天使",
+          "slot": 4,
+          "hotkey": "G",
+          "tier": "TEAM_ULT",
+          "weight": 0.7,
+          "coolDs": 1500,
+          "orderId": 852599,
+          "notes": ""
+        }
+      ]
+    },
+    "H00D": {
+      "name": "兽王",
+      "controlPrior": 0.95,
+      "abilities": [
+        {
+          "code": "A0O2",
+          "name": "原始咆哮",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "TEAM_ULT",
+          "weight": 0.95,
+          "coolDs": 800,
+          "orderId": 852095,
+          "notes": ""
+        }
+      ]
+    },
+    "E00P": {
+      "name": "双头龙",
+      "controlPrior": 0.8,
+      "abilities": [
+        {
+          "code": "A0O6",
+          "name": "冰封路径",
+          "slot": 2,
+          "hotkey": "T",
+          "tier": "HARD_CC",
+          "weight": 0.8,
+          "coolDs": 120,
+          "orderId": 852580,
+          "notes": ""
+        },
+        {
+          "code": "A0O5",
+          "name": "烈焰焚身",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 600,
+          "orderId": 852125,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "N01I": {
+      "name": "炼金术士",
+      "controlPrior": 0.7,
+      "abilities": [
+        {
+          "code": "A1NI",
+          "name": "不稳定化合物",
+          "slot": 2,
+          "hotkey": "E",
+          "tier": "HARD_CC",
+          "weight": 0.7,
+          "coolDs": 160,
+          "orderId": 852526,
+          "notes": ""
+        },
+        {
+          "code": "ANcr",
+          "name": "化学狂暴",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 450,
+          "orderId": 852663,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "N01V": {
+      "name": "月之女祭司",
+      "controlPrior": 0.9,
+      "abilities": [
+        {
+          "code": "A0L8",
+          "name": "月神之箭",
+          "slot": 2,
+          "hotkey": "R",
+          "tier": "HARD_CC",
+          "weight": 0.9,
+          "coolDs": 170,
+          "orderId": 852662,
+          "notes": ""
+        },
+        {
+          "code": "A0KU",
+          "name": "月之暗面",
+          "slot": 4,
+          "hotkey": "W",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1400,
+          "orderId": 852493,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "H00S": {
+      "name": "风暴之灵",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A14P",
+          "name": "残影",
+          "slot": 1,
+          "hotkey": "R",
+          "tier": "INIT",
+          "weight": 0.45,
+          "coolDs": 35,
+          "orderId": 852526,
+          "notes": ""
+        },
+        {
+          "code": "A14O",
+          "name": "球状闪电",
+          "slot": 4,
+          "hotkey": "G",
+          "tier": "INIT",
+          "weight": 0.45,
+          "coolDs": 0,
+          "orderId": 852218,
+          "notes": ""
+        }
+      ]
+    },
+    "H00Q": {
+      "name": "神灵武士",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0QR",
+          "name": "牺牲",
+          "slot": 4,
+          "hotkey": "F",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 120,
+          "orderId": 852231,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "E01Y": {
+      "name": "圣堂刺客",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0RP",
+          "name": "灵能陷阱",
+          "slot": 4,
+          "hotkey": "C",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 110,
+          "orderId": 852190,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "N00B": {
+      "name": "仙女龙",
+      "controlPrior": 0.95,
+      "abilities": [
+        {
+          "code": "A0SC",
+          "name": "新月之痕",
+          "slot": 2,
+          "hotkey": "W",
+          "tier": "HARD_CC",
+          "weight": 0.75,
+          "coolDs": 160,
+          "orderId": 852600,
+          "notes": ""
+        },
+        {
+          "code": "A0S8",
+          "name": "梦境缠绕",
+          "slot": 4,
+          "hotkey": "C",
+          "tier": "TEAM_ULT",
+          "weight": 0.95,
+          "coolDs": 850,
+          "orderId": 852089,
+          "notes": ""
+        }
+      ]
+    },
+    "H00T": {
+      "name": "发条地精",
+      "controlPrior": 0.95,
+      "abilities": [
+        {
+          "code": "A0Z4",
+          "name": "弹幕冲击",
+          "slot": 1,
+          "hotkey": "E",
+          "tier": "HARD_CC",
+          "weight": 0.7,
+          "coolDs": 320,
+          "orderId": 852600,
+          "notes": ""
+        },
+        {
+          "code": "A0Z5",
+          "name": "能量齿轮",
+          "slot": 2,
+          "hotkey": "C",
+          "tier": "HARD_CC",
+          "weight": 0.7,
+          "coolDs": 150,
+          "orderId": 852581,
+          "notes": ""
+        },
+        {
+          "code": "A0Z8",
+          "name": "发射钩爪",
+          "slot": 4,
+          "hotkey": "T",
+          "tier": "TEAM_ULT",
+          "weight": 0.95,
+          "coolDs": 700,
+          "orderId": 852652,
+          "notes": ""
+        }
+      ]
+    },
+    "H06S": {
+      "name": "舰队统帅",
+      "controlPrior": 0.9,
+      "abilities": [
+        {
+          "code": "A136",
+          "name": "洪流",
+          "slot": 1,
+          "hotkey": "E",
+          "tier": "HARD_CC",
+          "weight": 0.8,
+          "coolDs": 120,
+          "orderId": 852089,
+          "notes": ""
+        },
+        {
+          "code": "A11K",
+          "name": "幽灵船",
+          "slot": 4,
+          "hotkey": "T",
+          "tier": "TEAM_ULT",
+          "weight": 0.9,
+          "coolDs": 600,
+          "orderId": 852662,
+          "notes": ""
+        }
+      ]
+    },
+    "N0EG": {
+      "name": "风行者",
+      "controlPrior": 0.85,
+      "abilities": [
+        {
+          "code": "A12J",
+          "name": "束缚击",
+          "slot": 1,
+          "hotkey": "E",
+          "tier": "HARD_CC",
+          "weight": 0.85,
+          "coolDs": 120,
+          "orderId": 852119,
+          "notes": ""
+        },
+        {
+          "code": "A12P",
+          "name": "集中火力",
+          "slot": 4,
+          "hotkey": "F",
+          "tier": "NUKE_ULT",
+          "weight": 0.7,
+          "coolDs": 600,
+          "orderId": 852581,
+          "notes": ""
+        }
+      ]
+    },
+    "E02N": {
+      "name": "矮人直升机",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A1T5",
+          "name": "召唤飞弹",
+          "slot": 4,
+          "hotkey": "C",
+          "tier": "NUKE_ULT",
+          "weight": 0.75,
+          "coolDs": 550,
+          "orderId": 852089,
+          "notes": ""
+        }
+      ]
+    },
+    "E02J": {
+      "name": "干扰者",
+      "controlPrior": 0.95,
+      "abilities": [
+        {
+          "code": "A1SU",
+          "name": "动能力场",
+          "slot": 3,
+          "hotkey": "E",
+          "tier": "HARD_CC",
+          "weight": 0.7,
+          "coolDs": 130,
+          "orderId": 852089,
+          "notes": ""
+        },
+        {
+          "code": "A1U6",
+          "name": "静态风暴",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "TEAM_ULT",
+          "weight": 0.95,
+          "coolDs": 900,
+          "orderId": 852662,
+          "notes": ""
+        }
+      ]
+    },
+    "E02I": {
+      "name": "巨牙海民",
+      "controlPrior": 0.9,
+      "abilities": [
+        {
+          "code": "A1S7",
+          "name": "雪球",
+          "slot": 2,
+          "hotkey": "W",
+          "tier": "HARD_CC",
+          "weight": 0.8,
+          "coolDs": 210,
+          "orderId": 852185,
+          "notes": ""
+        },
+        {
+          "code": "A1YQ",
+          "name": "海象神拳",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "TEAM_ULT",
+          "weight": 0.9,
+          "coolDs": 200,
+          "orderId": 852526,
+          "notes": ""
+        }
+      ]
+    },
+    "E02F": {
+      "name": "凤凰",
+      "controlPrior": 0.95,
+      "abilities": [
+        {
+          "code": "A1RK",
+          "name": "超新星",
+          "slot": 4,
+          "hotkey": "V",
+          "tier": "TEAM_ULT",
+          "weight": 0.95,
+          "coolDs": 1100,
+          "orderId": 852662,
+          "notes": ""
+        }
+      ]
+    },
+    "H008": {
+      "name": "钢背兽",
+      "controlPrior": 0.45,
+      "abilities": [
+        {
+          "code": "A0FW",
+          "name": "粘稠鼻液",
+          "slot": 1,
+          "hotkey": "G",
+          "tier": "SOFT_CC",
+          "weight": 0.3,
+          "coolDs": 15,
+          "orderId": 852600,
+          "notes": "Viscous Nasal Goo armor/slow"
+        },
+        {
+          "code": "A0GP",
+          "name": "刺针扫射",
+          "slot": 2,
+          "hotkey": "R",
+          "tier": "NUKE",
+          "weight": 0.4,
+          "coolDs": 30,
+          "orderId": 852526,
+          "notes": "Quill Spray"
+        },
+        {
+          "code": "A0FV",
+          "name": "战意",
+          "slot": 4,
+          "hotkey": "W",
+          "tier": "SOFT_CC",
+          "weight": 0.45,
+          "coolDs": 0,
+          "orderId": 0,
+          "notes": "Warpath passive ult"
+        }
+      ]
+    },
+    "E02X": {
+      "name": "大魔导师",
+      "controlPrior": 0.75,
+      "abilities": [
+        {
+          "code": "A27F",
+          "name": "隔空取物",
+          "slot": 1,
+          "hotkey": "Z",
+          "tier": "HARD_CC",
+          "weight": 0.75,
+          "coolDs": 220,
+          "orderId": 852214,
+          "notes": ""
+        },
+        {
+          "code": "A27H",
+          "name": "技能窃取",
+          "slot": 4,
+          "hotkey": "Q",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 200,
+          "orderId": 852665,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "N0M0": {
+      "name": "灰烬之灵",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A2JK",
+          "name": "火之余烬",
+          "slot": 4,
+          "hotkey": "F",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 0,
+          "orderId": 852662,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "E02K": {
+      "name": "军团指挥官",
+      "controlPrior": 0.95,
+      "abilities": [
+        {
+          "code": "A2CI",
+          "name": "决斗",
+          "slot": 4,
+          "hotkey": "D",
+          "tier": "TEAM_ULT",
+          "weight": 0.95,
+          "coolDs": 500,
+          "orderId": 852095,
+          "notes": ""
+        }
+      ]
+    },
+    "H0DO": {
+      "name": "天怒法师",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A2BG",
+          "name": "神秘之耀",
+          "slot": 4,
+          "hotkey": "E",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 600,
+          "orderId": 852662,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "E032": {
+      "name": "地精撕裂者",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A2E5",
+          "name": "锯齿飞轮",
+          "slot": 4,
+          "hotkey": "C",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 80,
+          "orderId": 852216,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "N0MU": {
+      "name": "大地之灵",
+      "controlPrior": 0.85,
+      "abilities": [
+        {
+          "code": "A2TI",
+          "name": "磁化",
+          "slot": 4,
+          "hotkey": "T",
+          "tier": "TEAM_ULT",
+          "weight": 0.85,
+          "coolDs": 800,
+          "orderId": 852551,
+          "notes": ""
+        }
+      ]
+    },
+    "N0MD": {
+      "name": "神谕者",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A2TF",
+          "name": "虚妄诺言",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 200,
+          "orderId": 852600,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Ewar": {
+      "name": "幻影刺客",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A03Q",
+          "name": "恩赐解脱",
+          "slot": 4,
+          "hotkey": "C",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 0,
+          "orderId": 0,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "H00V": {
+      "name": "蛇发女妖",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A1AT",
+          "name": "石化凝视",
+          "slot": 4,
+          "hotkey": "G",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 900,
+          "orderId": 852581,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Udre": {
+      "name": "暗夜魔王",
+      "controlPrior": 0.6,
+      "abilities": [
+        {
+          "code": "A08E",
+          "name": "伤残恐惧",
+          "slot": 2,
+          "hotkey": "F",
+          "tier": "SOFT_CC",
+          "weight": 0.6,
+          "coolDs": 0,
+          "orderId": 852600,
+          "notes": ""
+        },
+        {
+          "code": "A03K",
+          "name": "夜幕降临",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1600,
+          "orderId": 0,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "NC00": {
+      "name": "骷髅王",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A01Y",
+          "name": "重生",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 2600,
+          "orderId": 0,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "UC42": {
+      "name": "末日使者",
+      "controlPrior": 0.95,
+      "abilities": [
+        {
+          "code": "A0MU",
+          "name": "末日",
+          "slot": 4,
+          "hotkey": "D",
+          "tier": "TEAM_ULT",
+          "weight": 0.95,
+          "coolDs": 1000,
+          "orderId": 852583,
+          "notes": ""
+        }
+      ]
+    },
+    "U000": {
+      "name": "地穴刺客",
+      "controlPrior": 0.8,
+      "abilities": [
+        {
+          "code": "A0X7",
+          "name": "穿刺",
+          "slot": 1,
+          "hotkey": "E",
+          "tier": "HARD_CC",
+          "weight": 0.8,
+          "coolDs": 130,
+          "orderId": 852555,
+          "notes": ""
+        },
+        {
+          "code": "A09U",
+          "name": "仇杀",
+          "slot": 4,
+          "hotkey": "V",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 700,
+          "orderId": 852129,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "UC91": {
+      "name": "鱼人守卫",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A034",
+          "name": "伤害加深",
+          "slot": 4,
+          "hotkey": "G",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 50,
+          "orderId": 852149,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "UC01": {
+      "name": "痛苦女王",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0ME",
+          "name": "闪烁",
+          "slot": 2,
+          "hotkey": "B",
+          "tier": "INIT",
+          "weight": 0.45,
+          "coolDs": 150,
+          "orderId": 852525,
+          "notes": ""
+        },
+        {
+          "code": "A306",
+          "name": "超声冲击波",
+          "slot": 4,
+          "hotkey": "W",
+          "tier": "NUKE_ULT",
+          "weight": 0.75,
+          "coolDs": 1350,
+          "orderId": 852662,
+          "notes": "Sonic Wave nuke — not Skewer"
+        }
+      ]
+    },
+    "E004": {
+      "name": "骷髅射手",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A04Q",
+          "name": "死亡契约",
+          "slot": 4,
+          "hotkey": "E",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 450,
+          "orderId": 852066,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "EC45": {
+      "name": "虚空假面",
+      "controlPrior": 1.0,
+      "abilities": [
+        {
+          "code": "A0J1",
+          "name": "时间结界",
+          "slot": 4,
+          "hotkey": "C",
+          "tier": "TEAM_ULT",
+          "weight": 1.0,
+          "coolDs": 1300,
+          "orderId": 852652,
+          "notes": ""
+        }
+      ]
+    },
+    "EC77": {
+      "name": "蝮蛇",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A080",
+          "name": "蝮蛇突袭",
+          "slot": 4,
+          "hotkey": "V",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 800,
+          "orderId": 852527,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "E002": {
+      "name": "闪电幽魂",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A1AO",
+          "name": "风暴之眼",
+          "slot": 4,
+          "hotkey": "E",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 800,
+          "orderId": 852229,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "U00C": {
+      "name": "噬魂鬼",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0SW",
+          "name": "感染",
+          "slot": 4,
+          "hotkey": "T",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1000,
+          "orderId": 852600,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "H00H": {
+      "name": "湮灭法师",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0CC",
+          "name": "生命汲取",
+          "slot": 4,
+          "hotkey": "D",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 220,
+          "orderId": 852487,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Ofar": {
+      "name": "潮汐猎人",
+      "controlPrior": 1.0,
+      "abilities": [
+        {
+          "code": "A29I",
+          "name": "毁灭",
+          "slot": 4,
+          "hotkey": "V",
+          "tier": "TEAM_ULT",
+          "weight": 1.0,
+          "coolDs": 1500,
+          "orderId": 852588,
+          "notes": ""
+        }
+      ]
+    },
+    "Oshd": {
+      "name": "祸乱之源",
+      "controlPrior": 0.95,
+      "abilities": [
+        {
+          "code": "A02Q",
+          "name": "恶魔的掌握",
+          "slot": 4,
+          "hotkey": "F",
+          "tier": "TEAM_ULT",
+          "weight": 0.95,
+          "coolDs": 1000,
+          "orderId": 852480,
+          "notes": ""
+        }
+      ]
+    },
+    "U00E": {
+      "name": "死灵法师",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A067",
+          "name": "死神镰刀",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1000,
+          "orderId": 852095,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "U00F": {
+      "name": "胖子",
+      "controlPrior": 0.9,
+      "abilities": [
+        {
+          "code": "A06I",
+          "name": "肉钩",
+          "slot": 1,
+          "hotkey": "T",
+          "tier": "HARD_CC",
+          "weight": 0.9,
+          "coolDs": 140,
+          "orderId": 852600,
+          "notes": ""
+        },
+        {
+          "code": "A0FL",
+          "name": "肢解",
+          "slot": 4,
+          "hotkey": "D",
+          "tier": "HARD_CC",
+          "weight": 0.85,
+          "coolDs": 300,
+          "orderId": 852480,
+          "notes": ""
+        }
+      ]
+    },
+    "O00J": {
+      "name": "裂魂人",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0G4",
+          "name": "幽冥一击",
+          "slot": 4,
+          "hotkey": "E",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 800,
+          "orderId": 852248,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Ubal": {
+      "name": "地穴编织者",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0CT",
+          "name": "时光倒流",
+          "slot": 4,
+          "hotkey": "T",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 600,
+          "orderId": 852600,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Nfir": {
+      "name": "影魔",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0EY",
+          "name": "毁灭阴影",
+          "slot": 1,
+          "hotkey": "Z",
+          "tier": "NUKE",
+          "weight": 0.35,
+          "coolDs": 100,
+          "orderId": 852164,
+          "notes": "Shadowraze near"
+        },
+        {
+          "code": "A29J",
+          "name": "魂之挽歌",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.9,
+          "coolDs": 1200,
+          "orderId": 0,
+          "notes": "Requiem of Souls — distance-scaled teamfight nuke"
+        }
+      ]
+    },
+    "U00K": {
+      "name": "沙王",
+      "controlPrior": 0.8,
+      "abilities": [
+        {
+          "code": "A06O",
+          "name": "掘地穿刺",
+          "slot": 1,
+          "hotkey": "E",
+          "tier": "HARD_CC",
+          "weight": 0.8,
+          "coolDs": 110,
+          "orderId": 852600,
+          "notes": ""
+        },
+        {
+          "code": "A06R",
+          "name": "地震",
+          "slot": 4,
+          "hotkey": "C",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1400,
+          "orderId": 852581,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Opgh": {
+      "name": "斧王",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0E2",
+          "name": "淘汰之刃",
+          "slot": 4,
+          "hotkey": "C",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 750,
+          "orderId": 852119,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Hvsh": {
+      "name": "嗜血狂魔",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0LH",
+          "name": "割裂",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 600,
+          "orderId": 852231,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Udea": {
+      "name": "地狱领主",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0NS",
+          "name": "回光返照",
+          "slot": 4,
+          "hotkey": "B",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 600,
+          "orderId": 852129,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "E01B": {
+      "name": "幽鬼",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0H9",
+          "name": "鬼影重重",
+          "slot": 4,
+          "hotkey": "T",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1200,
+          "orderId": 852490,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "E01A": {
+      "name": "巫医",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0NT",
+          "name": "死亡守卫",
+          "slot": 4,
+          "hotkey": "D",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 800,
+          "orderId": 852597,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "U00P": {
+      "name": "黑曜毁灭者",
+      "controlPrior": 0.75,
+      "abilities": [
+        {
+          "code": "A0OJ",
+          "name": "星体禁锢",
+          "slot": 2,
+          "hotkey": "T",
+          "tier": "HARD_CC",
+          "weight": 0.75,
+          "coolDs": 180,
+          "orderId": 852119,
+          "notes": ""
+        },
+        {
+          "code": "A0OK",
+          "name": "神智之蚀",
+          "slot": 4,
+          "hotkey": "C",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1600,
+          "orderId": 852089,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "E01C": {
+      "name": "术士",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "S008",
+          "name": "混乱之雨",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1650,
+          "orderId": 852232,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "H00I": {
+      "name": "地卜师",
+      "controlPrior": 0.7,
+      "abilities": [
+        {
+          "code": "A0NB",
+          "name": "地之束缚",
+          "slot": 1,
+          "hotkey": "E",
+          "tier": "HARD_CC",
+          "weight": 0.7,
+          "coolDs": 200,
+          "orderId": 852089,
+          "notes": ""
+        },
+        {
+          "code": "A0MW",
+          "name": "分则能成",
+          "slot": 4,
+          "hotkey": "D",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 0,
+          "orderId": 0,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "N01W": {
+      "name": "暗影牧师",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A10Q",
+          "name": "编织",
+          "slot": 4,
+          "hotkey": "W",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 400,
+          "orderId": 852089,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "N00R": {
+      "name": "深渊领主",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0R0",
+          "name": "黑暗之门",
+          "slot": 4,
+          "hotkey": "D",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1300,
+          "orderId": 852600,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "H00R": {
+      "name": "不朽尸王",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A15J",
+          "name": "血肉傀儡",
+          "slot": 4,
+          "hotkey": "F",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 750,
+          "orderId": 852180,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "H00N": {
+      "name": "黑暗聆者",
+      "controlPrior": 0.8,
+      "abilities": [
+        {
+          "code": "A0QE",
+          "name": "真空",
+          "slot": 1,
+          "hotkey": "C",
+          "tier": "HARD_CC",
+          "weight": 0.8,
+          "coolDs": 280,
+          "orderId": 852089,
+          "notes": ""
+        },
+        {
+          "code": "A0QK",
+          "name": "复制之墙",
+          "slot": 4,
+          "hotkey": "W",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1000,
+          "orderId": 852190,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "H00U": {
+      "name": "祈求者",
+      "controlPrior": 0.8,
+      "abilities": [
+        {
+          "code": "A21Y",
+          "name": "元素祈唤",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 220,
+          "orderId": 852588,
+          "notes": "ult slot default (no hard CC keyword)"
+        },
+        {
+          "code": "A0VZ",
+          "name": "急速冷却",
+          "slot": null,
+          "hotkey": null,
+          "tier": "HARD_CC",
+          "weight": 0.7,
+          "coolDs": null,
+          "orderId": null,
+          "notes": "invoked dynamic; resolve via CUnit+0x1DC live list"
+        },
+        {
+          "code": "A0XL",
+          "name": "幽灵漫步",
+          "slot": null,
+          "hotkey": null,
+          "tier": "INIT",
+          "weight": 0.4,
+          "coolDs": null,
+          "orderId": null,
+          "notes": "invoked dynamic; resolve via CUnit+0x1DC live list"
+        },
+        {
+          "code": "A0VP",
+          "name": "寒冰之墙",
+          "slot": null,
+          "hotkey": null,
+          "tier": "SOFT_CC",
+          "weight": 0.5,
+          "coolDs": null,
+          "orderId": null,
+          "notes": "invoked dynamic; resolve via CUnit+0x1DC live list"
+        },
+        {
+          "code": "A0VS",
+          "name": "电磁脉冲",
+          "slot": null,
+          "hotkey": null,
+          "tier": "SOFT_CC",
+          "weight": 0.55,
+          "coolDs": null,
+          "orderId": null,
+          "notes": "invoked dynamic; resolve via CUnit+0x1DC live list"
+        },
+        {
+          "code": "A0VK",
+          "name": "强袭飓风",
+          "slot": null,
+          "hotkey": null,
+          "tier": "HARD_CC",
+          "weight": 0.8,
+          "coolDs": null,
+          "orderId": null,
+          "notes": "invoked dynamic; resolve via CUnit+0x1DC live list"
+        },
+        {
+          "code": "A0VQ",
+          "name": "灵动迅捷",
+          "slot": null,
+          "hotkey": null,
+          "tier": "SOFT_CC",
+          "weight": 0.35,
+          "coolDs": null,
+          "orderId": null,
+          "notes": "invoked dynamic; resolve via CUnit+0x1DC live list"
+        },
+        {
+          "code": "A0VG",
+          "name": "阳炎冲击",
+          "slot": null,
+          "hotkey": null,
+          "tier": "NUKE",
+          "weight": 0.65,
+          "coolDs": null,
+          "orderId": null,
+          "notes": "invoked dynamic; resolve via CUnit+0x1DC live list"
+        },
+        {
+          "code": "A0VO",
+          "name": "熔炉精灵",
+          "slot": null,
+          "hotkey": null,
+          "tier": "SOFT_CC",
+          "weight": 0.3,
+          "coolDs": null,
+          "orderId": null,
+          "notes": "invoked dynamic; resolve via CUnit+0x1DC live list"
+        },
+        {
+          "code": "A0VN",
+          "name": "混沌陨石",
+          "slot": null,
+          "hotkey": null,
+          "tier": "NUKE",
+          "weight": 0.6,
+          "coolDs": null,
+          "orderId": null,
+          "notes": "invoked dynamic; resolve via CUnit+0x1DC live list"
+        },
+        {
+          "code": "A0VM",
+          "name": "超震声波",
+          "slot": null,
+          "hotkey": null,
+          "tier": "SOFT_CC",
+          "weight": 0.75,
+          "coolDs": null,
+          "orderId": null,
+          "notes": "invoked dynamic; resolve via CUnit+0x1DC live list"
+        }
+      ]
+    },
+    "Uktl": {
+      "name": "谜团",
+      "controlPrior": 1.0,
+      "abilities": [
+        {
+          "code": "A1BX",
+          "name": "黑洞",
+          "slot": 4,
+          "hotkey": "B",
+          "tier": "TEAM_ULT",
+          "weight": 1.0,
+          "coolDs": 2000,
+          "orderId": 852188,
+          "notes": ""
+        }
+      ]
+    },
+    "O016": {
+      "name": "蝙蝠骑士",
+      "controlPrior": 0.85,
+      "abilities": [
+        {
+          "code": "A19O",
+          "name": "燃烧枷锁",
+          "slot": 4,
+          "hotkey": "F",
+          "tier": "HARD_CC",
+          "weight": 0.85,
+          "coolDs": 900,
+          "orderId": 852119,
+          "notes": ""
+        }
+      ]
+    },
+    "N0HP": {
+      "name": "远古冰魂",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A1MI",
+          "name": "冰晶爆轰",
+          "slot": 4,
+          "hotkey": "T",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 400,
+          "orderId": 852662,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "H071": {
+      "name": "鱼人夜行者",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A1IN",
+          "name": "暗影之舞",
+          "slot": 4,
+          "hotkey": "D",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 600,
+          "orderId": 852129,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Eevi": {
+      "name": "灵魂守卫",
+      "controlPrior": 0.85,
+      "abilities": [
+        {
+          "code": "A07Q",
+          "name": "灵魂隔断",
+          "slot": 4,
+          "hotkey": "R",
+          "tier": "HARD_CC",
+          "weight": 0.85,
+          "coolDs": 1200,
+          "orderId": 852189,
+          "notes": ""
+        }
+      ]
+    },
+    "Ekee": {
+      "name": "受折磨的灵魂",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A21F",
+          "name": "脉冲新星",
+          "slot": 4,
+          "hotkey": "V",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 10,
+          "orderId": 852100,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "E02H": {
+      "name": "暗影恶魔",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A2XI",
+          "name": "邪恶净化",
+          "slot": 4,
+          "hotkey": "G",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 0,
+          "orderId": 852662,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "Ulic": {
+      "name": "巫妖",
+      "controlPrior": 0.35,
+      "abilities": [
+        {
+          "code": "A07F",
+          "name": "霜冻新星",
+          "slot": 1,
+          "hotkey": "V",
+          "tier": "SOFT_CC",
+          "weight": 0.35,
+          "coolDs": 80,
+          "orderId": 852226,
+          "notes": ""
+        },
+        {
+          "code": "A05T",
+          "name": "连环霜冻",
+          "slot": 4,
+          "hotkey": "C",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1200,
+          "orderId": 852227,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "UC76": {
+      "name": "死亡先知",
+      "controlPrior": 0.6,
+      "abilities": [
+        {
+          "code": "A0P6",
+          "name": "沉默魔法",
+          "slot": 2,
+          "hotkey": "E",
+          "tier": "SOFT_CC",
+          "weight": 0.6,
+          "coolDs": 150,
+          "orderId": 852592,
+          "notes": ""
+        },
+        {
+          "code": "A073",
+          "name": "驱使恶灵",
+          "slot": 4,
+          "hotkey": "X",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1350,
+          "orderId": 852597,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "UC18": {
+      "name": "恶魔巫师",
+      "controlPrior": 0.9,
+      "abilities": [
+        {
+          "code": "A0X5",
+          "name": "穿刺",
+          "slot": 1,
+          "hotkey": "E",
+          "tier": "HARD_CC",
+          "weight": 0.8,
+          "coolDs": 120,
+          "orderId": 852555,
+          "notes": ""
+        },
+        {
+          "code": "A0MN",
+          "name": "妖术",
+          "slot": 2,
+          "hotkey": "D",
+          "tier": "HARD_CC",
+          "weight": 0.9,
+          "coolDs": 300,
+          "orderId": 852502,
+          "notes": ""
+        },
+        {
+          "code": "A095",
+          "name": "死亡一指",
+          "slot": 4,
+          "hotkey": "F",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1600,
+          "orderId": 852119,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "EC57": {
+      "name": "剧毒术士",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A013",
+          "name": "剧毒新星",
+          "slot": 4,
+          "hotkey": "V",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1400,
+          "orderId": 852594,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "UC11": {
+      "name": "半人猛犸",
+      "controlPrior": 1.0,
+      "abilities": [
+        {
+          "code": "A02S",
+          "name": "震荡波",
+          "slot": 1,
+          "hotkey": "W",
+          "tier": "SOFT_CC",
+          "weight": 0.35,
+          "coolDs": 100,
+          "orderId": 852125,
+          "notes": ""
+        },
+        {
+          "code": "A29L",
+          "name": "两极反转",
+          "slot": 4,
+          "hotkey": "V",
+          "tier": "TEAM_ULT",
+          "weight": 1.0,
+          "coolDs": 1200,
+          "orderId": 852164,
+          "notes": ""
+        }
+      ]
+    },
+    "UC60": {
+      "name": "死灵飞龙",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A1NE",
+          "name": "召唤佣兽",
+          "slot": 4,
+          "hotkey": "T",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1800,
+          "orderId": 852526,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "U00A": {
+      "name": "混沌骑士",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A03O",
+          "name": "幻象",
+          "slot": 4,
+          "hotkey": "T",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1400,
+          "orderId": 852123,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "N0M7": {
+      "name": "寒冬飞龙",
+      "controlPrior": 0.95,
+      "abilities": [
+        {
+          "code": "A0Z0",
+          "name": "寒冬诅咒",
+          "slot": 4,
+          "hotkey": "W",
+          "tier": "TEAM_ULT",
+          "weight": 0.95,
+          "coolDs": 900,
+          "orderId": 852581,
+          "notes": ""
+        }
+      ]
+    },
+    "N0MK": {
+      "name": "弧光守卫者",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A2M0",
+          "name": "风暴双雄",
+          "slot": 4,
+          "hotkey": "D",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 650,
+          "orderId": 852594,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "U008": {
+      "name": "狼人",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A093",
+          "name": "变狼",
+          "slot": 4,
+          "hotkey": "F",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 1200,
+          "orderId": 852180,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    },
+    "U006": {
+      "name": "育母蜘蛛",
+      "controlPrior": 0.0,
+      "abilities": [
+        {
+          "code": "A0WQ",
+          "name": "极度饥渴",
+          "slot": 4,
+          "hotkey": "T",
+          "tier": "NUKE_ULT",
+          "weight": 0.45,
+          "coolDs": 450,
+          "orderId": 852164,
+          "notes": "ult slot default (no hard CC keyword)"
+        }
+      ]
+    }
+  }
+}

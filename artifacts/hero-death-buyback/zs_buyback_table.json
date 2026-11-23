@@ -1,0 +1,362 @@
+[
+  {
+    "idx": 0,
+    "fourcc": "h09G",
+    "fourcc_int": 1747990855,
+    "WS_gold": 50
+  },
+  {
+    "idx": 1,
+    "fourcc": "h09T",
+    "fourcc_int": 1747990868,
+    "WS_gold": 100
+  },
+  {
+    "idx": 2,
+    "fourcc": "h09F",
+    "fourcc_int": 1747990854,
+    "WS_gold": 150
+  },
+  {
+    "idx": 3,
+    "fourcc": "h09H",
+    "fourcc_int": 1747990856,
+    "WS_gold": 200
+  },
+  {
+    "idx": 4,
+    "fourcc": "h09E",
+    "fourcc_int": 1747990853,
+    "WS_gold": 250
+  },
+  {
+    "idx": 5,
+    "fourcc": "h09D",
+    "fourcc_int": 1747990852,
+    "WS_gold": 300
+  },
+  {
+    "idx": 6,
+    "fourcc": "h09C",
+    "fourcc_int": 1747990851,
+    "WS_gold": 350
+  },
+  {
+    "idx": 7,
+    "fourcc": "h09B",
+    "fourcc_int": 1747990850,
+    "WS_gold": 400
+  },
+  {
+    "idx": 8,
+    "fourcc": "h099",
+    "fourcc_int": 1747990841,
+    "WS_gold": 450
+  },
+  {
+    "idx": 9,
+    "fourcc": "h09A",
+    "fourcc_int": 1747990849,
+    "WS_gold": 500
+  },
+  {
+    "idx": 10,
+    "fourcc": "h09J",
+    "fourcc_int": 1747990858,
+    "WS_gold": 550
+  },
+  {
+    "idx": 11,
+    "fourcc": "h09K",
+    "fourcc_int": 1747990859,
+    "WS_gold": 600
+  },
+  {
+    "idx": 12,
+    "fourcc": "h09L",
+    "fourcc_int": 1747990860,
+    "WS_gold": 650
+  },
+  {
+    "idx": 13,
+    "fourcc": "h09M",
+    "fourcc_int": 1747990861,
+    "WS_gold": 700
+  },
+  {
+    "idx": 14,
+    "fourcc": "h09N",
+    "fourcc_int": 1747990862,
+    "WS_gold": 750
+  },
+  {
+    "idx": 15,
+    "fourcc": "h09O",
+    "fourcc_int": 1747990863,
+    "WS_gold": 800
+  },
+  {
+    "idx": 16,
+    "fourcc": "h09P",
+    "fourcc_int": 1747990864,
+    "WS_gold": 850
+  },
+  {
+    "idx": 17,
+    "fourcc": "h09Q",
+    "fourcc_int": 1747990865,
+    "WS_gold": 900
+  },
+  {
+    "idx": 18,
+    "fourcc": "h09R",
+    "fourcc_int": 1747990866,
+    "WS_gold": 950
+  },
+  {
+    "idx": 19,
+    "fourcc": "h09S",
+    "fourcc_int": 1747990867,
+    "WS_gold": 1000
+  },
+  {
+    "idx": 20,
+    "fourcc": "h09I",
+    "fourcc_int": 1747990857,
+    "WS_gold": 1050
+  },
+  {
+    "idx": 21,
+    "fourcc": "h09Z",
+    "fourcc_int": 1747990874,
+    "WS_gold": 1100
+  },
+  {
+    "idx": 22,
+    "fourcc": "h09X",
+    "fourcc_int": 1747990872,
+    "WS_gold": 1150
+  },
+  {
+    "idx": 23,
+    "fourcc": "h0A1",
+    "fourcc_int": 1747992881,
+    "WS_gold": 1200
+  },
+  {
+    "idx": 24,
+    "fourcc": "h0A2",
+    "fourcc_int": 1747992882,
+    "WS_gold": 1250
+  },
+  {
+    "idx": 25,
+    "fourcc": "h0A6",
+    "fourcc_int": 1747992886,
+    "WS_gold": 1300
+  },
+  {
+    "idx": 26,
+    "fourcc": "h0A3",
+    "fourcc_int": 1747992883,
+    "WS_gold": 1350
+  },
+  {
+    "idx": 27,
+    "fourcc": "h0A4",
+    "fourcc_int": 1747992884,
+    "WS_gold": 1400
+  },
+  {
+    "idx": 28,
+    "fourcc": "h09Y",
+    "fourcc_int": 1747990873,
+    "WS_gold": 1450
+  },
+  {
+    "idx": 29,
+    "fourcc": "h09V",
+    "fourcc_int": 1747990870,
+    "WS_gold": 1500
+  },
+  {
+    "idx": 30,
+    "fourcc": "h0A0",
+    "fourcc_int": 1747992880,
+    "WS_gold": 1550
+  },
+  {
+    "idx": 31,
+    "fourcc": "h09U",
+    "fourcc_int": 1747990869,
+    "WS_gold": 1600
+  },
+  {
+    "idx": 32,
+    "fourcc": "h0AF",
+    "fourcc_int": 1747992902,
+    "WS_gold": 1650
+  },
+  {
+    "idx": 33,
+    "fourcc": "h0AD",
+    "fourcc_int": 1747992900,
+    "WS_gold": 1700
+  },
+  {
+    "idx": 34,
+    "fourcc": "h0AE",
+    "fourcc_int": 1747992901,
+    "WS_gold": 1750
+  },
+  {
+    "idx": 35,
+    "fourcc": "h0AC",
+    "fourcc_int": 1747992899,
+    "WS_gold": 1800
+  },
+  {
+    "idx": 36,
+    "fourcc": "h0AB",
+    "fourcc_int": 1747992898,
+    "WS_gold": 1850
+  },
+  {
+    "idx": 37,
+    "fourcc": "h0AA",
+    "fourcc_int": 1747992897,
+    "WS_gold": 1900
+  },
+  {
+    "idx": 38,
+    "fourcc": "h0A9",
+    "fourcc_int": 1747992889,
+    "WS_gold": 1950
+  },
+  {
+    "idx": 39,
+    "fourcc": "h0AG",
+    "fourcc_int": 1747992903,
+    "WS_gold": 2000
+  },
+  {
+    "idx": 40,
+    "fourcc": "h0A7",
+    "fourcc_int": 1747992887,
+    "WS_gold": 2050
+  },
+  {
+    "idx": 41,
+    "fourcc": "h0AO",
+    "fourcc_int": 1747992911,
+    "WS_gold": 2100
+  },
+  {
+    "idx": 42,
+    "fourcc": "h0AY",
+    "fourcc_int": 1747992921,
+    "WS_gold": 2150
+  },
+  {
+    "idx": 43,
+    "fourcc": "h0AH",
+    "fourcc_int": 1747992904,
+    "WS_gold": 2200
+  },
+  {
+    "idx": 44,
+    "fourcc": "h0AI",
+    "fourcc_int": 1747992905,
+    "WS_gold": 2250
+  },
+  {
+    "idx": 45,
+    "fourcc": "h0AJ",
+    "fourcc_int": 1747992906,
+    "WS_gold": 2300
+  },
+  {
+    "idx": 46,
+    "fourcc": "h0AP",
+    "fourcc_int": 1747992912,
+    "WS_gold": 2350
+  },
+  {
+    "idx": 47,
+    "fourcc": "h0AQ",
+    "fourcc_int": 1747992913,
+    "WS_gold": 2400
+  },
+  {
+    "idx": 48,
+    "fourcc": "h0AK",
+    "fourcc_int": 1747992907,
+    "WS_gold": 2450
+  },
+  {
+    "idx": 49,
+    "fourcc": "h0AR",
+    "fourcc_int": 1747992914,
+    "WS_gold": 2500
+  },
+  {
+    "idx": 50,
+    "fourcc": "h0AL",
+    "fourcc_int": 1747992908,
+    "WS_gold": 2550
+  },
+  {
+    "idx": 51,
+    "fourcc": "h0AS",
+    "fourcc_int": 1747992915,
+    "WS_gold": 2600
+  },
+  {
+    "idx": 52,
+    "fourcc": "h09W",
+    "fourcc_int": 1747990871,
+    "WS_gold": 2650
+  },
+  {
+    "idx": 53,
+    "fourcc": "h0AM",
+    "fourcc_int": 1747992909,
+    "WS_gold": 2700
+  },
+  {
+    "idx": 54,
+    "fourcc": "h0A8",
+    "fourcc_int": 1747992888,
+    "WS_gold": 2750
+  },
+  {
+    "idx": 55,
+    "fourcc": "h0AT",
+    "fourcc_int": 1747992916,
+    "WS_gold": 2800
+  },
+  {
+    "idx": 56,
+    "fourcc": "h0AU",
+    "fourcc_int": 1747992917,
+    "WS_gold": 2850
+  },
+  {
+    "idx": 57,
+    "fourcc": "h0AN",
+    "fourcc_int": 1747992910,
+    "WS_gold": 2900
+  },
+  {
+    "idx": 58,
+    "fourcc": "h0AV",
+    "fourcc_int": 1747992918,
+    "WS_gold": 2950
+  },
+  {
+    "idx": 59,
+    "fourcc": "h0AW",
+    "fourcc_int": 1747992919,
+    "WS_gold": 3000
+  }
+]

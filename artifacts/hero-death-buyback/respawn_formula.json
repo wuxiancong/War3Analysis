@@ -1,0 +1,23 @@
+{
+  "base": "ABO = R2I((level * 3.8 + 5) * A5 * A6 * A7 * A8) + R2I(A9); then * AAO; + YS",
+  "defaults": { "A5": 1.0, "A6": 1.0, "A7": 1.0, "A8": 1.0, "A9": 0.0, "AAO": 1.0, "YS": 0 },
+  "modifiers": {
+    "reincarnate_I4O": { "A5": 0.4 },
+    "techies_suicide_A8": { "A8": 0.5 },
+    "bloodstone_charges_c": { "A9": "-4 * c" },
+    "OCI_half": { "mult": 0.5 },
+    "ability_AAO": { "AAO": 0.8 },
+    "hashtable_4333": { "add": 30 },
+    "buyback_interrupt_YS": "R2I(TimerGetRemaining(F0) * 0.25) applied on next death"
+  },
+  "samples_plain": { "1": 8, "5": 24, "10": 43, "15": 62, "25": 100 },
+  "buyback": {
+    "idx": "clamp(R2I((100 + level*level*1.5 + gameMin*15) / 50), 0, 59)",
+    "cost": "WS[idx] == 50 * (idx + 1)",
+    "unit": "ZS[idx]",
+    "order": "0x10 + ZS[idx] on fountain D30[pid]",
+    "cooldown_s": 360,
+    "cooldown_stock": "h0D4",
+    "XS_meaning": "boolean block flag, NOT remaining seconds"
+  }
+}

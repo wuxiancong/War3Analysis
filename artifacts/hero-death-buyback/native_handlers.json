@@ -1,0 +1,343 @@
+[
+  {
+    "ver": "1.0.17.5988",
+    "UnitAlive": {
+      "strRVA": "0x8108d4",
+      "handler": "0x26eac0"
+    },
+    "IsUnitDeadBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "IsUnitAliveBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "TimerGetRemaining": {
+      "strRVA": "0x819da4",
+      "handler": "0x2afb60"
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x819db8",
+      "handler": "0x2af9a0"
+    },
+    "ReviveHero": {
+      "strRVA": "0x8178ac",
+      "handler": "0x2c33a0"
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x818400",
+      "handler": "0x2bbcf0"
+    }
+  },
+  {
+    "ver": "1.0.20.6048",
+    "UnitAlive": {
+      "strRVA": "0x811914",
+      "handler": "0x26eac0"
+    },
+    "IsUnitDeadBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "IsUnitAliveBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "TimerGetRemaining": {
+      "strRVA": "0x81ade4",
+      "handler": "0x2afb60"
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x81adf8",
+      "handler": "0x2af9a0"
+    },
+    "ReviveHero": {
+      "strRVA": "0x8188ec",
+      "handler": "0x2c33a0"
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x819440",
+      "handler": "0x2bbcf0"
+    }
+  },
+  {
+    "ver": "1.20.4.6074",
+    "UnitAlive": {
+      "strRVA": "0x811934",
+      "handler": "0x26ebe0"
+    },
+    "IsUnitDeadBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "IsUnitAliveBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "TimerGetRemaining": {
+      "strRVA": "0x81ae04",
+      "handler": "0x2afc80"
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x81ae18",
+      "handler": "0x2afac0"
+    },
+    "ReviveHero": {
+      "strRVA": "0x81890c",
+      "handler": "0x2c34c0"
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x819460",
+      "handler": "0x2bbe10"
+    }
+  },
+  {
+    "ver": "1.21.0.6263",
+    "UnitAlive": {
+      "strRVA": "0x812a34",
+      "handler": "0x271da0"
+    },
+    "IsUnitDeadBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "IsUnitAliveBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "TimerGetRemaining": {
+      "strRVA": "0x81bf14",
+      "handler": "0x2b3250"
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x81bf28",
+      "handler": "0x2b3090"
+    },
+    "ReviveHero": {
+      "strRVA": "0x819a1c",
+      "handler": "0x2c6a90"
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x81a570",
+      "handler": "0x2bf3e0"
+    }
+  },
+  {
+    "ver": "1.22.0.6328",
+    "UnitAlive": {
+      "strRVA": "0x922320",
+      "handler": "0x2dfc20"
+    },
+    "IsUnitDeadBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "IsUnitAliveBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "TimerGetRemaining": {
+      "strRVA": "0x9383c8",
+      "handler": "0x3ba8a0"
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x9383dc",
+      "handler": "0x3ba860"
+    },
+    "ReviveHero": {
+      "strRVA": "0x935ed0",
+      "handler": "0x3bfd90"
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x936a24",
+      "handler": "0x3bd930"
+    }
+  },
+  {
+    "ver": "1.23.0.6352",
+    "UnitAlive": {
+      "strRVA": "0x936460",
+      "handler": "0x2e1160"
+    },
+    "IsUnitDeadBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "IsUnitAliveBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "TimerGetRemaining": {
+      "strRVA": "0x94c510",
+      "handler": "0x3bc5c0"
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x94c524",
+      "handler": "0x3bc580"
+    },
+    "ReviveHero": {
+      "strRVA": "0x94a018",
+      "handler": "0x3c1ab0"
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x94ab6c",
+      "handler": "0x3bf650"
+    }
+  },
+  {
+    "ver": "1.24.1.6374",
+    "UnitAlive": {
+      "strRVA": "0x945598",
+      "handler": "0x2e1220"
+    },
+    "IsUnitDeadBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "IsUnitAliveBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "TimerGetRemaining": {
+      "strRVA": "0x95c9b4",
+      "handler": "0x3c1e80"
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x95c9c8",
+      "handler": "0x3c1e40"
+    },
+    "ReviveHero": {
+      "strRVA": "0x95a484",
+      "handler": "0x3c7570"
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x95afd8",
+      "handler": "0x3c5110"
+    }
+  },
+  {
+    "ver": "1.24.4.6387",
+    "UnitAlive": {
+      "strRVA": "0x945598",
+      "handler": "0x2e12e0"
+    },
+    "IsUnitDeadBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "IsUnitAliveBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "TimerGetRemaining": {
+      "strRVA": "0x95c9cc",
+      "handler": "0x3c1f40"
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x95c9e0",
+      "handler": "0x3c1f00"
+    },
+    "ReviveHero": {
+      "strRVA": "0x95a49c",
+      "handler": "0x3c7630"
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x95aff0",
+      "handler": "0x3c51d0"
+    }
+  },
+  {
+    "ver": "1.25.1.6397",
+    "UnitAlive": {
+      "strRVA": "0x933438",
+      "handler": "0x2e0590"
+    },
+    "IsUnitDeadBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "IsUnitAliveBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "TimerGetRemaining": {
+      "strRVA": "0x94a874",
+      "handler": "0x3c11d0"
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x94a888",
+      "handler": "0x3c1190"
+    },
+    "ReviveHero": {
+      "strRVA": "0x948344",
+      "handler": "0x3c68c0"
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x948e98",
+      "handler": "0x3c4460"
+    }
+  },
+  {
+    "ver": "1.26.0.6401",
+    "UnitAlive": {
+      "strRVA": "0x933438",
+      "handler": "0x2e07c0"
+    },
+    "IsUnitDeadBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "IsUnitAliveBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "TimerGetRemaining": {
+      "strRVA": "0x94a874",
+      "handler": "0x3c1400"
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x94a888",
+      "handler": "0x3c13c0"
+    },
+    "ReviveHero": {
+      "strRVA": "0x948344",
+      "handler": "0x3c6af0"
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x948e98",
+      "handler": "0x3c4690"
+    }
+  },
+  {
+    "ver": "1.27.0.52240",
+    "UnitAlive": {
+      "strRVA": "0xa57d30",
+      "handler": "0x70a0c0"
+    },
+    "IsUnitDeadBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "IsUnitAliveBJ": {
+      "strRVA": null,
+      "handler": null
+    },
+    "TimerGetRemaining": {
+      "strRVA": "0x9680a8",
+      "handler": "0x1f1b00"
+    },
+    "TimerGetElapsed": {
+      "strRVA": "0x968098",
+      "handler": "0x1f8f80"
+    },
+    "ReviveHero": {
+      "strRVA": "0x96a630",
+      "handler": "0x1f3300"
+    },
+    "GetWidgetLife": {
+      "strRVA": "0x969aac",
+      "handler": "0x1f7db0"
+    }
+  }
+]
