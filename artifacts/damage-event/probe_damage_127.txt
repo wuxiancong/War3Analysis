@@ -1,0 +1,121 @@
+=== GetEventDamage NOT FOUND ===
+
+=== GetEventDamageSource NOT FOUND ===
+
+=== UnitDamageTarget NOT FOUND ===
+
+=== 1.27 CMissile::ApplyDamage @ 0x6B1500 ===
+6F6B1500: 55                 push        ebp
+6F6B1501: 8B EC              mov         ebp,esp
+6F6B1503: 6A FF              push        0FFFFFFFFh
+6F6B1505: 68 B8 F4 92 6F     push        6F92F4B8h
+6F6B150A: 64 A1 00 00 00 00  mov         eax,dword ptr fs:[00000000h]
+6F6B1510: 50                 push        eax
+6F6B1511: 83 EC 28           sub         esp,28h
+6F6B1514: 53                 push        ebx
+6F6B1515: 56                 push        esi
+6F6B1516: 57                 push        edi
+6F6B1517: A1 74 A7 B6 6F     mov         eax,dword ptr ds:[6FB6A774h]
+6F6B151C: 33 C5              xor         eax,ebp
+6F6B151E: 50                 push        eax
+6F6B151F: 8D 45 F4           lea         eax,[ebp-0Ch]
+6F6B1522: 64 A3 00 00 00 00  mov         dword ptr fs:[00000000h],eax
+6F6B1528: 8B F1              mov         esi,ecx
+6F6B152A: 89 75 F0           mov         dword ptr [ebp-10h],esi
+6F6B152D: 8D 4D CC           lea         ecx,[ebp-34h]
+6F6B1530: E8 9B 41 FD FF     call        6F6856D0
+6F6B1535: FF 75 10           push        dword ptr [ebp+10h]
+6F6B1538: 8B 5D 0C           mov         ebx,dword ptr [ebp+0Ch]
+6F6B153B: 8D 45 CC           lea         eax,[ebp-34h]
+6F6B153E: 53                 push        ebx
+6F6B153F: 50                 push        eax
+6F6B1540: 8B CE              mov         ecx,esi
+6F6B1542: E8 29 59 00 00     call        6F6B6E70
+6F6B1547: 8B 45 F0           mov         eax,dword ptr [ebp-10h]
+6F6B154A: 8B 75 DC           mov         esi,dword ptr [ebp-24h]
+6F6B154D: 8B 40 20           mov         eax,dword ptr [eax+20h]
+6F6B1550: A9 00 00 00 20     test        eax,20000000h
+6F6B1555: 0F 85 C9 00 00 00  jne         6F6B1624
+6F6B155B: A9 00 00 00 10     test        eax,10000000h
+6F6B1560: 0F 85 BE 00 00 00  jne         6F6B1624
+6F6B1566: A8 02              test        al,2
+6F6B1568: 0F 84 B6 00 00 00  je          6F6B1624
+6F6B156E: 85 DB              test        ebx,ebx
+6F6B1570: 0F 84 AE 00 00 00  je          6F6B1624
+6F6B1576: 8B 03              mov         eax,dword ptr [ebx]
+6F6B1578: 8B CB              mov         ecx,ebx
+6F6B157A: FF 50 1C           call        dword ptr [eax+1Ch]
+6F6B157D: 8B F8              mov         edi,eax
+6F6B157F: E8 EC 5E FB FF     call        6F667470
+6F6B1584: 3B F8              cmp         edi,eax
+6F6B1586: 0F 85 98 00 00 00  jne         6F6B1624
+6F6B158C: 53                 push        ebx
+6F6B158D: 8D 4D 10           lea         ecx,[ebp+10h]
+6F6B1590: E8 FB 80 B0 FF     call        6F1B9690
+6F6B1595: 8B 4D F0           mov         ecx,dword ptr [ebp-10h]
+6F6B1598: 83 C1 2C           add         ecx,2Ch
+6F6B159B: C7 45 FC 00 00 00  mov         dword ptr [ebp-4],0
+6F6B15A2: 8B 41 04           mov         eax,dword ptr [ecx+4]
+6F6B15A5: 23 01              and         eax,dword ptr [ecx]
+6F6B15A7: 83 F8 FF           cmp         eax,0FFFFFFFFh
+6F6B15AA: 74 61              je          6F6B160D
+6F6B15AC: E8 9F 2B 99 FF     call        6F044150
+6F6B15B1: 85 C0              test        eax,eax
+6F6B15B3: 74 58              je          6F6B160D
+6F6B15B5: 8B 4D 10           mov         ecx,dword ptr [ebp+10h]
+6F6B15B8: 6A 04              push        4
+6F6B15BA: 6A 00              push        0
+6F6B15BC: 50                 push        eax
+6F6B15BD: E8 DE 10 FA FF     call        6F6526A0
+6F6B15C2: 85 C0              test        eax,eax
+6F6B15C4: 74 47              je          6F6B160D
+6F6B15C6: 8B 4D 10           mov         ecx,dword ptr [ebp+10h]
+6F6B15C9: 8D 45 CC           lea         eax,[ebp-34h]
+6F6B15CC: 50                 push        eax
+6F6B15CD: E8 FE DA DB FF     call        6F46F0D0
+6F6B15D2: 85 C0              test        eax,eax
+6F6B15D4: 74 37              je          6F6B160D
+6F6B15D6: 8B 75 08           mov         esi,dword ptr [ebp+8]
+6F6B15D9: 8B 4D 10           mov         ecx,dword ptr [ebp+10h]
+6F6B15DC: A1 D4 81 BB 6F     mov         eax,dword ptr ds:[6FBB81D4h]
+6F6B15E1: C7 45 FC FF FF FF  mov         dword ptr [ebp-4],0FFFFFFFFh
+6F6B15E8: 89 06              mov         dword ptr [esi],eax
+6F6B15EA: 85 C9              test        ecx,ecx
+6F6B15EC: 74 09              je          6F6B15F7
+6F6B15EE: FF 49 04           dec         dword ptr [ecx+4]
+6F6B15F1: 75 04              jne         6F6B15F7
+6F6B15F3: 8B 11              mov         edx,dword ptr [ecx]
+6F6B15F5: FF 12              call        dword ptr [edx]
+6F6B15F7: 8B C6              mov         eax,esi
+6F6B15F9: 8B 4D F4           mov         ecx,dword ptr [ebp-0Ch]
+6F6B15FC: 64 89 0D 00 00 00  mov         dword ptr fs:[00000000h],ecx
+6F6B1603: 59                 pop         ecx
+6F6B1604: 5F                 pop         edi
+6F6B1605: 5E                 pop         esi
+6F6B1606: 5B                 pop         ebx
+6F6B1607: 8B E5              mov         esp,ebp
+6F6B1609: 5D                 pop         ebp
+6F6B160A: C2 0C 00           ret         0Ch
+6F6B160D: 8B 4D 10           mov         ecx,dword ptr [ebp+10h]
+6F6B1610: C7 45 FC FF FF FF  mov         dword ptr [ebp-4],0FFFFFFFFh
+6F6B1617: 85 C9              test        ecx,ecx
+6F6B1619: 74 09              je          6F6B1624
+6F6B161B: FF 49 04           dec         dword ptr [ecx+4]
+6F6B161E: 75 04              jne         6F6B1624
+6F6B1620: 8B 01              mov         eax,dword ptr [ecx]
+6F6B1622: FF 10              call        dword ptr [eax]
+6F6B1624: 8B 45 F0           mov         eax,dword ptr [ebp-10h]
+6F6B1627: 8B CB              mov         ecx,ebx
+6F6B1629: 8B 13              mov         edx,dword ptr [ebx]
+6F6B162B: 6A 00              push        0
+6F6B162D: 8B 40 20           mov         eax,dword ptr [eax+20h]
+6F6B1630: D1 E8              shr         eax,1
+6F6B1632: 83 E0 01           and         eax,1
+6F6B1635: 50                 push        eax
+6F6B1636: 8D 45 CC           lea         eax,[ebp-34h]
+6F6B1639: 50                 push        eax
+6F6B163A: 8D 45 0C           lea         eax,[ebp+0Ch]
+6F6B163D: 50                 push        eax
+6F6B163E: FF
+6F6B163F: 92                 xchg        eax,edx
+6F6B1640: 20

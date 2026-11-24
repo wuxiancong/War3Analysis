@@ -1,0 +1,121 @@
+=== 1. 全 11 版本 DamageBonus 7x8 表基址 & ArmorReduction 函数 RVA ===
+Version        | Row0(Spells) | Row1(Normal) | Row2(Pierce) | Stride | ArmorFnXref
+----------------------------------------------------------------------------------
+1.0.17.5988    | 0x7E65BC     | 0x86F348     | 0x86F368     | 0x88D8C | 0x19F24D   
+1.0.20.6048    | 0x7E75FC     | 0x870388     | 0x8703A8     | 0x88D8C | 0x19F24D   
+1.20.4.6074    | 0x7E75FC     | 0x8703A8     | 0x8703C8     | 0x88DAC | 0x19F25D   
+1.21.0.6263    | 0x7E85FC     | 0x7E85FC     | 0x7E85FC     | 0x0    | 0x1A241D   
+1.22.0.6328    | —            | —            | —            | —      | 0x26C432   
+1.23.0.6352    | —            | —            | —            | —      | 0x26D972   
+1.24.1.6374    | —            | —            | —            | —      | 0x26DA22   
+1.24.4.6387    | —            | —            | —            | —      | 0x26DA82   
+1.25.1.6397    | —            | —            | —            | —      | 0x26CD42   
+1.26.0.6401    | —            | —            | —            | —      | 0x26CF72   
+1.27.0.52240   | 0xBEC328     | 0xBEC348     | 0xBEC368     | 0x20   | 0x64FC0B   
+
+=== 2. 全 11 版本 CAbilityAttack 构造函数关键偏移核验 ===
+1.0.17.5988    ctor=0x555020 (1/13): +0x2B8
+1.0.20.6048    ctor=0x555520 (1/13): +0x2B8
+1.20.4.6074    ctor=0x555C40 (1/13): +0x2B8
+1.21.0.6263    ctor=0x559CD0 (1/13): +0x2B8
+1.22.0.6328    ctor=0x0CD810 (11/13): +0x6C +0x70 +0x84 +0x90 +0x9C +0x158 +0x1B0 +0x1C0 +0x1D8 +0x1EC +0x200
+1.23.0.6352    ctor=0x0CED50 (11/13): +0x6C +0x70 +0x84 +0x90 +0x9C +0x158 +0x1B0 +0x1C0 +0x1D8 +0x1EC +0x200
+1.24.1.6374    ctor=0x0CEE00 (11/13): +0x6C +0x70 +0x84 +0x90 +0x9C +0x158 +0x1B0 +0x1C0 +0x1D8 +0x1EC +0x200
+1.24.4.6387    ctor=0x0CEE10 (11/13): +0x6C +0x70 +0x84 +0x90 +0x9C +0x158 +0x1B0 +0x1C0 +0x1D8 +0x1EC +0x200
+1.25.1.6397    ctor=0x0CE1E0 (11/13): +0x6C +0x70 +0x84 +0x90 +0x9C +0x158 +0x1B0 +0x1C0 +0x1D8 +0x1EC +0x200
+1.26.0.6401    ctor=0x0CE1E0 (11/13): +0x6C +0x70 +0x84 +0x90 +0x9C +0x158 +0x1B0 +0x1C0 +0x1D8 +0x1EC +0x200
+1.27.0.52240   ctor=0x474820 (5/13): +0x6C +0x70 +0x84 +0x90 +0x9C
+
+--- 1.20.4.6074 DamageBonusSpells loader @ 0x19F303 ---
+6F19F2E3: 0F 84 DF 01 00 00  je          6F19F4C8
+6F19F2E9: 56                 push        esi
+6F19F2EA: 57                 push        edi
+6F19F2EB: 33 FF              xor         edi,edi
+6F19F2ED: 8D 49 00           lea         ecx,[ecx]
+6F19F2F0: 33 F6              xor         esi,esi
+6F19F2F2: 83 FF 06           cmp         edi,6
+6F19F2F5: 0F 87 E4 00 00 00  ja          6F19F3DF
+6F19F2FB: FF 24 BD E4 F4 19  jmp         dword ptr [edi*4+6F19F4E4h]
+6F19F302: 56                 push        esi
+6F19F303: 68 5C 68 80 6F     push        6F80685Ch
+6F19F308: BA FC 75 7E 6F     mov         edx,6F7E75FCh
+6F19F30D: 8D 4D FC           lea         ecx,[ebp-4]
+6F19F310: E8 5B 92 E6 FF     call        6F008570
+6F19F315: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+6F19F318: 89 04 B5 A8 03 87  mov         dword ptr [esi*4+6F8703A8h],eax
+6F19F31F: E9 BB 00 00 00     jmp         6F19F3DF
+6F19F324: 56                 push        esi
+6F19F325: 68 48 68 80 6F     push        6F806848h
+6F19F32A: BA FC 75 7E 6F     mov         edx,6F7E75FCh
+6F19F32F: 8D 4D F8           lea         ecx,[ebp-8]
+6F19F332: E8
+6F19F333: 39
+
+--- 1.26.0.6401 DamageBonusSpells loader @ 0x26D012 ---
+6F26CFF2: 68 F4 EF 92 6F     push        6F92EFF4h
+6F26CFF7: BA E0 5D 87 6F     mov         edx,6F875DE0h
+6F26CFFC: 8B F1              mov         esi,ecx
+6F26CFFE: E8 DD CE D9 FF     call        6F009EE0
+6F26D003: 8B C6              mov         eax,esi
+6F26D005: 5E                 pop         esi
+6F26D006: C3                 ret
+6F26D007: CC                 int         3
+6F26D008: CC                 int         3
+6F26D009: CC                 int         3
+6F26D00A: CC                 int         3
+6F26D00B: CC                 int         3
+6F26D00C: CC                 int         3
+6F26D00D: CC                 int         3
+6F26D00E: CC                 int         3
+6F26D00F: CC                 int         3
+6F26D010: 56                 push        esi
+6F26D011: 52                 push        edx
+6F26D012: 68 08 F0 92 6F     push        6F92F008h
+6F26D017: BA E0 5D 87 6F     mov         edx,6F875DE0h
+6F26D01C: 8B F1              mov         esi,ecx
+6F26D01E: E8 BD CE D9 FF     call        6F009EE0
+6F26D023: 8B C6              mov         eax,esi
+6F26D025: 5E                 pop         esi
+6F26D026: C3                 ret
+6F26D027: CC                 int         3
+6F26D028: CC                 int         3
+6F26D029: CC                 int         3
+6F26D02A: CC                 int         3
+6F26D02B: CC                 int         3
+6F26D02C: CC                 int         3
+6F26D02D: CC                 int         3
+6F26D02E: CC                 int         3
+6F26D02F: CC                 int         3
+6F26D030: 56                 push        esi
+6F26D031: 52                 push        edx
+6F26D032: 68 1C F0 92 6F     push        6F92F01Ch
+6F26D037: BA E0 5D 87 6F     mov         edx,6F875DE0h
+6F26D03C: 8B F1              mov         esi,ecx
+6F26D03E: E8 9D CE D9 FF     call        6F009EE0
+
+--- 1.27.0.52240 DamageBonusSpells loader @ 0x64D826 ---
+6F64D806: 01 00              add         dword ptr [eax],eax
+6F64D808: 00 53 56           add         byte ptr [ebx+56h],dl
+6F64D80B: 57                 push        edi
+6F64D80C: 33 DB              xor         ebx,ebx
+6F64D80E: 8B FF              mov         edi,edi
+6F64D810: 33 FF              xor         edi,edi
+6F64D812: 8D 77 40           lea         esi,[edi+40h]
+6F64D815: 83 FB 06           cmp         ebx,6
+6F64D818: 0F 87 DD 00 00 00  ja          6F64D8FB
+6F64D81E: FF 24 9D 00 DA 64  jmp         dword ptr [ebx*4+6F64DA00h]
+6F64D825: 57                 push        edi
+6F64D826: 68 A0 AB A4 6F     push        6FA4ABA0h
+6F64D82B: BA 14 1B 95 6F     mov         edx,6F951B14h
+6F64D830: 8D 4D FC           lea         ecx,[ebp-4]
+6F64D833: E8 78 CC 9D FF     call        6F02A4B0
+6F64D838: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+6F64D83B: 89 86 28 C3 BE 6F  mov         dword ptr [esi+6FBEC328h],eax
+6F64D841: E9 B5 00 00 00     jmp         6F64D8FB
+6F64D846: 57                 push        edi
+6F64D847: 68 78 AB A4 6F     push        6FA4AB78h
+6F64D84C: BA 14 1B 95 6F     mov         edx,6F951B14h
+6F64D851: 8D 4D F8           lea         ecx,[ebp-8]
+6F64D854: E8
+6F64D855: 57                 push        edi
+6F64D856: CC                 int         3

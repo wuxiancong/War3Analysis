@@ -1,0 +1,429 @@
+
+=== 1. GetVM (0x7E0400) @ 0x7E0400 ===
+  6F7E0400: E9 FB 0C 00 00     jmp         6F7E1100
+  6F7E0405: CC                 int         3
+  6F7E0406: CC                 int         3
+  6F7E0407: CC                 int         3
+  6F7E0408: CC                 int         3
+  6F7E0409: CC                 int         3
+  6F7E040A: CC                 int         3
+  6F7E040B: CC                 int         3
+  6F7E040C: CC                 int         3
+  6F7E040D: CC                 int         3
+  6F7E040E: CC                 int         3
+  6F7E040F: CC                 int         3
+  6F7E0410: B8 04 00 00 00     mov         eax,4
+  6F7E0415: C3                 ret
+  6F7E0416: CC                 int         3
+  6F7E0417: CC                 int         3
+  6F7E0418: CC                 int         3
+  6F7E0419: CC                 int         3
+  6F7E041A: CC                 int         3
+  6F7E041B: CC                 int         3
+  6F7E041C: CC                 int         3
+  6F7E041D: CC                 int         3
+  6F7E041E: CC                 int         3
+  6F7E041F: CC                 int         3
+  6F7E0420: B8 04 00 00 00     mov         eax,4
+  6F7E0425: C3                 ret
+  6F7E0426: CC                 int         3
+  6F7E0427: CC                 int         3
+  6F7E0428: CC                 int         3
+  6F7E0429: CC                 int         3
+  6F7E042A: CC                 int         3
+  6F7E042B: CC                 int         3
+  6F7E042C: CC                 int         3
+  6F7E042D: CC                 int         3
+  6F7E042E: CC                 int         3
+  6F7E042F: CC                 int         3
+  6F7E0430: B8 08 00 00 00     mov         eax,8
+  6F7E0435: C3                 ret
+  6F7E0436: CC                 int         3
+  6F7E0437: CC                 int         3
+  6F7E0438: CC                 int         3
+  6F7E0439: CC                 int         3
+  6F7E043A: CC                 int         3
+  6F7E043B: CC                 int         3
+  6F7E043C: CC                 int         3
+  6F7E043D: CC                 int         3
+  6F7E043E: CC                 int         3
+  6F7E043F: CC                 int         3
+  6F7E0440: B8 04 00 00 00     mov         eax,4
+  6F7E0445: C3                 ret
+  6F7E0446: CC                 int         3
+  6F7E0447: CC                 int         3
+  6F7E0448: CC                 int         3
+  6F7E0449: CC                 int         3
+  6F7E044A: CC                 int         3
+  6F7E044B: CC                 int         3
+  6F7E044C: CC                 int         3
+  6F7E044D: CC                 int         3
+  6F7E044E: CC                 int         3
+  6F7E044F: CC                 int         3
+  6F7E0450: B8
+
+=== 2. TSHashTable::Find (0x7EC540) @ 0x7EC540 ===
+  6F7EC540: 55                 push        ebp
+  6F7EC541: 8B EC              mov         ebp,esp
+  6F7EC543: 56                 push        esi
+  6F7EC544: FF 75 08           push        dword ptr [ebp+8]
+  6F7EC547: 8B F1              mov         esi,ecx
+  6F7EC549: E8 82 69 00 00     call        6F7F2ED0
+  6F7EC54E: 50                 push        eax
+  6F7EC54F: 8B CE              mov         ecx,esi
+  6F7EC551: E8 FA 08 00 00     call        6F7ECE50
+  6F7EC556: 5E                 pop         esi
+  6F7EC557: 5D                 pop         ebp
+  6F7EC558: C2 04 00           ret         4
+  6F7EC55B: CC                 int         3
+  6F7EC55C: CC                 int         3
+  6F7EC55D: CC                 int         3
+  6F7EC55E: CC                 int         3
+  6F7EC55F: CC                 int         3
+  6F7EC560: 55                 push        ebp
+  6F7EC561: 8B EC              mov         ebp,esp
+  6F7EC563: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  6F7EC566: 83 F8 15           cmp         eax,15h
+  6F7EC569: 73 1E              jae         6F7EC589
+  6F7EC56B: 8D 48 FF           lea         ecx,[eax-1]
+  6F7EC56E: 23 C8              and         ecx,eax
+  6F7EC570: 74 09              je          6F7EC57B
+  6F7EC572: 8B C1              mov         eax,ecx
+  6F7EC574: 8D 48 FF           lea         ecx,[eax-1]
+  6F7EC577: 23 C8              and         ecx,eax
+  6F7EC579: 75 F7              jne         6F7EC572
+  6F7EC57B: B9 01 00 00 00     mov         ecx,1
+  6F7EC580: 3B C1              cmp         eax,ecx
+  6F7EC582: 0F 42 C1           cmovb       eax,ecx
+  6F7EC585: 5D                 pop         ebp
+  6F7EC586: C2 04 00           ret         4
+  6F7EC589: C7 41 0C 15 00 00  mov         dword ptr [ecx+0Ch],15h
+  6F7EC590: B8 15 00 00 00     mov         eax,15h
+  6F7EC595: 5D                 pop         ebp
+  6F7EC596: C2 04 00           ret         4
+  6F7EC599: CC                 int         3
+  6F7EC59A: CC                 int         3
+  6F7EC59B: CC                 int         3
+  6F7EC59C: CC                 int         3
+  6F7EC59D: CC                 int         3
+  6F7EC59E: CC                 int         3
+  6F7EC59F: CC                 int         3
+  6F7EC5A0: 55                 push        ebp
+  6F7EC5A1: 8B EC              mov         ebp,esp
+  6F7EC5A3: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  6F7EC5A6: 83 F8 15           cmp         eax,15h
+  6F7EC5A9: 73 1E              jae         6F7EC5C9
+  6F7EC5AB: 8D 48 FF           lea         ecx,[eax-1]
+  6F7EC5AE: 23 C8              and         ecx,eax
+  6F7EC5B0: 74 09              je          6F7EC5BB
+  6F7EC5B2: 8B C1              mov         eax,ecx
+  6F7EC5B4: 8D 48 FF           lea         ecx,[eax-1]
+  6F7EC5B7: 23 C8              and         ecx,eax
+  6F7EC5B9: 75 F7              jne         6F7EC5B2
+  6F7EC5BB: B9 01 00 00 00     mov         ecx,1
+  6F7EC5C0: 3B C1              cmp         eax,ecx
+  6F7EC5C2: 0F 42 C1           cmovb       eax,ecx
+  6F7EC5C5: 5D                 pop         ebp
+  6F7EC5C6: C2 04 00           ret         4
+  6F7EC5C9: C7 41 0C 15 00 00  mov         dword ptr [ecx+0Ch],15h
+  6F7EC5D0: B8 15 00 00 00     mov         eax,15h
+  6F7EC5D5: 5D                 pop         ebp
+  6F7EC5D6: C2 04 00           ret         4
+  6F7EC5D9: CC                 int         3
+  6F7EC5DA: CC                 int         3
+  6F7EC5DB: CC                 int         3
+  6F7EC5DC: CC                 int         3
+  6F7EC5DD: CC                 int         3
+  6F7EC5DE: CC                 int         3
+  6F7EC5DF: CC                 int         3
+  6F7EC5E0: 55                 push        ebp
+
+=== 3. GlobalTable lookup/insert (0x7E2C30) @ 0x7E2C30 ===
+  6F7E2C30: 55                 push        ebp
+  6F7E2C31: 8B EC              mov         ebp,esp
+  6F7E2C33: 53                 push        ebx
+  6F7E2C34: 56                 push        esi
+  6F7E2C35: 8B F1              mov         esi,ecx
+  6F7E2C37: 57                 push        edi
+  6F7E2C38: 83 7E 24 FF        cmp         dword ptr [esi+24h],0FFFFFFFFh
+  6F7E2C3C: 75 05              jne         6F7E2C43
+  6F7E2C3E: E8 8D E7 FF FF     call        6F7E13D0
+  6F7E2C43: 8B 5D 08           mov         ebx,dword ptr [ebp+8]
+  6F7E2C46: 8B CE              mov         ecx,esi
+  6F7E2C48: 8B FB              mov         edi,ebx
+  6F7E2C4A: 23 7E 24           and         edi,dword ptr [esi+24h]
+  6F7E2C4D: 57                 push        edi
+  6F7E2C4E: E8 4D 1E 00 00     call        6F7E4AA0
+  6F7E2C53: 85 C0              test        eax,eax
+  6F7E2C55: 74 05              je          6F7E2C5C
+  6F7E2C57: 8B FB              mov         edi,ebx
+  6F7E2C59: 23 7E 24           and         edi,dword ptr [esi+24h]
+  6F7E2C5C: 8B 46 1C           mov         eax,dword ptr [esi+1Ch]
+  6F7E2C5F: 8D 0C 7F           lea         ecx,[edi+edi*2]
+  6F7E2C62: FF 75 10           push        dword ptr [ebp+10h]
+  6F7E2C65: 8B 16              mov         edx,dword ptr [esi]
+  6F7E2C67: FF 75 0C           push        dword ptr [ebp+0Ch]
+  6F7E2C6A: 8D 04 88           lea         eax,[eax+ecx*4]
+  6F7E2C6D: 8B CE              mov         ecx,esi
+  6F7E2C6F: 50                 push        eax
+  6F7E2C70: FF 52 04           call        dword ptr [edx+4]
+  6F7E2C73: 8B D8              mov         ebx,eax
+  6F7E2C75: 85 DB              test        ebx,ebx
+  6F7E2C77: 74 07              je          6F7E2C80
+  6F7E2C79: 8B 56 04           mov         edx,dword ptr [esi+4]
+  6F7E2C7C: 03 D3              add         edx,ebx
+  6F7E2C7E: EB 03              jmp         6F7E2C83
+  6F7E2C80: 8D 56 08           lea         edx,[esi+8]
+  6F7E2C83: 8B 3A              mov         edi,dword ptr [edx]
+  6F7E2C85: 85 FF              test        edi,edi
+  6F7E2C87: 74 29              je          6F7E2CB2
+  6F7E2C89: 8B 4A 04           mov         ecx,dword ptr [edx+4]
+  6F7E2C8C: 85 C9              test        ecx,ecx
+  6F7E2C8E: 7F 04              jg          6F7E2C94
+  6F7E2C90: F7 D1              not         ecx
+  6F7E2C92: EB 07              jmp         6F7E2C9B
+  6F7E2C94: 8B C2              mov         eax,edx
+  6F7E2C96: 2B 47 04           sub         eax,dword ptr [edi+4]
+  6F7E2C99: 03 C8              add         ecx,eax
+  6F7E2C9B: 89 39              mov         dword ptr [ecx],edi
+  6F7E2C9D: 8B 0A              mov         ecx,dword ptr [edx]
+  6F7E2C9F: 8B 42 04           mov         eax,dword ptr [edx+4]
+  6F7E2CA2: 89 41 04           mov         dword ptr [ecx+4],eax
+  6F7E2CA5: C7 02 00 00 00 00  mov         dword ptr [edx],0
+  6F7E2CAB: C7 42 04 00 00 00  mov         dword ptr [edx+4],0
+  6F7E2CB2: 8B 4E 08           mov         ecx,dword ptr [esi+8]
+  6F7E2CB5: 89 0A              mov         dword ptr [edx],ecx
+  6F7E2CB7: 5F                 pop         edi
+  6F7E2CB8: 8B 41 04           mov         eax,dword ptr [ecx+4]
+  6F7E2CBB: 89 42 04           mov         dword ptr [edx+4],eax
+  6F7E2CBE: 8B C3              mov         eax,ebx
+  6F7E2CC0: 89
+
+=== 4. 0x7E2DB0 & 0x7EC810 @ 0x7EC810 ===
+  6F7EC810: 55                 push        ebp
+  6F7EC811: 8B EC              mov         ebp,esp
+  6F7EC813: 8B 81 58 28 00 00  mov         eax,dword ptr [ecx+00002858h]
+  6F7EC819: 8B 08              mov         ecx,dword ptr [eax]
+  6F7EC81B: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  6F7EC81E: 8D 04 81           lea         eax,[ecx+eax*4]
+  6F7EC821: 5D                 pop         ebp
+  6F7EC822: C2 04 00           ret         4
+  6F7EC825: CC                 int         3
+  6F7EC826: CC                 int         3
+  6F7EC827: CC                 int         3
+  6F7EC828: CC                 int         3
+  6F7EC829: CC                 int         3
+  6F7EC82A: CC                 int         3
+  6F7EC82B: CC                 int         3
+  6F7EC82C: CC                 int         3
+  6F7EC82D: CC                 int         3
+  6F7EC82E: CC                 int         3
+  6F7EC82F: CC                 int         3
+  6F7EC830: 55                 push        ebp
+  6F7EC831: 8B EC              mov         ebp,esp
+  6F7EC833: 8B 41 24           mov         eax,dword ptr [ecx+24h]
+  6F7EC836: 23 45 08           and         eax,dword ptr [ebp+8]
+  6F7EC839: 5D                 pop         ebp
+  6F7EC83A: C2 04 00           ret         4
+  6F7EC83D: CC                 int         3
+  6F7EC83E: CC                 int         3
+  6F7EC83F: CC                 int         3
+  6F7EC840: 55                 push        ebp
+  6F7EC841: 8B EC              mov         ebp,esp
+  6F7EC843: 8B 41 24           mov         eax,dword ptr [ecx+24h]
+  6F7EC846: 23 45 08           and         eax,dword ptr [ebp+8]
+  6F7EC849: 5D                 pop         ebp
+  6F7EC84A: C2 04 00           ret         4
+  6F7EC84D: CC                 int         3
+  6F7EC84E: CC                 int         3
+  6F7EC84F: CC                 int         3
+  6F7EC850: 55                 push        ebp
+  6F7EC851: 8B EC              mov         ebp,esp
+  6F7EC853: 8B 41 24           mov         eax,dword ptr [ecx+24h]
+  6F7EC856: 23 45 08           and         eax,dword ptr [ebp+8]
+  6F7EC859: 5D                 pop         ebp
+  6F7EC85A: C2 04 00           ret         4
+  6F7EC85D: CC                 int         3
+  6F7EC85E: CC                 int         3
+  6F7EC85F: CC                 int         3
+  6F7EC860: 55                 push        ebp
+  6F7EC861: 8B EC              mov         ebp,esp
+  6F7EC863: 8B 41 24           mov         eax,dword ptr [ecx+24h]
+  6F7EC866: 23 45 08           and         eax,dword ptr [ebp+8]
+  6F7EC869: 5D                 pop         ebp
+  6F7EC86A: C2 04 00           ret         4
+  6F7EC86D: CC                 int         3
+  6F7EC86E: CC                 int         3
+  6F7EC86F: CC                 int         3
+  6F7EC870: 55                 push        ebp
+  6F7EC871: 8B EC              mov         ebp,esp
+  6F7EC873: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  6F7EC876: 8B 00              mov         eax,dword ptr [eax]
+  6F7EC878: 89 01              mov         dword ptr [ecx],eax
+  6F7EC87A: 8D 41 04           lea         eax,[ecx+4]
+  6F7EC87D: 89 00              mov         dword ptr [eax],eax
+  6F7EC87F: F7 D0              not         eax
+
+=== 5. 读图阶段崩溃点 0x2BD960..0x2BD9B0 @ 0x2BD960 ===
+  6F2BD960: C7 05 78 53 BE 6F  mov         dword ptr ds:[6FBE5378h],0
+  6F2BD96A: C7 05 7C 53 BE 6F  mov         dword ptr ds:[6FBE537Ch],0
+  6F2BD974: E8 A7 2F 00 00     call        6F2C0920
+  6F2BD979: 8B C8              mov         ecx,eax
+  6F2BD97B: E8 A0 C6 E0 FF     call        6F0CA020
+  6F2BD980: 8B C8              mov         ecx,eax
+  6F2BD982: 8B 10              mov         edx,dword ptr [eax]
+  6F2BD984: FF 92 D0 00 00 00  call        dword ptr [edx+000000D0h]
+  6F2BD98A: 89 1D 80 53 BE 6F  mov         dword ptr ds:[6FBE5380h],ebx
+  6F2BD990: E8 CB 1B 05 00     call        6F30F560
+  6F2BD995: 50                 push        eax
+  6F2BD996: 53                 push        ebx
+  6F2BD997: BA 01 00 00 00     mov         edx,1
+  6F2BD99C: 89 83 F4 01 00 00  mov         dword ptr [ebx+000001F4h],eax
+  6F2BD9A2: B9 7E 00 09 40     mov         ecx,4009007Eh
+  6F2BD9A7: E8 F4 13 05 00     call        6F30EDA0
+  6F2BD9AC: 5F                 pop         edi
+  6F2BD9AD: 5E                 pop         esi
+  6F2BD9AE: B8
+  6F2BD9AF: 01 00              add         dword ptr [eax],eax
+
+=== 6. JASS_MAX_ARRAY_SIZE (0x2000) in VM region: ['0x7d37db', '0x7ef060', '0x7f13da', '0x7ff181'] ===
+
+=== JassArray around 0x7D37DB @ 0x7D37BB ===
+  6F7D37BB: 07                 pop         es
+  6F7D37BC: C7 46 14 00 00 00  mov         dword ptr [esi+14h],0
+  6F7D37C3: 3B D8              cmp         ebx,eax
+  6F7D37C5: 7E 03              jle         6F7D37CA
+  6F7D37C7: 89 46 10           mov         dword ptr [esi+10h],eax
+  6F7D37CA: 3B F9              cmp         edi,ecx
+  6F7D37CC: 7E 03              jle         6F7D37D1
+  6F7D37CE: 89 4E 18           mov         dword ptr [esi+18h],ecx
+  6F7D37D1: 8B 46 10           mov         eax,dword ptr [esi+10h]
+  6F7D37D4: 33 C9              xor         ecx,ecx
+  6F7D37D6: C7 86 C8 04 00 00  mov         dword ptr [esi+000004C8h],20h
+  6F7D37E0: C7 86 CC 04 00 00  mov         dword ptr [esi+000004CCh],10h
+  6F7D37EA: 83 F8 18           cmp         eax,18h
+  6F7D37ED: 7F 06              jg          6F7D37F5
+  6F7D37EF: 83 7E 18 18        cmp         dword ptr [esi+18h],18h
+  6F7D37F3: 7E 05              jle         6F7D37FA
+  6F7D37F5: B9 01 00 00 00     mov         ecx,1
+  6F7D37FA: 83 F8 78           cmp         eax,78h
+  6F7D37FD: 7F 06              jg          6F7D3805
+  6F7D37FF: 83 7E 18 78        cmp         dword ptr [esi+18h],78h
+  6F7D3803: 7E 01              jle         6F7D3806
+  6F7D3805: 41                 inc         ecx
+  6F7D3806: 8B 5E 18           mov         ebx,dword ptr [esi+18h]
+  6F7D3809: B8 20 00 00 00     mov         eax,20h
+  6F7D380E: D3 E0              shl         eax,cl
+  6F7D3810: 89 86 C8 04 00 00  mov         dword ptr [esi+000004C8h],eax
+  6F7D3816: B8 10 00 00 00     mov         eax,10h
+  6F7D381B: D3 E0              shl         eax,cl
+  6F7D381D: 8B 4E 14           mov         ecx,dword ptr [esi+14h]
+  6F7D3820: 89 86 CC 04 00 00  mov         dword ptr [esi+000004CCh],eax
+  6F7D3826: 8B C3              mov         eax,ebx
+  6F7D3828: 2B C1              sub         eax,ecx
+  6F7D382A: 89
+  6F7D382B: 9D                 popfd
+
+=== JassArray around 0x7EF060 @ 0x7EF040 ===
+  6F7EF040: 89 47 18           mov         dword ptr [edi+18h],eax
+  6F7EF043: 8D 45 F4           lea         eax,[ebp-0Ch]
+  6F7EF046: 50                 push        eax
+  6F7EF047: E8 A4 E4 85 FF     call        6F04D4F0
+  6F7EF04C: 8D 45 08           lea         eax,[ebp+8]
+  6F7EF04F: 8B CE              mov         ecx,esi
+  6F7EF051: 50                 push        eax
+  6F7EF052: E8 99 E4 85 FF     call        6F04D4F0
+  6F7EF057: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  6F7EF05A: B9 FF 1F 00 00     mov         ecx,1FFFh
+  6F7EF05F: 3D 00 20 00 00     cmp         eax,2000h
+  6F7EF064: 0F 43 C1           cmovae      eax,ecx
+  6F7EF067: 83 7D F4 00        cmp         dword ptr [ebp-0Ch],0
+  6F7EF06B: 89 45 08           mov         dword ptr [ebp+8],eax
+  6F7EF06E: 74 4D              je          6F7EF0BD
+  6F7EF070: 6A 01              push        1
+  6F7EF072: 50                 push        eax
+  6F7EF073: 8B CF              mov         ecx,edi
+  6F7EF075: E8 F6 23 00 00     call        6F7F1470
+  6F7EF07A: 83 7D 08 00        cmp         dword ptr [ebp+8],0
+  6F7EF07E: 74 2A              je          6F7EF0AA
+  6F7EF080: 8B 47 20           mov         eax,dword ptr [edi+20h]
+  6F7EF083: 85 C0              test        eax,eax
+  6F7EF085: 74 12              je          6F7EF099
+  6F7EF087: 8D 50 04           lea         edx,[eax+4]
+  6F7EF08A: 8B CE              mov         ecx,esi
+  6F7EF08C: E8 3F 2A A7 FF     call        6F261AD0
+  6F7EF091: 5F                 pop         edi
+  6F7EF092: 5E                 pop         esi
+  6F7EF093: 8B E5              mov         esp,ebp
+  6F7EF095: 5D                 pop         ebp
+  6F7EF096: C2 08 00           ret         8
+  6F7EF099: 33 D2              xor         edx,edx
+  6F7EF09B: 8B CE              mov         ecx,esi
+  6F7EF09D: E8 2E 2A A7 FF     call        6F261AD0
+  6F7EF0A2: 5F                 pop         edi
+  6F7EF0A3: 5E                 pop         esi
+  6F7EF0A4: 8B E5              mov         esp,ebp
+  6F7EF0A6: 5D                 pop         ebp
+  6F7EF0A7: C2 08 00           ret         8
+  6F7EF0AA: 8D 45 08           lea         eax,[ebp+8]
+  6F7EF0AD: 8B CE              mov         ecx,esi
+  6F7EF0AF: 50                 push        eax
+  6F7EF0B0: E8
+
+=== JassArray around 0x7F13DA @ 0x7F13BA ===
+  6F7F13BA: 5F                 pop         edi
+  6F7F13BB: 04 5F              add         al,5Fh
+  6F7F13BD: 5E                 pop         esi
+  6F7F13BE: 5B                 pop         ebx
+  6F7F13BF: 8B E5              mov         esp,ebp
+  6F7F13C1: 5D                 pop         ebp
+  6F7F13C2: C2 04 00           ret         4
+  6F7F13C5: CC                 int         3
+  6F7F13C6: CC                 int         3
+  6F7F13C7: CC                 int         3
+  6F7F13C8: CC                 int         3
+  6F7F13C9: CC                 int         3
+  6F7F13CA: CC                 int         3
+  6F7F13CB: CC                 int         3
+  6F7F13CC: CC                 int         3
+  6F7F13CD: CC                 int         3
+  6F7F13CE: CC                 int         3
+  6F7F13CF: CC                 int         3
+  6F7F13D0: 55                 push        ebp
+  6F7F13D1: 8B EC              mov         ebp,esp
+  6F7F13D3: 83 EC 08           sub         esp,8
+  6F7F13D6: 53                 push        ebx
+  6F7F13D7: 8B C1              mov         eax,ecx
+  6F7F13D9: B9 00 20 00 00     mov         ecx,2000h
+  6F7F13DE: 56                 push        esi
+  6F7F13DF: 8B 75 08           mov         esi,dword ptr [ebp+8]
+  6F7F13E2: 8D 58 04           lea         ebx,[eax+4]
+  6F7F13E5: 3B F1              cmp         esi,ecx
+  6F7F13E7: 89 45 F8           mov         dword ptr [ebp-8],eax
+  6F7F13EA: 57                 push        edi
+  6F7F13EB: 0F 47 F1           cmova       esi,ecx
+  6F7F13EE: 8B 48 08           mov         ecx,dword ptr [eax+8]
+  6F7F13F1: 3B F1              cmp         esi,ecx
+  6F7F13F3: 89 4D FC           mov         dword ptr [ebp-4],ecx
+  6F7F13F6: 8B F9              mov         edi,ecx
+  6F7F13F8: 0F 47 FE           cmova       edi,esi
+  6F7F13FB: 3B 7B 04           cmp         edi,dword ptr [ebx+4]
+  6F7F13FE: 76 3B              jbe         6F7F143B
+  6F7F1400: 3B 3B              cmp         edi,dword ptr [ebx]
+  6F7F1402: 76 37              jbe         6F7F143B
+  6F7F1404: 8B 43 0C           mov         eax,dword ptr [ebx+0Ch]
+  6F7F1407: 89 45 08           mov         dword ptr [ebp+8],eax
+  6F7F140A: 85 C0              test        eax,eax
+  6F7F140C: 75 0B              jne         6F7F1419
+  6F7F140E: 57                 push        edi
+  6F7F140F: 8B CB              mov         ecx,ebx
+  6F7F1411: E8 EA 37 8F FF     call        6F0E4C00
+  6F7F1416: 89 45 08           mov         dword ptr [ebp+8],eax
+  6F7F1419: 33 D2              xor         edx,edx
+  6F7F141B: 8B C7              mov         eax,edi
+  6F7F141D: F7 75 08           div         eax,dword ptr [ebp+8]
+  6F7F1420: 8B CF              mov         ecx,edi
+  6F7F1422: 85 D2              test        edx,edx
+  6F7F1424: 74 07              je          6F7F142D
+  6F7F1426: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+  6F7F1429: 2B CA              sub         ecx,edx

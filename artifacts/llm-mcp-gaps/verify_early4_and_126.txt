@@ -1,0 +1,108 @@
+=== 1. 核验 1.22~1.26 JASS VM vm->globalTable 偏移与 vmIndex_off ===
+  1.22.0.6328: LookupFn=0x39E610 vmIndex=?, JassVM_FindFunc=0x43BF50, vm_globalTable=None
+  1.23.0.6352: LookupFn=0x39FF60 vmIndex=?, JassVM_FindFunc=0x43DCE0, vm_globalTable=None
+  1.24.1.6374: LookupFn=0x3A0030 vmIndex=?, JassVM_FindFunc=0x44C0D0, vm_globalTable=None
+  1.24.4.6387: LookupFn=0x3A00F0 vmIndex=?, JassVM_FindFunc=0x44C130, vm_globalTable=None
+  1.25.1.6397: LookupFn=0x39F380 vmIndex=?, JassVM_FindFunc=0x44B3F0, vm_globalTable=None
+  1.26.0.6401: LookupFn=0x39F5B0 vmIndex=?, JassVM_FindFunc=0x44B620, vm_globalTable=None
+    [1.26 LookupJassFunc]: 6F39F5B0: 8B 54 24 04        mov         edx,dword ptr [esp+4] | 6F39F5B4: 8B 49 08           mov         ecx,dword ptr [ecx+8] | 6F39F5B7: E8 64 C0 0A 00     call        6F44B620 | 6F39F5BC: C2 04 00           ret         4 | 6F39F5BF: CC                 int         3 | 6F39F5C0: 8B 49 08           mov         ecx,dword ptr [ecx+8]
+
+=== 2. 早期 4 个版本 (1.0.17~1.21.0) G4 (g_jassEnv / JASS VM) 与 G1 核验 ===
+  1.0.17.5988: g_jassEnv=0x87125c, ExecuteFunc=0x2d2f40, Lookup=0x29b1c0, GetVM=None, Tls=None, tlsOff=None, globalTbl=None
+  1.0.20.6048: g_jassEnv=0x87229c, ExecuteFunc=0x2d2f40, Lookup=0x29b1c0, GetVM=None, Tls=None, tlsOff=None, globalTbl=None
+  1.20.4.6074: g_jassEnv=0x8722bc, ExecuteFunc=0x2d3060, Lookup=0x29b2e0, GetVM=None, Tls=None, tlsOff=None, globalTbl=None
+  1.21.0.6263: g_jassEnv=0x873334, ExecuteFunc=0x2d6630, Lookup=0x29e5c0, GetVM=None, Tls=None, tlsOff=None, globalTbl=None
+    --- [1.21.0 UnitResetCooldown -> CUnit::ResetCooldown 0x48B330] ---
+      6F48B331: 8B EC              mov         ebp,esp
+      6F48B339: 8B F1              mov         esi,ecx
+      6F48B340: 89 75 F4           mov         dword ptr [ebp-0Ch],esi
+      6F48B343: C7 45 FC 00 00 00  mov         dword ptr [ebp-4],0
+      6F48B34A: E8 71 35 CD FF     call        6F15E8C0
+      6F48B34F: 8B 86 DC 01 00 00  mov         eax,dword ptr [esi+000001DCh]
+      6F48B355: 8B BE D8 01 00 00  mov         edi,dword ptr [esi+000001D8h]
+      6F48B35B: 8D 8E D8 01 00 00  lea         ecx,[esi+000001D8h]
+      6F48B36C: E8 2F 82 C0 FF     call        6F0935A0
+      6F48B371: 8B D8              mov         ebx,eax
+      6F48B37B: 8B 4D FC           mov         ecx,dword ptr [ebp-4]
+      6F48B37E: 8B FF              mov         edi,edi
+      6F48B380: 8B 53 28           mov         edx,dword ptr [ebx+28h]
+      6F48B386: 8B F3              mov         esi,ebx
+      6F48B393: 8B C8              mov         ecx,eax
+      6F48B395: E8 06 82 C0 FF     call        6F0935A0
+      6F48B39A: 8B 4D FC           mov         ecx,dword ptr [ebp-4]
+      6F48B39F: 89 45 F8           mov         dword ptr [ebp-8],eax
+      6F48B3A2: 8B D8              mov         ebx,eax
+      6F48B3A6: E8 95 68 FE FF     call        6F471C40
+      6F48B3AB: 8B F8              mov         edi,eax
+      6F48B3AD: 8B 06              mov         eax,dword ptr [esi]
+      6F48B3AF: 8B CE              mov         ecx,esi
+      6F48B3B1: FF 50 1C           call        dword ptr [eax+1Ch]
+      6F48B3B4: 8B D7              mov         edx,edi
+      6F48B3B6: 8B C8              mov         ecx,eax
+      6F48B3B8: E8 D3 61 BF FF     call        6F081590
+    --- [1.21.0 UnitCountBuffsEx @ 0x2CBDF0] ---
+      6F2CBDF0: 55                 push        ebp
+      6F2CBDF1: 8B EC              mov         ebp,esp
+      6F2CBDF3: 83 EC 08           sub         esp,8
+      6F2CBDF6: 8B 0D 34 33 87 6F  mov         ecx,dword ptr ds:[6F873334h]
+      6F2CBDFC: 53                 push        ebx
+      6F2CBDFD: 57                 push        edi
+      6F2CBDFE: 33 DB              xor         ebx,ebx
+      6F2CBE00: 33 FF              xor         edi,edi
+      6F2CBE02: 89 5D FC           mov         dword ptr [ebp-4],ebx
+      6F2CBE05: E8 B6 27 FD FF     call        6F29E5C0
+      6F2CBE0A: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+      6F2CBE0D: 3B CF              cmp         ecx,edi
+      6F2CBE0F: 0F 84 A4 00 00 00  je          6F2CBEB9
+      6F2CBE15: 56                 push        esi
+      6F2CBE16: 51                 push        ecx
+      6F2CBE17: 8B C8              mov         ecx,eax
+      6F2CBE19: E8 B2 F8 05 00     call        6F32B6D0
+      6F2CBE1E: 50                 push        eax
+      6F2CBE1F: 8D 4D F8           lea         ecx,[ebp-8]
+      6F2CBE22: 89 7D F8           mov         dword ptr [ebp-8],edi
+      6F2CBE25: E8 B6 A2 E2 FF     call        6F0F60E0
+      6F2CBE2A: 8B 75 F8           mov         esi,dword ptr [ebp-8]
+      6F2CBE2D: 3B F7              cmp         esi,edi
+      6F2CBE2F: 74 2E              je          6F2CBE5F
+      6F2CBE31: 8B 56 10           mov         edx,dword ptr [esi+10h]
+      6F2CBE34: 8B 4E 0C           mov         ecx,dword ptr [esi+0Ch]
+      6F2CBE37: E8 D4 B1 DB FF     call        6F087010
+      6F2CBE3C: 3B C7              cmp         eax,edi
+      6F2CBE3E: 74 1F              je          6F2CBE5F
+      6F2CBE40: 8B 50 0C           mov         edx,dword ptr [eax+0Ch]
+      6F2CBE43: 33 C9              xor         ecx,ecx
+      6F2CBE45: 81
+    --- [1.21.0 IsUnitDetected @ 0x2CA230] ---
+      6F2CA230: 55                 push        ebp
+      6F2CA231: 8B EC              mov         ebp,esp
+      6F2CA233: 83 EC 0C           sub         esp,0Ch
+      6F2CA236: 8B 0D 34 33 87 6F  mov         ecx,dword ptr ds:[6F873334h]
+      6F2CA23C: 53                 push        ebx
+      6F2CA23D: 56                 push        esi
+      6F2CA23E: 33 DB              xor         ebx,ebx
+      6F2CA240: 57                 push        edi
+      6F2CA241: 89 5D FC           mov         dword ptr [ebp-4],ebx
+      6F2CA244: E8 77 43 FD FF     call        6F29E5C0
+      6F2CA249: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+      6F2CA24C: 85 C9              test        ecx,ecx
+      6F2CA24E: 0F 84 8D 00 00 00  je          6F2CA2E1
+      6F2CA254: 51                 push        ecx
+      6F2CA255: 8B C8              mov         ecx,eax
+      6F2CA257: E8 74 14 06 00     call        6F32B6D0
+      6F2CA25C: 53                 push        ebx
+      6F2CA25D: 8D 4D F8           lea         ecx,[ebp-8]
+      6F2CA260: 8B F0              mov         esi,eax
+      6F2CA262: E8 E9 53 E3 FF     call        6F0FF650
+      6F2CA267: 56                 push        esi
+      6F2CA268: 8D 4D F8           lea         ecx,[ebp-8]
+      6F2CA26B: E8 70 BE E2 FF     call        6F0F60E0
+      6F2CA270: 8B 75 F8           mov         esi,dword ptr [ebp-8]
+      6F2CA273: 85 F6              test        esi,esi
+      6F2CA275: 74 17              je          6F2CA28E
+      6F2CA277: 8B CE              mov         ecx,esi
+      6F2CA279: E8 22 36 E2 FF     call        6F0ED8A0
+      6F2CA27E: 85 C0              test        eax,eax
+      6F2CA280: 74 0C              je          6F2CA28E
+      6F2CA282: 8B 48 20           mov         ecx,dword ptr [eax+20h]
+      6F2CA285: 85

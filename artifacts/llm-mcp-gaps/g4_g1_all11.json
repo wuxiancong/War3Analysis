@@ -1,0 +1,183 @@
+{
+  "1.0.17.5988": {
+    "g4": {
+      "ExecuteFunc": "0x811018"
+    },
+    "g1": {
+      "early_UnitResetCooldown_calls": [],
+      "early_UnitCountBuffsEx_calls": [],
+      "early_IsUnitDetected_calls": []
+    }
+  },
+  "1.0.20.6048": {
+    "g4": {
+      "ExecuteFunc": "0x812058"
+    },
+    "g1": {
+      "early_UnitResetCooldown_calls": [],
+      "early_UnitCountBuffsEx_calls": [],
+      "early_IsUnitDetected_calls": []
+    }
+  },
+  "1.20.4.6074": {
+    "g4": {
+      "ExecuteFunc": "0x812078"
+    },
+    "g1": {
+      "early_UnitResetCooldown_calls": [],
+      "early_UnitCountBuffsEx_calls": [],
+      "early_IsUnitDetected_calls": []
+    }
+  },
+  "1.21.0.6263": {
+    "g4": {
+      "ExecuteFunc": "0x813178"
+    },
+    "g1": {
+      "early_UnitResetCooldown_calls": [],
+      "early_UnitCountBuffsEx_calls": [],
+      "early_IsUnitDetected_calls": []
+    }
+  },
+  "1.22.0.6328": {
+    "g4": {
+      "ExecuteFunc": "0x3CB970",
+      "g_jassEnv": "0xAA2FFC",
+      "LookupJassFunc": "0x39E610",
+      "JassVM_FindFunc": "0x43BF50",
+      "GetVM": "0x43A640",
+      "GetTlsSlot": "0x4B3830",
+      "tls_vmArray_off": "+0x90",
+      "vm_globalTable_off": "+0x289C"
+    },
+    "g1": {
+      "CAgentTimer_vt": "0x867394",
+      "CAgentTimer_GetTimeout": "0x467A20",
+      "timer_node_off": "+0x0C",
+      "timer_total_off": "+0x08",
+      "CAgentTimer_GetRemaining": "0x467D60",
+      "timer_clock_off": "+0x40"
+    }
+  },
+  "1.23.0.6352": {
+    "g4": {
+      "ExecuteFunc": "0x3CD690",
+      "g_jassEnv": "0xABBE4C",
+      "LookupJassFunc": "0x39FF60",
+      "JassVM_FindFunc": "0x43DCE0",
+      "GetVM": "0x43C3D0",
+      "GetTlsSlot": "0x4B55C0",
+      "tls_vmArray_off": "+0x90",
+      "vm_globalTable_off": "+0x289C"
+    },
+    "g1": {
+      "CAgentTimer_vt": "0x87B4D4",
+      "CAgentTimer_GetTimeout": "0x4697B0",
+      "timer_node_off": "+0x0C",
+      "timer_total_off": "+0x08",
+      "CAgentTimer_GetRemaining": "0x469AF0",
+      "timer_clock_off": "+0x40"
+    }
+  },
+  "1.24.1.6374": {
+    "g4": {
+      "ExecuteFunc": "0x3D49B0",
+      "g_jassEnv": "0xACD44C",
+      "LookupJassFunc": "0x3A0030",
+      "JassVM_FindFunc": "0x44C0D0",
+      "GetVM": "0x44A7C0",
+      "GetTlsSlot": "0x4C3F50",
+      "tls_vmArray_off": "+0x90",
+      "vm_globalTable_off": "+0x28A0"
+    },
+    "g1": {
+      "CAgentTimer_vt": "0x88A60C",
+      "CAgentTimer_GetTimeout": "0x478140",
+      "timer_node_off": "+0x0C",
+      "timer_total_off": "+0x08",
+      "CAgentTimer_GetRemaining": "0x478480",
+      "timer_clock_off": "+0x40"
+    }
+  },
+  "1.24.4.6387": {
+    "g4": {
+      "ExecuteFunc": "0x3D4A70",
+      "g_jassEnv": "0xACD44C",
+      "LookupJassFunc": "0x3A00F0",
+      "JassVM_FindFunc": "0x44C130",
+      "GetVM": "0x44A820",
+      "GetTlsSlot": "0x4C3FD0",
+      "tls_vmArray_off": "+0x90",
+      "vm_globalTable_off": "+0x28A0"
+    },
+    "g1": {
+      "CAgentTimer_vt": "0x88A60C",
+      "CAgentTimer_GetTimeout": "0x4781C0",
+      "timer_node_off": "+0x0C",
+      "timer_total_off": "+0x08",
+      "CAgentTimer_GetRemaining": "0x478500",
+      "timer_clock_off": "+0x40"
+    }
+  },
+  "1.25.1.6397": {
+    "g4": {
+      "ExecuteFunc": "0x3D3D00",
+      "g_jassEnv": "0xAB65F4",
+      "LookupJassFunc": "0x39F380",
+      "JassVM_FindFunc": "0x44B3F0",
+      "GetVM": "0x449AE0",
+      "GetTlsSlot": "0x4C32A0",
+      "tls_vmArray_off": "+0x90",
+      "vm_globalTable_off": "+0x28A0"
+    },
+    "g1": {
+      "CAgentTimer_vt": "0x8784AC",
+      "CAgentTimer_GetTimeout": "0x477480",
+      "timer_node_off": "+0x0C",
+      "timer_total_off": "+0x08",
+      "CAgentTimer_GetRemaining": "0x4777C0",
+      "timer_clock_off": "+0x40"
+    }
+  },
+  "1.26.0.6401": {
+    "g4": {
+      "ExecuteFunc": "0x3D3F30",
+      "g_jassEnv": "0xAB65F4",
+      "LookupJassFunc": "0x39F5B0",
+      "JassVM_FindFunc": "0x44B620",
+      "GetVM": "0x449D10",
+      "GetTlsSlot": "0x4C34D0",
+      "tls_vmArray_off": "+0x90",
+      "vm_globalTable_off": "+0x28A0"
+    },
+    "g1": {
+      "CAgentTimer_vt": "0x8784AC",
+      "CAgentTimer_GetTimeout": "0x4776B0",
+      "timer_node_off": "+0x0C",
+      "timer_total_off": "+0x08",
+      "CAgentTimer_GetRemaining": "0x4779F0",
+      "timer_clock_off": "+0x40"
+    }
+  },
+  "1.27.0.52240": {
+    "g4": {
+      "ExecuteFunc": "0x1E0650",
+      "g_jassEnv": "0xBE4238",
+      "LookupJassFunc": "0x1BF830",
+      "vmIndex_off": "+0x0C",
+      "JassVM_FindFunc": "0x7E2D90",
+      "GetVM": "0x7E1100",
+      "GetTlsSlot": "0x4EFB0",
+      "tls_vmArray_off": "+0x90",
+      "vm_globalTable_off": "+0x285C"
+    },
+    "g1": {
+      "CAgentTimer_vt": "0x95254C",
+      "CAgentTimer_GetTimeout": "0x433C0",
+      "timer_node_off": "+0x0C",
+      "timer_total_off": "+0x08",
+      "CAgentTimer_GetRemaining": "0x438C0",
+      "timer_clock_off": "+0x40"
+    }
+  }
+}

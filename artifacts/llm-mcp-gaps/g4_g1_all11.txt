@@ -1,0 +1,29 @@
+=== G4: JASS VM 全局变量指针链 (全 11 版本) ===
+Version       | ExecuteFunc | g_jassEnv  | LookupFn   | vmIdx | GetVM      | TlsSlot    | tlsOff | globalTbl
+---------------------------------------------------------------------------------------------------------
+1.0.17.5988   | 0x811018    | None       | None       | None  | None       | None       | None   | None     
+1.0.20.6048   | 0x812058    | None       | None       | None  | None       | None       | None   | None     
+1.20.4.6074   | 0x812078    | None       | None       | None  | None       | None       | None   | None     
+1.21.0.6263   | 0x813178    | None       | None       | None  | None       | None       | None   | None     
+1.22.0.6328   | 0x3CB970    | 0xAA2FFC   | 0x39E610   | None  | 0x43A640   | 0x4B3830   | +0x90  | +0x289C  
+1.23.0.6352   | 0x3CD690    | 0xABBE4C   | 0x39FF60   | None  | 0x43C3D0   | 0x4B55C0   | +0x90  | +0x289C  
+1.24.1.6374   | 0x3D49B0    | 0xACD44C   | 0x3A0030   | None  | 0x44A7C0   | 0x4C3F50   | +0x90  | +0x28A0  
+1.24.4.6387   | 0x3D4A70    | 0xACD44C   | 0x3A00F0   | None  | 0x44A820   | 0x4C3FD0   | +0x90  | +0x28A0  
+1.25.1.6397   | 0x3D3D00    | 0xAB65F4   | 0x39F380   | None  | 0x449AE0   | 0x4C32A0   | +0x90  | +0x28A0  
+1.26.0.6401   | 0x3D3F30    | 0xAB65F4   | 0x39F5B0   | None  | 0x449D10   | 0x4C34D0   | +0x90  | +0x28A0  
+1.27.0.52240  | 0x1E0650    | 0xBE4238   | 0x1BF830   | +0x0C | 0x7E1100   | 0x4EFB0    | +0x90  | +0x285C  
+
+=== G1: CAgentTimer 虚表与冷却函数 (全 11 版本) ===
+Version       | CAgentTimer_vt | GetTimeout(+10) | GetRem(+18)  | node  | total | clock | early_extra
+-------------------------------------------------------------------------------------------------------------------
+1.0.17.5988   | None           | None            | None         | None  | None  | None  | {'early_UnitResetCooldown_calls': [], 'early_UnitCountBuffsEx_calls': [], 'early_IsUnitDetected_calls': []}
+1.0.20.6048   | None           | None            | None         | None  | None  | None  | {'early_UnitResetCooldown_calls': [], 'early_UnitCountBuffsEx_calls': [], 'early_IsUnitDetected_calls': []}
+1.20.4.6074   | None           | None            | None         | None  | None  | None  | {'early_UnitResetCooldown_calls': [], 'early_UnitCountBuffsEx_calls': [], 'early_IsUnitDetected_calls': []}
+1.21.0.6263   | None           | None            | None         | None  | None  | None  | {'early_UnitResetCooldown_calls': [], 'early_UnitCountBuffsEx_calls': [], 'early_IsUnitDetected_calls': []}
+1.22.0.6328   | 0x867394       | 0x467A20        | 0x467D60     | +0x0C | +0x08 | +0x40 | 
+1.23.0.6352   | 0x87B4D4       | 0x4697B0        | 0x469AF0     | +0x0C | +0x08 | +0x40 | 
+1.24.1.6374   | 0x88A60C       | 0x478140        | 0x478480     | +0x0C | +0x08 | +0x40 | 
+1.24.4.6387   | 0x88A60C       | 0x4781C0        | 0x478500     | +0x0C | +0x08 | +0x40 | 
+1.25.1.6397   | 0x8784AC       | 0x477480        | 0x4777C0     | +0x0C | +0x08 | +0x40 | 
+1.26.0.6401   | 0x8784AC       | 0x4776B0        | 0x4779F0     | +0x0C | +0x08 | +0x40 | 
+1.27.0.52240  | 0x95254C       | 0x433C0         | 0x438C0      | +0x0C | +0x08 | +0x40 | 

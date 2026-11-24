@@ -1,0 +1,56 @@
+=== 共分析 7 份 SF 实测 CSV ===
+
+[sf_mid_20261124-005331_lh35of51_dn14of39_pts8_rate54.csv] est_game_speed=0.68x | n_flight=37
+  飞行误差 (游戏秒口径): 旧(center/1200) median=-0.107s | 新((center-100)/1200) median=-0.023s
+  miss 分布: {'dn:cd': 1, 'dn:early': 7, 'dn:far': 4, 'dn:idle': 2, 'dn:late': 4, 'dn:shot?': 1, 'dn:window0': 6, 'lh:early': 7, 'lh:far': 2, 'lh:late': 1, 'lh:window0': 6}
+
+[sf_mid_20261124-010824_lh4of8_dn3of8_pts-2_rate44.csv] est_game_speed=0.91x | n_flight=7
+  飞行误差 (游戏秒口径): 旧(center/1200) median=-0.138s | 新((center-100)/1200) median=-0.055s
+  miss 分布: {'dn:early': 1, 'dn:late': 1, 'dn:window0': 3, 'lh:early': 1, 'lh:late': 2, 'lh:window0': 1}
+
+[sf_mid_20261124-011354_lh10of19_dn7of19_pts-4_rate45.csv] est_game_speed=0.91x | n_flight=17
+  飞行误差 (游戏秒口径): 旧(center/1200) median=-0.114s | 新((center-100)/1200) median=-0.031s
+  miss 分布: {'dn:cd': 1, 'dn:early': 5, 'dn:far': 2, 'dn:late': 1, 'dn:window0': 3, 'lh:early': 4, 'lh:late': 3, 'lh:window0': 2}
+
+[sf_mid_20261124-012158_lh9of12_dn5of13_pts3_rate56.csv] est_game_speed=0.83x | n_flight=14
+  飞行误差 (游戏秒口径): 旧(center/1200) median=-0.097s | 新((center-100)/1200) median=-0.014s
+  miss 分布: {'dn:early': 2, 'dn:far': 1, 'dn:late': 1, 'dn:shot?': 1, 'dn:window0': 3, 'lh:early': 1, 'lh:late': 2}
+
+[sf_mid_20261124-013015_lh4of9_dn5of7_pts2_rate56.csv] est_game_speed=0.91x | n_flight=8
+  飞行误差 (游戏秒口径): 旧(center/1200) median=-0.109s | 新((center-100)/1200) median=-0.026s
+  miss 分布: {'dn:early': 1, 'dn:idle': 1, 'lh:early': 4, 'lh:late': 1}
+
+[sf_mid_20261124-013614_lh4of12_dn3of7_pts-5_rate38.csv] est_game_speed=0.57x | n_flight=6
+  飞行误差 (游戏秒口径): 旧(center/1200) median=-0.114s | 新((center-100)/1200) median=-0.030s
+  miss 分布: {'dn:early': 2, 'dn:far': 1, 'dn:window0': 1, 'lh:cd': 1, 'lh:early': 4, 'lh:late': 3}
+
+[sf_mid_20261124-014247_lh8of12_dn3of12_pts-2_rate69.csv] est_game_speed=1.00x | n_flight=10
+  飞行误差 (游戏秒口径): 旧(center/1200) median=-0.088s | 新((center-100)/1200) median=-0.005s
+  miss 分布: {'dn:early': 2, 'dn:far': 1, 'dn:late': 1, 'dn:shot?': 1, 'dn:window0': 4, 'lh:early': 2, 'lh:late': 1, 'lh:window0': 1}
+
+=== 全 7 局汇总 ===
+  总有效补刀飞行样本 n=99:
+    旧公式 (dist/1200, 游戏秒口径):       median=-0.105s, mean=-0.075s
+    新公式 ((dist-100)/1200, 游戏秒口径): median=-0.022s, mean=+0.008s
+
+=== 全 7 局 'early' 漏刀深度拆解 (共 42 刀) ===
+  早了多少游戏秒: median=0.13s, mean=0.29s, max=2.42s
+  落地剩余血/伤害比: median=1.09x, >=1.5x 占比=7/42 (17%)
+  落地前 1s 实际掉血 < 25 HP/s 的刀数: 11/42 (26%)
+  落地与死亡差 <= 0.15 游戏秒（擦边抢输）: 22/42
+  --- 典型样本 (前 15 刀) ---
+    sf_mid_20261124-005331_lh35o lh | 早=0.02gs (墙0.03s) | 落地血=10 (dmg=40, 0.25x) | 前1s实际DPS=81.4/s | 速=0.68x
+    sf_mid_20261124-005331_lh35o dn | 早=0.55gs (墙0.82s) | 落地血=10 (dmg=42, 0.24x) | 前1s实际DPS=77.3/s | 速=0.68x
+    sf_mid_20261124-005331_lh35o lh | 早=-0.03gs (墙-0.04s) | 落地血=13 (dmg=50, 0.26x) | 前1s实际DPS=135.6/s | 速=0.68x
+    sf_mid_20261124-005331_lh35o lh | 早=0.10gs (墙0.15s) | 落地血=90 (dmg=53, 1.71x) | 前1s实际DPS=-0.4/s | 速=0.68x
+    sf_mid_20261124-005331_lh35o dn | 早=0.03gs (墙0.05s) | 落地血=51 (dmg=53, 0.96x) | 前1s实际DPS=134.0/s | 速=0.68x
+    sf_mid_20261124-005331_lh35o dn | 早=0.18gs (墙0.27s) | 落地血=135 (dmg=63, 2.15x) | 前1s实际DPS=-0.4/s | 速=0.68x
+    sf_mid_20261124-005331_lh35o dn | 早=0.06gs (墙0.09s) | 落地血=75 (dmg=63, 1.18x) | 前1s实际DPS=44.8/s | 速=0.68x
+    sf_mid_20261124-005331_lh35o lh | 早=0.24gs (墙0.35s) | 落地血=85 (dmg=72, 1.18x) | 前1s实际DPS=-1.4/s | 速=0.68x
+    sf_mid_20261124-005331_lh35o lh | 早=0.58gs (墙0.85s) | 落地血=185 (dmg=74, 2.50x) | 前1s实际DPS=134.1/s | 速=0.68x
+    sf_mid_20261124-005331_lh35o dn | 早=0.24gs (墙0.35s) | 落地血=107 (dmg=74, 1.44x) | 前1s实际DPS=21.3/s | 速=0.68x
+    sf_mid_20261124-005331_lh35o lh | 早=0.32gs (墙0.48s) | 落地血=107 (dmg=93, 1.15x) | 前1s实际DPS=-0.2/s | 速=0.68x
+    sf_mid_20261124-005331_lh35o dn | 早=0.20gs (墙0.29s) | 落地血=103 (dmg=96, 1.07x) | 前1s实际DPS=60.7/s | 速=0.68x
+    sf_mid_20261124-005331_lh35o dn | 早=0.64gs (墙0.94s) | 落地血=4 (dmg=96, 0.04x) | 前1s实际DPS=56.5/s | 速=0.68x
+    sf_mid_20261124-010824_lh4of dn | 早=0.25gs (墙0.27s) | 落地血=49 (dmg=42, 1.16x) | 前1s实际DPS=34.9/s | 速=0.91x
+    sf_mid_20261124-010824_lh4of lh | 早=0.04gs (墙0.04s) | 落地血=12 (dmg=42, 0.28x) | 前1s实际DPS=41.8/s | 速=0.91x

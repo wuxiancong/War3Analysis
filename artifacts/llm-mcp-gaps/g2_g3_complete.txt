@@ -1,0 +1,99 @@
+=== 1. 1.27 CAbilityChannel (ANcl) / CAbilityBlink (AEbl) / CAbilityTornado (ANto) GetOrderFlags (+0x30C) ===
+  FourCC 'ANcl' (0x414E636C) .text hits: ['0x4b8941', '0x4bbb01', '0x4ca6ad']
+    6F4B8940: B8 6C 63 4E 41     mov         eax,414E636Ch
+    6F4B8950: B8 61 68 63 41     mov         eax,41636861h
+    6F4B8960: B8 62 68 63 41     mov         eax,41636862h
+    6F4BBB00: B8 6C 63 4E 41     mov         eax,414E636Ch
+    6F4BBB10: B8 61 68 63 41     mov         eax,41636861h
+    6F4BBB20: B8 62 68 63 41     mov         eax,41636862h
+    6F4CA6A0: 68 24 7C BE 6F     push        6FBE7C24h
+    6F4CA6A5: E8 56 DC F2 FF     call        6F3F8300
+    6F4CA6AA: 8B D0              mov         edx,eax
+    6F4CA6AC: B9 6C 63 4E 41     mov         ecx,414E636Ch
+    6F4CA6B1: E8 0A 62 B6 FF     call        6F0308C0
+    6F4CA6C0: 68 2C 83 BE 6F     push        6FBE832Ch
+    6F4CA6C5: E8 96 E2 FE FF     call        6F4B8960
+    6F4CA6CA: 8B D0              mov         edx,eax
+    6F4CA6CC: B9 61 68 63 41     mov         ecx,41636861h
+  FourCC 'AEbl' (0x4145626C) .text hits: ['0x455035', '0x4b88b1', '0x4bba71', '0x4ca58d']
+    6F45502E: 53                 push        ebx
+    6F45503F: E8 5C B8 FC FF     call        6F4208A0
+    6F455044: 8B F0              mov         esi,eax
+    6F455046: 53                 push        ebx
+    6F455047: 57                 push        edi
+    6F455048: 8B CE              mov         ecx,esi
+    6F45504A: 8B 06              mov         eax,dword ptr [esi]
+    6F45504C: 8B 80 80 00 00 00  mov         eax,dword ptr [eax+00000080h]
+    6F455052: FF D0              call        eax
+    6F455054: 8B 5D 08           mov         ebx,dword ptr [ebp+8]
+    6F4B88B0: B8 6C 62 45 41     mov         eax,4145626Ch
+    6F4B88C0: B8 7A 62 48 41     mov         eax,4148627Ah
+    6F4B88D0: B8 6F 6C 62 41     mov         eax,41626C6Fh
+    6F4BBA70: B8 6C 62 45 41     mov         eax,4145626Ch
+    6F4BBA80: B8 7A 62 48 41     mov         eax,4148627Ah
+    6F4BBA90: B8 6F 6C 62 41     mov         eax,41626C6Fh
+    6F4CA580: 68 2C 80 BE 6F     push        6FBE802Ch
+    6F4CA585: E8 76 DD F2 FF     call        6F3F8300
+    6F4CA58A: 8B D0              mov         edx,eax
+    6F4CA58C: B9 6C 62 45 41     mov         ecx,4145626Ch
+    6F4CA591: E8 2A 63 B6 FF     call        6F0308C0
+    6F4CA5A0: 68 B8 80 BE 6F     push        6FBE80B8h
+    6F4CA5A5: E8 56 DD F2 FF     call        6F3F8300
+    6F4CA5AA: 8B D0              mov         edx,eax
+    6F4CA5AC: B9 7A 62 48 41     mov         ecx,4148627Ah
+  FourCC 'ANto' (0x414E746F) .text hits: ['0x57b671', '0x57e861', '0x58c2fd']
+    6F57B670: B8 6F 74 4E 41     mov         eax,414E746Fh
+    6F57B680: B8 67 64 74 41     mov         eax,41746467h
+    6F57B690: B8 70 73 74 41     mov         eax,41747370h
+    6F57E860: B8 6F 74 4E 41     mov         eax,414E746Fh
+    6F57E870: B8 67 64 74 41     mov         eax,41746467h
+    6F57E880: B8 70 73 74 41     mov         eax,41747370h
+    6F58C2F0: 68 7C A0 BE 6F     push        6FBEA07Ch
+    6F58C2F5: E8 06 C0 E6 FF     call        6F3F8300
+    6F58C2FA: 8B D0              mov         edx,eax
+    6F58C2FC: B9 6F 74 4E 41     mov         ecx,414E746Fh
+    6F58C301: E8 BA 45 AA FF     call        6F0308C0
+    6F58C310: 68 C4 A0 BE 6F     push        6FBEA0C4h
+    6F58C315: E8 B6 BB E6 FF     call        6F3F7ED0
+    6F58C31A: 8B D0              mov         edx,eax
+    6F58C31C: B9 67 64 74 41     mov         ecx,41746467h
+  FourCC 'AIrg' (0x41497267) .text hits: ['0x53b971', '0x53f031', '0x547f5d']
+    6F53B970: B8 67 72 49 41     mov         eax,41497267h
+    6F53B980: B8 6A 65 72 41     mov         eax,4172656Ah
+    6F53B990: B8 74 65 72 41     mov         eax,41726574h
+    6F53F030: B8 67 72 49 41     mov         eax,41497267h
+    6F53F040: B8 6A 65 72 41     mov         eax,4172656Ah
+    6F53F050: B8 74 65 72 41     mov         eax,41726574h
+    6F547F50: 68 1C 96 BE 6F     push        6FBE961Ch
+    6F547F55: E8 26 3A FF FF     call        6F53B980
+    6F547F5A: 8B D0              mov         edx,eax
+    6F547F5C: B9 67 72 49 41     mov         ecx,41497267h
+    6F547F61: E8 5A 89 AE FF     call        6F0308C0
+    6F547F70: 68 BC 95 BE 6F     push        6FBE95BCh
+    6F547F75: E8 86 03 EB FF     call        6F3F8300
+    6F547F7A: 8B D0              mov         edx,eax
+    6F547F7C: B9 6A 65 72 41     mov         ecx,4172656Ah
+
+=== 2. 全部 11 个版本 SendUnitOrder_0x10/0x11/0x12 + EnqueueOrder_0x10/0x11/0x12 + UI_PointDispatch ===
+  1.0.17.5988   | Snd10=None      Snd11=None      Snd12=None      | Enq10=None      Enq11=None      Enq12=None      | Pairs=0 []
+    raw_senders: []
+  1.0.20.6048   | Snd10=None      Snd11=None      Snd12=None      | Enq10=None      Enq11=None      Enq12=None      | Pairs=0 []
+    raw_senders: []
+  1.20.4.6074   | Snd10=None      Snd11=None      Snd12=None      | Enq10=None      Enq11=None      Enq12=None      | Pairs=0 []
+    raw_senders: []
+  1.21.0.6263   | Snd10=None      Snd11=None      Snd12=None      | Enq10=None      Enq11=None      Enq12=None      | Pairs=0 []
+    raw_senders: []
+  1.22.0.6328   | Snd10=None      Snd11=None      Snd12=None      | Enq10=None      Enq11=None      Enq12=None      | Pairs=0 []
+    raw_senders: []
+  1.23.0.6352   | Snd10=None      Snd11=None      Snd12=None      | Enq10=None      Enq11=None      Enq12=None      | Pairs=0 []
+    raw_senders: []
+  1.24.1.6374   | Snd10=None      Snd11=None      Snd12=None      | Enq10=None      Enq11=None      Enq12=None      | Pairs=0 []
+    raw_senders: []
+  1.24.4.6387   | Snd10=None      Snd11=None      Snd12=None      | Enq10=None      Enq11=None      Enq12=None      | Pairs=0 []
+    raw_senders: []
+  1.25.1.6397   | Snd10=None      Snd11=None      Snd12=None      | Enq10=None      Enq11=None      Enq12=None      | Pairs=0 []
+    raw_senders: []
+  1.26.0.6401   | Snd10=None      Snd11=None      Snd12=None      | Enq10=None      Enq11=None      Enq12=None      | Pairs=0 []
+    raw_senders: []
+  1.27.0.52240  | Snd10=None      Snd11=None      Snd12=None      | Enq10=None      Enq11=None      Enq12=None      | Pairs=0 []
+    raw_senders: [('0x3AE4E0', '0x1324A627', '?'), ('0x3AE540', '0x211B68B4', '?'), ('0x3AE5D0', '0x211B6944', '?'), ('0x3AE660', '0x211B69D4', '?'), ('0x3AE6F0', '0x211B6A64', '?'), ('0x3AE780', '0x211B6AF4', '?'), ('0x3AE810', '0x1324A970', '?')]

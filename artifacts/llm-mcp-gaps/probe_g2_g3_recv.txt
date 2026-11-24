@@ -1,0 +1,306 @@
+=== 1. 0x3A4E88 跳转表与 0x3A4E98 索引表 (targetTypeMask = [edi+14h] & 3FFh) ===
+  jump targets: [0]=0x3A4C76, [1]=0x3A4C29, [2]=0x3A4D66, [3]=0x3A4E7D
+  case 0 (-> 0x3A4C76): ['0x2', '0x6'] (total 2)
+  case 1 (-> 0x3A4C29): ['0x4'] (total 1)
+  case 2 (-> 0x3A4D66): ['0x100'] (total 1)
+  case 3 (-> 0x3A4E7D): ['0x3', '0x5', '0x7', '0x8', '0x9', '0xA', '0xB', '0xC', '0xD', '0xE', '0xF', '0x10', '0x11', '0x12', '0x13', '0x14', '0x15', '0x16', '0x17', '0x18'] (total 251)
+
+=== 2. 搜索 .text 中 0x000D0028 (useslot1) 的引用，定位物品使用执行逻辑 ===
+  0xD0028 hits: ['0x400516', '0x54bfb2', '0x63ac47']
+  --- around 0x400516 ---
+  6F4004D6: 2A 00              sub         al,byte ptr [eax]
+  6F4004D8: 85 C0              test        eax,eax
+  6F4004DA: 75 18              jne         6F4004F4
+  6F4004DC: 8B CE              mov         ecx,esi
+  6F4004DE: E8 5D B6 23 00     call        6F63BB40
+  6F4004E3: 85 C0              test        eax,eax
+  6F4004E5: 75 0D              jne         6F4004F4
+  6F4004E7: 8B CE              mov         ecx,esi
+  6F4004E9: E8 42 E7 26 00     call        6F66EC30
+  6F4004EE: 85 C0              test        eax,eax
+  6F4004F0: 75 02              jne         6F4004F4
+  6F4004F2: 5E                 pop         esi
+  6F4004F3: C3                 ret
+  6F4004F4: B8 01 00 00 00     mov         eax,1
+  6F4004F9: 5E                 pop         esi
+  6F4004FA: C3                 ret
+  6F4004FB: CC                 int         3
+  6F4004FC: CC                 int         3
+  6F4004FD: CC                 int         3
+  6F4004FE: CC                 int         3
+  6F4004FF: CC                 int         3
+  6F400500: F7 41 20 00 00 00  test        dword ptr [ecx+20h],20000000h
+  6F400507: 74 06              je          6F40050F
+  6F400509: B8 95 02 0D 00     mov         eax,0D0295h
+  6F40050E: C3                 ret
+  6F40050F: 8B 81 AC 00 00 00  mov         eax,dword ptr [ecx+000000ACh]
+  6F400515: 05 28 00 0D 00     add         eax,0D0028h
+  6F40051A: C3                 ret
+  6F40051B: CC                 int         3
+  6F40051C: CC                 int         3
+  6F40051D: CC                 int         3
+  6F40051E: CC                 int         3
+  6F40051F: CC                 int         3
+  6F400520: 8B 41 20           mov         eax,dword ptr [ecx+20h]
+  6F400523: C1 E8 0E           shr         eax,0Eh
+  6F400526: 83 E0 01           and         eax,1
+  6F400529: C3                 ret
+  6F40052A: CC                 int         3
+  6F40052B: CC                 int         3
+  6F40052C: CC                 int         3
+  6F40052D: CC                 int         3
+  6F40052E: CC                 int         3
+  6F40052F: CC                 int         3
+  6F400530: 33 C0              xor         eax,eax
+  6F400532: C3                 ret
+  6F400533: CC                 int         3
+  6F400534: CC                 int         3
+  6F400535: CC                 int         3
+  6F400536: CC                 int         3
+  6F400537: CC                 int         3
+  6F400538: CC                 int         3
+  6F400539: CC                 int         3
+  6F40053A: CC                 int         3
+  6F40053B: CC                 int         3
+  6F40053C: CC                 int         3
+  6F40053D: CC                 int         3
+  6F40053E: CC                 int         3
+  6F40053F: CC                 int         3
+  6F400540: B8 01 00 00 00     mov         eax,1
+  6F400545: C3                 ret
+  6F400546: CC                 int         3
+  6F400547: CC                 int         3
+  6F400548: CC                 int         3
+  6F400549: CC                 int         3
+  6F40054A: CC                 int         3
+  6F40054B: CC                 int         3
+  6F40054C: CC                 int         3
+  6F40054D: CC                 int         3
+  6F40054E: CC                 int         3
+  6F40054F: CC                 int         3
+  6F400550: B8 01 00 00 00     mov         eax,1
+  6F400555: C3                 ret
+  6F400556: CC                 int         3
+  6F400557: CC                 int         3
+  6F400558: CC                 int         3
+  6F400559: CC                 int         3
+  6F40055A: CC                 int         3
+  6F40055B: CC                 int         3
+  6F40055C: CC                 int         3
+  6F40055D: CC                 int         3
+  6F40055E: CC                 int         3
+  6F40055F: CC                 int         3
+  6F400560: 33 C0              xor         eax,eax
+  6F400562: C3                 ret
+  6F400563: CC                 int         3
+  6F400564: CC                 int         3
+  6F400565: CC                 int         3
+  6F400566: CC                 int         3
+  6F400567: CC                 int         3
+  6F400568: CC                 int         3
+  6F400569: CC                 int         3
+  6F40056A: CC                 int         3
+  6F40056B: CC                 int         3
+  6F40056C: CC                 int         3
+  6F40056D: CC                 int         3
+  6F40056E: CC                 int         3
+  6F40056F: CC                 int         3
+  6F400570: 55                 push        ebp
+  6F400571: 8B EC              mov         ebp,esp
+  6F400573: 83 EC 10           sub         esp,10h
+  6F400576: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  6F400579: 53                 push        ebx
+  6F40057A: 56                 push        esi
+  6F40057B: 57                 push        edi
+  6F40057C: 8B F9              mov         edi,ecx
+  6F40057E: C7 45 F4 00 00 00  mov         dword ptr [ebp-0Ch],0
+  6F400585: 89
+  6F400586: 7D
+  --- around 0x54BFB2 ---
+  6F54BF72: E8 19 24 E1 FF     call        6F35E390
+  6F54BF77: 8B 7D 08           mov         edi,dword ptr [ebp+8]
+  6F54BF7A: C6 45 FC 02        mov         byte ptr [ebp-4],2
+  6F54BF7E: 85 FF              test        edi,edi
+  6F54BF80: 74 79              je          6F54BFFB
+  6F54BF82: 8B 57 10           mov         edx,dword ptr [edi+10h]
+  6F54BF85: 8B 4F 0C           mov         ecx,dword ptr [edi+0Ch]
+  6F54BF88: E8 C3 B3 AE FF     call        6F037350
+  6F54BF8D: 85 C0              test        eax,eax
+  6F54BF8F: 74 44              je          6F54BFD5
+  6F54BF91: 33 C9              xor         ecx,ecx
+  6F54BF93: 81 78 0C 6C 67 61  cmp         dword ptr [eax+0Ch],2B61676Ch
+  6F54BF9A: 0F 94 C1           sete        cl
+  6F54BF9D: 33 D2              xor         edx,edx
+  6F54BF9F: 85 C9              test        ecx,ecx
+  6F54BFA1: 0F 45 D0           cmovne      edx,eax
+  6F54BFA4: 85 D2              test        edx,edx
+  6F54BFA6: 74 2D              je          6F54BFD5
+  6F54BFA8: 83 7A 20 00        cmp         dword ptr [edx+20h],0
+  6F54BFAC: 75 27              jne         6F54BFD5
+  6F54BFAE: 8B 47 24           mov         eax,dword ptr [edi+24h]
+  6F54BFB1: 3D 28 00 0D 00     cmp         eax,0D0028h
+  6F54BFB6: 72 1D              jb          6F54BFD5
+  6F54BFB8: 3D 2D 00 0D 00     cmp         eax,0D002Dh
+  6F54BFBD: 77 16              ja          6F54BFD5
+  6F54BFBF: 05 D8 FF F2 FF     add         eax,0FFF2FFD8h
+  6F54BFC4: 3B 45 E8           cmp         eax,dword ptr [ebp-18h]
+  6F54BFC7: 0F 84 86 00 00 00  je          6F54C053
+  6F54BFCD: 3B C3              cmp         eax,ebx
+  6F54BFCF: 0F 84 7E 00 00 00  je          6F54C053
+  6F54BFD5: 8B 47 30           mov         eax,dword ptr [edi+30h]
+  6F54BFD8: 8D 4F 2C           lea         ecx,[edi+2Ch]
+  6F54BFDB: 23 01              and         eax,dword ptr [ecx]
+  6F54BFDD: 83 F8 FF           cmp         eax,0FFFFFFFFh
+  6F54BFE0: 75 04              jne         6F54BFE6
+  6F54BFE2: 33 C0              xor         eax,eax
+  6F54BFE4: EB 05              jmp         6F54BFEB
+  6F54BFE6: E8 65 81 AF FF     call        6F044150
+  6F54BFEB: 50                 push        eax
+  6F54BFEC: 8D 4D 08           lea         ecx,[ebp+8]
+  6F54BFEF: E8 0C 48 E1 FF     call        6F360800
+  6F54BFF4: 8B 7D 08           mov         edi,dword ptr [ebp+8]
+  6F54BFF7: 85 FF              test        edi,edi
+  6F54BFF9: 75 87              jne         6F54BF82
+  6F54BFFB: 8B 7D EC           mov         edi,dword ptr [ebp-14h]
+  6F54BFFE: 8B 4D DC           mov         ecx,dword ptr [ebp-24h]
+  6F54C001: 57                 push        edi
+  6F54C002: E8 79 A6 CB FF     call        6F206680
+  6F54C007: FF 75 E8           push        dword ptr [ebp-18h]
+  6F54C00A: 8B CF              mov         ecx,edi
+  6F54C00C: E8 4F 18 0F 00     call        6F63D860
+  6F54C011: 8B 7D F0           mov         edi,dword ptr [ebp-10h]
+  6F54C014: 8D 43 0E           lea         eax,[ebx+0Eh]
+  6F54C017: FF 75 E4           push        dword ptr [ebp-1Ch]
+  6F54C01A: 8D 04 43           lea         eax,[ebx+eax*2]
+  6F54C01D: 8D 0C 87           lea         ecx,[edi+eax*4]
+  6F54C020: E8
+  6F54C021: 5B                 pop         ebx
+  6F54C022: A6                 cmps        byte ptr [esi],byte ptr es:[edi]
+  --- around 0x63AC47 ---
+  6F63AC07: 98                 cwde
+  6F63AC08: 00 00              add         byte ptr [eax],al
+  6F63AC0A: 00 72 B7           add         byte ptr [edx-49h],dh
+  6F63AC0D: 8B 5D EC           mov         ebx,dword ptr [ebp-14h]
+  6F63AC10: C7 45 FC FF FF FF  mov         dword ptr [ebp-4],0FFFFFFFFh
+  6F63AC17: 85 F6              test        esi,esi
+  6F63AC19: 74 0B              je          6F63AC26
+  6F63AC1B: FF 4E 04           dec         dword ptr [esi+4]
+  6F63AC1E: 75 06              jne         6F63AC26
+  6F63AC20: 8B 16              mov         edx,dword ptr [esi]
+  6F63AC22: 8B CE              mov         ecx,esi
+  6F63AC24: FF 12              call        dword ptr [edx]
+  6F63AC26: 8B C3              mov         eax,ebx
+  6F63AC28: 8B 4D F4           mov         ecx,dword ptr [ebp-0Ch]
+  6F63AC2B: 64 89 0D 00 00 00  mov         dword ptr fs:[00000000h],ecx
+  6F63AC32: 59                 pop         ecx
+  6F63AC33: 5F                 pop         edi
+  6F63AC34: 5E                 pop         esi
+  6F63AC35: 5B                 pop         ebx
+  6F63AC36: 8B E5              mov         esp,ebp
+  6F63AC38: 5D                 pop         ebp
+  6F63AC39: C2 04 00           ret         4
+  6F63AC3C: 8B 75 F0           mov         esi,dword ptr [ebp-10h]
+  6F63AC3F: 8B 5D E4           mov         ebx,dword ptr [ebp-1Ch]
+  6F63AC42: FF 46 04           inc         dword ptr [esi+4]
+  6F63AC45: 81 C3 28 00 0D 00  add         ebx,0D0028h
+  6F63AC4B: EB C3              jmp         6F63AC10
+  6F63AC4D: CC                 int         3
+  6F63AC4E: CC                 int         3
+  6F63AC4F: CC                 int         3
+  6F63AC50: 55                 push        ebp
+  6F63AC51: 8B EC              mov         ebp,esp
+  6F63AC53: 6A FF              push        0FFFFFFFFh
+  6F63AC55: 68 10 4B 92 6F     push        6F924B10h
+  6F63AC5A: 64 A1 00 00 00 00  mov         eax,dword ptr fs:[00000000h]
+  6F63AC60: 50                 push        eax
+  6F63AC61: 83 EC 10           sub         esp,10h
+  6F63AC64: 53                 push        ebx
+  6F63AC65: 56                 push        esi
+  6F63AC66: 57                 push        edi
+  6F63AC67: A1 74 A7 B6 6F     mov         eax,dword ptr ds:[6FB6A774h]
+  6F63AC6C: 33 C5              xor         eax,ebp
+  6F63AC6E: 50                 push        eax
+  6F63AC6F: 8D 45 F4           lea         eax,[ebp-0Ch]
+  6F63AC72: 64 A3 00 00 00 00  mov         dword ptr fs:[00000000h],eax
+  6F63AC78: 8B C1              mov         eax,ecx
+  6F63AC7A: 89 45 E8           mov         dword ptr [ebp-18h],eax
+  6F63AC7D: F7 40 20 00 02 00  test        dword ptr [eax+20h],200h
+  6F63AC84: 75 17              jne         6F63AC9D
+  6F63AC86: B8 40 00 00 00     mov         eax,40h
+  6F63AC8B: 8B 4D F4           mov         ecx,dword ptr [ebp-0Ch]
+  6F63AC8E: 64 89 0D 00 00 00  mov         dword ptr fs:[00000000h],ecx
+  6F63AC95: 59                 pop         ecx
+  6F63AC96: 5F                 pop         edi
+  6F63AC97: 5E                 pop         esi
+  6F63AC98: 5B                 pop         ebx
+  6F63AC99: 8B E5              mov         esp,ebp
+  6F63AC9B: 5D                 pop         ebp
+  6F63AC9C: C3                 ret
+  6F63AC9D: 33 F6              xor         esi,esi
+  6F63AC9F: BF 40 00 00 00     mov         edi,40h
+  6F63ACA4: 89 75 E4           mov         dword ptr [ebp-1Ch],esi
+  6F63ACA7: 33 DB              xor         ebx,ebx
+  6F63ACA9: C7 45 FC 01 00 00  mov         dword ptr [ebp-4],1
+  6F63ACB0: 89 5D F0           mov         dword ptr [ebp-10h],ebx
+  6F63ACB3: 39
+  6F63ACB4: 98                 cwde
+  6F63ACB5: 98                 cwde
+  6F63ACB6: 00 00              add         byte ptr [eax],al
+
+=== 3. 反汇编 0x2760D0 (预检函数，在 0x3A4CB8 调用) 与 0x276530 (在 0x3A4CB1 调用) ===
+  6F2760D0: 55                 push        ebp
+  6F2760D1: 8B EC              mov         ebp,esp
+  6F2760D3: 6A FF              push        0FFFFFFFFh
+  6F2760D5: 68 78 D5 8C 6F     push        6F8CD578h
+  6F2760DA: 64 A1 00 00 00 00  mov         eax,dword ptr fs:[00000000h]
+  6F2760E0: 50                 push        eax
+  6F2760E1: 51                 push        ecx
+  6F2760E2: 53                 push        ebx
+  6F2760E3: 56                 push        esi
+  6F2760E4: 57                 push        edi
+  6F2760E5: A1 74 A7 B6 6F     mov         eax,dword ptr ds:[6FB6A774h]
+  6F2760EA: 33 C5              xor         eax,ebp
+  6F2760EC: 50                 push        eax
+  6F2760ED: 8D 45 F4           lea         eax,[ebp-0Ch]
+  6F2760F0: 64 A3 00 00 00 00  mov         dword ptr fs:[00000000h],eax
+  6F2760F6: 8B F1              mov         esi,ecx
+  6F2760F8: BF DD 00 00 00     mov         edi,0DDh
+  6F2760FD: E8 3E 3C 0E 00     call        6F359D40
+  6F276102: 8B B6 F4 01 00 00  mov         esi,dword ptr [esi+000001F4h]
+  6F276108: C7 45 FC 00 00 00  mov         dword ptr [ebp-4],0
+  6F27610F: 85 F6              test        esi,esi
+  6F276111: 7E 30              jle         6F276143
+  6F276113: 8B 5D 18           mov         ebx,dword ptr [ebp+18h]
+  6F276116: 8B 4E 08           mov         ecx,dword ptr [esi+8]
+  6F276119: 85 C9              test        ecx,ecx
+  6F27611B: 74 1B              je          6F276138
+  6F27611D: 53                 push        ebx
+  6F27611E: FF 75 14           push        dword ptr [ebp+14h]
+  6F276121: FF 75 10           push        dword ptr [ebp+10h]
+  6F276124: FF 75 0C           push        dword ptr [ebp+0Ch]
+  6F276127: FF 75 08           push        dword ptr [ebp+8]
+  6F27612A: E8 F1 A4 40 00     call        6F680620
+  6F27612F: 85 C0              test        eax,eax
+  6F276131: 74 0E              je          6F276141
+  6F276133: 3B C7              cmp         eax,edi
+  6F276135: 0F 4C F8           cmovl       edi,eax
+  6F276138: 8B 76 04           mov         esi,dword ptr [esi+4]
+  6F27613B: 85 F6              test        esi,esi
+  6F27613D: 7F D7              jg          6F276116
+  6F27613F: EB 02              jmp         6F276143
+  6F276141: 33 FF              xor         edi,edi
+  6F276143: C7 45 FC FF FF FF  mov         dword ptr [ebp-4],0FFFFFFFFh
+  6F27614A: E8 E1 27 0E 00     call        6F358930
+  6F27614F: 8B C7              mov         eax,edi
+  6F276151: 8B 4D F4           mov         ecx,dword ptr [ebp-0Ch]
+  6F276154: 64 89 0D 00 00 00  mov         dword ptr fs:[00000000h],ecx
+  6F27615B: 59                 pop         ecx
+  6F27615C: 5F                 pop         edi
+  6F27615D: 5E                 pop         esi
+  6F27615E: 5B                 pop         ebx
+  6F27615F: 8B E5              mov         esp,ebp
+
+=== 4. 搜索 0x000A0011 / 0x000A0012 (CNetCommand 消息 ID) 的所有引用 ===
+  0x000A0010 hits: ['0x2fb995', '0x69ffcf']
+  0x000A0011 hits: ['0x2fbe6e', '0x69fcff']
+  0x000A0012 hits: ['0x2fbb6e', '0x69fedf', '0x6a0095']

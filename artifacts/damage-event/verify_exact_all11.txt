@@ -1,0 +1,50 @@
+=== 1. 全 11 版本原生 RVA 精确核对 & DispatchEventUnitDamaged 前 10 字节机器码 ===
+Version        | DispatchEvt | Prologue (first 7 bytes)   | GetEvtDmg  | GetEvtSrc  | UnitDmgTgt
+------------------------------------------------------------------------------------------------
+1.0.17.5988    | 0x1C0290    | 55 8B EC 83 EC 34 56       | 0x2B7C90   | 0x2B7CB0   | 0x2C9840  
+1.0.20.6048    | 0x1C0290    | 55 8B EC 83 EC 34 56       | 0x2B7C90   | 0x2B7CB0   | 0x2C9840  
+1.20.4.6074    | 0x1C0300    | 55 8B EC 83 EC 34 56       | 0x2B7DB0   | 0x2B7DD0   | 0x2C9960  
+1.21.0.6263    | 0x1C34C0    | 55 8B EC 83 EC 34 56       | 0x2BB380   | 0x2BB3A0   | 0x2CCF30  
+1.22.0.6328    | 0x2961C0    | 6A FF 68 E8 48 80 6F       | 0x3BCEE0   | 0x3BCF00   | 0x3C1AF0  
+1.23.0.6352    | 0x297700    | 6A FF 68 48 87 81 6F       | 0x3BEC00   | 0x3BEC20   | 0x3C3810  
+1.24.1.6374    | 0x2977C0    | 6A FF 68 78 79 82 6F       | 0x3C46C0   | 0x3C46E0   | 0x3C92D0  
+1.24.4.6387    | 0x297830    | 6A FF 68 38 7A 82 6F       | 0x3C4780   | 0x3C47A0   | 0x3C9390  
+1.25.1.6397    | 0x296AE0    | 6A FF 68 68 4F 81 6F       | 0x3C3A10   | 0x3C3A30   | 0x3C8620  
+1.26.0.6401    | 0x296D10    | 6A FF 68 98 51 81 6F       | 0x3C3C40   | 0x3C3C60   | 0x3C8850  
+1.27.0.52240   | 0x65E010    | 55 8B EC 6A FF 68 50       | 0x1E21D0   | 0x1E21F0   | 0x1FAB70  
+
+=== 2. 1.0.17 NotifyDamaged (0x19FC10) 调用 DispatchEvt (0x1C0290) 核验 ===
+6F19FC10: 55                 push        ebp
+6F19FC11: 8B EC              mov         ebp,esp
+6F19FC13: 51                 push        ecx
+6F19FC14: 53                 push        ebx
+6F19FC15: 8B 5D 08           mov         ebx,dword ptr [ebp+8]
+6F19FC18: 56                 push        esi
+6F19FC19: 57                 push        edi
+6F19FC1A: 8B FA              mov         edi,edx
+6F19FC1C: 8B 07              mov         eax,dword ptr [edi]
+6F19FC1E: 50                 push        eax
+6F19FC1F: 53                 push        ebx
+6F19FC20: 8B F1              mov         esi,ecx
+6F19FC22: E8 69 06 02 00     call        6F1C0290
+6F19FC27: 8B 45 0C           mov         eax,dword ptr [ebp+0Ch]
+6F19FC2A: 85 C0              test        eax,eax
+6F19FC2C: 74 42              je          6F19FC70
+6F19FC2E: 83 3F 00           cmp         dword ptr [edi],0
+6F19FC31: 74 3D              je          6F19FC70
+6F19FC33: 8B 16              mov         edx,dword ptr [esi]
+6F19FC35: 8D 45 0C           lea         eax,[ebp+0Ch]
+6F19FC38: 50                 push        eax
+6F19FC39: 8B CE              mov         ecx,esi
+
+=== 3. 6.83d 防御塔/眼技能 (Units_UnitAbilities.slk col 5 = abilList) ===
+  o004   (Y= 272): abilList=?
+  u00D   (Y= 340): abilList=?
+  e00S   (Y= 372): abilList=?
+  u00N   (Y= 374): abilList=?
+  e019   (Y= 386): abilList=?
+
+=== 4. 6.83d 真视技能范围 (Units_AbilityData.slk, Area1 col=21) ===
+  Agyv   (Y= 116): code=Agyv, Area1=?, DataA1=3
+  A014   (Y= 484): code=AIab, Area1=?, DataA1=?
+  A0C6   (Y= 776): code=AHab, Area1=900, DataA1=0.01

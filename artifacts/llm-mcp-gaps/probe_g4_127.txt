@@ -1,0 +1,193 @@
+=== Native ExecuteFunc @ 0x1e0650 ===
+  6F1E0650: 55                 push        ebp
+  6F1E0651: 8B EC              mov         ebp,esp
+  6F1E0653: 6A FF              push        0FFFFFFFFh
+  6F1E0655: 68 90 05 8C 6F     push        6F8C0590h
+  6F1E065A: 64 A1 00 00 00 00  mov         eax,dword ptr fs:[00000000h]
+  6F1E0660: 50                 push        eax
+  6F1E0661: 51                 push        ecx
+  6F1E0662: 56                 push        esi
+  6F1E0663: A1 74 A7 B6 6F     mov         eax,dword ptr ds:[6FB6A774h]
+  6F1E0668: 33 C5              xor         eax,ebp
+  6F1E066A: 50                 push        eax
+  6F1E066B: 8D 45 F4           lea         eax,[ebp-0Ch]
+  6F1E066E: 64 A3 00 00 00 00  mov         dword ptr fs:[00000000h],eax
+  6F1E0674: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+  6F1E0677: E8 74 10 E7 FF     call        6F0516F0
+  6F1E067C: 8B F0              mov         esi,eax
+  6F1E067E: 85 F6              test        esi,esi
+  6F1E0680: 74 68              je          6F1E06EA
+  6F1E0682: 80 3E 00           cmp         byte ptr [esi],0
+  6F1E0685: 74 63              je          6F1E06EA
+  6F1E0687: A1 38 42 BE 6F     mov         eax,dword ptr ds:[6FBE4238h]
+  6F1E068C: 85 C0              test        eax,eax
+  6F1E068E: 75 0F              jne         6F1E069F
+  6F1E0690: 33 D2              xor         edx,edx
+  6F1E0692: 8D 48 06           lea         ecx,[eax+6]
+  6F1E0695: E8 F6 5A E4 FF     call        6F026190
+  6F1E069A: A3 38 42 BE 6F     mov         dword ptr ds:[6FBE4238h],eax
+  6F1E069F: 56                 push        esi
+  6F1E06A0: 8B C8              mov         ecx,eax
+  6F1E06A2: E8 89 F1 FD FF     call        6F1BF830
+  6F1E06A7: 8B F0              mov         esi,eax
+  6F1E06A9: 85 F6              test        esi,esi
+  6F1E06AB: 74 3D              je          6F1E06EA
+  6F1E06AD: C7 45 F0 00 00 00  mov         dword ptr [ebp-10h],0
+  6F1E06B4: 6A 00              push        0
+  6F1E06B6: 6A 00              push        0
+  6F1E06B8: 6A 00              push        0
+  6F1E06BA: 8D 4D F0           lea         ecx,[ebp-10h]
+  6F1E06BD: C7 45 FC 01 00 00  mov         dword ptr [ebp-4],1
+  6F1E06C4: E8 67 CD FF FF     call        6F1DD430
+  6F1E06C9: 56                 push        esi
+  6F1E06CA: 8B 75 F0           mov         esi,dword ptr [ebp-10h]
+  6F1E06CD: 8B CE              mov         ecx,esi
+  6F1E06CF: E8 1C 9D 09 00     call        6F27A3F0
+  6F1E06D4: C7 45 FC FF FF FF  mov         dword ptr [ebp-4],0FFFFFFFFh
+  6F1E06DB: 85 F6              test        esi,esi
+  6F1E06DD: 74 0B              je          6F1E06EA
+  6F1E06DF: FF
+  6F1E06E0: 4E                 dec         esi
+=== Native GetLocalPlayer @ 0x1e3150 ===
+  6F1E3150: 56                 push        esi
+  6F1E3151: 8B 35 38 42 BE 6F  mov         esi,dword ptr ds:[6FBE4238h]
+  6F1E3157: 85 F6              test        esi,esi
+  6F1E3159: 75 04              jne         6F1E315F
+  6F1E315B: 33 C0              xor         eax,eax
+  6F1E315D: 5E                 pop         esi
+  6F1E315E: C3                 ret
+  6F1E315F: E8 3C B8 12 00     call        6F30E9A0
+  6F1E3164: 8B CE              mov         ecx,esi
+  6F1E3166: 85 C0              test        eax,eax
+  6F1E3168: 74 06              je          6F1E3170
+  6F1E316A: 0F B7 46 2A        movzx       eax,word ptr [esi+2Ah]
+  6F1E316E: EB 04              jmp         6F1E3174
+  6F1E3170: 0F B7 46 28        movzx       eax,word ptr [esi+28h]
+  6F1E3174: 50                 push        eax
+  6F1E3175: E8 B6 01 FE FF     call        6F1C3330
+  6F1E317A: 8B 0D 38 42 BE 6F  mov         ecx,dword ptr ds:[6FBE4238h]
+  6F1E3180: 8B F0              mov         esi,eax
+  6F1E3182: E8 79 00 FE FF     call        6F1C3200
+  6F1E3187: 6A 00              push        0
+  6F1E3189: 56                 push        esi
+  6F1E318A: 8B C8              mov         ecx,eax
+  6F1E318C: E8 3F 20 08 00     call        6F2651D0
+  6F1E3191: 5E                 pop         esi
+  6F1E3192: C3                 ret
+  6F1E3193: CC                 int         3
+  6F1E3194: CC                 int         3
+  6F1E3195: CC                 int         3
+  6F1E3196: CC                 int         3
+  6F1E3197: CC                 int         3
+  6F1E3198: CC                 int         3
+  6F1E3199: CC                 int         3
+  6F1E319A: CC                 int         3
+  6F1E319B: CC                 int         3
+  6F1E319C: CC                 int         3
+  6F1E319D: CC                 int         3
+  6F1E319E: CC                 int         3
+  6F1E319F: CC                 int         3
+  6F1E31A0: 55                 push        ebp
+  6F1E31A1: 8B EC              mov         ebp,esp
+  6F1E31A3: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+  6F1E31A6: E8 45 E5 E6 FF     call        6F0516F0
+  6F1E31AB: 85 C0              test        eax,eax
+  6F1E31AD: 74 16              je          6F1E31C5
+  6F1E31AF: 80 38 00           cmp         byte ptr [eax],0
+  6F1E31B2: 74 11              je          6F1E31C5
+  6F1E31B4: 8B 0D 3C 1E 95 6F  mov         ecx,dword ptr ds:[6F951E3Ch]
+  6F1E31BA: 8B D0              mov         edx,eax
+  6F1E31BC: 6A 00              push        0
+  6F1E31BE: E8 BD 71 E4 FF     call        6F02A380
+  6F1E31C3: 5D                 pop         ebp
+  6F1E31C4: C3                 ret
+  6F1E31C5: 33 C0              xor         eax,eax
+  6F1E31C7: 5D                 pop         ebp
+  6F1E31C8: C3                 ret
+  6F1E31C9: CC                 int         3
+  6F1E31CA: CC                 int         3
+  6F1E31CB: CC                 int         3
+  6F1E31CC: CC                 int         3
+  6F1E31CD: CC                 int         3
+  6F1E31CE: CC                 int         3
+  6F1E31CF: CC                 int         3
+  6F1E31D0: 55                 push        ebp
+  6F1E31D1: 8B EC              mov         ebp,esp
+  6F1E31D3: 81 EC 04 08 00 00  sub         esp,804h
+  6F1E31D9: A1 74 A7 B6 6F     mov         eax,dword ptr ds:[6FB6A774h]
+  6F1E31DE: 33 C5              xor         eax,ebp
+  6F1E31E0: 89
+=== Native TriggerAddAction @ 0x1f9010 ===
+  6F1F9010: 55                 push        ebp
+  6F1F9011: 8B EC              mov         ebp,esp
+  6F1F9013: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+  6F1F9016: E8 F5 83 FD FF     call        6F1D1410
+  6F1F901B: 85 C0              test        eax,eax
+  6F1F901D: 75 02              jne         6F1F9021
+  6F1F901F: 5D                 pop         ebp
+  6F1F9020: C3                 ret
+  6F1F9021: 56                 push        esi
+  6F1F9022: FF 75 0C           push        dword ptr [ebp+0Ch]
+  6F1F9025: 8B C8              mov         ecx,eax
+  6F1F9027: E8 64 F6 07 00     call        6F278690
+  6F1F902C: 8B F0              mov         esi,eax
+  6F1F902E: 85 F6              test        esi,esi
+  6F1F9030: 75 03              jne         6F1F9035
+  6F1F9032: 5E                 pop         esi
+  6F1F9033: 5D                 pop         ebp
+  6F1F9034: C3                 ret
+  6F1F9035: 8B 0D 38 42 BE 6F  mov         ecx,dword ptr ds:[6FBE4238h]
+  6F1F903B: E8 C0 A1 FC FF     call        6F1C3200
+  6F1F9040: 6A 00              push        0
+  6F1F9042: 56                 push        esi
+  6F1F9043: 8B C8              mov         ecx,eax
+  6F1F9045: E8 86 C1 06 00     call        6F2651D0
+  6F1F904A: 5E                 pop         esi
+  6F1F904B: 5D                 pop         ebp
+  6F1F904C: C3                 ret
+  6F1F904D: CC                 int         3
+  6F1F904E: CC                 int         3
+  6F1F904F: CC                 int         3
+  6F1F9050: 55                 push        ebp
+  6F1F9051: 8B EC              mov         ebp,esp
+  6F1F9053: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+  6F1F9056: 56                 push        esi
+  6F1F9057: E8 B4 83 FD FF     call        6F1D1410
+  6F1F905C: 8B F0              mov         esi,eax
+  6F1F905E: 85 F6              test        esi,esi
+  6F1F9060: 75 05              jne         6F1F9067
+  6F1F9062: 33 C0              xor         eax,eax
+  6F1F9064: 5E                 pop         esi
+  6F1F9065: 5D                 pop         ebp
+  6F1F9066: C3                 ret
+  6F1F9067: 8B 4D 0C           mov         ecx,dword ptr [ebp+0Ch]
+  6F1F906A: E8 A1 5B FD FF     call        6F1CEC10
+  6F1F906F: 50                 push        eax
+  6F1F9070: 8B CE              mov         ecx,esi
+  6F1F9072: E8 A9 F7 07 00     call        6F278820
+  6F1F9077: 8B F0              mov         esi,eax
+  6F1F9079: 85 F6              test        esi,esi
+  6F1F907B: 74 E5              je          6F1F9062
+  6F1F907D: 8B 0D 38 42 BE 6F  mov         ecx,dword ptr ds:[6FBE4238h]
+  6F1F9083: E8 78 A1 FC FF     call        6F1C3200
+  6F1F9088: 6A 00              push        0
+  6F1F908A: 56                 push        esi
+  6F1F908B: 8B C8              mov         ecx,eax
+  6F1F908D: E8 3E C1 06 00     call        6F2651D0
+  6F1F9092: 5E                 pop         esi
+  6F1F9093: 5D                 pop         ebp
+  6F1F9094: C3                 ret
+  6F1F9095: CC                 int         3
+  6F1F9096: CC                 int         3
+  6F1F9097: CC                 int         3
+  6F1F9098: CC                 int         3
+  6F1F9099: CC                 int         3
+  6F1F909A: CC                 int         3
+  6F1F909B: CC                 int         3
+  6F1F909C: CC                 int         3
+  6F1F909D: CC                 int         3
+  6F1F909E: CC                 int         3
+  6F1F909F: CC                 int         3
+  6F1F90A0: 55                 push        ebp
+
+=== String 'InitGlobals' xrefs ===

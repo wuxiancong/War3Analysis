@@ -1,0 +1,507 @@
+Loaded Scripts_war3map.j: 97289 lines
+
+================ AddHeroXP calls (pattern=\bAddHeroXP\s*\() ================
+--- L10801 ---
+ 10793: function WI1 takes unit W11 returns nothing
+ 10794: local integer WO1
+ 10795: if ES1(W11,FR0[WM0])!=null and GetUnitTypeId(W11)!=1211117642 then
+ 10796: set WO1=R2I(GetItemCharges(ES1(W11,FR0[WM0]))*0.67)
+ 10797: if GetItemCharges(ES1(W11,FR0[WM0]))==1 then
+ 10798: set WO1=0
+ 10799: endif
+ 10800: call SetItemCharges(ES1(W11,FR0[WM0]),WO1)
+ 10801: call AddHeroXP(W11,GetHeroXP(M70[GetPlayerId(GetOwningPlayer(W11))]),true)
+ 10802: call RemoveUnit(M70[GetPlayerId(GetOwningPlayer(W11))])
+ 10803: endif
+ 10804: endfunction
+ 10805: function W21 takes unit W31 returns nothing
+ 10806: local integer S5I=GetHandleId(GetOwningPlayer(W31))
+ 10807: local unit W41=(LoadUnitHandle(LY,(S5I),(699)))
+ 10808: local unit W51=(LoadUnitHandle(LY,(S5I),(700)))
+ 10809: local unit W61=(LoadUnitHandle(LY,(S5I),(701)))
+ 10810: local unit W71=(LoadUnitHandle(LY,(S5I),(702)))
+ 10811: local unit W81=(LoadUnitHandle(LY,(S5I),(703)))
+ 10812: local unit W91
+ 10813: set W91=W41
+ 10814: if W91!=null then
+ 10815: call RemoveUnit(W91)
+ 10816: endif
+--- L10946 ---
+ 10938: call VS1(PKI)
+ 10939: call SetUnitPathing(PKI,true)
+ 10940: if ES1(PKI,FR0[WM0])!=null and GetUnitTypeId(PKI)!=1211117642 then
+ 10941: set WO1=(R2I(((GetItemCharges(ES1(PKI,FR0[WM0]))*0.67)*1.0)))
+ 10942: if GetItemCharges(ES1(PKI,FR0[WM0]))==1 then
+ 10943: set WO1=0
+ 10944: endif
+ 10945: call SetItemCharges(ES1(PKI,FR0[WM0]),WO1)
+ 10946: call AddHeroXP(PKI,GetHeroXP(M70[GetPlayerId(GetOwningPlayer(PKI))]),true)
+ 10947: call RemoveUnit(M70[GetPlayerId(GetOwningPlayer(PKI))])
+ 10948: endif
+ 10949: endfunction
+ 10950: function WF1 takes unit SFI returns nothing
+ 10951: local integer WG1=GetUnitPointValue(SFI)
+ 10952: local unit WH1
+ 10953: if(WG1==34)then
+ 10954: call ExecuteFunc("WZ1")
+ 10955: call ExecuteFunc("WV1")
+ 10956: call ExecuteFunc("WW1")
+ 10957: elseif(WG1==37)then
+ 10958: call ExecuteFunc("WX1")
+ 10959: call ExecuteFunc("WY1")
+ 10960: call ExecuteFunc("WJ1")
+ 10961: call ExecuteFunc("WK1")
+--- L12753 ---
+ 12745: local unit IBO=(LoadUnitHandle(LY,(GetHandleId(AD1)),(788)))
+ 12746: local integer ICO=(LoadInteger(LY,(GetHandleId(IBO)),(787)))
+ 12747: call SaveInteger(LY,(GetHandleId(IBO)),(787),(IMaxBJ(ICO-IAO,0)))
+ 12748: set IBO=null
+ 12749: endfunction
+ 12750: function IDO takes unit IEO,unit IFO returns nothing
+ 12751: if QLI(IEO,IFO)>1300 or(IC1(IEO)and GetUnitTypeId(IEO)==1211117643)then
+ 12752: if IsPlayerAlly(GetOwningPlayer(IEO),GetOwningPlayer(IFO))==false then
+ 12753: call AddHeroXP(IEO,RUI(IFO),true)
+ 12754: endif
+ 12755: endif
+ 12756: endfunction
+ 12757: function IGO takes nothing returns nothing
+ 12758: if ES1(GetEnumUnit(),FR0[WM0])!=null then
+ 12759: call SetItemCharges(ES1(GetEnumUnit(),FR0[WM0]),GetItemCharges(ES1(GetEnumUnit(),FR0[WM0]))+1)
+ 12760: endif
+ 12761: endfunction
+ 12762: function IHO takes nothing returns boolean
+ 12763: if(GetUnitAbilityLevel(GetFilterUnit(),1093678162)==0 and IsUnitType(GetFilterUnit(),UNIT_TYPE_STRUCTURE)==false and IC1(GetFilterUnit())==false)and IsUnitType(GetFilterUnit(),UNIT_TYPE_HERO)==true and IsUnitIllusion(GetFilterUnit())==false then
+ 12764: if IsUnitEnemy(GetFilterUnit(),GetOwningPlayer(F30))and ES1(GetFilterUnit(),FR0[WM0])!=null then
+ 12765: return true
+ 12766: endif
+ 12767: endif
+ 12768: return false
+--- L13046 ---
+ 13038: function O5O takes nothing returns nothing
+ 13039: if V51(GetUnitTypeId(GetEnumUnit()))==false then
+ 13040: set FC0=FC0+1
+ 13041: set FD0=FD0+1
+ 13042: endif
+ 13043: endfunction
+ 13044: function O6O takes nothing returns nothing
+ 13045: if(GetUnitTypeId((GetEnumUnit()))==1211117642)==false and V51(GetUnitTypeId(GetEnumUnit()))==false then
+ 13046: call AddHeroXP(GetEnumUnit(),F90,true)
+ 13047: set FA0[GetPlayerId(GetOwningPlayer(GetEnumUnit()))]=FA0[GetPlayerId(GetOwningPlayer(GetEnumUnit()))]+F90
+ 13048: set FB0[GetPlayerId(GetOwningPlayer(GetEnumUnit()))]=FB0[GetPlayerId(GetOwningPlayer(GetEnumUnit()))]+F80
+ 13049: set EL0[GetPlayerId(GetOwningPlayer(GetEnumUnit()))]=EL0[GetPlayerId(GetOwningPlayer(GetEnumUnit()))]+F80
+ 13050: set EK0[GetPlayerId(GetOwningPlayer(GetEnumUnit()))]=EK0[GetPlayerId(GetOwningPlayer(GetEnumUnit()))]+F80
+ 13051: call AA1(GetOwningPlayer(GetEnumUnit()),F80,GetEnumUnit())
+ 13052: endif
+ 13053: endfunction
+ 13054: function O7O takes player p returns integer
+ 13055: local integer O8O=0
+ 13056: local integer i=1
+ 13057: local player p2
+ 13058: loop
+ 13059: exitwhen i==6
+ 13060: set p2=BO[i]
+ 13061: if IsPlayerAlly(p,p2)then
+--- L13612 ---
+ 13604: endif
+ 13605: endif
+ 13606: if IsUnitType(P7I,UNIT_TYPE_SUMMONED)==true then
+ 13607: set AMO=R2I(AMO*0.5)
+ 13608: endif
+ 13609: return AMO
+ 13610: endfunction
+ 13611: function ANO takes nothing returns nothing
+ 13612: call AddHeroXP(GetEnumUnit(),FH0,true)
+ 13613: endfunction
+ 13614: function ASO takes nothing returns boolean
+ 13615: local unit P8I=GetFilterUnit()
+ 13616: local unit ATO=GetDyingUnit()
+ 13617: local integer MSI=GetUnitTypeId(P8I)
+ 13618: if(GetOwningPlayer((ATO))==DO)==false or IsUnitType(ATO,UNIT_TYPE_ANCIENT)==true then
+ 13619: if IsUnitEnemy(P8I,GetOwningPlayer(ATO))==false then
+ 13620: return false
+ 13621: endif
+ 13622: endif
+ 13623: if IsUnitType(P8I,UNIT_TYPE_HERO)==false or IC1(P8I)then
+ 13624: return false
+ 13625: endif
+ 13626: if B81(MSI)then
+ 13627: return false
+--- L13997 ---
+ 13989: call SetTextTagVisibility(t,false)
+ 13990: if RN0[GetPlayerId(GetLocalPlayer())]==true or(C2 and(GetLocalPlayer()==D60 or GetLocalPlayer()==D70))then
+ 13991: call SetTextTagVisibility(t,true)
+ 13992: endif
+ 13993: set t=null
+ 13994: endfunction
+ 13995: function BWO takes nothing returns nothing
+ 13996: if IsUnitType(GetEnumUnit(),UNIT_TYPE_MELEE_ATTACKER)==true then
+ 13997: call AddHeroXP(GetEnumUnit(),OK/UJ,true)
+ 13998: else
+ 13999: call AddHeroXP(GetEnumUnit(),IK/UJ,true)
+ 14000: endif
+ 14001: endfunction
+ 14002: function BXO takes nothing returns nothing
+ 14003: local group g=NTI()
+ 14004: local integer BYO
+ 14005: local integer BJO=20
+ 14006: local integer BKO=31
+ 14007: call GroupEnumUnitsInRange(g,GetUnitX(GetTriggerUnit()),GetUnitY(GetTriggerUnit()),1300+25,Condition(function D01))
+ 14008: set BYO=O51(g)
+ 14009: set UJ=BYO
+ 14010: set IK=BJO
+ 14011: set OK=BKO
+ 14012: call ForGroup(g,function BWO)
+--- L17142 ---
+ 17134: local integer G0O=R2I((TimerGetElapsed(M))/60)
+ 17135: local integer XP=50+5*G0O
+ 17136: local integer ROI=50+2*G0O
+ 17137: local boolean GIO=(LoadBoolean(LY,(GetHandleId(BA1)),(835)))
+ 17138: if GIO then
+ 17139: set XP=100
+ 17140: set ROI=100
+ 17141: endif
+ 17142: call AddHeroXP(SFI,XP,true)
+ 17143: call AA1(GetOwningPlayer(SFI),ROI,SFI)
+ 17144: call PlaySoundOnUnitBJ(AG,100,SFI)
+ 17145: endfunction
+ 17146: function G1O takes unit SFI,item BA1 returns nothing
+ 17147: local unit u=SFI
+ 17148: local real x=GetUnitX(u)
+ 17149: local real y=GetUnitY(u)
+ 17150: local unit I01=CreateUnit(GetOwningPlayer(u),1697656901,x,y,0)
+ 17151: if IsUnitType(u,UNIT_TYPE_MELEE_ATTACKER)==true then
+ 17152: call UnitAddAbility(I01,1093818446)
+ 17153: else
+ 17154: call UnitAddAbility(I01,1093683026)
+ 17155: endif
+ 17156: call IssueTargetOrderById(I01,852274,u)
+ 17157: call IssueTargetOrderById(I01,852274,u)
+--- L22349 ---
+ 22341: function N4O takes nothing returns boolean
+ 22342: local trigger t=GetTriggeringTrigger()
+ 22343: local integer S5I=GetHandleId(t)
+ 22344: local unit P7I=(LoadUnitHandle(LY,(S5I),(2)))
+ 22345: local unit P8I=(LoadUnitHandle(LY,(S5I),(17)))
+ 22346: local integer SUI=(LoadInteger(LY,(S5I),(34)))
+ 22347: if(GetTriggerEventId()==EVENT_UNIT_DEATH and GetKillingUnit()==P7I)or(GetTriggerEventId()==EVENT_UNIT_DAMAGED and GetUnitAbilityLevel(P8I,1110459731)>0)then
+ 22348: call DestroyEffect(AddSpecialEffect("Abilities\\Spells\\Other\\Transmute\\PileofGold.mdl",GetUnitX(P8I),GetUnitY(P8I)))
+ 22349: call AddHeroXP(P7I,R2I(SQI(SUI)*2.5),true)
+ 22350: call OL1(GetOwningPlayer(P7I),P8I,190)
+ 22351: set EL0[GetPlayerId(GetOwningPlayer(P7I))]=EL0[GetPlayerId(GetOwningPlayer(P7I))]+190
+ 22352: set EK0[GetPlayerId(GetOwningPlayer(P7I))]=EK0[GetPlayerId(GetOwningPlayer(P7I))]+190
+ 22353: call FlushChildHashtable(LY,(S5I))
+ 22354: call S0I(t)
+ 22355: call KillUnit(P8I)
+ 22356: endif
+ 22357: set t=null
+ 22358: set P7I=null
+ 22359: set P8I=null
+ 22360: return false
+ 22361: endfunction
+ 22362: function N5O takes nothing returns nothing
+ 22363: local trigger t=CreateTrigger()
+ 22364: local integer S5I=GetHandleId(t)
+--- L39293 ---
+ 39285: function SD2 takes nothing returns boolean
+ 39286: return TOI(GetOwningPlayer(GetFilterUnit()))and RRI(GetFilterUnit())==true and GetUnitTypeId(GetFilterUnit())!=1211117642
+ 39287: endfunction
+ 39288: function SE2 takes nothing returns nothing
+ 39289: local unit u=GetEnumUnit()
+ 39290: call SetUnitState(u,UNIT_STATE_LIFE,GetUnitState(u,UNIT_STATE_LIFE)+200)
+ 39291: call SetUnitState(u,UNIT_STATE_MANA,GetUnitState(u,UNIT_STATE_MANA)+200)
+ 39292: call SetPlayerState(GetOwningPlayer(u),PLAYER_STATE_RESOURCE_GOLD,GetPlayerState(GetOwningPlayer(u),PLAYER_STATE_RESOURCE_GOLD)+150)
+ 39293: call AddHeroXP(u,248,true)
+ 39294: set u=null
+ 39295: endfunction
+ 39296: function SF2 takes integer i,integer JF2,integer r,integer g,integer b,integer a,real x,real y,boolean SG2 returns nothing
+ 39297: local integer S5I=GetHandleId(GetTriggeringTrigger())
+ 39298: local image SH2=(LoadImageHandle(LY,(S5I),(476+i)))
+ 39299: local image SZ2=(LoadImageHandle(LY,(S5I),(484+i)))
+ 39300: if SH2!=null then
+ 39301: call DestroyImage(SH2)
+ 39302: call SaveImageHandle(LY,(S5I),(476+i),(null))
+ 39303: set SH2=null
+ 39304: endif
+ 39305: if SZ2!=null then
+ 39306: call DestroyImage(SZ2)
+ 39307: call SaveImageHandle(LY,(S5I),(484+i),(null))
+ 39308: set SZ2=null
+--- L64099 ---
+ 64091: endfunction
+ 64092: function DoubleTrouble_IsKoboldCondition takes nothing returns boolean
+ 64093: return GetOwningPlayer(GetFilterUnit())==GetOwningPlayer(XO)and GetFilterUnit()!=XO and(GetUnitTypeId(GetFilterUnit())==(1211117641)or GetUnitTypeId(GetFilterUnit())==(1211117642))
+ 64094: endfunction
+ 64095: function DoubleTrouble_UnshareXPCondition takes nothing returns boolean
+ 64096: return IsUnitType(GetFilterUnit(),UNIT_TYPE_HERO)==true and IsUnitAlly(GetFilterUnit(),GetOwningPlayer(XO))==true and LC4(GetFilterUnit())==false
+ 64097: endfunction
+ 64098: function DoubleTrouble_UnshareXPGive takes nothing returns nothing
+ 64099: call AddHeroXP(GetEnumUnit(),YO,true)
+ 64100: endfunction
+ 64101: function LD4 takes nothing returns nothing
+ 64102: local integer LE4=GetHandleId(GetTriggeringTrigger())
+ 64103: local player T4I=(LoadPlayerHandle(LY,(LE4),(370)))
+ 64104: local integer LF4=GetHandleId(T4I)
+ 64105: local unit W41=(LoadUnitHandle(LY,(LF4),(699)))
+ 64106: local unit W51=(LoadUnitHandle(LY,(LF4),(700)))
+ 64107: local unit W61=(LoadUnitHandle(LY,(LF4),(701)))
+ 64108: local unit W71=(LoadUnitHandle(LY,(LF4),(702)))
+ 64109: local unit W81=(LoadUnitHandle(LY,(LF4),(703)))
+ 64110: local integer LG4=GetUnitAbilityLevel(W41,1096904043)*2
+ 64111: local integer JJ3=GetHeroAgi(W41,false)
+ 64112: local integer LH4=GetHeroAgi(W41,true)-JJ3-LG4
+ 64113: local integer JK3=GetHeroStr(W41,false)
+ 64114: local integer LZ4=GetHeroStr(W41,true)-JK3-LG4
+--- L64191 ---
+ 64183: local integer ME4=M94-M34-M44
+ 64184: if GetUnitState(W41,UNIT_STATE_LIFE)>1 then
+ 64185: set LP4=LP4+MA4
+ 64186: set LU4=LU4+MB4
+ 64187: set MI4=MI4+MC4
+ 64188: set MO4=MO4+MD4
+ 64189: set M34=M34+ME4
+ 64190: if W41!=null then
+ 64191: call AddHeroXP(W51,MA4,false)
+ 64192: if GetHeroXP(W51)!=M64 then
+ 64193: set M04=M04+MA4
+ 64194: endif
+ 64195: call AddHeroXP(W61,MA4,false)
+ 64196: if GetHeroXP(W61)!=M74 then
+ 64197: set M14=M14+MA4
+ 64198: endif
+ 64199: call AddHeroXP(W71,MA4,false)
+ 64200: if GetHeroXP(W71)!=M84 then
+ 64201: set M24=M24+MA4
+ 64202: endif
+ 64203: call AddHeroXP(W81,MA4,false)
+ 64204: if GetHeroXP(W81)!=M94 then
+ 64205: set M44=M44+MA4
+ 64206: endif
+--- L64209 ---
+ 64201: set M24=M24+MA4
+ 64202: endif
+ 64203: call AddHeroXP(W81,MA4,false)
+ 64204: if GetHeroXP(W81)!=M94 then
+ 64205: set M44=M44+MA4
+ 64206: endif
+ 64207: endif
+ 64208: if W51!=null then
+ 64209: call AddHeroXP(W41,MB4,false)
+ 64210: if GetHeroXP(W41)!=M54 then
+ 64211: set LQ4=LQ4+MB4
+ 64212: endif
+ 64213: call AddHeroXP(W61,MB4,false)
+ 64214: if GetHeroXP(W61)!=M74 then
+ 64215: set M14=M14+MB4
+ 64216: endif
+ 64217: call AddHeroXP(W71,MB4,false)
+ 64218: if GetHeroXP(W71)!=M84 then
+ 64219: set M24=M24+MB4
+ 64220: endif
+ 64221: call AddHeroXP(W81,MB4,false)
+ 64222: if GetHeroXP(W81)!=M94 then
+ 64223: set M44=M44+MB4
+ 64224: endif
+--- L64227 ---
+ 64219: set M24=M24+MB4
+ 64220: endif
+ 64221: call AddHeroXP(W81,MB4,false)
+ 64222: if GetHeroXP(W81)!=M94 then
+ 64223: set M44=M44+MB4
+ 64224: endif
+ 64225: endif
+ 64226: if W61!=null then
+ 64227: call AddHeroXP(W51,MC4,false)
+ 64228: if GetHeroXP(W51)!=M64 then
+ 64229: set M04=M04+MC4
+ 64230: endif
+ 64231: call AddHeroXP(W41,MC4,false)
+ 64232: if GetHeroXP(W41)!=M54 then
+ 64233: set LQ4=LQ4+MC4
+ 64234: endif
+ 64235: call AddHeroXP(W71,MC4,false)
+ 64236: if GetHeroXP(W71)!=M84 then
+ 64237: set M24=M24+MC4
+ 64238: endif
+ 64239: call AddHeroXP(W81,MC4,false)
+ 64240: if GetHeroXP(W81)!=M94 then
+ 64241: set M44=M44+MC4
+ 64242: endif
+--- L64245 ---
+ 64237: set M24=M24+MC4
+ 64238: endif
+ 64239: call AddHeroXP(W81,MC4,false)
+ 64240: if GetHeroXP(W81)!=M94 then
+ 64241: set M44=M44+MC4
+ 64242: endif
+ 64243: endif
+ 64244: if W71!=null then
+ 64245: call AddHeroXP(W51,MD4,false)
+ 64246: if GetHeroXP(W51)!=M64 then
+ 64247: set M04=M04+MD4
+ 64248: endif
+ 64249: call AddHeroXP(W61,MD4,false)
+ 64250: if GetHeroXP(W61)!=M74 then
+ 64251: set M14=M14+MD4
+ 64252: endif
+ 64253: call AddHeroXP(W41,MD4,false)
+ 64254: if GetHeroXP(W41)!=M54 then
+ 64255: set LQ4=LQ4+MD4
+ 64256: endif
+ 64257: call AddHeroXP(W81,MD4,false)
+ 64258: if GetHeroXP(W81)!=M94 then
+ 64259: set M44=M44+MD4
+ 64260: endif
+--- L64263 ---
+ 64255: set LQ4=LQ4+MD4
+ 64256: endif
+ 64257: call AddHeroXP(W81,MD4,false)
+ 64258: if GetHeroXP(W81)!=M94 then
+ 64259: set M44=M44+MD4
+ 64260: endif
+ 64261: endif
+ 64262: if W81!=null then
+ 64263: call AddHeroXP(W51,ME4,false)
+ 64264: if GetHeroXP(W51)!=M64 then
+ 64265: set M04=M04+ME4
+ 64266: endif
+ 64267: call AddHeroXP(W61,ME4,false)
+ 64268: if GetHeroXP(W61)!=M74 then
+ 64269: set M14=M14+ME4
+ 64270: endif
+ 64271: call AddHeroXP(W41,ME4,false)
+ 64272: if GetHeroXP(W41)!=M54 then
+ 64273: set LQ4=LQ4+ME4
+ 64274: endif
+ 64275: call AddHeroXP(W71,ME4,false)
+ 64276: if GetHeroXP(W71)!=M84 then
+ 64277: set M24=M24+ME4
+ 64278: endif
+(total shown: 15)
+
+================ Deny XP / 1300 range (pattern=(?:1300\.|IsUnitAlly.*AddHeroXP|GetUnitPointValue.*36|36\s*\*)) ================
+--- L20750 ---
+ 20745: else
+ 20746: set d=NPI*21
+ 20747: set i=0
+ 20748: loop
+ 20749: exitwhen i>36
+ 20750: set x=x0+d*Cos(360*i/36*bj_DEGTORAD)
+ 20751: set y=y0+d*Sin(360*i/36*bj_DEGTORAD)
+ 20752: set GK=P7I
+ 20753: call GroupEnumUnitsInRange(g,x,y,150,Condition(function C81))
+ 20754: call ForGroup(g,function J9O)
+ 20755: set i=i+1
+ 20756: endloop
+ 20757: endif
+ 20758: call NSI(g)
+ 20759: set t=null
+ 20760: set I01=null
+ 20761: set JAO=null
+ 20762: set P7I=null
+ 20763: set g=null
+ 20764: return false
+ 20765: endfunction
+--- L58603 ---
+ 58598: local unit P8I
+ 58599: local real x=GetUnitX(I01)
+ 58600: local real y=GetUnitY(I01)
+ 58601: local real EN4=(LoadReal(LY,(S5I),(6)))
+ 58602: local real ES4=(LoadReal(LY,(S5I),(7)))
+ 58603: set x=PTI(x+36*Cos(a))
+ 58604: set y=PUI(y+36*Sin(a))
+ 58605: call SetUnitX(I01,x)
+ 58606: call SetUnitY(I01,y)
+ 58607: set GK=I01
+ 58608: call GroupEnumUnitsInRange(g,x,y,125,Condition(function CE1))
+ 58609: set P8I=FirstOfGroup(g)
+ 58610: call NSI(g)
+ 58611: if QNI(x,y,EN4,ES4)<40 or GetTriggerEvalCount(t)>100 then
+ 58612: set P8I=null
+ 58613: set x=EN4
+ 58614: set y=ES4
+ 58615: set GOI=P7I
+ 58616: set G3I=(LoadInteger(LY,(S5I),(5)))
+ 58617: set G2I=P8I
+ 58618: if P8I==null then
+--- L70003 ---
+ 69998: set d=21*36+(20-NPI)*36
+ 69999: set V3I=d
+ 70000: set i=0
+ 70001: loop
+ 70002: exitwhen i>36
+ 70003: set x=x0+d*Cos(360*i/36*bj_DEGTORAD)
+ 70004: set y=y0+d*Sin(360*i/36*bj_DEGTORAD)
+ 70005: set GK=P7I
+ 70006: call GroupEnumUnitsInRange(g,x,y,100,Condition(function CH1))
+ 70007: call ForGroup(g,function AN5)
+ 70008: set i=i+1
+ 70009: endloop
+ 70010: else
+ 70011: set d=NPI*36
+ 70012: set V3I=d
+ 70013: set i=0
+ 70014: loop
+ 70015: exitwhen i>36
+ 70016: set x=x0+d*Cos(360*i/36*bj_DEGTORAD)
+ 70017: set y=y0+d*Sin(360*i/36*bj_DEGTORAD)
+ 70018: set GK=P7I
+--- L83971 ---
+ 83966: set J3I=QWI
+ 83967: endif
+ 83968: endfunction
+ 83969: function QX5 takes unit u1,unit u2 returns real
+ 83970: local real IT3=QLI(u1,u2)
+ 83971: local real Q4I=IT3/1300.0
+ 83972: if Q4I>0.4 then
+ 83973: return IT3/0.4
+ 83974: endif
+ 83975: return 1300.0
+ 83976: endfunction
+ 83977: function QY5 takes nothing returns boolean
+ 83978: local trigger t=GetTriggeringTrigger()
+ 83979: local integer S5I=GetHandleId(t)
+ 83980: local unit P7I=(LoadUnitHandle(LY,(S5I),(2)))
+ 83981: local real EN4=(LoadReal(LY,(S5I),(47)))
+ 83982: local real ES4=(LoadReal(LY,(S5I),(48)))
+ 83983: local unit DX3=(LoadUnitHandle(LY,(S5I),(19)))
+ 83984: local real IO3=GetUnitX(P7I)
+ 83985: local real I23=GetUnitY(P7I)
+ 83986: local real QJI=(LoadReal(LY,(S5I),(6)))
+(total shown: 4)
+
+================ Wards o004 / oeye (pattern='o004'|'oeye') ================
+(total shown: 0)
+
+================ Rune pickup / spawn (pattern=has activated|picked up|bottled|'I006'|'I007'|'I008'|'I00H'|'I00J') ================
+(total shown: 0)
+
+================ Multiboard & GetHeroLevel (pattern=MultiboardSetItemValue.*GetHeroLevel|GetHeroLevel.*Multiboard) ================
+--- L26121 ---
+ 26117: set QQO=QQO+1
+ 26118: set N8I=MultiboardGetItem(SY0,QPO,QQO)
+ 26119: call MultiboardSetItemValueColor(N8I,UDO,UEO,UFO,UGO)
+ 26120: call MultiboardSetItemStyle(N8I,true,false)
+ 26121: call MultiboardSetItemValue(N8I,(I2S(WS[GV1(GetHeroLevel(K1[GetPlayerId((QTO[i]))]))])))
+ 26122: call MultiboardSetItemWidth(N8I,0.07)
+ 26123: call MultiboardReleaseItem(N8I)
+ 26124: set i=i+1
+ 26125: endloop
+ 26126: set i=1
+ 26127: loop
+ 26128: exitwhen i>QSO
+ 26129: set QQO=QQO+1
+--- L26133 ---
+ 26129: set QQO=QQO+1
+ 26130: set N8I=MultiboardGetItem(SY0,QPO,QQO)
+ 26131: call MultiboardSetItemValueColor(N8I,UDO,UEO,UFO,UGO)
+ 26132: call MultiboardSetItemStyle(N8I,true,false)
+ 26133: call MultiboardSetItemValue(N8I,(I2S(WS[GV1(GetHeroLevel(K1[GetPlayerId((QRO[i]))]))])))
+ 26134: call MultiboardSetItemWidth(N8I,0.07)
+ 26135: call MultiboardReleaseItem(N8I)
+ 26136: set i=i+1
+ 26137: endloop
+ 26138: set QQO=0
+ 26139: set QPO=QPO+1
+ 26140: set N8I=MultiboardGetItem(SY0,QPO,QQO)
+ 26141: call MultiboardSetItemStyle(N8I,true,false)
+(total shown: 2)

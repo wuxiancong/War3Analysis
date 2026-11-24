@@ -1,0 +1,249 @@
+=== 1. 1.27 CMissile 虚表 +0x60..+0xC0 ===
+  vt+0x60 = 0x21A90
+  vt+0x64 = 0x219D0
+  vt+0x68 = 0x21760
+  vt+0x6C = 0x21740
+  vt+0x70 = 0x217E0
+  vt+0x74 = 0x217C0
+  vt+0x78 = 0x6A0D80
+  vt+0x7C = 0x6A0F60
+  vt+0x80 = 0x6A1250
+  vt+0x84 = 0x2197B0
+  vt+0x88 = 0x6A0B10
+  vt+0x8C = 0x6A11C0
+  vt+0x90 = 0x6A1120
+  vt+0x94 = 0x6A1090
+  vt+0x98 = 0x2227B0
+  vt+0x9C = 0x6B5890
+  vt+0xA0 = 0x3F72F0
+  vt+0xA4 = 0x3E79C0
+  vt+0xA8 = 0x6B35B0
+  vt+0xAC = 0x6B0000
+  vt+0xB0 = 0x3DD010
+  vt+0xB4 = 0x6AFB60
+  vt+0xB8 = 0x6B9830
+  vt+0xBC = 0x6B2450
+  vt+0xC0 = 0x6B57D0
+
+=== 2. 1.27 CMissile 飞行更新与命中判定 [0x6A0000..0x6B6000] ===
+  +0xA0 hits in [0x6A0000..0x6B6000]: ['0x6a2634', '0x6a2988', '0x6a6303', '0x6ae493', '0x6ae6ee', '0x6b02f0', '0x6b0a72', '0x6b0e1f', '0x6b1302', '0x6b2056', '0x6b241a', '0x6b25f4']
+  --- around 0x6A2634 ---
+    6F6A25FF: FF
+    6F6A2600: FF
+    6F6A2601: FF B5 EC FA FF FF  push        dword ptr [ebp+FFFFFAECh]
+    6F6A2607: D9 9E 94 00 00 00  fstp        dword ptr [esi+00000094h]
+    6F6A260D: 57                 push        edi
+    6F6A260E: 8B CB              mov         ecx,ebx
+    6F6A2610: E8 6B 35 FF FF     call        6F695B80
+    6F6A2615: FF B5 EC FA FF FF  push        dword ptr [ebp+FFFFFAECh]
+    6F6A261B: D9 9E 98 00 00 00  fstp        dword ptr [esi+00000098h]
+    6F6A2621: 57                 push        edi
+    6F6A2622: 8B CB              mov         ecx,ebx
+    6F6A2624: E8 D7 54 FF FF     call        6F697B00
+    6F6A2629: FF B5 EC FA FF FF  push        dword ptr [ebp+FFFFFAECh]
+    6F6A262F: 8B CB              mov         ecx,ebx
+    6F6A2631: 57                 push        edi
+    6F6A2632: D9 9E A0 00 00 00  fstp        dword ptr [esi+000000A0h]
+    6F6A2638: E8 03 55 FF FF     call        6F697B40
+    6F6A263D: FF B5 EC FA FF FF  push        dword ptr [ebp+FFFFFAECh]
+    6F6A2643: 8B CB              mov         ecx,ebx
+    6F6A2645: 89 86 A4 00 00 00  mov         dword ptr [esi+000000A4h],eax
+    6F6A264B: 57                 push        edi
+    6F6A264C: E8 1F 3E FF FF     call        6F696470
+    6F6A2651: 50                 push        eax
+    6F6A2652: 8D 8E A8 00 00 00  lea         ecx,[esi+000000A8h]
+    6F6A2658: E8 B3 EC 9A FF     call        6F051310
+    6F6A265D: FF B5 EC FA FF FF  push        dword ptr [ebp+FFFFFAECh]
+    6F6A2663: 8B CB              mov         ecx,ebx
+    6F6A2665: 57                 push        edi
+    6F6A2666: E8 35 3A FF FF     call        6F6960A0
+    6F6A266B: 85 C0              test        eax,eax
+    6F6A266D: 74 39              je          6F6A26A8
+    6F6A266F: 80 38 00           cmp         byte ptr [eax],0
+    6F6A2672: 74 34              je          6F6A26A8
+    6F6A2674: 68 00 04 00 00     push        400h
+    6F6A2679: 50                 push        eax
+    6F6A267A: 8D 85 F0 FA FF FF  lea         eax,[ebp+FFFFFAF0h]
+    6F6A2680: 50                 push        eax
+    6F6A2681: E8 AE DF A7 FF     call        6F120634
+    6F6A2686: BA 00 04 00 00     mov         edx,400h
+    6F6A268B: 8D
+    6F6A268C: 8D
+    6F6A268D: F0 FA              lock cli
+    6F6A268F: FF
+  --- around 0x6A2988 ---
+    6F6A2953: 3B C1              cmp         eax,ecx
+    6F6A2955: 0F 4C C8           cmovl       ecx,eax
+    6F6A2958: F3 0F 10 02        movss       xmm0,dword ptr [edx]
+    6F6A295C: 33 D2              xor         edx,edx
+    6F6A295E: F3 0F 10 0E        movss       xmm1,dword ptr [esi]
+    6F6A2962: 6A 00              push        0
+    6F6A2964: 83 EC 08           sub         esp,8
+    6F6A2967: F3 0F 11 44 24 04  movss       dword ptr [esp+4],xmm0
+    6F6A296D: F3 0F 11 0C 24     movss       dword ptr [esp],xmm1
+    6F6A2972: E8 39 D1 0C 00     call        6F76FAB0
+    6F6A2977: 5E                 pop         esi
+    6F6A2978: 5D                 pop         ebp
+    6F6A2979: C2 08 00           ret         8
+    6F6A297C: CC                 int         3
+    6F6A297D: CC                 int         3
+    6F6A297E: CC                 int         3
+    6F6A297F: CC                 int         3
+    6F6A2980: 55                 push        ebp
+    6F6A2981: 8B EC              mov         ebp,esp
+    6F6A2983: 83 E4 F8           and         esp,0FFFFFFF8h
+    6F6A2986: 81 EC A0 00 00 00  sub         esp,0A0h
+    6F6A298C: 56                 push        esi
+    6F6A298D: 8B 75 18           mov         esi,dword ptr [ebp+18h]
+    6F6A2990: 89 4C 24 1C        mov         dword ptr [esp+1Ch],ecx
+    6F6A2994: 57                 push        edi
+    6F6A2995: 8B FA              mov         edi,edx
+    6F6A2997: 85 F6              test        esi,esi
+    6F6A2999: 0F 84 03 06 00 00  je          6F6A2FA2
+    6F6A299F: F2 0F 10 1D 90 A8  movsd       xmm3,mmword ptr ds:[6F95A890h]
+    6F6A29A7: 0F 57 C9           xorps       xmm1,xmm1
+    6F6A29AA: 8B 45 0C           mov         eax,dword ptr [ebp+0Ch]
+    6F6A29AD: 0F 28 C1           movaps      xmm0,xmm1
+    6F6A29B0: F3 0F 5C 45 10     subss       xmm0,dword ptr [ebp+10h]
+    6F6A29B5: F3 0F 10 25 78 66  movss       xmm4,dword ptr ds:[6F956678h]
+    6F6A29BD: F3 0F 10 10        movss       xmm2,dword ptr [eax]
+    6F6A29C1: 33 C0              xor         eax,eax
+    6F6A29C3: F3 0F 11 54 24 1C  movss       dword ptr [esp+1Ch],xmm2
+    6F6A29C9: F3 0F 5A C0        cvtss2sd    xmm0,xmm0
+    6F6A29CD: 66 0F 54 C3        andpd       xmm0,xmm3
+    6F6A29D1: 66 0F 5A C0        cvtpd2ps    xmm0,xmm0
+    6F6A29D5: 0F 2F E0           comiss      xmm4,xmm0
+    6F6A29D8: 0F 97 C0           seta        al
+    6F6A29DB: 85 C0              test        eax,eax
+    6F6A29DD: 74 6F              je          6F6A2A4E
+    6F6A29DF: 0F 28 C1           movaps      xmm0,xmm1
+    6F6A29E2: 33 C0              xor         eax,eax
+  --- around 0x6A6303 ---
+    6F6A62CE: 8B 1D 20 D1 BE 6F  mov         ebx,dword ptr ds:[6FBED120h]
+    6F6A62D4: 23 C6              and         eax,esi
+    6F6A62D6: 8D 3C 40           lea         edi,[eax+eax*2]
+    6F6A62D9: 8B 54 BB 08        mov         edx,dword ptr [ebx+edi*4+8]
+    6F6A62DD: 85 D2              test        edx,edx
+    6F6A62DF: 7E 17              jle         6F6A62F8
+    6F6A62E1: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+    6F6A62E4: 39 32              cmp         dword ptr [edx],esi
+    6F6A62E6: 75 05              jne         6F6A62ED
+    6F6A62E8: 39 42 14           cmp         dword ptr [edx+14h],eax
+    6F6A62EB: 74 14              je          6F6A6301
+    6F6A62ED: 8B 0C BB           mov         ecx,dword ptr [ebx+edi*4]
+    6F6A62F0: 8B 54 11 04        mov         edx,dword ptr [ecx+edx+4]
+    6F6A62F4: 85 D2              test        edx,edx
+    6F6A62F6: 7F EC              jg          6F6A62E4
+    6F6A62F8: D9 EE              fldz
+    6F6A62FA: 5F                 pop         edi
+    6F6A62FB: 5E                 pop         esi
+    6F6A62FC: 5B                 pop         ebx
+    6F6A62FD: 8B E5              mov         esp,ebp
+    6F6A62FF: 5D                 pop         ebp
+    6F6A6300: C3                 ret
+    6F6A6301: D9 82 A0 00 00 00  fld         dword ptr [edx+000000A0h]
+    6F6A6307: 5F                 pop         edi
+    6F6A6308: 5E                 pop         esi
+    6F6A6309: 5B                 pop         ebx
+    6F6A630A: 8B E5              mov         esp,ebp
+    6F6A630C: 5D                 pop         ebp
+    6F6A630D: C3                 ret
+    6F6A630E: CC                 int         3
+    6F6A630F: CC                 int         3
+    6F6A6310: 8B 49 30           mov         ecx,dword ptr [ecx+30h]
+    6F6A6313: E9 98 FF FF FF     jmp         6F6A62B0
+    6F6A6318: CC                 int         3
+    6F6A6319: CC                 int         3
+    6F6A631A: CC                 int         3
+    6F6A631B: CC                 int         3
+    6F6A631C: CC                 int         3
+    6F6A631D: CC                 int         3
+    6F6A631E: CC                 int         3
+    6F6A631F: CC                 int         3
+    6F6A6320: 55                 push        ebp
+    6F6A6321: 8B EC              mov         ebp,esp
+    6F6A6323: 51                 push        ecx
+    6F6A6324: 56                 push        esi
+    6F6A6325: 89 4D FC           mov         dword ptr [ebp-4],ecx
+    6F6A6328: 8D 4D FC           lea         ecx,[ebp-4]
+    6F6A632B: 57                 push        edi
+    6F6A632C: E8 DF 43 AD FF     call        6F17A710
+    6F6A6331: 8B F0              mov         esi,eax
+    6F6A6333: A1 28 D1 BE 6F     mov         eax,dword ptr ds:[6FBED128h]
+    6F6A6338: 83 F8 FF           cmp         eax,0FFFFFFFFh
+    6F6A633B: 74 2B              je          6F6A6368
+    6F6A633D: 8B 0D 20 D1 BE 6F  mov         ecx,dword ptr ds:[6FBED120h]
+    6F6A6343: 23 C6              and         eax,esi
+    6F6A6345: 8D 14 40           lea         edx,[eax+eax*2]
+    6F6A6348: 8D 3C 91           lea         edi,[ecx+edx*4]
+    6F6A634B: 8B 4F 08           mov         ecx,dword ptr [edi+8]
+    6F6A634E: 85 C9              test        ecx,ecx
+    6F6A6350: 7E 16              jle         6F6A6368
+    6F6A6352: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+    6F6A6355: 39 31              cmp         dword ptr [ecx],esi
+    6F6A6357: 75 05              jne         6F6A635E
+    6F6A6359: 39 41 14           cmp         dword ptr [ecx+14h],eax
+    6F6A635C: 74 12              je          6F6A6370
+    6F6A635E: 8B
+  --- around 0x6AE493 ---
+    6F6AE45E: 81 BB 6F 89 87 8C  cmp         dword ptr [ebx+8C87896Fh],8B000000h
+    6F6AE468: C7 C7 87 90 00 00  mov         edi,9087h
+    6F6AE46E: 00 00              add         byte ptr [eax],al
+    6F6AE470: 00 00              add         byte ptr [eax],al
+    6F6AE472: 00 C7              add         bh,al
+    6F6AE474: 87 94 00 00 00 00  xchg        edx,dword ptr [eax+eax+00000000h]
+    6F6AE47B: 00 00              add         byte ptr [eax],al
+    6F6AE47D: C7 87 98 00 00 00  mov         dword ptr [edi+00000098h],0
+    6F6AE487: C7 87 9C 00 00 00  mov         dword ptr [edi+0000009Ch],0
+    6F6AE491: C7 87 A0 00 00 00  mov         dword ptr [edi+000000A0h],0
+    6F6AE49B: C7 87 AC 00 00 00  mov         dword ptr [edi+000000ACh],0
+    6F6AE4A5: C7 87 A8 00 00 00  mov         dword ptr [edi+000000A8h],0FFFFFFFFh
+    6F6AE4AF: C7 87 A4 00 00 00  mov         dword ptr [edi+000000A4h],0FFFFFFFFh
+    6F6AE4B9: C7 87 AC 00 00 00  mov         dword ptr [edi+000000ACh],0
+    6F6AE4C3: C7 87 B0 00 00 00  mov         dword ptr [edi+000000B0h],0
+    6F6AE4CD: C7 87 BC 00 00 00  mov         dword ptr [edi+000000BCh],0
+    6F6AE4D7: C7 87 B8 00 00 00  mov         dword ptr [edi+000000B8h],0FFFFFFFFh
+    6F6AE4E1: C7 87 B4 00 00 00  mov         dword ptr [edi+000000B4h],0FFFFFFFFh
+    6F6AE4EB: C7
+    6F6AE4EC: 87
+    6F6AE4ED: BC
+    6F6AE4EE: 00
+
+=== 3. 全 11 版 7x8 伤害倍率表 (DamageBonusNormal) 与护甲系数 (Armor) 扫描 ===
+  1.0.17.5988   | DamageBonusNormal_row/table = 0x7E65BC
+  1.0.20.6048   | DamageBonusNormal_row/table = 0x7E75FC
+  1.20.4.6074   | DamageBonusNormal_row/table = 0x7E75FC
+  1.21.0.6263   | DamageBonusNormal_row/table = 0x7E85FC
+  1.22.0.6328   | DamageBonusNormal_row/table = 0x864DD0
+  1.23.0.6352   | DamageBonusNormal_row/table = 0x878EC0
+  1.24.1.6374   | DamageBonusNormal_row/table = 0x887EF0
+  1.24.4.6387   | DamageBonusNormal_row/table = 0x887EF0
+  1.25.1.6397   | DamageBonusNormal_row/table = 0x875DE0
+  1.26.0.6401   | DamageBonusNormal_row/table = 0x875DE0
+  [1.27 DamageBonusNormal xref asm]:
+    6F64D828: AB                 stos        dword ptr es:[edi]
+    6F64D829: A4                 movs        byte ptr es:[edi],byte ptr [esi]
+    6F64D82A: 6F                 outs        dx,dword ptr [esi]
+    6F64D82B: BA 14 1B 95 6F     mov         edx,6F951B14h
+    6F64D830: 8D 4D FC           lea         ecx,[ebp-4]
+    6F64D833: E8 78 CC 9D FF     call        6F02A4B0
+    6F64D838: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+    6F64D83B: 89 86 28 C3 BE 6F  mov         dword ptr [esi+6FBEC328h],eax
+    6F64D841: E9 B5 00 00 00     jmp         6F64D8FB
+    6F64D846: 57                 push        edi
+    6F64D847: 68 78 AB A4 6F     push        6FA4AB78h
+    6F64D84C: BA 14 1B 95 6F     mov         edx,6F951B14h
+    6F64D851: 8D 4D F8           lea         ecx,[ebp-8]
+    6F64D854: E8 57 CC 9D FF     call        6F02A4B0
+    6F64D859: 8B 45 F8           mov         eax,dword ptr [ebp-8]
+    6F64D85C: 89 86 48 C3 BE 6F  mov         dword ptr [esi+6FBEC348h],eax
+    6F64D862: E9 94 00 00 00     jmp         6F64D8FB
+    6F64D867: 57                 push        edi
+    6F64D868: 68 50 AB A4 6F     push        6FA4AB50h
+    6F64D86D: BA 14 1B 95 6F     mov         edx,6F951B14h
+    6F64D872: 8D 4D F4           lea         ecx,[ebp-0Ch]
+    6F64D875: E8 36 CC 9D FF     call        6F02A4B0
+    6F64D87A: 8B 45 F4           mov         eax,dword ptr [ebp-0Ch]
+    6F64D87D: 89 86 68 C3 BE 6F  mov         dword ptr [esi+6FBEC368h],eax
+    6F64D883: EB 76              jmp         6F64D8FB
+  1.27.0.52240  | DamageBonusNormal_row/table = 0x951B14

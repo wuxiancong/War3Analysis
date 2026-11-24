@@ -1,0 +1,41 @@
+{
+  "_source": "提取自 dota-ai-llm-mcp-control.md §C5 与 dota-ai-laning-routine.md（DotA 6.83d）",
+  "landmarks": {
+    "radiant_fountain": { "x": -7180, "y": -6740, "zh": "近卫泉水", "aliases": ["近卫基地", "近卫水泉"] },
+    "radiant_ancient":  { "x": -5856, "y": -5408, "zh": "近卫世界之树", "aliases": ["近卫基地树", "世界之树"] },
+    "dire_fountain":    { "x": 6912,  "y": 6528,  "zh": "天灾泉水", "aliases": ["天灾基地", "天灾水泉"] },
+    "dire_ancient":     { "x": 5568,  "y": 5120,  "zh": "天灾冰封王座", "aliases": ["冰封王座"] },
+    "roshan":           { "x": 4176,  "y": -2288, "zh": "肉山坑", "aliases": ["肉山", "rosh"] },
+    "top_rune":         { "x": -2352, "y": 1648,  "zh": "上路符点", "aliases": ["上河道符点", "上符"] },
+    "bot_rune":         { "x": 3008,  "y": -2832, "zh": "下路符点", "aliases": ["下河道符点", "下符"] },
+
+    "radiant_top_t1":   { "x": -6336, "y": 1792,  "zh": "近卫上路一塔", "aliases": ["上路一塔"] },
+    "radiant_top_t2":   { "x": -6336, "y": -1024, "zh": "近卫上路二塔", "aliases": ["上路二塔"] },
+    "radiant_top_t3":   { "x": -6656, "y": -3456, "zh": "近卫上路三塔", "aliases": ["上路高地塔"] },
+    "radiant_mid_t1":   { "x": -1664, "y": -1472, "zh": "近卫中路一塔", "aliases": ["中路一塔", "中一塔"] },
+    "radiant_mid_t2":   { "x": -3648, "y": -2816, "zh": "近卫中路二塔", "aliases": ["中路二塔"] },
+    "radiant_mid_t3":   { "x": -4672, "y": -4160, "zh": "近卫中路三塔", "aliases": ["中路高地塔"] },
+    "radiant_bot_t1":   { "x": 4864,  "y": -6144, "zh": "近卫下路一塔", "aliases": ["下路一塔"] },
+    "radiant_bot_t2":   { "x": -576,  "y": -6144, "zh": "近卫下路二塔", "aliases": ["下路二塔"] },
+    "radiant_bot_t3":   { "x": -4032, "y": -6144, "zh": "近卫下路三塔", "aliases": ["下路高地塔"] },
+
+    "dire_top_t1":      { "x": -4736, "y": 5952,  "zh": "天灾上路一塔", "aliases": ["敌方上路一塔"] },
+    "dire_top_t2":      { "x": 0,     "y": 5952,  "zh": "天灾上路二塔", "aliases": ["敌方上路二塔"] },
+    "dire_top_t3":      { "x": 3520,  "y": 5696,  "zh": "天灾上路三塔", "aliases": ["敌方上路高地塔"] },
+    "dire_mid_t1":      { "x": 1024,  "y": 320,   "zh": "天灾中路一塔", "aliases": ["敌方中路一塔"] },
+    "dire_mid_t2":      { "x": 2496,  "y": 2048,  "zh": "天灾中路二塔", "aliases": ["敌方中路二塔"] },
+    "dire_mid_t3":      { "x": 4224,  "y": 3648,  "zh": "天灾中路三塔", "aliases": ["敌方中路高地塔"] },
+    "dire_bot_t1":      { "x": 6208,  "y": -1664, "zh": "天灾下路一塔", "aliases": ["敌方下路一塔"] },
+    "dire_bot_t2":      { "x": 6208,  "y": 384,   "zh": "天灾下路二塔", "aliases": ["敌方下路二塔"] },
+    "dire_bot_t3":      { "x": 6272,  "y": 2944,  "zh": "天灾下路三塔", "aliases": ["敌方下路高地塔"] },
+
+    "mid_river":        { "x": -512,  "y": -320,  "zh": "中路河道", "aliases": ["中路", "中路兵线"] },
+    "ward_mid_top_rune":{ "x": -1828, "y": 292,   "zh": "中单上符河道眼位", "aliases": ["中路河道眼"] },
+    "ward_top_rune_high":{ "x": -2688,"y": 1536,  "zh": "上符高台眼位", "aliases": ["上符高台"] },
+    "ward_bot_rune_high":{ "x": 2560, "y": -1920, "zh": "下符高台眼位", "aliases": ["下符高台"] },
+    "rad_small_camp":   { "x": 3040,  "y": -4560, "zh": "近卫小野", "aliases": ["近卫拉野点"] },
+    "rad_ancients":     { "x": -2800, "y": -160,  "zh": "近卫远古野", "aliases": [] },
+    "dire_small_camp":  { "x": -2736, "y": 4432,  "zh": "天灾小野", "aliases": ["天灾拉野点"] },
+    "dire_ancients":    { "x": 3952,  "y": -736,  "zh": "天灾远古野", "aliases": [] }
+  }
+}

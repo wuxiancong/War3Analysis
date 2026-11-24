@@ -1,0 +1,486 @@
+
+================ 1. 小兵基础经验与死亡分配 (L13560-13700) ================
+ 13560: if GetUnitTypeId(AD1)==1211117642 then
+ 13561: set U1[GetPlayerId(I6O)]=(LoadUnitHandle(LY,(GetHandleId(GetOwningPlayer(AD1))),(699)))
+ 13562: endif
+ 13563: if W0[0]==YL then
+ 13564: call TriggerExecute(PK)
+ 13565: endif
+ 13566: if W0[1]==YL then
+ 13567: call TriggerExecute(RK)
+ 13568: endif
+ 13569: if(GetUnitTypeId(AD1)==1429221430)then
+ 13570: call ExecuteFunc("OOO")
+ 13571: elseif GetUnitTypeId(AD1)==1429221432 or GetUnitTypeId(AD1)==1160786229 then
+ 13572: set NK=AD1
+ 13573: call ExecuteFunc("AZO")
+ 13574: elseif GetUnitTypeId(AD1)==1432580716 then
+ 13575: set NK=AD1
+ 13576: call ExecuteFunc("AVO")
+ 13577: endif
+ 13578: endif
+ 13579: endfunction
+ 13580: function AXO takes integer MSI,integer AYO returns nothing
+ 13581: set FF0[FE0]=MSI
+ 13582: set FG0[FE0]=AYO
+ 13583: set FE0=FE0+1
+ 13584: endfunction
+ 13585: function AKO takes unit P7I returns integer
+ 13586: local integer i=0
+ 13587: local integer MSI=GetUnitTypeId(P7I)
+ 13588: loop
+ 13589: exitwhen i>FE0
+ 13590: if FF0[i]==MSI then
+ 13591: return FG0[i]
+ 13592: endif
+ 13593: set i=i+1
+ 13594: endloop
+ 13595: return-1
+ 13596: endfunction
+ 13597: function ALO takes unit P7I returns integer
+ 13598: local integer AMO=AKO(P7I)
+ 13599: if AMO==-1 then
+ 13600: if IsUnitType(P7I,UNIT_TYPE_HERO)==true then
+ 13601: set AMO=RUI(P7I)
+ 13602: else
+ 13603: set AMO=SQI(GetUnitLevel(P7I))
+ 13604: endif
+ 13605: endif
+ 13606: if IsUnitType(P7I,UNIT_TYPE_SUMMONED)==true then
+ 13607: set AMO=R2I(AMO*0.5)
+ 13608: endif
+ 13609: return AMO
+ 13610: endfunction
+ 13611: function ANO takes nothing returns nothing
+ 13612: call AddHeroXP(GetEnumUnit(),FH0,true)
+ 13613: endfunction
+ 13614: function ASO takes nothing returns boolean
+ 13615: local unit P8I=GetFilterUnit()
+ 13616: local unit ATO=GetDyingUnit()
+ 13617: local integer MSI=GetUnitTypeId(P8I)
+ 13618: if(GetOwningPlayer((ATO))==DO)==false or IsUnitType(ATO,UNIT_TYPE_ANCIENT)==true then
+ 13619: if IsUnitEnemy(P8I,GetOwningPlayer(ATO))==false then
+ 13620: return false
+ 13621: endif
+ 13622: endif
+ 13623: if IsUnitType(P8I,UNIT_TYPE_HERO)==false or IC1(P8I)then
+ 13624: return false
+ 13625: endif
+ 13626: if B81(MSI)then
+ 13627: return false
+ 13628: endif
+ 13629: if QNI(FZ0,FV0,GetUnitX(P8I),GetUnitY(P8I))>1300+25 then
+ 13630: return false
+ 13631: endif
+ 13632: return true
+ 13633: endfunction
+ 13634: function ARO takes nothing returns boolean
+ 13635: local unit APO=GetKillingUnit()
+ 13636: local unit ATO=GetDyingUnit()
+ 13637: local integer AMO=ALO(ATO)
+ 13638: local integer NPI
+ 13639: local group g
+ 13640: local group g2
+ 13641: local real x=GetUnitX(ATO)
+ 13642: local real y=GetUnitY(ATO)
+ 13643: local player p
+ 13644: if IsUnitIllusion(ATO)or GetUnitAbilityLevel(ATO,1097625443)>0 or AMO==0 then
+ 13645: return false
+ 13646: endif
+ 13647: if APO==null or IsPlayerAlly(GetOwningPlayer(APO),GetOwningPlayer(ATO))==true or(GetOwningPlayer((APO))==DO)then
+ 13648: return false
+ 13649: endif
+ 13650: set g=NTI()
+ 13651: set g2=NTI()
+ 13652: set FZ0=x
+ 13653: set FV0=y
+ 13654: set p=BO[1]
+ 13655: call GroupEnumUnitsOfPlayer(g,p,Condition(function ASO))
+ 13656: call GroupAddGroup(g,g2)
+ 13657: set p=BO[2]
+ 13658: call GroupEnumUnitsOfPlayer(g,p,Condition(function ASO))
+ 13659: call GroupAddGroup(g,g2)
+ 13660: set p=BO[3]
+ 13661: call GroupEnumUnitsOfPlayer(g,p,Condition(function ASO))
+ 13662: call GroupAddGroup(g,g2)
+ 13663: set p=BO[4]
+ 13664: call GroupEnumUnitsOfPlayer(g,p,Condition(function ASO))
+ 13665: call GroupAddGroup(g,g2)
+ 13666: set p=BO[5]
+ 13667: call GroupEnumUnitsOfPlayer(g,p,Condition(function ASO))
+ 13668: call GroupAddGroup(g,g2)
+ 13669: set p=CO[1]
+ 13670: call GroupEnumUnitsOfPlayer(g,p,Condition(function ASO))
+ 13671: call GroupAddGroup(g,g2)
+ 13672: set p=CO[2]
+ 13673: call GroupEnumUnitsOfPlayer(g,p,Condition(function ASO))
+ 13674: call GroupAddGroup(g,g2)
+ 13675: set p=CO[3]
+ 13676: call GroupEnumUnitsOfPlayer(g,p,Condition(function ASO))
+ 13677: call GroupAddGroup(g,g2)
+ 13678: set p=CO[4]
+ 13679: call GroupEnumUnitsOfPlayer(g,p,Condition(function ASO))
+ 13680: call GroupAddGroup(g,g2)
+ 13681: set p=CO[5]
+ 13682: call GroupEnumUnitsOfPlayer(g,p,Condition(function ASO))
+ 13683: call GroupAddGroup(g,g2)
+ 13684: set NPI=CountUnitsInGroup(g2)
+ 13685: if NPI>0 then
+ 13686: set FH0=AMO/NPI
+ 13687: call ForGroup(g2,function ANO)
+ 13688: endif
+ 13689: call NSI(g)
+ 13690: call NSI(g2)
+ 13691: set g=null
+ 13692: set g2=null
+ 13693: set APO=null
+ 13694: set ATO=null
+ 13695: return false
+ 13696: endfunction
+ 13697: function AUO takes nothing returns boolean
+ 13698: local unit IYO=GetSummonedUnit()
+ 13699: local integer x
+ 13700: if IsUnitIllusion(IYO)==true then
+
+================ 2. 反补经验 BWO/BXO (L13995-14060) ================
+ 13995: function BWO takes nothing returns nothing
+ 13996: if IsUnitType(GetEnumUnit(),UNIT_TYPE_MELEE_ATTACKER)==true then
+ 13997: call AddHeroXP(GetEnumUnit(),OK/UJ,true)
+ 13998: else
+ 13999: call AddHeroXP(GetEnumUnit(),IK/UJ,true)
+ 14000: endif
+ 14001: endfunction
+ 14002: function BXO takes nothing returns nothing
+ 14003: local group g=NTI()
+ 14004: local integer BYO
+ 14005: local integer BJO=20
+ 14006: local integer BKO=31
+ 14007: call GroupEnumUnitsInRange(g,GetUnitX(GetTriggerUnit()),GetUnitY(GetTriggerUnit()),1300+25,Condition(function D01))
+ 14008: set BYO=O51(g)
+ 14009: set UJ=BYO
+ 14010: set IK=BJO
+ 14011: set OK=BKO
+ 14012: call ForGroup(g,function BWO)
+ 14013: call NSI(g)
+ 14014: call BVO(GetDyingUnit(),GetOwningPlayer(GetKillingUnit()))
+ 14015: set g=null
+ 14016: endfunction
+ 14017: function BLO takes nothing returns boolean
+ 14018: if IsUnitAlly(GetKillingUnit(),GetOwningPlayer(GetTriggerUnit()))==true then
+ 14019: call BXO()
+ 14020: else
+ 14021: if C2 and T2I(GetOwningPlayer(GetKillingUnit()))then
+ 14022: call BZO()
+ 14023: endif
+ 14024: endif
+ 14025: return false
+ 14026: endfunction
+ 14027: function BNO takes player G11,player GO1 returns string
+ 14028: local string s=GetObjectName(1848656208)
+ 14029: set s=FS1(s,"$dead",(D80[GetPlayerId((G11))]))
+ 14030: return s
+ 14031: endfunction
+ 14032: function BSO takes nothing returns boolean
+ 14033: local trigger t=GetTriggeringTrigger()
+ 14034: local integer S5I=GetHandleId(t)
+ 14035: local real x=(LoadReal(LY,(S5I),(6)))
+ 14036: local real y=(LoadReal(LY,(S5I),(7)))
+ 14037: call SetTerrainPathable(x,y,PATHING_TYPE_WALKABILITY,false)
+ 14038: call FlushChildHashtable(LY,(S5I))
+ 14039: call S0I(t)
+ 14040: set t=null
+ 14041: return false
+ 14042: endfunction
+ 14043: function BTO takes unit P7I returns nothing
+ 14044: local trigger t=CreateTrigger()
+ 14045: local integer S5I=GetHandleId(t)
+ 14046: local real x=GetUnitX(P7I)
+ 14047: local real y=GetUnitY(P7I)
+ 14048: call SetTerrainPathable(x,y,PATHING_TYPE_WALKABILITY,true)
+ 14049: call TriggerRegisterTimerEvent(t,0,false)
+ 14050: call TriggerAddCondition(t,Condition(function BSO))
+ 14051: call SaveReal(LY,(S5I),(6),((x)*1.0))
+ 14052: call SaveReal(LY,(S5I),(7),((y)*1.0))
+ 14053: set P7I=null
+ 14054: set t=null
+ 14055: endfunction
+ 14056: function BRO takes nothing returns boolean
+ 14057: local trigger t=GetTriggeringTrigger()
+ 14058: local integer S5I=GetHandleId(t)
+ 14059: local unit BPO=(LoadUnitHandle(LY,(S5I),(2)))
+ 14060: local integer NPI=GetTriggerEvalCount(t)
+
+================ 3. 神符拾取与装瓶 (L17115-17260) ================
+ 17115: elseif GetUnitState(SFI,UNIT_STATE_LIFE)==GetUnitState(SFI,UNIT_STATE_MAX_LIFE)and GetUnitState(SFI,UNIT_STATE_MANA)==GetUnitState(SFI,UNIT_STATE_MAX_MANA)then
+ 17116: call UnitRemoveAbility(SFI,1110454611)
+ 17117: call UnitRemoveAbility(SFI,1110455361)
+ 17118: call FlushChildHashtable(LY,(S5I))
+ 17119: call S0I(t)
+ 17120: endif
+ 17121: set t=null
+ 17122: set SFI=null
+ 17123: return false
+ 17124: endfunction
+ 17125: function FQO takes unit SFI,item BA1 returns nothing
+ 17126: local trigger t=CreateTrigger()
+ 17127: local integer S5I=GetHandleId(t)
+ 17128: call TriggerRegisterTimerEvent(t,0.1,true)
+ 17129: call TriggerAddCondition(t,Condition(function FPO))
+ 17130: call SaveUnitHandle(LY,(S5I),(14),(SFI))
+ 17131: set t=null
+ 17132: endfunction
+ 17133: function FUO takes unit SFI,item BA1 returns nothing
+ 17134: local integer G0O=R2I((TimerGetElapsed(M))/60)
+ 17135: local integer XP=50+5*G0O
+ 17136: local integer ROI=50+2*G0O
+ 17137: local boolean GIO=(LoadBoolean(LY,(GetHandleId(BA1)),(835)))
+ 17138: if GIO then
+ 17139: set XP=100
+ 17140: set ROI=100
+ 17141: endif
+ 17142: call AddHeroXP(SFI,XP,true)
+ 17143: call AA1(GetOwningPlayer(SFI),ROI,SFI)
+ 17144: call PlaySoundOnUnitBJ(AG,100,SFI)
+ 17145: endfunction
+ 17146: function G1O takes unit SFI,item BA1 returns nothing
+ 17147: local unit u=SFI
+ 17148: local real x=GetUnitX(u)
+ 17149: local real y=GetUnitY(u)
+ 17150: local unit I01=CreateUnit(GetOwningPlayer(u),1697656901,x,y,0)
+ 17151: if IsUnitType(u,UNIT_TYPE_MELEE_ATTACKER)==true then
+ 17152: call UnitAddAbility(I01,1093818446)
+ 17153: else
+ 17154: call UnitAddAbility(I01,1093683026)
+ 17155: endif
+ 17156: call IssueTargetOrderById(I01,852274,u)
+ 17157: call IssueTargetOrderById(I01,852274,u)
+ 17158: set u=null
+ 17159: set I01=null
+ 17160: endfunction
+ 17161: function GOO takes unit SFI,item BA1 returns nothing
+ 17162: if GetItemTypeId(BA1)==1227894839 or GetItemTypeId(BA1)==1227894838 or GetItemTypeId(BA1)==1227894840 or GetItemTypeId(BA1)==1227894859 or GetItemTypeId(BA1)==1227894858 or GetItemTypeId(BA1)==1227903555 then
+ 17163: call FMO(SFI,GetItemTypeId(BA1),false)
+ 17164: endif
+ 17165: if GetItemTypeId(BA1)==1227894839 then
+ 17166: call G1O(SFI,BA1)
+ 17167: elseif GetItemTypeId(BA1)==1227894858 then
+ 17168: if GetUnitAbilityLevel(SFI,1110456665)>0 then
+ 17169: call UnitRemoveAbility(SFI,1110456665)
+ 17170: call UnitRemoveAbility(SFI,1110454609)
+ 17171: call DisableTrigger(GetTriggeringTrigger())
+ 17172: call UnitAddItemById(SFI,1227894858)
+ 17173: call EnableTrigger(GetTriggeringTrigger())
+ 17174: endif
+ 17175: elseif GetItemTypeId(BA1)==1227894840 then
+ 17176: call FQO(SFI,BA1)
+ 17177: elseif GetItemTypeId(BA1)==1227903555 then
+ 17178: call FUO(SFI,BA1)
+ 17179: endif
+ 17180: endfunction
+ 17181: function G2O takes unit SFI,item BA1 returns nothing
+ 17182: local integer IB1
+ 17183: local integer SUI
+ 17184: call UnitRemoveAbility(SFI,1093810003)
+ 17185: call UnitRemoveAbility(SFI,1093810001)
+ 17186: call UnitRemoveAbility(SFI,1093810002)
+ 17187: call UnitRemoveAbility(SFI,1093810004)
+ 17188: if GetUnitAbilityLevel(SFI,1093810246)>0 then
+ 17189: call UnitRemoveAbility(SFI,1093810246)
+ 17190: call UnitAddAbility(SFI,1093810246)
+ 17191: endif
+ 17192: if GetUnitTypeId(SFI)==1164207469 then
+ 17193: set IB1=1093684057
+ 17194: elseif GetUnitTypeId(SFI)==1429221446 then
+ 17195: set IB1=1093678660
+ 17196: elseif GetUnitTypeId(SFI)==1162032951 then
+ 17197: set IB1=1093684557
+ 17198: elseif GetUnitTypeId(SFI)==1332179560 then
+ 17199: set IB1=1093687627
+ 17200: elseif GetUnitTypeId(SFI)==1211117642 or GetUnitTypeId(SFI)==1211117641 then
+ 17201: set IB1=1093816641
+ 17202: elseif GetUnitTypeId(SFI)==1430468144 then
+ 17203: set IB1=1093817427
+ 17204: else
+ 17205: set SFI=null
+ 17206: return
+ 17207: endif
+ 17208: set SUI=GetUnitAbilityLevel(SFI,IB1)
+ 17209: if SUI>0 then
+ 17210: call UnitRemoveAbility(SFI,IB1)
+ 17211: call UnitAddAbility(SFI,IB1)
+ 17212: call SetUnitAbilityLevel(SFI,IB1,SUI)
+ 17213: endif
+ 17214: endfunction
+ 17215: function G3O takes item BA1,unit P7I,boolean G4O returns nothing
+ 17216: local integer E81=EB1(BA1)
+ 17217: local integer S5I=GetHandleId(P7I)
+ 17218: local string s=""
+ 17219: if(E81==GZ0 and EM1(P7I,GZ0,BA1)==null)or(E81==GV0 and EM1(P7I,GV0,BA1)==null)then
+ 17220: if IsPlayerAlly(GetLocalPlayer(),GetOwningPlayer(P7I))==true or P0I(GetLocalPlayer())then
+ 17221: set s="Abilities\\Spells\\Human\\MagicSentry\\MagicSentryCaster.mdl"
+ 17222: endif
+ 17223: if G4O then
+ 17224: if EQ1(P7I)>0 or GetItemType(BA1)==ITEM_TYPE_PERMANENT or GetItemType(BA1)==ITEM_TYPE_CAMPAIGN then
+ 17225: if GetUnitAbilityLevel(P7I,1093809729)==0 and GetUnitAbilityLevel(P7I,1093809730)==0 then
+ 17226: if s=="Abilities\\Spells\\Human\\MagicSentry\\MagicSentryCaster.mdl" then
+ 17227: call IA1(P7I,1093809729)
+ 17228: else
+ 17229: call IA1(P7I,1093809730)
+ 17230: endif
+ 17231: endif
+ 17232: endif
+ 17233: else
+ 17234: if not(GetUnitAbilityLevel(P7I,1093809729)==0 and GetUnitAbilityLevel(P7I,1093809730)==0)then
+ 17235: call UnitRemoveAbility(P7I,1093809730)
+ 17236: call UnitRemoveAbility(P7I,1093809729)
+ 17237: call RemoveSavedHandle(LY,(S5I),(670))
+ 17238: endif
+ 17239: endif
+ 17240: endif
+ 17241: endfunction
+ 17242: function G5O takes nothing returns boolean
+ 17243: local unit SFI=GetTriggerUnit()
+ 17244: local item BA1=GetManipulatedItem()
+ 17245: local integer id=GetItemTypeId(BA1)
+ 17246: if BA1==null or IsUnitIllusion(SFI)==true or IsUnitType(SFI,UNIT_TYPE_HERO)==false or V51(GetUnitTypeId(SFI))or GetItemTypeId(BA1)==1227894853 or GetItemTypeId(BA1)==1227895373 then
+ 17247: set SFI=null
+ 17248: set BA1=null
+ 17249: return false
+ 17250: endif
+ 17251: if(GetTriggerEventId()==EVENT_PLAYER_UNIT_DROP_ITEM and GetItemType(BA1)!=ITEM_TYPE_PURCHASABLE)or GetTriggerEventId()==EVENT_PLAYER_UNIT_PAWN_ITEM then
+ 17252: call G3O(BA1,SFI,false)
+ 17253: call FL1("DRI_"+I2S(GetPlayerId(GetOwningPlayer(SFI))),FR0[E71(EB1(BA1))])
+ 17254: elseif GetTriggerEventId()==EVENT_PLAYER_UNIT_PICKUP_ITEM then
+ 17255: call G3O(BA1,SFI,true)
+ 17256: call FL1("PUI_"+I2S(GetPlayerId(GetOwningPlayer(SFI))),FR0[E71(EB1(BA1))])
+ 17257: endif
+ 17258: set SFI=null
+ 17259: set BA1=null
+ 17260: return false
+
+================ 4. 计分板 SY0 / SG0 (L26085-26155) ================
+ 26085: set i=1
+ 26086: loop
+ 26087: exitwhen i>QNO
+ 26088: set QQO=QQO+1
+ 26089: set N8I=MultiboardGetItem(SY0,QPO,QQO)
+ 26090: call MultiboardSetItemStyle(N8I,true,false)
+ 26091: call MultiboardSetItemValue(N8I,(I2S(GetPlayerState((QTO[i]),PLAYER_STATE_RESOURCE_GOLD))))
+ 26092: call MultiboardSetItemWidth(N8I,0.07)
+ 26093: call MultiboardReleaseItem(N8I)
+ 26094: set i=i+1
+ 26095: endloop
+ 26096: set i=1
+ 26097: loop
+ 26098: exitwhen i>QSO
+ 26099: set QQO=QQO+1
+ 26100: set N8I=MultiboardGetItem(SY0,QPO,QQO)
+ 26101: call MultiboardSetItemStyle(N8I,true,false)
+ 26102: call MultiboardSetItemValue(N8I,(I2S(GetPlayerState((QRO[i]),PLAYER_STATE_RESOURCE_GOLD))))
+ 26103: call MultiboardSetItemWidth(N8I,0.07)
+ 26104: call MultiboardReleaseItem(N8I)
+ 26105: set i=i+1
+ 26106: endloop
+ 26107: set QQO=0
+ 26108: set QPO=QPO+1
+ 26109: set N8I=MultiboardGetItem(SY0,QPO,QQO)
+ 26110: call MultiboardSetItemStyle(N8I,true,false)
+ 26111: call MultiboardSetItemValue(N8I,c0+GetObjectName(1848659028)+e)
+ 26112: call MultiboardReleaseItem(N8I)
+ 26113: set QQO=0
+ 26114: set i=1
+ 26115: loop
+ 26116: exitwhen i>QNO
+ 26117: set QQO=QQO+1
+ 26118: set N8I=MultiboardGetItem(SY0,QPO,QQO)
+ 26119: call MultiboardSetItemValueColor(N8I,UDO,UEO,UFO,UGO)
+ 26120: call MultiboardSetItemStyle(N8I,true,false)
+ 26121: call MultiboardSetItemValue(N8I,(I2S(WS[GV1(GetHeroLevel(K1[GetPlayerId((QTO[i]))]))])))
+ 26122: call MultiboardSetItemWidth(N8I,0.07)
+ 26123: call MultiboardReleaseItem(N8I)
+ 26124: set i=i+1
+ 26125: endloop
+ 26126: set i=1
+ 26127: loop
+ 26128: exitwhen i>QSO
+ 26129: set QQO=QQO+1
+ 26130: set N8I=MultiboardGetItem(SY0,QPO,QQO)
+ 26131: call MultiboardSetItemValueColor(N8I,UDO,UEO,UFO,UGO)
+ 26132: call MultiboardSetItemStyle(N8I,true,false)
+ 26133: call MultiboardSetItemValue(N8I,(I2S(WS[GV1(GetHeroLevel(K1[GetPlayerId((QRO[i]))]))])))
+ 26134: call MultiboardSetItemWidth(N8I,0.07)
+ 26135: call MultiboardReleaseItem(N8I)
+ 26136: set i=i+1
+ 26137: endloop
+ 26138: set QQO=0
+ 26139: set QPO=QPO+1
+ 26140: set N8I=MultiboardGetItem(SY0,QPO,QQO)
+ 26141: call MultiboardSetItemStyle(N8I,true,false)
+ 26142: call MultiboardSetItemValue(N8I,c0+GetObjectName(1848656986)+e)
+ 26143: call MultiboardReleaseItem(N8I)
+ 26144: set QQO=0
+ 26145: set i=1
+ 26146: loop
+ 26147: exitwhen i>QNO
+ 26148: set QQO=QQO+1
+ 26149: set N8I=MultiboardGetItem(SY0,QPO,QQO)
+ 26150: call MultiboardSetItemStyle(N8I,true,false)
+ 26151: call MultiboardSetItemValue(N8I,(I2S(A[GetPlayerId((QTO[i]))]))+"/"+(I2S(B[GetPlayerId((QTO[i]))])))
+ 26152: call MultiboardSetItemWidth(N8I,0.07)
+ 26153: call MultiboardReleaseItem(N8I)
+ 26154: set i=i+1
+ 26155: endloop
+
+================ 5. 主计分板 SG0 关键词搜索 ================
+SG0 Multiboard/N5I lines (first 25): [24714, 24926, 24927, 24928, 24929, 24930, 24931, 24932, 24933, 24934, 24935, 24960, 24967, 24972, 24980, 24991, 25000, 25007, 25019, 25030, 25039, 25045, 25056, 25062, 25071]
+   24714: set N8I=MultiboardGetItem(SG0,SH0[i],SZ0[i])
+   24926: set SG0=CreateMultiboard()
+   24927: call MultiboardSetItemsWidth(SG0,0)
+   24928: call MultiboardSetRowCount(SG0,QUO)
+   24929: call MultiboardSetColumnCount(SG0,U0O)
+   24930: call MultiboardSetTitleText(SG0,GetObjectName(1848657203)+" "+" - "+(EL))
+   24931: call MultiboardMinimize(SG0,true)
+   24932: call MultiboardSetItemsStyle(SG0,false,false)
+   24933: call MultiboardDisplay(SG0,true)
+   24934: call MultiboardMinimize(SG0,false)
+
+================ 6. 小兵经验查询函数 RUI / SQI 定义 ================
+--- function RUI  @ L3757 ---
+  3757: function RUI takes unit SFI returns integer
+  3758: local integer SUI=GetHeroLevel(SFI)
+  3759: if SUI==1 then
+  3760: return 100
+  3761: elseif SUI==2 then
+  3762: return 120
+  3763: elseif SUI==3 then
+  3764: return 160
+  3765: elseif SUI==4 then
+  3766: return 220
+  3767: else
+  3768: return-200+100*SUI
+  3769: endif
+  3770: return 0
+  3771: endfunction
+--- function SQI  @ L3031 ---
+  3031: function SQI takes integer SUI returns integer
+  3032: if SUI==1 then
+  3033: return 25
+  3034: elseif SUI==2 then
+  3035: return 41
+  3036: elseif SUI==3 then
+  3037: return 62
+  3038: elseif SUI==4 then
+  3039: return 88
+  3040: elseif SUI==5 then
+  3041: return 119
+  3042: elseif SUI==6 then
+  3043: return 155
+  3044: elseif SUI<=25 then
+  3045: return R2I(2.5*SUI*SUI+8.5*SUI+14)
+  3046: endif
+  3047: return R2I(2.5*25*25+8.5*25+14)
+  3048: endfunction
+--- function D01  @ L5760 ---
+  5760: function D01 takes nothing returns boolean
+  5761: return IsUnitType(GetFilterUnit(),UNIT_TYPE_HERO)==true and IsUnitEnemy(GetTriggerUnit(),GetOwningPlayer(GetFilterUnit()))==true and(GetUnitAbilityLevel(GetFilterUnit(),1093678162)==0 and IsUnitType(GetFilterUnit(),UNIT_TYPE_STRUCTURE)==false and IC1(GetFilterUnit())==false)and(IsUnitType(GetFilterUnit(),UNIT_TYPE_ANCIENT)==false or CI1(GetFilterUnit()))
+  5762: endfunction

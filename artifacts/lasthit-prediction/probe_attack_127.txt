@@ -1,0 +1,45 @@
+=== 1. CAbilityAttack RTTI vtables: ['0x9addbc'] ===
+  vtable 0x9ADDBC .text xrefs: ['0x474822']
+  --- vtable xref @ 0x474822 ---
+    6F474802: EC                 in          al,dx
+    6F474803: 3C 56              cmp         al,56h
+    6F474805: A1 74 A7 B6 6F     mov         eax,dword ptr ds:[6FB6A774h]
+    6F47480A: 33 C5              xor         eax,ebp
+    6F47480C: 50                 push        eax
+    6F47480D: 8D 45 F4           lea         eax,[ebp-0Ch]
+    6F474810: 64 A3 00 00 00 00  mov         dword ptr fs:[00000000h],eax
+    6F474816: 8B F1              mov         esi,ecx
+    6F474818: 89 75 F0           mov         dword ptr [ebp-10h],esi
+    6F47481B: E8 70 64 F5 FF     call        6F3CAC90
+    6F474820: C7 06 BC DD 9A 6F  mov         dword ptr [esi],6F9ADDBCh
+    6F474826: C7 46 74 00 00 00  mov         dword ptr [esi+74h],0
+    6F47482D: C7 46 70 FF FF FF  mov         dword ptr [esi+70h],0FFFFFFFFh
+    6F474834: C7 46 6C FF FF FF  mov         dword ptr [esi+6Ch],0FFFFFFFFh
+    6F47483B: C7 46 74 00 00 00  mov         dword ptr [esi+74h],0
+    6F474842: C7 86 80 00 00 00  mov         dword ptr [esi+00000080h],0
+    6F47484C: C7 46 7C FF FF FF  mov         dword ptr [esi+7Ch],0FFFFFFFFh
+    6F474853: C7 46 78 FF FF FF  mov         dword ptr [esi+78h],0FFFFFFFFh
+    6F47485A: C7 86 80 00 00 00  mov         dword ptr [esi+00000080h],0
+    6F474864: C7 86 84 00 00 00  mov         dword ptr [esi+00000084h],2
+    6F47486E: C7 86 88 00 00 00  mov         dword ptr [esi+00000088h],0
+    6F474878: C7 86 8C 00 00 00  mov         dword ptr [esi+0000008Ch],0
+    6F474882: C7 86 90 00 00 00  mov         dword ptr [esi+00000090h],2
+    6F47488C: C7 86 94 00 00 00  mov         dword ptr [esi+00000094h],0
+    6F474896: C7 86 98 00 00 00  mov         dword ptr [esi+00000098h],0
+    6F4748A0: C7 86 9C 00 00 00  mov         dword ptr [esi+0000009Ch],2
+    6F4748AA: C7
+    6F4748AB: 86 A0 00 00 00 00  xchg        ah,byte ptr [eax+00000000h]
+    6F4748B1: 00 00              add         byte ptr [eax],al
+
+=== 2. 搜索同时引用 +0x1D8 与 +0x1EC 的 CAbilityAttack 函数 ===
+  cluster hits (67): ['0x5c704', '0x5ce62', '0x815fc', '0x820ba', '0x82356', '0x84cbf', '0x84e40', '0x93056', '0x93975', '0x9561e', '0xe4154', '0x13fd2c', '0x26ee8e', '0x2a6d46', '0x2b15db']
+
+=== 3. 在 CAbilityAttack 代码区 [0x54704..0x8FD6EB] 搜 +0x1D8 / +0x1EC / +0x200 / +0x1B0 / +0x1C0 / +0x2B8 ===
+  timer_1D8    (+0x1D8): 322 hits -> ['0x5c704', '0x5ce62', '0x5cea5', '0x6e3bb', '0x76dd2', '0x815fc', '0x81712', '0x81718', '0x820ba', '0x821d5', '0x821db', '0x82356']
+  timer_1EC    (+0x1EC): 823 hits -> ['0x5af21', '0x5c736', '0x5cf11', '0x8162e', '0x8175a', '0x81760', '0x81c7b', '0x81ff8', '0x8221d', '0x82223', '0x82393', '0x84a0d']
+  timer_200    (+0x200): 1910 hits -> ['0x5c75e', '0x6ae08', '0x7645e', '0x764bb', '0x7665d', '0x7667e', '0x76696', '0x766de', '0x76703', '0x7671b', '0x76bd2', '0x7a308']
+  ias_1B0      (+0x1B0): 411 hits -> ['0x6e1cf', '0x70b0e', '0x70b14', '0x70b8e', '0x70b94', '0x716e0', '0x716e6', '0x80afc', '0x80b8c', '0x81598', '0x843f7', '0x84668']
+  slow_1C0     (+0x1C0): 351 hits -> ['0x5b16e', '0x5b1fe', '0x5b218', '0x5b27f', '0x5c6cd', '0x6e28f', '0x7127c', '0x71282', '0x76fd2', '0x815c0', '0x849a8', '0x8560f']
+  wpnIdx_2B8   (+0x2B8): 324 hits -> ['0x78c1b', '0x7c6a9', '0x86e81', '0x889e1', '0xd87b1', '0xd87e9', '0xf7682', '0x111518', '0x112220', '0x112358', '0x1123ea', '0x1126cb']
+  bat_158      (+0x158): 402 hits -> ['0x6ddaf', '0x70906', '0x7090d', '0x71598', '0x7159e', '0x77452', '0x77648', '0x77f93', '0x7ff31', '0x80080', '0x80087', '0x801fc']
+  dmpt_16C     (+0x16C): 668 hits -> ['0x60e93', '0x6de9f', '0x822c8', '0x8ef35', '0xa2c73', '0xa3c64', '0xa3d10', '0xa3e12', '0xa3f39', '0xa4056', '0xa40a0', '0xa4262']

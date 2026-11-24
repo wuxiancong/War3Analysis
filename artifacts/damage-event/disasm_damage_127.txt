@@ -1,0 +1,443 @@
+=== 1.27 GetEventDamage @ 0x1E21D0 ===
+6F1E21D0: E8 DB 3B 00 00     call        6F1E5DB0
+6F1E21D5: 85 C0              test        eax,eax
+6F1E21D7: 75 03              jne         6F1E21DC
+6F1E21D9: 33 C0              xor         eax,eax
+6F1E21DB: C3                 ret
+6F1E21DC: E8 8F 3B 00 00     call        6F1E5D70
+6F1E21E1: 85 C0              test        eax,eax
+6F1E21E3: 74 F4              je          6F1E21D9
+6F1E21E5: 8B 40 30           mov         eax,dword ptr [eax+30h]
+6F1E21E8: C3                 ret
+6F1E21E9: CC                 int         3
+6F1E21EA: CC                 int         3
+6F1E21EB: CC                 int         3
+6F1E21EC: CC                 int         3
+6F1E21ED: CC                 int         3
+6F1E21EE: CC                 int         3
+6F1E21EF: CC                 int         3
+6F1E21F0: E8
+
+=== 1.27 GetEventDamageSource @ 0x1E21F0 ===
+6F1E21F0: E8 BB 3B 00 00     call        6F1E5DB0
+6F1E21F5: 85 C0              test        eax,eax
+6F1E21F7: 75 03              jne         6F1E21FC
+6F1E21F9: 33 C0              xor         eax,eax
+6F1E21FB: C3                 ret
+6F1E21FC: E8 6F 3B 00 00     call        6F1E5D70
+6F1E2201: 85 C0              test        eax,eax
+6F1E2203: 74 F4              je          6F1E21F9
+6F1E2205: 8D 48 34           lea         ecx,[eax+34h]
+6F1E2208: 8B 41 04           mov         eax,dword ptr [ecx+4]
+6F1E220B: 23 01              and         eax,dword ptr [ecx]
+6F1E220D: 56                 push        esi
+6F1E220E: 83 F8 FF           cmp         eax,0FFFFFFFFh
+6F1E2211: 75 04              jne         6F1E2217
+6F1E2213: 33 F6              xor         esi,esi
+6F1E2215: EB 07              jmp         6F1E221E
+6F1E2217: E8 34 1F E6 FF     call        6F044150
+6F1E221C: 8B F0              mov         esi,eax
+6F1E221E: 8B 0D 38 42 BE 6F  mov         ecx,dword ptr ds:[6FBE4238h]
+6F1E2224: E8 D7 0F FE FF     call        6F1C3200
+6F1E2229: 6A 00              push        0
+6F1E222B: 56                 push        esi
+6F1E222C: 8B C8              mov         ecx,eax
+6F1E222E: E8 9D 2F 08 00     call        6F2651D0
+6F1E2233: 5E                 pop         esi
+6F1E2234: C3                 ret
+6F1E2235: CC                 int         3
+6F1E2236: CC                 int         3
+6F1E2237: CC                 int         3
+6F1E2238: CC                 int         3
+6F1E2239: CC                 int         3
+6F1E223A: CC                 int         3
+6F1E223B: CC                 int         3
+6F1E223C: CC                 int         3
+6F1E223D: CC                 int         3
+6F1E223E: CC                 int         3
+6F1E223F: CC                 int         3
+6F1E2240: 8B 41 28           mov         eax,dword ptr [ecx+28h]
+6F1E2243: 83 C1 24           add         ecx,24h
+6F1E2246: 23 01              and         eax,dword ptr [ecx]
+6F1E2248: 83 F8 FF           cmp         eax,0FFFFFFFFh
+6F1E224B: 75 03              jne         6F1E2250
+6F1E224D: 33 C0              xor         eax,eax
+6F1E224F: C3                 ret
+6F1E2250: E9 FB 1E E6 FF     jmp         6F044150
+6F1E2255: CC                 int         3
+6F1E2256: CC                 int         3
+6F1E2257: CC                 int         3
+6F1E2258: CC                 int         3
+6F1E2259: CC                 int         3
+6F1E225A: CC                 int         3
+6F1E225B: CC                 int         3
+6F1E225C: CC                 int         3
+6F1E225D: CC                 int         3
+6F1E225E: CC                 int         3
+6F1E225F: CC                 int         3
+6F1E2260: E8
+
+=== 1.27 UnitDamageTarget @ 0x1FAB70 ===
+6F1FAB70: 55                 push        ebp
+6F1FAB71: 8B EC              mov         ebp,esp
+6F1FAB73: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+6F1FAB76: 83 EC 28           sub         esp,28h
+6F1FAB79: 57                 push        edi
+6F1FAB7A: E8 D1 69 FD FF     call        6F1D1550
+6F1FAB7F: 8B F8              mov         edi,eax
+6F1FAB81: 85 FF              test        edi,edi
+6F1FAB83: 75 05              jne         6F1FAB8A
+6F1FAB85: 5F                 pop         edi
+6F1FAB86: 8B E5              mov         esp,ebp
+6F1FAB88: 5D                 pop         ebp
+6F1FAB89: C3                 ret
+6F1FAB8A: 8B 4D 0C           mov         ecx,dword ptr [ebp+0Ch]
+6F1FAB8D: 56                 push        esi
+6F1FAB8E: E8 3D 6C FD FF     call        6F1D17D0
+6F1FAB93: 8B F0              mov         esi,eax
+6F1FAB95: 85 F6              test        esi,esi
+6F1FAB97: 74 70              je          6F1FAC09
+6F1FAB99: 8B 4D 20           mov         ecx,dword ptr [ebp+20h]
+6F1FAB9C: 81 F9 00 00 00 80  cmp         ecx,80000000h
+6F1FABA2: 77 65              ja          6F1FAC09
+6F1FABA4: 53                 push        ebx
+6F1FABA5: 8B 5D 1C           mov         ebx,dword ptr [ebp+1Ch]
+6F1FABA8: 33 C0              xor         eax,eax
+6F1FABAA: 83 FB 07           cmp         ebx,7
+6F1FABAD: 77 53              ja          6F1FAC02
+6F1FABAF: 8B 55 24           mov         edx,dword ptr [ebp+24h]
+6F1FABB2: 83 FA 18           cmp         edx,18h
+6F1FABB5: 77 4B              ja          6F1FAC02
+6F1FABB7: 39 45 14           cmp         dword ptr [ebp+14h],eax
+6F1FABBA: C7 45 FC 00 01 00  mov         dword ptr [ebp-4],100h
+6F1FABC1: 0F 45 45 FC        cmovne      eax,dword ptr [ebp-4]
+6F1FABC5: 83 7D 18 00        cmp         dword ptr [ebp+18h],0
+6F1FABC9: 74 03              je          6F1FABCE
+6F1FABCB: 83 C8 01           or          eax,1
+6F1FABCE: 52                 push        edx
+6F1FABCF: 50                 push        eax
+6F1FABD0: 57                 push        edi
+6F1FABD1: B8 01 00 00 00     mov         eax,1
+6F1FABD6: D3 E0              shl         eax,cl
+6F1FABD8: 8D 4D D8           lea         ecx,[ebp-28h]
+6F1FABDB: 50                 push        eax
+6F1FABDC: FF 75 10           push        dword ptr [ebp+10h]
+6F1FABDF: E8 AC AA 48 00     call        6F685690
+6F1FABE4: 6A 00              push        0
+6F1FABE6: 6A 00              push        0
+6F1FABE8: 8D 4D D8           lea         ecx,[ebp-28h]
+6F1FABEB: 89 5D F8           mov         dword ptr [ebp-8],ebx
+6F1FABEE: 8B 16              mov         edx,dword ptr [esi]
+6F1FABF0: 51                 push        ecx
+6F1FABF1: 8D 4D FC           lea         ecx,[ebp-4]
+6F1FABF4: 51                 push        ecx
+6F1FABF5: 8B CE              mov         ecx,esi
+6F1FABF7: FF 92 20 01 00 00  call        dword ptr [edx+00000120h]
+6F1FABFD: B8 01 00 00 00     mov         eax,1
+6F1FAC02: 5B                 pop         ebx
+6F1FAC03: 5E                 pop         esi
+6F1FAC04: 5F                 pop         edi
+6F1FAC05: 8B E5              mov         esp,ebp
+6F1FAC07: 5D                 pop         ebp
+6F1FAC08: C3                 ret
+6F1FAC09: 5E                 pop         esi
+6F1FAC0A: 33 C0              xor         eax,eax
+6F1FAC0C: 5F                 pop         edi
+6F1FAC0D: 8B E5              mov         esp,ebp
+6F1FAC0F: 5D                 pop         ebp
+6F1FAC10: C3                 ret
+6F1FAC11: CC                 int         3
+6F1FAC12: CC                 int         3
+6F1FAC13: CC                 int         3
+6F1FAC14: CC                 int         3
+6F1FAC15: CC                 int         3
+6F1FAC16: CC                 int         3
+6F1FAC17: CC                 int         3
+6F1FAC18: CC                 int         3
+6F1FAC19: CC                 int         3
+6F1FAC1A: CC                 int         3
+6F1FAC1B: CC                 int         3
+6F1FAC1C: CC                 int         3
+6F1FAC1D: CC                 int         3
+6F1FAC1E: CC                 int         3
+6F1FAC1F: CC                 int         3
+6F1FAC20: 55                 push        ebp
+6F1FAC21: 8B EC              mov         ebp,esp
+6F1FAC23: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+6F1FAC26: 56                 push        esi
+6F1FAC27: E8 24 69 FD FF     call        6F1D1550
+6F1FAC2C: 8B F0              mov         esi,eax
+6F1FAC2E: 85 F6              test        esi,esi
+6F1FAC30: 74 3F              je          6F1FAC71
+6F1FAC32: 8B CE              mov         ecx,esi
+6F1FAC34: E8 97 6C 45 00     call        6F6518D0
+6F1FAC39: 85 C0              test        eax,eax
+6F1FAC3B: 74 34              je          6F1FAC71
+6F1FAC3D: 8B 4D 0C           mov         ecx,dword ptr [ebp+0Ch]
+6F1FAC40: E8 0B 50 FD FF     call        6F1CFC50
+6F1FAC45: 85 C0              test        eax,eax
+6F1FAC47: 74 28              je          6F1FAC71
+6F1FAC49: 50                 push        eax
+6F1FAC4A: 8B CE              mov         ecx,esi
+6F1FAC4C: E8 AF FB 46 00     call        6F66A800
+6F1FAC51: 85 C0              test        eax,eax
+6F1FAC53: 74 1C              je          6F1FAC71
+6F1FAC55: FF 75 0C           push        dword ptr [ebp+0Ch]
+6F1FAC58: FF 75 14           push        dword ptr [ebp+14h]
+6F1FAC5B: FF 75 10           push        dword ptr [ebp+10h]
+6F1FAC5E: 68 21 00 0D 00     push        0D0021h
+6F1FAC63: FF 75 08           push        dword ptr [ebp+8]
+6F1FAC66: E8 D5 E4 FE FF     call        6F1E9140
+6F1FAC6B: 83 C4 14           add         esp,14h
+6F1FAC6E: 5E                 pop         esi
+6F1FAC6F: 5D                 pop         ebp
+6F1FAC70: C3                 ret
+6F1FAC71: 33 C0              xor         eax,eax
+6F1FAC73: 5E                 pop         esi
+6F1FAC74: 5D                 pop         ebp
+6F1FAC75: C3                 ret
+6F1FAC76: CC                 int         3
+6F1FAC77: CC                 int         3
+6F1FAC78: CC                 int         3
+6F1FAC79: CC                 int         3
+6F1FAC7A: CC                 int         3
+6F1FAC7B: CC                 int         3
+6F1FAC7C: CC                 int         3
+6F1FAC7D: CC                 int         3
+6F1FAC7E: CC                 int         3
+6F1FAC7F: CC                 int         3
+6F1FAC80: 55                 push        ebp
+6F1FAC81: 8B EC              mov         ebp,esp
+6F1FAC83: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+6F1FAC86: 56                 push        esi
+6F1FAC87: E8 C4 68 FD FF     call        6F1D1550
+6F1FAC8C: 8B F0              mov         esi,eax
+6F1FAC8E: 85 F6              test        esi,esi
+6F1FAC90: 74
+
+=== 1.27 CUnit::ApplyDamage (vt+0x120) @ 0x67DC40 ===
+6F67DC40: 55                 push        ebp
+6F67DC41: 8B EC              mov         ebp,esp
+6F67DC43: 83 EC 2C           sub         esp,2Ch
+6F67DC46: 56                 push        esi
+6F67DC47: 57                 push        edi
+6F67DC48: 8B F9              mov         edi,ecx
+6F67DC4A: 89 7D F4           mov         dword ptr [ebp-0Ch],edi
+6F67DC4D: 8B 77 5C           mov         esi,dword ptr [edi+5Ch]
+6F67DC50: F7 C6 00 01 00 00  test        esi,100h
+6F67DC56: 74 13              je          6F67DC6B
+6F67DC58: 8B 45 08           mov         eax,dword ptr [ebp+8]
+6F67DC5B: 8B 0D D4 81 BB 6F  mov         ecx,dword ptr ds:[6FBB81D4h]
+6F67DC61: 5F                 pop         edi
+6F67DC62: 5E                 pop         esi
+6F67DC63: 89 08              mov         dword ptr [eax],ecx
+6F67DC65: 8B E5              mov         esp,ebp
+6F67DC67: 5D                 pop         ebp
+6F67DC68: C2 10 00           ret         10h
+6F67DC6B: 6A 01              push        1
+6F67DC6D: E8 EE 0D FF FF     call        6F66EA60
+6F67DC72: 85 C0              test        eax,eax
+6F67DC74: 74 0F              je          6F67DC85
+6F67DC76: F7 C6 00 00 00 02  test        esi,2000000h
+6F67DC7C: 74 07              je          6F67DC85
+6F67DC7E: B8 01 00 00 00     mov         eax,1
+6F67DC83: EB 02              jmp         6F67DC87
+6F67DC85: 33 C0              xor         eax,eax
+6F67DC87: 89 45 EC           mov         dword ptr [ebp-14h],eax
+6F67DC8A: 53                 push        ebx
+6F67DC8B: 8B 5D 0C           mov         ebx,dword ptr [ebp+0Ch]
+6F67DC8E: 8B 73 14           mov         esi,dword ptr [ebx+14h]
+6F67DC91: 8B 4B 20           mov         ecx,dword ptr [ebx+20h]
+6F67DC94: 89 75 E8           mov         dword ptr [ebp-18h],esi
+6F67DC97: 89 4D F0           mov         dword ptr [ebp-10h],ecx
+6F67DC9A: 85 C0              test        eax,eax
+6F67DC9C: 74 09              je          6F67DCA7
+6F67DC9E: C7 45 E4 04 00 00  mov         dword ptr [ebp-1Ch],4
+6F67DCA5: EB 09              jmp         6F67DCB0
+6F67DCA7: 8B 87 E4 00 00 00  mov         eax,dword ptr [edi+000000E4h]
+6F67DCAD: 89 45 E4           mov         dword ptr [ebp-1Ch],eax
+6F67DCB0: 6A 00              push        0
+6F67DCB2: BA E4 9F 9E 6F     mov         edx,6F9E9FE4h
+6F67DCB7: B9 14 1B 95 6F     mov         ecx,6F951B14h
+6F67DCBC: E8 BF C6 9A FF     call        6F02A380
+6F67DCC1: 85 C0              test        eax,eax
+6F67DCC3: 75 25              jne         6F67DCEA
+6F67DCC5: 83 FE 10           cmp         esi,10h
+6F67DCC8: 74 1A              je          6F67DCE4
+6F67DCCA: 83 FE 20           cmp         esi,20h
+6F67DCCD: 74 15              je          6F67DCE4
+6F67DCCF: 81 FE 00 00 00 04  cmp         esi,4000000h
+6F67DCD5: 74 0D              je          6F67DCE4
+6F67DCD7: 81 FE 00 00 40 00  cmp         esi,400000h
+6F67DCDD: 74 05              je          6F67DCE4
+6F67DCDF: 8D 70 01           lea         esi,[eax+1]
+6F67DCE2: EB 43              jmp         6F67DD27
+6F67DCE4: 33 F6              xor         esi,esi
+6F67DCE6: 33 C0              xor         eax,eax
+6F67DCE8: EB 3D              jmp         6F67DD27
+6F67DCEA: 8B 4D F0           mov         ecx,dword ptr [ebp-10h]
+6F67DCED: E8 7E 75 01 00     call        6F695270
+6F67DCF2: 85 C0              test        eax,eax
+6F67DCF4: 75 0F              jne         6F67DD05
+6F67DCF6: 8B CE              mov         ecx,esi
+6F67DCF8: E8 A3 75 01 00     call        6F6952A0
+6F67DCFD: 85 C0              test        eax,eax
+6F67DCFF: 75 04              jne         6F67DD05
+6F67DD01: 33 F6              xor         esi,esi
+6F67DD03: EB 05              jmp         6F67DD0A
+6F67DD05: BE 01 00 00 00     mov         esi,1
+6F67DD0A: 8B 4D F0           mov         ecx,dword ptr [ebp-10h]
+6F67DD0D: E8 9E 75 01 00     call        6F6952B0
+6F67DD12: 85 C0              test        eax,eax
+6F67DD14: 75 0C              jne         6F67DD22
+6F67DD16: 8B 4D E8           mov         ecx,dword ptr [ebp-18h]
+6F67DD19: E8 E2 75 01 00     call        6F695300
+6F67DD1E: 85 C0              test        eax,eax
+6F67DD20: 74 05              je          6F67DD27
+6F67DD22: B8 01 00 00 00     mov         eax,1
+6F67DD27: 85 F6              test        esi,esi
+6F67DD29: 74 1A              je          6F67DD45
+6F67DD2B: 8B 07              mov         eax,dword ptr [edi]
+6F67DD2D: 8B CF              mov         ecx,edi
+6F67DD2F: FF 90 1C 01 00 00  call        dword ptr [eax+0000011Ch]
+6F67DD35: 85 C0              test        eax,eax
+6F67DD37: 0F 85 14 01 00 00  jne         6F67DE51
+6F67DD3D: 39 87 5C 01 00 00  cmp         dword ptr [edi+0000015Ch],eax
+6F67DD43: EB 0C              jmp         6F67DD51
+6F67DD45: 85 C0              test        eax,eax
+6F67DD47: 74 13              je          6F67DD5C
+6F67DD49: 33 C0              xor         eax,eax
+6F67DD4B: 39 87 58 01 00 00  cmp         dword ptr [edi+00000158h],eax
+6F67DD51: 0F 9F C0           setg        al
+6F67DD54: 85 C0              test        eax,eax
+6F67DD56: 0F 85 F5 00 00 00  jne         6F67DE51
+6F67DD5C: F6 47 5C 04        test        byte ptr [edi+5Ch],4
+6F67DD60: 74 15              je          6F67DD77
+6F67DD62: 8B 03              mov         eax,dword ptr [ebx]
+6F67DD64: 85 C0              test        eax,eax
+6F67DD66: 74 0F              je          6F67DD77
+6F67DD68: F6 43 0C 04        test        byte ptr [ebx+0Ch],4
+6F67DD6C: 75 09              jne         6F67DD77
+6F67DD6E: 57                 push        edi
+6F67DD6F: 50                 push        eax
+6F67DD70: 8B CF              mov         ecx,edi
+6F67DD72: E8 89 9B FF FF     call        6F677900
+6F67DD77: 8B 43 10           mov         eax,dword ptr [ebx+10h]
+6F67DD7A: 8D 8F DC 01 00 00  lea         ecx,[edi+000001DCh]
+6F67DD80: 89 45 D4           mov         dword ptr [ebp-2Ch],eax
+6F67DD83: 8B 41 04           mov         eax,dword ptr [ecx+4]
+6F67DD86: 23 01              and         eax,dword ptr [ecx]
+6F67DD88: C7 45 FC 00 00 00  mov         dword ptr [ebp-4],0
+6F67DD8F: 89 4D DC           mov         dword ptr [ebp-24h],ecx
+6F67DD92: 83 F8 FF           cmp         eax,0FFFFFFFFh
+6F67DD95: 74 61              je          6F67DDF8
+6F67DD97: E8 B4 63 9C FF     call        6F044150
+6F67DD9C: 8B F0              mov         esi,eax
+6F67DD9E: 85 F6              test        esi,esi
+6F67DDA0: 74 56              je          6F67DDF8
+6F67DDA2: 33 FF              xor         edi,edi
+6F67DDA4: 8B 4E 28           mov         ecx,dword ptr [esi+28h]
+6F67DDA7: 23 4E 24           and         ecx,dword ptr [esi+24h]
+6F67DDAA: 83 F9 FF           cmp         ecx,0FFFFFFFFh
+6F67DDAD: 75 04              jne         6F67DDB3
+6F67DDAF: 33 C0              xor         eax,eax
+6F67DDB1: EB 08              jmp         6F67DDBB
+6F67DDB3: 8D 4E 24           lea         ecx,[esi+24h]
+6F67DDB6: E8 95 63 9C FF     call        6F044150
+6F67DDBB: 8B 16              mov         edx,dword ptr [esi]
+6F67DDBD: 8B CE              mov         ecx,esi
+6F67DDBF: 89 45 F8           mov         dword ptr [ebp-8],eax
+6F67DDC2: FF 92 F8 00 00 00  call        dword ptr [edx+000000F8h]
+6F67DDC8: 8B C8              mov         ecx,eax
+6F67DDCA: 83 F9 01           cmp         ecx,1
+6F67DDCD: 75 0D              jne         6F67DDDC
+6F67DDCF: 8B 06              mov         eax,dword ptr [esi]
+6F67DDD1: 8B CE              mov         ecx,esi
+6F67DDD3: 53                 push        ebx
+6F67DDD4: FF 90 FC 00 00 00  call        dword ptr [eax+000000FCh]
+6F67DDDA: EB 0D              jmp         6F67DDE9
+6F67DDDC: 85 C9              test        ecx,ecx
+6F67DDDE: 74 09              je          6F67DDE9
+6F67DDE0: B8 01 00 00 00     mov         eax,1
+6F67DDE5: D3 E0              shl         eax,cl
+6F67DDE7: 0B F8              or          edi,eax
+6F67DDE9: 8B 45 F8           mov         eax,dword ptr [ebp-8]
+6F67DDEC: 8B F0              mov         esi,eax
+6F67DDEE: 85 C0              test        eax,eax
+6F67DDF0: 75 B2              jne         6F67DDA4
+6F67DDF2: 89 7D FC           mov         dword ptr [ebp-4],edi
+6F67DDF5: 8B 7D F4           mov         edi,dword ptr [ebp-0Ch]
+6F67DDF8: 8B 43 0C           mov         eax,dword ptr [ebx+0Ch]
+6F67DDFB: A8 04              test        al,4
+6F67DDFD: 75 52              jne         6F67DE51
+6F67DDFF: A8 02              test        al,2
+6F67DE01: 75 37              jne         6F67DE3A
+6F67DE03: C1 E8 09           shr         eax,9
+6F67DE06: 33 F6              xor         esi,esi
+6F67DE08: F7 D0              not         eax
+6F67DE0A: A8 01              test        al,1
+6F67DE0C: 74 1C              je          6F67DE2A
+6F67DE0E: 8B 0B              mov         ecx,dword ptr [ebx]
+6F67DE10: 85 C9              test        ecx,ecx
+6F67DE12: 74 16              je          6F67DE2A
+6F67DE14: 57                 push        edi
+6F67DE15: E8 16 08 FF FF     call        6F66E630
+6F67DE1A: 85 C0              test        eax,eax
+6F67DE1C: 74 0C              je          6F67DE2A
+6F67DE1E: 8B CF              mov         ecx,edi
+6F67DE20: BE 01 00 00 00     mov         esi,1
+6F67DE25: E8 A6 A7 CD FF     call        6F3585D0
+6F67DE2A: F6 43 0C 40        test        byte ptr [ebx+0Ch],40h
+6F67DE2E: 75 0A              jne         6F67DE3A
+6F67DE30: 56                 push        esi
+6F67DE31: FF 33              push        dword ptr [ebx]
+6F67DE33: 8B CF              mov         ecx,edi
+6F67DE35: E8 96 31 FD FF     call        6F650FD0
+6F67DE3A: F6 43 0C 10        test        byte ptr [ebx+0Ch],10h
+6F67DE3E: 8B CF              mov         ecx,edi
+6F67DE40: 74 23              je          6F67DE65
+6F67DE42: FF 75 10           push        dword ptr [ebp+10h]
+6F67DE45: 8B D3              mov         edx,ebx
+6F67DE47: 68 D4 81 BB 6F     push        6FBB81D4h
+6F67DE4C: E8 EF 14 00 00     call        6F67F340
+6F67DE51: 8B 45 08           mov         eax,dword ptr [ebp+8]
+6F67DE54: 8B 0D D4 81 BB 6F  mov         ecx,dword ptr ds:[6FBB81D4h]
+6F67DE5A: 5B                 pop         ebx
+6F67DE5B: 5F                 pop         edi
+6F67DE5C: 89 08              mov         dword ptr [eax],ecx
+6F67DE5E: 5E                 pop         esi
+6F67DE5F: 8B E5              mov         esp,ebp
+6F67DE61: 5D                 pop         ebp
+6F67DE62: C2 10 00           ret         10h
+6F67DE65: 53                 push        ebx
+6F67DE66: E8 55 79 FB FF     call        6F6357C0
+6F67DE6B: 8B 43 10           mov         eax,dword ptr [ebx+10h]
+6F67DE6E: 89 45 F8           mov         dword ptr [ebp-8],eax
+6F67DE71: F3 0F 10 45 F8     movss       xmm0,dword ptr [ebp-8]
+6F67DE76: 0F 2E 05 D4 81 BB  ucomiss     xmm0,dword ptr ds:[6FBB81D4h]
+6F67DE7D: 9F                 lahf
+6F67DE7E: F6 C4 44           test        ah,44h
+6F67DE81: 7A 25              jp          6F67DEA8
+6F67DE83: FF 75 10           push        dword ptr [ebp+10h]
+6F67DE86: 8B D3              mov         edx,ebx
+6F67DE88: 8B CF              mov         ecx,edi
+6F67DE8A: 68 D4 81 BB 6F     push        6FBB81D4h
+6F67DE8F: E8 AC 14 00 00     call        6F67F340
+6F67DE94: 8B 45 08           mov         eax,dword ptr [ebp+8]
+6F67DE97: 8B 0D D4 81 BB 6F  mov         ecx,dword ptr ds:[6FBB81D4h]
+6F67DE9D: 5B                 pop         ebx
+6F67DE9E: 5F                 pop         edi
+6F67DE9F: 89 08              mov         dword ptr [eax],ecx
+6F67DEA1: 5E                 pop         esi
+6F67DEA2: 8B E5              mov         esp,ebp
+6F67DEA4: 5D                 pop         ebp
+6F67DEA5: C2 10 00           ret         10h
+6F67DEA8: F6 47 20 08        test        byte ptr [edi+20h],8
+6F67DEAC: 74 06              je          6F67DEB4
+6F67DEAE: F6 43 0C 20        test        byte ptr [ebx+0Ch],20h
+6F67DEB2: 74 CF              je          6F67DE83
+6F67DEB4: 8B 55 FC           mov         edx,dword ptr [ebp-4]
+6F67DEB7: 85 D2              test        edx,edx
+6F67DEB9: 0F 84 A2 00 00 00  je          6F67DF61
+6F67DEBF: BF
+6F67DEC0: 01

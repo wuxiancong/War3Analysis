@@ -1,0 +1,27 @@
+=== 1. DotA 6.83d Units_AbilityData.slk 关键物品技能 ===
+  A2WH: NOT FOUND in map Units_AbilityData.slk
+  A2WI: code=ANcl, DataB1=3, DataC1=1, Rng1=500, Cool1=1, targs1=air,friend,ground,hero
+  AIbk: NOT FOUND in map Units_AbilityData.slk
+  A19M: NOT FOUND in map Units_AbilityData.slk
+  A017: code=AOwk, DataB1=0.2, DataC1=175, Rng1=None, Cool1=28, targs1=air,ground,enemy,neutral
+  A0FO: NOT FOUND in map Units_AbilityData.slk
+  A0H6: code=ANcl, DataB1=1, DataC1=None, Rng1=150, Cool1=0.5, targs1=item
+  A0H7: code=ANcl, DataB1=None, DataC1=None, Rng1=150, Cool1=0.5, targs1=air,enemies,friend,ground,item,neutral,nonhero,organic
+  --- 所有 code=ANto / AItp / AIte 的地图技能 ---
+  ANto: code=ANto, DataA1=None, DataB1=None, Rng1=500, Cool1=70, targs1=_
+  AItp: code=AItp, DataA1=5, DataB1=1, Rng1=99999, Cool1=50, targs1=structure,vuln,invu
+  A0NX: code=ANto, DataA1=None, DataB1=None, Rng1=600, Cool1=80, targs1=_
+  A1R5: code=ANto, DataA1=None, DataB1=None, Rng1=99999, Cool1=65, targs1=_
+
+=== 2. 全部 11 个版本 Game.dll G2/G3 RVA 扫描 ===
+  1.0.17.5988   | Enq10=None       Enq11=None       Enq12=None       | Snd10=None       Snd11=None       Snd12=None       | Pairs=0 []
+  1.0.20.6048   | Enq10=None       Enq11=None       Enq12=None       | Snd10=None       Snd11=None       Snd12=None       | Pairs=0 []
+  1.20.4.6074   | Enq10=None       Enq11=None       Enq12=None       | Snd10=None       Snd11=None       Snd12=None       | Pairs=0 []
+  1.21.0.6263   | Enq10=None       Enq11=None       Enq12=None       | Snd10=None       Snd11=None       Snd12=None       | Pairs=0 []
+  1.22.0.6328   | Enq10=0x2CADA0   Enq11=0x2CAE60   Enq12=0x2CAF30   | Snd10=0x3390EC   Snd11=0x339181   Snd12=0x3391FC   | Pairs=0 []
+  1.23.0.6352   | Enq10=0x2CC2E0   Enq11=0x2CC3A0   Enq12=0x2CC470   | Snd10=0x33A66C   Snd11=0x33A701   Snd12=0x33A77C   | Pairs=0 []
+  1.24.1.6374   | Enq10=0x2CC3A0   Enq11=0x2CC460   Enq12=0x2CC530   | Snd10=0x33A72C   Snd11=0x33A7C1   Snd12=0x33A83C   | Pairs=0 []
+  1.24.4.6387   | Enq10=0x2CC460   Enq11=0x2CC520   Enq12=0x2CC5F0   | Snd10=0x33A7EC   Snd11=0x33A881   Snd12=0x33A8FC   | Pairs=0 []
+  1.25.1.6397   | Enq10=0x2CB710   Enq11=0x2CB7D0   Enq12=0x2CB8A0   | Snd10=0x339A7C   Snd11=0x339B11   Snd12=0x339B8C   | Pairs=0 []
+  1.26.0.6401   | Enq10=0x2CB940   Enq11=0x2CBA00   Enq12=0x2CBAD0   | Snd10=0x339CAC   Snd11=0x339D41   Snd12=0x339DBC   | Pairs=0 []
+  1.27.0.52240  | Enq10=0x69FFA0   Enq11=0x69FCD0   Enq12=0x69FEB0   | Snd10=0x3AE4E0   Snd11=0x3AE540   Snd12=0x3AE660   | Pairs=3 [('0x3A4CF5', '0x3A4D17'), ('0x3A663E', '0x3A666D')]

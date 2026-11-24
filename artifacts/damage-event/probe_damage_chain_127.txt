@@ -1,0 +1,239 @@
+=== 1.27 CMissile::ApplyDamage tail @ 0x6B1624 ===
+6F6B1624: 8B 45 F0           mov         eax,dword ptr [ebp-10h]
+6F6B1627: 8B CB              mov         ecx,ebx
+6F6B1629: 8B 13              mov         edx,dword ptr [ebx]
+6F6B162B: 6A 00              push        0
+6F6B162D: 8B 40 20           mov         eax,dword ptr [eax+20h]
+6F6B1630: D1 E8              shr         eax,1
+6F6B1632: 83 E0 01           and         eax,1
+6F6B1635: 50                 push        eax
+6F6B1636: 8D 45 CC           lea         eax,[ebp-34h]
+6F6B1639: 50                 push        eax
+6F6B163A: 8D 45 0C           lea         eax,[ebp+0Ch]
+6F6B163D: 50                 push        eax
+6F6B163E: FF 92 20 01 00 00  call        dword ptr [edx+00000120h]
+6F6B1644: 8B 45 08           mov         eax,dword ptr [ebp+8]
+6F6B1647: 89 30              mov         dword ptr [eax],esi
+6F6B1649: 8B 4D F4           mov         ecx,dword ptr [ebp-0Ch]
+6F6B164C: 64 89 0D 00 00 00  mov         dword ptr fs:[00000000h],ecx
+6F6B1653: 59                 pop         ecx
+6F6B1654: 5F                 pop         edi
+6F6B1655: 5E                 pop         esi
+6F6B1656: 5B                 pop         ebx
+6F6B1657: 8B E5              mov         esp,ebp
+6F6B1659: 5D                 pop         ebp
+6F6B165A: C2 0C 00           ret         0Ch
+6F6B165D: CC                 int         3
+6F6B165E: CC                 int         3
+6F6B165F: CC                 int         3
+6F6B1660: 55                 push        ebp
+6F6B1661: 8B EC              mov         ebp,esp
+6F6B1663: 6A FF              push        0FFFFFFFFh
+
+=== Native GetEventDamage str_rvas=['0x969124'] ===
+  xref @ 0x1EAFC3:
+    6F1EAFAB: 90                 nop
+    6F1EAFAC: 96                 xchg        eax,esi
+    6F1EAFAD: 6F                 outs        dx,dword ptr [esi]
+    6F1EAFAE: BA 08 91 96 6F     mov         edx,6F969108h
+    6F1EAFB3: B9 60 A0 1F 6F     mov         ecx,6F1FA060h
+    6F1EAFB8: E8 53 87 5F 00     call        6F7E3710
+    6F1EAFBD: 68 18 8D 96 6F     push        6F968D18h
+    6F1EAFC2: BA 24 91 96 6F     mov         edx,6F969124h
+    6F1EAFC7: B9 D0 21 1E 6F     mov         ecx,6F1E21D0h
+    6F1EAFCC: E8 3F 87 5F 00     call        6F7E3710
+    6F1EAFD1: 68 2C 8B 96 6F     push        6F968B2Ch
+    6F1EAFD6: BA 34 91 96 6F     mov         edx,6F969134h
+    6F1EAFDB: B9 F0 21 1E 6F     mov         ecx,6F1E21F0h
+    6F1EAFE0: E8
+    6F1EAFE1: 2B
+    6F1EAFE2: 87
+    6F1EAFE3: 5F                 pop         edi
+  xref @ 0x6F727B:
+    6F6F7263: 90                 nop
+    6F6F7264: 96                 xchg        eax,esi
+    6F6F7265: 6F                 outs        dx,dword ptr [esi]
+    6F6F7266: BA 08 91 96 6F     mov         edx,6F969108h
+    6F6F726B: B9 C0 A0 70 6F     mov         ecx,6F70A0C0h
+    6F6F7270: E8 9B C4 0E 00     call        6F7E3710
+    6F6F7275: 68 18 8D 96 6F     push        6F968D18h
+    6F6F727A: BA 24 91 96 6F     mov         edx,6F969124h
+    6F6F727F: B9 C0 A0 70 6F     mov         ecx,6F70A0C0h
+    6F6F7284: E8 87 C4 0E 00     call        6F7E3710
+    6F6F7289: 68 2C 8B 96 6F     push        6F968B2Ch
+    6F6F728E: BA 34 91 96 6F     mov         edx,6F969134h
+    6F6F7293: B9 C0 A0 70 6F     mov         ecx,6F70A0C0h
+    6F6F7298: E8
+    6F6F7299: 73 C4              jae         6F6F725F
+    6F6F729B: 0E                 push        cs
+
+=== Native GetEventDamageSource str_rvas=['0x969134'] ===
+  xref @ 0x1EAFD7:
+    6F1EAFBF: 8D 96 6F BA 24 91  lea         edx,[esi+9124BA6Fh]
+    6F1EAFC5: 96                 xchg        eax,esi
+    6F1EAFC6: 6F                 outs        dx,dword ptr [esi]
+    6F1EAFC7: B9 D0 21 1E 6F     mov         ecx,6F1E21D0h
+    6F1EAFCC: E8 3F 87 5F 00     call        6F7E3710
+    6F1EAFD1: 68 2C 8B 96 6F     push        6F968B2Ch
+    6F1EAFD6: BA 34 91 96 6F     mov         edx,6F969134h
+    6F1EAFDB: B9 F0 21 1E 6F     mov         ecx,6F1E21F0h
+    6F1EAFE0: E8 2B 87 5F 00     call        6F7E3710
+    6F1EAFE5: 68 6C 89 96 6F     push        6F96896Ch
+    6F1EAFEA: BA 4C 91 96 6F     mov         edx,6F96914Ch
+    6F1EAFEF: B9 60 22 1E 6F     mov         ecx,6F1E2260h
+    6F1EAFF4: E8
+    6F1EAFF5: 17                 pop         ss
+    6F1EAFF6: 87
+    6F1EAFF7: 5F                 pop         edi
+  xref @ 0x6F728F:
+    6F6F7277: 8D 96 6F BA 24 91  lea         edx,[esi+9124BA6Fh]
+    6F6F727D: 96                 xchg        eax,esi
+    6F6F727E: 6F                 outs        dx,dword ptr [esi]
+    6F6F727F: B9 C0 A0 70 6F     mov         ecx,6F70A0C0h
+    6F6F7284: E8 87 C4 0E 00     call        6F7E3710
+    6F6F7289: 68 2C 8B 96 6F     push        6F968B2Ch
+    6F6F728E: BA 34 91 96 6F     mov         edx,6F969134h
+    6F6F7293: B9 C0 A0 70 6F     mov         ecx,6F70A0C0h
+    6F6F7298: E8 73 C4 0E 00     call        6F7E3710
+    6F6F729D: 68 6C 89 96 6F     push        6F96896Ch
+    6F6F72A2: BA 4C 91 96 6F     mov         edx,6F96914Ch
+    6F6F72A7: B9 C0 A0 70 6F     mov         ecx,6F70A0C0h
+    6F6F72AC: E8
+    6F6F72AD: 5F                 pop         edi
+    6F6F72AE: C4 0E              les         ecx,fword ptr [esi]
+
+=== Native UnitDamageTarget str_rvas=['0x96ad84'] ===
+  xref @ 0x1EC427:
+    6F1EC40F: AD                 lods        dword ptr [esi]
+    6F1EC410: 96                 xchg        eax,esi
+    6F1EC411: 6F                 outs        dx,dword ptr [esi]
+    6F1EC412: BA 38 AD 96 6F     mov         edx,6F96AD38h
+    6F1EC417: B9 80 AA 1F 6F     mov         ecx,6F1FAA80h
+    6F1EC41C: E8 EF 72 5F 00     call        6F7E3710
+    6F1EC421: 68 48 AD 96 6F     push        6F96AD48h
+    6F1EC426: BA 84 AD 96 6F     mov         edx,6F96AD84h
+    6F1EC42B: B9 70 AB 1F 6F     mov         ecx,6F1FAB70h
+    6F1EC430: E8 DB 72 5F 00     call        6F7E3710
+    6F1EC435: 68 00 A6 96 6F     push        6F96A600h
+    6F1EC43A: BA 98 AD 96 6F     mov         edx,6F96AD98h
+    6F1EC43F: B9 B0 F1 1D 6F     mov         ecx,6F1DF1B0h
+    6F1EC444: E8
+    6F1EC445: C7
+    6F1EC446: 72 5F              jb          6F1EC4A7
+  xref @ 0x6F86DF:
+    6F6F86C7: AD                 lods        dword ptr [esi]
+    6F6F86C8: 96                 xchg        eax,esi
+    6F6F86C9: 6F                 outs        dx,dword ptr [esi]
+    6F6F86CA: BA 38 AD 96 6F     mov         edx,6F96AD38h
+    6F6F86CF: B9 C0 A0 70 6F     mov         ecx,6F70A0C0h
+    6F6F86D4: E8 37 B0 0E 00     call        6F7E3710
+    6F6F86D9: 68 48 AD 96 6F     push        6F96AD48h
+    6F6F86DE: BA 84 AD 96 6F     mov         edx,6F96AD84h
+    6F6F86E3: B9 C0 A0 70 6F     mov         ecx,6F70A0C0h
+    6F6F86E8: E8 23 B0 0E 00     call        6F7E3710
+    6F6F86ED: 68 00 A6 96 6F     push        6F96A600h
+    6F6F86F2: BA 98 AD 96 6F     mov         edx,6F96AD98h
+    6F6F86F7: B9 C0 A0 70 6F     mov         ecx,6F70A0C0h
+    6F6F86FC: E8
+    6F6F86FD: 0F B0 0E           cmpxchg     byte ptr [esi],cl
+
+=== 1.27 CUnit vtables: ['0xa4a704'] ===
+  CUnit vt+0x11C = 0x677EC0
+  CUnit vt+0x120 = 0x67DC40
+  CUnit vt+0x124 = 0x67B310
+  CUnit vt+0x128 = 0x652E30
+
+=== war3map.j o004 (1865429044): 6 hits, lines=[17641, 17662, 17664, 21955, 22040, 28943] ===
+   17639: local integer HOO
+   17640: local item H2O
+   17641: if GetUnitTypeId(H0O)==1865429044 then
+   17642: set HOO=FR0[ZA0]
+   17643: else
+   17644: set HOO=FR0[ZB0]
+   17645: endif
+   17646: call DisableTrigger(LY0)
+   17660: local unit H0O=GetSummonedUnit()
+   17661: local unit SFI=GetSummoningUnit()
+   17662: if GetUnitTypeId(GetSummonedUnit())==1865429044 then
+   17663: endif
+   17664: if GetUnitTypeId(GetSummonedUnit())==1865429044 or GetUnitTypeId(GetSummonedUnit())==1868921189 then
+   17665: if IsUnitInRegion(R60,H0O)then
+   17666: call H1O(SFI,H0O)
+   17667: call RemoveUnit(H0O)
+   17662: if GetUnitTypeId(GetSummonedUnit())==1865429044 then
+   17663: endif
+   17664: if GetUnitTypeId(GetSummonedUnit())==1865429044 or GetUnitTypeId(GetSummonedUnit())==1868921189 then
+   17665: if IsUnitInRegion(R60,H0O)then
+   17666: call H1O(SFI,H0O)
+   17667: call RemoveUnit(H0O)
+   17668: elseif RYI(SFI)then
+   17669: call H1O(SFI,H0O)
+   21953: set M8O=ZB0
+   21954: elseif GetSpellAbilityId()==1093818184 then
+   21955: set M9O=1865429044
+   21956: set M5I=60*7
+   21957: set M7O=1227896135
+   21958: set M8O=ZA0
+   21959: endif
+   21960: if(M7O!=0)then
+   22038: function MFO takes nothing returns nothing
+   22039: if GetSpellAbilityId()==1093748292 then
+   22040: if GetUnitTypeId(GetSpellTargetUnit())==1865429044 or GetUnitTypeId(GetSpellTargetUnit())==1868921189 then
+   22041: call MEO()
+   22042: endif
+   22043: endif
+   22044: endfunction
+   22045: function MGO takes nothing returns boolean
+
+=== war3map.j oeye (1868921189): 6 hits, lines=[17664, 17674, 21950, 21982, 22040, 28943] ===
+   17662: if GetUnitTypeId(GetSummonedUnit())==1865429044 then
+   17663: endif
+   17664: if GetUnitTypeId(GetSummonedUnit())==1865429044 or GetUnitTypeId(GetSummonedUnit())==1868921189 then
+   17665: if IsUnitInRegion(R60,H0O)then
+   17666: call H1O(SFI,H0O)
+   17667: call RemoveUnit(H0O)
+   17668: elseif RYI(SFI)then
+   17669: call H1O(SFI,H0O)
+   17672: else
+   17673: call GUO(GetSummonedUnit(),GetSummoningUnit())
+   17674: if GetUnitTypeId(GetSummonedUnit())==1868921189 then
+   17675: call I41(GetOwningPlayer(GetSummonedUnit()),12,GetUnitX(GetSummonedUnit()),GetUnitY(GetSummonedUnit()),150)
+   17676: endif
+   17677: endif
+   17678: elseif GetUnitTypeId(H0O)==1869836340 or GetUnitTypeId(H0O)==1865429048 or GetUnitTypeId(H0O)==1865429049 or GetUnitTypeId(H0O)==1865429315 or GetUnitTypeId(H0O)==1865429316 or GetUnitTypeId(H0O)==1865429317 then
+   17679: call SelectUnitAddForPlayer(H0O,GetOwningPlayer(H0O))
+   21948: local unit MAO
+   21949: if GetSpellAbilityId()==1093818185 then
+   21950: set M9O=1868921189
+   21951: set M5I=60*4
+   21952: set M7O=1227896136
+   21953: set M8O=ZB0
+   21954: elseif GetSpellAbilityId()==1093818184 then
+   21955: set M9O=1865429044
+   21980: else
+   21981: call GUO(MAO,P7I)
+   21982: if GetUnitTypeId(MAO)==1868921189 then
+   21983: call I41(GetOwningPlayer(MAO),12,GetUnitX(MAO),GetUnitY(MAO),150)
+   21984: endif
+   21985: endif
+   21986: endif
+   21987: endif
+   22038: function MFO takes nothing returns nothing
+   22039: if GetSpellAbilityId()==1093748292 then
+   22040: if GetUnitTypeId(GetSpellTargetUnit())==1865429044 or GetUnitTypeId(GetSpellTargetUnit())==1868921189 then
+   22041: call MEO()
+   22042: endif
+   22043: endif
+   22044: endfunction
+   22045: function MGO takes nothing returns boolean
+
+=== Units_UnitAbilities.slk Towers & Wards ===
+  C;Y45;K"oeye"
+  C;Y235;K"e011"
+  C;X1;K"o004"
+  C;X1;K"u00D"
+  C;Y371;K"e00R"
+  C;X1;K"e00S"
+  C;Y373;K"u00M"
+  C;X1;K"u00N"
+  C;X1;K"e019"

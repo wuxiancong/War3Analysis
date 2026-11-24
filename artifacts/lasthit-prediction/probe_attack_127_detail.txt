@@ -1,0 +1,1126 @@
+=== 1. CAbilityAttack 代码区 [0x472000..0x483000] 关键偏移引用统计 ===
+  timer_1D8    (+0x1D8): 23 hits -> ['0x4722f5', '0x474c5b', '0x4755db', '0x475e07', '0x477aad', '0x477ab3', '0x4788de', '0x4788e9', '0x478937', '0x47a75c', '0x47b1e5', '0x47b1eb', '0x47c329', '0x47c32f', '0x47e8e1', '0x47e8e7', '0x47f965', '0x47f975', '0x47f991', '0x47fa17', '0x47fa21', '0x47fa47', '0x47ff15']
+  timer_1EC    (+0x1EC): 27 hits -> ['0x474c8d', '0x4755cc', '0x475e1d', '0x477f07', '0x47894b', '0x478955', '0x4789a8', '0x47a73f', '0x47a746', '0x47a767', '0x47a8e0', '0x47c339', '0x47c33f', '0x47cb2f', '0x47d727', '0x47dba3', '0x47e8f1', '0x47e8f7', '0x47fad5', '0x47fef5', '0x47feff', '0x47ff20', '0x47ffa5', '0x480432', '0x480966', '0x480e74', '0x481033']
+  timer_200    (+0x200): 56 hits -> ['0x472bd3', '0x474869', '0x474887', '0x4748a5', '0x4748c3', '0x4748e1', '0x474955', '0x474973', '0x474991', '0x4749af', '0x4749cd', '0x474a41', '0x474abc', '0x474af0', '0x474b64', '0x474cbf', '0x474cea', '0x474d53', '0x474d8c', '0x474dc0', '0x4755bd', '0x475dfc', '0x476595', '0x47694c', '0x477000', '0x4777ac', '0x4778e7', '0x47803e', '0x47842a', '0x4784a2', '0x4789b3', '0x4789bd', '0x478a10', '0x47a1e9', '0x47a55a', '0x47a872', '0x47beb4', '0x47c349', '0x47c34f', '0x47ccdb', '0x47cde7', '0x47e901', '0x47e907', '0x47ed93', '0x47f9ea', '0x47fbe2', '0x47fdee', '0x47fec5', '0x47fecb', '0x47ffe8', '0x480001', '0x4808f5', '0x480a46', '0x480fcc', '0x480fd2', '0x481102']
+  ias_1B0      (+0x1B0): 5 hits -> ['0x474be4', '0x477321', '0x47883e', '0x47afa1', '0x47e8a4']
+  slow_1C0     (+0x1C0): 6 hits -> ['0x472851', '0x474c19', '0x4787ed', '0x47afb1', '0x47aff5', '0x47ebd7']
+  bat_158      (+0x158): 3 hits -> ['0x474ad2', '0x4794d6', '0x47e864']
+  dmpt_16C     (+0x16C): 1 hits -> ['0x474b06']
+  wpnIdx_2B8   (+0x2B8): 47 hits -> ['0x473bd0', '0x473cc2', '0x473d51', '0x473df2', '0x474e94', '0x47508e', '0x4756ab', '0x476fc3', '0x476fe6', '0x477008', '0x4771f9', '0x477a11', '0x477ae5', '0x477df6', '0x478768', '0x478ab8', '0x478b58', '0x478bb8', '0x4797c4', '0x47a6bf', '0x47a77b', '0x47a791', '0x47b202', '0x47b249', '0x47b4a9', '0x47b4d6', '0x47b4f9', '0x47b872', '0x47bc3a', '0x47bc5a', '0x47c477', '0x47cb42', '0x47cb6d', '0x47ce44', '0x47cea9', '0x47dea1', '0x47ea83', '0x47ed1d', '0x47efc8', '0x47f7e9', '0x47f92f', '0x47fa6f', '0x47fe97', '0x47feb2', '0x480673', '0x480ed6', '0x481087']
+  atkType_F4   (+0xF4): 8 hits -> ['0x474998', '0x47715a', '0x4795a2', '0x47c26b', '0x47e7ba', '0x47f6ca', '0x48067a', '0x480758']
+
+=== 2. +0x1D8 引用处反汇编 ===
+  --- around 0x4722F5 ---
+    6F4722C0: E4 89              in          al,89h
+    6F4722C2: 45                 inc         ebp
+    6F4722C3: D0 8B 45 FC 89 45  ror         byte ptr [ebx+4589FC45h],1
+    6F4722C9: D4 8B              aamb        8Bh
+    6F4722CB: 45                 inc         ebp
+    6F4722CC: 10 89 45 DC 8D 45  adc         byte ptr [ecx+458DDC45h],cl
+    6F4722D2: CC                 int         3
+    6F4722D3: 6A 00              push        0
+    6F4722D5: 50                 push        eax
+    6F4722D6: C7 45 D8 00 00 00  mov         dword ptr [ebp-28h],0
+    6F4722DD: E8 AE 5C F8 FF     call        6F3F7F90
+    6F4722E2: BA D0 2B 47 6F     mov         edx,6F472BD0h
+    6F4722E7: 8B C8              mov         ecx,eax
+    6F4722E9: E8 42 CF BB FF     call        6F02F230
+    6F4722EE: 6A 00              push        0
+    6F4722F0: 8D 45 CC           lea         eax,[ebp-34h]
+    6F4722F3: C7 45 D8 01 00 00  mov         dword ptr [ebp-28h],1
+    6F4722FA: 50                 push        eax
+    6F4722FB: E8 60 0A 00 00     call        6F472D60
+    6F472300: BA F0 2B 47 6F     mov         edx,6F472BF0h
+    6F472305: 8B C8              mov         ecx,eax
+    6F472307: E8 24 CF BB FF     call        6F02F230
+    6F47230C: 5E                 pop         esi
+    6F47230D: 8B E5              mov         esp,ebp
+    6F47230F: 5D                 pop         ebp
+    6F472310: C2 0C 00           ret         0Ch
+    6F472313: CC                 int         3
+    6F472314: CC                 int         3
+    6F472315: CC                 int         3
+    6F472316: CC                 int         3
+    6F472317: CC                 int         3
+    6F472318: CC                 int         3
+    6F472319: CC                 int         3
+    6F47231A: CC                 int         3
+    6F47231B: CC                 int         3
+    6F47231C: CC                 int         3
+    6F47231D: CC                 int         3
+    6F47231E: CC                 int         3
+    6F47231F: CC                 int         3
+    6F472320: 55                 push        ebp
+    6F472321: 8B EC              mov         ebp,esp
+    6F472323: 83 EC 58           sub         esp,58h
+    6F472326: 53                 push        ebx
+    6F472327: 56                 push        esi
+    6F472328: 8B F2              mov         esi,edx
+    6F47232A: 8B D9              mov         ebx,ecx
+    6F47232C: 57                 push        edi
+    6F47232D: 33 D2              xor         edx,edx
+    6F47232F: 8D 4D BC           lea         ecx,[ebp-44h]
+    6F472332: E8
+    6F472333: 29
+    6F472334: B6 2F              mov         dh,2Fh
+  --- around 0x474C5B ---
+    6F474C26: 00 C7              add         bh,al
+    6F474C28: 86 C4              xchg        al,ah
+    6F474C2A: 01 00              add         dword ptr [eax],eax
+    6F474C2C: 00 4C 25 95        add         byte ptr [ebp-6Bh],cl
+    6F474C30: 6F                 outs        dx,dword ptr [esi]
+    6F474C31: C7 86 CC 01 00 00  mov         dword ptr [esi+000001CCh],0
+    6F474C3B: C7 86 D0 01 00 00  mov         dword ptr [esi+000001D0h],0
+    6F474C45: C7 86 D4 01 00 00  mov         dword ptr [esi+000001D4h],0
+    6F474C4F: C7 86 DC 01 00 00  mov         dword ptr [esi+000001DCh],0
+    6F474C59: C7 86 D8 01 00 00  mov         dword ptr [esi+000001D8h],6F95254Ch
+    6F474C63: C7 86 E0 01 00 00  mov         dword ptr [esi+000001E0h],0
+    6F474C6D: C7 86 E4 01 00 00  mov         dword ptr [esi+000001E4h],0
+    6F474C77: C7 86 E8 01 00 00  mov         dword ptr [esi+000001E8h],0
+    6F474C81: C7 86 F0 01 00 00  mov         dword ptr [esi+000001F0h],0
+    6F474C8B: C7 86 EC 01 00 00  mov         dword ptr [esi+000001ECh],6F95254Ch
+    6F474C95: C7
+    6F474C96: 86 F4              xchg        dh,ah
+    6F474C98: 01 00              add         dword ptr [eax],eax
+    6F474C9A: 00 00              add         byte ptr [eax],al
+  --- around 0x4755DB ---
+    6F4755A6: 6F                 outs        dx,dword ptr [esi]
+    6F4755A7: 6A 02              push        2
+    6F4755A9: 6A 04              push        4
+    6F4755AB: 8D 86 38 02 00 00  lea         eax,[esi+00000238h]
+    6F4755B1: C6 45 FC 04        mov         byte ptr [ebp-4],4
+    6F4755B5: 50                 push        eax
+    6F4755B6: E8 5B C5 2F 00     call        6F771B16
+    6F4755BB: 8D 8E 00 02 00 00  lea         ecx,[esi+00000200h]
+    6F4755C1: C6 45 FC 03        mov         byte ptr [ebp-4],3
+    6F4755C5: E8 46 D8 BC FF     call        6F042E10
+    6F4755CA: 8D 8E EC 01 00 00  lea         ecx,[esi+000001ECh]
+    6F4755D0: C6 45 FC 02        mov         byte ptr [ebp-4],2
+    6F4755D4: E8 37 D8 BC FF     call        6F042E10
+    6F4755D9: 8D 8E D8 01 00 00  lea         ecx,[esi+000001D8h]
+    6F4755DF: C6 45 FC 01        mov         byte ptr [ebp-4],1
+    6F4755E3: E8 28 D8 BC FF     call        6F042E10
+    6F4755E8: 8D 8E C4 01 00 00  lea         ecx,[esi+000001C4h]
+    6F4755EE: C6 45 FC 00        mov         byte ptr [ebp-4],0
+    6F4755F2: E8 19 D8 BC FF     call        6F042E10
+    6F4755F7: 8D 4E 58           lea         ecx,[esi+58h]
+    6F4755FA: C7 45 FC 09 00 00  mov         dword ptr [ebp-4],9
+    6F475601: E8 0A D8 BC FF     call        6F042E10
+    6F475606: C7 06 D0 0B 95 6F  mov         dword ptr [esi],6F950BD0h
+    6F47560C: 8D 4E 14           lea         ecx,[esi+14h]
+    6F47560F: C7 45 FC 0A 00 00  mov         dword ptr [ebp-4],0Ah
+    6F475616: E8 C5 07 BE FF     call        6F055DE0
+    6F47561B: 8B
+  --- around 0x475E07 ---
+    6F475DD2: C6
+    6F475DD3: 8B 4D F4           mov         ecx,dword ptr [ebp-0Ch]
+    6F475DD6: 64 89 0D 00 00 00  mov         dword ptr fs:[00000000h],ecx
+    6F475DDD: 59                 pop         ecx
+    6F475DDE: 5E                 pop         esi
+    6F475DDF: 8B E5              mov         esp,ebp
+    6F475DE1: 5D                 pop         ebp
+    6F475DE2: C2 04 00           ret         4
+    6F475DE5: CC                 int         3
+    6F475DE6: CC                 int         3
+    6F475DE7: CC                 int         3
+    6F475DE8: CC                 int         3
+    6F475DE9: CC                 int         3
+    6F475DEA: CC                 int         3
+    6F475DEB: CC                 int         3
+    6F475DEC: CC                 int         3
+    6F475DED: CC                 int         3
+    6F475DEE: CC                 int         3
+    6F475DEF: CC                 int         3
+    6F475DF0: 53                 push        ebx
+    6F475DF1: 56                 push        esi
+    6F475DF2: 57                 push        edi
+    6F475DF3: 8B D9              mov         ebx,ecx
+    6F475DF5: E8 46 1B F6 FF     call        6F3D7940
+    6F475DFA: 8D 8B 00 02 00 00  lea         ecx,[ebx+00000200h]
+    6F475E00: E8 EB D6 BC FF     call        6F0434F0
+    6F475E05: 8D 8B D8 01 00 00  lea         ecx,[ebx+000001D8h]
+    6F475E0B: E8 E0 D6 BC FF     call        6F0434F0
+    6F475E10: 8D 8B C4 01 00 00  lea         ecx,[ebx+000001C4h]
+    6F475E16: E8 D5 D6 BC FF     call        6F0434F0
+    6F475E1B: 8D 8B EC 01 00 00  lea         ecx,[ebx+000001ECh]
+    6F475E21: E8 CA D6 BC FF     call        6F0434F0
+    6F475E26: 8D 8B 94 02 00 00  lea         ecx,[ebx+00000294h]
+    6F475E2C: E8 BF D6 BC FF     call        6F0434F0
+    6F475E31: 8B CB              mov         ecx,ebx
+    6F475E33: E8 B8 62 00 00     call        6F47C0F0
+    6F475E38: 8D 8B 80 02 00 00  lea         ecx,[ebx+00000280h]
+    6F475E3E: E8 AD D6 BC FF     call        6F0434F0
+    6F475E43: 8B CB              mov         ecx,ebx
+    6F475E45: E8
+    6F475E46: 66
+    6F475E47: 86
+  --- around 0x477AAD ---
+    6F477A78: 8B F1              mov         esi,ecx
+    6F477A7A: 8B 46 70           mov         eax,dword ptr [esi+70h]
+    6F477A7D: 8D 4E 6C           lea         ecx,[esi+6Ch]
+    6F477A80: 23 01              and         eax,dword ptr [ecx]
+    6F477A82: 83 F8 FF           cmp         eax,0FFFFFFFFh
+    6F477A85: 75 04              jne         6F477A8B
+    6F477A87: 33 DB              xor         ebx,ebx
+    6F477A89: EB 07              jmp         6F477A92
+    6F477A8B: E8 C0 C6 BC FF     call        6F044150
+    6F477A90: 8B D8              mov         ebx,eax
+    6F477A92: 8B 7E 30           mov         edi,dword ptr [esi+30h]
+    6F477A95: 85 FF              test        edi,edi
+    6F477A97: 75 09              jne         6F477AA2
+    6F477A99: 8B CE              mov         ecx,esi
+    6F477A9B: E8 40 10 BC FF     call        6F038AE0
+    6F477AA0: 8B F8              mov         edi,eax
+    6F477AA2: 6A 02              push        2
+    6F477AA4: 8B CF              mov         ecx,edi
+    6F477AA6: E8 45 F4 1F 00     call        6F676EF0
+    6F477AAB: 8B 96 D8 01 00 00  mov         edx,dword ptr [esi+000001D8h]
+    6F477AB1: 8D 8E D8 01 00 00  lea         ecx,[esi+000001D8h]
+    6F477AB7: 8D 45 DC           lea         eax,[ebp-24h]
+    6F477ABA: 50                 push        eax
+    6F477ABB: FF 52 18           call        dword ptr [edx+18h]
+    6F477ABE: F3 0F 10 00        movss       xmm0,dword ptr [eax]
+    6F477AC2: 0F 2F 05 D4 81 BB  comiss      xmm0,dword ptr ds:[6FBB81D4h]
+    6F477AC9: 0F 87 61 03 00 00  ja          6F477E30
+    6F477ACF: 8B CE              mov         ecx,esi
+    6F477AD1: E8 5A 32 00 00     call        6F47AD30
+    6F477AD6: 8B 13              mov         edx,dword ptr [ebx]
+    6F477AD8: 8B CB              mov         ecx,ebx
+    6F477ADA: 89 45 EC           mov         dword ptr [ebp-14h],eax
+    6F477ADD: FF 92 B8 00 00 00  call        dword ptr [edx+000000B8h]
+    6F477AE3: FF B6 B8 02 00 00  push        dword ptr [esi+000002B8h]
+    6F477AE9: 89 45 E8           mov         dword ptr [ebp-18h],eax
+    6F477AEC: 8B CE              mov         ecx,esi
+  --- around 0x477AB3 ---
+    6F477A7E: 4E                 dec         esi
+    6F477A7F: 6C                 ins         byte ptr es:[edi],dx
+    6F477A80: 23 01              and         eax,dword ptr [ecx]
+    6F477A82: 83 F8 FF           cmp         eax,0FFFFFFFFh
+    6F477A85: 75 04              jne         6F477A8B
+    6F477A87: 33 DB              xor         ebx,ebx
+    6F477A89: EB 07              jmp         6F477A92
+    6F477A8B: E8 C0 C6 BC FF     call        6F044150
+    6F477A90: 8B D8              mov         ebx,eax
+    6F477A92: 8B 7E 30           mov         edi,dword ptr [esi+30h]
+    6F477A95: 85 FF              test        edi,edi
+    6F477A97: 75 09              jne         6F477AA2
+    6F477A99: 8B CE              mov         ecx,esi
+    6F477A9B: E8 40 10 BC FF     call        6F038AE0
+    6F477AA0: 8B F8              mov         edi,eax
+    6F477AA2: 6A 02              push        2
+    6F477AA4: 8B CF              mov         ecx,edi
+    6F477AA6: E8 45 F4 1F 00     call        6F676EF0
+    6F477AAB: 8B 96 D8 01 00 00  mov         edx,dword ptr [esi+000001D8h]
+    6F477AB1: 8D 8E D8 01 00 00  lea         ecx,[esi+000001D8h]
+    6F477AB7: 8D 45 DC           lea         eax,[ebp-24h]
+    6F477ABA: 50                 push        eax
+    6F477ABB: FF 52 18           call        dword ptr [edx+18h]
+    6F477ABE: F3 0F 10 00        movss       xmm0,dword ptr [eax]
+    6F477AC2: 0F 2F 05 D4 81 BB  comiss      xmm0,dword ptr ds:[6FBB81D4h]
+    6F477AC9: 0F 87 61 03 00 00  ja          6F477E30
+    6F477ACF: 8B CE              mov         ecx,esi
+    6F477AD1: E8 5A 32 00 00     call        6F47AD30
+    6F477AD6: 8B 13              mov         edx,dword ptr [ebx]
+    6F477AD8: 8B CB              mov         ecx,ebx
+    6F477ADA: 89 45 EC           mov         dword ptr [ebp-14h],eax
+    6F477ADD: FF 92 B8 00 00 00  call        dword ptr [edx+000000B8h]
+    6F477AE3: FF B6 B8 02 00 00  push        dword ptr [esi+000002B8h]
+    6F477AE9: 89 45 E8           mov         dword ptr [ebp-18h],eax
+    6F477AEC: 8B CE              mov         ecx,esi
+    6F477AEE: 8D 45 F0           lea         eax,[ebp-10h]
+    6F477AF1: 50                 push        eax
+    6F477AF2: E8
+    6F477AF3: 79
+  --- around 0x4788DE ---
+    6F4788A9: 4D                 dec         ebp
+    6F4788AA: FC                 cld
+    6F4788AB: E8 40 A2 BD FF     call        6F052AF0
+    6F4788B0: 68 D8 81 BB 6F     push        6FBB81D8h
+    6F4788B5: 8D 55 FC           lea         edx,[ebp-4]
+    6F4788B8: 8D 4D 08           lea         ecx,[ebp+8]
+    6F4788BB: E8 F0 9F BD FF     call        6F0528B0
+    6F4788C0: F3 0F 10 05 68 94  movss       xmm0,dword ptr ds:[6FB59468h]
+    6F4788C8: 8B 00              mov         eax,dword ptr [eax]
+    6F4788CA: 25 FF FF FF 7F     and         eax,7FFFFFFFh
+    6F4788CF: 89 45 08           mov         dword ptr [ebp+8],eax
+    6F4788D2: 0F 2F 45 08        comiss      xmm0,dword ptr [ebp+8]
+    6F4788D6: 0F 87 3D 01 00 00  ja          6F478A19
+    6F4788DC: 8B 86 D8 01 00 00  mov         eax,dword ptr [esi+000001D8h]
+    6F4788E2: 8D 4D 0C           lea         ecx,[ebp+0Ch]
+    6F4788E5: 53                 push        ebx
+    6F4788E6: 51                 push        ecx
+    6F4788E7: 8D 8E D8 01 00 00  lea         ecx,[esi+000001D8h]
+    6F4788ED: FF 50 18           call        dword ptr [eax+18h]
+    6F4788F0: 68 D4 81 BB 6F     push        6FBB81D4h
+    6F4788F5: 8D 55 0C           lea         edx,[ebp+0Ch]
+    6F4788F8: 8D 4D 08           lea         ecx,[ebp+8]
+    6F4788FB: E8 B0 9F BD FF     call        6F0528B0
+    6F478900: F3 0F 10 05 68 94  movss       xmm0,dword ptr ds:[6FB59468h]
+    6F478908: 8B 00              mov         eax,dword ptr [eax]
+    6F47890A: 25 FF FF FF 7F     and         eax,7FFFFFFFh
+    6F47890F: 89 45 08           mov         dword ptr [ebp+8],eax
+    6F478912: 0F 2F 45 08        comiss      xmm0,dword ptr [ebp+8]
+    6F478916: 77 28              ja          6F478940
+    6F478918: 8D 45 FC           lea         eax,[ebp-4]
+    6F47891B: 50                 push        eax
+    6F47891C: 8D 55 0C           lea         edx,[ebp+0Ch]
+  --- around 0x4788E9 ---
+    6F4788B4: 6F                 outs        dx,dword ptr [esi]
+    6F4788B5: 8D 55 FC           lea         edx,[ebp-4]
+    6F4788B8: 8D 4D 08           lea         ecx,[ebp+8]
+    6F4788BB: E8 F0 9F BD FF     call        6F0528B0
+    6F4788C0: F3 0F 10 05 68 94  movss       xmm0,dword ptr ds:[6FB59468h]
+    6F4788C8: 8B 00              mov         eax,dword ptr [eax]
+    6F4788CA: 25 FF FF FF 7F     and         eax,7FFFFFFFh
+    6F4788CF: 89 45 08           mov         dword ptr [ebp+8],eax
+    6F4788D2: 0F 2F 45 08        comiss      xmm0,dword ptr [ebp+8]
+    6F4788D6: 0F 87 3D 01 00 00  ja          6F478A19
+    6F4788DC: 8B 86 D8 01 00 00  mov         eax,dword ptr [esi+000001D8h]
+    6F4788E2: 8D 4D 0C           lea         ecx,[ebp+0Ch]
+    6F4788E5: 53                 push        ebx
+    6F4788E6: 51                 push        ecx
+    6F4788E7: 8D 8E D8 01 00 00  lea         ecx,[esi+000001D8h]
+    6F4788ED: FF 50 18           call        dword ptr [eax+18h]
+    6F4788F0: 68 D4 81 BB 6F     push        6FBB81D4h
+    6F4788F5: 8D 55 0C           lea         edx,[ebp+0Ch]
+    6F4788F8: 8D 4D 08           lea         ecx,[ebp+8]
+    6F4788FB: E8 B0 9F BD FF     call        6F0528B0
+    6F478900: F3 0F 10 05 68 94  movss       xmm0,dword ptr ds:[6FB59468h]
+    6F478908: 8B 00              mov         eax,dword ptr [eax]
+    6F47890A: 25 FF FF FF 7F     and         eax,7FFFFFFFh
+    6F47890F: 89 45 08           mov         dword ptr [ebp+8],eax
+    6F478912: 0F 2F 45 08        comiss      xmm0,dword ptr [ebp+8]
+    6F478916: 77 28              ja          6F478940
+    6F478918: 8D 45 FC           lea         eax,[ebp-4]
+    6F47891B: 50                 push        eax
+    6F47891C: 8D 55 0C           lea         edx,[ebp+0Ch]
+    6F47891F: 8D 4D 08           lea         ecx,[ebp+8]
+    6F478922: E8 C9 A1 BD FF     call        6F052AF0
+    6F478927: 6A 00              push        0
+    6F478929: 6A
+  --- around 0x478937 ---
+    6F478902: 10 05 68 94 B5 6F  adc         byte ptr ds:[6FB59468h],al
+    6F478908: 8B 00              mov         eax,dword ptr [eax]
+    6F47890A: 25 FF FF FF 7F     and         eax,7FFFFFFFh
+    6F47890F: 89 45 08           mov         dword ptr [ebp+8],eax
+    6F478912: 0F 2F 45 08        comiss      xmm0,dword ptr [ebp+8]
+    6F478916: 77 28              ja          6F478940
+    6F478918: 8D 45 FC           lea         eax,[ebp-4]
+    6F47891B: 50                 push        eax
+    6F47891C: 8D 55 0C           lea         edx,[ebp+0Ch]
+    6F47891F: 8D 4D 08           lea         ecx,[ebp+8]
+    6F478922: E8 C9 A1 BD FF     call        6F052AF0
+    6F478927: 6A 00              push        0
+    6F478929: 6A 00              push        0
+    6F47892B: 56                 push        esi
+    6F47892C: 68 B0 01 0D 00     push        0D01B0h
+    6F478931: 8D 45 08           lea         eax,[ebp+8]
+    6F478934: 50                 push        eax
+    6F478935: 8D 8E D8 01 00 00  lea         ecx,[esi+000001D8h]
+    6F47893B: E8 C0 AD BC FF     call        6F043700
+    6F478940: 5B                 pop         ebx
+    6F478941: 85 FF              test        edi,edi
+    6F478943: 0F 85 D0 00 00 00  jne         6F478A19
+    6F478949: 8B 86 EC 01 00 00  mov         eax,dword ptr [esi+000001ECh]
+    6F47894F: 8D 4D 08           lea         ecx,[ebp+8]
+    6F478952: 51                 push        ecx
+    6F478953: 8D 8E EC 01 00 00  lea         ecx,[esi+000001ECh]
+    6F478959: FF 50 18           call        dword ptr [eax+18h]
+    6F47895C: 68 D4 81 BB 6F     push        6FBB81D4h
+    6F478961: 8D 55 0C           lea         edx,[ebp+0Ch]
+    6F478964: 8D 4D 08           lea         ecx,[ebp+8]
+    6F478967: 8B 00              mov         eax,dword ptr [eax]
+    6F478969: 89 45 0C           mov         dword ptr [ebp+0Ch],eax
+    6F47896C: E8 3F 9F BD FF     call        6F0528B0
+    6F478971: F3
+    6F478972: 0F
+    6F478973: 10
+    6F478974: 05
+    6F478975: 68
+    6F478976: 94                 xchg        eax,esp
+    6F478977: B5
+  --- around 0x47A75C ---
+    6F47A727: F8                 clc
+    6F47A728: 8D 8E C4 01 00 00  lea         ecx,[esi+000001C4h]
+    6F47A72E: E8 BD 8D BC FF     call        6F0434F0
+    6F47A733: 81 66 20 FF FF FD  and         dword ptr [esi+20h],0FFFDFFFFh
+    6F47A73A: 8D 4D EC           lea         ecx,[ebp-14h]
+    6F47A73D: 8B 86 EC 01 00 00  mov         eax,dword ptr [esi+000001ECh]
+    6F47A743: 51                 push        ecx
+    6F47A744: 8D 8E EC 01 00 00  lea         ecx,[esi+000001ECh]
+    6F47A74A: FF 50 18           call        dword ptr [eax+18h]
+    6F47A74D: F3 0F 10 00        movss       xmm0,dword ptr [eax]
+    6F47A751: 0F 2F 05 D4 81 BB  comiss      xmm0,dword ptr ds:[6FBB81D4h]
+    6F47A758: 76 0B              jbe         6F47A765
+    6F47A75A: 8D 8E D8 01 00 00  lea         ecx,[esi+000001D8h]
+    6F47A760: E8 8B 8D BC FF     call        6F0434F0
+    6F47A765: 8D 8E EC 01 00 00  lea         ecx,[esi+000001ECh]
+    6F47A76B: E8 80 8D BC FF     call        6F0434F0
+    6F47A770: 81 66 20 FF FD FF  and         dword ptr [esi+20h],0FFFFFDFFh
+    6F47A777: 8B CE              mov         ecx,esi
+    6F47A779: FF B6 B8 02 00 00  push        dword ptr [esi+000002B8h]
+    6F47A77F: E8 FC 55 00 00     call        6F47FD80
+    6F47A784: 50                 push        eax
+    6F47A785: 8B CF              mov         ecx,edi
+    6F47A787: E8 34 CF 1F 00     call        6F6776C0
+    6F47A78C: 8D 4E 6C           lea         ecx,[esi+6Ch]
+    6F47A78F: C7 86 B8 02 00 00  mov         dword ptr [esi+000002B8h],0
+    6F47A799: 8B 01              mov         eax,dword ptr [ecx]
+    6F47A79B: 23
+    6F47A79C: 41                 inc         ecx
+  --- around 0x47B1E5 ---
+    6F47B1B0: F9                 stc
+    6F47B1B1: E8 8A FD FF FF     call        6F47AF40
+    6F47B1B6: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+    6F47B1B9: 8D 14 F5 54 01 00  lea         edx,[esi*8+00000154h]
+    6F47B1C0: 50                 push        eax
+    6F47B1C1: 03 D7              add         edx,edi
+    6F47B1C3: E8 A8 8C F5 FF     call        6F3D3E70
+    6F47B1C8: 8B 45 08           mov         eax,dword ptr [ebp+8]
+    6F47B1CB: 5F                 pop         edi
+    6F47B1CC: 5E                 pop         esi
+    6F47B1CD: 5D                 pop         ebp
+    6F47B1CE: C2 08 00           ret         8
+    6F47B1D1: CC                 int         3
+    6F47B1D2: CC                 int         3
+    6F47B1D3: CC                 int         3
+    6F47B1D4: CC                 int         3
+    6F47B1D5: CC                 int         3
+    6F47B1D6: CC                 int         3
+    6F47B1D7: CC                 int         3
+    6F47B1D8: CC                 int         3
+    6F47B1D9: CC                 int         3
+    6F47B1DA: CC                 int         3
+    6F47B1DB: CC                 int         3
+    6F47B1DC: CC                 int         3
+    6F47B1DD: CC                 int         3
+    6F47B1DE: CC                 int         3
+    6F47B1DF: CC                 int         3
+    6F47B1E0: 55                 push        ebp
+    6F47B1E1: 8B EC              mov         ebp,esp
+    6F47B1E3: 8B 91 D8 01 00 00  mov         edx,dword ptr [ecx+000001D8h]
+    6F47B1E9: 81 C1 D8 01 00 00  add         ecx,1D8h
+    6F47B1EF: FF 75 08           push        dword ptr [ebp+8]
+    6F47B1F2: FF 52 18           call        dword ptr [edx+18h]
+    6F47B1F5: 8B 45 08           mov         eax,dword ptr [ebp+8]
+    6F47B1F8: 5D                 pop         ebp
+    6F47B1F9: C2 04 00           ret         4
+    6F47B1FC: CC                 int         3
+    6F47B1FD: CC                 int         3
+    6F47B1FE: CC                 int         3
+    6F47B1FF: CC                 int         3
+    6F47B200: 8B 81 B8 02 00 00  mov         eax,dword ptr [ecx+000002B8h]
+    6F47B206: C3                 ret
+    6F47B207: CC                 int         3
+    6F47B208: CC                 int         3
+    6F47B209: CC                 int         3
+    6F47B20A: CC                 int         3
+    6F47B20B: CC                 int         3
+    6F47B20C: CC                 int         3
+    6F47B20D: CC                 int         3
+    6F47B20E: CC                 int         3
+    6F47B20F: CC                 int         3
+    6F47B210: 55                 push        ebp
+    6F47B211: 8B EC              mov         ebp,esp
+    6F47B213: 8B 45 08           mov         eax,dword ptr [ebp+8]
+    6F47B216: 8B 84 81 AC 00 00  mov         eax,dword ptr [ecx+eax*4+000000ACh]
+    6F47B21D: 5D                 pop         ebp
+    6F47B21E: C2 04 00           ret         4
+    6F47B221: CC                 int         3
+    6F47B222: CC                 int         3
+    6F47B223: CC                 int         3
+    6F47B224: CC                 int         3
+    6F47B225: CC                 int         3
+  --- around 0x47B1EB ---
+    6F47B1B6: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+    6F47B1B9: 8D 14 F5 54 01 00  lea         edx,[esi*8+00000154h]
+    6F47B1C0: 50                 push        eax
+    6F47B1C1: 03 D7              add         edx,edi
+    6F47B1C3: E8 A8 8C F5 FF     call        6F3D3E70
+    6F47B1C8: 8B 45 08           mov         eax,dword ptr [ebp+8]
+    6F47B1CB: 5F                 pop         edi
+    6F47B1CC: 5E                 pop         esi
+    6F47B1CD: 5D                 pop         ebp
+    6F47B1CE: C2 08 00           ret         8
+    6F47B1D1: CC                 int         3
+    6F47B1D2: CC                 int         3
+    6F47B1D3: CC                 int         3
+    6F47B1D4: CC                 int         3
+    6F47B1D5: CC                 int         3
+    6F47B1D6: CC                 int         3
+    6F47B1D7: CC                 int         3
+    6F47B1D8: CC                 int         3
+    6F47B1D9: CC                 int         3
+    6F47B1DA: CC                 int         3
+    6F47B1DB: CC                 int         3
+    6F47B1DC: CC                 int         3
+    6F47B1DD: CC                 int         3
+    6F47B1DE: CC                 int         3
+    6F47B1DF: CC                 int         3
+    6F47B1E0: 55                 push        ebp
+    6F47B1E1: 8B EC              mov         ebp,esp
+    6F47B1E3: 8B 91 D8 01 00 00  mov         edx,dword ptr [ecx+000001D8h]
+    6F47B1E9: 81 C1 D8 01 00 00  add         ecx,1D8h
+    6F47B1EF: FF 75 08           push        dword ptr [ebp+8]
+    6F47B1F2: FF 52 18           call        dword ptr [edx+18h]
+    6F47B1F5: 8B 45 08           mov         eax,dword ptr [ebp+8]
+    6F47B1F8: 5D                 pop         ebp
+    6F47B1F9: C2 04 00           ret         4
+    6F47B1FC: CC                 int         3
+    6F47B1FD: CC                 int         3
+    6F47B1FE: CC                 int         3
+    6F47B1FF: CC                 int         3
+    6F47B200: 8B 81 B8 02 00 00  mov         eax,dword ptr [ecx+000002B8h]
+    6F47B206: C3                 ret
+    6F47B207: CC                 int         3
+    6F47B208: CC                 int         3
+    6F47B209: CC                 int         3
+    6F47B20A: CC                 int         3
+    6F47B20B: CC                 int         3
+    6F47B20C: CC                 int         3
+    6F47B20D: CC                 int         3
+    6F47B20E: CC                 int         3
+    6F47B20F: CC                 int         3
+    6F47B210: 55                 push        ebp
+    6F47B211: 8B EC              mov         ebp,esp
+    6F47B213: 8B 45 08           mov         eax,dword ptr [ebp+8]
+    6F47B216: 8B 84 81 AC 00 00  mov         eax,dword ptr [ecx+eax*4+000000ACh]
+    6F47B21D: 5D                 pop         ebp
+    6F47B21E: C2 04 00           ret         4
+    6F47B221: CC                 int         3
+    6F47B222: CC                 int         3
+    6F47B223: CC                 int         3
+    6F47B224: CC                 int         3
+    6F47B225: CC                 int         3
+    6F47B226: CC                 int         3
+    6F47B227: CC                 int         3
+    6F47B228: CC                 int         3
+    6F47B229: CC                 int         3
+    6F47B22A: CC                 int         3
+    6F47B22B: CC                 int         3
+  --- around 0x47C329 ---
+    6F47C2F4: BD FF 8D 93 B8     mov         ebp,0B8938DFFh
+    6F47C2F9: 01 00              add         dword ptr [eax],eax
+    6F47C2FB: 00 8B CE E8 AD 64  add         byte ptr [ebx+64ADE8CEh],cl
+    6F47C301: BD FF 8B 83 AC     mov         ebp,0AC838BFFh
+    6F47C306: 01 00              add         dword ptr [eax],eax
+    6F47C308: 00 8D 4D 08 6A 00  add         byte ptr [ebp+006A084Dh],cl
+    6F47C30E: 51                 push        ecx
+    6F47C30F: 8D 8B AC 01 00 00  lea         ecx,[ebx+000001ACh]
+    6F47C315: FF 10              call        dword ptr [eax]
+    6F47C317: 8B 83 C4 01 00 00  mov         eax,dword ptr [ebx+000001C4h]
+    6F47C31D: 8D 8B C4 01 00 00  lea         ecx,[ebx+000001C4h]
+    6F47C323: 56                 push        esi
+    6F47C324: FF 50 24           call        dword ptr [eax+24h]
+    6F47C327: 8B 83 D8 01 00 00  mov         eax,dword ptr [ebx+000001D8h]
+    6F47C32D: 8D 8B D8 01 00 00  lea         ecx,[ebx+000001D8h]
+    6F47C333: 56                 push        esi
+    6F47C334: FF 50 24           call        dword ptr [eax+24h]
+    6F47C337: 8B 83 EC 01 00 00  mov         eax,dword ptr [ebx+000001ECh]
+    6F47C33D: 8D 8B EC 01 00 00  lea         ecx,[ebx+000001ECh]
+    6F47C343: 56                 push        esi
+    6F47C344: FF 50 24           call        dword ptr [eax+24h]
+    6F47C347: 8B 83 00 02 00 00  mov         eax,dword ptr [ebx+00000200h]
+    6F47C34D: 8D 8B 00 02 00 00  lea         ecx,[ebx+00000200h]
+    6F47C353: 56                 push        esi
+    6F47C354: FF 50 24           call        dword ptr [eax+24h]
+    6F47C357: 8D 93 14 02 00 00  lea         edx,[ebx+00000214h]
+    6F47C35D: 8B CE              mov         ecx,esi
+    6F47C35F: E8 7C 7A FF FF     call        6F473DE0
+    6F47C364: 8D 45 08           lea         eax,[ebp+8]
+    6F47C367: 8B CE              mov         ecx,esi
+    6F47C369: 50                 push        eax
+  --- around 0x47C32F ---
+    6F47C2FA: 00 00              add         byte ptr [eax],al
+    6F47C2FC: 8B CE              mov         ecx,esi
+    6F47C2FE: E8 AD 64 BD FF     call        6F0527B0
+    6F47C303: 8B 83 AC 01 00 00  mov         eax,dword ptr [ebx+000001ACh]
+    6F47C309: 8D 4D 08           lea         ecx,[ebp+8]
+    6F47C30C: 6A 00              push        0
+    6F47C30E: 51                 push        ecx
+    6F47C30F: 8D 8B AC 01 00 00  lea         ecx,[ebx+000001ACh]
+    6F47C315: FF 10              call        dword ptr [eax]
+    6F47C317: 8B 83 C4 01 00 00  mov         eax,dword ptr [ebx+000001C4h]
+    6F47C31D: 8D 8B C4 01 00 00  lea         ecx,[ebx+000001C4h]
+    6F47C323: 56                 push        esi
+    6F47C324: FF 50 24           call        dword ptr [eax+24h]
+    6F47C327: 8B 83 D8 01 00 00  mov         eax,dword ptr [ebx+000001D8h]
+    6F47C32D: 8D 8B D8 01 00 00  lea         ecx,[ebx+000001D8h]
+    6F47C333: 56                 push        esi
+    6F47C334: FF 50 24           call        dword ptr [eax+24h]
+    6F47C337: 8B 83 EC 01 00 00  mov         eax,dword ptr [ebx+000001ECh]
+    6F47C33D: 8D 8B EC 01 00 00  lea         ecx,[ebx+000001ECh]
+    6F47C343: 56                 push        esi
+    6F47C344: FF 50 24           call        dword ptr [eax+24h]
+    6F47C347: 8B 83 00 02 00 00  mov         eax,dword ptr [ebx+00000200h]
+    6F47C34D: 8D 8B 00 02 00 00  lea         ecx,[ebx+00000200h]
+    6F47C353: 56                 push        esi
+    6F47C354: FF 50 24           call        dword ptr [eax+24h]
+    6F47C357: 8D 93 14 02 00 00  lea         edx,[ebx+00000214h]
+    6F47C35D: 8B CE              mov         ecx,esi
+    6F47C35F: E8 7C 7A FF FF     call        6F473DE0
+    6F47C364: 8D 45 08           lea         eax,[ebp+8]
+    6F47C367: 8B CE              mov         ecx,esi
+    6F47C369: 50                 push        eax
+    6F47C36A: E8 81 11 BD FF     call        6F04D4F0
+    6F47C36F: 8B
+  --- around 0x47E8E1 ---
+    6F47E8AC: CE                 into
+    6F47E8AD: 89 45 08           mov         dword ptr [ebp+8],eax
+    6F47E8B0: E8 1B 3F BD FF     call        6F0527D0
+    6F47E8B5: 8D 93 B4 01 00 00  lea         edx,[ebx+000001B4h]
+    6F47E8BB: 8B CE              mov         ecx,esi
+    6F47E8BD: E8 0E 3F BD FF     call        6F0527D0
+    6F47E8C2: 8D 93 B8 01 00 00  lea         edx,[ebx+000001B8h]
+    6F47E8C8: 8B CE              mov         ecx,esi
+    6F47E8CA: E8 01 3F BD FF     call        6F0527D0
+    6F47E8CF: 8B 83 C4 01 00 00  mov         eax,dword ptr [ebx+000001C4h]
+    6F47E8D5: 8D 8B C4 01 00 00  lea         ecx,[ebx+000001C4h]
+    6F47E8DB: 56                 push        esi
+    6F47E8DC: FF 50 20           call        dword ptr [eax+20h]
+    6F47E8DF: 8B 83 D8 01 00 00  mov         eax,dword ptr [ebx+000001D8h]
+    6F47E8E5: 8D 8B D8 01 00 00  lea         ecx,[ebx+000001D8h]
+    6F47E8EB: 56                 push        esi
+    6F47E8EC: FF 50 20           call        dword ptr [eax+20h]
+    6F47E8EF: 8B 83 EC 01 00 00  mov         eax,dword ptr [ebx+000001ECh]
+    6F47E8F5: 8D 8B EC 01 00 00  lea         ecx,[ebx+000001ECh]
+    6F47E8FB: 56                 push        esi
+    6F47E8FC: FF 50 20           call        dword ptr [eax+20h]
+    6F47E8FF: 8B 83 00 02 00 00  mov         eax,dword ptr [ebx+00000200h]
+    6F47E905: 8D 8B 00 02 00 00  lea         ecx,[ebx+00000200h]
+    6F47E90B: 56                 push        esi
+    6F47E90C: FF 50 20           call        dword ptr [eax+20h]
+    6F47E90F: 8B BB 14 02 00 00  mov         edi,dword ptr [ebx+00000214h]
+    6F47E915: 8B CE              mov         ecx,esi
+    6F47E917: 57                 push        edi
+    6F47E918: 89 7D 08           mov         dword ptr [ebp+8],edi
+    6F47E91B: E8 B0 F8 BC FF     call        6F04E1D0
+    6F47E920: 85 FF              test        edi,edi
+  --- around 0x47E8E7 ---
+    6F47E8B2: 3F                 aas
+    6F47E8B3: BD FF 8D 93 B4     mov         ebp,0B4938DFFh
+    6F47E8B8: 01 00              add         dword ptr [eax],eax
+    6F47E8BA: 00 8B CE E8 0E 3F  add         byte ptr [ebx+3F0EE8CEh],cl
+    6F47E8C0: BD FF 8D 93 B8     mov         ebp,0B8938DFFh
+    6F47E8C5: 01 00              add         dword ptr [eax],eax
+    6F47E8C7: 00 8B CE E8 01 3F  add         byte ptr [ebx+3F01E8CEh],cl
+    6F47E8CD: BD FF 8B 83 C4     mov         ebp,0C4838BFFh
+    6F47E8D2: 01 00              add         dword ptr [eax],eax
+    6F47E8D4: 00 8D 8B C4 01 00  add         byte ptr [ebp+0001C48Bh],cl
+    6F47E8DA: 00 56 FF           add         byte ptr [esi-1],dl
+    6F47E8DD: 50                 push        eax
+    6F47E8DE: 20 8B 83 D8 01 00  and         byte ptr [ebx+0001D883h],cl
+    6F47E8E4: 00 8D 8B D8 01 00  add         byte ptr [ebp+0001D88Bh],cl
+    6F47E8EA: 00 56 FF           add         byte ptr [esi-1],dl
+    6F47E8ED: 50                 push        eax
+    6F47E8EE: 20 8B 83 EC 01 00  and         byte ptr [ebx+0001EC83h],cl
+    6F47E8F4: 00 8D 8B EC 01 00  add         byte ptr [ebp+0001EC8Bh],cl
+    6F47E8FA: 00 56 FF           add         byte ptr [esi-1],dl
+    6F47E8FD: 50                 push        eax
+    6F47E8FE: 20 8B 83 00 02 00  and         byte ptr [ebx+00020083h],cl
+    6F47E904: 00 8D 8B 00 02 00  add         byte ptr [ebp+0002008Bh],cl
+    6F47E90A: 00 56 FF           add         byte ptr [esi-1],dl
+    6F47E90D: 50                 push        eax
+    6F47E90E: 20 8B BB 14 02 00  and         byte ptr [ebx+000214BBh],cl
+    6F47E914: 00 8B CE 57 89 7D  add         byte ptr [ebx+7D8957CEh],cl
+    6F47E91A: 08 E8              or          al,ch
+    6F47E91C: B0 F8              mov         al,0F8h
+    6F47E91E: BC FF 85 FF 74     mov         esp,74FF85FFh
+    6F47E923: 1E                 push        ds
+    6F47E924: 8D
+    6F47E925: BB
+    6F47E926: 18 02              sbb         byte ptr [edx],al
+  --- around 0x47F965 ---
+    6F47F930: 02 00              add         al,byte ptr [eax]
+    6F47F932: 00 56 6A           add         byte ptr [esi+6Ah],dl
+    6F47F935: 00 50 E8           add         byte ptr [eax-18h],dl
+    6F47F938: 04 B6              add         al,0B6h
+    6F47F93A: FF
+    6F47F93B: FF C1              inc         ecx
+    6F47F93D: E6 04              out         4,al
+    6F47F93F: 8D 97 8C 01 00 00  lea         edx,[edi+0000018Ch]
+    6F47F945: 50                 push        eax
+    6F47F946: 03 D6              add         edx,esi
+    6F47F948: 8D 4D FC           lea         ecx,[ebp-4]
+    6F47F94B: E8 20 45 F5 FF     call        6F3D3E70
+    6F47F950: F3 0F 10 05 9C 93  movss       xmm0,dword ptr ds:[6FB5939Ch]
+    6F47F958: 8D 4D F8           lea         ecx,[ebp-8]
+    6F47F95B: 0F 2F 45 FC        comiss      xmm0,dword ptr [ebp-4]
+    6F47F95F: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+    6F47F962: 51                 push        ecx
+    6F47F963: 8D 8F D8 01 00 00  lea         ecx,[edi+000001D8h]
+    6F47F969: 0F 47 05 9C 93 B5  cmova       eax,dword ptr ds:[6FB5939Ch]
+    6F47F970: 89 45 FC           mov         dword ptr [ebp-4],eax
+    6F47F973: 8B 87 D8 01 00 00  mov         eax,dword ptr [edi+000001D8h]
+    6F47F979: FF 50 18           call        dword ptr [eax+18h]
+    6F47F97C: F3 0F 10 05 A0 93  movss       xmm0,dword ptr ds:[6FB593A0h]
+    6F47F984: 0F 2F 45 F8        comiss      xmm0,dword ptr [ebp-8]
+    6F47F988: 76 21              jbe         6F47F9AB
+    6F47F98A: A1 A0 93 B5 6F     mov         eax,dword ptr ds:[6FB593A0h]
+    6F47F98F: 8D 8F D8 01 00 00  lea         ecx,[edi+000001D8h]
+    6F47F995: 6A 00              push        0
+    6F47F997: 6A 00              push        0
+    6F47F999: 57                 push        edi
+    6F47F99A: 89 45 F8           mov         dword ptr [ebp-8],eax
+    6F47F99D: 8D 45 F8           lea         eax,[ebp-8]
+    6F47F9A0: 68 B0 01 0D 00     push        0D01B0h
+    6F47F9A5: 50                 push        eax
+  --- around 0x47F975 ---
+    6F47F940: 97                 xchg        eax,edi
+    6F47F941: 8C 01              mov         word ptr [ecx],es
+    6F47F943: 00 00              add         byte ptr [eax],al
+    6F47F945: 50                 push        eax
+    6F47F946: 03 D6              add         edx,esi
+    6F47F948: 8D 4D FC           lea         ecx,[ebp-4]
+    6F47F94B: E8 20 45 F5 FF     call        6F3D3E70
+    6F47F950: F3 0F 10 05 9C 93  movss       xmm0,dword ptr ds:[6FB5939Ch]
+    6F47F958: 8D 4D F8           lea         ecx,[ebp-8]
+    6F47F95B: 0F 2F 45 FC        comiss      xmm0,dword ptr [ebp-4]
+    6F47F95F: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+    6F47F962: 51                 push        ecx
+    6F47F963: 8D 8F D8 01 00 00  lea         ecx,[edi+000001D8h]
+    6F47F969: 0F 47 05 9C 93 B5  cmova       eax,dword ptr ds:[6FB5939Ch]
+    6F47F970: 89 45 FC           mov         dword ptr [ebp-4],eax
+    6F47F973: 8B 87 D8 01 00 00  mov         eax,dword ptr [edi+000001D8h]
+    6F47F979: FF 50 18           call        dword ptr [eax+18h]
+    6F47F97C: F3 0F 10 05 A0 93  movss       xmm0,dword ptr ds:[6FB593A0h]
+    6F47F984: 0F 2F 45 F8        comiss      xmm0,dword ptr [ebp-8]
+    6F47F988: 76 21              jbe         6F47F9AB
+    6F47F98A: A1 A0 93 B5 6F     mov         eax,dword ptr ds:[6FB593A0h]
+    6F47F98F: 8D 8F D8 01 00 00  lea         ecx,[edi+000001D8h]
+    6F47F995: 6A 00              push        0
+    6F47F997: 6A 00              push        0
+    6F47F999: 57                 push        edi
+    6F47F99A: 89 45 F8           mov         dword ptr [ebp-8],eax
+    6F47F99D: 8D 45 F8           lea         eax,[ebp-8]
+    6F47F9A0: 68 B0 01 0D 00     push        0D01B0h
+    6F47F9A5: 50                 push        eax
+    6F47F9A6: E8 55 3D BC FF     call        6F043700
+    6F47F9AB: 68 9C 93 B5 6F     push        6FB5939Ch
+    6F47F9B0: 8D 55 F8           lea         edx,[ebp-8]
+    6F47F9B3: 8D 4D F4           lea         ecx,[ebp-0Ch]
+  --- around 0x47F991 ---
+    6F47F95C: 2F                 das
+    6F47F95D: 45                 inc         ebp
+    6F47F95E: FC                 cld
+    6F47F95F: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+    6F47F962: 51                 push        ecx
+    6F47F963: 8D 8F D8 01 00 00  lea         ecx,[edi+000001D8h]
+    6F47F969: 0F 47 05 9C 93 B5  cmova       eax,dword ptr ds:[6FB5939Ch]
+    6F47F970: 89 45 FC           mov         dword ptr [ebp-4],eax
+    6F47F973: 8B 87 D8 01 00 00  mov         eax,dword ptr [edi+000001D8h]
+    6F47F979: FF 50 18           call        dword ptr [eax+18h]
+    6F47F97C: F3 0F 10 05 A0 93  movss       xmm0,dword ptr ds:[6FB593A0h]
+    6F47F984: 0F 2F 45 F8        comiss      xmm0,dword ptr [ebp-8]
+    6F47F988: 76 21              jbe         6F47F9AB
+    6F47F98A: A1 A0 93 B5 6F     mov         eax,dword ptr ds:[6FB593A0h]
+    6F47F98F: 8D 8F D8 01 00 00  lea         ecx,[edi+000001D8h]
+    6F47F995: 6A 00              push        0
+    6F47F997: 6A 00              push        0
+    6F47F999: 57                 push        edi
+    6F47F99A: 89 45 F8           mov         dword ptr [ebp-8],eax
+    6F47F99D: 8D 45 F8           lea         eax,[ebp-8]
+    6F47F9A0: 68 B0 01 0D 00     push        0D01B0h
+    6F47F9A5: 50                 push        eax
+    6F47F9A6: E8 55 3D BC FF     call        6F043700
+    6F47F9AB: 68 9C 93 B5 6F     push        6FB5939Ch
+    6F47F9B0: 8D 55 F8           lea         edx,[ebp-8]
+    6F47F9B3: 8D 4D F4           lea         ecx,[ebp-0Ch]
+    6F47F9B6: E8 F5 2E BD FF     call        6F0528B0
+    6F47F9BB: F3 0F 10 45 FC     movss       xmm0,dword ptr [ebp-4]
+    6F47F9C0: 0F 2F 00           comiss      xmm0,dword ptr [eax]
+    6F47F9C3: 76 15              jbe         6F47F9DA
+    6F47F9C5: 68 9C 93 B5 6F     push        6FB5939Ch
+    6F47F9CA: 8D 55 F8           lea         edx,[ebp-8]
+    6F47F9CD: 8D 4D F4           lea         ecx,[ebp-0Ch]
+    6F47F9D0: E8
+    6F47F9D1: DB
+  --- around 0x47FA17 ---
+    6F47F9E2: 0D 00 8D 45 FC     or          eax,0FC458D00h
+    6F47F9E7: 50                 push        eax
+    6F47F9E8: 8D 8F 00 02 00 00  lea         ecx,[edi+00000200h]
+    6F47F9EE: E8 0D 3D BC FF     call        6F043700
+    6F47F9F3: 5F                 pop         edi
+    6F47F9F4: 5E                 pop         esi
+    6F47F9F5: 8B E5              mov         esp,ebp
+    6F47F9F7: 5D                 pop         ebp
+    6F47F9F8: C3                 ret
+    6F47F9F9: CC                 int         3
+    6F47F9FA: CC                 int         3
+    6F47F9FB: CC                 int         3
+    6F47F9FC: CC                 int         3
+    6F47F9FD: CC                 int         3
+    6F47F9FE: CC                 int         3
+    6F47F9FF: CC                 int         3
+    6F47FA00: 55                 push        ebp
+    6F47FA01: 8B EC              mov         ebp,esp
+    6F47FA03: 83 EC 08           sub         esp,8
+    6F47FA06: 83 7D 0C 00        cmp         dword ptr [ebp+0Ch],0
+    6F47FA0A: 56                 push        esi
+    6F47FA0B: 57                 push        edi
+    6F47FA0C: 8B F9              mov         edi,ecx
+    6F47FA0E: 74 05              je          6F47FA15
+    6F47FA10: E8 FB EA FF FF     call        6F47E510
+    6F47FA15: 8B 87 D8 01 00 00  mov         eax,dword ptr [edi+000001D8h]
+    6F47FA1B: 8D 4D F8           lea         ecx,[ebp-8]
+    6F47FA1E: 51                 push        ecx
+    6F47FA1F: 8D 8F D8 01 00 00  lea         ecx,[edi+000001D8h]
+    6F47FA25: FF 50 18           call        dword ptr [eax+18h]
+    6F47FA28: 8B 45 08           mov         eax,dword ptr [ebp+8]
+    6F47FA2B: F3 0F 10 45 F8     movss       xmm0,dword ptr [ebp-8]
+    6F47FA30: F3 0F 10 08        movss       xmm1,dword ptr [eax]
+    6F47FA34: 0F 2F C1           comiss      xmm0,xmm1
+    6F47FA37: 0F 83 A1 00 00 00  jae         6F47FADE
+    6F47FA3D: F3 0F 10 05 D4 81  movss       xmm0,dword ptr ds:[6FBB81D4h]
+    6F47FA45: 8D 8F D8 01 00 00  lea         ecx,[edi+000001D8h]
+    6F47FA4B: 0F 2F C1           comiss      xmm0,xmm1
+    6F47FA4E: 76 07              jbe         6F47FA57
+    6F47FA50: E8 9B 3A BC FF     call        6F0434F0
+    6F47FA55: EB 10              jmp         6F47FA67
+    6F47FA57: 6A
+  --- around 0x47FA21 ---
+    6F47F9EC: 00 00              add         byte ptr [eax],al
+    6F47F9EE: E8 0D 3D BC FF     call        6F043700
+    6F47F9F3: 5F                 pop         edi
+    6F47F9F4: 5E                 pop         esi
+    6F47F9F5: 8B E5              mov         esp,ebp
+    6F47F9F7: 5D                 pop         ebp
+    6F47F9F8: C3                 ret
+    6F47F9F9: CC                 int         3
+    6F47F9FA: CC                 int         3
+    6F47F9FB: CC                 int         3
+    6F47F9FC: CC                 int         3
+    6F47F9FD: CC                 int         3
+    6F47F9FE: CC                 int         3
+    6F47F9FF: CC                 int         3
+    6F47FA00: 55                 push        ebp
+    6F47FA01: 8B EC              mov         ebp,esp
+    6F47FA03: 83 EC 08           sub         esp,8
+    6F47FA06: 83 7D 0C 00        cmp         dword ptr [ebp+0Ch],0
+    6F47FA0A: 56                 push        esi
+    6F47FA0B: 57                 push        edi
+    6F47FA0C: 8B F9              mov         edi,ecx
+    6F47FA0E: 74 05              je          6F47FA15
+    6F47FA10: E8 FB EA FF FF     call        6F47E510
+    6F47FA15: 8B 87 D8 01 00 00  mov         eax,dword ptr [edi+000001D8h]
+    6F47FA1B: 8D 4D F8           lea         ecx,[ebp-8]
+    6F47FA1E: 51                 push        ecx
+    6F47FA1F: 8D 8F D8 01 00 00  lea         ecx,[edi+000001D8h]
+    6F47FA25: FF 50 18           call        dword ptr [eax+18h]
+    6F47FA28: 8B 45 08           mov         eax,dword ptr [ebp+8]
+    6F47FA2B: F3 0F 10 45 F8     movss       xmm0,dword ptr [ebp-8]
+    6F47FA30: F3 0F 10 08        movss       xmm1,dword ptr [eax]
+    6F47FA34: 0F 2F C1           comiss      xmm0,xmm1
+    6F47FA37: 0F 83 A1 00 00 00  jae         6F47FADE
+    6F47FA3D: F3 0F 10 05 D4 81  movss       xmm0,dword ptr ds:[6FBB81D4h]
+    6F47FA45: 8D 8F D8 01 00 00  lea         ecx,[edi+000001D8h]
+    6F47FA4B: 0F 2F C1           comiss      xmm0,xmm1
+    6F47FA4E: 76 07              jbe         6F47FA57
+    6F47FA50: E8 9B 3A BC FF     call        6F0434F0
+    6F47FA55: EB 10              jmp         6F47FA67
+    6F47FA57: 6A 00              push        0
+    6F47FA59: 6A 00              push        0
+    6F47FA5B: 57                 push        edi
+    6F47FA5C: 68 B0 01 0D 00     push        0D01B0h
+    6F47FA61: 50                 push        eax
+  --- around 0x47FA47 ---
+    6F47FA12: EA FF FF 8B 87 D8  jmp         01D8:878BFFFF
+    6F47FA19: 00 00              add         byte ptr [eax],al
+    6F47FA1B: 8D 4D F8           lea         ecx,[ebp-8]
+    6F47FA1E: 51                 push        ecx
+    6F47FA1F: 8D 8F D8 01 00 00  lea         ecx,[edi+000001D8h]
+    6F47FA25: FF 50 18           call        dword ptr [eax+18h]
+    6F47FA28: 8B 45 08           mov         eax,dword ptr [ebp+8]
+    6F47FA2B: F3 0F 10 45 F8     movss       xmm0,dword ptr [ebp-8]
+    6F47FA30: F3 0F 10 08        movss       xmm1,dword ptr [eax]
+    6F47FA34: 0F 2F C1           comiss      xmm0,xmm1
+    6F47FA37: 0F 83 A1 00 00 00  jae         6F47FADE
+    6F47FA3D: F3 0F 10 05 D4 81  movss       xmm0,dword ptr ds:[6FBB81D4h]
+    6F47FA45: 8D 8F D8 01 00 00  lea         ecx,[edi+000001D8h]
+    6F47FA4B: 0F 2F C1           comiss      xmm0,xmm1
+    6F47FA4E: 76 07              jbe         6F47FA57
+    6F47FA50: E8 9B 3A BC FF     call        6F0434F0
+    6F47FA55: EB 10              jmp         6F47FA67
+    6F47FA57: 6A 00              push        0
+    6F47FA59: 6A 00              push        0
+    6F47FA5B: 57                 push        edi
+    6F47FA5C: 68 B0 01 0D 00     push        0D01B0h
+    6F47FA61: 50                 push        eax
+    6F47FA62: E8 99 3C BC FF     call        6F043700
+    6F47FA67: 83 7D 0C 00        cmp         dword ptr [ebp+0Ch],0
+    6F47FA6B: 74 71              je          6F47FADE
+    6F47FA6D: 8B B7 B8 02 00 00  mov         esi,dword ptr [edi+000002B8h]
+    6F47FA73: 8D 45 0C           lea         eax,[ebp+0Ch]
+    6F47FA76: 56                 push        esi
+    6F47FA77: 6A 00              push        0
+    6F47FA79: 50                 push        eax
+    6F47FA7A: 8B CF              mov         ecx,edi
+    6F47FA7C: E8 BF B4 FF FF     call        6F47AF40
+    6F47FA81: C1 E6 04           shl         esi,4
+    6F47FA84: 8D
+    6F47FA85: 97                 xchg        eax,edi
+    6F47FA86: 68
+    6F47FA87: 01
+  --- around 0x47FF15 ---
+    6F47FEE0: 6F                 outs        dx,dword ptr [esi]
+    6F47FEE1: 77 4F              ja          6F47FF32
+    6F47FEE3: F7 46 20 00 01 00  test        dword ptr [esi+20h],100h
+    6F47FEEA: 74 07              je          6F47FEF3
+    6F47FEEC: 8B CF              mov         ecx,edi
+    6F47FEEE: E8 5D 7E 1F 00     call        6F677D50
+    6F47FEF3: 8B 86 EC 01 00 00  mov         eax,dword ptr [esi+000001ECh]
+    6F47FEF9: 8D 4D 08           lea         ecx,[ebp+8]
+    6F47FEFC: 51                 push        ecx
+    6F47FEFD: 8D 8E EC 01 00 00  lea         ecx,[esi+000001ECh]
+    6F47FF03: FF 50 18           call        dword ptr [eax+18h]
+    6F47FF06: F3 0F 10 00        movss       xmm0,dword ptr [eax]
+    6F47FF0A: 0F 2F 05 D4 81 BB  comiss      xmm0,dword ptr ds:[6FBB81D4h]
+    6F47FF11: 76 16              jbe         6F47FF29
+    6F47FF13: 8D 8E D8 01 00 00  lea         ecx,[esi+000001D8h]
+    6F47FF19: E8 D2 35 BC FF     call        6F0434F0
+    6F47FF1E: 8D 8E EC 01 00 00  lea         ecx,[esi+000001ECh]
+    6F47FF24: E8 C7 35 BC FF     call        6F0434F0
+    6F47FF29: 6A 00              push        0
+    6F47FF2B: 8B CE              mov         ecx,esi
+    6F47FF2D: E8 1E 7B FF FF     call        6F477A50
+    6F47FF32: 5F                 pop         edi
+    6F47FF33: 5E                 pop         esi
+    6F47FF34: 5D                 pop         ebp
+    6F47FF35: C2 04 00           ret         4
+    6F47FF38: CC                 int         3
+    6F47FF39: CC                 int         3
+    6F47FF3A: CC                 int         3
+    6F47FF3B: CC                 int         3
+    6F47FF3C: CC                 int         3
+    6F47FF3D: CC                 int         3
+    6F47FF3E: CC                 int         3
+    6F47FF3F: CC                 int         3
+    6F47FF40: B8 01 00 00 00     mov         eax,1
+    6F47FF45: C3                 ret
+    6F47FF46: CC                 int         3
+    6F47FF47: CC                 int         3
+    6F47FF48: CC                 int         3
+    6F47FF49: CC                 int         3
+    6F47FF4A: CC                 int         3
+    6F47FF4B: CC                 int         3
+    6F47FF4C: CC                 int         3
+    6F47FF4D: CC                 int         3
+    6F47FF4E: CC                 int         3
+    6F47FF4F: CC                 int         3
+    6F47FF50: 55                 push        ebp
+    6F47FF51: 8B EC              mov         ebp,esp
+    6F47FF53: 6A FF              push        0FFFFFFFFh
+    6F47FF55: 68
+
+=== 3. +0x1B0 / +0x1C0 (攻速倍率) 引用处反汇编 ===
+  --- around 0x474BE4 ---
+    6F474BC4: A4                 movs        byte ptr es:[edi],byte ptr [esi]
+    6F474BC5: 01 00              add         dword ptr [eax],eax
+    6F474BC7: 00 A1 78 94 B5 6F  add         byte ptr [ecx+6FB59478h],ah
+    6F474BCD: 89 86 A8 01 00 00  mov         dword ptr [esi+000001A8h],eax
+    6F474BD3: C7 86 AC 01 00 00  mov         dword ptr [esi+000001ACh],6F96FD80h
+    6F474BDD: A1 D4 81 BB 6F     mov         eax,dword ptr ds:[6FBB81D4h]
+    6F474BE2: 89 86 B0 01 00 00  mov         dword ptr [esi+000001B0h],eax
+    6F474BE8: C7 86 AC 01 00 00  mov         dword ptr [esi+000001ACh],6F995708h
+    6F474BF2: A1 7C 94 B5 6F     mov         eax,dword ptr ds:[6FB5947Ch]
+    6F474BF7: 89 86 B4 01 00 00  mov         dword ptr [esi+000001B4h],eax
+    6F474BFD: A1 78 94 B5 6F     mov         eax,dword ptr ds:[6FB59478h]
+    6F474C02: 89 86 B8 01 00 00  mov         dword ptr [esi+000001B8h],eax
+    6F474C08: C7 86 BC 01 00 00  mov         dword ptr [esi+000001BCh],6F96FD80h
+    6F474C12: A1 D4 81 BB 6F     mov         eax,dword ptr ds:[6FBB81D4h]
+    6F474C17: 89 86 C0 01 00 00  mov         dword ptr [esi+000001C0h],eax
+    6F474C1D: C7 86 C8 01 00 00  mov         dword ptr [esi+000001C8h],0
+    6F474C27: C7
+    6F474C28: 86 C4              xchg        al,ah
+  --- around 0x477321 ---
+    6F477301: F8                 clc
+    6F477302: FF 8D 45 B4 8B CB  dec         dword ptr [ebp+CB8BB445h]
+    6F477308: 50                 push        eax
+    6F477309: 8D 85 38 FF FF FF  lea         eax,[ebp+FFFFFF38h]
+    6F47730F: 50                 push        eax
+    6F477310: E8 BB 7C 00 00     call        6F47EFD0
+    6F477315: 8B 45 C0           mov         eax,dword ptr [ebp-40h]
+    6F477318: 8B CB              mov         ecx,ebx
+    6F47731A: 25 00 04 00 00     and         eax,400h
+    6F47731F: C7 45 B0 01 00 00  mov         dword ptr [ebp-50h],1
+    6F477326: C7 45 94 01 00 00  mov         dword ptr [ebp-6Ch],1
+    6F47732D: 89 45 A0           mov         dword ptr [ebp-60h],eax
+    6F477330: E8 2B 3E 00 00     call        6F47B160
+    6F477335: 85 C0              test        eax,eax
+    6F477337: 74 3C              je          6F477375
+    6F477339: 8B 10              mov         edx,dword ptr [eax]
+    6F47733B: 8D 8D E4 FE FF FF  lea         ecx,[ebp+FFFFFEE4h]
+    6F477341: 51                 push        ecx
+    6F477342: 8B C8              mov         ecx,eax
+    6F477344: FF 92 B8 00 00 00  call        dword ptr [edx+000000B8h]
+    6F47734A: 8B C8              mov         ecx,eax
+    6F47734C: E8 CF 43 BC FF     call        6F03B720
+    6F477351: 8B 85 E4 FE FF FF  mov         eax,dword ptr [ebp+FFFFFEE4h]
+    6F477357: 89 85 38 FF FF FF  mov         dword ptr [ebp+FFFFFF38h],eax
+    6F47735D: 8B 85 E8 FE FF FF  mov         eax,dword ptr [ebp+FFFFFEE8h]
+    6F477363: 89
+    6F477364: 85 3C FF           test        dword ptr [edi+edi*8],edi
+  --- around 0x47883E ---
+    6F47881E: 7F 89              jg          6F4787A9
+    6F478820: 45                 inc         ebp
+    6F478821: F4                 hlt
+    6F478822: B8 D4 81 BB 6F     mov         eax,6FBB81D4h
+    6F478827: 0F 2F 45 F4        comiss      xmm0,dword ptr [ebp-0Ch]
+    6F47882B: 0F 46 C1           cmovbe      eax,ecx
+    6F47882E: 8D 8E BC 01 00 00  lea         ecx,[esi+000001BCh]
+    6F478834: EB 4F              jmp         6F478885
+    6F478836: 89 45 F4           mov         dword ptr [ebp-0Ch],eax
+    6F478839: 8D 55 F8           lea         edx,[ebp-8]
+    6F47883C: 8B 86 B0 01 00 00  mov         eax,dword ptr [esi+000001B0h]
+    6F478842: 89 45 F8           mov         dword ptr [ebp-8],eax
+    6F478845: 8D 45 F4           lea         eax,[ebp-0Ch]
+    6F478848: 50                 push        eax
+    6F478849: E8 82 A1 BD FF     call        6F0529D0
+    6F47884E: 68 D8 81 BB 6F     push        6FBB81D8h
+    6F478853: 8D 55 08           lea         edx,[ebp+8]
+    6F478856: 8D 4D F8           lea         ecx,[ebp-8]
+    6F478859: E8 52 A0 BD FF     call        6F0528B0
+    6F47885E: F3 0F 10 05 98 93  movss       xmm0,dword ptr ds:[6FB59398h]
+    6F478866: 8D 4D 08           lea         ecx,[ebp+8]
+    6F478869: 8B 00              mov         eax,dword ptr [eax]
+    6F47886B: 25 FF FF FF 7F     and         eax,7FFFFFFFh
+    6F478870: 89 45 F4           mov         dword ptr [ebp-0Ch],eax
+    6F478873: B8 D8 81 BB 6F     mov         eax,6FBB81D8h
+    6F478878: 0F 2F 45 F4        comiss      xmm0,dword ptr [ebp-0Ch]
+    6F47887C: 0F 46 C1           cmovbe      eax,ecx
+    6F47887F: 8D
+    6F478880: 8E
+    6F478881: AC                 lods        byte ptr [esi]
+    6F478882: 01 00              add         dword ptr [eax],eax
+  --- around 0x47AFA1 ---
+    6F47AF81: C9                 leave
+    6F47AF82: 0F 94 C0           sete        al
+    6F47AF85: 85 C0              test        eax,eax
+    6F47AF87: 74 12              je          6F47AF9B
+    6F47AF89: 8B 45 08           mov         eax,dword ptr [ebp+8]
+    6F47AF8C: 8B 0D D8 81 BB 6F  mov         ecx,dword ptr ds:[6FBB81D8h]
+    6F47AF92: 5E                 pop         esi
+    6F47AF93: 89 08              mov         dword ptr [eax],ecx
+    6F47AF95: 8B E5              mov         esp,ebp
+    6F47AF97: 5D                 pop         ebp
+    6F47AF98: C2 0C 00           ret         0Ch
+    6F47AF9B: 83 7D 0C 00        cmp         dword ptr [ebp+0Ch],0
+    6F47AF9F: 8B 86 B0 01 00 00  mov         eax,dword ptr [esi+000001B0h]
+    6F47AFA5: 89 45 10           mov         dword ptr [ebp+10h],eax
+    6F47AFA8: 74 66              je          6F47B010
+    6F47AFAA: A1 D4 81 BB 6F     mov         eax,dword ptr ds:[6FBB81D4h]
+    6F47AFAF: 8B 8E C0 01 00 00  mov         ecx,dword ptr [esi+000001C0h]
+    6F47AFB5: 89 45 0C           mov         dword ptr [ebp+0Ch],eax
+    6F47AFB8: F3 0F 10 45 0C     movss       xmm0,dword ptr [ebp+0Ch]
+    6F47AFBD: 89 4D FC           mov         dword ptr [ebp-4],ecx
+    6F47AFC0: 0F 2F 45 FC        comiss      xmm0,dword ptr [ebp-4]
+    6F47AFC4: 76 4A              jbe         6F47B010
+    6F47AFC6: 89 45 0C           mov         dword ptr [ebp+0Ch],eax
+    6F47AFC9: 8D 55 FC           lea         edx,[ebp-4]
+    6F47AFCC: 8D 45 0C           lea         eax,[ebp+0Ch]
+    6F47AFCF: 89 4D FC           mov         dword ptr [ebp-4],ecx
+    6F47AFD2: 50                 push        eax
+    6F47AFD3: 8D 4D F8           lea         ecx,[ebp-8]
+    6F47AFD6: E8 D5 78 BD FF     call        6F0528B0
+    6F47AFDB: F3 0F 10 05 98 93  movss       xmm0,dword ptr ds:[6FB59398h]
+    6F47AFE3: 8B 00              mov         eax,dword ptr [eax]
+    6F47AFE5: 25
+    6F47AFE6: FF
+  --- around 0x47E8A4 ---
+    6F47E884: EB 8B              jmp         6F47E811
+    6F47E886: 5D                 pop         ebp
+    6F47E887: FC                 cld
+    6F47E888: 8D 93 64 01 00 00  lea         edx,[ebx+00000164h]
+    6F47E88E: 8B CE              mov         ecx,esi
+    6F47E890: E8 7B 56 FF FF     call        6F473F10
+    6F47E895: 8D 93 88 01 00 00  lea         edx,[ebx+00000188h]
+    6F47E89B: 8B CE              mov         ecx,esi
+    6F47E89D: E8 6E 56 FF FF     call        6F473F10
+    6F47E8A2: 8B 83 B0 01 00 00  mov         eax,dword ptr [ebx+000001B0h]
+    6F47E8A8: 8D 55 08           lea         edx,[ebp+8]
+    6F47E8AB: 8B CE              mov         ecx,esi
+    6F47E8AD: 89 45 08           mov         dword ptr [ebp+8],eax
+    6F47E8B0: E8 1B 3F BD FF     call        6F0527D0
+    6F47E8B5: 8D 93 B4 01 00 00  lea         edx,[ebx+000001B4h]
+    6F47E8BB: 8B CE              mov         ecx,esi
+    6F47E8BD: E8 0E 3F BD FF     call        6F0527D0
+    6F47E8C2: 8D 93 B8 01 00 00  lea         edx,[ebx+000001B8h]
+    6F47E8C8: 8B CE              mov         ecx,esi
+    6F47E8CA: E8 01 3F BD FF     call        6F0527D0
+    6F47E8CF: 8B 83 C4 01 00 00  mov         eax,dword ptr [ebx+000001C4h]
+    6F47E8D5: 8D 8B C4 01 00 00  lea         ecx,[ebx+000001C4h]
+    6F47E8DB: 56                 push        esi
+    6F47E8DC: FF 50 20           call        dword ptr [eax+20h]
+    6F47E8DF: 8B 83 D8 01 00 00  mov         eax,dword ptr [ebx+000001D8h]
+    6F47E8E5: 8D
+    6F47E8E6: 8B D8              mov         ebx,eax
+    6F47E8E8: 01 00              add         dword ptr [eax],eax
+
+=== 4. +0x158 (BAT) / +0x16C (前摇) 引用处反汇编 ===
+  --- around 0x4794D6 ---
+    6F4794B6: 8B F0              mov         esi,eax
+    6F4794B8: E8 B3 DF 1E 00     call        6F667470
+    6F4794BD: 3B F0              cmp         esi,eax
+    6F4794BF: 75 1F              jne         6F4794E0
+    6F4794C1: 8B 45 08           mov         eax,dword ptr [ebp+8]
+    6F4794C4: 33 C9              xor         ecx,ecx
+    6F4794C6: 39 88 5C 01 00 00  cmp         dword ptr [eax+0000015Ch],ecx
+    6F4794CC: 0F 9F C1           setg        cl
+    6F4794CF: 89 4D E8           mov         dword ptr [ebp-18h],ecx
+    6F4794D2: 33 C9              xor         ecx,ecx
+    6F4794D4: 39 88 58 01 00 00  cmp         dword ptr [eax+00000158h],ecx
+    6F4794DA: 0F 9F C1           setg        cl
+    6F4794DD: 89 4D E4           mov         dword ptr [ebp-1Ch],ecx
+    6F4794E0: 33 F6              xor         esi,esi
+    6F4794E2: 56                 push        esi
+    6F4794E3: 8B CF              mov         ecx,edi
+    6F4794E5: E8 76 2B 00 00     call        6F47C060
+    6F4794EA: 85 C0              test        eax,eax
+    6F4794EC: 74 77              je          6F479565
+    6F4794EE: 83 7D EC 00        cmp         dword ptr [ebp-14h],0
+    6F4794F2: 74 35              je          6F479529
+    6F4794F4: 83 FE FF           cmp         esi,0FFFFFFFFh
+    6F4794F7: 74 6C              je          6F479565
+    6F4794F9: 8B 84 B7 DC 00 00  mov         eax,dword ptr [edi+esi*4+000000DCh]
+    6F479500: 8B 8C B7 18 02 00  mov         ecx,dword ptr [edi+esi*4+00000218h]
+    6F479507: 83 C0 FE           add         eax,0FFFFFFFEh
+    6F47950A: 83 F8 06           cmp         eax,6
+    6F47950D: 77 56              ja          6F479565
+    6F47950F: 81 F9 80 00 00 00  cmp         ecx,80h
+    6F479515: 77 0A              ja          6F479521
+    6F479517: 74 4C              je          6F479565
+    6F479519: 49                 dec         ecx
+    6F47951A: 74 49              je          6F479565
+  --- around 0x47E864 ---
+    6F47E844: 00 00              add         byte ptr [eax],al
+    6F47E846: 8B CE              mov         ecx,esi
+    6F47E848: E8 C3 56 FF FF     call        6F473F10
+    6F47E84D: 8B BB 50 01 00 00  mov         edi,dword ptr [ebx+00000150h]
+    6F47E853: 8B CE              mov         ecx,esi
+    6F47E855: 57                 push        edi
+    6F47E856: 89 7D 08           mov         dword ptr [ebp+8],edi
+    6F47E859: E8 72 F9 BC FF     call        6F04E1D0
+    6F47E85E: 85 FF              test        edi,edi
+    6F47E860: 74 26              je          6F47E888
+    6F47E862: 8D BB 58 01 00 00  lea         edi,[ebx+00000158h]
+    6F47E868: 8B 5D 08           mov         ebx,dword ptr [ebp+8]
+    6F47E86B: EB 03              jmp         6F47E870
+    6F47E86D: 8D 49 00           lea         ecx,[ecx]
+    6F47E870: 8B 07              mov         eax,dword ptr [edi]
+    6F47E872: 8D 55 08           lea         edx,[ebp+8]
+    6F47E875: 8B CE              mov         ecx,esi
+    6F47E877: 89 45 08           mov         dword ptr [ebp+8],eax
+    6F47E87A: E8 51 3F BD FF     call        6F0527D0
+    6F47E87F: 8D 7F 08           lea         edi,[edi+8]
+    6F47E882: 4B                 dec         ebx
+    6F47E883: 75 EB              jne         6F47E870
+    6F47E885: 8B 5D FC           mov         ebx,dword ptr [ebp-4]
+    6F47E888: 8D 93 64 01 00 00  lea         edx,[ebx+00000164h]
+    6F47E88E: 8B CE              mov         ecx,esi
+    6F47E890: E8 7B 56 FF FF     call        6F473F10
+    6F47E895: 8D 93 88 01 00 00  lea         edx,[ebx+00000188h]
+    6F47E89B: 8B CE              mov         ecx,esi
+    6F47E89D: E8 6E 56 FF FF     call        6F473F10
+    6F47E8A2: 8B 83 B0 01 00 00  mov         eax,dword ptr [ebx+000001B0h]
+    6F47E8A8: 8D
+    6F47E8A9: 55                 push        ebp

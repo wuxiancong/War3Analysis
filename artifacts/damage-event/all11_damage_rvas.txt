@@ -1,0 +1,65 @@
+=== 全 11 版本伤害事件核心 RVA 对照表 ===
+Version        | CUnit vt   | TakeDamage | OnSettled  | DispatchDmg | GetEvtDmg  | GetEvtSrc  | UnitDmgTgt | OnSettledBytes
+-----------------------------------------------------------------------------------------------------------------------------
+1.0.17.5988    | —          | —          | 0x19FC10   | 0x1C0290    | 0x2B7C90   | 0x2B7CB0   | 0x2C9840   | 55 8B EC 51 53 8B 5D 08
+1.0.20.6048    | —          | —          | 0x19FC10   | 0x1C0290    | 0x2B7C90   | 0x2B7CB0   | 0x2C9840   | 55 8B EC 51 53 8B 5D 08
+1.20.4.6074    | —          | —          | 0x19FC20   | 0x1C0300    | 0x2B7DB0   | 0x2B7DD0   | 0x2C9960   | 55 8B EC 51 53 8B 5D 08
+1.21.0.6263    | —          | —          | 0x1A2DE0   | 0x1C34C0    | 0x2BB380   | 0x2BB3A0   | 0x2CCF30   | 55 8B EC 51 53 8B 5D 08
+1.22.0.6328    | 0x92081C   | 0x2A3540   | 0x29ABE0   | 0x2961C0    | 0x3BCEE0   | 0x3BCF00   | 0x3C1AF0   | 8B 07 83 EC 08 50 53 8B
+1.23.0.6352    | 0x93495C   | 0x2A4A80   | 0x29C120   | 0x297700    | 0x3BEC00   | 0x3BEC20   | 0x3C3810   | 8B 07 83 EC 08 50 53 8B
+1.24.1.6374    | 0x943A94   | 0x2A4B40   | 0x29C1E0   | 0x2977C0    | 0x3C46C0   | 0x3C46E0   | 0x3C92D0   | 8B 07 83 EC 08 50 53 8B
+1.24.4.6387    | 0x943A94   | 0x2A4BF0   | 0x29C250   | 0x297830    | 0x3C4780   | 0x3C47A0   | 0x3C9390   | 8B 07 83 EC 08 50 53 8B
+1.25.1.6397    | 0x931934   | 0x2A3EA0   | 0x29B500   | 0x296AE0    | 0x3C3A10   | 0x3C3A30   | 0x3C8620   | 8B 07 83 EC 08 50 53 8B
+1.26.0.6401    | 0x931934   | 0x2A40D0   | 0x29B730   | 0x296D10    | 0x3C3C40   | 0x3C3C60   | 0x3C8850   | 8B 07 83 EC 08 50 53 8B
+1.27.0.52240   | 0xA4A704   | 0x67DC40   | 0x67F340   | 0x65E010    | 0x1E21D0   | 0x1E21F0   | 0x1FAB70   | 55 8B EC 83 EC 08 53 8B
+
+=== 1.27 IsHero (0x1E7AF0) ===
+6F1E7AF0: 0F B6 41 33        movzx       eax,byte ptr [ecx+33h]
+6F1E7AF4: 83 C0 BF           add         eax,0FFFFFFBFh
+6F1E7AF7: 83 F8 19           cmp         eax,19h
+6F1E7AFA: 77 0F              ja          6F1E7B0B
+6F1E7AFC: F7 41 5C 00 00 00  test        dword ptr [ecx+5Ch],40000000h
+6F1E7B03: 75 06              jne         6F1E7B0B
+6F1E7B05: B8 01 00 00 00     mov         eax,1
+6F1E7B0A: C3                 ret
+6F1E7B0B: 33 C0              xor         eax,eax
+6F1E7B0D: C3                 ret
+6F1E7B0E: CC                 int         3
+6F1E7B0F: CC                 int         3
+6F1E7B10: 0F B6 41 33        movzx       eax,byte ptr [ecx+33h]
+6F1E7B14: B9 19 00 00 00     mov         ecx,19h
+6F1E7B19: 83 C0 BF           add         eax,0FFFFFFBFh
+6F1E7B1C: 3B C8              cmp         ecx,eax
+6F1E7B1E: 1B C0              sbb         eax,eax
+6F1E7B20: 40                 inc         eax
+
+=== 1.27 IsStructure (0x66EA60) ===
+6F66EA60: 55                 push        ebp
+6F66EA61: 8B EC              mov         ebp,esp
+6F66EA63: 8B 41 5C           mov         eax,dword ptr [ecx+5Ch]
+6F66EA66: A9 00 00 01 00     test        eax,10000h
+6F66EA6B: 74 1A              je          6F66EA87
+6F66EA6D: 83 7D 08 00        cmp         dword ptr [ebp+8],0
+6F66EA71: 74 0B              je          6F66EA7E
+6F66EA73: 84 C0              test        al,al
+6F66EA75: 79 07              jns         6F66EA7E
+6F66EA77: A9 00 00 00 08     test        eax,8000000h
+6F66EA7C: 74 09              je          6F66EA87
+6F66EA7E: B8 01 00 00 00     mov         eax,1
+6F66EA83: 5D                 pop         ebp
+6F66EA84: C2 04 00           ret         4
+6F66EA87: 33 C0              xor         eax,eax
+6F66EA89: 5D                 pop         ebp
+6F66EA8A: C2 04 00           ret         4
+6F66EA8D: CC                 int         3
+6F66EA8E: CC                 int         3
+6F66EA8F: CC                 int         3
+6F66EA90: E8 5B AE FF FF     call        6F6698F0
+6F66EA95: 8B 40 28           mov         eax,dword ptr [eax+28h]
+6F66EA98: 83 E0 10           and         eax,10h
+6F66EA9B: C3                 ret
+6F66EA9C: CC                 int         3
+6F66EA9D: CC                 int         3
+6F66EA9E: CC                 int         3
+6F66EA9F: CC                 int         3
+6F66EAA0: 8B
