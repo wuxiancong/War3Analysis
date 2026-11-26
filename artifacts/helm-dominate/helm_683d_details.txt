@@ -1,0 +1,219 @@
+=== 1. YFO 给被支配单位添加的 3 个技能: [(1097167976, 'Aeth'), (1094939243, 'ACrk'), (1093818692, 'A2YD')] ===
+  Aeth (Y=146): alias=Aeth, code=Aeth, checkDep=1, levels=1, targs1=_, DataA1=1, DataB1=1, targs2=_, targs3=_
+
+=== 2. function Y5O  @ L20269 ===
+   20269: function Y5O takes unit u returns boolean
+   20270: local integer i=GetUnitTypeId(u)
+   20271: return i==1848651848 or i==1848651847 or i==1848651851 or i==1848651850 or i==1848651841 or i==1848651830
+   20272: endfunction
+
+=== 2. function QSI  @ L4142 ===
+    4142: function QSI takes unit SWI returns nothing
+    4143: call SetUnitState(SWI,UNIT_STATE_MANA,GetUnitState(SWI,UNIT_STATE_MAX_MANA))
+    4144: endfunction
+
+=== 3. war3map.j 中 V80 (I08T) 引用: [1293, 14448, 14566, 16597, 16612, 16646, 17450, 54490, 93415, 94899, 95017] ===
+--- L1293 ---
+    1291: integer V60
+    1292: integer V70
+    1293: integer V80
+    1294: integer V90
+    1295: integer VA0
+    1296: integer VB0
+    1297: integer VC0
+    1298: integer VD0
+    1299: integer VE0
+--- L14448 ---
+   14446: set J50[JC0]=GW0
+   14447: set J60[JC0]=GM0
+   14448: set JB0[JC0]=V80
+   14449: set JC0=JC0+1
+   14450: set J50[JC0]=GM0
+   14451: set J60[JC0]=XQ0
+   14452: set JB0[JC0]=VA0
+   14453: set JC0=JC0+1
+   14454: set J50[JC0]=H50
+--- L14566 ---
+   14564: set JC0=JC0+1
+   14565: set J50[JC0]=GN0
+   14566: set J60[JC0]=V80
+   14567: set J70[JC0]=YB0
+   14568: set JB0[JC0]=WC0
+   14569: set JC0=JC0+1
+   14570: set J50[JC0]=GN0
+   14571: set J60[JC0]=V90
+   14572: set J70[JC0]=YB0
+--- L16597 ---
+   16595: endfunction
+   16596: function FOO takes integer E81 returns boolean
+   16597: return E81==V90 or E81==WR0 or E81==WP0 or E81==WU0 or E81==V80 or E81==WS0 or E81==WT0 or E81==WQ0 or E81==GZ0 or E81==GV0 or E81==ZS0 or E81==ZT0
+   16598: endfunction
+   16599: function F2O takes integer E81 returns boolean
+   16600: return E81==GZ0 or E81==GV0
+   16601: endfunction
+   16602: function F3O takes unit SFI,item BA1 returns boolean
+   16603: local integer FE1=0
+--- L16612 ---
+   16610: if IsUnitType(SFI,UNIT_TYPE_HERO)==true then
+   16611: if E81==V90 then
+   16612: set F4O=V80
+   16613: endif
+   16614: if E81==ZT0 then
+   16615: set F4O=ZS0
+   16616: endif
+   16617: if E81==WR0 then
+   16618: set F4O=WS0
+--- L16646 ---
+   16644: endif
+   16645: else
+   16646: if E81==V80 then
+   16647: set F4O=V90
+   16648: endif
+   16649: if E81==ZS0 then
+   16650: set F4O=ZT0
+   16651: endif
+   16652: if E81==WS0 then
+--- L17450 ---
+   17448: call SetItemPlayer(EJ1,JK,false)
+   17449: call SetItemUserData(EJ1,1)
+   17450: elseif E81==V80 then
+   17451: set JK=GetItemPlayer(BA1)
+   17452: call RemoveItem(BA1)
+   17453: set EJ1=CreateItem(FT0[GW0],x,y)
+   17454: call SetItemPlayer(EJ1,JK,false)
+   17455: call SetItemUserData(EJ1,1)
+   17456: set EJ1=CreateItem(FT0[GM0],x,y)
+--- L54490 ---
+   54488: exitwhen TGI>THI
+   54489: set E81=F01(UnitItemInSlot(GetTriggerUnit(),TGI))
+   54490: if E81==VZ0 or E81==VV0 or E81==VW0 or E81==VX0 or E81==VY0 or E81==VJ0 or E81==V80 or E81==W00 or E81==WI0 or E81==W10 or E81==ZS0 or E81==WH0 or E81==WX0 or E81==X90 then
+   54491: set U93[TGI]=GetItemTypeId(UnitItemInSlot(GetTriggerUnit(),TGI))
+   54492: set UA3[TGI]=GetItemPlayer(UnitItemInSlot(GetTriggerUnit(),TGI))
+   54493: call RemoveItem(UnitItemInSlot(GetTriggerUnit(),TGI))
+   54494: endif
+   54495: set TGI=TGI+1
+   54496: endloop
+--- L93415 ---
+   93413: set GI0[GO0]=60
+   93414: set FU0[GO0]=1850
+   93415: set V80=GO0
+   93416: set GO0=GO0+1
+   93417: set FT0[GO0]=1227896919
+   93418: set FR0[GO0]=1227896918
+   93419: set FP0[GO0]=0
+   93420: set FQ0[GO0]=1227899727
+   93421: set G00[GO0]="ReplaceableTextures\\CommandButtons\\BTNINV_Helmet_13.blp"
+--- L94899 ---
+   94897: set J50[JC0]=GW0
+   94898: set J60[JC0]=GM0
+   94899: set JB0[JC0]=V80
+   94900: set JC0=JC0+1
+   94901: set J50[JC0]=GM0
+   94902: set J60[JC0]=XQ0
+   94903: set JB0[JC0]=VA0
+   94904: set JC0=JC0+1
+   94905: set J50[JC0]=H50
+
+=== 4. I03B(铁意) (1227895618) hits=[92574, 95830] ===
+   92573: set GO0=GO0+1
+   92574: set FT0[GO0]=1227895618
+   92575: set FR0[GO0]=1227895877
+   92576: set FP0[GO0]=1747988808
+   92577: set FQ0[GO0]=1227899969
+   92578: set G00[GO0]="ReplaceableTextures\\CommandButtons\\BTNHelmutPurple.blp"
+   92579: set GI0[GO0]=0
+   92580: set FU0[GO0]=950
+   92581: set GW0=GO0
+   92582: set GO0=GO0+1
+   95829: set GO0=GO0+1
+   95830: set FT0[GO0]=1227895618
+   95831: set FR0[GO0]=1227895877
+   95832: set FP0[GO0]=1747990606
+   95833: set FQ0[GO0]=1227899969
+   95834: set G00[GO0]="ReplaceableTextures\\CommandButtons\\BTNHelmutPurple.blp"
+   95835: set GI0[GO0]=0
+   95836: set G10[GO0]=GW0
+   95837: set GO0=GO0+1
+   95838: set FT0[GO0]=1227895621
+
+=== 4. I04E(铁意2) (1227895877) hits=[92575, 95831] ===
+   92574: set FT0[GO0]=1227895618
+   92575: set FR0[GO0]=1227895877
+   92576: set FP0[GO0]=1747988808
+   92577: set FQ0[GO0]=1227899969
+   92578: set G00[GO0]="ReplaceableTextures\\CommandButtons\\BTNHelmutPurple.blp"
+   92579: set GI0[GO0]=0
+   92580: set FU0[GO0]=950
+   92581: set GW0=GO0
+   92582: set GO0=GO0+1
+   92583: set FT0[GO0]=1227895619
+   95830: set FT0[GO0]=1227895618
+   95831: set FR0[GO0]=1227895877
+   95832: set FP0[GO0]=1747990606
+   95833: set FQ0[GO0]=1227899969
+   95834: set G00[GO0]="ReplaceableTextures\\CommandButtons\\BTNHelmutPurple.blp"
+   95835: set GI0[GO0]=0
+   95836: set G10[GO0]=GW0
+   95837: set GO0=GO0+1
+   95838: set FT0[GO0]=1227895621
+   95839: set FR0[GO0]=1227895880
+
+=== 4. I03G(死面) (1227895623) hits=[92628, 95846] ===
+   92627: set GO0=GO0+1
+   92628: set FT0[GO0]=1227895623
+   92629: set FR0[GO0]=1227895883
+   92630: set FP0[GO0]=1747988813
+   92631: set FQ0[GO0]=1227899716
+   92632: set G00[GO0]="ReplaceableTextures\\CommandButtons\\BTNUndeadShrine.blp"
+   92633: set GI0[GO0]=0
+   92634: set FU0[GO0]=900
+   92635: set GM0=GO0
+   92636: set GO0=GO0+1
+   95845: set GO0=GO0+1
+   95846: set FT0[GO0]=1227895623
+   95847: set FR0[GO0]=1227895883
+   95848: set FP0[GO0]=1747990607
+   95849: set FQ0[GO0]=1227899716
+   95850: set G00[GO0]="ReplaceableTextures\\CommandButtons\\BTNUndeadShrine.blp"
+   95851: set GI0[GO0]=0
+   95852: set G10[GO0]=GM0
+   95853: set GO0=GO0+1
+   95854: set FT0[GO0]=1227895632
+
+=== 4. I04K(死面2) (1227895883) hits=[92629, 95847] ===
+   92628: set FT0[GO0]=1227895623
+   92629: set FR0[GO0]=1227895883
+   92630: set FP0[GO0]=1747988813
+   92631: set FQ0[GO0]=1227899716
+   92632: set G00[GO0]="ReplaceableTextures\\CommandButtons\\BTNUndeadShrine.blp"
+   92633: set GI0[GO0]=0
+   92634: set FU0[GO0]=900
+   92635: set GM0=GO0
+   92636: set GO0=GO0+1
+   92637: set FT0[GO0]=1227895624
+   95846: set FT0[GO0]=1227895623
+   95847: set FR0[GO0]=1227895883
+   95848: set FP0[GO0]=1747990607
+   95849: set FQ0[GO0]=1227899716
+   95850: set G00[GO0]="ReplaceableTextures\\CommandButtons\\BTNUndeadShrine.blp"
+   95851: set GI0[GO0]=0
+   95852: set G10[GO0]=GM0
+   95853: set GO0=GO0+1
+   95854: set FT0[GO0]=1227895632
+   95855: set FR0[GO0]=1227895891
+
+=== 5. DotA 6.83d 常见中立野怪属性 (HP / 移速 / 射程 / 护甲) ===
+  ndtw   | 黑暗巨魔召唤法师 (Dark Troll Summoner)       | HP=    ? | spd=   ? | def=  ? | rng=   ? (?)
+  ndtr   | 黑暗巨魔 (Dark Troll)                    | HP=  500 | spd= 270 | def=  ? | rng= 500 (missile)
+  nsth   | 萨特苦难使者 (Satyr Tormenter)             | HP= 1100 | spd= 290 | def=  ? | rng= 100 (normal)
+  nstl   | 萨特窃魂者 (Satyr Mindstealer)            | HP=    ? | spd=   ? | def=  ? | rng=   ? (?)
+  nsty   | 萨特放逐者 (Satyr Banisher)               | HP=    ? | spd=   ? | def=  ? | rng=   ? (?)
+  ncen   | 半人马征服者 (Centaur Conqueror)           | HP=  550 | spd= 350 | def=  2 | rng= 100 (normal)
+  nowk   | 枭兽撕裂者 (Wildwing Ripper)              | HP=    ? | spd=   ? | def=  ? | rng=   ? (?)
+  nwlg   | 头狼 (Alpha Wolf)                      | HP=    ? | spd=   ? | def=  ? | rng=   ? (?)
+  nplg   | 熊怪粉碎者 (Hellbear Smasher)             | HP=    ? | spd=   ? | def=  ? | rng=   ? (?)
+  nhrr   | 鹰身女妖风暴巫师 (Harpy Stormcrafter)        | HP=    ? | spd=   ? | def=  ? | rng=   ? (?)
+  nfsh   | 丘陵巨魔牧师 (Hill Troll Priest)           | HP=  450 | spd= 290 | def=  ? | rng= 600 (missile)
+  ngst   | 鬼魂 (Ghost)                           | HP=    ? | spd=   ? | def=  ? | rng=   ? (?)
+  nkol   | 狗头人监工 (Kobold Foreman)               | HP=    ? | spd=   ? | def=  ? | rng=   ? (?)
+  ngrk   | 泥土傀儡 (Mud Golem - 魔免)                | HP=    ? | spd=   ? | def=  ? | rng=   ? (?)

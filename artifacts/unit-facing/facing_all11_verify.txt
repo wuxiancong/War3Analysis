@@ -1,0 +1,86 @@
+=== 1. 1.27 乘数 0x6FB59460 初始化/引用 @ 0x7518B0 ===
+6F7518B0: 0F 84 80 00 00 00  je          6F751936
+6F7518B6: 56                 push        esi
+6F7518B7: 8B 75 0C           mov         esi,dword ptr [ebp+0Ch]
+6F7518BA: 57                 push        edi
+6F7518BB: 8B 7D 08           mov         edi,dword ptr [ebp+8]
+6F7518BE: 68 60 94 B5 6F     push        6FB59460h
+6F7518C3: 8B 07              mov         eax,dword ptr [edi]
+6F7518C5: 8A D0              mov         dl,al
+6F7518C7: 89 45 08           mov         dword ptr [ebp+8],eax
+6F7518CA: 0F B6 45 0B        movzx       eax,byte ptr [ebp+0Bh]
+6F7518CE: 8A 4D 09           mov         cl,byte ptr [ebp+9]
+6F7518D1: 88 45 08           mov         byte ptr [ebp+8],al
+6F7518D4: 0F B6 45 0A        movzx       eax,byte ptr [ebp+0Ah]
+6F7518D8: 88 45 09           mov         byte ptr [ebp+9],al
+6F7518DB: 88 55 0B           mov         byte ptr [ebp+0Bh],dl
+6F7518DE: 8D 56 0C           lea         edx,[esi+0Ch]
+6F7518E1: 88 4D 0A           mov         byte ptr [ebp+0Ah],cl
+6F7518E4: 8D 4D 08           lea         ecx,[ebp+8]
+6F7518E7: 8B 45 08           mov         eax,dword ptr [ebp+8]
+6F7518EA: 89 45 DC           mov         dword ptr [ebp-24h],eax
+6F7518ED: 8B 06              mov         eax,dword ptr [esi]
+6F7518EF: 89 45 E0           mov         dword ptr [ebp-20h],eax
+6F7518F2: 8B 46 04           mov         eax,dword ptr [esi+4]
+6F7518F5: 89 45 E4           mov         dword ptr [ebp-1Ch],eax
+6F7518F8: E8 E3 0E 90 FF     call        6F0527E0
+6F7518FD: 8D 4D DC           lea         ecx,[ebp-24h]
+6F751900: 8B 00              mov         eax,dword ptr [eax]
+6F751902: 89 45 E8           mov         dword ptr [ebp-18h],eax
+6F751905: 8B 46 10           mov         eax,dword ptr [esi+10h]
+6F751908: 89 45 EC           mov         dword ptr [ebp-14h],eax
+6F75190B: 8B 47 04           mov         eax,dword ptr [edi+4]
+6F75190E: 89 45 F0           mov         dword ptr [ebp-10h],eax
+
+=== 2. 1.27 0x6FB59440..0x6FB59480 附近常量表（文件原始字节） ===
+  0xB59440: 0x3E22F983 (0.159155)
+  0xB59444: 0x3EA2F983 (0.31831)
+  0xB59448: 0x3F060A92 (0.523599)
+  0xB5944C: 0x3F490FDB (0.785398)
+  0xB59450: 0x3FC90FDB (1.5708)
+  0xB59454: 0x40490FDB (3.14159)
+  0xB59458: 0x4096CBE4 (4.71239)
+  0xB5945C: 0x40C90FDB (6.28319)
+  0xB59460: 0x42652EE1 (57.2958)
+  0xB59464: 0x33D6BF95 (1e-07)
+  0xB59468: 0x3456BF95 (2e-07)
+  0xB5946C: 0x34D6BF95 (4e-07)
+  0xB59470: 0x3556BF95 (8e-07)
+  0xB59474: 0x3FB504F3 (1.41421)
+  0xB59478: 0x7F7FFFFF (3.40282e+38)
+  0xB5947C: 0xFF7FFFFF (-3.40282e+38)
+  0xB59480: 0x00000280 (8.96831e-43)
+
+All raw .text occurrences of 0x6FB59460: ['0x1e6180', '0x1f27a2', '0x1f27fb', '0x650f5b', '0x675ed2', '0x7518bf']
+
+=== 3. 1.27 含 Pos 的 RTTI 虚表 (前10): [] ===
+
+=== 4. Nfir / Hjai 在基础 SLK 与 6.83d 地图 SLK 中的 turnRate / propWin ===
+File: D:\Qt\workspace\War3Analysis\artifacts\ward-deward\map\Units_UnitData.slk
+  Hamg   (Y=   2): turnRate=0.5, propWin=60, movetp=foot
+  edry   (Y=  86): turnRate=0.5, propWin=60, movetp=foot
+  ugho   (Y= 112): turnRate=0.5, propWin=60, movetp=foot
+  Hjai   (Y= 212): turnRate=0.5, propWin=60, movetp=foot
+File: D:\Qt\workspace\War3Analysis\artifacts\neutral-stack\UnitData.slk\UnitData.slk
+  Hamg   (Y=   2): turnRate=0.5, propWin=60, movetp=foot
+  Edem   (Y=  64): turnRate=0.5, propWin=60, movetp=foot
+  ebal   (Y=  69): turnRate=0.4, propWin=30, movetp=foot
+  edry   (Y=  74): turnRate=0.5, propWin=60, movetp=foot
+  Ulic   (Y=  95): turnRate=0.5, propWin=60, movetp=hover
+  ugho   (Y= 102): turnRate=0.5, propWin=60, movetp=foot
+  Hjai   (Y= 378): turnRate=0.5, propWin=60, movetp=foot
+
+=== 5. 全部 11 版本 GetUnitFacing & 180/pi 乘数全局 RVA ===
+Version        | GetUnitFacing | Rad2Deg Global | CUnit::GetPos(vt+B8) | RetReg
+--------------------------------------------------------------------------------
+1.0.17.5988    | 0x2BFCA0      | —              | —                    | EAX
+1.0.20.6048    | 0x2BFCA0      | —              | —                    | EAX
+1.20.4.6074    | 0x2BFDC0      | —              | —                    | EAX
+1.21.0.6263    | 0x2C3390      | —              | —                    | EAX
+1.22.0.6328    | 0x3BEA30      | 0xA9B014       | 0x28A590             | EAX
+1.23.0.6352    | 0x3C0750      | 0xAB3E68       | 0x28BAD0             | EAX
+1.24.1.6374    | 0x3C6210      | 0xAC5468       | 0x28BB90             | EAX
+1.24.4.6387    | 0x3C62D0      | 0xAC5468       | 0x28BC00             | EAX
+1.25.1.6397    | 0x3C5560      | 0xAAE60C       | 0x28AEB0             | EAX
+1.26.0.6401    | 0x3C5790      | 0xAAE60C       | 0x28B0E0             | EAX
+1.27.0.52240   | 0x1E6130      | 0xB59460       | 0x668DA0             | EAX

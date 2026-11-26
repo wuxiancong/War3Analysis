@@ -1,0 +1,114 @@
+=== 1. Units_ItemStrings.txt 支配头盔与组件 ===
+  I015 (1227895093): Disassembler
+  I03B (1227895618): 铁意头盔|nHelm of Iron Will
+  I03G (1227895623): 死亡面具|nMask of Death
+  I04E (1227895877): 铁意头盔|nHelm of Iron Will
+  I04K (1227895883): 死亡面具|nMask of Death
+  I08T (1227896916): 支配头盔|nHelm of the Dominator
+  I08U (1227896917): 支配头盔|nHelm of the Dominator
+  I08V (1227896918): 支配头盔（信使版）|nHelm of the Dominator (Courier Edition)
+  I08W (1227896919): 支配头盔（信使版）|nHelm of the Dominator (Courier Edition)
+  I024 (1227895348): 支配头盔|nHelm of the Dominator
+  I0CD (1227899716): 死亡面具|nMask of Death
+  I0DA (1227899969): 铁意头盔|nHelm of Iron Will
+  I0CO (1227899727): 支配头盔（信使版）|nHelm of the Dominator (Courier)
+
+=== 2. Units_ItemData.slk 关键物品 (goldcost col=24, abilList col=8) ===
+  I037   (Y=  50): gold=?, abil=_, stock=1
+  I03G   (Y=  58): gold=?, abil=_, stock=1
+  I055   (Y= 118): gold=1500, abil=AItf,AIt6, stock=1
+  I08T   (Y= 252): gold=1850, abil=A2V4,AItx,A09P,AId5,A0PS, stock=1
+
+=== 3. Units_AbilityData.slk A2V4 完整字段 ===
+  A2V4 (Y=4130): alias=A2V4, code=ANcl, checkDep=1, levels=1, reqLevel=1, targs1=air,enemies,ground,neutral,nonancient,nonhero,organic, Cool1=60, Cost1=75, Rng1=700, DataB1=1, DataC1=1, DataD1=0.98, DataF1=creepheal, targs2=air,enemies,friend,ground,neutral,self, Cool2=17, Cost2=110, Rng2=600, DataB2=1, DataC2=1, DataD2=0.98, DataF2=creepheal, targs3=air,enemies,friend,ground,neutral,self, Cool3=17, Cost3=130, Rng3=600, DataB3=1, DataC3=1, DataD3=0.98, DataF3=creepheal, targs4=_, Rng4=500, DataA4=180, DataD4=0.98, DataE4=1
+
+=== 4. war3map.j I08T (支配头盔) (1227896916): 1 hits, lines=[93409] ===
+--- L93409 ---
+   93404: set GI0[GO0]=0
+   93405: set FU0[GO0]=0
+   93406: set V70=GO0
+   93407: set GO0=GO0+1
+   93408: set FT0[GO0]=1227896917
+   93409: set FR0[GO0]=1227896916
+   93410: set FP0[GO0]=0
+   93411: set FQ0[GO0]=1227895348
+   93412: set G00[GO0]="ReplaceableTextures\\CommandButtons\\BTNINV_Helmet_13.blp"
+   93413: set GI0[GO0]=60
+   93414: set FU0[GO0]=1850
+   93415: set V80=GO0
+   93416: set GO0=GO0+1
+   93417: set FT0[GO0]=1227896919
+   93418: set FR0[GO0]=1227896918
+   93419: set FP0[GO0]=0
+   93420: set FQ0[GO0]=1227899727
+   93421: set G00[GO0]="ReplaceableTextures\\CommandButtons\\BTNINV_Helmet_13.blp"
+   93422: set GI0[GO0]=0
+   93423: set FU0[GO0]=1850
+   93424: set V90=GO0
+   93425: set GO0=GO0+1
+   93426: set FT0[GO0]=1227896920
+   93427: set FR0[GO0]=1227896921
+   93428: set FP0[GO0]=0
+   93429: set FQ0[GO0]=1227895349
+   93430: set G00[GO0]="ReplaceableTextures\\CommandButtons\\BTNHelmOfValor.blp"
+   93431: set GI0[GO0]=22
+
+=== 4. war3map.j A2V4 (支配技能) (1093817908): 2 hits, lines=[10413, 20332] ===
+--- L10413 ---
+   10408: endfunction
+   10409: function VA1 takes nothing returns nothing
+   10410: set T2[1]=1095331188
+   10411: set T2[2]=1095328865
+   10412: set T2[3]=1095660653
+   10413: set T2[4]=1093817908
+   10414: set T2[5]=1095333995
+   10415: set T2[6]=1093681995
+   10416: set T2[7]=1093677367
+   10417: set T2[8]=1093681720
+   10418: set T2[9]=1093683266
+   10419: set T2[10]=1093682227
+   10420: set T2[10]=1093682246
+   10421: set T2[11]=1093677655
+   10422: set T2[12]=1095331954
+   10423: set T2[13]=1095331948
+   10424: set T2[14]=1093682767
+   10425: set T2[15]=1093683255
+   10426: set T2[16]=1093683254
+   10427: set T2[17]=1093677656
+   10428: set T2[18]=1095332727
+   10429: set T2[19]=1093682008
+   10430: set T2[20]=1093681718
+   10431: set T2[21]=1097163124
+   10432: set T2[22]=1093679180
+   10433: set T2[23]=1095328633
+   10434: set T2[24]=1093678426
+   10435: set T2[25]=1095328363
+--- L20332 ---
+   20327: return((LoadInteger(LY,(GetHandleId((GetFilterUnit()))),((4323))))==1)
+   20328: endfunction
+   20329: function YFO takes nothing returns nothing
+   20330: local group g
+   20331: local unit u
+   20332: if GetSpellAbilityId()==1093817908 and Y5O(GetSpellTargetUnit())==false then
+   20333: set g=NTI()
+   20334: call GroupEnumUnitsOfPlayer(g,GetOwningPlayer(GetTriggerUnit()),Condition(function YEO))
+   20335: set u=FirstOfGroup(g)
+   20336: call NSI(g)
+   20337: if u!=null then
+   20338: call KillUnit(u)
+   20339: endif
+   20340: call SetUnitOwner(GetSpellTargetUnit(),GetOwningPlayer(GetTriggerUnit()),true)
+   20341: call SaveInteger(LY,(GetHandleId((GetSpellTargetUnit()))),((4323)),(1))
+   20342: call UnitAddAbility(GetSpellTargetUnit(),1097167976)
+   20343: call UnitAddAbility(GetSpellTargetUnit(),1094939243)
+   20344: call IA1(GetSpellTargetUnit(),1093818692)
+   20345: call QSI(GetSpellTargetUnit())
+   20346: endif
+   20347: endfunction
+   20348: function YGO takes integer i returns integer
+   20349: if i==MP0 then
+   20350: return N20
+   20351: endif
+   20352: if i==MQ0 then
+   20353: return N30
+   20354: endif

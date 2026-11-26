@@ -1,0 +1,218 @@
+=== 1. 搜索全部 SLK 中的 Nfir / Hjai turnRate & propWin ===
+File: D:\Qt\workspace\War3Analysis\artifacts\ward-deward\map\Units_UnitData.slk
+  Hit "Nfir" @ L2201: C;Y135;K"Nfir" | C;X4;K"undead" | C;X5;K9 | C;X6;K1 | C;X7;K1 | C;X8;K2 | C;X9;K1.5 | C;X11;K1 | C;X12;K"foot" | C;X15;K1 | C;X16;K60 | C;X17;K5 | C;X18;K2 | C;X19;K"ground" | C;X20;K"_" | C;X22;K80 | C;X23;K"_" | C;X25;K11
+  Hit "Hjai" @ L3541: C;X1;K"Hjai" | C;Y213;K"Hlgr" | C;X4;K"human" | C;X5;K10 | C;X6;K1 | C;X7;K1 | C;X8;K2 | C;X9;K4.99 | C;X11;K1 | C;X12;K"foot" | C;X15;K0.6 | C;X16;K60 | C;X17;K5 | C;X19;K"ground" | C;X20;K"_" | C;X22;K33 | C;X23;K"_" | C;X25;K7
+File: D:\Qt\workspace\War3Analysis\artifacts\scoring\base\war3.mpq\Units_UnitData.slk
+  Hit "Hjai" @ L12975: C;Y378;X1;K"Hjai" | C;X2;K"z1" | C;X3;K"jaina" | C;X4;K"human" | C;X5;K10 | C;X6;K1 | C;X7;K"_" | C;X8;K1 | C;X9;K2 | C;X10;K2.8 | C;X11;K0 | C;X12;K1 | C;X13;K"foot" | C;X14;K0 | C;X15;K0 | C;X16;K15 | C;X17;K0 | C;X18;K66
+File: D:\Qt\workspace\War3Analysis\artifacts\scoring\base\War3Patch.mpq\Units_UnitData.slk
+  Hit "Nfir" @ L5676: C;X1;Y184;K"Nfir" | C;X2;K"n1" | C;X3;K"FireLord" | C;X4;K"creeps" | C;X5;K9 | C;X6;K1 | C;X7;K1 | C;X8;K2 | C;X9;K1.5 | C;X10;K0 | C;X11;K1 | C;X12;K"foot" | C;X13;K0 | C;X14;K0 | C;X15;K0.6 | C;X16;K60 | C;X17;K5 | C;X18;K2
+  Hit "Hjai" @ L20091: C;X1;Y649;K"Hjai" | C;X2;K"z1" | C;X3;K"jaina" | C;X4;K"human" | C;X5;K10 | C;X6;K1 | C;X7;K1 | C;X8;K2 | C;X9;K2.8 | C;X10;K0 | C;X11;K1 | C;X12;K"foot" | C;X13;K0 | C;X14;K0 | C;X15;K0.5 | C;X16;K60 | C;X17;K0 | C;X18;K2
+File: D:\Qt\workspace\War3Analysis\artifacts\scoring\base\War3x.mpq\Units_UnitData.slk
+  Hit "Hjai" @ L18573: C;X1;Y620;K"Hjai" | C;X2;K"z1" | C;X3;K"jaina" | C;X4;K"human" | C;X5;K10 | C;X6;K1 | C;X7;K"_" | C;X8;K1 | C;X9;K2 | C;X10;K2.8 | C;X11;K0 | C;X12;K1 | C;X13;K"foot" | C;X14;K0 | C;X15;K0 | C;X16;K0.5 | C;X17;K60 | C;X18;K0
+File: D:\Qt\workspace\War3Analysis\artifacts\neutral-stack\UnitData.slk\UnitData.slk
+  Hit "Hjai" @ L12975: C;Y378;X1;K"Hjai" | C;X2;K"z1" | C;X3;K"jaina" | C;X4;K"human" | C;X5;K10 | C;X6;K1 | C;X7;K"_" | C;X8;K1 | C;X9;K2 | C;X10;K2.8 | C;X11;K0 | C;X12;K1 | C;X13;K"foot" | C;X14;K0 | C;X15;K0 | C;X16;K15 | C;X17;K0 | C;X18;K66
+
+=== 2. 1.0.17~1.21.0 GetUnitFacing 与全部 11 版本 0x42652EE1 (180/pi) 全局 RVA ===
+  1.0.17.5988   : 180/pi (prev=2pi) = [] | all_42652EE1=[]
+  1.0.20.6048   : 180/pi (prev=2pi) = [] | all_42652EE1=[]
+  1.20.4.6074   : 180/pi (prev=2pi) = [] | all_42652EE1=[]
+  1.21.0.6263   : 180/pi (prev=2pi) = [] | all_42652EE1=[]
+  1.22.0.6328   : 180/pi (prev=2pi) = [] | all_42652EE1=[]
+  1.23.0.6352   : 180/pi (prev=2pi) = [] | all_42652EE1=[]
+  1.24.1.6374   : 180/pi (prev=2pi) = [] | all_42652EE1=[]
+  1.24.4.6387   : 180/pi (prev=2pi) = [] | all_42652EE1=[]
+  1.25.1.6397   : 180/pi (prev=2pi) = [] | all_42652EE1=[]
+  1.26.0.6401   : 180/pi (prev=2pi) = [] | all_42652EE1=[]
+  1.27.0.52240  : 180/pi (prev=2pi) = ['0xb59460'] | all_42652EE1=['0xb59460']
+
+--- 1.0.17 GetUnitFacing @ 0x2BFCA0 ---
+6F2BFCA0: 55                 push        ebp
+6F2BFCA1: 8B EC              mov         ebp,esp
+6F2BFCA3: 83 EC 0C           sub         esp,0Ch
+6F2BFCA6: 8B 0D 5C 12 87 6F  mov         ecx,dword ptr ds:[6F87125Ch]
+6F2BFCAC: 53                 push        ebx
+6F2BFCAD: 33 DB              xor         ebx,ebx
+6F2BFCAF: 56                 push        esi
+6F2BFCB0: 89 5D FC           mov         dword ptr [ebp-4],ebx
+6F2BFCB3: E8 08 B5 FD FF     call        6F29B1C0
+6F2BFCB8: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+6F2BFCBB: 85 C9              test        ecx,ecx
+6F2BFCBD: 0F 84 BA 00 00 00  je          6F2BFD7D
+6F2BFCC3: 51                 push        ecx
+6F2BFCC4: 8B C8              mov         ecx,eax
+6F2BFCC6: E8 35 72 06 00     call        6F326F00
+6F2BFCCB: 53                 push        ebx
+6F2BFCCC: 8D 4D F8           lea         ecx,[ebp-8]
+6F2BFCCF: 8B F0              mov         esi,eax
+6F2BFCD1: E8 4A F9 E3 FF     call        6F0FF620
+6F2BFCD6: 56                 push        esi
+6F2BFCD7: 8D 4D F8           lea         ecx,[ebp-8]
+6F2BFCDA: E8 D1 63 E3 FF     call        6F0F60B0
+6F2BFCDF: 8B 4D F8           mov         ecx,dword ptr [ebp-8]
+6F2BFCE2: 85 C9              test        ecx,ecx
+6F2BFCE4: 74 15              je          6F2BFCFB
+6F2BFCE6: E8 B5 DB E2 FF     call        6F0ED8A0
+6F2BFCEB: 85 C0              test        eax,eax
+6F2BFCED: 74 0C              je          6F2BFCFB
+6F2BFCEF: 8B 48 20           mov         ecx,dword ptr [eax+20h]
+6F2BFCF2: 85 C9              test        ecx,ecx
+6F2BFCF4: 75 05              jne         6F2BFCFB
+6F2BFCF6: 8D 45 F8           lea         eax,[ebp-8]
+6F2BFCF9: EB 0F              jmp         6F2BFD0A
+6F2BFCFB: 6A 00              push        0
+6F2BFCFD: 8D 4D 08           lea         ecx,[ebp+8]
+6F2BFD00: BB 01 00 00 00     mov         ebx,1
+6F2BFD05: E8 46 63 E3 FF     call        6F0F6050
+6F2BFD0A: F6 C3 01           test        bl,1
+6F2BFD0D: 8B 30              mov         esi,dword ptr [eax]
+6F2BFD0F: 74 08              je          6F2BFD19
+6F2BFD11: 8D 4D 08           lea         ecx,[ebp+8]
+6F2BFD14: E8
+6F2BFD15: F7
+
+=== 3. 1.27 CUnit+0x164 包装对象与 +0x90/+0x8C 读取核验 ===
+1.27 NIpse::CPoPos vt @ 0x9607A8:
+  vt+0x00 = 0x101F40
+  vt+0x04 = 0x100970
+  vt+0x08 = 0x0FD080
+  vt+0x0C = 0x10B490
+  vt+0x10 = 0x10B5B0
+  vt+0x14 = 0x03A750
+  vt+0x18 = 0x03A830
+  vt+0x1C = 0x03A970
+  vt+0x20 = 0x03A450
+  vt+0x24 = 0x10B8D0
+  vt+0x28 = 0x10B7C0
+  vt+0x2C = 0x03A4C0
+  vt+0x30 = 0x03A8C0
+  vt+0x34 = 0x03A490
+  vt+0x38 = 0x03A8A0
+  vt+0x3C = 0x0FF1A0
+1.27 CUnit vt xrefs: ['0x6435d3']
+
+=== 4. 1.27 CPoPosCl::StepTurnAndMove @ 0x11CFD0 (及周围角度归一化) ===
+6F11CFD0: 55                 push        ebp
+6F11CFD1: 8B EC              mov         ebp,esp
+6F11CFD3: 53                 push        ebx
+6F11CFD4: 8B 5D 10           mov         ebx,dword ptr [ebp+10h]
+6F11CFD7: 56                 push        esi
+6F11CFD8: 57                 push        edi
+6F11CFD9: 8B F9              mov         edi,ecx
+6F11CFDB: 8B 03              mov         eax,dword ptr [ebx]
+6F11CFDD: 25 FF FF FF 7F     and         eax,7FFFFFFFh
+6F11CFE2: 83 7D 14 00        cmp         dword ptr [ebp+14h],0
+6F11CFE6: 89 45 10           mov         dword ptr [ebp+10h],eax
+6F11CFE9: 75 28              jne         6F11D013
+6F11CFEB: F3 0F 10 45 10     movss       xmm0,dword ptr [ebp+10h]
+6F11CFF0: 0F 2F 87 BC 00 00  comiss      xmm0,dword ptr [edi+000000BCh]
+6F11CFF7: 73 1A              jae         6F11D013
+6F11CFF9: 8B 75 08           mov         esi,dword ptr [ebp+8]
+6F11CFFC: 8D 87 B4 00 00 00  lea         eax,[edi+000000B4h]
+6F11D002: 50                 push        eax
+6F11D003: 8B D6              mov         edx,esi
+6F11D005: 8D 4D 08           lea         ecx,[ebp+8]
+6F11D008: E8 C3 59 F3 FF     call        6F0529D0
+6F11D00D: 8B 00              mov         eax,dword ptr [eax]
+6F11D00F: 89 06              mov         dword ptr [esi],eax
+6F11D011: EB 0A              jmp         6F11D01D
+6F11D013: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+6F11D016: A1 D4 81 BB 6F     mov         eax,dword ptr ds:[6FBB81D4h]
+6F11D01B: 89 01              mov         dword ptr [ecx],eax
+6F11D01D: F3 0F 10 15 D4 81  movss       xmm2,dword ptr ds:[6FBB81D4h]
+6F11D025: F3 0F 10 4D 10     movss       xmm1,dword ptr [ebp+10h]
+6F11D02A: 0F 2E CA           ucomiss     xmm1,xmm2
+6F11D02D: 9F                 lahf
+6F11D02E: F6 C4 44           test        ah,44h
+6F11D031: 7B 46              jnp         6F11D079
+6F11D033: 8B 87 B8 00 00 00  mov         eax,dword ptr [edi+000000B8h]
+6F11D039: 8D 4D 08           lea         ecx,[ebp+8]
+6F11D03C: 89 45 08           mov         dword ptr [ebp+8],eax
+6F11D03F: 8D 45 10           lea         eax,[ebp+10h]
+6F11D042: F3 0F 10 45 08     movss       xmm0,dword ptr [ebp+8]
+6F11D047: 0F 2F C1           comiss      xmm0,xmm1
+6F11D04A: 0F 46 C1           cmovbe      eax,ecx
+6F11D04D: 0F 2F 13           comiss      xmm2,dword ptr [ebx]
+6F11D050: 8B 00              mov         eax,dword ptr [eax]
+6F11D052: 76 0D              jbe         6F11D061
+6F11D054: 35 00 00 00 80     xor         eax,80000000h
+6F11D059: 89 45 08           mov         dword ptr [ebp+8],eax
+6F11D05C: 8D 45 08           lea         eax,[ebp+8]
+6F11D05F: EB 06              jmp         6F11D067
+6F11D061: 89 45 10           mov         dword ptr [ebp+10h],eax
+6F11D064: 8D 45 10           lea         eax,[ebp+10h]
+6F11D067: 8B 75 0C           mov         esi,dword ptr [ebp+0Ch]
+6F11D06A: 8D 4D 14           lea         ecx,[ebp+14h]
+6F11D06D: 50                 push        eax
+6F11D06E: 8B D6              mov         edx,esi
+6F11D070: E8
+
+=== 5. 1.27 CAbilityAttack 挥刀前检查 @ 0x47CDC0..0x47CE70 ===
+6F47CDC0: 55                 push        ebp
+6F47CDC1: 8B EC              mov         ebp,esp
+6F47CDC3: 83 EC 08           sub         esp,8
+6F47CDC6: 56                 push        esi
+6F47CDC7: 8B F1              mov         esi,ecx
+6F47CDC9: 57                 push        edi
+6F47CDCA: 8B 7E 30           mov         edi,dword ptr [esi+30h]
+6F47CDCD: 85 FF              test        edi,edi
+6F47CDCF: 75 07              jne         6F47CDD8
+6F47CDD1: E8 0A BD BB FF     call        6F038AE0
+6F47CDD6: 8B F8              mov         edi,eax
+6F47CDD8: 8B 46 20           mov         eax,dword ptr [esi+20h]
+6F47CDDB: A9 00 00 02 00     test        eax,20000h
+6F47CDE0: 0F 85 90 00 00 00  jne         6F47CE76
+6F47CDE6: A9 00 02 00 00     test        eax,200h
+6F47CDEB: 74 75              je          6F47CE62
+6F47CDED: 6A 01              push        1
+6F47CDEF: 6A FF              push        0FFFFFFFFh
+6F47CDF1: 8B CE              mov         ecx,esi
+6F47CDF3: E8 08 F0 FF FF     call        6F47BE00
+6F47CDF8: 85 C0              test        eax,eax
+6F47CDFA: 74 66              je          6F47CE62
+6F47CDFC: 8B 46 70           mov         eax,dword ptr [esi+70h]
+6F47CDFF: 8D 4E 6C           lea         ecx,[esi+6Ch]
+6F47CE02: 23 01              and         eax,dword ptr [ecx]
+6F47CE04: 53                 push        ebx
+6F47CE05: 83 F8 FF           cmp         eax,0FFFFFFFFh
+6F47CE08: 75 04              jne         6F47CE0E
+6F47CE0A: 33 DB              xor         ebx,ebx
+6F47CE0C: EB 07              jmp         6F47CE15
+6F47CE0E: E8 3D 73 BC FF     call        6F044150
+6F47CE13: 8B D8              mov         ebx,eax
+6F47CE15: 8B CF              mov         ecx,edi
+6F47CE17: E8 44 21 20 00     call        6F67EF60
+6F47CE1C: 8B 48 40           mov         ecx,dword ptr [eax+40h]
+6F47CE1F: 89 4D FC           mov         dword ptr [ebp-4],ecx
+6F47CE22: 8B 48 38           mov         ecx,dword ptr [eax+38h]
+6F47CE25: 8D 45 FC           lea         eax,[ebp-4]
+6F47CE28: 50                 push        eax
+6F47CE29: 8D 45 F8           lea         eax,[ebp-8]
+6F47CE2C: 89 4D F8           mov         dword ptr [ebp-8],ecx
+6F47CE2F: 50                 push        eax
+6F47CE30: 53                 push        ebx
+6F47CE31: 8B CF              mov         ecx,edi
+6F47CE33: E8 18 46 1F 00     call        6F671450
+6F47CE38: 57                 push        edi
+6F47CE39: 8B CE              mov         ecx,esi
+6F47CE3B: E8 D0 1E 00 00     call        6F47ED10
+6F47CE40: 6A 01              push        1
+6F47CE42: FF B6 B8 02 00 00  push        dword ptr [esi+000002B8h]
+6F47CE48: 8D 45 F8           lea         eax,[ebp-8]
+6F47CE4B: 8B CE              mov         ecx,esi
+6F47CE4D: 50                 push        eax
+6F47CE4E: E8 4D E3 FF FF     call        6F47B1A0
+6F47CE53: 50                 push        eax
+6F47CE54: 8B CE              mov         ecx,esi
+6F47CE56: E8 A5 2B 00 00     call        6F47FA00
+6F47CE5B: 5B                 pop         ebx
+6F47CE5C: 5F                 pop         edi
+6F47CE5D: 5E                 pop         esi
+6F47CE5E: 8B E5              mov         esp,ebp
+6F47CE60: 5D                 pop         ebp
+6F47CE61: C3                 ret
+6F47CE62: 8B 46 70           mov         eax,dword ptr [esi+70h]
+6F47CE65: 23 46 6C           and         eax,dword ptr [esi+6Ch]
+6F47CE68: 83 F8 FF           cmp         eax,0FFFFFFFFh
+6F47CE6B: 74 09              je          6F47CE76
+6F47CE6D: 6A 00              push        0
+6F47CE6F: 8B CE              mov         ecx,esi

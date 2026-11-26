@@ -1,0 +1,26 @@
+=== DotA 6.83d 中立野怪 SLK 属性表 (25 种) ===
+nfsh | 森林巨魔牧师                       | HP= 450 | MP=500 | spd=290 | def= ? | rng=600 (missile) | abil=
+ndtr | 黑暗巨魔                         | HP= 500 | MP=  ? | spd=270 | def= ? | rng=500 (missile) | abil=
+ndtw | 黑暗巨魔首领                       | HP=   ? | MP=  ? | spd=  ? | def= ? | rng=  ? (?      ) | abil=
+ngh1 | 鬼魂                           | HP=   ? | MP=  ? | spd=  ? | def= ? | rng=  ? (?      ) | abil=
+ngns | 豺狼刺客                         | HP= 370 | MP=  ? | spd=270 | def= 1 | rng=500 (missile) | abil=
+nsth | 萨特地狱使者                       | HP=1100 | MP=600 | spd=290 | def= ? | rng=100 (normal ) | abil=
+nstl | 萨特窃魂者                        | HP=   ? | MP=  ? | spd=  ? | def= ? | rng=  ? (?      ) | abil=
+nsat | 萨特欺诈者                        | HP=   ? | MP=  ? | spd=  ? | def= ? | rng=  ? (?      ) | abil=
+ncen | 半人马先行者                       | HP= 550 | MP=  ? | spd=350 | def= 2 | rng=100 (normal ) | abil=
+ncnk | 半人马可汗                        | HP=   ? | MP=  ? | spd=  ? | def= ? | rng=  ? (?      ) | abil=
+nowb | 枭兽                           | HP= 350 | MP=  ? | spd=300 | def= 2 | rng=  ? (?      ) | abil=
+nowe | 暴怒的枭兽                        | HP=   ? | MP=  ? | spd=  ? | def= ? | rng=  ? (?      ) | abil=
+nwlg | 巨狼                           | HP=   ? | MP=  ? | spd=  ? | def= ? | rng=  ? (?      ) | abil=
+npfl | 魔能野兽                         | HP= 400 | MP=  ? | spd=350 | def= 1 | rng=  ? (?      ) | abil=
+nfpc | 极地熊怪勇士                       | HP= 950 | MP=  ? | spd=320 | def= 3 | rng=100 (normal ) | abil=
+nfpu | 极地熊怪乌尔萨战士                    | HP=   ? | MP=  ? | spd=  ? | def= ? | rng=  ? (?      ) | abil=
+nkob | 狗头人                          | HP= 240 | MP=  ? | spd=270 | def= ? | rng=100 (normal ) | abil=
+nkol | 狗头人工头                        | HP=   ? | MP=  ? | spd=  ? | def= ? | rng=  ? (?      ) | abil=
+nkot | 狗头人隧道工                       | HP= 325 | MP=  ? | spd=270 | def= 1 | rng=100 (normal ) | abil=
+nogm | 食人魔拳手                        | HP= 850 | MP=  ? | spd=270 | def= 1 | rng=  ? (?      ) | abil=
+nomg | 食人魔魔法师                       | HP=   ? | MP=  ? | spd=  ? | def= ? | rng=100 (normal ) | abil=
+nbdk | 黑蜉蝣                          | HP= 950 | MP=  ? | spd=350 | def= 2 | rng=500 (msplash) | abil=
+nbwm | 黑龙                           | HP=   ? | MP=  ? | spd=  ? | def= ? | rng=  ? (?      ) | abil=
+n0LC | 雷霆蜥蜴                         | HP=1400 | MP=400 | spd=270 | def= 2 | rng=500 (missile) | abil=
+n0LD | 雷霆蜥蜴                         | HP=   ? | MP=  ? | spd=  ? | def= ? | rng=  ? (?      ) | abil=

@@ -1,0 +1,133 @@
+=== 全 11 版本 0x16~0x19 (NetCommand 事件码 0x0A0016~0x0A0019) 收/发 RVA ===
+Version        | 0x16 Recv/Disp | 0x16 Send      | 0x17 Recv/Send   | 0x18 Recv/Send   | 0x19 Recv/Send  
+---------------------------------------------------------------------------------------------------------
+1.0.17.5988    | —              | —              | —                | 0x1E7659         | —               
+1.0.20.6048    | —              | —              | —                | 0x1E7659         | —               
+1.20.4.6074    | —              | —              | —                | 0x1E76C9         | —               
+1.21.0.6263    | —              | —              | —                | 0x1EA889         | —               
+1.22.0.6328    | 0x2CEA5B       | 0x5366E2       | 0x2CEC8B/0x5367C2 | 0x2CB64D/0x5310D2 | 0x2CB6CE/0x5311A5
+1.23.0.6352    | 0x2CFF9B       | 0x538492       | 0x2D01CB/0x538572 | 0x2CCB8D/0x532E82 | 0x2CCC0E/0x532F55
+1.24.1.6374    | 0x2D005B       | 0x546E22       | 0x2D028B/0x546F02 | 0x2CCC4D/0x541812 | 0x2CCCCE/0x5418E5
+1.24.4.6387    | 0x2D011B       | 0x546EA2       | 0x2D034B/0x546F82 | 0x2CCD0D/0x541892 | 0x2CCD8E/0x541965
+1.25.1.6397    | 0x2CF3CB       | 0x546172       | 0x2CF5FB/0x546252 | 0x2CBFBD/0x540B62 | 0x2CC03E/0x540C35
+1.26.0.6401    | 0x2CF5FB       | 0x5463A2       | 0x2CF82B/0x546482 | 0x2CC1ED/0x540D92 | 0x2CC26E/0x540E65
+1.27.0.52240   | 0x2FC263       | 0x69FA02       | 0x2FB8B3/0x69F63E | 0x2FC003/0x69F8FF | 0x2FC0C3/0x69FB6F
+
+=== 1.27.0.52240 所有 0x000A0016 (.text) 命中: ['0x2fc263', '0x69f7fe', '0x69fa02'] ===
+--- Context around 0x2FC263 ---
+  6F2FC243: sub         byte ptr [esi+57h],dl
+  6F2FC246: mov         eax,dword ptr ds:[6FB6A774h]
+  6F2FC24B: xor         eax,ebp
+  6F2FC24D: push        eax
+  6F2FC24E: lea         eax,[ebp-0Ch]
+  6F2FC251: mov         dword ptr fs:[00000000h],eax
+  6F2FC257: mov         edi,ecx
+  6F2FC259: mov         dword ptr [ebp-30h],0
+  6F2FC260: mov         dword ptr [ebp-2Ch],0A0016h
+  6F2FC267: mov         dword ptr [ebp-28h],0
+  6F2FC26E: mov         byte ptr [ebp-20h],16h
+  6F2FC272: mov         dword ptr [ebp-34h],6F986DC4h
+  6F2FC279: mov         byte ptr [ebp-1Ch],0
+  6F2FC27D: mov         dword ptr [ebp-18h],0
+  6F2FC284: mov         dword ptr [ebp-14h],0
+  6F2FC28B: mov         dword ptr [ebp-10h],0
+  6F2FC292: mov         eax,dword ptr [ebp+0Ch]
+  6F2FC295: mov         esi,dword ptr [ebp+8]
+  6F2FC298: mov         ecx,esi
+  6F2FC29A: mov         dword ptr [ebp-24h],edx
+  6F2FC29D: lea         edx,[ebp-34h]
+  6F2FC2A0: mov         dword ptr [ebp-4],0
+  6F2FC2A7: mov         byte ptr [ebp-1Fh],al
+  6F2FC2AA: call        6F314250
+  6F2FC2AF: cmp         dword ptr [ebp+14h],0
+  6F2FC2B3: jne         6F2FC2DA
+  6F2FC2B5: mov         eax,dword ptr [esi+14h]
+  6F2FC2B8: cmp         eax,dword ptr [esi+10h]
+  6F2FC2BB: jbe         6F2FC2C7
+  6F2FC2BD: mov         ecx,dword ptr [ebp+10h]
+  6F2FC2C0: call        6F310E40
+  6F2FC2C5: jmp         6F2FC2DA
+  6F2FC2C7: push        dword ptr [ebp+1Ch]
+  6F2FC2CA: lea         edx,[ebp-34h]
+  6F2FC2CD: mov         ecx,edi
+  6F2FC2CF: push        dword ptr [ebp+18h]
+  6F2FC2D2: FF
+  6F2FC2D3: 75
+--- Context around 0x69F7FE ---
+  6F69F7DE: or          al,0
+  6F69F7E0: add         byte ptr [eax],al
+  6F69F7E2: cmp         dword ptr [edi+4],ebx
+  6F69F7E5: cmovb       ebx,dword ptr [edi+4]
+  6F69F7E9: mov         dword ptr [ebp-14h],ebx
+  6F69F7EC: test        ebx,ebx
+  6F69F7EE: je          6F69F8BE
+  6F69F7F4: mov         dword ptr [ebp-3Ch],0
+  6F69F7FB: mov         dword ptr [ebp-38h],0A0016h
+  6F69F802: mov         dword ptr [ebp-34h],0
+  6F69F809: mov         dword ptr [ebp-30h],2
+  6F69F810: mov         word ptr [ebp-2Ch],16h
+  6F69F816: mov         dword ptr [ebp-40h],6F986DC4h
+  6F69F81D: mov         dword ptr [ebp-24h],0
+  6F69F824: mov         dword ptr [ebp-20h],0
+  6F69F82B: mov         dword ptr [ebp-1Ch],0
+  6F69F832: push        ebx
+  6F69F833: lea         ecx,[ebp-24h]
+  6F69F836: mov         dword ptr [ebp-4],0
+  6F69F83D: mov         byte ptr [ebp-28h],dl
+  6F69F840: call        6F314730
+  6F69F845: xor         esi,esi
+  6F69F847: test        ebx,ebx
+  6F69F849: je          6F69F89E
+  6F69F84B: xor         ebx,ebx
+  6F69F84D: lea         ecx,[ecx]
+  6F69F850: mov         eax,dword ptr [edi+8]
+  6F69F853: mov         edi,dword ptr [eax+esi*4]
+  6F69F856: test        edi,edi
+  6F69F858: je          6F69F895
+  6F69F85A: mov         edx,dword ptr [edi+10h]
+  6F69F85D: mov         ecx,dword ptr [edi+0Ch]
+  6F69F860: call        6F037350
+  6F69F865: test        eax,eax
+  6F69F867: je          6F69F895
+  6F69F869: xor         ecx,ecx
+  6F69F86B: 81
+  6F69F86C: js          6F69F87A
+  6F69F86E: ins         byte ptr es:[edi],dx
+--- Context around 0x69FA02 ---
+  6F69F9E2: in          al,dx
+  6F69F9E3: sub         byte ptr [esi-5Fh],dl
+  6F69F9E6: je          6F69F98F
+  6F69F9E8: mov         dh,6Fh
+  6F69F9EA: xor         eax,ebp
+  6F69F9EC: push        eax
+  6F69F9ED: lea         eax,[ebp-0Ch]
+  6F69F9F0: mov         dword ptr fs:[00000000h],eax
+  6F69F9F6: mov         esi,ecx
+  6F69F9F8: mov         dword ptr [ebp-30h],0
+  6F69F9FF: mov         dword ptr [ebp-2Ch],0A0016h
+  6F69FA06: mov         dword ptr [ebp-28h],0
+  6F69FA0D: mov         dword ptr [ebp-24h],2
+  6F69FA14: mov         word ptr [ebp-20h],16h
+  6F69FA1A: mov         dword ptr [ebp-34h],6F986DC4h
+  6F69FA21: mov         dword ptr [ebp-18h],0
+  6F69FA28: mov         dword ptr [ebp-14h],0
+  6F69FA2F: mov         dword ptr [ebp-10h],0
+  6F69FA36: push        1
+  6F69FA38: lea         ecx,[ebp-18h]
+  6F69FA3B: mov         dword ptr [ebp-4],0
+  6F69FA42: mov         byte ptr [ebp-1Ch],dl
+  6F69FA45: call        6F314690
+  6F69FA4A: mov         eax,dword ptr [ebp-14h]
+  6F69FA4D: cmp         eax,1
+  6F69FA50: jae         6F69FA6F
+  6F69FA52: mov         ecx,dword ptr [ebp-10h]
+  6F69FA55: lea         ecx,[ecx+eax*8]
+  6F69FA58: test        ecx,ecx
+  6F69FA5A: je          6F69FA69
+  6F69FA5C: mov         dword ptr [ecx],0FFFFFFFFh
+  6F69FA62: mov         dword ptr [ecx+4],0FFFFFFFFh
+  6F69FA69: inc         eax
+  6F69FA6A: cmp         eax,1
+  6F69FA6D: jb          6F69FA52
+  6F69FA6F: mov         eax,dword ptr [ebp-10h]
+  6F69FA72: 33

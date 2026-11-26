@@ -1,0 +1,164 @@
+=== 1. 1.27 NIpse::CPoPos::GetFacingRad @ 0x03A970 ===
+6F03A970: C2 04 00           ret         4
+6F03A973: CC                 int         3
+6F03A974: CC                 int         3
+6F03A975: CC                 int         3
+6F03A976: CC                 int         3
+6F03A977: CC                 int         3
+6F03A978: CC                 int         3
+6F03A979: CC                 int         3
+6F03A97A: CC                 int         3
+6F03A97B: CC                 int         3
+6F03A97C: CC                 int         3
+6F03A97D: CC                 int         3
+6F03A97E: CC                 int         3
+6F03A97F: CC                 int         3
+6F03A980: 55                 push        ebp
+6F03A981: 8B EC              mov         ebp,esp
+6F03A983: 8B 55 08           mov         edx,dword ptr [ebp+8]
+6F03A986: 8B 41 14           mov         eax,dword ptr [ecx+14h]
+6F03A989: 83 C2 FC           add         edx,0FFFFFFFCh
+6F03A98C: 89 02              mov         dword ptr [edx],eax
+6F03A98E: FF 49 18           dec         dword ptr [ecx+18h]
+6F03A991: 89 51 14           mov         dword ptr [ecx+14h],edx
+6F03A994: 5D                 pop         ebp
+6F03A995: C2 04 00           ret         4
+6F03A998: CC                 int         3
+6F03A999: CC                 int         3
+6F03A99A: CC                 int         3
+6F03A99B: CC                 int         3
+6F03A99C: CC                 int         3
+6F03A99D: CC                 int         3
+6F03A99E: CC                 int         3
+6F03A99F: CC                 int         3
+6F03A9A0: 55                 push        ebp
+6F03A9A1: 8B EC              mov         ebp,esp
+6F03A9A3: 8B 55 08           mov         edx,dword ptr [ebp+8]
+6F03A9A6: 8B 41 14           mov         eax,dword ptr [ecx+14h]
+6F03A9A9: 83 C2 FC           add         edx,0FFFFFFFCh
+6F03A9AC: 89 02              mov         dword ptr [edx],eax
+6F03A9AE: FF 49 18           dec         dword ptr [ecx+18h]
+6F03A9B1: 89 51 14           mov         dword ptr [ecx+14h],edx
+6F03A9B4: 5D                 pop         ebp
+6F03A9B5: C2 04 00           ret         4
+6F03A9B8: CC                 int         3
+6F03A9B9: CC                 int         3
+6F03A9BA: CC                 int         3
+6F03A9BB: CC                 int         3
+6F03A9BC: CC                 int         3
+6F03A9BD: CC                 int         3
+6F03A9BE: CC                 int         3
+6F03A9BF: CC                 int         3
+6F03A9C0: 55                 push        ebp
+
+=== 2. 1.27 CAbilityAttack::CanStartWindup / CheckFacing @ 0x47BE00 ===
+6F47BE00: 55                 push        ebp
+6F47BE01: 8B EC              mov         ebp,esp
+6F47BE03: 53                 push        ebx
+6F47BE04: 8B D9              mov         ebx,ecx
+6F47BE06: 56                 push        esi
+6F47BE07: 57                 push        edi
+6F47BE08: 33 F6              xor         esi,esi
+6F47BE0A: 8D BB DC 00 00 00  lea         edi,[ebx+000000DCh]
+6F47BE10: B8 01 00 00 00     mov         eax,1
+6F47BE15: 8B CE              mov         ecx,esi
+6F47BE17: D3 E0              shl         eax,cl
+6F47BE19: 85 45 08           test        dword ptr [ebp+8],eax
+6F47BE1C: 74 1E              je          6F47BE3C
+6F47BE1E: 56                 push        esi
+6F47BE1F: 8B CB              mov         ecx,ebx
+6F47BE21: E8 3A 02 00 00     call        6F47C060
+6F47BE26: 85 C0              test        eax,eax
+6F47BE28: 74 12              je          6F47BE3C
+6F47BE2A: 8B 07              mov         eax,dword ptr [edi]
+6F47BE2C: 83 F8 03           cmp         eax,3
+6F47BE2F: 74 1D              je          6F47BE4E
+6F47BE31: 83 7D 0C 00        cmp         dword ptr [ebp+0Ch],0
+6F47BE35: 74 05              je          6F47BE3C
+6F47BE37: 83 F8 08           cmp         eax,8
+6F47BE3A: 74 12              je          6F47BE4E
+6F47BE3C: 46                 inc         esi
+6F47BE3D: 83 C7 04           add         edi,4
+6F47BE40: 83 FE 02           cmp         esi,2
+6F47BE43: 72 CB              jb          6F47BE10
+6F47BE45: 5F                 pop         edi
+6F47BE46: 5E                 pop         esi
+6F47BE47: 33 C0              xor         eax,eax
+6F47BE49: 5B                 pop         ebx
+6F47BE4A: 5D                 pop         ebp
+6F47BE4B: C2 08 00           ret         8
+6F47BE4E: 5F                 pop         edi
+6F47BE4F: 5E                 pop         esi
+6F47BE50: B8 01 00 00 00     mov         eax,1
+6F47BE55: 5B                 pop         ebx
+6F47BE56: 5D                 pop         ebp
+6F47BE57: C2 08 00           ret         8
+6F47BE5A: CC                 int         3
+6F47BE5B: CC                 int         3
+6F47BE5C: CC                 int         3
+6F47BE5D: CC                 int         3
+6F47BE5E: CC                 int         3
+6F47BE5F: CC                 int         3
+6F47BE60: 8B 41 20           mov         eax,dword ptr [ecx+20h]
+6F47BE63: C1 E8 09           shr         eax,9
+6F47BE66: 83 E0 01           and         eax,1
+6F47BE69: C3                 ret
+6F47BE6A: CC                 int         3
+6F47BE6B: CC                 int         3
+6F47BE6C: CC                 int         3
+6F47BE6D: CC                 int         3
+6F47BE6E: CC                 int         3
+6F47BE6F: CC                 int         3
+6F47BE70: 8B 41 0C           mov         eax,dword ptr [ecx+0Ch]
+6F47BE73: 83 E0 04           and         eax,4
+6F47BE76: C3                 ret
+6F47BE77: CC                 int         3
+6F47BE78: CC                 int         3
+6F47BE79: CC                 int         3
+6F47BE7A: CC                 int         3
+6F47BE7B: CC                 int         3
+6F47BE7C: CC                 int         3
+6F47BE7D: CC                 int         3
+6F47BE7E: CC                 int         3
+6F47BE7F: CC                 int         3
+6F47BE80: 55                 push        ebp
+6F47BE81: 8B EC              mov         ebp,esp
+6F47BE83: 8B 41 08           mov         eax,dword ptr [ecx+8]
+6F47BE86: 23 45 08           and         eax,dword ptr [ebp+8]
+6F47BE89: 5D                 pop         ebp
+6F47BE8A: C2 04 00           ret         4
+6F47BE8D: CC                 int         3
+6F47BE8E: CC                 int         3
+6F47BE8F: CC                 int         3
+6F47BE90: 8B
+
+=== 3. 1.0.17~1.21.0 GetUnitFacing 尾部 (含 180/pi 乘数全局 RVA) ===
+  1.0.17.5988: Rad2Deg Global = 0x84aa2c
+    6F2BFD10: 08 8D 4D 08 E8 F7  or          byte ptr [ebp+F7E8084Dh],cl
+    6F2BFD16: 63 E3              arpl        bx,sp
+    6F2BFD18: FF 8D 4D F8 E8 EF  dec         dword ptr [ebp+EFE8F84Dh]
+    6F2BFD1E: 63 E3              arpl        bx,sp
+    6F2BFD20: FF 85 F6 74 58 8B  inc         dword ptr [ebp+8B5874F6h]
+    6F2BFD26: 56                 push        esi
+    6F2BFD27: 10 8B 4E 0C E8 E0  adc         byte ptr [ebx+E0E80C4Eh],cl
+    6F2BFD2D: 72 DC              jb          6F2BFD0B
+    6F2BFD2F: FF 85 C0 74 49 8B  inc         dword ptr [ebp+8B4974C0h]
+    6F2BFD35: 50                 push        eax
+    6F2BFD36: 0C 33              or          al,33h
+    6F2BFD38: C9                 leave
+    6F2BFD39: 81 FA 6C 67 61 2B  cmp         edx,2B61676Ch
+    6F2BFD3F: 0F 95 C1           setne       cl
+    6F2BFD42: 49                 dec         ecx
+    6F2BFD43: 23 C8              and         ecx,eax
+    6F2BFD45: 8B C1              mov         eax,ecx
+    6F2BFD47: 74 34              je          6F2BFD7D
+    6F2BFD49: 8B 48 20           mov         ecx,dword ptr [eax+20h]
+    6F2BFD4C: 85 C9              test        ecx,ecx
+    6F2BFD4E: 75 2D              jne         6F2BFD7D
+    6F2BFD50: 8B 16              mov         edx,dword ptr [esi]
+    6F2BFD52: 8B CE              mov         ecx,esi
+    6F2BFD54: FF 92 B8 00 00 00  call        dword ptr [edx+000000B8h]
+    6F2BFD5A: 8B 10              mov         edx,dword ptr [eax]
+  1.0.20.6048: Rad2Deg Global = 0x84ba6c
+  1.20.4.6074: Rad2Deg Global = 0x84ba8c
+  1.21.0.6263: Rad2Deg Global = 0x84cac4
